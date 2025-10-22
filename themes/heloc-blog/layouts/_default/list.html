@@ -1,0 +1,162 @@
+{{ define "main" }}
+
+<!-- Hero Header with Background -->
+<div class="relative bg-gradient-to-br from-primary to-blue-900 text-white py-20 sm:py-24">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 30px 30px;"></div>
+    </div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- Breadcrumb -->
+        <nav class="mb-6 text-sm text-center">
+            <a href="/" class="text-white/80 hover:text-white hover:underline">Home</a>
+            <span class="text-white/60 mx-2">/</span>
+            <span class="text-white/80">Blog</span>
+        </nav>
+        
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">HELOC Insights & Updates</h1>
+            <p class="text-xl text-white/90 max-w-3xl mx-auto">Stay informed with the latest trends, tips, and guidance from mortgage professionals.</p>
+        </div>
+    </div>
+</div>
+
+<section class="py-16 sm:py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <!-- Blog Posts Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {{ range .Paginator.Pages }}
+            {{ $permalink := .Permalink }}
+            {{ $title := .Title }}
+            {{ $image := .Params.image }}
+            {{ $category := .Params.category }}
+            {{ $date := .Date.Format "2006-01-02" }}
+            {{ $dateFormatted := .Date.Format "January 2, 2006" }}
+            {{ $excerpt := .Params.excerpt }}
+            <article class="bg-background rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                {{ if $image }}
+                <a href="{{ $permalink }}">
+                    <div class="h-48 overflow-hidden">
+                        <img src="{{ $image }}" alt="{{ $title }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </a>
+                {{ end }}
+                <div class="p-6">
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        {{ if $category }}
+                        <span class="bg-accent/10 text-accent px-2 py-1 rounded-full text-xs font-medium">{{ $category }}</span>
+                        {{ end }}
+                        <span>•</span>
+                        <time datetime="{{ $date }}">{{ $dateFormatted }}</time>
+                    </div>
+                    <h2 class="text-xl font-bold text-primary mb-3 line-clamp-2">
+                        <a href="{{ $permalink }}" class="hover:text-accent transition-colors">{{ $title }}</a>
+                    </h2>
+                    {{ if $excerpt }}
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">{{ $excerpt }}</p>
+                    {{ end }}
+                    <a href="{{ $permalink }}" class="inline-flex items-center text-accent hover:text-blue-600 font-medium text-sm">
+                        Read More
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+
+        <!-- Pagination -->
+        {{ $paginator := .Paginator }}
+        {{ if gt $paginator.TotalPages 1 }}
+        <nav class="mt-12" aria-label="Pagination">
+            <div class="flex justify-center items-center space-x-2">
+                <!-- Previous Button -->
+                {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL }}" 
+                   class="flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Previous
+                </a>
+                {{ else }}
+                <span class="flex items-center px-4 py-2 text-sm font-medium text-gray-300 bg-gray-100 border border-gray-200 rounded-lg cursor-not-allowed">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Previous
+                </span>
+                {{ end }}
+
+                <!-- Page Numbers -->
+                {{ $current := $paginator.PageNumber }}
+                {{ $total := $paginator.TotalPages }}
+                {{ $start := sub $current 2 }}
+                {{ $end := add $current 2 }}
+                {{ if lt $start 1 }}{{ $start = 1 }}{{ end }}
+                {{ if gt $end $total }}{{ $end = $total }}{{ end }}
+
+                <!-- First page if not in range -->
+                {{ if gt $start 2 }}
+                <a href="{{ $paginator.First.URL }}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">1</a>
+                {{ if gt $start 3 }}
+                <span class="px-3 py-2 text-sm font-medium text-gray-500">...</span>
+                {{ end }}
+                {{ end }}
+
+                <!-- Page number range -->
+                {{ range $paginator.Pagers }}
+                {{ if and (ge .PageNumber $start) (le .PageNumber $end) }}
+                {{ if eq .PageNumber $current }}
+                <span class="z-10 px-3 py-2 text-sm font-medium text-white bg-accent border border-accent rounded-lg" aria-current="page">
+                    {{ .PageNumber }}
+                </span>
+                {{ else }}
+                <a href="{{ .URL }}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">
+                    {{ .PageNumber }}
+                </a>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+
+                <!-- Last page if not in range -->
+                {{ if lt $end (sub $total 1) }}
+                {{ if lt $end (sub $total 2) }}
+                <span class="px-3 py-2 text-sm font-medium text-gray-500">...</span>
+                {{ end }}
+                <a href="{{ $paginator.Last.URL }}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">{{ $total }}</a>
+                {{ end }}
+
+                <!-- Next Button -->
+                {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL }}" 
+                   class="flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">
+                    Next
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                {{ else }}
+                <span class="flex items-center px-4 py-2 text-sm font-medium text-gray-300 bg-gray-100 border border-gray-200 rounded-lg cursor-not-allowed">
+                    Next
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                {{ end }}
+            </div>
+
+            <!-- Pagination Info -->
+            <div class="text-center mt-4">
+                <p class="text-sm text-gray-600">
+                    Showing page {{ $current }} of {{ $total }} 
+                    ({{ len .Paginator.Pages }} of {{ .Paginator.TotalNumberOfElements }} articles)
+                </p>
+            </div>
+        </nav>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

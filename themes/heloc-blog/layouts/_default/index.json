@@ -1,0 +1,16 @@
+{{/* Hugo template file - generates JSON output */}}
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+    {{- if eq .Section "posts" -}}
+        {{- $.Scratch.Add "index" (dict 
+            "title" .Title 
+            "date" (.Date.Format "January 2, 2006")
+            "category" .Params.category 
+            "excerpt" .Params.excerpt 
+            "image" .Params.image 
+            "permalink" .Permalink
+            "tags" .Params.tags
+        ) -}}
+    {{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

@@ -1,0 +1,27 @@
+baseURL = 'https://helocloanofficers.com/'
+languageCode = 'en-us'
+title = 'HELOC Loan Officers Blog'
+theme = 'heloc-blog'
+disableKinds = []
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = 'Latest HELOC insights, tips, and guidance from mortgage professionals'
+  author = 'Browse Lenders'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# URL management
+[permalinks]
+  posts = '/blog/:slug/'
