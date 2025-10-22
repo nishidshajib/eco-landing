@@ -271,19 +271,37 @@ cd public
 ```
 
 ### Automated Deployment Options
+
+#### Netlify (Recommended - Already Configured)
+```toml
+# netlify.toml already included for automatic deployment
+# Just push to GitHub and Netlify auto-builds with:
+# - Hugo v0.151.2
+# - Automatic minification
+# - Production optimizations
+```
+
+#### Other Options
 - **GitHub Pages**: Push repository, auto-deploy from `public/`
-- **Netlify**: Connect repository, auto-build on push
 - **Vercel**: Git integration with preview deployments
 - **Traditional Hosting**: Manual FTP/SFTP upload of `public/` contents
+
+#### Dynamic URL Benefits
+✅ **No manual baseURL changes needed**  
+✅ **Works on any domain (Netlify, custom domain, localhost)**  
+✅ **Preview deployments work automatically**  
+✅ **Staging and production use same build**
 
 ## ⚙️ Configuration & Customization
 
 ### Hugo Configuration (`hugo.toml`)
 ```toml
-baseURL = 'https://helocloanofficers.com/'
+baseURL = '/'                 # Dynamic - works on any domain
 languageCode = 'en-us'
 title = 'HELOC Loan Officers Blog'
 theme = 'heloc-blog'
+relativeURLs = true          # Enable relative URLs
+canonifyURLs = true          # Ensure consistent URL format
 
 # Pagination settings
 [pagination]

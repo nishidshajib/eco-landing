@@ -1,8 +1,10 @@
-baseURL = 'https://helocloanofficers.com/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'HELOC Loan Officers Blog'
 theme = 'heloc-blog'
 disableKinds = []
+relativeURLs = true
+canonifyURLs = true
 
 # Pagination settings
 [pagination]

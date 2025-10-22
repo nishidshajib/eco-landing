@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rate-Caps on HELOC Loan Officers Blog</title>
-    <link>http://localhost:1314/tags/rate-caps/</link>
+    <link>/tags/rate-caps/</link>
     <description>Recent content in Rate-Caps on HELOC Loan Officers Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/rate-caps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/rate-caps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding HELOC Interest Rate Caps and Protection Strategies</title>
-      <link>http://localhost:1314/blog/understanding-heloc-interest-rate-caps-and-protection-strategies/</link>
+      <link>/blog/understanding-heloc-interest-rate-caps-and-protection-strategies/</link>
       <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/blog/understanding-heloc-interest-rate-caps-and-protection-strategies/</guid>
+      <guid>/blog/understanding-heloc-interest-rate-caps-and-protection-strategies/</guid>
       <description>&lt;p&gt;Variable interest rates on HELOCs can be both a blessing and a concern for borrowers. Understanding rate caps and protection strategies is crucial for managing your HELOC effectively.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-are-heloc-rate-caps&#34;&gt;What Are HELOC Rate Caps?&lt;/h2&gt;&#xA;&lt;p&gt;Rate caps are built-in protections that limit how much your HELOC interest rate can increase over time.&lt;/p&gt;&#xA;&lt;h3 id=&#34;types-of-rate-caps&#34;&gt;Types of Rate Caps:&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Periodic Caps&lt;/strong&gt;: Limit rate increases during each adjustment period&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Common range: 1-2% per adjustment&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lifetime Caps&lt;/strong&gt;: Maximum rate increase over the loan&amp;rsquo;s life&lt;/p&gt;</description>
     </item>
   </channel>
