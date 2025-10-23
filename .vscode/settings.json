@@ -1,0 +1,11 @@
+{
+  "json.validate.enable": false,
+  "files.associations": {
+    "**/layouts/**/*.json": "hugo",
+    "**/themes/**/layouts/**/*.json": "hugo"
+  },
+  "json.schemas": [],
+  "[hugo]": {
+    "json.validate.enable": false
+  }
+}

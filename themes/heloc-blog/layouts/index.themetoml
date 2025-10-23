@@ -1,0 +1,13 @@
+{{- /* Dynamic Theme Configuration - Generated from hugo.toml */ -}}
+name = "{{ .Site.Params.theme.name }}"
+license = "{{ .Site.Params.theme.license }}"
+licenselink = "{{ .Site.Params.theme.licenseLink }}"
+description = "{{ .Site.Params.description }}"
+homepage = "{{ .Site.Params.homepage }}"
+tags = [{{ range $i, $tag := .Site.Params.theme.tags }}{{ if $i }}, {{ end }}"{{ $tag }}"{{ end }}]
+features = [{{ range $i, $feature := .Site.Params.theme.features }}{{ if $i }}, {{ end }}"{{ $feature }}"{{ end }}]
+min_version = "{{ .Site.Params.theme.minVersion }}"
+
+[author]
+  name = "{{ .Site.Params.author }}"
+  homepage = "{{ .Site.Params.homepage }}"

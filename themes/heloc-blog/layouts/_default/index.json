@@ -1,16 +1,18 @@
-{{/* Hugo template file - generates JSON output */}}
-{{- $.Scratch.Add "index" slice -}}
+[
+{{- $first := true -}}
 {{- range .Site.RegularPages -}}
-    {{- if eq .Section "posts" -}}
-        {{- $.Scratch.Add "index" (dict 
-            "title" .Title 
-            "date" (.Date.Format "January 2, 2006")
-            "category" .Params.category 
-            "excerpt" .Params.excerpt 
-            "image" .Params.image 
-            "permalink" .Permalink
-            "tags" .Params.tags
-        ) -}}
+    {{- if eq .Section "blogs" -}}
+        {{- if not $first -}},{{- end -}}
+        {{- $first = false -}}
+        {
+            "title": {{ .Title | jsonify }},
+            "date": {{ (.Date.Format "January 2, 2006") | jsonify }},
+            "category": {{ .Params.category | jsonify }},
+            "excerpt": {{ .Params.excerpt | jsonify }},
+            "image": {{ .Params.image | jsonify }},
+            "permalink": {{ .Permalink | jsonify }},
+            "tags": {{ .Params.tags | jsonify }}
+        }
     {{- end -}}
 {{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+]

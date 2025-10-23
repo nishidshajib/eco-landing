@@ -38,3 +38,5 @@
   for = "/posts/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# No redirects needed - clean URL structure

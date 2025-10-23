@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Personal-Loan on HELOC Loan Officers Blog</title>
-    <link>/tags/personal-loan/</link>
-    <description>Recent content in Personal-Loan on HELOC Loan Officers Blog</description>
+    <title>Personal-Loan on HELOC Loan Officers</title>
+    <link>//localhost:1319/tags/personal-loan/</link>
+    <description>Recent content in Personal-Loan on HELOC Loan Officers</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/personal-loan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1319/tags/personal-loan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HELOC vs Personal Loan: Which Is Right for Your Financial Needs?</title>
-      <link>/blog/heloc-vs-personal-loan-which-is-right-for-your-financial-needs/</link>
+      <link>//localhost:1319/blogs/heloc-vs-personal-loan-which-is-right-for-your-financial-needs/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>/blog/heloc-vs-personal-loan-which-is-right-for-your-financial-needs/</guid>
+      <guid>//localhost:1319/blogs/heloc-vs-personal-loan-which-is-right-for-your-financial-needs/</guid>
       <description>&lt;p&gt;When you need to borrow money, you have several options available. Two popular choices are Home Equity Lines of Credit (HELOCs) and personal loans. Each has distinct advantages and considerations that can make one more suitable than the other depending on your specific circumstances.&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-helocs&#34;&gt;Understanding HELOCs&lt;/h2&gt;&#xA;&lt;p&gt;A HELOC is a revolving line of credit secured by your home&amp;rsquo;s equity. Think of it as a credit card backed by your house - you can borrow up to a certain limit, pay it back, and borrow again during the draw period.&lt;/p&gt;</description>
     </item>
   </channel>

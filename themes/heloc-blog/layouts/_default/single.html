@@ -10,6 +10,61 @@
 {{ $content := .Content }}
 {{ $permalink := .Permalink }}
 {{ $siteAuthor := .Site.Params.author }}
+{{ $wordCount := .WordCount }}
+{{ $publishDate := .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}
+{{ $lastMod := .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}
+
+<!-- SEO Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ $title | jsonify }},
+  "description": {{ $excerpt | default .Summary | jsonify }},
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ if $image }}{{ $image | absURL | jsonify }}{{ else }}"{{ .Site.BaseURL }}/images/default-blog-image.jpg"{{ end }},
+    "width": "1200",
+    "height": "630"
+  },
+  "datePublished": {{ $publishDate | jsonify }},
+  "dateModified": {{ $lastMod | jsonify }},
+  "author": {
+    "@type": "Organization",
+    "name": {{ $siteAuthor | jsonify }},
+    "url": "https://www.browselenders.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ .Site.Title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}/images/logo.png",
+      "width": "300",
+      "height": "100"
+    },
+    "url": {{ .Site.BaseURL | jsonify }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ $permalink | jsonify }}
+  },
+  "url": {{ $permalink | jsonify }},
+  "wordCount": {{ $wordCount }},
+  "articleSection": {{ $category | default "HELOC" | jsonify }},
+  "keywords": [{{ range $i, $tag := $tags }}{{ if $i }},{{ end }}{{ $tag | jsonify }}{{ end }}],
+  "about": {
+    "@type": "Thing",
+    "name": "HELOC",
+    "description": "Home Equity Line of Credit information and guidance"
+  },
+  "isPartOf": {
+    "@type": "Website",
+    "name": {{ .Site.Title | jsonify }},
+    "url": {{ .Site.BaseURL | jsonify }}
+  }
+}
+</script>
 
 <!-- Hero Header with Background -->
 <div class="relative bg-gradient-to-br from-primary to-blue-900 text-white py-20 sm:py-24">
@@ -25,12 +80,12 @@
     </div>
     {{ end }}
     
-    <div class="container mx-auto px-6 max-w-4xl relative z-10">
+    <div class="container mx-auto px-6 pt-16 max-w-4xl relative z-10">
         <!-- Breadcrumb -->
-        <nav class="mb-6 text-sm">
+        <nav class="mb-6 text-sm uppercase font-medium">
             <a href="/" class="text-white/80 hover:text-white hover:underline">Home</a>
             <span class="text-white/60 mx-2">/</span>
-            <a href="/posts/" class="text-white/80 hover:text-white hover:underline">Blog</a>
+            <a href="/blogs/" class="text-white/80 hover:text-white hover:underline">Blog</a>
             <span class="text-white/60 mx-2">/</span>
             <span class="text-white/80">{{ $title }}</span>
         </nav>
@@ -51,11 +106,11 @@
         </div>
 
         <!-- Title -->
-        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">{{ $title }}</h1>
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">{{ $title }}</h1>
 
         <!-- Excerpt/Summary -->
         {{ if $excerpt }}
-        <p class="text-xl text-white/90 leading-relaxed">{{ $excerpt }}</p>
+        <p class="text-md text-white/90 leading-relaxed">{{ $excerpt }}</p>
         {{ end }}
     </div>
 </div>
@@ -70,10 +125,8 @@
         {{ end }}
 
         <!-- Content -->
-        <div class="prose prose-lg max-w-none">
-            <div class="text-gray-700 leading-relaxed">
-                {{ $content | safeHTML }}
-            </div>
+        <div class="blog-content">
+            {{ $content | safeHTML }}
         </div>
 
         <!-- Tags -->
@@ -94,7 +147,7 @@
         <!-- Author Info -->
         <div class="mt-12 pt-8 border-t border-gray-200">
             <div class="flex items-start gap-4">
-                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                <div class="w-16 h-16 bg-accent/20 text-accent rounded-full flex flex-none items-center justify-center text-2xl font-bold">
                     BL
                 </div>
                 <div>

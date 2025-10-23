@@ -1,0 +1,19 @@
+{{- /* PWA Manifest Template - Generates from hugo.toml config */ -}}
+{
+  "name": "{{ .Site.Title }}",
+  "short_name": "{{ .Site.Params.shortName | default (truncate 12 .Site.Title) }}",
+  "description": "{{ .Site.Params.description }}",
+  "start_url": "{{ .Site.BaseURL }}",
+  "display": "{{ .Site.Params.pwa.display | default "standalone" }}",
+  "theme_color": "{{ .Site.Params.pwa.themeColor | default "#002D62" }}",
+  "background_color": "{{ .Site.Params.pwa.backgroundColor | default "#F7F9FC" }}",
+  "icons": [
+    {{- range .Site.Params.pwa.icons -}}
+    {
+      "src": "{{ .src }}",
+      "sizes": "{{ .sizes }}",
+      "type": "{{ .type }}"
+    }{{ if not (eq . (index $.Site.Params.pwa.icons (sub (len $.Site.Params.pwa.icons) 1))) }},{{ end }}
+    {{- end -}}
+  ]
+}

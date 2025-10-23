@@ -1,10 +1,28 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'HELOC Loan Officers Blog'
+title = 'HELOC Loan Officers'
 theme = 'heloc-blog'
 disableKinds = []
 relativeURLs = true
 canonifyURLs = true
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
 
 # Pagination settings
 [pagination]
@@ -14,9 +32,62 @@ path = "page"
 [params]
   description = 'Latest HELOC insights, tips, and guidance from mortgage professionals'
   author = 'Browse Lenders'
+  shortName = 'HELOC Officers'
+  tagline = 'Expert HELOC Guidance & Market Insights'
+  homepage = 'https://helocloanofficers.com/'
+  
+  # SEO Configuration
+  siteName = 'HELOC Loan Officers'
+  siteDescription = 'Expert HELOC guidance, lender comparisons, and mortgage education for consumers and employees nationwide'
+  keywords = ['HELOC', 'Home Equity Line of Credit', 'Mortgage', 'Lending', 'Finance', 'Browse Lenders']
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'HELOC Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'heloc']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+  
+  # Favicon configuration
+  favicon = '/favicon.png'
+  
+  # PWA Manifest Settings
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    
+    # App Icons
+    [[params.pwa.icons]]
+      src = '/android-chrome-192x192.png'
+      sizes = '192x192'
+      type = 'image/png'
+    
+    [[params.pwa.icons]]
+      src = '/android-chrome-512x512.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+# Custom output formats
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "MANIFEST", "THEMETOML"]
   section = ["HTML", "RSS"]
 
 [markup]
@@ -24,6 +95,12 @@ path = "page"
     [markup.goldmark.renderer]
       unsafe = true
 
+# Sitemap configuration for better SEO
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
 # URL management
 [permalinks]
-  posts = '/blog/:slug/'
+  blogs = '/blogs/:slug/'

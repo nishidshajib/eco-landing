@@ -2,30 +2,54 @@
 
 A modern Hugo blog system with pagination that automatically generates static blog pages from Markdown files. Features professional pagination, responsive design, and seamless integration with your landing page.
 
-## 📁 Project Structure
+## 📁 File Structure (After Build)
+```
+public/
+├── index.html           # Landing page
+├── index.json          # JSON feed for blog posts (14 posts)
+├── sitemap.xml         # SEO sitemap
+├── blog/               # Individual blog posts (14 posts)
+│   ├── heloc-rates-hit-new-lows-what-borrowers-need-to-know-for-q4-2025/
+│   │   └── index.html
+│   ├── heloc-vs.-home-equity-loan-which-option-fits-your-financial-strategy/
+│   │   └── index.html
+│   └── [12 more posts]/ # Each post in its own directory
+├── posts/              # Blog archive pages
+│   ├── index.html      # Page 1 of blog archive (12 posts)
+│   └── page/2/         # Page 2 of blog archive (2 remaining posts)
+│       └── index.html
+└── categories/, tags/   # Taxonomy pages (auto-generated from frontmatter)
+```
 
 ```
 dynamic-landing/
-├── hugo.toml                    # Hugo configuration with pagination
+├── hugo.toml                    # Hugo configuration with pagination & favicon
 ├── content/
 │   ├── _index.md               # Homepage content
-│   └── posts/                  # Blog posts (Markdown files)
+│   └── blogs/                  # Blog posts (Markdown files) - 14 posts
 │       ├── heloc-rates-q4-2025.md
 │       ├── heloc-closing-costs-explained.md
-│       └── [other-posts].md
+│       ├── heloc-vs-home-equity-loan.md
+│       ├── heloc-application-guide.md
+│       ├── heloc-market-forecast-2026.md
+│       └── [10 more posts].md
 ├── layouts/
-│   └── index.html              # Landing page template
+│   └── index.html              # Landing page template (uses baseof.html)
+├── static/
+│   ├── favicon.png             # Site favicon
+│   └── manifest.json           # PWA manifest
 ├── themes/
 │   └── heloc-blog/             # Custom theme
 │       ├── layouts/
 │       │   ├── _default/
-│       │   │   ├── baseof.html # Base template
+│       │   │   ├── baseof.html # Base template with favicon/manifest
+│       │   │   ├── index.json  # JSON feed generator for blog posts
 │       │   │   ├── list.html   # Blog archive with pagination
-│       │   │   └── single.html # Individual post template
+│       │   │   └── single.html # Individual post template with SEO schema
 │       │   └── partials/
-│       │       ├── header.html
-│       │       └── footer.html
-│       └── static/             # Static assets
+│       │       ├── header.html # Site header with navigation
+│       │       └── footer.html # Site footer
+│       └── static/             # Theme static assets
 └── public/                     # Generated static files (output)
 ```
 
@@ -66,8 +90,9 @@ hugo server --cleanDestinationDir --port 1319
 
 #### Development URLs
 - **Landing Page**: http://localhost:1319/
-- **Blog Archive**: http://localhost:1319/posts/
-- **Individual Posts**: http://localhost:1319/blog/[post-slug]/
+- **Blog Archive**: http://localhost:1319/posts/ (paginated: 12 per page)
+- **Individual Posts**: http://localhost:1319/blog/[post-slug]/ (14 posts available)
+- **JSON Feed**: http://localhost:1319/index.json (API endpoint for blog data)
 
 ### Build Commands
 
@@ -94,12 +119,12 @@ hugo --logLevel info
 
 ### Creating New Blog Posts
 
-1. **Create a new Markdown file** in `content/posts/`:
+1. **Create a new Markdown file** in `content/blogs/`:
    ```powershell
-   # Navigate to posts directory
-   cd content/posts
+   # Navigate to blogs directory
+   cd content/blogs
 
-   # Create new post file
+   # Create new post file (will be 15th post)
    New-Item "your-post-title.md" -ItemType File
    ```
 
@@ -148,7 +173,32 @@ hugo --logLevel info
 - `"Investment"` - Investment strategies
 - `"Retirement Planning"` - Senior-focused content
 
-## 🔄 Pagination System
+## � SEO Features
+
+### Comprehensive Schema Markup (JSON-LD)
+Every blog post includes rich structured data:
+
+- **BlogPosting Schema**: Complete article metadata
+- **Organization Schema**: Author and publisher information  
+- **WebPage Schema**: Page entity relationships
+- **ImageObject Schema**: Featured image with dimensions
+- **Keywords & Categories**: Enhanced topic classification
+- **Publishing Dates**: Creation and modification timestamps
+- **Word Count**: Content length indicators
+
+### SEO Benefits
+- 🎯 **Rich Snippets**: Featured images in search results
+- 📱 **Social Sharing**: Optimized for Facebook/Twitter cards
+- 🤖 **Better Indexing**: Clear content structure for search engines
+- 📊 **Click-Through Rates**: Enhanced search result appearance
+- 🏷️ **Topic Authority**: Proper categorization and tagging
+
+### Featured Images
+- All posts include high-quality featured images (1600px+ width)
+- Images appear in hero sections, social shares, and search results
+- Optimized URLs using Unsplash with quality parameters
+
+## �🔄 Pagination System
 
 The blog features professional pagination with 12 posts per page:
 
@@ -172,6 +222,7 @@ path = "page"     # URL path (/posts/page/2/)
 ### URLs
 - Page 1: `/posts/` (14 posts → shows 12)
 - Page 2: `/posts/page/2/` (remaining 2 posts)
+- Individual posts: `/blog/post-title/` (properly nested under blog)
 
 ## 🔗 Landing Page Integration
 
@@ -189,7 +240,7 @@ Hugo automatically generates a JSON feed at `/index.json` for API consumption:
     "category": "Market Trends",
     "excerpt": "Latest rate analysis and borrower implications...",
     "image": "https://images.unsplash.com/photo-example",
-    "permalink": "/blog/heloc-rates-hit-new-lows/",
+    "permalink": "/heloc-rates-hit-new-lows/",
     "tags": ["heloc", "rates", "market-trends"]
   }
 ]
@@ -206,7 +257,7 @@ Hugo automatically generates a JSON feed at `/index.json` for API consumption:
    # Edit in VS Code or preferred editor
    ```
 
-2. **Test Locally**:
+3. **Test Locally**:
    ```powershell
    # Start development server
    hugo server --port 1319
@@ -317,9 +368,9 @@ author = 'Browse Lenders'
 home = ["HTML", "RSS", "JSON"]
 section = ["HTML", "RSS"]
 
-# URL structure for posts
+# URL structure for posts (generates /blog/slug/ URLs)
 [permalinks]
-posts = '/blog/:slug/'
+blogs = '/blog/:slug/'
 ```
 
 ### Theme Customization
@@ -392,13 +443,13 @@ hugo config
 ### Content Management Commands
 ```powershell
 # Create new post
-New-Item "content/posts/post-title.md" -ItemType File
+New-Item "content/blogs/post-title.md" -ItemType File
 
 # List all posts
-Get-ChildItem "content/posts" -Filter "*.md"
+Get-ChildItem "content/blogs" -Filter "*.md"
 
-# Count total posts
-@(Get-ChildItem "content/posts" -Filter "*.md").Count
+# Count total posts (currently 14)
+@(Get-ChildItem "content/blogs" -Filter "*.md").Count
 
 # Check for errors in specific post
 hugo --logLevel warn
@@ -422,7 +473,7 @@ hugo env
 ## ✍️ Content Management Workflow
 
 ### Adding New Posts
-1. **Create file**: `content/posts/descriptive-title.md`
+1. **Create file**: `content/blogs/descriptive-title.md`
 2. **Add frontmatter** (see reference above)
 3. **Write content** using Markdown
 4. **Test locally**: `hugo server --port 1319`
@@ -481,7 +532,7 @@ hugo server --port 1319
 #### Posts not showing
 - ✅ Check `draft: false` in frontmatter
 - ✅ Verify date is not in the future
-- ✅ Ensure file is in `content/posts/` directory
+- ✅ Ensure file is in `content/blogs/` directory
 - ✅ Check for frontmatter syntax errors
 
 #### Build errors
@@ -536,8 +587,9 @@ hugo --cleanDestinationDir --minify
 - ✅ **Posts**: 14 total posts
 - ✅ **Pagination**: 12 posts per page (2 pages total)  
 - ✅ **Development Server**: http://localhost:1319/
-- ✅ **Blog Archive**: http://localhost:1319/posts/
-- ✅ **Landing Page Integration**: "View All Articles" button linked
-- ✅ **JSON Feed**: Available at `/index.json`
-- ✅ **SEO Ready**: Sitemap, meta tags, structured URLs
+- ✅ **Blog Archive**: http://localhost:1319/posts/ (paginated)
+- ✅ **Individual Posts**: http://localhost:1319/blog/[slug]/ (14 posts)
+- ✅ **Landing Page Integration**: Shows 8 posts in carousel + "View All Articles" button
+- ✅ **JSON Feed**: Available at `/index.json` (14 posts for API consumption)
+- ✅ **SEO Ready**: Sitemap, meta tags, structured data, favicon
 - ✅ **Production Ready**: Build with `hugo --cleanDestinationDir --minify`

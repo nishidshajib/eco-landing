@@ -2,165 +2,273 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/comparison/</loc>
+    <loc>//localhost:1319/blogs/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/education/</loc>
+    <loc>//localhost:1319/tags/comparison/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/fees/</loc>
+    <loc>//localhost:1319/tags/education/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/financial-planning/</loc>
+    <loc>//localhost:1319/tags/fees/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/heloc/</loc>
+    <loc>//localhost:1319/tags/financial-planning/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/heloc-closing-costs/</loc>
+    <loc>//localhost:1319/tags/heloc/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-vs-personal-loan-which-is-right-for-your-financial-needs/</loc>
+    <loc>//localhost:1319/tags/heloc-closing-costs/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1319/blogs/heloc-vs-personal-loan-which-is-right-for-your-financial-needs/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/personal-loan/</loc>
+    <loc>//localhost:1319/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1319/tags/personal-loan/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/savings/</loc>
+    <loc>//localhost:1319/tags/savings/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1319/tags/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/understanding-heloc-closing-costs-a-complete-breakdown/</loc>
+    <loc>//localhost:1319/blogs/understanding-heloc-closing-costs-a-complete-breakdown/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/5-smart-ways-to-use-your-heloc-for-financial-growth/</loc>
+    <loc>//localhost:1319/blogs/5-smart-ways-to-use-your-heloc-for-financial-growth/</loc>
     <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/investment/</loc>
+    <loc>//localhost:1319/tags/investment/</loc>
     <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/wealth-building/</loc>
+    <loc>//localhost:1319/tags/wealth-building/</loc>
     <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/federal-reserve/</loc>
+    <loc>//localhost:1319/tags/federal-reserve/</loc>
     <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/heloc-rates/</loc>
+    <loc>//localhost:1319/tags/heloc-rates/</loc>
     <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-rates-hit-new-lows-what-borrowers-need-to-know-for-q4-2025/</loc>
+    <loc>//localhost:1319/blogs/heloc-rates-hit-new-lows-what-borrowers-need-to-know-for-q4-2025/</loc>
     <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/interest-rates/</loc>
+    <loc>//localhost:1319/tags/interest-rates/</loc>
     <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/market-trends/</loc>
+    <loc>//localhost:1319/tags/market-trends/</loc>
     <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/rate-caps/</loc>
+    <loc>//localhost:1319/tags/rate-caps/</loc>
     <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/understanding-heloc-interest-rate-caps-and-protection-strategies/</loc>
+    <loc>//localhost:1319/blogs/understanding-heloc-interest-rate-caps-and-protection-strategies/</loc>
     <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/application/</loc>
+    <loc>//localhost:1319/tags/application/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/documentation/</loc>
+    <loc>//localhost:1319/tags/documentation/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-application-process-step-by-step-guide-for-2025/</loc>
+    <loc>//localhost:1319/blogs/heloc-application-process-step-by-step-guide-for-2025/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/process/</loc>
+    <loc>//localhost:1319/tags/process/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/draw-period/</loc>
+    <loc>//localhost:1319/tags/draw-period/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-draw-period-vs-repayment-period-what-you-need-to-know/</loc>
+    <loc>//localhost:1319/blogs/heloc-draw-period-vs-repayment-period-what-you-need-to-know/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/repayment/</loc>
+    <loc>//localhost:1319/tags/repayment/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-vs.-home-equity-loan-which-option-fits-your-financial-strategy/</loc>
+    <loc>//localhost:1319/blogs/heloc-vs.-home-equity-loan-which-option-fits-your-financial-strategy/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/home-equity-loan/</loc>
+    <loc>//localhost:1319/tags/home-equity-loan/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/irs/</loc>
+    <loc>//localhost:1319/tags/irs/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/tax-benefits-of-helocs-maximizing-your-deductions-in-2025/</loc>
+    <loc>//localhost:1319/blogs/tax-benefits-of-helocs-maximizing-your-deductions-in-2025/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/tax-deductions/</loc>
+    <loc>//localhost:1319/tags/tax-deductions/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/tax-planning/</loc>
+    <loc>//localhost:1319/tags/tax-planning/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/cash-out-refinance/</loc>
+    <loc>//localhost:1319/tags/cash-out-refinance/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-vs-cash-out-refinance-complete-comparison-guide-2025/</loc>
+    <loc>//localhost:1319/blogs/heloc-vs-cash-out-refinance-complete-comparison-guide-2025/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/home-equity/</loc>
+    <loc>//localhost:1319/tags/home-equity/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-safety-tips-protecting-yourself-from-common-pitfalls/</loc>
+    <loc>//localhost:1319/blogs/heloc-safety-tips-protecting-yourself-from-common-pitfalls/</loc>
     <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/risk-management/</loc>
+    <loc>//localhost:1319/tags/risk-management/</loc>
     <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/safety/</loc>
+    <loc>//localhost:1319/tags/safety/</loc>
     <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-for-investment-properties-rules-risks-and-strategies/</loc>
+    <loc>//localhost:1319/blogs/heloc-for-investment-properties-rules-risks-and-strategies/</loc>
     <lastmod>2025-10-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/real-estate/</loc>
+    <loc>//localhost:1319/tags/real-estate/</loc>
     <lastmod>2025-10-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/rental-property/</loc>
+    <loc>//localhost:1319/tags/rental-property/</loc>
     <lastmod>2025-10-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/estate-planning/</loc>
+    <loc>//localhost:1319/tags/estate-planning/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/fixed-income/</loc>
+    <loc>//localhost:1319/tags/fixed-income/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-in-retirement-smart-strategies-for-senior-homeowners/</loc>
+    <loc>//localhost:1319/blogs/heloc-in-retirement-smart-strategies-for-senior-homeowners/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/retirement/</loc>
+    <loc>//localhost:1319/tags/retirement/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/seniors/</loc>
+    <loc>//localhost:1319/tags/seniors/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/economic-outlook/</loc>
+    <loc>//localhost:1319/tags/economic-outlook/</loc>
     <lastmod>2025-10-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/tags/forecast/</loc>
+    <loc>//localhost:1319/tags/forecast/</loc>
     <lastmod>2025-10-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/blog/heloc-market-forecast-2026-what-experts-predict-for-rates-and-trends/</loc>
+    <loc>//localhost:1319/blogs/heloc-market-forecast-2026-what-experts-predict-for-rates-and-trends/</loc>
     <lastmod>2025-10-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1319/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

@@ -1,0 +1,12 @@
+name = "HELOC Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Latest HELOC insights, tips, and guidance from mortgage professionals"
+homepage = "https://helocloanofficers.com/"
+tags = ["blog", "responsive", "mortgage", "heloc"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders"
+  homepage = "https://helocloanofficers.com/"

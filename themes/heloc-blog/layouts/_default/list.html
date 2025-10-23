@@ -1,5 +1,97 @@
 {{ define "main" }}
 
+<!-- SEO Schema Markup for Blog Archive -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}#webpage",
+      "url": "{{ .Permalink }}",
+      "name": "{{ .Title }} | {{ .Site.Title }}",
+      "description": "{{ with .Description }}{{ . }}{{ else }}Browse our complete collection of HELOC insights, tips, and guidance from mortgage professionals.{{ end }}",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "{{ .Site.BaseURL }}#website",
+        "url": "{{ .Site.BaseURL }}",
+        "name": "{{ .Site.Title }}"
+      },
+      "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ .Site.BaseURL }}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "{{ .Permalink }}"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Blog",
+      "@id": "{{ .Permalink }}#blog",
+      "mainEntityOfPage": {
+        "@id": "{{ .Permalink }}#webpage"
+      },
+      "name": "HELOC Insights & Updates",
+      "description": "Latest HELOC insights, tips, and guidance from mortgage professionals",
+      "publisher": {
+        "@type": "Organization",
+        "@id": "{{ .Site.BaseURL }}#organization",
+        "name": "{{ .Site.Params.author }}",
+        "url": "{{ .Site.BaseURL }}"
+      },
+      "blogPost": [
+        {{ range $index, $page := .Paginator.Pages }}
+        {{ if $index }},{{ end }}
+        {
+          "@type": "BlogPosting",
+          "@id": "{{ $page.Permalink }}#blogposting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ $page.Permalink }}"
+          },
+          "headline": {{ $page.Title | jsonify }},
+          "description": {{ $page.Params.excerpt | default $page.Summary | jsonify }},
+          "image": {
+            "@type": "ImageObject",
+            "url": {{ if $page.Params.image }}{{ $page.Params.image | absURL | jsonify }}{{ else }}"{{ .Site.BaseURL }}/favicon.png"{{ end }},
+            "width": "1200",
+            "height": "630"
+          },
+          "datePublished": {{ $page.PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+          "dateModified": {{ $page.Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+          "author": {
+            "@type": "Organization",
+            "name": "{{ .Site.Params.author }}",
+            "url": "{{ .Site.BaseURL }}"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "{{ .Site.BaseURL }}#organization"
+          },
+          "url": {{ $page.Permalink | jsonify }},
+          "wordCount": {{ $page.WordCount }},
+          "articleSection": {{ $page.Params.category | default "HELOC" | jsonify }},
+          "keywords": [{{ range $i, $tag := $page.Params.tags }}{{ if $i }},{{ end }}{{ $tag | jsonify }}{{ end }}]
+        }
+        {{ end }}
+      ]
+    }
+  ]
+}
+</script>
+
 <!-- Hero Header with Background -->
 <div class="relative bg-gradient-to-br from-primary to-blue-900 text-white py-20 sm:py-24">
     <!-- Background Pattern -->
@@ -7,17 +99,17 @@
         <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 30px 30px;"></div>
     </div>
     
-    <div class="container mx-auto px-6 relative z-10">
+    <div class="container mx-auto pt-16 px-6 relative z-10">
         <!-- Breadcrumb -->
-        <nav class="mb-6 text-sm text-center">
+        <nav class="mb-6 text-sm text-center uppercase font-medium">
             <a href="/" class="text-white/80 hover:text-white hover:underline">Home</a>
             <span class="text-white/60 mx-2">/</span>
             <span class="text-white/80">Blog</span>
         </nav>
         
         <div class="text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">HELOC Insights & Updates</h1>
-            <p class="text-xl text-white/90 max-w-3xl mx-auto">Stay informed with the latest trends, tips, and guidance from mortgage professionals.</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">HELOC Insights & Updates</h1>
+            <p class="text-md text-white/90 max-w-3xl mx-auto">Stay informed with the latest trends, tips, and guidance from mortgage professionals.</p>
         </div>
     </div>
 </div>
@@ -34,7 +126,7 @@
             {{ $date := .Date.Format "2006-01-02" }}
             {{ $dateFormatted := .Date.Format "January 2, 2006" }}
             {{ $excerpt := .Params.excerpt }}
-            <article class="bg-background rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <article class="bg-background rounded-xl overflow-hidden transition-shadow duration-300">
                 {{ if $image }}
                 <a href="{{ $permalink }}">
                     <div class="h-48 overflow-hidden">
@@ -56,7 +148,7 @@
                     {{ if $excerpt }}
                     <p class="text-gray-600 text-sm mb-4 line-clamp-3">{{ $excerpt }}</p>
                     {{ end }}
-                    <a href="{{ $permalink }}" class="inline-flex items-center text-accent hover:text-blue-600 font-medium text-sm">
+                    <a href="{{ $permalink }}" class="inline-flex items-center text-accent hover:text-primary font-medium text-sm">
                         Read More
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -71,18 +163,18 @@
         {{ $paginator := .Paginator }}
         {{ if gt $paginator.TotalPages 1 }}
         <nav class="mt-12" aria-label="Pagination">
-            <div class="flex justify-center items-center space-x-2">
+            <div class="flex justify-start items-center space-x-2">
                 <!-- Previous Button -->
                 {{ if $paginator.HasPrev }}
                 <a href="{{ $paginator.Prev.URL }}" 
-                   class="flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">
+                   class="flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:text-gray-700 transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                     </svg>
                     Previous
                 </a>
                 {{ else }}
-                <span class="flex items-center px-4 py-2 text-sm font-medium text-gray-300 bg-gray-100 border border-gray-200 rounded-lg cursor-not-allowed">
+                <span class="flex items-center px-4 py-2 text-sm font-medium text-gray-300 bg-gray-100 border border-gray-200 rounded-md cursor-not-allowed">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                     </svg>
@@ -100,7 +192,7 @@
 
                 <!-- First page if not in range -->
                 {{ if gt $start 2 }}
-                <a href="{{ $paginator.First.URL }}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">1</a>
+                <a href="{{ $paginator.First.URL }}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:text-gray-700 transition-colors">1</a>
                 {{ if gt $start 3 }}
                 <span class="px-3 py-2 text-sm font-medium text-gray-500">...</span>
                 {{ end }}
@@ -110,11 +202,11 @@
                 {{ range $paginator.Pagers }}
                 {{ if and (ge .PageNumber $start) (le .PageNumber $end) }}
                 {{ if eq .PageNumber $current }}
-                <span class="z-10 px-3 py-2 text-sm font-medium text-white bg-accent border border-accent rounded-lg" aria-current="page">
+                <span class="z-10 px-3 py-2 text-sm font-medium text-white bg-accent border border-accent rounded-md" aria-current="page">
                     {{ .PageNumber }}
                 </span>
                 {{ else }}
-                <a href="{{ .URL }}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors">
+                <a href="{{ .URL }}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:text-gray-700 transition-colors">
                     {{ .PageNumber }}
                 </a>
                 {{ end }}
@@ -149,7 +241,7 @@
             </div>
 
             <!-- Pagination Info -->
-            <div class="text-center mt-4">
+            <div class="text-left mt-4">
                 <p class="text-sm text-gray-600">
                     Showing page {{ $current }} of {{ $total }} 
                     ({{ len .Paginator.Pages }} of {{ .Paginator.TotalNumberOfElements }} articles)
