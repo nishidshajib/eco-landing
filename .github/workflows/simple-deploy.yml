@@ -1,0 +1,53 @@
+name: Simple Deploy to Hostinger
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build all sites
+      run: |
+        # Build main site
+        hugo --minify
+        
+        # Build other configurations if they exist
+        if [ -f "config/conventionalmortgagebrokers/hugo.toml" ]; then
+          hugo --config config/conventionalmortgagebrokers/hugo.toml --minify
+        fi
+        
+        if [ -f "config/conventionalmortgageloans/hugo.toml" ]; then
+          hugo --config config/conventionalmortgageloans/hugo.toml --minify
+        fi
+        
+        if [ -f "config/helocloanofficers/hugo.toml" ]; then
+          hugo --config config/helocloanofficers/hugo.toml --minify
+        fi
+
+    - name: Deploy to Hostinger
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/
+        server-dir: /public_html/
