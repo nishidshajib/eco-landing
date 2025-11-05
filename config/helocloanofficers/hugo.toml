@@ -1,0 +1,221 @@
+baseURL = 'https://helocloanofficers.com/'
+title = 'HELOC Loan Officers'
+contentDir = 'content/helocloanofficers'
+publishDir = 'public/helocloanofficers'
+
+[params]
+  description = 'Strategic HELOC planning hub with equity extraction playbooks, cash-out comparisons, and vetted loan officers nationwide'
+  shortName = 'HELOC Officers'
+  tagline = 'Your Trusted Source for Home Equity Line of Credit Solutions'
+  homepage = 'https://helocloanofficers.com/'
+  
+  siteName = 'HELOC Loan Officers'
+  siteDescription = 'Strategic HELOC planning hub for HELOCLoanOfficers.com with equity extraction playbooks, cash-out comparisons, and vetted loan officers.'
+  keywords = ['HELOC', 'Home Equity Line of Credit', 'Equity Extraction', 'Cash-Out Refinance', 'Middle Credit Score', 'Browse Lenders®', 'Home Equity Loans', 'Renovation Financing']
+  serviceType = 'HELOC Lending Services'
+  supportEmail = 'support@helocloanofficers.com'
+  
+  # Hero Section
+  heroTitle = 'Unlock Equity Intelligently With HELOC Loan Officers™'
+  heroSubtitle = 'Plan renovations, debt consolidation, or liquidity reserves with specialists who coordinate draw schedules, rate caps, and cash extraction timelines tailored to your property goals.'
+  heroImage = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Analyze Cash-Out Alternatives'
+  heroCTA1Link = 'https://www.cash-outrefinance.com'
+  heroCTA2Text = 'Book Equity Strategy Call'
+  heroCTA2Link = 'https://www.browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Equity Extraction Guides With Cash-Flow Clarity'
+  aboutImage = 'https://images.unsplash.com/photo-1528901166007-3784c7dd3653?q=80&w=1600&auto=format&fit=crop'
+  
+  # Core Domains (Primary anchor links)
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'BrowseLenders.com'
+  tertiaryDomainURL = 'https://www.browselenders.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Program Guidance for Every HELOC Borrower'
+  programsSubtitle = "Every borrower's home equity situation is unique. Our structured approach ensures understanding before applying."
+  
+  # Program Cards
+  program1Title = 'HELOC Draw Strategy'
+  program1Description = 'Understand HELOC credit limits, draw periods, and repayment structures. Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> and home equity position impact your borrowing capacity and rate eligibility.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Equity Readiness Check'
+  program2Description = 'Evaluate combined loan-to-value ratios, verify equity requirements through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>, and prepare property documentation. Strengthen your HELOC application with proper equity assessment.'
+  program2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Rate Cap Protection'
+  program3Description = 'Plan your HELOC rate strategy with lifetime caps and adjustment periods. Understand how to protect yourself from rate volatility while maintaining access to flexible credit, including <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance alternatives</a>.'
+  program3Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Check HELOC Eligibility'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = 'To begin your HELOC journey, compare verified lenders through the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for competitive rate insights and qualification guidance.'
+  
+  # Education Section
+  educationTitle = 'HELOC Education & First-Time Considerations'
+  educationSubtitle = "A HELOC isn't just a loan—it's a flexible financial tool. Informed borrowers make smarter decisions."
+  
+  # Education Cards
+  edu1Title = 'HELOC Basics'
+  edu1Description = 'Learn the difference between HELOCs, home equity loans, and cash-out refinancing. Discover which option suits your equity extraction goals and repayment timeline through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'
+  edu1Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Documentation'
+  edu2Description = 'HELOC applications require property valuations, income verification, existing mortgage details, and credit reports. Lenders assess combined loan-to-value ratios and debt-to-income calculations.'
+  edu2Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Draw Timing'
+  edu3Description = 'Understand HELOC draw periods, rate adjustment schedules, and market conditions. Strategic timing can minimize rate risk. Compare with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing alternatives</a>.'
+  edu3Image = 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Equity Readiness'
+  edu4Description = 'Ensure your equity position, credit scores, and payment history meet HELOC standards. Visit <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">MiddleCreditScore.com</a> to understand credit requirements for HELOC approval.'
+  edu4Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Check HELOC Eligibility'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center – Smarter HELOC Planning'
+  learningSubtitle = 'Knowledge is the foundation of confidence in home equity decisions.'
+  learningImage = 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Strategic HELOC planning requires understanding equity positions, rate structures, and draw strategies. Our learning center simplifies home equity concepts and provides clear financial guidance so homeowners can tap equity with confidence. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> is essential for HELOC approval.'
+  learningBullet1 = 'Calculate maximum HELOC borrowing capacity based on home value and existing liens.'
+  learningBullet2 = 'Compare HELOC lenders at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> using transparent rate caps and fee disclosures.'
+  learningBullet3 = 'Understand combined loan-to-value ratios and equity requirements for HELOC qualification.'
+  learningBullet4 = 'Compare <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> vs HELOC for different equity extraction scenarios.'
+  learningPara2 = 'Our mission is education-first lending—empowering every homeowner to make informed equity decisions backed by market data and professional guidance.'
+  learningPara3 = '<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore our HELOC Resources</a> for calculators, rate comparisons, and expert tutorials on equity extraction, draw period management, and strategic home equity planning.'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders®'
+  whyChooseSubtitle = 'HELOC clarity, equity protection, and competitive options—built for homeowners.'
+  whyChoosePara1 = 'Todays homeowners need more than HELOC rates—they need clarity, protection, and education before tapping their home equity.'
+  whyChoosePara2 = 'Thats why <strong>Browse Lenders®</strong> was built as a <strong>national HELOC-education and financial-wellness resource</strong> for both consumers and employees.'
+  
+  whyChooseBox1Title = 'HELOC-Ready Scenarios'
+  whyChooseBox1Para = 'Side-by-side HELOC quotes, clear fee line-items, and realistic draw timelines help you decide confidently.'
+  whyChooseBox1Bullet1 = 'Compare multiple HELOC lenders without repeated credit pulls'
+  whyChooseBox1Bullet2 = 'See all costs upfront—no surprise fees at closing or during draw period'
+  whyChooseBox1Bullet3 = 'Understand timelines for appraisals, credit limits, and first advance'
+  
+  whyChooseBox2Title = 'Transparent Equity Numbers'
+  whyChooseBox2Para = 'Plain-English math on HELOC rates, rate caps, combined LTV, and repayment pivots—no surprises.'
+  whyChooseBox2Bullet1 = 'Detailed APR breakdowns that reflect real HELOC costs including rate caps'
+  whyChooseBox2Bullet2 = 'Clear explanations of draw periods, repayment periods, and rate adjustment triggers'
+  whyChooseBox2Bullet3 = 'Guidance on equity requirements, closing costs, and when HELOCs make financial sense'
+  
+  whyChooseBox3Title = 'Competitive HELOC Options'
+  whyChooseBox3Para = 'Access multiple HELOC lenders, request equity clarifications, and choose the line of credit that matches your renovation or debt consolidation goals.'
+  whyChooseBox3Bullet1 = 'Choose from a network of vetted HELOC specialists nationwide'
+  whyChooseBox3Bullet2 = 'No obligation to proceed with any lender or advance funds'
+  whyChooseBox3Bullet3 = 'Ask questions, compare HELOC terms, and lock rates when you are ready'
+  
+  whyChooseCTA = 'Start Comparing HELOC Lenders'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What HELOC Clients Are Saying'
+  testimonialsSubtitle = 'Real feedback from homeowners who unlocked their equity wisely.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'I thought a cash-out refinance was my only option, but HELOCLoanOfficers.com showed me how a HELOC would save me money on interest. The comparison tools made the difference crystal clear. I went with a HELOC and kept my low first mortgage rate.'
+  testimonial1Name = 'Verified Homeowner'
+  testimonial1Subtitle = 'HELOC vs cash-out comparison saved me thousands.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'Understanding rate caps before I applied gave me confidence. I knew exactly what my worst-case monthly payment could be during the draw period. No surprises, no hidden terms—just clear education and transparent lender matching through Browse Lenders®.'
+  testimonial2Name = 'Verified Homeowner'
+  testimonial2Subtitle = 'Rate cap education gave me peace of mind.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'My credit score was in the middle tier, and I didnt know if Id qualify for a HELOC. The MiddleCreditScore.com link helped me understand exactly where I stood. I improved my score by 30 points and then got approved at a better rate.'
+  testimonial3Name = 'Verified Homeowner'
+  testimonial3Subtitle = 'Credit guidance helped me qualify for better terms.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'I used my HELOC to consolidate high-interest debt, and the guidance here helped me avoid over-borrowing. The calculators showed me exactly how much I needed versus how much I qualified for. That discipline saved me from making a bigger mistake.'
+  testimonial4Name = 'Verified Homeowner'
+  testimonial4Subtitle = 'Education prevented me from over-leveraging my equity.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'The draw period vs repayment period breakdown was the most helpful thing I read. I planned my renovation timeline around the 10-year draw, knowing exactly when payments would increase. This site taught me what my bank never explained.'
+  testimonial5Name = 'Verified Homeowner'
+  testimonial5Subtitle = 'Draw period planning made my renovation budget work.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Most HELOC sites just want you to apply. This one actually educated me on combined loan-to-value ratios, lien positions, and how to protect myself from rate volatility. I felt informed, not pressured. Thats rare in mortgage marketing.'
+  testimonial6Name = 'Verified Homeowner'
+  testimonial6Subtitle = 'Education first, application second—exactly what I needed.'
+  
+  # Calculators Section
+  calculatorsTitle = 'HELOC Financial Calculators & Tools'
+  calculatorsSubtitle = 'Plan your equity draw, model scenarios, and estimate costs before you apply.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Credit Readiness'
+  creditScoreImage = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Most homeowners dont realize that HELOC lenders qualify you based on your middle credit score — not the highest or the lowest. Middle Credit Score® helps you understand how HELOC lenders evaluate your creditworthiness, which factors impact your combined loan-to-value ratio eligibility, and what strategic improvements can unlock better HELOC rates and higher credit limits before you ever apply.'
+  creditScoreHeading1 = 'No-cost access to HELOC credit insights'
+  creditScoreText1 = 'Gain free access to the same credit evaluation framework that HELOC lenders use to assess equity borrowers — no subscriptions, monthly fees, or credit pulls required.'
+  creditScoreHeading2 = 'Know your numbers before applying for a HELOC'
+  creditScoreText2 = 'Learn how your middle credit score impacts HELOC approval, rate pricing, and maximum borrowing limits. Targeted credit improvements can unlock better terms and lower rate caps.'
+  creditScoreHeading3 = 'Real progress through financial literacy'
+  creditScoreText3 = 'With the right knowledge, homeowners can strengthen HELOC eligibility, build long-term equity confidence, and protect themselves from predatory home equity products or high-cost second liens.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers — Home Equity Education as an Employee Benefit'
+  employersSubtitle = 'Help employees access home equity education through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Todays HR departments are expanding their wellness strategies beyond healthcare and retirement benefits by including home equity and HELOC education. Through Browse Lenders®, employers can offer no-cost access to verified HELOC lenders and equity extraction guidance that help employees unlock home equity wisely, strengthen financial flexibility, and gain access to capital for major expenses or debt consolidation.'
+  employersBullet1Title = 'No-cost HELOC benefit integration'
+  employersBullet1Text = 'Add Browse Lenders® HELOC resources to your financial-wellness or EAP program without contracts, fees, or onboarding friction.'
+  employersBullet2Title = 'Home equity readiness tools'
+  employersBullet2Text = 'Employees learn how combined loan-to-value ratios, credit tiers, and equity positions impact HELOC eligibility before sharing personal information with lenders.'
+  employersBullet3Title = 'Boost retention through equity access'
+  employersBullet3Text = 'Empower your workforce with transparent HELOC guidance and home equity education that reduces financial stress, provides access to capital, and improves long-term stability.'
+  employersCTA = 'Learn About Employer HELOC Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest HELOC Insights & Updates'
+  blogSubtitle = 'Stay informed with the latest HELOC trends, tips, and guidance from mortgage professionals.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked HELOC Questions'
+  faqSubtitle = 'Clear answers to common HELOC questions.'
+  
+  # FAQ 1
+  faq1Question = 'What is a HELOC and how does it work?'
+  faq1Answer = 'A Home Equity Line of Credit (HELOC) is a revolving credit line secured by your homes equity. Unlike a fixed home equity loan, a HELOC lets you borrow, repay, and borrow again during the draw period (typically 10 years), similar to a credit card. You only pay interest on what you actually use, making it ideal for ongoing expenses like renovations, debt consolidation, or emergency reserves.'
+  
+  # FAQ 2
+  faq2Question = 'What is the difference between a HELOC and a cash-out refinance?'
+  faq2Answer = 'A HELOC is a second lien that supplements your existing first mortgage, preserving your current rate. A <a class="text-accent hover:underline" href="https://www.cash-outrefinance.com" target="_blank">cash-out refinance</a> replaces your entire mortgage with a new, larger loan. Choose a HELOC if you want to keep your low first mortgage rate; choose cash-out refinancing if current rates are lower than your existing mortgage or you want to consolidate all debt into one payment.'
+  
+  # FAQ 3
+  faq3Question = 'What credit score do I need to qualify for a HELOC?'
+  faq3Answer = 'Most HELOC lenders require a minimum credit score of 620-680, though higher scores (700+) typically unlock better rates and terms. Understanding your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> is crucial, as lenders use your mid-score among all three bureaus to determine HELOC eligibility, rate pricing, and maximum borrowing limits.'
+  
+  # FAQ 4
+  faq4Question = 'Can my employer offer HELOC education as an employee benefit?'
+  faq4Answer = 'Yes. Employers can integrate Browse Lenders® HELOC resources into financial wellness programs at no cost to the organization. Employees gain access to educational tools, transparent lender comparisons, and professional HELOC guidance—helping support home equity strategies and long-term financial stability for American homeowners.'
+  
+  # Contact/CTA Section
+  ctaTitle = "Ready to Unlock Your Home's Equity?"
+  ctaSubtitle = 'Connect with trusted HELOC lenders and get competitive rates with transparent terms.'
+  ctaDescription = 'Explore verified lenders and employee financial-wellness tools at BrowseLenders.com—helping America borrow smarter.'

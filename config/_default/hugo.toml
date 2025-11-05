@@ -1,10 +1,12 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Conventional Mortgage Loans'
+title = 'HELOC Loan Officers'
 theme = 'heloc-blog'
 disableKinds = []
 relativeURLs = true
 canonifyURLs = true
+contentDir = 'content'
+publishDir = 'public'
 
 # Build configuration for Tailwind CSS
 [build]
@@ -30,27 +32,27 @@ pagerSize = 12
 path = "page"
 
 [params]
-  description = 'Expert conventional mortgage loan solutions with competitive rates and professional guidance for homebuyers nationwide'
+  description = 'Strategic HELOC planning hub with equity extraction playbooks, cash-out comparisons, and vetted loan officers nationwide'
   author = 'Browse Lenders®'
-  shortName = 'Conventional Loans'
-  tagline = 'Your Trusted Source for Conventional Mortgage Solutions'
-  homepage = 'https://conventionalmortgageloans.com/'
+  shortName = 'HELOC Officers'
+  tagline = 'Your Trusted Source for Home Equity Line of Credit Solutions'
+  homepage = 'https://helocloanofficers.com/'
   
   # SEO Configuration
-  siteName = 'Conventional Mortgage Loans'
-  siteDescription = 'Comprehensive conventional mortgage loan solutions for homebuyers. Fixed-rate, adjustable-rate, low down payment options, expert guidance, and competitive rates nationwide.'
-  keywords = ['Conventional Loans', 'Conventional Mortgages', 'Fixed Rate Mortgages', 'Adjustable Rate Mortgages', 'Conventional Loan Requirements', 'Browse Lenders®', 'Mortgage Broker', 'Home Loans', 'Purchase Loans']
+  siteName = 'HELOC Loan Officers'
+  siteDescription = 'Strategic HELOC planning hub for HELOCLoanOfficers.com with equity extraction playbooks, cash-out comparisons, and vetted loan officers.'
+  keywords = ['HELOC', 'Home Equity Line of Credit', 'Equity Extraction', 'Cash-Out Refinance', 'Middle Credit Score', 'Browse Lenders®', 'Home Equity Loans', 'Renovation Financing']
   
   # Social Media
   twitterHandle = '@BrowseLenders'
-  supportEmail = 'support@browselenders.com'
+  supportEmail = 'support@helocloanofficers.com'
   
   # Theme configuration
   [params.theme]
-    name = 'Conventional Mortgage Loans Blog Theme'
+    name = 'HELOC Loan Officers Blog Theme'
     license = 'MIT'
     licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
-    tags = ['blog', 'responsive', 'mortgage', 'jumbo loans', 'luxury homes']
+    tags = ['blog', 'responsive', 'heloc', 'home equity', 'equity extraction']
     features = ['blog', 'responsive']
     minVersion = '0.100.0'
   

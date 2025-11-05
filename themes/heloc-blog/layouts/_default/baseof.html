@@ -15,7 +15,7 @@
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} | {{ .Site.Params.tagline }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ .Site.BaseURL }}/favicon.png{{ end }}">
+    <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop{{ end }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -33,7 +33,7 @@
     <meta name="twitter:url" content="{{ .Permalink }}">
     <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} | {{ .Site.Params.tagline }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
     <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ .Site.BaseURL }}/favicon.png{{ end }}">
+    <meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop{{ end }}">
     <meta name="twitter:creator" content="{{ .Site.Params.twitterHandle | default "@BrowseLenders" }}">
     <meta name="twitter:site" content="{{ .Site.Params.twitterHandle | default "@BrowseLenders" }}">
     

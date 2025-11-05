@@ -7,10 +7,10 @@
     {
       "@type": "Organization",
       "@id": "{{ .Site.BaseURL }}#organization",
-      "name": "{{ .Site.Params.author }}",
+      "name": "{{ .Site.Title }}",
       "url": "{{ .Site.BaseURL }}",
       "sameAs": [
-        "{{ .Site.Params.homepage | default "https://www.browselenders.com" }}"
+        "https://www.browselenders.com"
       ],
       "logo": {
         "@type": "ImageObject",
@@ -18,7 +18,7 @@
         "width": "300",
         "height": "300"
       },
-      "description": "{{ .Site.Params.description }}",
+      "description": "{{ .Site.Params.siteDescription | default .Site.Params.description }}",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "US"
@@ -26,7 +26,7 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
-        "email": "{{ .Site.Params.supportEmail | default "support@browselenders.com" }}"
+        "email": "{{ .Site.Params.supportEmail }}"
       }
     },
     {
@@ -42,7 +42,7 @@
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "{{ .Site.BaseURL }}/search?q={search_term_string}"
+          "urlTemplate": "{{ .Site.BaseURL }}blogs/?s={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       },
@@ -69,18 +69,21 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "{{ .Site.BaseURL }}"
+            "item": {
+              "@type": "WebPage",
+              "@id": "{{ .Site.BaseURL }}"
+            }
           }
         ]
       },
       "mainEntity": {
         "@type": "Service",
-        "name": "HELOC Education and Lending Services",
-        "description": "Comprehensive HELOC guidance, lender comparisons, and mortgage education for consumers and employees nationwide",
+        "name": "{{ .Site.Title }} Services",
+        "description": "{{ .Site.Params.siteDescription | default .Site.Params.description }}",
         "provider": {
           "@id": "{{ .Site.BaseURL }}#organization"
         },
-        "serviceType": "Financial Education",
+        "serviceType": "{{ .Site.Params.serviceType | default "Mortgage Services" }}",
         "areaServed": {
           "@type": "Country",
           "name": "United States"
@@ -220,16 +223,16 @@
 </style>
 <main class="w-full">
      <!-- Hero -->
-     <section id="home" class="relative flex h-screen w-full items-center justify-center bg-cover bg-center text-white pt-16 pb-10" style="background-image: linear-gradient( rgba(0, 45, 98, 0.65), rgba(0, 45, 98, 0.85) ), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop');
+     <section id="home" class="relative flex h-screen w-full items-center justify-center bg-cover bg-center text-white pt-16 pb-10" style="background-image: linear-gradient( rgba(0, 45, 98, 0.65), rgba(0, 45, 98, 0.85) ), url('{{ .Site.Params.heroImage }}');
                     ">
           <div class="text-center px-4 z-10 max-w-5xl">
-               <h1 class="text-4xl md:text-6xl font-black leading-tight">HELOC Loan Officers Unlock Home Equity with Confidence</h1>
-               <p class="mt-4 max-w-3xl mx-auto text-lg">Compare HELOC structures, stages, and lender options nationwide with transparent pricing and expert-guided education.</p>
+               <h1 class="text-3xl md:text-5xl font-bold leading-tight">{{ .Site.Params.heroTitle }}</h1>
+               <p class="mt-4 max-w-3xl mx-auto text-lg">{{ .Site.Params.heroSubtitle }}</p>
                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                    <a class="bg-accent hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-md text-xl" href="https://www.browselenders.com">Get Pre-Qualified</a>
-                    <a class="bg-white/10 border border-white/30 hover:bg-white/20 text-white font-semibold py-4 px-10 rounded-md text-xl" href="mailto:support@browselenders.com">Contact Support</a>
+                    <a class="bg-accent hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-md text-xl" href="{{ .Site.Params.heroCTA1Link }}">{{ .Site.Params.heroCTA1Text }}</a>
+                    <a class="bg-white/10 border border-white/30 hover:bg-white/20 text-white font-semibold py-4 px-10 rounded-md text-xl" href="{{ .Site.Params.heroCTA2Link }}">{{ .Site.Params.heroCTA2Text }}</a>
                </div>
-               <p class="mt-6 text-sm text-white/90 italic">Powered by Browse Lenders the nation's trusted mortgage and credit-education platform for employees and consumers.</p>
+               <p class="mt-6 text-sm text-white/90 italic">Powered by Browse Lenders® the nation's trusted mortgage and credit-education platform for employees and consumers.</p>
           </div>
      </section>
      <!-- About (3 paragraphs, 4575 words) -->
@@ -237,21 +240,12 @@
           <div class="container mx-auto px-6">
                <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="rounded-lg overflow-hidden shadow-lg h-[300px] md:h-[600px] ">
-                         <img alt="HELOC overview and documents" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1724780997589-4c67b98491ee?q=80&w=2000&auto=format&fit=crop" />
+                         <img alt="{{ .Site.Title }} overview" class="w-full h-full object-cover" src="{{ .Site.Params.aboutImage }}" />
                     </div>
                     <div class="text-gray-800">
-                         <h2 class="text-3xl font-bold text-primary mb-4"> Nationwide Guidance. Transparent Numbers. </h2>
-                         <p class="mb-6">
-                              <strong>HELOCLoanOfficers.com</strong> helps homeowners and buyers nationwide learn how to unlock the power of home equity safely and strategically. Whether youre consolidating debt, funding a renovation, or creating long-term financial flexibility, understanding how a <strong>Home Equity Line of Credit (HELOC)</strong> works can empower you to make smart, sustainable financial choices.
-                         </p>
-                         <p class="mb-6"> Through our nationwide network of verified mortgage professionals, consumers and employees can compare <strong>HELOC rates, draw periods</strong>, and <strong>repayment structuresall</strong> without pressure or confusion. Every option is guided by transparency, education, and verified information from trusted lending professionals. </p>
-                         <p class="mb-6">
-                              <strong>Browse Lenders</strong> connects consumers, employees, and verified mortgage professionals nationwide. Our platform lets users <strong>compare options safely, understand their <a href="https://www.middlecreditscore.com" class="text-accent">Middle Credit Score</a>
-                              </strong>, and access qualified lenders without sales pressure.
-                         </p>
-                         <p class="mb-12">When youre ready to compare programs, start by exploring the <a href="https://www.browselenders.com" class="font-bold text-accent">Browse Lenders marketplace</a> Americas <strong>national mortgage-lending resource</strong> for consumers and employees. </p>
-                         <div>
-                              <a class="bg-accent hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md " href="#programs">See Program Guidance</a>
+                         <h2 class="text-3xl font-bold text-primary mb-4">{{ .Site.Params.aboutTitle }}</h2>
+                         <div class="prose prose-lg max-w-none">
+                              {{ .Content }}
                          </div>
                     </div>
                </div>
@@ -261,29 +255,29 @@
      <section id="programs" class="py-16 sm:py-20 bg-background">
           <div class="container mx-auto px-6">
                <div class="text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary"> Program Guidance for Every Borrower </h2>
-                    <p class="mt-2 text-lg text-gray-600"> Every borrowers home equity situation is unique. Our structured approach ensures that consumers and employees understand their borrowing power before applying.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">{{ .Site.Params.programsTitle }}</h2>
+                    <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.programsSubtitle }}</p>
                </div>
                <div class="grid md:grid-cols-3 gap-8 py-8">
                     <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                         <img alt="Core HELOC program" class="w-full h-[250px] object-cover rounded-lg mb-4" src="https://images.unsplash.com/photo-1553729784-e91953dec042?q=80&w=1600&auto=format&fit=crop" />
-                         <h3 class="text-xl font-bold text-primary mb-2"> Core Program </h3>
-                         <p class="text-gray-600">Understand draw limits, interest structures, and variable-rate conditions before committing. Learn how equity, credit, and loan-to-value (LTV) ratios affect approval.</p>
+                         <img alt="{{ .Site.Params.program1Title }}" class="w-full h-[250px] object-cover rounded-lg mb-4" src="{{ .Site.Params.program1Image }}" />
+                         <h3 class="text-xl font-bold text-primary mb-2">{{ .Site.Params.program1Title }}</h3>
+                         <p class="text-gray-600">{{ .Site.Params.program1Description | safeHTML }}</p>
                     </div>
                     <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                         <img alt="Eligibility and readiness" class="w-full h-[250px] object-cover rounded-lg mb-4" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop" />
-                         <h3 class="text-xl font-bold text-primary mb-2"> Eligibility & Readiness </h3>
-                         <p class="text-gray-600"> Model debt-to-income ratios, confirm credit score tiers, and organize documentation before application. Strengthen your file and increase lender confidence.</p>
+                         <img alt="{{ .Site.Params.program2Title }}" class="w-full h-[250px] object-cover rounded-lg mb-4" src="{{ .Site.Params.program2Image }}" />
+                         <h3 class="text-xl font-bold text-primary mb-2">{{ .Site.Params.program2Title }}</h3>
+                         <p class="text-gray-600">{{ .Site.Params.program2Description | safeHTML }}</p>
                     </div>
                     <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                         <img alt="Lock and pricing strategy" class="w-full h-[250px] object-cover rounded-lg mb-4" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" />
-                         <h3 class="text-xl font-bold text-primary mb-2"> Lock Strategy </h3>
-                         <p class="text-gray-600">Plan your timing strategically. Learn how to lock variable or hybrid rates when market conditions align with your financial goals.</p>
+                         <img alt="{{ .Site.Params.program3Title }}" class="w-full h-[250px] object-cover rounded-lg mb-4" src="{{ .Site.Params.program3Image }}" />
+                         <h3 class="text-xl font-bold text-primary mb-2">{{ .Site.Params.program3Title }}</h3>
+                         <p class="text-gray-600">{{ .Site.Params.program3Description | safeHTML }}</p>
                     </div>
                </div>
                <div class="text-center">
-                    <p class="mb-4">To start learning, compare verified lenders through the <a href="https://www.browselenders.com" class="font-bold text-accent">Browse Lenders marketplace</a> for rate insights and readiness checklists. </p>
-                    <a class="inline-block bg-accent hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="https://www.browselenders.com">Check Eligibility</a>
+                    <p class="mb-4">{{ .Site.Params.programsClosingText | safeHTML }}</p>
+                    <a class="inline-block bg-accent hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="{{ .Site.Params.programsCTALink }}">{{ .Site.Params.programsCTA }}</a>
                </div>
           </div>
      </section>
@@ -292,68 +286,66 @@
           <div class="container mx-auto px-6">
                <div>
                     <div class="text-center max-w-4xl mx-auto">
-                         <h2 class="text-3xl md:text-4xl font-bold text-primary">Education & First-Time Considerations</h2>
-                         <p class="mt-2 text-lg text-gray-600">A HELOC isn't just a loanit's a flexible financial tool. We believe informed borrowers make smarter financial decisions, which is why <strong>education sits at the center</strong> of this platform. </p>
+                         <h2 class="text-3xl md:text-4xl font-bold text-primary">{{ .Site.Params.educationTitle }}</h2>
+                         <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.educationSubtitle }}</p>
                     </div>
                     <div class="grid md:grid-cols-4 gap-8 py-8">
                          <div class="border border-background rounded-lg p-4 shadow">
-                              <img alt="Basics" class="w-full h-[220px] object-cover rounded mb-4" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600&auto=format&fit=crop" />
-                              <h3 class="font-bold text-lg text-primary mb-2">Basics</h3>
-                              <p class="text-gray-600 text-sm">Learn the difference between HELOCs, home-equity loans, and cash-out refinancing. Discover which option suits your timeline, equity, and comfort with variable rates.</p>
+                              <img alt="{{ .Site.Params.edu1Title }}" class="w-full h-[220px] object-cover rounded mb-4" src="{{ .Site.Params.edu1Image }}" />
+                              <h3 class="font-bold text-lg text-primary mb-2">{{ .Site.Params.edu1Title }}</h3>
+                              <p class="text-gray-600 text-sm">{{ .Site.Params.edu1Description | safeHTML }}</p>
                          </div>
                          <div class="border border-background rounded-lg p-4 shadow">
-                              <img alt="Documentation" class="w-full h-[220px] object-cover rounded mb-4" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop" />
-                              <h3 class="font-bold text-lg text-primary mb-2">Documentation</h3>
-                              <p class="text-gray-600 text-sm">Gathering the right paperwork upfront prevents application stress. Lenders typically require income verification, tax documents, property insurance, and a recent appraisal.</p>
+                              <img alt="{{ .Site.Params.edu2Title }}" class="w-full h-[220px] object-cover rounded mb-4" src="{{ .Site.Params.edu2Image }}" />
+                              <h3 class="font-bold text-lg text-primary mb-2">{{ .Site.Params.edu2Title }}</h3>
+                              <p class="text-gray-600 text-sm">{{ .Site.Params.edu2Description | safeHTML }}</p>
                          </div>
                          <div class="border border-background rounded-lg p-4 shadow">
-                              <img alt="Timing" class="w-full h-[220px] object-cover rounded mb-4" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop" />
-                              <h3 class="font-bold text-lg text-primary mb-2">Timing</h3>
-                              <p class="text-gray-600 text-sm">Understand rate trends, seasonal variations, and lender review cycles. Applying when market liquidity is higher can speed up approvals and improve terms.</p>
+                              <img alt="{{ .Site.Params.edu3Title }}" class="w-full h-[220px] object-cover rounded mb-4" src="{{ .Site.Params.edu3Image }}" />
+                              <h3 class="font-bold text-lg text-primary mb-2">{{ .Site.Params.edu3Title }}</h3>
+                              <p class="text-gray-600 text-sm">{{ .Site.Params.edu3Description | safeHTML }}</p>
                          </div>
                          <div class="border border-background rounded-lg p-4 shadow">
-                              <img alt="Readiness" class="w-full h-[220px] object-cover rounded mb-4" src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1600&auto=format&fit=crop" />
-                              <h3 class="font-bold text-lg text-primary mb-2">Readiness</h3>
-                              <p class="text-gray-600 text-sm">Ensure your credit, debt utilization, and equity percentage are aligned for success. For guidance, visit <a class="text-accent hover:underline" href="https://middlecreditscore.com" target="_blank">MiddleCreditScore.com</a> to explore credit-readiness strategies that can improve your overall approval odds. </p>
+                              <img alt="{{ .Site.Params.edu4Title }}" class="w-full h-[220px] object-cover rounded mb-4" src="{{ .Site.Params.edu4Image }}" />
+                              <h3 class="font-bold text-lg text-primary mb-2">{{ .Site.Params.edu4Title }}</h3>
+                              <p class="text-gray-600 text-sm">{{ .Site.Params.edu4Description | safeHTML }}</p>
                          </div>
                     </div>
                     <div class="text-center mt-4">
-                         <a class="inline-block bg-accent hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="https://www.browselenders.com">See if You Qualify</a>
+                         <a class="inline-block bg-accent hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="{{ .Site.Params.educationCTALink }}">{{ .Site.Params.educationCTA }}</a>
                     </div>
                </div>
           </div>
      </section>
-     <!-- Learning Center (2 4575 words + 4 bullets) -->
-     <section class="py-16 sm:py-20 bg-background">
+     <!-- Learning Center (2 paragraphs + 4 bullets) -->
+     <section id="learning-center" class="py-16 sm:py-20 bg-background">
           <div class="container mx-auto px-6">
                <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="text-gray-800 order-2 md:order-1">
-                         <h2 class="text-3xl font-bold text-primary mb-4">From Our Learning Center Smarter HELOC Planning</h2>
-                         <p class="text-gray-600 mb-4">Knowledge is the foundation of confidence. Our learning center simplifies complex mortgage terms and provides clear financial literacy tools so consumers and employees can approach borrowing with clarity.</p>
+                         <h2 class="text-3xl font-bold text-primary mb-4">{{ .Site.Params.learningTitle }}</h2>
+                         <p class="text-gray-600 mb-4">{{ .Site.Params.learningPara1 | safeHTML }}</p>
                          <p class="text-gray-600 mb-4 font-bold">Learn how to:</p>
                          <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
-                              <li>Estimate borrowing capacity using real-world examples.</li>
-                              <li>Compare lenders using transparent cost breakdowns.</li>
-                              <li>Evaluate repayment strategies and interest-only periods.</li>
-                              <li>Understand variable-rate triggers and how to mitigate surprises.</li>
+                              <li>{{ .Site.Params.learningBullet1 | safeHTML }}</li>
+                              <li>{{ .Site.Params.learningBullet2 | safeHTML }}</li>
+                              <li>{{ .Site.Params.learningBullet3 | safeHTML }}</li>
+                              <li>{{ .Site.Params.learningBullet4 | safeHTML }}</li>
                          </ul>
-                         <p class="text-gray-600 mb-4">Our goal is to replace sales pressure with educationempowering every borrower to make informed, transparent financial decisions.</p>
-                         <p class="text-gray-600 mb-4">
-                              <a href="#" class="text-accent">Visit our HELOC Lenders</a> for resources, calculators, and tutorials on topics like draw-period planning, rate comparison, and home-equity optimization.
-                         </p>
+                         <p class="text-gray-600 mb-4">{{ .Site.Params.learningPara2 | safeHTML }}</p>
+                         <p class="text-gray-600 mb-4">{{ .Site.Params.learningPara3 | safeHTML }}</p>
                     </div>
                     <div class="rounded-lg overflow-hidden shadow-lg h-[400px] md:h-[600px] order-1 md:order-2">
-                         <img alt="HELOC overview and documents" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2000&auto=format&fit=crop" />
+                         <img alt="{{ .Site.Params.learningTitle }}" class="w-full h-full object-cover" src="{{ .Site.Params.learningImage }}" />
                     </div>
                </div>
           </div>
      </section>
      <!-- Testimonials (=40 words each) -->
-     <section class="py-16 sm:py-20">
+     <section id="testimonials" class="py-16 sm:py-20">
           <div class="container mx-auto px-6">
                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary">What Clients Are Saying</h2>
-                    <p class="mt-2 text-lg text-gray-600">Real feedback and real outcomes from borrowers nationwide.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">{{ .Site.Params.testimonialsTitle }}</h2>
+                    <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.testimonialsSubtitle }}</p>
                </div>
                <!-- Swiper Container -->
                <div class="swiper testimonialsSwiper pt-16 pb-12">
@@ -361,84 +353,84 @@
                          <!-- Slide 1 -->
                          <div class="swiper-slide h-auto">
                               <div class="bg-background p-8 pt-16 rounded-xl shadow-lg text-center mx-4 h-full flex flex-col relative">
-                                   <img alt="Client review" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" />
+                                   <img alt="{{ .Site.Params.testimonial1Name }}" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="{{ .Site.Params.testimonial1Image }}" />
                                    <div class="flex justify-center text-yellow-400 text-xl mb-4">
-                                        <span>?????</span>
+                                        <span>★★★★★</span>
                                    </div>
-                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"Most websites push you straight into applying, but Browse Lenders actually taught me HOW lenders think before I ever spoke to one. That alone saved me thousands and helped me choose the right fit instead of the fastest click."</p>
+                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"{{ .Site.Params.testimonial1Text }}"</p>
                                    <div class="mt-auto">
-                                        <p class="font-bold text-primary text-lg"> Verified Borrower</p>
-                                        <p class="text-sm text-gray-500">"I didn't just get quotes I understood my options."</p>
+                                        <p class="font-bold text-primary text-lg">{{ .Site.Params.testimonial1Name }}</p>
+                                        <p class="text-sm text-gray-500">"{{ .Site.Params.testimonial1Subtitle }}"</p>
                                    </div>
                               </div>
                          </div>
                          <!-- Slide 2 -->
                          <div class="swiper-slide h-auto">
                               <div class="bg-background p-8 pt-16 rounded-xl shadow-lg text-center mx-4 h-full flex flex-col relative">
-                                   <img alt="Client review" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop" />
+                                   <img alt="{{ .Site.Params.testimonial2Name }}" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="{{ .Site.Params.testimonial2Image }}" />
                                    <div class="flex justify-center text-yellow-400 text-xl mb-4">
-                                        <span>?????</span>
+                                        <span>★★★★★</span>
                                    </div>
-                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"My HR team shared Browse Lenders as a wellness tool. I didn't realize how much my credit tier shaped pricing. Having unbiased education first before any lender conversation changed everything."</p>
+                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"{{ .Site.Params.testimonial2Text }}"</p>
                                    <div class="mt-auto">
-                                        <p class="font-bold text-primary text-lg"> Verified Borrower</p>
-                                        <p class="text-sm text-gray-500">"This should be part of every employer's benefits package."</p>
+                                        <p class="font-bold text-primary text-lg">{{ .Site.Params.testimonial2Name }}</p>
+                                        <p class="text-sm text-gray-500">"{{ .Site.Params.testimonial2Subtitle }}"</p>
                                    </div>
                               </div>
                          </div>
                          <!-- Slide 3 -->
                          <div class="swiper-slide h-auto">
                               <div class="bg-background p-8 pt-16 rounded-xl shadow-lg text-center mx-4 h-full flex flex-col relative">
-                                   <img alt="Client review" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop" />
+                                   <img alt="{{ .Site.Params.testimonial3Name }}" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="{{ .Site.Params.testimonial3Image }}" />
                                    <div class="flex justify-center text-yellow-400 text-xl mb-4">
-                                        <span>?????</span>
+                                        <span>★★★★★</span>
                                    </div>
-                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"There was no pressure, no nonstop emails, no rate-gimmick ads. Just clear education, verified lenders, and a path to readiness. I wish I had this during my first mortgage."</p>
+                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"{{ .Site.Params.testimonial3Text }}"</p>
                                    <div class="mt-auto">
-                                        <p class="font-bold text-primary text-lg"> Verified Borrower</p>
-                                        <p class="text-sm text-gray-500">"It felt like guidance, not a sales funnel."</p>
+                                        <p class="font-bold text-primary text-lg">{{ .Site.Params.testimonial3Name }}</p>
+                                        <p class="text-sm text-gray-500">"{{ .Site.Params.testimonial3Subtitle }}"</p>
                                    </div>
                               </div>
                          </div>
                          <!-- Slide 4 -->
                          <div class="swiper-slide h-auto">
                               <div class="bg-background p-8 pt-16 rounded-xl shadow-lg text-center mx-4 h-full flex flex-col relative">
-                                   <img alt="Client review" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop" />
+                                   <img alt="{{ .Site.Params.testimonial4Name }}" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="{{ .Site.Params.testimonial4Image }}" />
                                    <div class="flex justify-center text-yellow-400 text-xl mb-4">
-                                        <span>?????</span>
+                                        <span>★★★★★</span>
                                    </div>
-                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"Instead of my data being sold 10 times, I chose when and how lenders could see my scenario. That privacy alone makes Browse Lenders different from every other mortgage site."</p>
+                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"{{ .Site.Params.testimonial4Text }}"</p>
                                    <div class="mt-auto">
-                                        <p class="font-bold text-primary text-lg"> Verified Borrower</p>
-                                        <p class="text-sm text-gray-500">"I was able to compare lenders without giving up control."</p>
+                                        <p class="font-bold text-primary text-lg">{{ .Site.Params.testimonial4Name }}</p>
+                                        <p class="text-sm text-gray-500">"{{ .Site.Params.testimonial4Subtitle }}"</p>
                                    </div>
                               </div>
                          </div>
                          <!-- Slide 5 -->
                          <div class="swiper-slide h-auto">
                               <div class="bg-background p-8 pt-16 rounded-xl shadow-lg text-center mx-4 h-full flex flex-col relative">
-                                   <img alt="Client review" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" />
+                                   <img alt="{{ .Site.Params.testimonial5Name }}" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="{{ .Site.Params.testimonial5Image }}" />
                                    <div class="flex justify-center text-yellow-400 text-xl mb-4">
-                                        <span>?????</span>
+                                        <span>★★★★★</span>
                                    </div>
-                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"The connection to MiddleCreditScore helped me understand why lenders were pricing me a certain way. I spent three weeks correcting things and qualified for better terms."</p>
+                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"{{ .Site.Params.testimonial5Text }}"</p>
                                    <div class="mt-auto">
-                                        <p class="font-bold text-primary text-lg"> Verified Borrower</p>
-                                        <p class="text-sm text-gray-500">"This helped me fix what I didn't even know was hurting my approval."</p>
+                                        <p class="font-bold text-primary text-lg">{{ .Site.Params.testimonial5Name }}</p>
+                                        <p class="text-sm text-gray-500">"{{ .Site.Params.testimonial5Subtitle }}"</p>
                                    </div>
                               </div>
                          </div>
                          <!-- Slide 6 -->
                          <div class="swiper-slide h-auto">
                               <div class="bg-background p-8 pt-16 rounded-xl shadow-lg text-center mx-4 h-full flex flex-col relative">
-                                   <img alt="Client review" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" />
+                                   <img alt="{{ .Site.Params.testimonial6Name }}" class="w-24 h-24 rounded-full mx-auto absolute -top-12 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-md object-cover" src="{{ .Site.Params.testimonial6Image }}" />
                                    <div class="flex justify-center text-yellow-400 text-xl mb-4">
-                                        <span>?????</span>
+                                        <span>★★★★★</span>
                                    </div>
-                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"Most sites are built for the lender. This one is built for the borrower. I got educated first, then matched second and by the time I spoke to a lender, I was confident, not overwhelmed."</p>
+                                   <p class="italic text-gray-600 mb-4 flex-grow text-base leading-relaxed">"{{ .Site.Params.testimonial6Text }}"</p>
                                    <div class="mt-auto">
-                                        <p class="font-bold text-primary text-lg"> Verified Borrower</p>
-                                        <p class="text-sm text-gray-500">"It's the first mortgage platform that actually feels 'for the consumer.'"</p>
+                                        <p class="font-bold text-primary text-lg">{{ .Site.Params.testimonial6Name }}</p>
+                                        <p class="text-sm text-gray-500">"{{ .Site.Params.testimonial6Subtitle }}"</p>
                                    </div>
                               </div>
                          </div>
@@ -448,110 +440,163 @@
                </div>
           </div>
      </section>
-     <!-- Why Choose Browse Lenders -->
-     <section class="py-16 sm:py-20 bg-background">
+     <!-- Why Choose Browse Lenders® -->
+     <section id="why-choose" class="py-16 sm:py-20 bg-background">
           <div class="container mx-auto px-6">
                <div class="text-left mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary">Why Choose Browse Lenders</h2>
-                    <p class="mt-2 text-lg text-gray-600">Clarity, speed, and competitive optionsbuilt for borrowers.</p>
-                    <p class="mt-2 text-lg text-gray-600">Todays borrowers need more than rates they need clarity, protection, and education before making a long-term home-equity decision.</p>
-                    <p class="mt-2 text-lg text-gray-600">Thats why <strong>Browse Lenders</strong> was built as a <strong>national mortgage-education and financial-wellness resource</strong> for both consumers and employees. </p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">{{ .Site.Params.whyChooseTitle }}</h2>
+                    <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.whyChooseSubtitle }}</p>
+                    <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.whyChoosePara1 }}</p>
+                    <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.whyChoosePara2 | safeHTML }}</p>
                </div>
                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Box 1: Offer-Ready Scenarios -->
+                    <!-- Box 1 -->
                     <div class="bg-white p-8 rounded-xl text-left transition-shadow">
                          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
                               <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                               </svg>
                          </div>
-                         <h3 class="text-xl font-bold text-primary mb-4">Offer-Ready Scenarios</h3>
-                         <p class="text-gray-600 mb-3">Side-by-side quotes, clear fee line-items, and realistic timelines help you decide confidently.</p>
+                         <h3 class="text-xl font-bold text-primary mb-4">{{ .Site.Params.whyChooseBox1Title }}</h3>
+                         <p class="text-gray-600 mb-3">{{ .Site.Params.whyChooseBox1Para }}</p>
                          <ul class="list-disc pl-5 text-gray-600 text-sm space-y-1">
-                              <li>Compare multiple lenders without repeated applications</li>
-                              <li>See all costs upfrontno surprise fees at closing</li>
-                              <li>Understand timelines for appraisals, underwriting, and funding</li>
+                              <li>{{ .Site.Params.whyChooseBox1Bullet1 }}</li>
+                              <li>{{ .Site.Params.whyChooseBox1Bullet2 }}</li>
+                              <li>{{ .Site.Params.whyChooseBox1Bullet3 }}</li>
                          </ul>
                     </div>
-                    <!-- Box 2: Transparent Numbers -->
+                    <!-- Box 2 -->
                     <div class="bg-white p-8 rounded-xl text-left transition-shadow">
                          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
                               <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                               </svg>
                          </div>
-                         <h3 class="text-xl font-bold text-primary mb-4">Transparent Numbers</h3>
-                         <p class="text-gray-600 mb-3">Plain-English math on rates, points, credits, and breakevenno surprises at closing.</p>
+                         <h3 class="text-xl font-bold text-primary mb-4">{{ .Site.Params.whyChooseBox2Title }}</h3>
+                         <p class="text-gray-600 mb-3">{{ .Site.Params.whyChooseBox2Para }}</p>
                          <ul class="list-disc pl-5 text-gray-600 text-sm space-y-1">
-                              <li>Detailed APR breakdowns that reflect real costs</li>
-                              <li>Clear explanations of rate caps, margins, and adjustment triggers</li>
-                              <li>Guidance on points, credits, and when they make financial sense</li>
+                              <li>{{ .Site.Params.whyChooseBox2Bullet1 }}</li>
+                              <li>{{ .Site.Params.whyChooseBox2Bullet2 }}</li>
+                              <li>{{ .Site.Params.whyChooseBox2Bullet3 }}</li>
                          </ul>
                     </div>
-                    <!-- Box 3: Competitive Options -->
+                    <!-- Box 3 -->
                     <div class="bg-white p-8 rounded-xl text-left transition-shadow">
                          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
                               <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                               </svg>
                          </div>
-                         <h3 class="text-xl font-bold text-primary mb-4">Competitive Options</h3>
-                         <p class="text-gray-600 mb-3">Access multiple lenders, request clarifications, and choose the fit that matches your goals.</p>
+                         <h3 class="text-xl font-bold text-primary mb-4">{{ .Site.Params.whyChooseBox3Title }}</h3>
+                         <p class="text-gray-600 mb-3">{{ .Site.Params.whyChooseBox3Para }}</p>
                          <ul class="list-disc pl-5 text-gray-600 text-sm space-y-1">
-                              <li>Choose from a network of vetted HELOC specialists nationwide</li>
-                              <li>No obligation to proceed with any lender</li>
-                              <li>Ask questions, compare terms, and lock when you're ready</li>
+                              <li>{{ .Site.Params.whyChooseBox3Bullet1 }}</li>
+                              <li>{{ .Site.Params.whyChooseBox3Bullet2 }}</li>
+                              <li>{{ .Site.Params.whyChooseBox3Bullet3 }}</li>
                          </ul>
                     </div>
                </div>
                <div class="text-left mt-12">
-                    <a class="bg-accent hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="https://www.browselenders.com">Start Comparing Lenders</a>
+                    <a class="bg-accent hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="{{ .Site.Params.whyChooseCTALink }}">{{ .Site.Params.whyChooseCTA }}</a>
                </div>
           </div>
      </section>
      <!-- Employee Wellness -->
-     <section class="py-16 sm:py-24">
+     <section id="employers" class="py-16 sm:py-24">
           <div class="container mx-auto px-6">
                <div class="grid md:grid-cols-2 gap-12 items-center">
                     <!-- Left Side: Content -->
                     <div class="order-2 md:order-1">
-                         <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">For Employers Employee Financial Wellness</h2>
-                         <p class="text-lg text-gray-600 mb-8">Today's HR departments are expanding their wellness strategies beyond healthcare and retirement benefits by including mortgage and credit education. Through Browse Lenders, employers can offer no-cost access to verified home-lending guidance and credit-readiness tools that help employees borrow wisely, strengthen financial stability, and gain long-term upward mobility.</p>
+                         <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">{{ .Site.Params.employersTitle }}</h2>
+                         <p class="text-lg text-gray-600 mb-8">{{ .Site.Params.employersPara }}</p>
                          <!-- Bullet Points -->
                          <div class="space-y-4 text-gray-600">
                               <p>
-                                   <strong class="text-primary">No-cost benefit integration</strong> Add Browse Lenders to your financial-wellness or EAP program without contracts, fees, or onboarding friction.
+                                   <strong class="text-primary">{{ .Site.Params.employersBullet1Title }}</strong> {{ .Site.Params.employersBullet1Text }}
                               </p>
                               <p>
-                                   <strong class="text-primary">Homeownership readiness tools</strong> Employees learn how credit tiers, equity, and documentation impact eligibility before sharing personal information with lenders.
+                                   <strong class="text-primary">{{ .Site.Params.employersBullet2Title }}</strong> {{ .Site.Params.employersBullet2Text }}
                               </p>
                               <p>
-                                   <strong class="text-primary">Boost retention through financial access</strong> Empower your workforce with transparent mortgage guidance and home-equity education that reduces stress and improves long-term stability.
+                                   <strong class="text-primary">{{ .Site.Params.employersBullet3Title }}</strong> {{ .Site.Params.employersBullet3Text }}
                               </p>
                          </div>
                          <div class="mt-10">
-                              <a class="bg-primary hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="https://browselenders.com/employer-benefits/" target="_blank">Learn About Employer Access</a>
+                              <a class="bg-primary hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="{{ .Site.Params.employersCTALink }}" target="_blank">{{ .Site.Params.employersCTA }}</a>
                          </div>
                     </div>
                     <!-- Right Side: Image -->
                     <div class="rounded-lg overflow-hidden shadow-lg h-[400px] md:h-[600px] order-1 md:order-2">
-                         <img alt="Employee wellness and financial guidance" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop" />
+                         <img alt="{{ .Site.Params.employersSubtitle }}" class="w-full h-full object-cover" src="{{ .Site.Params.employersImage }}" />
                     </div>
                </div>
           </div>
      </section>
+
+     <!-- Middle Credit Score  -->
+     <section id="middle-credit-score" class="py-16 sm:py-24">
+          <div class="container mx-auto px-6">
+               <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Left Side: Image -->
+                    <div class="rounded-lg overflow-hidden shadow-lg h-[400px] md:h-[600px]">
+                         <img alt="{{ .Site.Params.creditScoreTitle }}" class="w-full h-full object-cover" src="{{ .Site.Params.creditScoreImage }}" />
+                    </div>
+                    <!-- Right Side: Content -->
+                    <div class="">
+                         <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">{{ .Site.Params.creditScoreTitle }}</h2>
+                         <p class="text-gray-600 mb-4">{{ .Site.Params.creditScorePara1 }}</p>
+                         <p class="text-lg">{{ .Site.Params.creditScoreHeading1 }}</p>
+                         <p class="text-gray-600  mb-4">{{ .Site.Params.creditScoreText1 }}</p>
+                         <p class="text-lg">{{ .Site.Params.creditScoreHeading2 }}</p>
+                         <p class="text-gray-600  mb-4">{{ .Site.Params.creditScoreText2 }}</p>
+                         <p class="text-lg">{{ .Site.Params.creditScoreHeading3 }}</p>
+                         <p class="text-gray-600  mb-4">{{ .Site.Params.creditScoreText3 }}</p>
+                         <div class="mt-10">
+                              <a class="bg-primary hover:bg-blue-500 text-white font-normal py-4 px-10 rounded-md text-md" href="{{ .Site.Params.creditScoreCTALink }}" target="_blank">{{ .Site.Params.creditScoreCTA }}</a>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
      <!-- Blog Posts Section -->
-     <section class="py-16 sm:py-20 bg-white">
+     <section id="blog" class="py-16 sm:py-20 bg-white">
           <div class="container mx-auto px-6">
                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary">Latest HELOC Insights & Updates</h2>
-                    <p class="mt-2 text-lg text-gray-600">Stay informed with the latest trends, tips, and guidance from mortgage professionals.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">{{ .Site.Params.blogTitle }}</h2>
+                    <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.blogSubtitle }}</p>
                </div>
                <!-- Swiper Container for Blog Posts -->
                <div class="relative overflow-visible">
                     <div class="swiper blogPostsSwiper overflow-visible">
-                         <div class="swiper-wrapper" id="blog-posts-container">
-                              <!-- Blog posts loaded dynamically from Hugo JSON feed -->
+                         <div class="swiper-wrapper">
+                              {{ range first 8 (where .Site.RegularPages "Section" "blogs") }}
+                              <div class="swiper-slide">
+                                   <article class="bg-background rounded-xl overflow-hidden transition-shadow duration-300 h-full">
+                                        <div class="h-48 overflow-hidden">
+                                             <img alt="{{ .Title }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="{{ .Params.image }}" />
+                                        </div>
+                                        <div class="p-6">
+                                             <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                                                  {{ if .Params.tags }}
+                                                  <span class="bg-accent/10 text-accent px-2 py-1 rounded-full text-xs font-medium">{{ index .Params.tags 0 }}</span>
+                                                  {{ end }}
+                                                  <span>•</span>
+                                                  <span>{{ .Date.Format "January 2, 2006" }}</span>
+                                             </div>
+                                             <h3 class="text-xl font-bold text-primary mb-3 line-clamp-2">{{ .Title }}</h3>
+                                             <p class="text-gray-600 text-sm mb-4 line-clamp-3">{{ .Params.description }}</p>
+                                             <a class="inline-flex items-center text-accent hover:text-blue-600 font-medium text-sm" href="{{ .Permalink }}">
+                                                  Read More 
+                                                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                                  </svg>
+                                             </a>
+                                        </div>
+                                   </article>
+                              </div>
+                              {{ end }}
                          </div>
                          <!-- Navigation buttons -->
                          <div class="swiper-button-next"></div>
@@ -565,32 +610,60 @@
           </div>
      </section>
      <!-- FAQs Section -->
-     <section class="py-16 sm:py-20 bg-background">
+     <section id="faq" class="py-16 sm:py-20 bg-background">
           <div class="container mx-auto px-6">
                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary">Frequently Asked Questions</h2>
-                    <p class="mt-2 text-lg text-gray-600">Clear answers to common HELOC questions.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">{{ .Site.Params.faqTitle }}</h2>
+                    <p class="mt-2 text-lg text-gray-600">{{ .Site.Params.faqSubtitle }}</p>
                </div>
-               <div class="max-w-3xl mx-auto space-y-6">
+               <div class="max-w-3xl mx-auto space-y-4">
                     <!-- FAQ 1 -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                         <h3 class="text-xl font-bold text-primary mb-3">What's the difference between a HELOC and a home-equity loan?</h3>
-                         <p class="text-gray-600">A HELOC is a revolving line of credit with variable rates and flexible draws during a designated period. A home-equity loan provides a lump sum at a fixed rate. Your choice depends on whether you need ongoing access or a one-time disbursement.</p>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                              <h3 class="text-xl font-bold text-primary pr-4">{{ .Site.Params.faq1Question }}</h3>
+                              <svg class="faq-icon w-6 h-6 text-accent transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                              </svg>
+                         </button>
+                         <div class="faq-content hidden">
+                              <p class="text-gray-600 px-6 pb-6">{{ .Site.Params.faq1Answer | safeHTML }}</p>
+                         </div>
                     </div>
                     <!-- FAQ 2 -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                         <h3 class="text-xl font-bold text-primary mb-3">What credit score do I need to qualify?</h3>
-                         <p class="text-gray-600">Most lenders prefer a middle credit score of at least 620, though stronger scores (680+) typically unlock better rates and terms. Visit <a class="text-accent hover:underline" href="https://middlecreditscore.com" target="_blank">MiddleCreditScore.com</a> for strategies to optimize your credit profile before applying. </p>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                              <h3 class="text-xl font-bold text-primary pr-4">{{ .Site.Params.faq2Question }}</h3>
+                              <svg class="faq-icon w-6 h-6 text-accent transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                              </svg>
+                         </button>
+                         <div class="faq-content hidden">
+                              <p class="text-gray-600 px-6 pb-6">{{ .Site.Params.faq2Answer | safeHTML }}</p>
+                         </div>
                     </div>
                     <!-- FAQ 3 -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                         <h3 class="text-xl font-bold text-primary mb-3">Will a HELOC affect my primary mortgage?</h3>
-                         <p class="text-gray-600">A HELOC is recorded as a second lien and doesn't replace your first mortgage. It sits subordinate in the lien hierarchy, meaning if you refinance your primary loan, you may need to re-subordinate the HELOC with lender approval.</p>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                              <h3 class="text-xl font-bold text-primary pr-4">{{ .Site.Params.faq3Question }}</h3>
+                              <svg class="faq-icon w-6 h-6 text-accent transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                              </svg>
+                         </button>
+                         <div class="faq-content hidden">
+                              <p class="text-gray-600 px-6 pb-6">{{ .Site.Params.faq3Answer | safeHTML }}</p>
+                         </div>
                     </div>
                     <!-- FAQ 4 -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                         <h3 class="text-xl font-bold text-primary mb-3">Can my employer offer Browse Lenders access as a benefit?</h3>
-                         <p class="text-gray-600">Yes. Employers can integrate Browse Lenders resources into financial wellness programs at no cost to the organization. Employees gain access to educational tools, transparent lender comparisons, and professional HELOC guidancehelping support homeownership and long-term financial stability.</p>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <button class="faq-toggle w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                              <h3 class="text-xl font-bold text-primary pr-4">{{ .Site.Params.faq4Question }}</h3>
+                              <svg class="faq-icon w-6 h-6 text-accent transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                              </svg>
+                         </button>
+                         <div class="faq-content hidden">
+                              <p class="text-gray-600 px-6 pb-6">{{ .Site.Params.faq4Answer | safeHTML }}</p>
+                         </div>
                     </div>
                </div>
           </div>
@@ -604,13 +677,13 @@
                </div>
                <div class="max-w-4xl mx-auto text-center text-white">
                     <!-- Header -->
-                    <h2 class="text-3xl md:text-4xl font-black mb-6"> Ready to Unlock Your Home's Equity? </h2>
-                    <p class="text-xl mb-6 max-w-2xl mx-auto"> Connect with trusted HELOC lenders and get competitive rates with transparent terms. </p>
-                    <p class="text-lg mb-12 max-w-2xl mx-auto italic"> Explore verified lenders and employee financial-wellness tools at BrowseLenders.com helping America borrow smarter, one state at a time. </p>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6"> Ready to Finance Your Dream Home? </h2>
+                    <p class="text-xl mb-6 max-w-2xl mx-auto"> Connect with trusted conventional mortgage lenders and get competitive rates for your home purchase or <a class="text-accent hover:underline font-bold" href="https://www.cash-outrefinance.com" target="_blank">cash-out refinance</a>. </p>
+                    <p class="text-lg mb-12 max-w-2xl mx-auto italic"> Explore verified conventional lenders and employee financial-wellness tools at BrowseLenders.com — helping American families achieve homeownership, one state at a time. </p>
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                          <a class="bg-accent hover:bg-blue-500 text-white font-medium py-4 px-10 rounded-md text-md transition-all transform" href="https://www.browselenders.com"> Get Pre-Qualified </a>
-                         <a class="bg-white text-primary hover:bg-gray-50 font-medium py-4 px-10 rounded-md text-md transition-all transform" href="mailto:support@browselenders.com"> Contact Support </a>
+                         <a class="bg-white text-primary hover:bg-gray-50 font-medium py-4 px-10 rounded-md text-md transition-all transform" href="mailto:support@conventionalmortgageloans.com"> Contact Support </a>
                     </div>
                </div>
           </div>
@@ -619,6 +692,35 @@
 <!-- Page-specific scripts -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+     // FAQ Accordion Toggle
+     function toggleFAQ(button) {
+          const faqItem = button.closest('div');
+          const content = faqItem.querySelector('.faq-content');
+          const icon = button.querySelector('.faq-icon');
+          const isOpen = !content.classList.contains('hidden');
+          
+          // Close all other FAQs
+          document.querySelectorAll('.faq-content').forEach(item => {
+               if (item !== content) {
+                    item.classList.add('hidden');
+               }
+          });
+          document.querySelectorAll('.faq-icon').forEach(item => {
+               if (item !== icon) {
+                    item.classList.remove('rotate-180');
+               }
+          });
+          
+          // Toggle current FAQ
+          if (isOpen) {
+               content.classList.add('hidden');
+               icon.classList.remove('rotate-180');
+          } else {
+               content.classList.remove('hidden');
+               icon.classList.add('rotate-180');
+          }
+     }
+     
      // Initialize Swiper for testimonials
      var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
           slidesPerView: 1,
@@ -647,93 +749,35 @@
                },
           },
      });
-     // Load blog posts dynamically from Hugo JSON feed
-     console.log('Starting to load blog posts...');
-     fetch('/index.json').then(response => {
-          console.log('Fetch response received:', response.status);
-          return response.json();
-     }).then(posts => {
-          console.log('Blog posts loaded:', posts.length, 'posts');
-          const container = document.getElementById('blog-posts-container');
-          if (!container) {
-               console.error('blog-posts-container element not found!');
-               return;
-          }
-          // Generate HTML for each post (limit to 8 items)
-          posts.slice(0, 8).forEach(function(post) {
-               var categoryColors = {
-                    'Market Trends': 'bg-accent/10 text-accent',
-                    'Education': 'bg-primary/10 text-primary',
-                    'Credit Tips': 'bg-green-100 text-green-700',
-                    'Process Guide': 'bg-blue-100 text-blue-700',
-                    'Home Improvement': 'bg-purple-100 text-purple-700',
-                    'Repayment': 'bg-orange-100 text-orange-700',
-                    'Tax Planning': 'bg-red-100 text-red-700',
-                    'Market Outlook': 'bg-teal-100 text-teal-700'
-               };
-               var categoryClass = categoryColors[post.category] || 'bg-gray-100 text-gray-700';
-               var postDate = new Date(post.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-               });
-               var slide = document.createElement('div');
-               slide.className = 'swiper-slide';
-               slide.innerHTML = 
-                    '<article class="bg-background rounded-xl overflow-hidden transition-shadow duration-300 h-full">' +
-                         '<div class="h-48 overflow-hidden">' +
-                              '<img alt="' + post.title + '" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" src="' + post.image + '" />' +
-                         '</div>' +
-                         '<div class="p-6">' +
-                              '<div class="flex items-center gap-2 text-sm text-gray-500 mb-3">' +
-                                   '<span class="' + categoryClass + ' px-2 py-1 rounded-full text-xs font-medium whitespace-nowrap truncate max-w-[120px]">' + post.category + '</span>' +
-                                   '<span>•</span>' +
-                                   '<span class="whitespace-nowrap truncate">' + postDate + '</span>' +
-                              '</div>' +
-                              '<h3 class="text-xl font-bold text-primary mb-3 line-clamp-2">' + post.title + '</h3>' +
-                              '<p class="text-gray-600 text-sm mb-4 line-clamp-3">' + post.excerpt + '</p>' +
-                              '<a class="inline-flex items-center text-accent hover:text-blue-600 font-medium text-sm" href="' + post.permalink + '">' +
-                                   'Read More ' +
-                                   '<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
-                                        '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>' +
-                                   '</svg>' +
-                              '</a>' +
-                         '</div>' +
-                    '</article>';
-               container.appendChild(slide);
-          });
-          // Initialize Swiper after posts are loaded
-          var blogPostsSwiper = new Swiper(".blogPostsSwiper", {
-               slidesPerView: 1,
-               spaceBetween: 20,
-               loop: true,
-               autoplay: {
-                    delay: 6000,
-                    disableOnInteraction: false,
+     
+     // Initialize Swiper for blog posts
+     var blogPostsSwiper = new Swiper(".blogPostsSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: false,
+          autoplay: false,
+          navigation: {
+               nextEl: ".blogPostsSwiper .swiper-button-next",
+               prevEl: ".blogPostsSwiper .swiper-button-prev",
+          },
+          pagination: {
+               el: ".blogPostsSwiper .swiper-pagination",
+               clickable: true,
+          },
+          breakpoints: {
+               640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                },
-               navigation: {
-                    nextEl: ".blogPostsSwiper .swiper-button-next",
-                    prevEl: ".blogPostsSwiper .swiper-button-prev",
+               1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                },
-               pagination: {
-                    el: ".blogPostsSwiper .swiper-pagination",
-                    clickable: true,
+               1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
                },
-               breakpoints: {
-                    640: {
-                         slidesPerView: 2,
-                         spaceBetween: 20,
-                    },
-                    1024: {
-                         slidesPerView: 3,
-                         spaceBetween: 30,
-                    },
-                    1280: {
-                         slidesPerView: 4,
-                         spaceBetween: 30,
-                    },
-               },
-          });
-     }).catch(error => console.error('Error loading blog posts:', error));
+          },
+     });
 </script>
 {{ end }}

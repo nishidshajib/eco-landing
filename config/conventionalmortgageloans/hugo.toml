@@ -1,0 +1,314 @@
+baseURL = 'https://conventionalmortgageloans.com/'
+languageCode = 'en-us'
+title = 'Conventional Mortgage Loans'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conventionalmortgageloans'
+publishDir = 'public/conventionalmortgageloans'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Expert conventional mortgage loan solutions with competitive rates and professional guidance for homebuyers nationwide'
+  author = 'Browse Lenders®'
+  shortName = 'Conventional Loans'
+  tagline = 'Your Trusted Source for Conventional Mortgage Solutions'
+  homepage = 'https://conventionalmortgageloans.com/'
+  
+  # SEO Configuration
+  siteName = 'Conventional Mortgage Loans'
+  siteDescription = 'Comprehensive conventional mortgage loan solutions for homebuyers. Fixed-rate, adjustable-rate, low down payment options, expert guidance, and competitive rates nationwide.'
+  keywords = ['Conventional Loans', 'Conventional Mortgages', 'Fixed Rate Mortgages', 'Adjustable Rate Mortgages', 'Conventional Loan Requirements', 'Browse Lenders®', 'Mortgage Broker', 'Home Loans', 'Purchase Loans']
+  serviceType = 'Conventional Mortgage Lending'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Conventional Mortgage Loans - Your Trusted Source for Homebuying Solutions'
+  heroSubtitle = 'Compare conventional mortgage structures, loan limits, and lender options nationwide with transparent pricing and expert-guided education.'
+  heroImage = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Get Pre-Qualified'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Nationwide Guidance. Transparent Numbers.'
+  aboutImage = 'https://images.unsplash.com/photo-1724780997589-4c67b98491ee?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Program Guidance for Every Conventional Loan Borrower'
+  programsSubtitle = "Every borrower's homebuying situation is unique. Our structured approach ensures understanding before applying."
+  
+  # Program Cards
+  program1Title = 'Core Programs'
+  program1Description = 'Understand conventional loan limits, interest rate structures, and qualification requirements. Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit scores</a>, income documentation, and loan-to-value (LTV) ratios impact your approval.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Eligibility & Readiness'
+  program2Description = 'Evaluate debt-to-income ratios, verify credit score requirements through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>, and prepare comprehensive financial documentation. Strengthen your application and increase approval confidence with proper preparation.'
+  program2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Rate Lock Strategy'
+  program3Description = 'Plan your rate lock timing strategically. Understand how to secure competitive conventional mortgage rates when market conditions align with your home purchase goals, including <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">refinance options</a>.'
+  program3Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Check Eligibility'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = 'To begin your conventional mortgage journey, compare verified lenders through the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for competitive rate insights and qualification guidance.'
+  
+  # Education Section
+  educationTitle = 'Conventional Mortgage Education & First-Time Buyers'
+  educationSubtitle = 'Understanding conventional loans leads to smarter homebuying decisions.'
+  
+  # Education Cards
+  edu1Title = 'Basics'
+  edu1Description = 'Learn the difference between conventional loans, FHA mortgages, and VA loans. Discover which option suits your homebuying goals, timeline, and financial profile through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'
+  edu1Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Documentation'
+  edu2Description = 'Conventional loans require standard documentation. Lenders typically request income verification, asset statements, tax returns, property appraisals, and employment history for approval.'
+  edu2Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Timing'
+  edu3Description = 'Understand conventional rate trends, market conditions, and lender cycles. Strategic timing can improve approval odds and secure more competitive rates. Consider <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">refinancing</a> when rates drop.'
+  edu3Image = 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Readiness'
+  edu4Description = 'Ensure your credit scores, debt-to-income ratios, and cash reserves meet conventional loan standards. Visit <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">MiddleCreditScore.com</a> to understand credit requirements that strengthen your conventional loan application.'
+  edu4Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'See if You Qualify'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center – Smarter Conventional Loan Planning'
+  learningSubtitle = 'Knowledge is the foundation of confident homebuying.'
+  learningImage = 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Knowledge empowers confidence. Our learning center simplifies conventional mortgage concepts and provides clear financial guidance so consumers and employees can approach homebuying with clarity and confidence. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> is the first step to approval.'
+  learningBullet1 = 'Calculate maximum borrowing capacity for conventional mortgages.'
+  learningBullet2 = 'Compare conventional lenders at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> using transparent rate and cost breakdowns.'
+  learningBullet3 = 'Understand conventional loan credit score and down payment requirements.'
+  learningBullet4 = 'Navigate <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> options for existing homeowners.'
+  learningPara2 = 'Our goal is to replace sales pressure with education—empowering every borrower to make informed, strategic financial decisions for home purchases and refinancing.'
+  learningPara3 = '<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore our Conventional Mortgage Resources</a> for calculators, rate comparisons, and expert tutorials on qualification, documentation, and strategic financing.'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders®'
+  whyChooseSubtitle = 'Clarity, speed, and competitive options—built for borrowers.'
+  whyChoosePara1 = 'Todays borrowers need more than rates—they need clarity, protection, and education before making a long-term homeownership decision.'
+  whyChoosePara2 = 'Thats why <strong>Browse Lenders®</strong> was built as a <strong>national mortgage-education and financial-wellness resource</strong> for both consumers and employees.'
+  
+  whyChooseBox1Title = 'Offer-Ready Scenarios'
+  whyChooseBox1Para = 'Side-by-side quotes, clear fee line-items, and realistic timelines help you decide confidently.'
+  whyChooseBox1Bullet1 = 'Compare multiple lenders without repeated applications'
+  whyChooseBox1Bullet2 = 'See all costs upfront—no surprise fees at closing'
+  whyChooseBox1Bullet3 = 'Understand timelines for appraisals, underwriting, and funding'
+  
+  whyChooseBox2Title = 'Transparent Numbers'
+  whyChooseBox2Para = 'Plain-English math on rates, PMI, points, and breakeven—no surprises at closing.'
+  whyChooseBox2Bullet1 = 'Detailed APR breakdowns that reflect real costs'
+  whyChooseBox2Bullet2 = 'Clear explanations of conventional loan types, fixed vs. ARM, and adjustment triggers'
+  whyChooseBox2Bullet3 = 'Guidance on PMI removal, points, credits, and when they make financial sense'
+  
+  whyChooseBox3Title = 'Competitive Options'
+  whyChooseBox3Para = 'Access multiple conventional mortgage lenders, request clarifications, and choose the financing solution that matches your homeownership goals.'
+  whyChooseBox3Bullet1 = 'Choose from a network of vetted conventional loan specialists nationwide'
+  whyChooseBox3Bullet2 = 'No obligation to proceed with any lender'
+  whyChooseBox3Bullet3 = 'Ask questions, compare terms, and lock rates when you are ready'
+  
+  whyChooseCTA = 'Start Comparing Lenders'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Conventional Loan Clients Are Saying'
+  testimonialsSubtitle = 'Real feedback from homebuyers nationwide.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'Most websites push you straight into applying, but Browse Lenders® actually taught me HOW lenders think before I ever spoke to one. That alone saved me thousands and helped me choose the right fit instead of the fastest click.'
+  testimonial1Name = 'Verified Borrower'
+  testimonial1Subtitle = 'I didnt just get quotes—I understood my options.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'My HR team shared Browse Lenders® as a wellness tool. I didnt realize how much my credit tier shaped pricing. Having unbiased education first before any lender conversation changed everything.'
+  testimonial2Name = 'Verified Borrower'
+  testimonial2Subtitle = 'This should be part of every employers benefits package.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'There was no pressure, no nonstop emails, no rate-gimmick ads. Just clear education, verified lenders, and a path to readiness. I wish I had this during my first mortgage.'
+  testimonial3Name = 'Verified Borrower'
+  testimonial3Subtitle = 'It felt like guidance, not a sales funnel.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'Instead of my data being sold 10 times, I chose when and how lenders could see my scenario. That privacy alone makes Browse Lenders® different from every other mortgage site.'
+  testimonial4Name = 'Verified Borrower'
+  testimonial4Subtitle = 'I was able to compare lenders without giving up control.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'The connection to MiddleCreditScore helped me understand why lenders were pricing me a certain way. I spent three weeks correcting things and qualified for better terms.'
+  testimonial5Name = 'Verified Borrower'
+  testimonial5Subtitle = 'This helped me fix what I didnt even know was hurting my approval.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Most sites are built for the lender. This one is built for the borrower. I got educated first, then matched second—and by the time I spoke to a lender, I was confident, not overwhelmed.'
+  testimonial6Name = 'Verified Borrower'
+  testimonial6Subtitle = 'Its the first mortgage platform that actually feels "for the consumer."'
+  
+  # Calculators Section
+  calculatorsTitle = 'Conventional Loan Calculators & Tools'
+  calculatorsSubtitle = 'Plan your budget, model scenarios, and estimate costs before you apply.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Credit Readiness'
+  creditScoreImage = 'https://middlecreditscore.com/wp-content/uploads/2023/03/pexels-kampus-production-8353777.jpg'
+  creditScorePara1 = 'Most borrowers dont realize that lenders qualify them based on their middle credit score — not the highest or the lowest. Middle Credit Score® helps you understand how conventional mortgage lenders evaluate you, which factors are lowering your score, and what small improvements can do to increase your borrowing power before you ever apply for a mortgage, refinance, auto loan, or credit-based approval.'
+  creditScoreHeading1 = 'No-cost access to trusted guidance'
+  creditScoreText1 = 'Gain free access to unbiased credit-readiness education without subscriptions, monthly fees, or credit pulls.'
+  creditScoreHeading2 = 'Know your numbers before you apply'
+  creditScoreText2 = 'Learn how your middle credit score is calculated — and how targeted corrections or improvements can unlock better terms, lower interest rates, and higher approval confidence.'
+  creditScoreHeading3 = 'Real progress through financial literacy'
+  creditScoreText3 = 'With the right knowledge, consumers can strengthen eligibility, build long-term confidence, and protect themselves from predatory or high-cost lending.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers — Conventional Mortgage Education as an Employee Benefit'
+  employersSubtitle = 'Help employees access mortgage education through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Todays HR departments are expanding their wellness strategies beyond healthcare and retirement benefits by including mortgage and credit education. Through Browse Lenders®, employers can offer no-cost access to verified conventional lenders and mortgage guidance that help employees understand qualification standards, improve credit readiness, and make confident homeownership decisions.'
+  employersBullet1Title = 'No-cost mortgage benefit integration'
+  employersBullet1Text = 'Add Browse Lenders® conventional loan resources to your financial-wellness or EAP program without contracts, fees, or onboarding friction.'
+  employersBullet2Title = 'Credit & mortgage readiness tools'
+  employersBullet2Text = 'Employees learn how middle credit scores, debt-to-income ratios, and down payment options affect conventional mortgage eligibility before sharing personal information with lenders.'
+  employersBullet3Title = 'Boost retention through homeownership access'
+  employersBullet3Text = 'Empower your workforce with transparent conventional mortgage guidance and credit education that reduces financial stress, improves home-buying readiness, and supports long-term stability.'
+  employersCTA = 'Learn About Employer Mortgage Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Conventional Mortgage Insights'
+  blogSubtitle = 'Stay informed with the latest conventional loan trends and guidance.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Conventional Loan Questions'
+  faqSubtitle = 'Clear answers to common conventional mortgage questions.'
+  
+  # FAQ 1
+  faq1Question = 'What is a conventional loan and how is it different from government-backed loans?'
+  faq1Answer = 'A conventional loan is a mortgage not insured or guaranteed by the federal government, conforming to loan limits set by Fannie Mae and Freddie Mac (typically $766,550 in 2024, higher in some areas). Conventional loans finance mainstream homes with flexible qualification requirements, competitive down payment options (as low as 3%), and often lower costs than FHA or VA loans for qualified borrowers.'
+  
+  # FAQ 2
+  faq2Question = 'What credit score do I need for a conventional mortgage?'
+  faq2Answer = 'Most conventional lenders require a minimum credit score of 620, though scores of 680+ typically unlock the best rates and terms. Understanding your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> is crucial, as lenders use your mid-score among all three bureaus to determine eligibility and pricing for conventional mortgages.'
+  
+  # FAQ 3
+  faq3Question = 'How much down payment is required for a conventional loan?'
+  faq3Answer = 'Conventional loans offer flexible down payment options starting as low as 3% for first-time buyers and qualified borrowers. While 20% down eliminates private mortgage insurance (PMI), many homebuyers successfully purchase with smaller down payments. If you already own a home, explore how <a class="text-accent hover:underline" href="https://www.cash-outrefinance.com" target="_blank">cash-out refinancing</a> can help you access equity for your next down payment or home improvement projects.'
+  
+  # FAQ 4
+  faq4Question = 'Can my employer offer Browse Lenders® access as a benefit?'
+  faq4Answer = 'Yes. Employers can integrate Browse Lenders® resources into financial wellness programs at no cost to the organization. Employees gain access to educational tools, transparent lender comparisons, and professional conventional mortgage guidance—helping support homeownership and long-term financial stability for American families.'
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Start Your Homebuying Journey?'
+  ctaSubtitle = 'Connect with trusted conventional mortgage lenders and get competitive rates.'
+  ctaDescription = 'Explore verified lenders at BrowseLenders.com—helping America buy homes smarter.'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Conventional Mortgage Loans Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'jumbo loans', 'luxury homes']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+  
+  # Favicon configuration
+  favicon = '/favicon.png'
+  
+  # PWA Manifest Settings
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    
+    # App Icons
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+# Custom output formats
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Sitemap configuration for better SEO
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+# URL management
+[permalinks]
+  blogs = '/blogs/:slug/'

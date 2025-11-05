@@ -10,7 +10,7 @@
       "@id": "{{ .Permalink }}#webpage",
       "url": "{{ .Permalink }}",
       "name": "{{ .Title }} | {{ .Site.Title }}",
-      "description": "{{ with .Description }}{{ . }}{{ else }}Browse our complete collection of HELOC insights, tips, and guidance from mortgage professionals.{{ end }}",
+      "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.siteDescription | default (printf "Browse our complete collection of insights, expert guidance, and tips from %s" .Site.Title) }}{{ end }}",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "{{ .Site.BaseURL }}#website",
@@ -43,8 +43,8 @@
       "mainEntityOfPage": {
         "@id": "{{ .Permalink }}#webpage"
       },
-      "name": "HELOC Insights & Updates",
-      "description": "Latest HELOC insights, tips, and guidance from mortgage professionals",
+      "name": {{ .Site.Params.blogTitle | default "Expert Insights & Guidance" | jsonify }},
+      "description": {{ .Site.Params.blogSubtitle | default .Site.Params.siteDescription | default .Site.Title | jsonify }},
       "publisher": {
         "@type": "Organization",
         "@id": "{{ .Site.BaseURL }}#organization",
@@ -82,7 +82,7 @@
           },
           "url": {{ $page.Permalink | jsonify }},
           "wordCount": {{ $page.WordCount }},
-          "articleSection": {{ $page.Params.category | default "HELOC" | jsonify }},
+          "articleSection": {{ $page.Params.category | default "Conventional Loans" | jsonify }},
           "keywords": [{{ range $i, $tag := $page.Params.tags }}{{ if $i }},{{ end }}{{ $tag | jsonify }}{{ end }}]
         }
         {{ end }}
@@ -108,8 +108,8 @@
         </nav>
         
         <div class="text-center">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4">HELOC Insights & Updates</h1>
-            <p class="text-md text-white/90 max-w-3xl mx-auto">Stay informed with the latest trends, tips, and guidance from mortgage professionals.</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">{{ .Site.Params.blogTitle | default "Expert Insights & Guidance" }}</h1>
+            <p class="text-md text-white/90 max-w-3xl mx-auto">{{ .Site.Params.blogSubtitle | default "Stay informed with the latest trends, tips, and expert guidance." }}</p>
         </div>
     </div>
 </div>
@@ -122,7 +122,7 @@
             {{ $permalink := .Permalink }}
             {{ $title := .Title }}
             {{ $image := .Params.image }}
-            {{ $category := .Params.category }}
+            {{ $category := index .Params.categories 0 }}
             {{ $date := .Date.Format "2006-01-02" }}
             {{ $dateFormatted := .Date.Format "January 2, 2006" }}
             {{ $excerpt := .Params.excerpt }}

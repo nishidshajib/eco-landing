@@ -1,0 +1,314 @@
+baseURL = 'https://conventionalmortgagebrokers.com/'
+languageCode = 'en-us'
+title = 'Conventional Mortgage Brokers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conventionalmortgagebrokers'
+publishDir = 'public/conventionalmortgagebrokers'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Connect with licensed conventional mortgage brokers offering competitive rates, expert loan comparison, and personalized homebuying guidance nationwide'
+  author = 'Browse Lenders®'
+  shortName = 'Mortgage Brokers'
+  tagline = 'Your Gateway to Licensed Conventional Mortgage Brokers'
+  homepage = 'https://conventionalmortgagebrokers.com/'
+  
+  # SEO Configuration
+  siteName = 'Conventional Mortgage Brokers'
+  siteDescription = 'Licensed conventional mortgage brokers providing expert loan comparisons, competitive rate shopping, and personalized guidance for homebuyers across America.'
+  keywords = ['Mortgage Brokers', 'Conventional Mortgage Brokers', 'Licensed Loan Officers', 'Mortgage Comparison', 'Broker Services', 'Browse Lenders', 'Home Financing', 'Loan Shopping', 'Broker Network']
+  serviceType = 'Mortgage Broker Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Licensed Conventional Mortgage Brokers — Compare Lenders & Secure Better Rates'
+  heroSubtitle = 'Access a nationwide network of licensed conventional mortgage brokers who compare multiple lenders on your behalf. Get competitive rates, transparent fee comparisons, and expert guidance throughout your homebuying journey.'
+  heroImage = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find a Broker'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Compare Rates'
+  heroCTA2Link = 'https://www.browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Broker Expertise. Lender Competition. Your Advantage.'
+  aboutImage = 'https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Comprehensive Broker Services for Every Conventional Loan Scenario'
+  programsSubtitle = "Every borrower's path to homeownership is unique. Licensed mortgage brokers ensure you understand conventional loan options, rate structures, and lender requirements before committing to a mortgage."
+  
+  # Program Cards
+  program1Title = 'Broker Network Access'
+  program1Description = 'Connect with licensed brokers who have access to multiple conventional lenders. Compare rates, terms, and fees across a wide network. Learn how brokers leverage your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit profile</a> to find the best conventional loan matches.'
+  program1Image = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Expert Loan Comparison'
+  program2Description = 'Brokers evaluate debt-to-income ratios, verify requirements through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>, and coordinate comprehensive rate shopping. Receive unbiased guidance that prioritizes your financial goals over sales quotas.'
+  program2Image = 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Negotiation & Advocacy'
+  program3Description = 'Brokers negotiate on your behalf to secure competitive rates and reduce fees. Understand how to leverage broker relationships when market conditions align with your purchase goals, including <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">refinance strategies</a>.'
+  program3Image = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Check Broker Availability'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = 'To begin your broker-assisted journey, explore verified conventional mortgage brokers through the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for competitive rate insights and expert guidance.'
+  
+  # Education Section
+  educationTitle = 'Why Work with a Conventional Mortgage Broker?'
+  educationSubtitle = "Mortgage brokers act as your advocate, comparing conventional loan offers from multiple lenders to find the best rates and terms for your unique financial situation. Education and transparency drive better borrowing decisions."
+  
+  # Education Cards
+  edu1Title = 'Broker Benefits'
+  edu1Description = 'Understand how brokers access multiple lenders, negotiate rates, and provide unbiased guidance. Discover why broker-assisted financing offers competitive advantages through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'
+  edu1Image = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Documentation'
+  edu2Description = 'Brokers guide you through required documentation. Expect to provide income verification, asset statements, tax returns, property appraisals, and employment history for lender submissions.'
+  edu2Image = 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Market Timing'
+  edu3Description = 'Brokers monitor rate trends and lender cycles to time your application strategically. Leverage broker insights to secure competitive rates or explore <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">refinance opportunities</a>.'
+  edu3Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Readiness Check'
+  edu4Description = 'Ensure credit scores and debt ratios meet lender standards. Visit <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">MiddleCreditScore.com</a> to understand credit requirements brokers use when matching you with lenders.'
+  edu4Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'See if You Qualify'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'Broker Insights — Smarter Conventional Mortgage Decisions'
+  learningSubtitle = 'Licensed brokers provide unbiased guidance and market insights'
+  learningImage = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Working with a licensed mortgage broker empowers homebuyers with transparency and choice. Our broker network simplifies complex loan comparisons, providing clear financial guidance so consumers can confidently select the best conventional mortgage fit. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit profile</a> helps brokers match you with optimal lenders.'
+  learningBullet1 = 'Access multiple lender offers through a single broker relationship.'
+  learningBullet2 = 'Compare rates and fees at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency and no hidden costs.'
+  learningBullet3 = 'Understand how brokers leverage your credit profile to negotiate better terms.'
+  learningBullet4 = 'Explore <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> options with expert broker guidance.'
+  learningPara2 = 'Our goal is education over sales pressure—empowering every borrower to make strategic decisions backed by market knowledge and professional advocacy.'
+  learningPara3 = '<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore our Broker Network</a> for rate comparisons, lender reviews, and expert tutorials on conventional mortgage qualification and broker-assisted financing strategies.'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders® Broker Network'
+  whyChooseSubtitle = 'Expert advocacy, transparent comparisons, and competitive mortgage options—built for informed borrowers.'
+  whyChoosePara1 = 'Todays homebuyers need more than rates—they need professional advocacy, transparent lender comparisons, and expert guidance before committing to a mortgage.'
+  whyChoosePara2 = 'Thats why <strong>Browse Lenders®</strong> was built as a <strong>national broker network and mortgage-education resource</strong> for both consumers and employees.'
+  
+  whyChooseBox1Title = 'Broker-Vetted Scenarios'
+  whyChooseBox1Para = 'Side-by-side lender quotes, clear fee breakdowns, and expert guidance help you choose confidently.'
+  whyChooseBox1Bullet1 = 'Compare multiple lenders through a single broker relationship'
+  whyChooseBox1Bullet2 = 'See all costs upfront with full transparency—brokers disclose compensation'
+  whyChooseBox1Bullet3 = 'Understand timelines and documentation with professional guidance'
+  
+  whyChooseBox2Title = 'Transparent Broker Guidance'
+  whyChooseBox2Para = 'Plain-English explanations of rates, lender fees, broker compensation, and loan structures—no surprises.'
+  whyChooseBox2Bullet1 = 'Detailed APR breakdowns that include lender fees and broker compensation'
+  whyChooseBox2Bullet2 = 'Clear explanations of fixed vs. ARM, points, credits, and rate lock strategies'
+  whyChooseBox2Bullet3 = 'Guidance on credit requirements, DTI ratios, and when brokers can negotiate better terms'
+  
+  whyChooseBox3Title = 'Competitive Lender Access'
+  whyChooseBox3Para = 'Access multiple conventional mortgage lenders through licensed brokers, request clarifications, and choose the financing solution that matches your homeownership goals.'
+  whyChooseBox3Bullet1 = 'Choose from a nationwide network of licensed mortgage brokers'
+  whyChooseBox3Bullet2 = 'No obligation to proceed with any broker or lender'
+  whyChooseBox3Bullet3 = 'Ask questions, compare lender offers, and lock rates when ready'
+  
+  whyChooseCTA = 'Connect With Licensed Brokers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Homebuyers Say About Working with Brokers'
+  testimonialsSubtitle = 'Real experiences from borrowers who chose broker-assisted financing'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'My broker compared five lenders in one day and saved me 0.375% on my rate. I would have never found that deal on my own. Having a licensed professional negotiate on my behalf was worth every penny of the broker fee.'
+  testimonial1Name = 'Verified Homebuyer'
+  testimonial1Subtitle = 'Broker found better rates than I could alone.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'I had a middle credit score and didnt know which lenders would approve me. My broker at Browse Lenders® matched me with the right lender immediately. No wasted applications, no credit inquiries from lenders who wouldnt approve me anyway.'
+  testimonial2Name = 'Verified Homebuyer'
+  testimonial2Subtitle = 'Broker expertise saved my credit report.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'There was no pressure to choose a specific lender. My broker gave me three options, explained pros and cons of each, and let me decide. It felt like having an advocate instead of a salesperson.'
+  testimonial3Name = 'Verified Homebuyer'
+  testimonial3Subtitle = 'Guidance, not sales pressure.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'My employer offers broker access through Browse Lenders® as a benefit. I used it to refinance and the broker negotiated closing costs down significantly. This should be standard in every benefits package.'
+  testimonial4Name = 'Verified Homebuyer'
+  testimonial4Subtitle = 'Employer benefit that actually delivers value.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'The broker helped me understand why my debt-to-income ratio was holding me back. Instead of denying me, he showed me how to restructure and reapply. Two months later, I was approved with a great rate.'
+  testimonial5Name = 'Verified Homebuyer'
+  testimonial5Subtitle = 'Broker taught me how to qualify.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Most sites are built for lenders. Working with a broker meant someone was on MY side for once. I got educated first, matched second, and by closing I felt confident instead of confused.'
+  testimonial6Name = 'Verified Homebuyer'
+  testimonial6Subtitle = 'Finally, someone working for me, not the lender.'
+  
+  # Calculators Section
+  calculatorsTitle = 'Broker-Assisted Rate Comparison Tools'
+  calculatorsSubtitle = 'Compare offers side-by-side with broker guidance'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Credit Readiness'
+  creditScoreImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Most homebuyers dont realize that mortgage brokers evaluate you based on your middle credit score — not the highest or the lowest. Middle Credit Score® helps you understand how brokers and lenders assess your creditworthiness, which factors impact your eligibility, and what strategic improvements can do to unlock better conventional loan terms before you ever apply.'
+  creditScoreHeading1 = 'No-cost access to broker-grade credit insights'
+  creditScoreText1 = 'Gain free access to the same credit evaluation framework that mortgage brokers use — no subscriptions, monthly fees, or credit pulls required.'
+  creditScoreHeading2 = 'Know your numbers before broker consultations'
+  creditScoreText2 = 'Learn how your middle credit score is calculated and how targeted improvements can help brokers negotiate better rates, lower fees, and stronger approval confidence.'
+  creditScoreHeading3 = 'Real progress through financial literacy'
+  creditScoreText3 = 'With the right knowledge, borrowers can strengthen their position when working with brokers, build long-term confidence, and avoid predatory lending or high-cost mortgage traps.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers — Mortgage Broker Access as an Employee Benefit'
+  employersSubtitle = 'Empower your workforce with licensed broker networks'
+  employersImage = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Todays HR departments are expanding their wellness strategies beyond healthcare and retirement benefits by including professional mortgage broker access. Through Browse Lenders®, employers can offer no-cost access to licensed mortgage brokers who compare lenders, negotiate rates, and provide unbiased conventional mortgage guidance—helping employees navigate homeownership with expert support.'
+  employersBullet1Title = 'No-cost broker benefit integration'
+  employersBullet1Text = 'Add Browse Lenders® mortgage broker network to your financial-wellness or EAP program without contracts, fees, or onboarding friction.'
+  employersBullet2Title = 'Professional broker guidance for employees'
+  employersBullet2Text = 'Employees gain access to licensed brokers who compare multiple lenders, explain loan options, and help employees understand how credit, income, and documentation impact their approval before sharing personal information.'
+  employersBullet3Title = 'Boost retention through expert mortgage support'
+  employersBullet3Text = 'Empower your workforce with transparent broker-assisted mortgage guidance and expert lender comparisons that reduce homebuying stress and improve long-term financial stability.'
+  employersCTA = 'Learn About Employer Broker Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Broker Insights & Conventional Mortgage Guidance'
+  blogSubtitle = 'Expert analysis, market trends, and broker tips for smarter homebuying'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Questions About Mortgage Brokers'
+  faqSubtitle = 'Clear answers about working with licensed conventional mortgage brokers'
+  
+  # FAQ 1
+  faq1Question = 'What does a mortgage broker do and how are they different from a lender?'
+  faq1Answer = 'A mortgage broker is a licensed professional who works on your behalf to compare loan offers from multiple lenders. Unlike direct lenders who only offer their own products, brokers have access to a wide network of conventional mortgage lenders, allowing them to shop rates, negotiate terms, and match you with the best financing options based on your credit profile and financial goals.'
+  
+  # FAQ 2
+  faq2Question = 'Do I pay the mortgage broker or does the lender pay them?'
+  faq2Answer = 'Broker compensation can come from either the lender (lender-paid) or the borrower (borrower-paid), depending on the loan structure. In many cases, lenders pay broker fees, making broker services free to the borrower. When you work with brokers at <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a>, fee structures are disclosed upfront so you understand exactly who pays what before committing.'
+  
+  # FAQ 3
+  faq3Question = 'How do brokers help me get better rates than I could find on my own?'
+  faq3Answer = 'Brokers have established relationships with multiple lenders and understand how each lender evaluates <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">credit scores</a>, debt-to-income ratios, and loan scenarios. They know which lenders are most competitive for your specific profile and can negotiate pricing, closing costs, and terms on your behalf—often securing better deals than a borrower could negotiate directly.'
+  
+  # FAQ 4
+  faq4Question = 'Can employers offer mortgage broker access as an employee benefit?'
+  faq4Answer = 'Yes. Employers can integrate Browse Lenders® broker network access into financial wellness programs at no cost to the organization. Employees gain professional mortgage broker guidance, transparent lender comparisons, and expert negotiation support—helping support homeownership and long-term financial stability for American families.'
+  
+  # Contact/CTA Section
+  ctaTitle = "Ready to Work with a Licensed Mortgage Broker?"
+  ctaSubtitle = 'Connect with experienced brokers who compare lenders and negotiate on your behalf'
+  ctaDescription = 'Explore verified conventional mortgage brokers through Browse Lenders® — helping American homebuyers secure competitive rates through professional broker services.'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Conventional Mortgage Loans Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'jumbo loans', 'luxury homes']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+  
+  # Favicon configuration
+  favicon = '/favicon.png'
+  
+  # PWA Manifest Settings
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    
+    # App Icons
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+# Custom output formats
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Sitemap configuration for better SEO
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+# URL management
+[permalinks]
+  blogs = '/blogs/:slug/'

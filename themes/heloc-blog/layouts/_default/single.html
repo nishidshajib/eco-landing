@@ -3,7 +3,7 @@
 {{ $date := .Date.Format "2006-01-02" }}
 {{ $dateFormatted := .Date.Format "January 2, 2006" }}
 {{ $readTime := .Params.readTime }}
-{{ $category := .Params.category }}
+{{ $category := index .Params.categories 0 }}
 {{ $excerpt := .Params.excerpt }}
 {{ $image := .Params.image }}
 {{ $tags := .Params.tags }}
@@ -51,12 +51,12 @@
   },
   "url": {{ $permalink | jsonify }},
   "wordCount": {{ $wordCount }},
-  "articleSection": {{ $category | default "HELOC" | jsonify }},
+  "articleSection": {{ $category | default "Conventional Loans" | jsonify }},
   "keywords": [{{ range $i, $tag := $tags }}{{ if $i }},{{ end }}{{ $tag | jsonify }}{{ end }}],
   "about": {
     "@type": "Thing",
-    "name": "HELOC",
-    "description": "Home Equity Line of Credit information and guidance"
+    "name": {{ .Site.Title | jsonify }},
+    "description": {{ .Site.Params.siteDescription | default .Site.Title | jsonify }}
   },
   "isPartOf": {
     "@type": "Website",
@@ -101,7 +101,7 @@
             </time>
             {{ if $readTime }}
             <span class="text-white/60 text-sm">•</span>
-            <span class="text-white/80 text-sm">{{ $readTime }} min</span>
+            <span class="text-white/80 text-sm">{{ $readTime }}</span>
             {{ end }}
         </div>
 

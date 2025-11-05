@@ -7,7 +7,7 @@
         {
             "title": {{ .Title | jsonify }},
             "date": {{ (.Date.Format "January 2, 2006") | jsonify }},
-            "category": {{ .Params.category | jsonify }},
+            "categories": {{ .Params.categories | jsonify }},
             "excerpt": {{ .Params.excerpt | jsonify }},
             "image": {{ .Params.image | jsonify }},
             "permalink": {{ .Permalink | jsonify }},

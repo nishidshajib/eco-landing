@@ -1,0 +1,84 @@
+{{ define "main" }}
+
+<!-- Hero Header with Background -->
+<div class="relative bg-gradient-to-br from-primary to-blue-900 text-white py-20 sm:py-24">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 30px 30px;"></div>
+    </div>
+    
+    <div class="container mx-auto pt-16 px-6 relative z-10">
+        <!-- Breadcrumb -->
+        <nav class="mb-6 text-sm text-center uppercase font-medium">
+            <a href="/" class="text-white/80 hover:text-white hover:underline">Home</a>
+            <span class="text-white/60 mx-2">/</span>
+            <a href="/blogs/" class="text-white/80 hover:text-white hover:underline">Blog</a>
+            <span class="text-white/60 mx-2">/</span>
+            <span class="text-white/80">{{ .Title }}</span>
+        </nav>
+        
+        <div class="text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">{{ .Title }}</h1>
+            <p class="text-md text-white/90 max-w-3xl mx-auto">{{ .Params.description | default (printf "Articles tagged with %s" .Title) }}</p>
+            <p class="text-sm text-white/70 mt-4">{{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }}</p>
+        </div>
+    </div>
+</div>
+
+<section class="py-16 sm:py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <!-- Blog Posts Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {{ range .Pages }}
+            {{ $permalink := .Permalink }}
+            {{ $title := .Title }}
+            {{ $image := .Params.image }}
+            {{ $category := index .Params.categories 0 }}
+            {{ $date := .Date.Format "2006-01-02" }}
+            {{ $dateFormatted := .Date.Format "January 2, 2006" }}
+            {{ $excerpt := .Params.excerpt }}
+            <article class="bg-background rounded-xl overflow-hidden transition-shadow duration-300">
+                {{ if $image }}
+                <a href="{{ $permalink }}">
+                    <div class="h-48 overflow-hidden">
+                        <img src="{{ $image }}" alt="{{ $title }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </a>
+                {{ end }}
+                <div class="p-6">
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        {{ if $category }}
+                        <span class="bg-accent/10 text-accent px-2 py-1 rounded-full text-xs font-medium">{{ $category }}</span>
+                        {{ end }}
+                        <span>•</span>
+                        <time datetime="{{ $date }}">{{ $dateFormatted }}</time>
+                    </div>
+                    <h2 class="text-xl font-bold text-primary mb-3 line-clamp-2">
+                        <a href="{{ $permalink }}" class="hover:text-accent transition-colors">{{ $title }}</a>
+                    </h2>
+                    {{ if $excerpt }}
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">{{ $excerpt }}</p>
+                    {{ end }}
+                    <a href="{{ $permalink }}" class="inline-flex items-center text-accent hover:text-primary font-medium text-sm">
+                        Read More
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+
+        <!-- Back to Blog -->
+        <div class="text-center mt-12">
+            <a href="/blogs/" class="inline-flex items-center text-accent hover:text-primary font-medium">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to All Articles
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}
