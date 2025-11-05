@@ -135,6 +135,19 @@ The deployment will create this structure on your Hostinger hosting:
 - 🔒 **Secure**: FTP credentials stored safely in GitHub secrets
 - 📱 **Multi-site**: Handles all your landing pages automatically
 - 📊 **Tracking**: See deployment history and logs
+- 🕐 **Scheduled Publishing**: Auto-publish posts at scheduled times
+- 📅 **Content Management**: Create posts in advance with publish dates
+
+## Auto-Publishing Feature
+
+The repository now includes an automatic post publishing system:
+
+- **📝 Create scheduled posts** with future publish dates
+- **🕐 Hourly checks** for posts ready to publish  
+- **🚀 Automatic publishing** when the date/time is reached
+- **📤 Instant deployment** to your domains
+
+See `AUTO-PUBLISHING.md` for detailed instructions on creating scheduled posts.
 
 ## Making Changes
 
@@ -142,7 +155,20 @@ To update your landing pages:
 
 1. Edit your content files locally
 2. Test with `hugo server`
-3. Commit and push changes
-4. GitHub automatically deploys to Hostinger!
+3. For scheduled posts: Use `create-scheduled-post.sh` or `.bat`
+4. Commit and push changes
+5. GitHub automatically deploys to Hostinger!
+
+### Creating Scheduled Posts
+
+**Windows:**
+```bash
+create-scheduled-post.bat
+```
+
+**Linux/Mac:**
+```bash
+bash create-scheduled-post.sh
+```
 
 That's it! Your eco-landing repository is now set up for automatic deployment to Hostinger hosting.
