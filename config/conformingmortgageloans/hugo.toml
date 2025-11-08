@@ -81,12 +81,6 @@ theme = "heloc-blog"
   url = "/resources/"
   weight = 60
 
-# Content Management
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
 # Landing Page Sections Content
 [params.sections]
 
