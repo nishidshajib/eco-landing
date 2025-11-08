@@ -7,10 +7,9 @@ author: "Mortgage Rate Analyst"
 tags: ["middle credit score", "mortgage rates", "conventional loans", "rate pricing", "credit impact"]
 categories: ["mortgage rates", "credit scores", "conventional financing"]
 description: "Understand how middle credit scores (620-679) affect conventional mortgage rates in 2025. Learn rate pricing, improvement strategies, and lender selection tips."
-featured_image: "/images/credit-score-rate-impact-2025.jpg"
+image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
 ---
 
-# How Your Middle Credit Score Impacts Conventional Mortgage Rates in 2025
 
 Your credit score is the single most influential factor in determining your conventional mortgage rate, and understanding how middle credit scores (620-679) affect pricing can save you tens of thousands of dollars over your loan's lifetime. This comprehensive analysis reveals the exact impact of middle credit scores on 2025 conventional mortgage rates and strategies to optimize your position.
 

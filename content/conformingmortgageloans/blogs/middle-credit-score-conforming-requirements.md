@@ -7,10 +7,9 @@ author: "Conforming Credit Specialist"
 tags: ["middle credit score", "conforming mortgages", "fannie mae", "freddie mac", "credit requirements"]
 categories: ["credit scores", "conforming loans", "mortgage qualification"]
 description: "Complete guide to middle credit score requirements for conforming mortgages in 2025. Learn how Fannie Mae and Freddie Mac evaluate credit for safe financing."
-featured_image: "/images/credit-score-conforming-mortgage.jpg"
+image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop"
 ---
 
-# Middle Credit Score Requirements for Conforming Mortgages: Your 2025 Guide
 
 Understanding credit requirements for conforming mortgages is crucial for middle credit score borrowers seeking the safety and security of Fannie Mae and Freddie Mac financing. This comprehensive guide breaks down exactly what you need to know about qualifying with a middle-range credit score.
 
