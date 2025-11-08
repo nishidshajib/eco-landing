@@ -1,0 +1,98 @@
+# Deployment Options for Hostinger (Beyond FTP)
+
+You have several options to deploy your eco-landing sites to Hostinger hosting. Here are all the available methods:
+
+## 🔄 **Option 1: FTP Deployment (Current Setup)**
+**✅ Pros:** Works with all Hostinger plans, reliable, automatic
+**❌ Cons:** Requires FTP credentials
+
+This is what we've set up with GitHub Actions using `SamKirkland/FTP-Deploy-Action`.
+
+---
+
+## 🐙 **Option 2: Git Integration (Recommended Alternative)**
+
+### GitHub Integration in Hostinger
+Many Hostinger plans support direct Git deployment:
+
+1. **Log into Hostinger Control Panel**
+2. Look for **"Git"** or **"Version Control"** section
+3. **Connect your GitHub repository**
+4. **Set auto-deployment** on push to main branch
+
+**✅ Pros:** No FTP needed, direct from GitHub, very secure
+**❌ Cons:** Not available on all Hostinger plans
+
+### Setup Steps:
+```bash
+# In Hostinger Control Panel
+1. Go to Git/Version Control
+2. Add Repository: https://github.com/nishidshajib/eco-landing
+3. Set Branch: main
+4. Set Deploy Path: /public_html/ or /domains/yoursite.com/public_html/
+5. Enable Auto-Deploy on Push
+```
+
+---
+
+## 🌐 **Option 3: Hostinger Website Builder Integration**
+
+### If you're using Hostinger's Website Builder:
+1. **Export your Hugo sites** to static HTML
+2. **Upload via Hostinger's drag-and-drop interface**
+3. **Set up webhooks** to trigger rebuilds
+
+**✅ Pros:** No technical setup, visual interface
+**❌ Cons:** Manual process, less automation
+
+---
+
+## 🔐 **Option 4: SSH/SFTP Deployment (Advanced)**
+
+### If your Hostinger plan includes SSH access:
+
+<function_calls>
+<invoke name="create_file">
+<parameter name="content">name: Deploy via SSH to Hostinger
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build sites
+      run: |
+        hugo --config config/conventionalmortgagebrokers/hugo.toml --minify --destination "public/brokers"
+        hugo --config config/conventionalmortgageloans/hugo.toml --minify --destination "public/loans"
+        hugo --config config/helocloanofficers/hugo.toml --minify --destination "public/heloc"
+
+    - name: Deploy via SSH
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /path/to/your/site
+          git pull origin main
+          # Additional deployment commands

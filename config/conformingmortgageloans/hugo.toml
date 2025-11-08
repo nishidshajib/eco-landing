@@ -1,0 +1,344 @@
+baseURL = "https://conformingmortgageloans.com"
+languageCode = "en-us"
+title = "Conforming Mortgage Loans - Safe Fannie Mae & Freddie Mac Financing"
+theme = "heloc-blog"
+
+# Layout Configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# SEO and Meta
+[params]
+  description = "Secure conforming mortgage loans backed by Fannie Mae and Freddie Mac. Perfect for middle credit score borrowers seeking safe, government-sponsored financing options."
+  keywords = "conforming mortgage loans, fannie mae loans, freddie mac loans, middle credit score mortgages, safe mortgage financing, government sponsored loans"
+  author = "Conforming Mortgage Loans Team"
+  
+  # Branding
+  site_name = "ConformingMortgageLoans.com"
+  logo = "/images/conforming-loans-logo.png"
+  
+  # Primary Anchors Strategy
+  primary_anchor = "MiddleCreditScore.com"
+  secondary_anchor = "BrowseLenders.com" 
+  tertiary_anchor = "Cash-OutRefinance.com"
+  
+  # Content Positioning
+  positioning = "Safe Fannie/Freddie Buyers"
+  target_audience = "Middle Credit Score Borrowers (620-740)"
+  
+  # Core Domains to Promote
+  promote_domains = [
+    "MiddleCreditScore.com",
+    "BrowseLenders.com", 
+    "Cash-OutRefinance.com"
+  ]
+  
+  # Hero Section
+  hero_title = "Secure Conforming Mortgage Loans"
+  hero_subtitle = "Fannie Mae & Freddie Mac Approved Financing for Safe, Reliable Home Buying"
+  hero_cta = "Check Your Eligibility"
+  hero_image = "/images/conforming-mortgage-family.jpg"
+  
+  # Contact Information
+  phone = "1-800-CONFORM"
+  email = "info@conformingmortgageloans.com"
+  
+  # Social Media
+  facebook = "https://facebook.com/conformingmortgageloans"
+  twitter = "https://twitter.com/conformingloans"
+  linkedin = "https://linkedin.com/company/conforming-mortgage-loans"
+
+# Menu Configuration
+[[menu.main]]
+  name = "Conforming Loans"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "Middle Credit Scores"
+  url = "https://middlecreditscore.com"
+  weight = 20
+
+[[menu.main]]
+  name = "Browse Lenders"
+  url = "https://browselenders.com"  
+  weight = 30
+
+[[menu.main]]
+  name = "Cash-Out Refinance"
+  url = "https://cash-outrefinance.com"
+  weight = 40
+
+[[menu.main]]
+  name = "Loan Programs"
+  url = "/programs/"
+  weight = 50
+
+[[menu.main]]
+  name = "Resources"
+  url = "/resources/"
+  weight = 60
+
+# Content Management
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Landing Page Sections Content
+[params.sections]
+
+# About Section
+[params.sections.about]
+  title = "Safe Government-Backed Financing"
+  subtitle = "Why Conforming Loans Are the Smartest Choice"
+  content = """
+  Conforming loans backed by Fannie Mae and Freddie Mac offer unmatched security and competitive rates for middle credit score borrowers. With government oversight and standardized terms, you get predictable monthly payments and consumer protections that non-conforming loans simply can't match.
+  
+  **Perfect for credit scores 620-740** - our specialty is helping middle credit borrowers secure the safe, affordable financing they deserve.
+  """
+  image = "/images/government-backed-security.jpg"
+
+# Features Section  
+[params.sections.features]
+  title = "Conforming Loan Advantages"
+  subtitle = "Government Backing Means Better Terms"
+
+  [[params.sections.features.items]]
+    title = "Fannie Mae & Freddie Mac Backing"
+    description = "Government-sponsored enterprise backing ensures loan stability and consumer protection."
+    icon = "fas fa-shield-alt"
+    color = "blue"
+
+  [[params.sections.features.items]]
+    title = "Middle Credit Score Friendly" 
+    description = "Designed for borrowers with 620-740 credit scores - competitive rates for your range."
+    icon = "fas fa-chart-line"
+    color = "green"
+
+  [[params.sections.features.items]]
+    title = "3% Down Payment Options"
+    description = "First-time buyer programs and conventional options with minimal down payment requirements."
+    icon = "fas fa-home"
+    color = "purple"
+
+  [[params.sections.features.items]]
+    title = "Competitive Interest Rates"
+    description = "Government backing allows lenders to offer lower rates compared to non-conforming loans."
+    icon = "fas fa-percentage"
+    color = "orange"
+
+  [[params.sections.features.items]]
+    title = "Standardized Terms"
+    description = "Predictable qualification guidelines and consistent loan terms across all lenders."
+    icon = "fas fa-clipboard-check"
+    color = "teal"
+
+  [[params.sections.features.items]]
+    title = "Future Refinancing Flexibility"
+    description = "Easy refinancing options when rates drop or your credit score improves."
+    icon = "fas fa-sync-alt"  
+    color = "red"
+
+# Services Section
+[params.sections.services]
+  title = "Conforming Loan Programs Available"
+  subtitle = "Find the Right Program for Your Situation"
+
+  [[params.sections.services.items]]
+    title = "Traditional Conforming Mortgages"
+    description = "30-year and 15-year fixed-rate loans with competitive terms and government backing."
+    features = [
+      "Credit scores starting at 620",
+      "3% down payment minimum", 
+      "Fannie Mae and Freddie Mac approved",
+      "No prepayment penalties",
+      "Competitive interest rates"
+    ]
+    cta_text = "Check Your Credit Score"
+    cta_link = "https://middlecreditscore.com"
+    image = "/images/traditional-conforming-loans.jpg"
+
+  [[params.sections.services.items]]
+    title = "First-Time Homebuyer Programs"
+    description = "HomeReady and Home Possible programs designed specifically for first-time buyers."
+    features = [
+      "3% down payment options",
+      "Flexible income verification", 
+      "Reduced mortgage insurance",
+      "Homebuyer education benefits",
+      "Gift funds allowed"
+    ]
+    cta_text = "Find Specialized Lenders"
+    cta_link = "https://browselenders.com"
+    image = "/images/first-time-buyer-programs.jpg"
+
+  [[params.sections.services.items]]
+    title = "Cash-Out Refinancing"
+    description = "Access your home equity while maintaining conforming loan benefits and government backing."
+    features = [
+      "Up to 80% loan-to-value",
+      "Keep Fannie/Freddie protections",
+      "Competitive refinance rates",
+      "Multiple uses for cash proceeds",
+      "Streamlined approval process"
+    ]
+    cta_text = "Explore Cash-Out Options"
+    cta_link = "https://cash-outrefinance.com"
+    image = "/images/cash-out-refinance-conforming.jpg"
+
+# Benefits Section
+[params.sections.benefits]
+  title = "Why Choose Conforming Over Non-Conforming?"
+  subtitle = "Government Backing Makes All the Difference"
+  content = """
+  When you choose a conforming loan, you're not just getting financing - you're getting the security and stability that comes with Fannie Mae and Freddie Mac backing. Here's how conforming loans protect your investment:
+  """
+
+  [[params.sections.benefits.comparison]]
+    feature = "Government Backing"
+    conforming = "✅ Fannie Mae & Freddie Mac"
+    nonconforming = "❌ No government support"
+    
+  [[params.sections.benefits.comparison]]
+    feature = "Interest Rates"
+    conforming = "✅ Competitive rates"
+    nonconforming = "❌ Higher rates typical"
+    
+  [[params.sections.benefits.comparison]]
+    feature = "Terms & Conditions"
+    conforming = "✅ Standardized, predictable"
+    nonconforming = "❌ Varies by lender"
+    
+  [[params.sections.benefits.comparison]]
+    feature = "Consumer Protection"
+    conforming = "✅ Federal oversight"
+    nonconforming = "❌ Limited protections"
+    
+  [[params.sections.benefits.comparison]]
+    feature = "Credit Requirements" 
+    conforming = "✅ 620+ credit score"
+    nonconforming = "❌ Often 700+ required"
+    
+  [[params.sections.benefits.comparison]]
+    feature = "Down Payment"
+    conforming = "✅ As low as 3%"
+    nonconforming = "❌ Typically 10-20%"
+
+# Statistics Section
+[params.sections.stats]
+  title = "Conforming Loans by the Numbers"
+  subtitle = "See Why Millions Choose Government-Backed Financing"
+
+  [[params.sections.stats.items]]
+    number = "620"
+    label = "Minimum Credit Score"
+    description = "Start your homeownership journey with middle credit"
+
+  [[params.sections.stats.items]] 
+    number = "3%"
+    label = "Minimum Down Payment"
+    description = "First-time buyer programs available"
+
+  [[params.sections.stats.items]]
+    number = "$766,550"
+    label = "2025 Conforming Limit"
+    description = "Standard limit for most U.S. counties"
+
+  [[params.sections.stats.items]]
+    number = "43%"
+    label = "Maximum DTI Ratio"
+    description = "Debt-to-income flexibility for qualification"
+
+# Testimonials Section
+[params.sections.testimonials]
+  title = "Success Stories from Conforming Loan Borrowers"
+  subtitle = "Real Results from Real People"
+
+  [[params.sections.testimonials.items]]
+    content = "With a 660 credit score, I thought homeownership was years away. The conforming loan program through Fannie Mae made it possible with just 3% down and competitive rates. The process was smooth and the government backing gave me confidence."
+    author = "Sarah M."
+    position = "First-Time Homebuyer"
+    location = "Austin, TX"
+    image = "/images/testimonial-sarah.jpg"
+
+  [[params.sections.testimonials.items]]
+    content = "Moving from a non-conforming loan to a conforming mortgage saved me $400/month and gave me peace of mind with government backing. The refinancing process was straightforward and the savings were immediate."
+    author = "Michael R."  
+    position = "Refinance Customer"
+    location = "Denver, CO"
+    image = "/images/testimonial-michael.jpg"
+
+  [[params.sections.testimonials.items]]
+    content = "The conforming cash-out refinance let us renovate our kitchen while keeping our low rate and Freddie Mac protections. We got the cash we needed without sacrificing the security of government backing."
+    author = "Jennifer & David L."
+    position = "Cash-Out Refinance"
+    location = "Phoenix, AZ" 
+    image = "/images/testimonial-jennifer-david.jpg"
+
+# FAQ Section
+[params.sections.faq]
+  title = "Frequently Asked Questions"
+  subtitle = "Everything You Need to Know About Conforming Loans"
+
+  [[params.sections.faq.items]]
+    question = "What credit score do I need for a conforming loan?"
+    answer = "The minimum credit score for most conforming loans is 620. However, borrowers with scores of 680+ typically receive the best rates. If your score is in the middle range (620-679), you can still qualify for competitive conforming loan terms. Visit MiddleCreditScore.com to check your current score and get personalized improvement strategies."
+
+  [[params.sections.faq.items]]  
+    question = "How much can I borrow with a conforming loan?"
+    answer = "For 2025, the conforming loan limit is $766,550 in most counties, with higher limits up to $1,149,825 in expensive areas. These limits are set by the Federal Housing Finance Agency (FHFA) and updated annually based on home price trends."
+
+  [[params.sections.faq.items]]
+    question = "What's the difference between Fannie Mae and Freddie Mac loans?"
+    answer = "Both Fannie Mae and Freddie Mac are government-sponsored enterprises that purchase conforming loans from lenders. While their basic requirements are similar, they may have different program names (HomeReady vs. Home Possible) and slightly different qualification guidelines. Your lender will determine which GSE purchases your loan."
+
+  [[params.sections.faq.items]]
+    question = "Can I use a conforming loan for investment property?"  
+    answer = "Yes, but with different requirements. Investment property conforming loans typically require 20-25% down payment, higher credit scores (usually 640+), and additional cash reserves. The property must still fall within conforming loan limits for your area."
+
+  [[params.sections.faq.items]]
+    question = "How do I find the best conforming loan lender?"
+    answer = "Compare multiple lenders who specialize in conforming loans for your credit profile. BrowseLenders.com connects you with pre-screened lenders who excel at Fannie Mae and Freddie Mac programs for middle credit score borrowers. Get quotes from at least 3-4 lenders to ensure competitive terms."
+
+# CTA Section
+[params.sections.cta]
+  title = "Ready to Secure Your Conforming Loan?"
+  subtitle = "Start Your Government-Backed Financing Journey Today"
+  content = """
+  Don't let another day pass without taking advantage of the safety and security that conforming loans provide. With Fannie Mae and Freddie Mac backing, competitive rates, and flexible qualification guidelines, there's never been a better time to secure your piece of the American Dream.
+  
+  **Take the first step today:**
+  """
+
+  [[params.sections.cta.buttons]]
+    text = "Check Your Credit Score"
+    url = "https://middlecreditscore.com"
+    style = "primary"
+    icon = "fas fa-chart-line"
+
+  [[params.sections.cta.buttons]]  
+    text = "Find Conforming Lenders"
+    url = "https://browselenders.com"
+    style = "secondary"  
+    icon = "fas fa-search"
+
+  [[params.sections.cta.buttons]]
+    text = "Explore Cash-Out Refinance"
+    url = "https://cash-outrefinance.com" 
+    style = "accent"
+    icon = "fas fa-sync-alt"
+
+# Contact Information
+[params.contact]
+  phone = "1-800-CONFORM"
+  email = "info@conformingmortgageloans.com"
+  address = "Nationwide Service"
+  hours = "Monday - Friday: 8AM - 8PM EST"
+
+# Sitemap Configuration  
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
