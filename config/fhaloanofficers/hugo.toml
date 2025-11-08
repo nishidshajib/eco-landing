@@ -1,0 +1,283 @@
+baseURL = 'https://www.fhaloanofficers.com/'
+languageCode = 'en-us'
+title = 'FHA Loan Officers'
+theme = 'heloc-blog'
+contentDir = 'content/fhaloanofficers'
+publishDir = 'public/fhaloanofficers'
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = 'assets/.*\.(js|ts|jsx|tsx)'
+    target = '(js|scripts|javascript)'
+  [[build.cachebusters]]
+    source = 'assets/.*\.(css|sass|scss)'
+    target = '(css|styles|scss|sass)'
+
+[module]
+  [[module.mounts]]
+    source = 'content/fhaloanofficers'
+    target = 'content'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'Connect with licensed FHA loan officers specializing in government-backed financing for first-time buyers and middle credit score borrowers with 3.5% down FHA loans'
+  shortName = 'FHA Officers'
+  tagline = 'Your Trusted Source for FHA Mortgage Solutions'
+  homepage = 'https://www.fhaloanofficers.com/'
+  
+  siteName = 'FHA Loan Officers'
+  siteDescription = 'Expert FHA loan officers helping first-time buyers and middle credit score borrowers achieve homeownership with government-backed FHA mortgages'
+  keywords = ['FHA loans', 'FHA loan officers', 'FHA mortgage', 'first-time homebuyers', 'low credit score loans', 'government-backed mortgages', '3.5% down payment', 'FHA specialists']
+  serviceType = 'FHA Lending Services'
+  supportEmail = 'support@fhaloanofficers.com'
+  
+  # Hero Section
+  heroTitle = 'Connect with Licensed FHA Loan Officers'
+  heroSubtitle = 'Government-backed financing specialists helping first-time buyers and middle credit score borrowers achieve homeownership with FHA-approved mortgages'
+  heroImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find FHA Loan Officers'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Check Your Credit Readiness'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'Why Choose FHA Loan Officers for Government-Backed Financing'
+  aboutSubtitle = 'Expert guidance for first-time buyers and flexible credit qualification'
+  aboutImage = 'https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=2000&auto=format&fit=crop'
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  
+  # Programs Section
+  programsTitle = 'FHA Loan Programs for Every Homebuyer'
+  programsSubtitle = 'Government-insured options with flexible qualification standards'
+  
+  # Program 1
+  program1Title = 'FHA Purchase Loans'
+  program1Description = 'Government-insured mortgages with just 3.5% down for qualified borrowers, accepting credit scores as low as 580 and offering flexible debt-to-income ratios.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop'
+  program1Bullet1 = 'Down payments as low as 3.5% with 580+ credit score'
+  program1Bullet2 = 'Credit scores as low as 500 with 10% down payment'
+  program1Bullet3 = 'Debt-to-income ratios up to 43% with compensating factors'
+  program1Bullet4 = 'Gift funds and down payment assistance accepted'
+  
+  # Program 2
+  program2Title = 'FHA Streamline Refinance'
+  program2Description = 'Simplified refinancing for existing FHA borrowers with reduced documentation, no appraisal required, and faster approval timelines for rate reduction.'
+  program2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop'
+  program2Bullet1 = 'No appraisal or credit check required for many borrowers'
+  program2Bullet2 = 'Reduce monthly payments through lower interest rates'
+  program2Bullet3 = 'Minimal documentation and faster processing times'
+  program2Bullet4 = 'Can include mortgage insurance premium in loan amount'
+  
+  # Program 3
+  program3Title = 'FHA 203(k) Rehabilitation Loans'
+  program3Description = 'Finance both home purchase and renovation costs in a single FHA-insured loan, perfect for fixing up properties and building equity through improvements.'
+  program3Image = 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=800&auto=format&fit=crop'
+  program3Bullet1 = 'Combine purchase price and renovation costs in one loan'
+  program3Bullet2 = 'Fix properties that dont qualify for standard financing'
+  program3Bullet3 = 'Build equity through strategic home improvements'
+  program3Bullet4 = 'Up to $35,000 for limited repairs or full rehabilitation'
+  
+  programsCTA = 'Compare FHA Loan Officers'
+  programsCTALink = 'https://www.browselenders.com'
+  
+  # Education Section
+  educationTitle = 'Why Work with FHA Loan Officers?'
+  educationSubtitle = 'FHA specialists understand government-insured financing and help first-time buyers navigate flexible qualification standards with confidence'
+  
+  # Education Cards
+  edu1Title = 'FHA Expertise'
+  edu1Description = 'FHA loan officers specialize in government-backed financing, understanding unique qualification standards and helping borrowers maximize approval odds through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'
+  edu1Image = 'https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Credit Guidance'
+  edu2Description = 'FHA officers help borrowers with middle credit scores understand requirements and improvement strategies. Visit <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> to check your qualifying score.'
+  edu2Image = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Down Payment Assistance'
+  edu3Description = 'Officers connect buyers with down payment assistance programs and explain how to use gift funds, grants, and other resources to minimize upfront costs with FHA financing.'
+  edu3Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'First-Time Buyer Support'
+  edu4Description = 'FHA loan officers provide patient guidance for first-time buyers, explaining every step from pre-approval through closing with government-backed security and competitive terms.'
+  edu4Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Find Your FHA Loan Officer'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'FHA Loan Officer Insights — Smarter Homebuying Decisions'
+  learningSubtitle = 'Licensed FHA specialists provide government-backed financing guidance and approval strategies'
+  learningImage = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Working with an FHA loan officer gives first-time buyers access to government-insured financing with lower credit requirements and flexible down payment options. Officers help you understand how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit profile</a> affects approval odds and monthly mortgage insurance costs.'
+  learningBullet1 = 'Access FHA financing with credit scores as low as 580 (or 500 with larger down payment).'
+  learningBullet2 = 'Compare FHA-approved lenders at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for best rates and terms.'
+  learningBullet3 = 'Understand how mortgage insurance premiums affect monthly payments and long-term costs.'
+  learningBullet4 = 'Explore <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">FHA cash-out refinancing</a> options to access equity while maintaining government backing.'
+  learningPara2 = 'Our education-first approach helps borrowers make informed decisions without sales pressure—understanding qualification requirements, comparing lender options, and choosing the right FHA loan program for your situation.'
+  learningPara3 = '<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore our FHA Officer Network</a> for rate comparisons, credit guidance, and expert tutorials on government-backed financing strategies for first-time buyers and middle credit score borrowers.'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders® FHA Officer Network'
+  whyChooseSubtitle = 'Government-backed expertise, transparent guidance, and flexible qualification standards—built for first-time buyers.'
+  whyChoosePara1 = 'Todays first-time buyers need more than loan approvals—they need patient guidance, credit optimization strategies, and officers who understand government-backed financing inside and out.'
+  whyChoosePara2 = 'Thats why <strong>Browse Lenders®</strong> was built as a <strong>national FHA officer network and homebuyer education resource</strong> for consumers and employers seeking government-insured financing solutions.'
+  
+  whyChooseBox1Title = 'FHA Specialization'
+  whyChooseBox1Para = 'Officers who focus exclusively on FHA financing understand nuances of government-backed loans that general mortgage professionals often miss.'
+  whyChooseBox1Bullet1 = 'Deep knowledge of FHA credit overlay policies and compensating factors'
+  whyChooseBox1Bullet2 = 'Experience navigating manual underwriting for non-traditional credit'
+  whyChooseBox1Bullet3 = 'Expertise in 203(k) rehabilitation loans and specialty FHA programs'
+  
+  whyChooseBox2Title = 'Credit Optimization'
+  whyChooseBox2Para = 'FHA officers help middle credit score borrowers understand how scores impact approval odds and mortgage insurance pricing.'
+  whyChooseBox2Bullet1 = 'Guidance on improving credit scores before applying for better terms'
+  whyChooseBox2Bullet2 = 'Strategies to address collections, charge-offs, and credit blemishes'
+  whyChooseBox2Bullet3 = 'Understanding of FHA-specific credit requirements and documentation'
+  
+  whyChooseBox3Title = 'First-Timer Friendly'
+  whyChooseBox3Para = 'Patient guidance designed specifically for first-time homebuyers navigating the mortgage process for the first time with government-backed security.'
+  whyChooseBox3Bullet1 = 'Step-by-step explanations of FHA qualification and approval process'
+  whyChooseBox3Bullet2 = 'No judgment for credit challenges or limited financial history'
+  whyChooseBox3Bullet3 = 'Educational approach focused on empowerment, not just approvals'
+  
+  whyChooseCTA = 'Connect With FHA Officers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What First-Time Buyers Say About FHA Loan Officers'
+  testimonialsSubtitle = 'Real experiences from borrowers who achieved homeownership through FHA financing'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://i.pravatar.cc/150?img=1'
+  testimonial1Name = 'Sarah Martinez'
+  testimonial1Subtitle = 'First-Time Buyer, Phoenix AZ'
+  testimonial1Text = 'My FHA loan officer walked me through every step with patience I didnt expect. Despite my 610 credit score, he found an FHA-approved lender who understood my situation and got me approved with just 3.5% down. Six months in my new home and couldnt be happier.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://i.pravatar.cc/150?img=33'
+  testimonial2Name = 'Michael Chen'
+  testimonial2Subtitle = 'Teacher, Austin TX'
+  testimonial2Text = 'I thought my student loan debt would prevent homeownership, but my FHA officer showed me how debt-to-income ratios work with government-backed loans. He connected me with down payment assistance and I closed with minimal cash out of pocket. Best decision ever.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://i.pravatar.cc/150?img=27'
+  testimonial3Name = 'Jennifer Thompson'
+  testimonial3Subtitle = 'Nurse, Denver CO'
+  testimonial3Text = 'After bankruptcy two years ago, I assumed homeownership was impossible. My FHA loan officer explained the waiting periods and helped me rebuild credit strategically. Just closed on my FHA loan and finally have stability for my kids. Forever grateful.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://i.pravatar.cc/150?img=52'
+  testimonial4Name = 'David Rodriguez'
+  testimonial4Subtitle = 'Small Business Owner, Miami FL'
+  testimonial4Text = 'Self-employment made getting approved challenging, but my FHA officer knew exactly how to document my income properly. He found a lender who understood my business tax returns and got me competitive terms despite unconventional income. Made the process stress-free and straightforward.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://i.pravatar.cc/150?img=44'
+  testimonial5Name = 'Amanda Parker'
+  testimonial5Subtitle = 'Retail Manager, Seattle WA'
+  testimonial5Text = 'My credit score was 595 and I had almost no savings. My FHA officer explained the 10% down option and helped me get gift funds from family. He never made me feel judged for my situation. Three months later, Im a homeowner with a payment lower than my rent.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://i.pravatar.cc/150?img=68'
+  testimonial6Name = 'Robert Jackson'
+  testimonial6Subtitle = 'Veteran, Orlando FL'
+  testimonial6Text = 'I compared VA and FHA loans with my officer. He showed me how FHA worked better for the fixer-upper I wanted using a 203(k) loan. His expertise in government programs saved me thousands and I got the home I wanted, not just what was move-in ready.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Understanding Middle Credit Scores and FHA Approval'
+  creditScoreSubtitle = 'How credit scores 580-679 impact FHA loan qualification and mortgage insurance pricing'
+  creditScoreImage = 'https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'FHA loans are designed for borrowers with middle credit scores who might not qualify for conventional financing. Understanding how your credit impacts approval odds helps you make strategic decisions before applying.'
+  
+  creditScoreHeading1 = 'Credit Score 580-619: FHA Accessible'
+  creditScoreText1 = 'Minimum 580 credit score qualifies for 3.5% down FHA loans with most lenders. Mortgage insurance premiums are standardized regardless of score, making FHA attractive compared to conventional options that heavily penalize lower scores.'
+  
+  creditScoreHeading2 = 'Credit Score 620-659: Competitive FHA Rates'
+  creditScoreText2 = 'Mid-600s credit scores access competitive FHA rates while maintaining flexible qualification standards. Officers help you compare FHA and conventional options to determine which offers better terms for your situation.'
+  
+  creditScoreHeading3 = 'Credit Score 660-679: FHA vs. Conventional Decision'
+  creditScoreText3 = 'Upper-600s scores qualify for both FHA and conventional financing. Officers analyze the trade-offs: FHA offers lower down payments but lifetime mortgage insurance, while conventional allows PMI removal at 20% equity.'
+  
+  creditScoreCTA = 'Check Your FHA Credit Readiness'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Employers Section
+  employersTitle = 'Employer Home Buying Benefits with FHA Financing'
+  employersSubtitle = 'Help employees achieve homeownership through government-backed FHA loan programs'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Forward-thinking employers offer homebuyer assistance programs leveraging FHA financing to help employees with middle credit scores and limited savings achieve homeownership. These programs boost retention, reduce financial stress, and position your company as invested in employee financial wellness.'
+  employersBullet1 = 'Down payment assistance programs that work seamlessly with FHA 3.5% minimum requirements'
+  employersBullet2 = 'Credit counseling partnerships helping employees improve scores for FHA approval'
+  employersBullet3 = 'Educational workshops teaching FHA qualification and government-backed financing benefits'
+  employersCTA = 'Explore Employer Programs'
+  employersCTALink = 'https://www.browselenders.com'
+  
+  # Blog Section
+  blogTitle = 'FHA Loan Officer Insights & Strategies'
+  blogSubtitle = 'Expert guidance on government-backed financing, credit qualification, and first-time buyer success'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Questions About FHA Loan Officers'
+  faqSubtitle = 'Common questions about working with FHA specialists and government-backed financing'
+  
+  faq1Question = 'What credit score do I need for an FHA loan?'
+  faq1Answer = 'FHA loans accept credit scores as low as 580 for 3.5% down payment loans, and scores as low as 500 with 10% down. However, many lenders impose overlays requiring 600-620 minimum scores. FHA loan officers help you find lenders who work with your specific credit situation and understand compensating factors that can offset lower scores.'
+  
+  faq2Question = 'How much is FHA mortgage insurance and can it be removed?'
+  faq2Answer = 'FHA mortgage insurance includes upfront premium (1.75% of loan amount) and annual premium (0.55-0.85% depending on loan amount and LTV). For loans with less than 10% down, annual MIP remains for the loan life. With 10%+ down, MIP drops after 11 years. Unlike conventional PMI, FHA MIP cannot be removed by reaching 20% equity—requiring refinance to conventional loan for MIP elimination.'
+  
+  faq3Question = 'Can I use gift funds for my FHA down payment?'
+  faq3Answer = 'Yes, FHA allows your entire down payment to come from gift funds provided by family members, employers, close friends with documented interest, or charitable organizations. The donor must provide a gift letter stating the funds are a gift with no repayment obligation, and you must document the transfer through bank statements showing source and deposit.'
+  
+  faq4Question = 'What is the difference between FHA and conventional loans?'
+  faq4Answer = 'FHA loans offer lower credit score requirements (580 vs. 620), smaller down payments (3.5% vs. 3-5%), and more flexible debt-to-income ratios. However, FHA requires both upfront and annual mortgage insurance premiums, while conventional loans only require PMI above 80% LTV and allow PMI removal at 20% equity. FHA loan officers help you compare options based on your credit, down payment, and long-term plans to determine which loan type saves more money over your actual holding period.'
+
+  # CTA Section
+  ctaTitle = 'Ready to Connect with FHA Loan Officers?'
+  ctaSubtitle = 'Find licensed FHA specialists who understand government-backed financing and help first-time buyers achieve homeownership'
+  ctaButton1Text = 'Compare FHA Officers'
+  ctaButton1Link = 'https://www.browselenders.com'
+  ctaButton2Text = 'Check Credit Readiness'
+  ctaButton2Link = 'https://www.middlecreditscore.com'
+
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  name = 'About'
+  url = '#about'
+  weight = 2
+
+[[menu.main]]
+  name = 'Programs'
+  url = '#programs'
+  weight = 3
+
+[[menu.main]]
+  name = 'Blog'
+  url = '/blogs'
+  weight = 4
+
+[[menu.main]]
+  name = 'Contact'
+  url = '#cta'
+  weight = 5
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
