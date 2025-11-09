@@ -1,0 +1,245 @@
+baseURL = 'https://www.firsttimebuyeroptions.com/'
+languageCode = 'en-us'
+title = 'First Time Buyer Options'
+theme = 'heloc-blog'
+contentDir = 'content/firsttimebuyeroptions'
+publishDir = 'public/firsttimebuyeroptions'
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = 'assets/.*\.(js|ts|jsx|tsx)'
+    target = '(js|scripts|javascript)'
+  [[build.cachebusters]]
+    source = 'assets/.*\.(css|sass|scss)'
+    target = '(css|styles|scss|sass)'
+
+[module]
+  [[module.mounts]]
+    source = 'content/firsttimebuyeroptions'
+    target = 'content'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'Comprehensive guide for first-time homebuyers exploring mortgage options, credit requirements, down payment strategies, and path to homeownership'
+  shortName = 'First Time Buyers'
+  tagline = 'Your Trusted Partner for First-Time Homeownership'
+  homepage = 'https://www.firsttimebuyeroptions.com/'
+  
+  siteName = 'First Time Buyer Options'
+  siteDescription = 'Expert guidance helping first-time homebuyers navigate mortgage options, credit preparation, and down payment strategies for successful homeownership'
+  keywords = ['first-time homebuyers', 'first home mortgage', 'homebuyer programs', 'down payment assistance', 'credit score for mortgage', 'FHA loans', 'conventional loans', 'buyer education']
+  serviceType = 'First-Time Homebuyer Services'
+  supportEmail = 'support@firsttimebuyeroptions.com'
+  
+  # Hero Section
+  heroTitle = 'Your First Home Starts Here—Smart Options for New Buyers'
+  heroSubtitle = 'Navigate mortgage choices, credit requirements, and down payment strategies with expert guidance designed specifically for first-time homebuyers ready to take the leap'
+  heroImage = 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Check Your Credit Readiness'
+  heroCTA1Link = 'https://www.middlecreditscore.com'
+  heroCTA2Text = 'Compare First-Time Buyer Lenders'
+  heroCTA2Link = 'https://www.browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Why First-Time Buyers Choose Us for Homeownership Guidance'
+  aboutSubtitle = 'Expert support through every step of your first home purchase journey'
+  aboutImage = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=2000&auto=format&fit=crop'
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  
+  # Programs Section
+  programsTitle = 'First-Time Buyer Programs Designed for Your Success'
+  programsSubtitle = 'Multiple pathways to homeownership with flexible credit and down payment requirements'
+  
+  program1Title = 'FHA Loans for First-Time Buyers'
+  program1Description = 'Start with just 3.5% down and credit scores as low as 580. Government-backed FHA loans are designed specifically for new buyers with limited savings. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> helps you qualify faster and secure better terms from day one.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Conventional 97% LTV Programs'
+  program2Description = 'Put down just 3% with conventional financing if your credit score is 620 or higher. These programs offer lower mortgage insurance costs than FHA for qualified buyers. Compare specialized first-time buyer lenders at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> to find the best conventional options.'
+  program2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Down Payment Assistance Programs'
+  program3Description = 'Access grants, forgivable loans, and matching funds to reduce your upfront costs. State and local programs can provide thousands toward down payment and closing costs. Learn how to stack these programs with FHA or conventional financing for maximum affordability.'
+  program3Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  
+  program4Title = 'First-Time Buyer Tax Credits'
+  program4Description = 'Mortgage interest deductions and potential state tax credits reduce your annual housing costs. Some states offer first-time buyer savings accounts with tax advantages. Understanding these benefits early helps you plan your budget accurately and maximize long-term savings.'
+  program4Image = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Explore Your First-Time Buyer Options'
+  programsCTALink = 'https://www.browselenders.com'
+  
+  # Education Section
+  educationTitle = 'Essential Knowledge for First-Time Homebuyers'
+  educationSubtitle = 'Master the fundamentals before you start house hunting'
+  
+  edu1Title = 'Credit Score Preparation'
+  edu1Description = 'Your credit score determines which loans you qualify for and what interest rate you will pay. Most first-time buyer programs require minimum scores between 580-620, but higher scores unlock better terms and lower costs over the loan life.'
+  edu1Image = 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1600&auto=format&fit=crop'
+  edu1Link = 'https://www.middlecreditscore.com'
+  
+  edu2Title = 'Down Payment Strategies'
+  edu2Description = 'First-time buyers have more down payment options than they realize. From 3% conventional to 3.5% FHA to zero-down VA and USDA loans, understanding minimum requirements helps you buy sooner. Gift funds and assistance programs can bridge gaps in savings.'
+  edu2Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  edu2Link = 'https://www.browselenders.com'
+  
+  edu3Title = 'Mortgage Pre-Approval Process'
+  edu3Description = 'Pre-approval strengthens your offer and clarifies your budget before house hunting. Lenders verify income, assets, and credit to determine exact loan amount and terms. This crucial step separates serious buyers from browsers in competitive markets.'
+  edu3Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu3Link = 'https://www.browselenders.com'
+  
+  edu4Title = 'Closing Cost Planning'
+  edu4Description = 'Budget 2-5% of purchase price for closing costs beyond your down payment. These include appraisal, title insurance, origination fees, and prepaid taxes and insurance. Seller concessions and lender credits can reduce your out-of-pocket expenses significantly.'
+  edu4Image = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1600&auto=format&fit=crop'
+  edu4Link = 'https://www.browselenders.com'
+  
+  educationCTA = 'Start Your First-Time Buyer Journey'
+  educationCTALink = 'https://www.middlecreditscore.com'
+  
+  # Learning Center Section
+  learningTitle = 'First-Time Buyer Learning Center'
+  learningSubtitle = 'Build confidence through education and expert guidance'
+  learningImage = 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Buying your first home feels overwhelming because you are navigating unfamiliar territory with the largest financial commitment of your life. Most first-time buyers worry about making expensive mistakes, missing important deadlines, or choosing the wrong loan type for their situation.'
+  learningPara2 = 'The difference between struggling buyers and successful ones is not luck or income—it is understanding your options and preparing strategically. Knowing your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score range</a>, calculating realistic budgets, and comparing multiple loan programs before you start shopping gives you confidence and negotiating power.'
+  learningPara3 = 'Our learning center breaks down complex mortgage concepts into actionable steps. Whether you are building credit for approval, saving for down payment, or comparing FHA versus conventional loans, you will find practical guidance that helps you move forward with clarity instead of confusion.'
+  
+  learningBullet1 = 'Understand minimum credit score requirements for FHA (580+), conventional (620+), and how to improve your profile at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>'
+  learningBullet2 = 'Compare down payment options from 0% (VA/USDA) to 3% (conventional) to 3.5% (FHA) and how assistance programs stack with each loan type'
+  learningBullet3 = 'Calculate true affordability including principal, interest, taxes, insurance, HOA fees, and maintenance reserves beyond the basic mortgage payment'
+  learningBullet4 = 'Connect with lenders specializing in first-time buyers at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> who understand DPA programs and flexible underwriting'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why First-Time Buyers Trust Our Guidance'
+  whyChooseSubtitle = 'Expert support designed specifically for new homebuyers'
+  
+  whyChooseBox1Title = 'First-Time Buyer Specialists'
+  whyChooseBox1Para = 'We focus exclusively on helping first-time buyers navigate the unique challenges of purchasing your initial home. From understanding mortgage basics to comparing loan programs, every resource is designed for buyers who are starting from zero knowledge.'
+  whyChooseBox1Bullet1 = 'Education-first approach explaining concepts without jargon'
+  whyChooseBox1Bullet2 = 'Step-by-step guidance through pre-approval to closing'
+  whyChooseBox1Bullet3 = 'Comparison tools for FHA, conventional, VA, and USDA loans'
+  
+  whyChooseBox2Title = 'Credit Optimization Support'
+  whyChooseBox2Para = 'Many first-time buyers assume they cannot qualify yet because of credit concerns. We help you understand exactly where you stand and what improvements unlock better loan options. Strategic credit management can save thousands over your loan life.'
+  whyChooseBox2Bullet1 = 'Free credit score analysis and improvement strategies'
+  whyChooseBox2Bullet2 = 'Lender match based on your actual credit profile'
+  whyChooseBox2Bullet3 = 'Timeline planning for credit score milestones'
+  
+  whyChooseBox3Title = 'Down Payment Strategy'
+  whyChooseBox3Para = 'The biggest barrier for first-time buyers is not income—it is saving enough for down payment and closing costs. We connect you with assistance programs, gift fund strategies, and low-down-payment loan options that help you buy years sooner.'
+  whyChooseBox3Bullet1 = 'State and local assistance program database'
+  whyChooseBox3Bullet2 = 'Gift fund documentation and compliance guidance'
+  whyChooseBox3Bullet3 = 'Low-down-payment loan comparison (3-3.5% options)'
+  
+  whyChooseCTA = 'Explore First-Time Buyer Programs'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'First-Time Buyer Success Stories'
+  testimonialsSubtitle = 'Real buyers who achieved homeownership with expert guidance'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'I thought I needed 20% down and perfect credit to buy a home. Learning about FHA loans with 3.5% down changed everything. I closed on my first home six months after starting my research.'
+  testimonial1Name = 'Jessica M.'
+  testimonial1Subtitle = 'First-Time Buyer, Dallas'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'My credit score was 625 and I was nervous about qualifying. The credit improvement strategies helped me raise it to 660 in four months, which saved me $180/month on my mortgage payment.'
+  testimonial2Name = 'Marcus T.'
+  testimonial2Subtitle = 'First-Time Buyer, Atlanta'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'The down payment assistance program I found through this site gave me $7,500 toward closing costs. Without that help, I would still be renting and saving for another two years.'
+  testimonial3Name = 'Amanda R.'
+  testimonial3Subtitle = 'First-Time Buyer, Phoenix'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'Comparing FHA versus conventional loans side-by-side showed me that conventional saved me $22,000 over the loan life even though monthly payments were similar. That analysis was invaluable.'
+  testimonial4Name = 'David K.'
+  testimonial4Subtitle = 'First-Time Buyer, Portland'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'I was overwhelmed by all the mortgage options until I found clear explanations of each program. Understanding DTI ratios and how lenders calculate affordability gave me confidence to move forward.'
+  testimonial5Name = 'Sarah L.'
+  testimonial5Subtitle = 'First-Time Buyer, Denver'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Working with a lender who specializes in first-time buyers made all the difference. They explained every step and helped me avoid mistakes that could have delayed closing or cost me money.'
+  testimonial6Name = 'James P.'
+  testimonial6Subtitle = 'First-Time Buyer, Seattle'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'First-Time Buyers and Credit Score Requirements'
+  creditScoreSubtitle = 'Understanding how your credit affects loan options and approval odds'
+  creditScorePara1 = 'Your credit score determines which first-time buyer programs you qualify for and how much homeownership will cost you. Understanding where you stand helps you choose the right loan type and timeline.'
+  creditScoreImage = 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=2000&auto=format&fit=crop'
+  
+  creditScoreHeading1 = '580-619: FHA-Focused Strategy'
+  creditScoreText1 = 'FHA loans are your primary option with minimum 580 credit for 3.5% down. Focus on FHA-friendly lenders and consider credit improvement strategies to reach 620+ for conventional access.'
+  
+  creditScoreHeading2 = '620-679: Conventional and FHA Choice'
+  creditScoreText2 = 'You qualify for both FHA and conventional 97% LTV programs. Compare both options carefully as conventional may offer lower lifetime costs despite similar monthly payments.'
+  
+  creditScoreHeading3 = '680+: Maximum Options and Best Rates'
+  creditScoreText3 = 'Strong credit unlocks conventional loans with lowest PMI costs, best interest rates, and maximum negotiating power. You have full program access and optimal terms.'
+  
+  creditScoreCTA = 'Check Your Credit Score Range'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Employers Section
+  employersTitle = 'Employer Homebuyer Assistance Programs'
+  employersSubtitle = 'Help your employees achieve homeownership and improve retention'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Forward-thinking employers recognize that homeownership assistance is one of the most valued benefits for attracting and retaining talent. Programs that help first-time buyers overcome down payment barriers boost employee satisfaction, reduce financial stress, and position your company as invested in long-term employee success.'
+  employersBullet1 = 'Down payment assistance programs with forgivable loans or matching contributions'
+  employersBullet2 = 'Financial wellness education including credit improvement and mortgage readiness workshops'
+  employersBullet3 = 'Preferred lender partnerships offering reduced fees or rate discounts for your employees'
+  employersCTA = 'Explore Employer Programs'
+  employersCTALink = 'https://www.browselenders.com'
+  
+  # Blog Section
+  blogTitle = 'First-Time Buyer Insights & Homeownership Strategies'
+  blogSubtitle = 'Expert guidance on credit preparation, loan options, and achieving homeownership goals'
+  
+  # FAQ Section
+  faqTitle = 'First-Time Homebuyer Frequently Asked Questions'
+  faqSubtitle = 'Common questions about buying your first home and mortgage options'
+  
+  faq1Question = 'What credit score do I need to buy my first home?'
+  faq1Answer = 'Minimum credit scores vary by loan type: FHA accepts 580+ for 3.5% down (500-579 with 10% down), conventional requires 620+ for most programs, VA has no official minimum but lenders typically want 620+, and USDA requires 640+ for streamlined approval. Your middle credit score determines qualification, so checking your profile at MiddleCreditScore.com helps you understand which programs fit your situation and what improvements unlock better options.'
+  
+  faq2Question = 'How much down payment do I need as a first-time buyer?'
+  faq2Answer = 'First-time buyers have multiple low-down-payment options: FHA loans require 3.5% down with 580+ credit, conventional 97% LTV programs need just 3% down for qualified first-timers, VA loans offer 0% down for eligible veterans, and USDA loans provide 0% down in eligible rural areas. Down payment assistance programs can further reduce your out-of-pocket costs by providing grants or forgivable loans to stack with these programs.'
+  
+  faq3Question = 'Should I choose FHA or conventional as a first-time buyer?'
+  faq3Answer = 'The choice depends on your credit score, down payment, and how long you plan to keep the loan. FHA works best for 580-640 credit scores, minimal down payments, or need for maximum flexibility. Conventional is often better with 660+ credit, 5%+ down payment, or planning to keep the loan 10+ years due to PMI removal at 20% equity. FHA mortgage insurance stays for loan life with less than 10% down, while conventional PMI drops off once you reach 20% equity—potentially saving tens of thousands long-term.'
+  
+  faq4Question = 'What is the first-time homebuyer process from start to finish?'
+  faq4Answer = 'The typical timeline is 3-6 months: First, check your credit score and improve if needed (0-3 months). Next, save for down payment and closing costs while researching loan options (ongoing). Then get pre-approved with lenders to understand your budget (1-2 weeks). Start house hunting with your realtor within pre-approved price range (1-3 months). Make an offer and negotiate terms once you find the right property (1-2 weeks). Complete home inspection, appraisal, and final underwriting (3-4 weeks). Finally, close on your home and move in. Working with first-time buyer specialists at Browse Lenders accelerates this process by matching you with experienced professionals who understand new buyer challenges.'
+  
+  # CTA Section
+  ctaTitle = 'Ready to Start Your First Home Journey?'
+  ctaSubtitle = 'Take the first step toward homeownership with expert guidance'
+  ctaButtonText = 'Get Started Today'
+  ctaButtonLink = 'https://www.browselenders.com'
+  ctaSecondaryText = 'Check Your Credit First'
+  ctaSecondaryLink = 'https://www.middlecreditscore.com'

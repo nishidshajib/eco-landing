@@ -13,6 +13,12 @@ hugo server --environment conventionalmortgageloans --port 1321
 
 # Preview Conventional Brokers domain on port 1322
 hugo server --environment conventionalmortgagebrokers --port 1322
+
+# Preview fhaloanofficers domain on port 1322
+hugo server --environment fhaloanofficers --port 1323
+
+# Preview firsttimebuyeroptions on port 1322
+hugo server --environment firsttimebuyeroptions --port 1324
 ```
 
 Access sites at:
