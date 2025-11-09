@@ -4,6 +4,7 @@ date: 2025-11-10T09:45:00-05:00
 publishDate: 2025-11-10T09:45:00-05:00
 draft: false
 description: "Learn the insider negotiation strategies mortgage brokers use to secure lower interest rates and reduce closing costs on conventional loans."
+excerpt: "Learn the insider negotiation strategies mortgage brokers use to secure lower interest rates and reduce closing costs on conventional loans."
 image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop"
 tags: ["mortgage brokers", "rate negotiation", "conventional loans", "closing costs", "broker tactics"]
 ---

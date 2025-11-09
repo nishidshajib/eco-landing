@@ -7,6 +7,7 @@ author: "Credit Score & Lending Expert"
 tags: ["credit scores", "mortgage approval", "lender requirements", "credit guidelines", "loan approval"]
 categories: ["Mortgage Education", "Credit Scores", "Lender Comparison"]
 description: "Complete guide to real credit score requirements by lender type in 2025. Learn minimum scores for conventional, FHA, VA loans and which lenders approve middle credit scores."
+excerpt: "Complete guide to real credit score requirements by lender type in 2025. Learn minimum scores for conventional, FHA, VA loans and which lenders approve middle credit scores."
 image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1200&auto=format&fit=crop"
 ---
 

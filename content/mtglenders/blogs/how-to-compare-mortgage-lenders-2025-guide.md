@@ -7,6 +7,7 @@ author: "Mortgage Lending Expert"
 tags: ["compare lenders", "mortgage rates", "lender selection", "rate shopping", "mortgage comparison"]
 categories: ["Mortgage Education", "Lender Comparison", "Rate Shopping"]
 description: "Learn how to systematically compare mortgage lenders in 2025 to find the best rates, lowest fees, and fastest service. Step-by-step guide to evaluating banks, credit unions, brokers, and online lenders."
+excerpt: "Learn how to systematically compare mortgage lenders in 2025 to find the best rates, lowest fees, and fastest service. Step-by-step guide to evaluating banks, credit unions, brokers, and online lenders."
 image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
 ---
 

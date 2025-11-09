@@ -4,6 +4,7 @@ date: 2025-11-20T12:00:00-05:00
 publishDate: 2025-11-20T12:00:00-05:00
 draft: false
 description: "Discover when refinancing through a mortgage broker saves money versus going direct. Expert analysis for 2025 conventional loan refinance decisions."
+excerpt: "Discover when refinancing through a mortgage broker saves money versus going direct. Expert analysis for 2025 conventional loan refinance decisions."
 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
 tags: ["refinancing", "mortgage brokers", "conventional loans", "2025", "rate-and-term"]
 ---

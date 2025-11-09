@@ -7,6 +7,7 @@ author: "Military Mortgage Specialist"
 tags: ["deployed service members", "VA lenders", "military income", "BAH"]
 categories: ["VA Loans", "Veterans", "Deployment"]
 description: "Practical guidance for service members stationed overseas or on deployment who need mortgage pre-approval, COE help, and lender options that understand BAH and deployment income rules."
+excerpt: "Practical guidance for service members stationed overseas or on deployment who need mortgage pre-approval, COE help, and lender options that understand BAH and deployment income rules."
 image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop"
 ---
 

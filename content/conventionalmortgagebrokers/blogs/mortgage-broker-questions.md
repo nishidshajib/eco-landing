@@ -4,6 +4,7 @@ date: 2025-11-07T14:00:00-05:00
 publishDate: 2025-11-07T14:00:00-05:00
 draft: false
 description: "Essential questions to ask mortgage brokers to ensure you're working with the right professional for your conventional loan. Get the best rates and service."
+excerpt: "Essential questions to ask mortgage brokers to ensure you're working with the right professional for your conventional loan. Get the best rates and service."
 image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1200&auto=format&fit=crop"
 tags: ["mortgage brokers", "broker selection", "homebuying tips", "conventional loans", "questions"]
 ---

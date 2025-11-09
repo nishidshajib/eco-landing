@@ -7,6 +7,7 @@ author: "Lender Comparison Specialist"
 tags: ["mortgage brokers", "banks", "credit unions", "lender comparison", "mortgage rates"]
 categories: ["Lender Comparison", "Mortgage Education", "Cost Analysis"]
 description: "Complete comparison of mortgage brokers, banks, and credit unions in 2025. Learn which lender type delivers best rates, lowest fees, and fastest closings for your situation."
+excerpt: "Complete comparison of mortgage brokers, banks, and credit unions in 2025. Learn which lender type delivers best rates, lowest fees, and fastest closings for your situation."
 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop"
 ---
 

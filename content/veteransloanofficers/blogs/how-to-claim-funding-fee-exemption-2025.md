@@ -7,6 +7,7 @@ author: "VA Benefits Advisor"
 tags: ["funding fee", "VA exemption", "disabled veterans", "surviving spouse"]
 categories: ["VA Loans", "Veterans", "Benefits"]
 description: "Step-by-step instructions for claiming funding fee exemptions as a disabled veteran or surviving spouse, including the documentation lenders require and common pitfalls."
+excerpt: "Step-by-step instructions for claiming funding fee exemptions as a disabled veteran or surviving spouse, including the documentation lenders require and common pitfalls."
 image: "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=1200&auto=format&fit=crop"
 ---
 

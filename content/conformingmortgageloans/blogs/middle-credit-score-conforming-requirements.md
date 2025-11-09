@@ -7,6 +7,7 @@ author: "Conforming Credit Specialist"
 tags: ["middle credit score", "conforming mortgages", "fannie mae", "freddie mac", "credit requirements"]
 categories: ["credit scores", "conforming loans", "mortgage qualification"]
 description: "Complete guide to middle credit score requirements for conforming mortgages in 2025. Learn how Fannie Mae and Freddie Mac evaluate credit for safe financing."
+excerpt: "Complete guide to middle credit score requirements for conforming mortgages in 2025. Learn how Fannie Mae and Freddie Mac evaluate credit for safe financing."
 image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop"
 ---
 

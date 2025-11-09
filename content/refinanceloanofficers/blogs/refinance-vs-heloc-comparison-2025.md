@@ -7,6 +7,7 @@ author: "Home Equity Strategy Specialist"
 tags: ["cash-out refinance", "HELOC", "home equity", "refinancing comparison", "equity access"]
 categories: ["Refinancing", "Home Equity", "Financial Comparison"]
 description: "Complete comparison of cash-out refinance vs HELOC for accessing home equity in 2025. Learn which option saves more based on your goals, timeline, and financial situation."
+excerpt: "Complete comparison of cash-out refinance vs HELOC for accessing home equity in 2025. Learn which option saves more based on your goals, timeline, and financial situation."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

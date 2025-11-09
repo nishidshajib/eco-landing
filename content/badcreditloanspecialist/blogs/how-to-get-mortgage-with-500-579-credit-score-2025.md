@@ -7,6 +7,7 @@ author: "Subprime Lending Expert"
 tags: ["bad credit", "FHA loans", "500 credit score", "manual underwriting"]
 categories: ["Bad Credit", "FHA Loans", "Credit Repair"]
 description: "Step-by-step guide to qualifying for FHA loans with 500-579 credit scores through manual underwriting, including compensating factors and lender requirements."
+excerpt: "Step-by-step guide to qualifying for FHA loans with 500-579 credit scores through manual underwriting, including compensating factors and lender requirements."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

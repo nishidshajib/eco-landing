@@ -4,6 +4,7 @@ date: 2025-11-06T10:30:00-05:00
 publishDate: 2025-11-06T10:30:00-05:00
 draft: false
 description: "Compare mortgage brokers and direct lenders side-by-side. Learn which option offers better rates, more flexibility, and lower costs for conventional loans."
+excerpt: "Compare mortgage brokers and direct lenders side-by-side. Learn which option offers better rates, more flexibility, and lower costs for conventional loans."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 tags: ["mortgage brokers", "direct lenders", "comparison", "conventional loans", "homebuying"]
 ---

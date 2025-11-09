@@ -7,6 +7,7 @@ author: "First-Time Buyer Credit Specialist"
 tags: ["first-time buyers", "credit score", "mortgage requirements", "loan qualification", "FHA loans", "conventional loans"]
 categories: ["First-Time Buyers", "Credit Requirements", "Mortgage Education"]
 description: "Complete guide to credit score requirements for first-time homebuyers in 2025. Learn minimum scores for FHA, conventional, VA, and USDA loans plus improvement strategies."
+excerpt: "Complete guide to credit score requirements for first-time homebuyers in 2025. Learn minimum scores for FHA, conventional, VA, and USDA loans plus improvement strategies."
 image: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1200&auto=format&fit=crop"
 ---
 

@@ -4,11 +4,9 @@ date: 2025-11-05
 categories: ["Education"]
 tags: ["HELOC", "Home Equity", "Financial Planning"]
 excerpt: "Learn the fundamentals of Home Equity Lines of Credit and how they can help you leverage your home's equity for financial flexibility."
-image: "/images/heloc-guide.jpg"
+image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
 readTime: "8 min read"
 ---
-
-# HELOC Basics: A Complete Guide for Homeowners
 
 A Home Equity Line of Credit (HELOC) is a flexible financing option that allows homeowners to borrow against the equity in their homes. Understanding how HELOCs work can help you make informed financial decisions.
 

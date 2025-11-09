@@ -7,6 +7,7 @@ author: "Veteran Mortgage Specialist"
 tags: ["VA entitlement", "VA loans", "certificate of eligibility", "veterans mortgages"]
 categories: ["VA Loans", "Veterans", "Lender Guides"]
 description: "Understand VA entitlement, how it's calculated, and why it determines your borrowing power. Learn how to restore entitlement and what entitlement means for cash-out refinances."
+excerpt: "Understand VA entitlement, how it's calculated, and why it determines your borrowing power. Learn how to restore entitlement and what entitlement means for cash-out refinances."
 image: "https://images.unsplash.com/photo-1738193830098-2d92352a1856?q=80&w=1200&auto=format&fit=crop"
 ---
 

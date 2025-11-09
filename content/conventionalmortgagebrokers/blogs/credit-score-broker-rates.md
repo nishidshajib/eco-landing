@@ -4,6 +4,7 @@ date: 2025-11-14T10:00:00-05:00
 publishDate: 2025-11-14T10:00:00-05:00
 draft: false
 description: "Understand how your credit score affects the mortgage rates brokers can negotiate. Learn which credit tiers offer the best conventional loan pricing."
+excerpt: "Understand how your credit score affects the mortgage rates brokers can negotiate. Learn which credit tiers offer the best conventional loan pricing."
 image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop"
 tags: ["credit scores", "mortgage brokers", "conventional loans", "interest rates", "pricing tiers"]
 ---

@@ -7,6 +7,7 @@ author: "Mortgage Underwriting Expert"
 tags: ["manual underwriting", "bad credit", "FHA loans", "compensating factors"]
 categories: ["Bad Credit", "Mortgage Approval", "Underwriting"]
 description: "Complete guide to FHA and conventional manual underwriting for bad credit borrowers—what underwriters review, compensating factors that matter, and approval strategies."
+excerpt: "Complete guide to FHA and conventional manual underwriting for bad credit borrowers—what underwriters review, compensating factors that matter, and approval strategies."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

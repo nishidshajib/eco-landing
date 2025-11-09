@@ -7,6 +7,7 @@ author: "Mortgage Comparison Expert"
 tags: ["FHA loans", "conventional loans", "bad credit", "mortgage comparison"]
 categories: ["Bad Credit", "FHA Loans", "Conventional Loans"]
 description: "Complete comparison of FHA vs. subprime conventional loans for bad credit borrowers—credit score requirements, down payments, mortgage insurance, and total costs."
+excerpt: "Complete comparison of FHA vs. subprime conventional loans for bad credit borrowers—credit score requirements, down payments, mortgage insurance, and total costs."
 image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
 ---
 

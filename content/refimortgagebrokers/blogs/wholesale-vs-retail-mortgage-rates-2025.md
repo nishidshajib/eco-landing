@@ -7,6 +7,7 @@ author: "Wholesale Pricing Expert"
 tags: ["wholesale rates", "retail rates", "mortgage brokers", "refinance costs", "pricing comparison"]
 categories: ["Refinance", "Mortgage Brokers", "Wholesale Pricing"]
 description: "Understand the wholesale vs retail mortgage rate difference and why brokers consistently deliver better refinance pricing than retail banks in 2025."
+excerpt: "Understand the wholesale vs retail mortgage rate difference and why brokers consistently deliver better refinance pricing than retail banks in 2025."
 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
 ---
 

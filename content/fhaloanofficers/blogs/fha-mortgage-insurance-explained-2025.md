@@ -7,6 +7,7 @@ author: "FHA Insurance Specialist"
 tags: ["FHA mortgage insurance", "MIP", "FHA costs", "mortgage insurance premiums", "FHA loans"]
 categories: ["FHA Loans", "Mortgage Costs", "Financial Planning"]
 description: "Complete guide to FHA mortgage insurance premiums in 2025. Learn upfront and annual MIP costs, removal strategies, and when FHA insurance makes financial sense."
+excerpt: "Complete guide to FHA mortgage insurance premiums in 2025. Learn upfront and annual MIP costs, removal strategies, and when FHA insurance makes financial sense."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

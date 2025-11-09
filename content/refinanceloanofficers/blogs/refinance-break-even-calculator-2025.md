@@ -7,6 +7,7 @@ author: "Refinance Break-Even Analyst"
 tags: ["refinance calculator", "break-even analysis", "refinance math", "mortgage savings", "refinancing decision"]
 categories: ["Refinancing", "Financial Planning", "Calculators"]
 description: "Master break-even analysis for refinancing in 2025. Learn how to calculate true savings, factor in hidden costs, and determine if refinancing makes financial sense."
+excerpt: "Master break-even analysis for refinancing in 2025. Learn how to calculate true savings, factor in hidden costs, and determine if refinancing makes financial sense."
 image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1200&auto=format&fit=crop"
 ---
 

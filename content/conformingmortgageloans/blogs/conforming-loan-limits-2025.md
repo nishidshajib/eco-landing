@@ -7,6 +7,7 @@ author: "Conforming Loans Expert"
 tags: ["conforming loans", "loan limits", "middle credit score", "fannie mae", "freddie mac", "2025"]
 categories: ["loan limits", "conforming mortgages", "credit guidance"]
 description: "Discover the 2025 conforming loan limits and how they affect middle credit score borrowers seeking Fannie Mae and Freddie Mac financing."
+excerpt: "Discover the 2025 conforming loan limits and how they affect middle credit score borrowers seeking Fannie Mae and Freddie Mac financing."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

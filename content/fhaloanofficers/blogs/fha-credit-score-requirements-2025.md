@@ -7,6 +7,7 @@ author: "FHA Credit Specialist"
 tags: ["FHA loans", "credit scores", "middle credit", "loan approval", "first-time buyers", "government loans"]
 categories: ["FHA Loans", "Credit Requirements", "Homebuyer Education"]
 description: "Master FHA loan credit score requirements for 2025. Learn minimum scores, lender overlays, approval strategies, and how middle credit scores affect FHA financing."
+excerpt: "Master FHA loan credit score requirements for 2025. Learn minimum scores, lender overlays, approval strategies, and how middle credit scores affect FHA financing."
 image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop"
 ---
 

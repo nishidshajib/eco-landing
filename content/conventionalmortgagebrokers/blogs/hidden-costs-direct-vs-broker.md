@@ -4,6 +4,7 @@ date: 2025-11-16T08:30:00-05:00
 publishDate: 2025-11-16T08:30:00-05:00
 draft: false
 description: "Uncover the hidden fees, rate markups, and opportunity costs of skipping mortgage brokers and going directly to banks for conventional loans."
+excerpt: "Uncover the hidden fees, rate markups, and opportunity costs of skipping mortgage brokers and going directly to banks for conventional loans."
 image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop"
 tags: ["mortgage brokers", "hidden costs", "conventional loans", "direct lenders", "fees"]
 ---

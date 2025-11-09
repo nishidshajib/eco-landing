@@ -7,6 +7,7 @@ author: "First-Time Buyer Process Expert"
 tags: ["first-time buyers", "home buying process", "pre-approval", "closing process", "homebuyer timeline"]
 categories: ["First-Time Buyers", "Homebuyer Education", "Process Guide"]
 description: "Complete step-by-step guide to the first-time homebuyer process in 2025. Learn the timeline from credit check to closing, what to expect, and how to avoid delays."
+excerpt: "Complete step-by-step guide to the first-time homebuyer process in 2025. Learn the timeline from credit check to closing, what to expect, and how to avoid delays."
 image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
 ---
 

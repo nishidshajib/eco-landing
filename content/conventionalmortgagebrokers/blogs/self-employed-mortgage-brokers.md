@@ -4,6 +4,7 @@ date: 2025-11-12T13:20:00-05:00
 publishDate: 2025-11-12T13:20:00-05:00
 draft: false
 description: "Self-employed borrowers face unique mortgage challenges. Learn how mortgage brokers help freelancers and business owners secure conventional loan approvals."
+excerpt: "Self-employed borrowers face unique mortgage challenges. Learn how mortgage brokers help freelancers and business owners secure conventional loan approvals."
 image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=1200&auto=format&fit=crop"
 tags: ["self-employed", "mortgage brokers", "conventional loans", "business owners", "freelancers"]
 ---

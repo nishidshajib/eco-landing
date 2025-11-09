@@ -7,6 +7,7 @@ author: "Refinance Strategist"
 tags: ["refinancing", "conforming loans", "cash-out refinance", "rate-and-term", "mortgage rates"]
 categories: ["refinancing", "conforming loans", "mortgage strategies"]
 description: "Complete guide to refinancing conforming loans in 2025. Compare rate-and-term vs. cash-out strategies, understand break-even analysis, and maximize savings."
+excerpt: "Complete guide to refinancing conforming loans in 2025. Compare rate-and-term vs. cash-out strategies, understand break-even analysis, and maximize savings."
 image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop"
 ---
 

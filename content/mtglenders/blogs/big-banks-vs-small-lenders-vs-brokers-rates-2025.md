@@ -7,6 +7,7 @@ author: "Mortgage Industry Analyst"
 tags: ["big banks", "small lenders", "mortgage brokers", "rate comparison", "lender types"]
 categories: ["Lender Comparison", "Mortgage Rates", "Lending Industry"]
 description: "Comprehensive analysis of big bank vs small lender vs mortgage broker pricing in 2025. Real data on who offers best rates, lowest fees, and fastest closings for different borrower profiles."
+excerpt: "Comprehensive analysis of big bank vs small lender vs mortgage broker pricing in 2025. Real data on who offers best rates, lowest fees, and fastest closings for different borrower profiles."
 image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop"
 ---
 

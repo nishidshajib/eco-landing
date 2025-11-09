@@ -7,6 +7,7 @@ author: "Mortgage Strategy Expert"
 tags: ["conforming loans", "non-conforming loans", "loan limits", "conventional mortgages", "fannie mae", "freddie mac"]
 categories: ["loan comparisons", "conforming loans", "mortgage education"]
 description: "Complete guide to conforming vs non-conforming loans in 2025. Understand loan limits, benefits, rates, and which option best fits your financing needs."
+excerpt: "Complete guide to conforming vs non-conforming loans in 2025. Understand loan limits, benefits, rates, and which option best fits your financing needs."
 image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
 ---
 

@@ -7,6 +7,7 @@ author: "VA Lending Expert"
 tags: ["credit score", "VA loans", "lender requirements", "middle credit score"]
 categories: ["VA Loans", "Credit & Rates", "Veterans"]
 description: "Complete breakdown of VA loan credit score requirements by lender type—which banks approve 580, who requires 640+, and how manual underwriting helps middle-credit veterans qualify."
+excerpt: "Complete breakdown of VA loan credit score requirements by lender type—which banks approve 580, who requires 640+, and how manual underwriting helps middle-credit veterans qualify."
 image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1200&auto=format&fit=crop"
 ---
 

@@ -7,6 +7,7 @@ author: "First-Time Buyer Mistake Prevention Specialist"
 tags: ["first-time buyers", "home buying mistakes", "buyer tips", "money saving", "homebuyer advice"]
 categories: ["First-Time Buyers", "Buyer Tips", "Financial Planning"]
 description: "Learn the 10 most expensive mistakes first-time homebuyers make in 2025 and proven strategies to avoid them. Save thousands by learning from others' errors."
+excerpt: "Learn the 10 most expensive mistakes first-time homebuyers make in 2025 and proven strategies to avoid them. Save thousands by learning from others' errors."
 image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1200&auto=format&fit=crop"
 ---
 

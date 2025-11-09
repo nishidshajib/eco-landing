@@ -7,6 +7,7 @@ author: "Refinance Cost Analysis Expert"
 tags: ["broker fees", "refinance costs", "lender comparison", "fee analysis", "closing costs"]
 categories: ["Refinance", "Cost Analysis", "Broker Selection"]
 description: "Learn how to compare refinance broker fees and lender costs in 2025. Understand Loan Estimates, hidden fees, and total cost analysis for smart broker selection."
+excerpt: "Learn how to compare refinance broker fees and lender costs in 2025. Understand Loan Estimates, hidden fees, and total cost analysis for smart broker selection."
 image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop"
 ---
 

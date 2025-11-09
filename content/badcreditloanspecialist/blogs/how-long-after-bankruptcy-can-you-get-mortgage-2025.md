@@ -7,6 +7,7 @@ author: "Bankruptcy Recovery Specialist"
 tags: ["bankruptcy", "Chapter 7", "Chapter 13", "FHA loans", "mortgage after bankruptcy"]
 categories: ["Bad Credit", "Bankruptcy", "Credit Recovery"]
 description: "Complete guide to FHA, conventional, VA, and non-QM mortgage waiting periods after Chapter 7 and Chapter 13 bankruptcy—plus strategies to qualify sooner."
+excerpt: "Complete guide to FHA, conventional, VA, and non-QM mortgage waiting periods after Chapter 7 and Chapter 13 bankruptcy—plus strategies to qualify sooner."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

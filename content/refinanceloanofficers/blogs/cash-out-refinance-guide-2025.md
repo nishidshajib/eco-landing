@@ -7,6 +7,7 @@ author: "Cash-Out Refinance Specialist"
 tags: ["cash-out refinance", "home equity", "refinancing", "equity access", "debt consolidation"]
 categories: ["Refinancing", "Home Equity", "Financial Strategy"]
 description: "Complete guide to cash-out refinancing in 2025. Learn how to access home equity strategically, when cash-out makes sense versus alternatives, and avoid costly mistakes."
+excerpt: "Complete guide to cash-out refinancing in 2025. Learn how to access home equity strategically, when cash-out makes sense versus alternatives, and avoid costly mistakes."
 image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop"
 ---
 

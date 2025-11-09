@@ -4,6 +4,7 @@ date: 2025-11-08T11:15:00-05:00
 publishDate: 2025-11-08T11:15:00-05:00
 draft: false
 description: "Complete guide for first-time homebuyers on how mortgage brokers work, what they do, and how to find the best broker for your conventional loan."
+excerpt: "Complete guide for first-time homebuyers on how mortgage brokers work, what they do, and how to find the best broker for your conventional loan."
 image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
 tags: ["first-time homebuyers", "mortgage brokers", "homebuying guide", "conventional loans", "broker basics"]
 ---

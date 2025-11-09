@@ -7,6 +7,7 @@ author: "First-Time Buyer Down Payment Specialist"
 tags: ["first-time buyers", "down payment", "home buying", "FHA loans", "VA loans", "down payment assistance"]
 categories: ["First-Time Buyers", "Down Payments", "Homebuyer Education"]
 description: "Complete 2025 guide to first-time homebuyer down payment options. Learn about 0-3.5% programs, gift funds, assistance programs, and strategies to buy sooner with less cash."
+excerpt: "Complete 2025 guide to first-time homebuyer down payment options. Learn about 0-3.5% programs, gift funds, assistance programs, and strategies to buy sooner with less cash."
 image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1200&auto=format&fit=crop"
 ---
 

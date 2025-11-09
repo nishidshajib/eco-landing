@@ -7,6 +7,7 @@ author: "Refinance Broker Specialist"
 tags: ["mortgage brokers", "refinance rates", "rate shopping", "wholesale lenders", "broker benefits"]
 categories: ["Refinance", "Mortgage Brokers", "Rate Shopping"]
 description: "Learn how mortgage brokers access wholesale rates and negotiate better refinance terms than retail banks in 2025. Discover the rate shopping advantage."
+excerpt: "Learn how mortgage brokers access wholesale rates and negotiate better refinance terms than retail banks in 2025. Discover the rate shopping advantage."
 image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1200&auto=format&fit=crop"
 ---
 

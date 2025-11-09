@@ -7,6 +7,7 @@ author: "Mortgage Underwriting Expert"
 tags: ["DTI", "debt-to-income", "conforming loans", "qualification", "underwriting", "approval"]
 categories: ["mortgage qualification", "conforming loans", "underwriting"]
 description: "Master conforming loan DTI requirements for 2025. Learn how Fannie Mae and Freddie Mac calculate debt-to-income ratios and strategies to maximize approval odds."
+excerpt: "Master conforming loan DTI requirements for 2025. Learn how Fannie Mae and Freddie Mac calculate debt-to-income ratios and strategies to maximize approval odds."
 image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop"
 ---
 

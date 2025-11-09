@@ -7,6 +7,7 @@ author: "First-Time Buyer Specialist"
 tags: ["first-time homebuyer", "conforming loans", "down payment assistance", "credit requirements", "homebuyer programs"]
 categories: ["first-time buyers", "conforming loans", "homebuyer education"]
 description: "Complete 2025 guide for first-time homebuyers using conforming loans. Learn about credit requirements, down payment options, and rate optimization strategies."
+excerpt: "Complete 2025 guide for first-time homebuyers using conforming loans. Learn about credit requirements, down payment options, and rate optimization strategies."
 image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
 ---
 

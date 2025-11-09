@@ -7,6 +7,7 @@ author: "Rate Lock Strategy Expert"
 tags: ["rate lock", "refinance timing", "mortgage brokers", "rate strategy", "market timing"]
 categories: ["Refinance", "Rate Strategy", "Broker Benefits"]
 description: "Master mortgage broker rate lock strategies for refinancing in 2025. Learn when to lock, when to float, and how brokers help you time the market for maximum savings."
+excerpt: "Master mortgage broker rate lock strategies for refinancing in 2025. Learn when to lock, when to float, and how brokers help you time the market for maximum savings."
 image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop"
 ---
 

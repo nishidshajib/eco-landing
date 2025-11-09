@@ -4,6 +4,7 @@ date: 2025-11-18T15:45:00-05:00
 publishDate: 2025-11-18T15:45:00-05:00
 draft: false
 description: "Learn how mortgage brokers expedite conventional loan pre-approvals and strengthen your offer competitiveness in hot real estate markets."
+excerpt: "Learn how mortgage brokers expedite conventional loan pre-approvals and strengthen your offer competitiveness in hot real estate markets."
 image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1200&auto=format&fit=crop"
 tags: ["pre-approval", "mortgage brokers", "conventional loans", "homebuying", "fast approval"]
 ---

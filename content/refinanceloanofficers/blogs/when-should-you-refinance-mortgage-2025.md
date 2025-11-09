@@ -7,6 +7,7 @@ author: "Refinance Timing Specialist"
 tags: ["refinancing", "mortgage refinance", "when to refinance", "refinance timing", "break-even analysis"]
 categories: ["Refinancing", "Mortgage Strategy", "Homeowner Education"]
 description: "Master the art of refinance timing in 2025. Learn when refinancing saves money, how to calculate break-even points, and strategic reasons to refinance beyond just rate reduction."
+excerpt: "Master the art of refinance timing in 2025. Learn when refinancing saves money, how to calculate break-even points, and strategic reasons to refinance beyond just rate reduction."
 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
 ---
 

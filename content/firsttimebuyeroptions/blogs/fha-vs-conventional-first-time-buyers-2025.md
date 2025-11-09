@@ -7,6 +7,7 @@ author: "First-Time Buyer Loan Specialist"
 tags: ["first-time buyers", "FHA loans", "conventional loans", "loan comparison", "mortgage choice"]
 categories: ["First-Time Buyers", "Loan Comparisons", "Mortgage Education"]
 description: "Complete comparison of FHA vs conventional loans for first-time homebuyers in 2025. Learn which loan type saves more based on credit score, down payment, and ownership timeline."
+excerpt: "Complete comparison of FHA vs conventional loans for first-time homebuyers in 2025. Learn which loan type saves more based on credit score, down payment, and ownership timeline."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

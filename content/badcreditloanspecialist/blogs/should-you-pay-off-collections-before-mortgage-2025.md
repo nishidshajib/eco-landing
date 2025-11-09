@@ -7,6 +7,7 @@ author: "Credit Repair Specialist"
 tags: ["collections", "credit repair", "bad credit", "FHA loans"]
 categories: ["Credit Repair", "Bad Credit", "Mortgage Approval"]
 description: "Strategic guide to handling collections before mortgage applications—when to pay, when to ignore, and how FHA treats medical vs. non-medical collections."
+excerpt: "Strategic guide to handling collections before mortgage applications—when to pay, when to ignore, and how FHA treats medical vs. non-medical collections."
 image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1200&auto=format&fit=crop"
 ---
 

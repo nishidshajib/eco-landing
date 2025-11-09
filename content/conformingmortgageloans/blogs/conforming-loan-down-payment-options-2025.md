@@ -7,6 +7,7 @@ author: "Down Payment Specialist"
 tags: ["down payment", "conforming loans", "3% down", "fannie mae", "freddie mac", "low down payment"]
 categories: ["down payments", "conforming loans", "homebuyer strategies"]
 description: "Explore conforming loan down payment options in 2025, including 3% down programs from Fannie Mae and Freddie Mac. Learn strategies to minimize upfront costs."
+excerpt: "Explore conforming loan down payment options in 2025, including 3% down programs from Fannie Mae and Freddie Mac. Learn strategies to minimize upfront costs."
 image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1200&auto=format&fit=crop"
 ---
 

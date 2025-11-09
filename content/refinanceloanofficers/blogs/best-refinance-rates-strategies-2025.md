@@ -7,6 +7,7 @@ author: "Refinance Rate Specialist"
 tags: ["refinance rates", "mortgage rates", "rate shopping", "refinancing", "lender comparison"]
 categories: ["Refinancing", "Mortgage Rates", "Money Saving"]
 description: "Learn insider strategies to secure the best refinance rates in 2025. Discover how credit scores, lender shopping, timing, and negotiation save thousands on refinancing."
+excerpt: "Learn insider strategies to secure the best refinance rates in 2025. Discover how credit scores, lender shopping, timing, and negotiation save thousands on refinancing."
 image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1200&auto=format&fit=crop"
 ---
 

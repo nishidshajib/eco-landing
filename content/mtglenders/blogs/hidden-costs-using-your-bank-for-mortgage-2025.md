@@ -7,6 +7,7 @@ author: "Consumer Mortgage Advocate"
 tags: ["bank mortgages", "hidden costs", "mortgage fees", "relationship banking", "lender comparison"]
 categories: ["Mortgage Education", "Consumer Protection", "Lender Comparison"]
 description: "Expose the hidden costs of getting a mortgage from your current bank in 2025. Learn what banks don't disclose about rates, fees, and why loyalty costs you tens of thousands of dollars."
+excerpt: "Expose the hidden costs of getting a mortgage from your current bank in 2025. Learn what banks don't disclose about rates, fees, and why loyalty costs you tens of thousands of dollars."
 image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop"
 ---
 

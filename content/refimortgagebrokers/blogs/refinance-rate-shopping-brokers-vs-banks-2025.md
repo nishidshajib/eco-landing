@@ -7,6 +7,7 @@ author: "Rate Shopping Expert"
 tags: ["refinance rate shopping", "brokers vs banks", "credit unions", "rate comparison", "refinance strategy"]
 categories: ["Refinance", "Rate Shopping", "Lender Comparison"]
 description: "Complete 2025 guide to refinance rate shopping across brokers, banks, and credit unions. Learn which lender type delivers best rates and terms for your situation."
+excerpt: "Complete 2025 guide to refinance rate shopping across brokers, banks, and credit unions. Learn which lender type delivers best rates and terms for your situation."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
 ---
 

@@ -7,6 +7,7 @@ author: "Refinance Specialist"
 tags: ["VA cash-out", "refinance veterans", "equity access", "VA lenders"]
 categories: ["Refinance", "VA Loans", "Veterans"]
 description: "How veterans access home equity with VA cash-out refinances, what lenders require, and strategies to minimize funding fees and maximize net proceeds."
+excerpt: "How veterans access home equity with VA cash-out refinances, what lenders require, and strategies to minimize funding fees and maximize net proceeds."
 image: "https://images.unsplash.com/photo-1647527935876-fcfbc66f6e09?q=80&w=1200&auto=format&fit=crop"
 ---
 

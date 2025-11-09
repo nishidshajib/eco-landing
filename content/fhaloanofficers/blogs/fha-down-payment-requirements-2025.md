@@ -5,12 +5,12 @@ publishdate: 2025-11-09T10:45:00Z
 draft: false
 author: "FHA Down Payment Specialist"
 tags: ["FHA down payment", "3.5% down", "gift funds", "down payment assistance", "FHA loans"]
-categories: ["FHA Loans", "Down Payments", "First-Time Buyers"]
+categories: ["FHA Loans", "Down Payment", "First-Time Buyers"]
 description: "Complete 2025 guide to FHA loan down payment requirements. Learn about 3.5% minimums, gift fund rules, down payment assistance, and strategies to minimize upfront costs."
-image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1200&auto=format&fit=crop"
+excerpt: "Complete 2025 guide to FHA loan down payment requirements. Learn about 3.5% minimums, gift fund rules, down payment assistance, and strategies to minimize upfront costs."
+image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop"
 ---
 
-# FHA Loan Down Payment Requirements: Your Complete 2025 Guide
 
 Here's what makes FHA loans revolutionary for first-time buyers: you can become a homeowner with just 3.5% down payment if your credit score is 580 or higher. But there's so much more to the story—understanding down payment sources, gift fund rules, and strategic planning can help you buy even sooner than you thought possible.
 
