@@ -7,7 +7,7 @@ author: "FHA Comparison Specialist"
 tags: ["FHA vs conventional", "loan comparison", "mortgage choice", "first-time buyers", "loan types"]
 categories: ["FHA Loans", "Loan Comparisons", "Mortgage Education"]
 description: "Complete comparison of FHA vs. conventional loans for 2025. Learn which mortgage type saves more based on your credit score, down payment, and long-term plans."
-image: "https://images.unsplash.com/photo-1554224311-beee4ece3874?q=80&w=1200&auto=format&fit=crop"
+image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # FHA vs. Conventional Loans: Which Mortgage Type Is Right for You?
