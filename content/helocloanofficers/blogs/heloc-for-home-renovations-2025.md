@@ -1,7 +1,7 @@
 ---
 title: "HELOC for Home Renovations 2025: Funding Strategies, Draw Timing, and Cost Control"
-date: 2025-11-25T08:00:00Z
-publishdate: 2025-11-25T08:00:00Z
+date: 2025-11-07T08:00:00Z
+publishdate: 2025-11-07T08:00:00Z
 draft: false
 author: "HELOC Renovation Specialist"
 categories: ["Home Renovations", "HELOC Planning"]

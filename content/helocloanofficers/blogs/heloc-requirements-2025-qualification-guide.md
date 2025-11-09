@@ -1,7 +1,7 @@
 ---
 title: "HELOC Requirements 2025: Credit Score, Income, and Equity Guidelines by Lender Type"
-date: 2025-11-20T08:00:00Z
-publishdate: 2025-11-20T08:00:00Z
+date: 2025-11-08T08:00:00Z
+publishdate: 2025-11-08T08:00:00Z
 draft: false
 author: "HELOC Qualification Expert"
 categories: ["HELOC Requirements", "Qualification"]

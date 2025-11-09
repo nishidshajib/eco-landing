@@ -1,7 +1,7 @@
 ---
 title: "Using HELOC for Debt Consolidation in 2025: When It Makes Sense vs When It's a Trap"
-date: 2025-11-15T08:00:00Z
-publishdate: 2025-11-15T08:00:00Z
+date: 2025-11-09T08:00:00Z
+publishdate: 2025-11-09T08:00:00Z
 draft: false
 author: "HELOC Financial Advisor"
 categories: ["Debt Consolidation", "Financial Planning"]
