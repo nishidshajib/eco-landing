@@ -1,0 +1,242 @@
+baseURL = 'https://www.badcreditloanspecialist.com/'
+languageCode = 'en-us'
+title = 'Bad Credit Loan Specialist'
+theme = 'heloc-blog'
+contentDir = 'content/badcreditloanspecialist'
+publishDir = 'public/badcreditloanspecialist'
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = 'assets/.*\.(js|ts|jsx|tsx)'
+    target = '(js|scripts|javascript)'
+  [[build.cachebusters]]
+    source = 'assets/.*\.(css|sass|scss)'
+    target = '(css|styles|scss|sass)'
+
+[module]
+  [[module.mounts]]
+    source = 'content/badcreditloanspecialist'
+    target = 'content'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'Bad credit loan specialists who approve 500-579 credit scores through manual underwriting—FHA, subprime conventional, portfolio loans, and non-QM options for consumers rebuilding credit'
+  shortName = 'Bad Credit Loan Specialist'
+  tagline = 'Mortgage Approval for Bad Credit & Credit Repair'
+  homepage = 'https://www.badcreditloanspecialist.com/'
+  
+  siteName = 'Bad Credit Loan Specialist'
+  siteDescription = 'Find loan officers who specialize in bad credit mortgages—FHA 500-579 scores, manual underwriting, credit repair guidance, and subprime lenders who approve borrowers rebuilding after bankruptcy, foreclosure, or collections'
+  keywords = ['bad credit mortgage', 'subprime lenders', 'FHA bad credit', 'credit repair loans', '500 credit score mortgage', 'manual underwriting', 'non-QM loans', 'portfolio lenders']
+  serviceType = 'Bad Credit Mortgage Loan Specialist Services'
+  supportEmail = 'support@badcreditloanspecialist.com'
+  
+  # Hero Section
+  heroTitle = 'Bad Credit Loan Specialists Who Approve 500-579 Scores When Others Say No'
+  heroSubtitle = 'Connect with loan officers who specialize in manual underwriting, FHA 500-score approvals, and subprime lending for borrowers rebuilding credit after bankruptcy, foreclosure, or collections'
+  heroImage = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Check Your Credit Match'
+  heroCTA1Link = 'https://www.middlecreditscore.com'
+  heroCTA2Text = 'Compare Bad Credit Lenders'
+  heroCTA2Link = 'https://www.browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Why Bad Credit Specialists Approve When Traditional Lenders Reject'
+  aboutSubtitle = 'Subprime lending requires manual underwriting expertise and lender relationships that generalist loan officers do not have'
+  aboutImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Programs Section
+  program1Title = 'FHA 500-579 Score Loans (10% Down)'
+  program1Description = 'FHA allows 500-579 credit scores with 10% down payment through manual underwriting. Bad credit specialists know which FHA lenders approve this range and how to structure applications for approval despite recent collections, charge-offs, or medical debt.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'FHA 580+ Loans (3.5% Down)'
+  program2Description = 'FHA 580-619 scores qualify for 3.5% down payment loans. Specialists navigate manual underwriting requirements, compensating factors, and lender overlays to maximize approval odds for borderline credit profiles rebuilding after financial hardship.'
+  program2Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Non-QM & Portfolio Loans (Alternative Documentation)'
+  program3Description = 'Non-QM lenders approve bad credit borrowers who do not fit traditional underwriting—recent bankruptcy, foreclosure within 2 years, or self-employment with tax write-offs. Portfolio loans offer flexibility conventional and FHA cannot match.'
+  program3Image = 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1600&auto=format&fit=crop'
+  
+  program4Title = 'Credit Repair Pre-Qualification Strategy'
+  program4Description = 'Before applying for mortgages, bad credit specialists help you dispute inaccurate items, prioritize debt payoff, and time applications to maximize score improvements. Strategic credit repair increases approval odds and reduces interest costs by thousands.'
+  program4Image = 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Check Your Credit Score Match'
+  programsCTALink = 'https://www.middlecreditscore.com'
+  
+  # Education Section
+  edu1Title = 'Manual Underwriting for Bad Credit'
+  edu1Description = 'Automated underwriting systems reject most bad credit applications instantly. Manual underwriting allows human review of compensating factors—strong income, payment history improvements, or large down payments that offset low scores.'
+  edu1Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'FHA vs. Subprime Conventional'
+  edu2Description = 'FHA approves 500+ scores but requires mortgage insurance for life on 3.5% down loans. Subprime conventional loans (620-660 scores) offer PMI removal after 20% equity but have stricter approval requirements and higher rates initially.'
+  edu2Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Bankruptcy & Foreclosure Waiting Periods'
+  edu3Description = 'FHA requires 2 years after Chapter 7 bankruptcy and 3 years after foreclosure with credit rebuilding. Conventional loans require 4-7 years depending on circumstances. Non-QM lenders approve sooner—sometimes 12 months post-discharge with compensating factors.'
+  edu3Image = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Down Payment Requirements by Credit Score'
+  edu4Description = 'Lower credit scores require larger down payments to offset lender risk. FHA 500-579 requires 10%, FHA 580+ requires 3.5%, conventional 620+ typically requires 5-10%. Higher down payments improve approval odds and reduce monthly payments.'
+  edu4Image = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Compare Bad Credit Lenders'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'How Bad Credit Specialists Get You Approved'
+  learningSubtitle = 'Expert strategies for navigating subprime lending and manual underwriting'
+  learningImage = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Bad credit mortgage approval requires relationships with subprime lenders who accept manual underwriting. Most big banks reject scores below 640 automatically, but specialized lenders review full financial pictures—income stability, rent payment history, down payment size, and reasons for past credit issues matter more than the score alone.'
+  learningPara2 = 'Specialists pre-qualify you before lender shopping by analyzing which loan programs fit your profile. FHA works for 580+ scores with limited reserves, while non-QM loans serve recent bankruptcy cases or self-employed borrowers with low tax returns. Portfolio lenders offer the most flexibility but charge higher rates.'
+  learningPara3 = 'Timing matters for bad credit approvals. Applying immediately after collections or charge-offs reduces approval odds. Waiting 6-12 months while making on-time payments and disputing errors improves scores by 30-80 points—enough to move from subprime to near-prime rates and save thousands in interest.'
+  
+  learningBullet1 = 'Check your credit score range at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> to understand which lenders approve your specific range before applying'
+  learningBullet2 = 'Compare subprime lenders and FHA specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> who approve 500-620 scores through manual underwriting'
+  learningBullet3 = 'Dispute inaccurate collections, late payments, and charge-offs on your credit report before applying—removing errors can boost scores 40-80 points instantly'
+  learningBullet4 = 'Wait 12-24 months after bankruptcy or foreclosure discharge while rebuilding credit to qualify for better rates and avoid highest-risk subprime tiers'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Work with Bad Credit Loan Specialists Instead of Big Banks'
+  whyChooseSubtitle = 'Specialists have lender relationships and expertise big banks do not offer'
+  
+  whyChooseBox1Title = 'Access to Subprime Lenders Big Banks Do Not Offer'
+  whyChooseBox1Para = 'Big banks auto-reject scores below 640 and refer you elsewhere. Bad credit specialists maintain relationships with portfolio lenders who hold loans in-house, non-QM lenders specializing in recent bankruptcy, FHA direct endorsement lenders approving 500-579 scores, and credit unions with manual underwriting flexibility. These lenders do not advertise publicly—you need a specialist to access them.'
+  whyChooseBox1Bullet1 = 'Portfolio lenders who hold loans in-house with flexible guidelines'
+  whyChooseBox1Bullet2 = 'Non-QM lenders specializing in recent bankruptcy and foreclosure approvals'
+  whyChooseBox1Bullet3 = 'FHA direct endorsement lenders approving 500-579 scores with manual underwriting'
+  
+  whyChooseBox2Title = 'Manual Underwriting Expertise for Compensating Factors'
+  whyChooseBox2Para = 'Automated underwriting systems reject bad credit instantly. Manual underwriting allows human review of compensating factors that offset low scores—large down payments, strong income, clean rent payment history, or extenuating circumstances like medical hardship or divorce. Bad credit specialists know how to document and present these factors to maximize approval odds.'
+  whyChooseBox2Bullet1 = 'Document 12-24 months of clean payment history to show credit improvement trajectory'
+  whyChooseBox2Bullet2 = 'Present large down payments (10-20%) or cash reserves to offset credit risk perception'
+  whyChooseBox2Bullet3 = 'Explain extenuating circumstances (medical bills, divorce, job loss) that caused credit damage'
+  
+  whyChooseBox3Title = 'Credit Repair Guidance Before Applying'
+  whyChooseBox3Para = 'Applying for mortgages before repairing your credit wastes hard inquiries and triggers denials that make future approvals harder. Bad credit specialists analyze your credit report first, dispute inaccurate items, advise which collections to pay versus ignore, and time your application when your score peaks. Strategic credit repair before applying improves approval odds and saves thousands in interest through better rates.'
+  whyChooseBox3Bullet1 = 'Identify which collections to pay vs. ignore—paying old debts can reset reporting dates and lower scores'
+  whyChooseBox3Bullet2 = 'Dispute inaccurate late payments, collections, and charge-offs to remove them from reports'
+  whyChooseBox3Bullet3 = 'Optimize credit utilization by paying down card balances below 30% (ideally below 10%) before applying'
+  
+  whyChooseCTA = 'Find Bad Credit Specialists'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'Real Borrowers Who Got Approved with Bad Credit'
+  testimonialsSubtitle = 'See how bad credit specialists helped borrowers big banks rejected'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://randomuser.me/api/portraits/men/32.jpg'
+  testimonial1Text = 'Every bank told me I needed 620 minimum. My loan officer found an FHA lender who approved my 560 score through manual underwriting. I put 10% down and closed in 45 days.'
+  testimonial1Name = 'Marcus Johnson'
+  testimonial1Subtitle = 'FHA Loan, 560 Credit Score, Atlanta GA'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://randomuser.me/api/portraits/women/44.jpg'
+  testimonial2Text = 'I was 18 months post-Chapter 7 and thought I had to wait years. My specialist found a non-QM lender who approved me with compensating factors. Higher rate but I can refinance in 2 years.'
+  testimonial2Name = 'Angela Martinez'
+  testimonial2Subtitle = 'Non-QM Loan After Bankruptcy, Phoenix AZ'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://randomuser.me/api/portraits/men/67.jpg'
+  testimonial3Text = 'My credit was wrecked from medical bills. My loan officer showed me how to dispute errors and got my score from 555 to 585 in 4 months. Qualified for FHA with 3.5% down instead of 10%.'
+  testimonial3Name = 'David Chen'
+  testimonial3Subtitle = 'FHA 3.5% Down, 585 Score, San Diego CA'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://randomuser.me/api/portraits/women/28.jpg'
+  testimonial4Text = 'I had a foreclosure 2 years ago and collections. Traditional lenders would not even talk to me. My specialist connected me with a portfolio lender who approved me with 15% down.'
+  testimonial4Name = 'Tanya Williams'
+  testimonial4Subtitle = 'Portfolio Loan, 540 Score, Houston TX'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://randomuser.me/api/portraits/men/41.jpg'
+  testimonial5Text = 'I was self-employed with a 572 score and thought homeownership was impossible. Manual underwriting focused on my strong income and 2 years of on-time rent. Approved with 10% down.'
+  testimonial5Name = 'Robert Garcia'
+  testimonial5Subtitle = 'FHA Manual Underwriting, 572 Score, Miami FL'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://randomuser.me/api/portraits/women/55.jpg'
+  testimonial6Text = 'My specialist helped me repair my credit before applying. We disputed 3 collections and I paid down cards. Went from 550 to 610 in 6 months and qualified for better FHA rates.'
+  testimonial6Name = 'Jennifer Lee'
+  testimonial6Subtitle = 'Credit Repair Then FHA, 610 Score, Seattle WA'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Bad Credit Score Ranges—Know Where You Stand and Who Approves'
+  creditScoreSubtitle = 'Different score ranges unlock different loan programs and lenders—understand your options before applying'
+  creditScorePara1 = 'Bad credit typically means scores below 620, but approval varies by range. FHA approves 500+ with manual underwriting, but most lenders impose 580 minimums. Understanding your exact score and which lenders approve that range prevents wasted applications and hard inquiries.'
+  creditScoreImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  
+  creditScoreHeading1 = '500-579: FHA Manual Underwriting (10% Down Required)'
+  creditScoreText1 = 'Very few lenders approve this range. FHA allows 500-579 scores with 10% down payment and manual underwriting showing strong compensating factors. Expect extensive documentation and strict debt-to-income limits. Non-QM lenders also approve with 15-20% down.'
+  creditScoreLink1 = 'https://www.middlecreditscore.com'
+  
+  creditScoreHeading2 = '580-619: FHA 3.5% Down & Select Portfolio Lenders'
+  creditScoreText2 = 'FHA opens at 580 with 3.5% down payment. Manual underwriting is common but approval odds are higher than 500-579. Some portfolio and credit union lenders approve this range. Focus on clean 12-month payment history and low DTI.'
+  creditScoreLink2 = 'https://www.browselenders.com'
+  
+  creditScoreHeading3 = '620-659: Conventional & FHA Options Open'
+  creditScoreText3 = 'Conventional loans become available at 620 (with higher rates and larger down payments). FHA remains attractive in this range due to lower down payment requirements. Compare both options to find better pricing.'
+  creditScoreLink3 = 'https://www.cash-outrefinance.com'
+  
+  creditScoreCTA = 'Find Your Credit Score Match'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Employers Section
+  employersTitle = 'Connect with Bad Credit Loan Specialists in Your Market'
+  employersSubtitle = 'Pre-qualify with specialists who understand subprime lending before shopping lenders'
+  employersPara = 'Bad credit loan officers maintain relationships with FHA direct endorsement lenders, non-QM portfolio investors, and credit unions willing to manually underwrite challenging files. They pre-qualify you by analyzing which programs fit your credit profile, income documentation, and down payment capacity—maximizing approval odds before formal applications. Compare bad credit specialists at BrowseLenders.com and verify your credit readiness at MiddleCreditScore.com before applying.'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersCTA = 'Browse Bad Credit Lenders'
+  employersCTALink = 'https://www.browselenders.com'
+  
+  # Blog Section
+  blogTitle = 'Bad Credit Mortgage Guides & Credit Repair Strategies'
+  blogSubtitle = 'Expert advice on qualifying for mortgages with bad credit, rebuilding scores, and navigating manual underwriting'
+  
+  # FAQ Section
+  faqTitle = 'Common Questions About Bad Credit Mortgages'
+  
+  faq1Question = 'What is the minimum credit score for a mortgage in 2025?'
+  faq1Answer = 'FHA allows 500 credit scores with 10% down and manual underwriting, though most FHA lenders require 580 minimum. Conventional loans start at 620. Non-QM and portfolio lenders approve scores as low as 500-550 with compensating factors like large down payments or strong income. Visit MiddleCreditScore.com to see which lenders approve your specific score range.'
+  
+  faq2Question = 'Can I get a mortgage with collections or charge-offs on my credit?'
+  faq2Answer = 'Yes, FHA and many subprime lenders approve mortgages with unpaid collections and charge-offs as long as you meet debt-to-income requirements and show payment history improvements. Some lenders require collection payoff at closing, while others allow them to remain unpaid. Manual underwriting evaluates the circumstances behind collections (medical vs. willful default) when making approval decisions.'
+  
+  faq3Question = 'How long after bankruptcy can I get a mortgage?'
+  faq3Answer = 'FHA requires 2 years after Chapter 7 discharge and 1 year into Chapter 13 repayment (with court approval and on-time payments). Conventional loans require 4 years after Chapter 7 and 2-4 years after Chapter 13. Non-QM lenders approve as soon as 12 months post-discharge with compensating factors like large down payments or strong income. Compare lenders at BrowseLenders.com who specialize in post-bankruptcy approvals.'
+  
+  faq4Question = 'What is manual underwriting and why does it help bad credit borrowers?'
+  faq4Answer = 'Manual underwriting means a human underwriter reviews your full financial picture instead of relying on automated approval systems that instantly reject bad credit. Manual underwriters consider compensating factors—stable income, rent payment history, reasons for credit issues (medical hardship, divorce), down payment size, and recent credit improvements. This allows approval for borrowers automated systems deny.'
+  
+  faq5Question = 'Should I pay off collections before applying for a mortgage?'
+  faq5Answer = 'It depends. Paying old collections (over 2 years) can reset the reporting date and temporarily lower your score. FHA does not require collection payoff unless they affect debt-to-income ratios. Medical collections under $500 are ignored by FHA. Consult with a bad credit specialist before paying collections to avoid unintended score damage. Strategic collection handling is critical for maximizing approval odds.'
+  
+  faq6Question = 'Can I refinance with bad credit to access equity or lower my rate?'
+  faq6Answer = 'Yes, FHA streamline refinancing requires no credit check if you have an existing FHA loan and want to lower your rate. Cash-out refinancing with bad credit is possible through FHA (580+ scores) or non-QM lenders, though rates are higher than prime borrowers pay. If you improved your credit since your original purchase, refinancing can lower your rate even with a score still in the bad credit range. Explore options at Cash-OutRefinance.com.'
+  
+  # CTA Section
+  ctaTitle = 'Ready to Get Pre-Qualified with a Bad Credit Specialist?'
+  ctaSubtitle = 'Connect with loan officers who specialize in FHA manual underwriting, subprime lending, and credit repair guidance'
+  ctaButtonText = 'Check Your Credit Score Match'
+  ctaButtonLink = 'https://www.middlecreditscore.com'
