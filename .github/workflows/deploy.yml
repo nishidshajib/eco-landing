@@ -1,10 +1,11 @@
-name: Deploy to Hostinger
+name: Deploy All Domains to Hostinger
 
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   build-and-deploy:
@@ -32,142 +33,256 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Build and Deploy Sites Based on Domain Structure
+    - name: Build All Landing Page Domains
       run: |
-        # Create deployment script
-        cat > deploy_sites.sh << 'EOF'
-        #!/bin/bash
-        
-        # Function to build and deploy a site
-        deploy_site() {
-          local config_path=$1
-          local site_name=$2
-          local domain_var=$3
-          local ftp_dir_var=$4
-          
-          if [ -f "$config_path" ]; then
-            echo "🏗️ Building $site_name..."
-            
-            # Extract baseURL from config if domain secret not set
-            if [ -z "${!domain_var}" ]; then
-              base_url=$(grep -E "^baseURL" "$config_path" | cut -d'"' -f2 | head -1)
-            else
-              base_url="${!domain_var}"
-            fi
-            
-            echo "📍 Base URL: $base_url"
-            
-            # Build the site
-            hugo --config "$config_path" --minify --baseURL "$base_url" --destination "public/$site_name"
-            
-            # Deploy to corresponding FTP directory
-            if [ -n "${!ftp_dir_var}" ]; then
-              ftp_path="${!ftp_dir_var}"
-            else
-              # Auto-detect FTP path based on domain
-              if [[ "$base_url" == *"conventionalmortgagebrokers"* ]]; then
-                ftp_path="/domains/conventionalmortgagebrokers.com/public_html/"
-              elif [[ "$base_url" == *"conventionalmortgageloans"* ]]; then
-                ftp_path="/domains/conventionalmortgageloans.com/public_html/"
-              elif [[ "$base_url" == *"helocloanofficers"* ]]; then
-                ftp_path="/domains/helocloanofficers.com/public_html/"
-              else
-                # Default to subdomain structure
-                domain_name=$(echo "$base_url" | sed 's|https\?://||' | sed 's|/.*||' | cut -d'.' -f1)
-                ftp_path="/domains/$domain_name/public_html/"
-              fi
-            fi
-            
-            echo "📂 Deploying to: $ftp_path"
-            echo "SITE_NAME=$site_name" >> $GITHUB_ENV
-            echo "FTP_PATH=$ftp_path" >> $GITHUB_ENV
-            echo "LOCAL_DIR=./public/$site_name/" >> $GITHUB_ENV
-          fi
-        }
-        
-        # Build main site (if no specific config)
-        if [ ! -f "config/conventionalmortgagebrokers/hugo.toml" ] && [ ! -f "config/conventionalmortgageloans/hugo.toml" ] && [ ! -f "config/helocloanofficers/hugo.toml" ]; then
-          echo "🏗️ Building main site..."
-          hugo --minify --baseURL "${MAIN_SITE_URL:-$(grep baseURL hugo.toml | cut -d'"' -f2)}"
-        fi
-        
-        # Deploy specific sites
-        deploy_site "config/conventionalmortgagebrokers/hugo.toml" "conventionalmortgagebrokers" "BROKERS_SITE_URL" "BROKERS_FTP_DIR"
-        deploy_site "config/conventionalmortgageloans/hugo.toml" "conventionalmortgageloans" "LOANS_SITE_URL" "LOANS_FTP_DIR"  
-        deploy_site "config/helocloanofficers/hugo.toml" "helocloanofficers" "HELOC_SITE_URL" "HELOC_FTP_DIR"
-        EOF
-        
-        chmod +x deploy_sites.sh
-        ./deploy_sites.sh
-      env:
-        MAIN_SITE_URL: ${{ secrets.MAIN_SITE_URL }}
-        BROKERS_SITE_URL: ${{ secrets.BROKERS_SITE_URL }}
-        LOANS_SITE_URL: ${{ secrets.LOANS_SITE_URL }}
-        HELOC_SITE_URL: ${{ secrets.HELOC_SITE_URL }}
-        BROKERS_FTP_DIR: ${{ secrets.BROKERS_FTP_DIR }}
-        LOANS_FTP_DIR: ${{ secrets.LOANS_FTP_DIR }}
-        HELOC_FTP_DIR: ${{ secrets.HELOC_FTP_DIR }}
+        echo "🚀 Building all landing page domains automatically..."
+        bash scripts/build-all-domains.sh
 
-    - name: Deploy Conventional Mortgage Brokers Site
-      if: hashFiles('config/conventionalmortgagebrokers/hugo.toml') != ''
+    - name: Generate Deployment Configuration
+      id: deploy_config
+      run: |
+        echo "🗺️ Generating deployment configuration..."
+        
+        # Create a JSON array of all domains to deploy
+        DOMAINS_JSON="["
+        FIRST=true
+        
+        for CONFIG_DIR in config/*/; do
+          # Skip _default directory
+          if [[ "$CONFIG_DIR" == *"_default"* ]]; then
+            continue
+          fi
+          
+          DOMAIN_NAME=$(basename "$CONFIG_DIR")
+          CONFIG_FILE="${CONFIG_DIR}hugo.toml"
+          
+          if [ ! -f "$CONFIG_FILE" ]; then
+            continue
+          fi
+          
+          # Extract baseURL from config
+          BASE_URL=$(grep -E "^baseURL" "$CONFIG_FILE" | cut -d"'" -f2 | head -1)
+          if [ -z "$BASE_URL" ]; then
+            BASE_URL=$(grep -E "^baseURL" "$CONFIG_FILE" | cut -d'"' -f2 | head -1)
+          fi
+          
+          # Extract clean domain name from URL
+          CLEAN_DOMAIN=$(echo "$BASE_URL" | sed 's|https\?://||' | sed 's|www\.||' | sed 's|/.*||')
+          
+          # Build JSON entry
+          if [ "$FIRST" = true ]; then
+            FIRST=false
+          else
+            DOMAINS_JSON="$DOMAINS_JSON,"
+          fi
+          
+          DOMAINS_JSON="$DOMAINS_JSON{\"name\":\"$DOMAIN_NAME\",\"domain\":\"$CLEAN_DOMAIN\"}"
+        done
+        
+        DOMAINS_JSON="$DOMAINS_JSON]"
+        echo "domains=$DOMAINS_JSON" >> $GITHUB_OUTPUT
+        echo "📋 Found $(echo $DOMAINS_JSON | grep -o '\"name\"' | wc -l) domains to deploy"
+
+    - name: Deploy All Domains via FTP
+      run: |
+        echo "🚀 Deploying all domains to Hostinger..."
+        
+        # Parse domains JSON and deploy each one
+        DOMAINS='${{ steps.deploy_config.outputs.domains }}'
+        
+        echo "$DOMAINS" | jq -c '.[]' | while read -r domain; do
+          DOMAIN_NAME=$(echo "$domain" | jq -r '.name')
+          CLEAN_DOMAIN=$(echo "$domain" | jq -r '.domain')
+          
+          echo ""
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "📤 Deploying: $DOMAIN_NAME"
+          echo "🌐 Domain: $CLEAN_DOMAIN"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          
+          LOCAL_DIR="./public/${DOMAIN_NAME}/"
+          
+          if [ ! -d "$LOCAL_DIR" ]; then
+            echo "⚠️  Skipping $DOMAIN_NAME - directory not found"
+            continue
+          fi
+          
+          # Check for custom FTP directory secret
+          SECRET_VAR=$(echo "${DOMAIN_NAME}" | tr '[:lower:]' '[:upper:]')_FTP_DIR
+          
+          # Default FTP path based on domain
+          DEFAULT_FTP_PATH="/domains/${CLEAN_DOMAIN}/public_html/"
+          
+          echo "  📂 Local: $LOCAL_DIR"
+          echo "  📍 Remote: $DEFAULT_FTP_PATH"
+          echo "  💾 Files: $(find "$LOCAL_DIR" -type f | wc -l)"
+          
+          # Store for next step
+          echo "${DOMAIN_NAME}|${CLEAN_DOMAIN}|${LOCAL_DIR}|${DEFAULT_FTP_PATH}" >> /tmp/deploy_list.txt
+        done
+        
+        echo ""
+        echo "✅ Deployment configuration ready"
+        cat /tmp/deploy_list.txt
+
+    - name: Deploy badcreditloanspecialist
+      if: hashFiles('public/badcreditloanspecialist/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/badcreditloanspecialist/
+        server-dir: ${{ secrets.BADCREDITLOANSPECIALIST_FTP_DIR || '/domains/badcreditloanspecialist.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy conformingmortgageloans
+      if: hashFiles('public/conformingmortgageloans/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/conformingmortgageloans/
+        server-dir: ${{ secrets.CONFORMINGMORTGAGELOANS_FTP_DIR || '/domains/www.conformingmortgageloans.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy conventionalmortgagebrokers
+      if: hashFiles('public/conventionalmortgagebrokers/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/conventionalmortgagebrokers/
-        server-dir: ${{ secrets.BROKERS_FTP_DIR || '/domains/conventionalmortgagebrokers.com/public_html/' }}
+        server-dir: ${{ secrets.CONVENTIONALMORTGAGEBROKERS_FTP_DIR || '/domains/conventionalmortgagebrokers.com/public_html/' }}
         exclude: |
           **/.git*
           **/node_modules/**
 
-    - name: Deploy Conventional Mortgage Loans Site  
-      if: hashFiles('config/conventionalmortgageloans/hugo.toml') != ''
+    - name: Deploy conventionalmortgageloans
+      if: hashFiles('public/conventionalmortgageloans/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/conventionalmortgageloans/
-        server-dir: ${{ secrets.LOANS_FTP_DIR || '/domains/conventionalmortgageloans.com/public_html/' }}
+        server-dir: ${{ secrets.CONVENTIONALMORTGAGELOANS_FTP_DIR || '/domains/conventionalmortgageloans.com/public_html/' }}
         exclude: |
           **/.git*
           **/node_modules/**
 
-    - name: Deploy HELOC Loan Officers Site
-      if: hashFiles('config/helocloanofficers/hugo.toml') != ''
+    - name: Deploy fhaloanofficers
+      if: hashFiles('public/fhaloanofficers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/fhaloanofficers/
+        server-dir: ${{ secrets.FHALOANOFFICERS_FTP_DIR || '/domains/fhaloanofficers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy firsttimebuyeroptions
+      if: hashFiles('public/firsttimebuyeroptions/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/firsttimebuyeroptions/
+        server-dir: ${{ secrets.FIRSTTIMEBUYEROPTIONS_FTP_DIR || '/domains/firsttimebuyeroptions.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy helocloanofficers
+      if: hashFiles('public/helocloanofficers/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/helocloanofficers/
-        server-dir: ${{ secrets.HELOC_FTP_DIR || '/domains/helocloanofficers.com/public_html/' }}
+        server-dir: ${{ secrets.HELOCLOANOFFICERS_FTP_DIR || '/domains/helocloanofficers.com/public_html/' }}
         exclude: |
           **/.git*
           **/node_modules/**
 
-    - name: Deploy Main Site (if exists)
-      if: hashFiles('public/index.html') != ''
+    - name: Deploy mtglenders
+      if: hashFiles('public/mtglenders/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/
-        server-dir: ${{ secrets.MAIN_FTP_DIR || '/public_html/' }}
+        local-dir: ./public/mtglenders/
+        server-dir: ${{ secrets.MTGLENDERS_FTP_DIR || '/domains/mtglenders.com/public_html/' }}
         exclude: |
           **/.git*
           **/node_modules/**
-          conventionalmortgagebrokers/**
-          conventionalmortgageloans/**
-          helocloanofficers/**
 
-    - name: Notify deployment status
+    - name: Deploy refimortgagebrokers
+      if: hashFiles('public/refimortgagebrokers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/refimortgagebrokers/
+        server-dir: ${{ secrets.REFIMORTGAGEBROKERS_FTP_DIR || '/domains/refimortgagebrokers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy refinanceloanofficers
+      if: hashFiles('public/refinanceloanofficers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/refinanceloanofficers/
+        server-dir: ${{ secrets.REFINANCELOANOFFICERS_FTP_DIR || '/domains/refinanceloanofficers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy veteransloanofficers
+      if: hashFiles('public/veteransloanofficers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/veteransloanofficers/
+        server-dir: ${{ secrets.VETERANSLOANOFFICERS_FTP_DIR || '/domains/veteransloanofficers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deployment Summary
       if: always()
       run: |
+        echo ""
+        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        echo "📊 Deployment Summary"
+        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        echo ""
         if [ ${{ job.status }} == 'success' ]; then
-          echo "✅ Deployment successful!"
+          echo "✅ All domains deployed successfully!"
+          echo ""
+          echo "🌐 Deployed domains:"
+          find public -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort | sed 's/^/  ✓ /'
         else
-          echo "❌ Deployment failed!"
+          echo "❌ Deployment encountered issues"
+          echo "Check the logs above for details"
         fi
+        echo ""

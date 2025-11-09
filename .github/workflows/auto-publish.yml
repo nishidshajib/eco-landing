@@ -167,62 +167,50 @@ jobs:
         git commit -m "🚀 Auto-publish scheduled posts - $(date '+%Y-%m-%d %H:%M:%S')" || exit 0
         git push
 
-    - name: Build Sites with Published Posts
+    - name: Build All Sites with Published Posts
       if: steps.check_posts.outputs.has_changes == 'true'
       run: |
-        echo "🏗️ Building sites with newly published posts..."
+        echo "🏗️ Building all sites with newly published posts..."
+        bash scripts/build-all-domains.sh
         
-        # Build each site configuration
-        if [ -f "config/conventionalmortgagebrokers/hugo.toml" ]; then
-          echo "Building Conventional Mortgage Brokers site..."
-          hugo --config config/conventionalmortgagebrokers/hugo.toml --minify --destination "public/conventionalmortgagebrokers"
-        fi
-        
-        if [ -f "config/conventionalmortgageloans/hugo.toml" ]; then
-          echo "Building Conventional Mortgage Loans site..."
-          hugo --config config/conventionalmortgageloans/hugo.toml --minify --destination "public/conventionalmortgageloans"
-        fi
-        
-        if [ -f "config/helocloanofficers/hugo.toml" ]; then
-          echo "Building HELOC Loan Officers site..."
-          hugo --config config/helocloanofficers/hugo.toml --minify --destination "public/helocloanofficers"
-        fi
-        
+        echo ""
         echo "📊 Built sites summary:"
         find public -name "*.html" | wc -l && echo "HTML files generated"
 
     - name: Deploy Published Posts to Hostinger
       if: steps.check_posts.outputs.has_changes == 'true'
+      run: |
+        echo "🚀 Preparing to deploy all published sites..."
+        echo "📋 Built directories:"
+        find public -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort | sed 's/^/  - /'
+
+    - name: Deploy badcreditloanspecialist
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/badcreditloanspecialist/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/
-        server-dir: /public_html/
+        local-dir: ./public/badcreditloanspecialist/
+        server-dir: ${{ secrets.BADCREDITLOANSPECIALIST_FTP_DIR || '/domains/badcreditloanspecialist.com/public_html/' }}
         exclude: |
           **/.git*
           **/node_modules/**
 
-    - name: Deploy to Individual Domains
-      if: steps.check_posts.outputs.has_changes == 'true'
-      run: |
-        # Deploy each site to its respective domain
-        
-        if [ -d "public/conventionalmortgagebrokers" ]; then
-          echo "🚀 Deploying Brokers site..."
-          # This will be handled by separate deploy steps below
-        fi
-        
-        if [ -d "public/conventionalmortgageloans" ]; then
-          echo "🚀 Deploying Loans site..."
-        fi
-        
-        if [ -d "public/helocloanofficers" ]; then
-          echo "🚀 Deploying HELOC site..."
-        fi
+    - name: Deploy conformingmortgageloans
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/conformingmortgageloans/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/conformingmortgageloans/
+        server-dir: ${{ secrets.CONFORMINGMORTGAGELOANS_FTP_DIR || '/domains/www.conformingmortgageloans.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
 
-    - name: Deploy Brokers Site
+    - name: Deploy conventionalmortgagebrokers
       if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/conventionalmortgagebrokers/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
@@ -230,9 +218,12 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/conventionalmortgagebrokers/
-        server-dir: ${{ secrets.BROKERS_FTP_DIR || '/domains/conventionalmortgagebrokers.com/public_html/' }}
+        server-dir: ${{ secrets.CONVENTIONALMORTGAGEBROKERS_FTP_DIR || '/domains/conventionalmortgagebrokers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
 
-    - name: Deploy Loans Site
+    - name: Deploy conventionalmortgageloans
       if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/conventionalmortgageloans/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
@@ -240,9 +231,38 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/conventionalmortgageloans/
-        server-dir: ${{ secrets.LOANS_FTP_DIR || '/domains/conventionalmortgageloans.com/public_html/' }}
+        server-dir: ${{ secrets.CONVENTIONALMORTGAGELOANS_FTP_DIR || '/domains/conventionalmortgageloans.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
 
-    - name: Deploy HELOC Site
+    - name: Deploy fhaloanofficers
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/fhaloanofficers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/fhaloanofficers/
+        server-dir: ${{ secrets.FHALOANOFFICERS_FTP_DIR || '/domains/fhaloanofficers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy firsttimebuyeroptions
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/firsttimebuyeroptions/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/firsttimebuyeroptions/
+        server-dir: ${{ secrets.FIRSTTIMEBUYEROPTIONS_FTP_DIR || '/domains/firsttimebuyeroptions.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy helocloanofficers
       if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/helocloanofficers/**') != ''
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
@@ -250,7 +270,62 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/helocloanofficers/
-        server-dir: ${{ secrets.HELOC_FTP_DIR || '/domains/helocloanofficers.com/public_html/' }}
+        server-dir: ${{ secrets.HELOCLOANOFFICERS_FTP_DIR || '/domains/helocloanofficers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy mtglenders
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/mtglenders/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/mtglenders/
+        server-dir: ${{ secrets.MTGLENDERS_FTP_DIR || '/domains/mtglenders.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy refimortgagebrokers
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/refimortgagebrokers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/refimortgagebrokers/
+        server-dir: ${{ secrets.REFIMORTGAGEBROKERS_FTP_DIR || '/domains/refimortgagebrokers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy refinanceloanofficers
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/refinanceloanofficers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/refinanceloanofficers/
+        server-dir: ${{ secrets.REFINANCELOANOFFICERS_FTP_DIR || '/domains/refinanceloanofficers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
+
+    - name: Deploy veteransloanofficers
+      if: steps.check_posts.outputs.has_changes == 'true' && hashFiles('public/veteransloanofficers/**') != ''
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/veteransloanofficers/
+        server-dir: ${{ secrets.VETERANSLOANOFFICERS_FTP_DIR || '/domains/veteransloanofficers.com/public_html/' }}
+        exclude: |
+          **/.git*
+          **/node_modules/**
 
     - name: Send Notification
       if: steps.check_posts.outputs.has_changes == 'true'
