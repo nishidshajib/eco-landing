@@ -1,100 +1,120 @@
 # Dynamic Landing Pages - Multi-Domain Hugo Setup
 
+## 🚀 Automated Multi-Domain System
+
+This repository automatically builds and deploys **11 landing page domains** to Hostinger with zero manual configuration!
+
+### ✨ Key Features
+
+- 🎯 **Automatic Discovery**: Scans config directory for all domains
+- 🏗️ **Parallel Building**: Builds all 11 domains simultaneously
+- 📤 **Smart Deployment**: Each domain uploads to its matching Hostinger directory
+- ♻️ **Zero Configuration**: Add new domains without touching workflows
+- 🕐 **Auto-Publishing**: Schedule blog posts for automatic publishing
+- 📊 **Full Tracking**: Monitor all deployments in GitHub Actions
+
+### 📋 Currently Configured Domains (11 total)
+
+1. **badcreditloanspecialist.com**
+2. **conformingmortgageloans.com**
+3. **conventionalmortgagebrokers.com**
+4. **conventionalmortgageloans.com**
+5. **fhaloanofficers.com**
+6. **firsttimebuyeroptions.com**
+7. **helocloanofficers.com**
+8. **mtglenders.com**
+9. **refimortgagebrokers.com**
+10. **refinanceloanofficers.com**
+11. **veteransloanofficers.com**
+
+---
+
 ## 🚀 Quick Start
 
 ### Preview Domain Sites (Development)
 
-```powershell
-# Preview helocloanofficers on port 1320
+```bash
+# Preview individual domains on different ports
 hugo server --environment helocloanofficers --port 1320
-
-# Preview conventionalmortgageloans  on port 1321
 hugo server --environment conventionalmortgageloans --port 1321
-
-# Preview conventionalmortgagebrokers  on port 1322
 hugo server --environment conventionalmortgagebrokers --port 1322
-
-# Preview fhaloanofficers  on port 1323
 hugo server --environment fhaloanofficers --port 1323
-
-# Preview firsttimebuyeroptions on port 1324
 hugo server --environment firsttimebuyeroptions --port 1324
-
-# Preview conformingmortgageloans on port 1325
 hugo server --environment conformingmortgageloans --port 1325
-
-# Preview refinanceloanofficers on port 1326
 hugo server --environment refinanceloanofficers --port 1326
-
-# Preview refimortgagebrokers on port 1327
 hugo server --environment refimortgagebrokers --port 1327
-
-# Preview mtglenders on port 1328
 hugo server --environment mtglenders --port 1328
-
-# Preview veteransloanofficers on port 1329
 hugo server --environment veteransloanofficers --port 1329
-
-# Preview badcreditloanspecialist on port 1330
 hugo server --environment badcreditloanspecialist --port 1330
 ```
-#conformingmortgageloans
-Access sites at:
-- HELOC: http://localhost:1320
-- Conventional Loans: http://localhost:1321
-- Conventional Brokers: http://localhost:1322
+
+Access sites at http://localhost:PORT
 
 ---
 
 ## 🏗️ Build for Production
 
+### Build All Domains Automatically (Recommended)
+
+```bash
+# Build all 11 domains with a single command
+bash scripts/build-all-domains.sh
+```
+
+This will:
+- ✅ Discover all domain configurations automatically
+- ✅ Build each domain with Hugo + minification
+- ✅ Output to separate directories in `public/`
+- ✅ Show detailed build statistics
+
 ### Build Single Domain
 
-```powershell
-# Build HELOC domain
-hugo --environment helocloanofficers --minify
-
-# Build Conventional Loans domain
-hugo --environment conventionalmortgageloans --minify
-
-# Build Conventional Brokers domain
-hugo --environment conventionalmortgagebrokers --minify
+```bash
+# Build specific domain
+hugo --config config/helocloanofficers/hugo.toml --minify --destination public/helocloanofficers
+hugo --config config/conventionalmortgageloans/hugo.toml --minify --destination public/conventionalmortgageloans
 ```
 
 Output directories:
-- `public/helocloanofficers/`
-- `public/conventionalmortgageloans/`
+- `public/badcreditloanspecialist/`
+- `public/conformingmortgageloans/`
 - `public/conventionalmortgagebrokers/`
-
-### Build All Domains
-
-```powershell
-# Build all three domains with minification
-hugo --environment helocloanofficers --minify
-hugo --environment conventionalmortgageloans --minify
-hugo --environment conventionalmortgagebrokers --minify
-```
+- `public/conventionalmortgageloans/`
+- `public/fhaloanofficers/`
+- `public/firsttimebuyeroptions/`
+- `public/helocloanofficers/`
+- `public/mtglenders/`
+- `public/refimortgagebrokers/`
+- `public/refinanceloanofficers/`
+- `public/veteransloanofficers/`
 
 ---
 
-## 📦 Build & Deploy Script
+## 📦 Build & Deploy Scripts
 
-Create a PowerShell script to build all domains:
+### Automated Build Script
 
-```powershell
-# build-all.ps1
-$domains = @('helocloanofficers', 'conventionalmortgageloans', 'conventionalmortgagebrokers')
+Use the automated build script to build all domains:
 
-foreach ($domain in $domains) {
-    Write-Host "Building $domain..." -ForegroundColor Green
-    hugo --environment $domain --minify
-    Write-Host "✓ $domain built successfully" -ForegroundColor Cyan
-}
-
-Write-Host "`n✓ All domains built successfully!" -ForegroundColor Green
+```bash
+# Build all landing pages automatically
+bash scripts/build-all-domains.sh
 ```
 
-Run: `.\build-all.ps1`
+This will automatically:
+- Discover all 11 domain configurations
+- Build each domain with Hugo + minification
+- Output to separate directories in `public/`
+- Show detailed build statistics
+
+### Deployment Map Generator
+
+Generate a deployment configuration map:
+
+```bash
+# See deployment configuration for all domains
+bash scripts/generate-deployment-map.sh
+```
 
 ---
 
@@ -102,55 +122,166 @@ Run: `.\build-all.ps1`
 
 ```
 config/
-├── _default/           # Base config
-├── helocloanofficers/  # HELOC domain config
-├── conventionalmortgageloans/  # Conventional loans config
-└── conventionalmortgagebrokers/  # Brokers config
+├── _default/                     # Base configuration
+├── badcreditloanspecialist/      # Bad Credit Loan Specialist domain
+├── conformingmortgageloans/      # Conforming Mortgage Loans domain
+├── conventionalmortgagebrokers/  # Conventional Brokers domain
+├── conventionalmortgageloans/    # Conventional Loans domain
+├── fhaloanofficers/              # FHA Loan Officers domain
+├── firsttimebuyeroptions/        # First-Time Buyer Options domain
+├── helocloanofficers/            # HELOC Loan Officers domain
+├── mtglenders/                   # MTG Lenders domain
+├── refimortgagebrokers/          # Refi Mortgage Brokers domain
+├── refinanceloanofficers/        # Refinance Loan Officers domain
+└── veteransloanofficers/         # Veterans Loan Officers domain
 
 content/
-├── helocloanofficers/  # HELOC content
-├── conventionalmortgageloans/  # Conventional loans content
-└── conventionalmortgagebrokers/  # Brokers content
+├── badcreditloanspecialist/      # Content for Bad Credit domain
+├── conformingmortgageloans/      # Content for Conforming Loans domain
+├── conventionalmortgagebrokers/  # Content for Brokers domain
+├── conventionalmortgageloans/    # Content for Conventional domain
+├── fhaloanofficers/              # Content for FHA domain
+├── firsttimebuyeroptions/        # Content for First-Time domain
+├── helocloanofficers/            # Content for HELOC domain
+├── mtglenders/                   # Content for MTG domain
+├── refimortgagebrokers/          # Content for Refi Brokers domain
+├── refinanceloanofficers/        # Content for Refinance domain
+└── veteransloanofficers/         # Content for Veterans domain
 
-public/
-├── helocloanofficers/  # HELOC build output
-├── conventionalmortgageloans/  # Conventional loans output
-└── conventionalmortgagebrokers/  # Brokers output
+public/                           # Built sites (git-ignored)
+├── badcreditloanspecialist/      # → badcreditloanspecialist.com
+├── conformingmortgageloans/      # → conformingmortgageloans.com
+├── conventionalmortgagebrokers/  # → conventionalmortgagebrokers.com
+├── conventionalmortgageloans/    # → conventionalmortgageloans.com
+├── fhaloanofficers/              # → fhaloanofficers.com
+├── firsttimebuyeroptions/        # → firsttimebuyeroptions.com
+├── helocloanofficers/            # → helocloanofficers.com
+├── mtglenders/                   # → mtglenders.com
+├── refimortgagebrokers/          # → refimortgagebrokers.com
+├── refinanceloanofficers/        # → refinanceloanofficers.com
+└── veteransloanofficers/         # → veteransloanofficers.com
 ```
 
 ---
 
-## 📝 Add New Domain
+## 📝 Add New Domain (Fully Automated!)
+
+Adding a new landing page domain is completely automatic:
 
 1. **Create config**: `config/newdomain/hugo.toml`
+   ```toml
+   baseURL = 'https://newdomain.com/'
+   title = 'New Domain'
+   theme = 'heloc-blog'
+   contentDir = 'content/newdomain'
+   publishDir = 'public/newdomain'
+   ```
+
 2. **Create content**: `content/newdomain/_index.md`
+
 3. **Add blog folder**: `content/newdomain/blogs/`
-4. **Preview**: `hugo server --environment newdomain --port 1323`
-5. **Build**: `hugo --environment newdomain --minify`
+
+4. **Commit and push** - GitHub Actions will automatically:
+   - Discover the new domain
+   - Build it with Hugo
+   - Deploy to `/domains/newdomain.com/public_html/` on Hostinger
+
+**No workflow changes needed!**
 
 ---
 
 ## 🔧 Common Commands
 
-```powershell
+```bash
 # Clean all builds
-Remove-Item -Recurse -Force public/*
+rm -rf public/*
 
-# Build with verbose output
-hugo --environment helocloanofficers --minify --verbose
+# Build all domains automatically
+bash scripts/build-all-domains.sh
+
+# Build with verbose output (single domain)
+hugo --config config/helocloanofficers/hugo.toml --minify --verbose
 
 # Check Hugo version
 hugo version
 
-# Generate production build with stats
-hugo --environment conventionalmortgageloans --minify --templateMetrics
+# View deployment map
+bash scripts/generate-deployment-map.sh
 ```
 
 ---
 
-## 🚢 Deployment
+## 🚢 Automatic Deployment to Hostinger
 
-Each domain outputs to its own directory:
-- Upload `public/helocloanofficers/` → helocloanofficers.com
-- Upload `public/conventionalmortgageloans/` → conventionalmortgageloans.com
-- Upload `public/conventionalmortgagebrokers/` → conventionalmortgagebrokers.com
+### GitHub Actions - Fully Automated
+
+Push changes and **all 11 domains deploy automatically!**
+
+```bash
+git add .
+git commit -m "Update landing pages"
+git push origin main
+```
+
+GitHub Actions will:
+1. ✅ Discover all 11 domain configurations
+2. ✅ Build each domain with Hugo
+3. ✅ Deploy each to its Hostinger directory:
+   - `public/badcreditloanspecialist/` → badcreditloanspecialist.com
+   - `public/conformingmortgageloans/` → conformingmortgageloans.com
+   - `public/conventionalmortgagebrokers/` → conventionalmortgagebrokers.com
+   - `public/conventionalmortgageloans/` → conventionalmortgageloans.com
+   - `public/fhaloanofficers/` → fhaloanofficers.com
+   - `public/firsttimebuyeroptions/` → firsttimebuyeroptions.com
+   - `public/helocloanofficers/` → helocloanofficers.com
+   - `public/mtglenders/` → mtglenders.com
+   - `public/refimortgagebrokers/` → refimortgagebrokers.com
+   - `public/refinanceloanofficers/` → refinanceloanofficers.com
+   - `public/veteransloanofficers/` → veteransloanofficers.com
+
+### Setup Instructions
+
+See **[DEPLOYMENT.md](DEPLOYMENT.md)** for complete setup guide.
+
+**Quick Setup:**
+1. Add 3 GitHub secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`
+2. Push changes
+3. All domains deploy automatically!
+
+### Manual Deployment (Optional)
+
+If you need to deploy manually:
+
+```bash
+# Build all domains
+bash scripts/build-all-domains.sh
+
+# Upload to Hostinger via FTP
+# Use FileZilla or similar FTP client
+# Upload public/domainname/ to /domains/domainname.com/public_html/
+```
+
+---
+
+## 📚 Documentation
+
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Complete deployment setup guide
+- **[AUTO-PUBLISHING.md](AUTO-PUBLISHING.md)** - Scheduled post publishing
+- **[HOSTINGER-SETUP.md](HOSTINGER-SETUP.md)** - Hostinger configuration guide
+- **[QUICK-SETUP.md](QUICK-SETUP.md)** - Quick start guide
+
+---
+
+## ✨ Key Features
+
+- 🎯 **11 Landing Page Domains** - All automated
+- 🚀 **Auto-Discovery** - New domains detected automatically
+- 🏗️ **Parallel Building** - Fast, efficient builds
+- 📤 **Smart Deployment** - Each domain to its correct location
+- 🕐 **Scheduled Publishing** - Auto-publish blog posts
+- 📊 **Full Tracking** - Monitor all deployments
+- ♻️ **Zero Configuration** - Add domains without workflow changes
+
+---
+
+**Your eco-landing repository is now a fully automated multi-domain publishing system!** 🎉
