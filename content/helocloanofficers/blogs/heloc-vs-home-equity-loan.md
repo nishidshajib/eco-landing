@@ -1,8 +1,12 @@
 ---
 title: "HELOC vs Home Equity Loan: Which is Right for You?"
-date: 2025-11-04
+date: 2025-11-04T08:00:00Z
+publishdate: 2025-11-04T08:00:00Z
+draft: false
+author: "HELOC Specialist"
 categories: ["Comparison"]
 tags: ["HELOC", "Home Equity Loan", "Comparison"]
+description: "Understanding the key differences between HELOCs and home equity loans helps you choose the right financing option for your needs."
 excerpt: "Understanding the key differences between HELOCs and home equity loans helps you choose the right financing option for your needs."
 image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1200&auto=format&fit=crop"
 readTime: "6 min read"

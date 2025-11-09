@@ -1,8 +1,12 @@
 ---
 title: "HELOC Basics: A Complete Guide for Homeowners"
-date: 2025-11-05
+date: 2025-11-05T08:00:00Z
+publishdate: 2025-11-05T08:00:00Z
+draft: false
+author: "HELOC Specialist"
 categories: ["Education"]
 tags: ["HELOC", "Home Equity", "Financial Planning"]
+description: "Learn the fundamentals of Home Equity Lines of Credit and how they can help you leverage your home's equity for financial flexibility."
 excerpt: "Learn the fundamentals of Home Equity Lines of Credit and how they can help you leverage your home's equity for financial flexibility."
 image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
 readTime: "8 min read"
