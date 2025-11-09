@@ -1,0 +1,251 @@
+baseURL = 'https://www.veteransloanofficers.com/'
+languageCode = 'en-us'
+title = 'Veterans Loan Officers'
+theme = 'heloc-blog'
+contentDir = 'content/veteransloanofficers'
+publishDir = 'public/veteransloanofficers'
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = 'assets/.*\.(js|ts|jsx|tsx)'
+    target = '(js|scripts|javascript)'
+  [[build.cachebusters]]
+    source = 'assets/.*\.(css|sass|scss)'
+    target = '(css|styles|scss|sass)'
+
+[module]
+  [[module.mounts]]
+    source = 'content/veteransloanofficers'
+    target = 'content'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'VA loan officers specializing in military and veterans mortgage benefits—zero down payment, no PMI, flexible credit, residual income expertise. Find VA-approved lenders who understand military service and deployment'
+  shortName = 'Veterans Loan Officers'
+  tagline = 'VA Loan Experts for Military & Veterans'
+  homepage = 'https://www.veteransloanofficers.com/'
+  
+  siteName = 'Veterans Loan Officers'
+  siteDescription = 'Connecting veterans, active military, and eligible spouses with VA loan officers who specialize in VA purchase loans, VA cash-out refinancing, IRRRL, and VA construction loans with zero down payment and no PMI'
+  keywords = ['VA loan officers', 'veterans mortgage', 'military home loans', 'VA home purchase', 'VA cash-out refinance', 'IRRRL', 'VA loan specialists', 'military lenders']
+  serviceType = 'VA Mortgage Loan Officer Services for Military and Veterans'
+  supportEmail = 'support@veteransloanofficers.com'
+  
+  # Hero Section
+  heroTitle = 'VA Loan Officers Who Understand Military Service & Maximize Your Benefits'
+  heroSubtitle = 'Find VA loan specialists who deliver zero down payment purchases, VA cash-out refinancing, and IRRRL refinances with expert knowledge of military income, deployment scenarios, and residual income calculations'
+  heroImage = 'https://images.unsplash.com/photo-1498174979972-c9de7e6a93d6?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Check VA Credit Requirements'
+  heroCTA1Link = 'https://www.middlecreditscore.com'
+  heroCTA2Text = 'Explore Cash-Out Options'
+  heroCTA2Link = 'https://www.cash-outrefinance.com'
+  
+  # About Section
+  aboutTitle = 'Why VA Loan Officers Specialize in Military & Veterans Mortgages'
+  aboutSubtitle = 'VA loans have unique rules—residual income, funding fees, entitlement calculations—that generic loan officers misunderstand'
+  aboutImage = 'https://images.unsplash.com/photo-1560250056-07ba64664864?q=80&w=2000&auto=format&fit=crop'
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  
+  # Programs Section
+  programsTitle = 'VA Loan Programs Handled by Expert VA Loan Officers'
+  programsSubtitle = 'Purchase, refinance, construction, and specialized VA products require VA loan expertise'
+  
+  program1Title = 'VA Purchase Loans—Zero Down & No PMI'
+  program1Description = 'Buy a home with zero down payment, no PMI, and flexible credit as low as 580 with VA loan officers who understand residual income calculations. Learn how your middle credit score affects VA approval at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> since VA lenders use middle FICO scores for pricing and residual income requirements.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'VA Cash-Out Refinance—Access Home Equity'
+  program2Description = 'Refinance up to 100% LTV and pull cash out for debt consolidation, home improvements, or any purpose. VA cash-out refinancing allows higher LTV limits than conventional loans and no PMI regardless of loan-to-value. Compare VA cash-out strategies at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> to maximize equity access while maintaining affordable payments.'
+  program2Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'VA IRRRL (Streamline Refinance)'
+  program3Description = 'Lower your existing VA loan rate without income verification or appraisal in most cases. IRRRL refinancing delivers fast closings (often 10-15 days) and minimal paperwork. VA loan officers who specialize in IRRRL know how to minimize funding fees and close quickly when rates drop, saving veterans thousands in interest without burdensome documentation.'
+  program3Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  program4Title = 'VA Construction & Renovation Loans'
+  program4Description = 'Finance new construction or major renovations with VA construction loans or VA renovation loans that roll project costs into one zero-down mortgage. Few loan officers understand VA construction lending—finding specialists who do makes the difference between approval and denial on complex build projects for military families.'
+  program4Image = 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Find VA Loan Officers'
+  programsCTALink = 'https://www.browselenders.com'
+  
+  # Education Section
+  educationTitle = 'Understanding VA Loan Benefits & Requirements'
+  educationSubtitle = 'How VA loans work, who qualifies, and why VA loan officers deliver better outcomes than generic lenders'
+  
+  edu1Title = 'VA Entitlement & Certificate of Eligibility'
+  edu1Description = 'Your VA loan entitlement determines how much you can borrow with zero down. Most veterans have full entitlement for loans up to conforming limits ($766,550 in 2025). Using a VA loan once does not eliminate entitlement—you can use VA loans multiple times throughout life. VA loan officers help calculate remaining entitlement after prior use and structure purchases accordingly.'
+  edu1Image = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1600&auto=format&fit=crop'
+  edu1Link = 'https://www.browselenders.com'
+  
+  edu2Title = 'VA Residual Income vs. DTI'
+  edu2Description = 'VA loans use residual income (money left after all debts and living expenses) rather than just debt-to-income ratios. A 50% DTI might qualify if residual income is sufficient for family size and region. Understanding residual income tables matters more than generic DTI calculations—VA loan officers who specialize in this approve borrowers conventional lenders deny.'
+  edu2Image = 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1600&auto=format&fit=crop'
+  edu2Link = 'https://www.middlecreditscore.com'
+  
+  edu3Title = 'VA Funding Fee & Exemptions'
+  edu3Description = 'VA loans charge a funding fee (1.25%-3.3% of loan amount) unless you are exempt due to disability compensation. Veterans with 10%+ disability ratings from VA skip the fee entirely—saving $2,500-$10,000 depending on loan size. VA loan officers ensure exemptions are claimed properly and help veterans understand how funding fees affect total costs.'
+  edu3Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu3Link = 'https://www.cash-outrefinance.com'
+  
+  edu4Title = 'VA Credit Score Requirements'
+  edu4Description = 'VA does not set minimum credit scores—lenders do. Some VA specialists approve 580 scores while big banks require 640+. Your middle credit score (median of three bureau FICO scores) determines VA rate pricing. Check your middle score at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> to understand which VA lenders will approve your profile before applying.'
+  edu4Image = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop'
+  edu4Link = 'https://www.middlecreditscore.com'
+  
+  educationCTA = 'Compare VA Loan Officers'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'VA Loan Mastery for Veterans & Military'
+  learningSubtitle = 'Expert strategies for maximizing VA benefits, navigating residual income, and securing best VA rates'
+  learningImage = 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'VA loans offer unmatched benefits for military service members and veterans—zero down payment, no PMI, flexible credit, and competitive rates backed by federal guarantee. Yet many veterans struggle to find loan officers who truly understand residual income calculations, entitlement rules, and funding fee exemptions.'
+  learningPara2 = 'Working with VA loan specialists makes the difference between smooth approval and frustrating denial. Generic loan officers misunderstand VA appraisal requirements, residual income tables, and military income documentation. VA experts navigate deployment scenarios, BAH income, and VA construction lending that confuse mainstream lenders.'
+  
+  learningBullet1 = 'Find VA loan officers who understand residual income calculations at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> to avoid generic lenders who deny VA borrowers with higher DTIs despite sufficient residual income'
+  learningBullet2 = 'Check your middle credit score at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> to match your FICO score range to VA lenders who approve 580-640 scores instead of those requiring 660+ overlays'
+  learningBullet3 = 'Learn VA cash-out refinance strategies at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> since VA allows 100% LTV cash-out while conventional loans cap at 80% LTV'
+  learningBullet4 = 'Verify funding fee exemption eligibility if you receive VA disability compensation—10%+ ratings save $2,500-$10,000 on typical VA loans'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Veterans Need VA Loan Specialists, Not Generic Lenders'
+  whyChooseSubtitle = 'VA loans have unique rules that mainstream loan officers misunderstand and misapply'
+  
+  whyChooseBox1Title = 'Residual Income Expertise Turns Denials Into Approvals'
+  whyChooseBox1Para = 'A conventional lender sees 48% DTI and denies your application. A VA loan officer calculates residual income for your family size and region—you have $1,200 monthly residual for a family of four in the West, exceeding the $1,117 requirement. You are approved despite high DTI because VA prioritizes cash flow over ratios. Generic lenders miss this constantly.'
+  whyChooseBox1Bullet1 = 'VA allows 50%+ DTI if residual income meets family size and region requirements'
+  whyChooseBox1Bullet2 = 'Residual income calculations vary by family size, location, and loan amount'
+  whyChooseBox1Bullet3 = 'VA specialists approve borderline DTI cases conventional lenders deny automatically'
+  
+  whyChooseBox2Title = 'VA Entitlement Knowledge Maximizes Buying Power'
+  whyChooseBox2Para = 'You used a VA loan in 2010 and sold that house. Generic lenders think you lost entitlement and require 20% down now. A VA loan officer knows you can restore entitlement after selling or use remaining entitlement for a second home. VA entitlement is reusable and stackable—veterans can use VA loans multiple times without restrictions most lenders cite.'
+  whyChooseBox2Bullet1 = 'Full entitlement covers loans up to $766,550 with zero down in 2025'
+  whyChooseBox2Bullet2 = 'Entitlement restores fully after selling prior VA-financed home'
+  whyChooseBox2Bullet3 = 'Second-tier entitlement allows simultaneous VA loans for investment or second homes'
+  
+  whyChooseBox3Title = 'Funding Fee Exemptions Save Thousands'
+  whyChooseBox3Para = 'You have a 10% VA disability rating but your generic lender charges a 2.15% funding fee on your $400,000 loan—$8,600 added to the loan balance. A VA loan officer verifies your exemption before closing and eliminates the fee entirely. That is $8,600 in immediate savings plus $15,000+ in interest over 30 years, just for working with someone who knows VA rules.'
+  whyChooseBox3Bullet1 = 'Veterans with 10%+ VA disability ratings are exempt from funding fees'
+  whyChooseBox3Bullet2 = 'Surviving spouses receiving DIC benefits are also exempt'
+  whyChooseBox3Bullet3 = 'Funding fee exemptions save $2,500-$15,000 depending on loan size and down payment'
+  
+  whyChooseCTA = 'Find VA Loan Specialists'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'Real Veterans Who Found the Right VA Loan Officers'
+  testimonialsSubtitle = 'See why VA loan expertise makes the difference between approval and denial'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'My bank denied my VA loan because of 47% DTI. A VA loan officer calculated my residual income—$1,150 monthly for my family size—and I was approved in 10 days. Same financials, different lender, completely different outcome. VA specialists understand the program in ways big banks do not.'
+  testimonial1Name = 'Marcus Johnson, USMC Veteran'
+  testimonial1Subtitle = 'VA Purchase Loan, San Diego CA'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'I used my VA loan in 2012 and thought I lost the benefit forever. My VA loan officer explained entitlement restoration and I bought again with zero down in 2024. I had no idea I could use VA benefits multiple times—this saved me $60,000 I would have put down with a conventional loan.'
+  testimonial2Name = 'Jennifer Williams, Army Veteran'
+  testimonial2Subtitle = 'VA Purchase Loan, Austin TX'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'I have a 30% VA disability rating. My first lender charged a $7,200 funding fee on my $335,000 loan. I switched to a VA specialist who verified my exemption and eliminated the fee completely. That is $7,200 plus years of interest I saved by working with someone who knows VA rules.'
+  testimonial3Name = 'David Rodriguez, Navy Veteran'
+  testimonial3Subtitle = 'VA Refinance, Tampa FL'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'My credit score is 605. Three lenders denied me before I found a VA specialist who approves 580+ scores. They manually underwrote my file using 12 months of on-time payments and residual income. Generic lenders see a 605 score and deny—VA specialists see the full picture and approve.'
+  testimonial4Name = 'Sarah Davis, Air Force Veteran'
+  testimonial4Subtitle = 'VA Purchase Loan, Denver CO'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'I was deployed when I wanted to buy a house. A VA loan officer structured my BAH income correctly and worked around my deployment schedule for document signing. Generic lenders refused to work with deployed service members—VA specialists do this all the time.'
+  testimonial5Name = 'Robert Martinez, Active Duty Army'
+  testimonial5Subtitle = 'VA Purchase Loan, Fort Hood TX'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'I refinanced from a conventional loan to VA cash-out and pulled $80,000 equity at 100% LTV with no PMI. My conventional lender capped cash-out at 80% LTV and wanted PMI. VA loan officers understand these differences—conventional lenders miss huge opportunities for veterans.'
+  testimonial6Name = 'Lisa Thompson, Army Veteran'
+  testimonial6Subtitle = 'VA Cash-Out Refinance, Phoenix AZ'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'VA Loan Credit Requirements—Find Lenders for Your Middle Score'
+  creditScoreSubtitle = 'VA allows flexible credit but lenders set minimums—match your score to VA specialists who approve your range'
+  creditScorePara1 = 'VA loans do not have official minimum credit scores, but lenders impose overlays. Some VA specialists approve 580 scores while big banks require 640+. Your middle credit score determines approval odds and rate pricing.'
+  creditScoreImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  
+  creditScoreHeading1 = '580-639: VA Specialist Territory'
+  creditScoreText1 = 'Big banks deny VA loans under 640 despite VA allowing lower scores. VA specialists approve 580-639 through manual underwriting, emphasizing residual income and payment history.'
+  creditScoreLink1 = 'https://www.middlecreditscore.com'
+  
+  creditScoreHeading2 = '640-719: Competitive VA Approval Across Most Lenders'
+  creditScoreText2 = 'Good credit opens up most VA lenders and competitive rates. Rates improve at 680+ and again at 700+. If you are near a threshold, waiting to boost your score saves thousands in interest.'
+  creditScoreLink2 = 'https://www.browselenders.com'
+  
+  creditScoreHeading3 = '720+: Top-Tier VA Rates Everywhere'
+  creditScoreText3 = 'Excellent credit qualifies for best VA rates across all lenders. Shop aggressively—even 0.125% rate savings equals $15,000+ over 30 years. VA cash-out refinancing becomes especially attractive at this tier.'
+  creditScoreLink3 = 'https://www.cash-outrefinance.com'
+  
+  creditScoreCTA = 'Check Your VA Credit Match'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Employers Section
+  employersTitle = 'Military-Friendly Employers—Connect Service Members With VA Loan Experts'
+  employersSubtitle = 'Support military employees and veterans with access to specialized VA loan officers who understand military benefits'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Military-friendly employers partner with VA loan specialists to help veteran and active duty employees maximize their VA home loan benefits. These partnerships connect employees with VA loan officers who understand BAH income, deployment scenarios, residual income calculations, and funding fee exemptions—delivering faster approvals and better outcomes than generic lenders unfamiliar with military compensation structures.'
+  employersBullet1 = 'Dedicated VA loan officers who understand military income and deployment challenges'
+  employersBullet2 = 'Priority processing for active duty service members with tight PCS timelines'
+  employersBullet3 = 'Expertise in funding fee exemptions, entitlement restoration, and VA construction loans'
+  employersCTA = 'Explore Military Employer Programs'
+  employersCTALink = 'https://www.browselenders.com'
+  
+  # Blog Section
+  blogTitle = 'VA Loan Guides & Military Mortgage Insights'
+  blogSubtitle = 'Expert analysis on VA benefits, residual income, entitlement, and maximizing VA loan advantages'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Questions About VA Loans & VA Loan Officers'
+  faqSubtitle = 'Common questions about VA home loans, eligibility, and finding the right VA loan officer'
+  
+  faq1Question = 'What credit score do I need for a VA loan?'
+  faq1Answer = 'VA does not set minimum credit scores—lenders do. Some VA specialists approve 580 scores while big banks require 620-640 minimums. Your middle credit score (the median of your three bureau FICO scores) determines rate pricing and approval odds. Lenders use the middle score for qualification, so if you have 720/695/680 across bureaus, they use 695. Check your middle score at MiddleCreditScore.com to understand which VA lenders will approve your profile before applying.'
+  
+  faq2Question = 'Can I use my VA loan more than once?'
+  faq2Answer = 'Yes, absolutely. VA entitlement is reusable throughout your lifetime. If you sell a home purchased with a VA loan, your entitlement restores fully and you can use it again for another zero-down purchase. You can even have two VA loans simultaneously using second-tier entitlement if you have sufficient remaining entitlement. Many veterans mistakenly believe VA loans are one-time benefits—they are not. VA loan officers who specialize in military lending help calculate remaining entitlement and structure multiple VA purchases correctly.'
+  
+  faq3Question = 'What is residual income and why does it matter for VA loans?'
+  faq3Answer = 'Residual income is the money left after paying all debts, taxes, and estimated living expenses. VA uses residual income tables (based on family size, loan amount, and region) rather than strict DTI limits to evaluate affordability. You might have a 50% DTI but still qualify if residual income exceeds VA requirements for your situation. For example, a family of four in the West region needs $1,117+ monthly residual income. This is why VA specialists approve borrowers with high DTIs that conventional lenders deny—residual income matters more than ratios.'
+  
+  faq4Question = 'Do I have to pay the VA funding fee if I have a disability rating?'
+  faq4Answer = 'No. Veterans receiving VA disability compensation at 10% or higher are exempt from the VA funding fee, as are surviving spouses receiving Dependency and Indemnity Compensation (DIC). The funding fee ranges from 1.25% to 3.3% of the loan amount, so exemptions save $2,500-$15,000+ depending on loan size and down payment. Many veterans with disability ratings do not realize they qualify for exemption—VA loan officers verify eligibility and ensure exemptions are claimed properly, saving thousands.'
+  
+  faq5Question = 'Can I get a VA loan while I am deployed or overseas?'
+  faq5Answer = 'Yes. VA loans are designed for active duty service members, including those deployed. VA loan officers who specialize in military lending work with deployed borrowers regularly, handling document signing via power of attorney, electronic signatures, or delayed closings coordinated around deployment schedules. They also understand how to document BAH income, LES statements, and military pay structures that confuse generic lenders. If you are deployed and want to buy or refinance, find a VA specialist experienced with military deployment scenarios.'
+  
+  faq6Question = 'What is the difference between a VA IRRRL and a VA cash-out refinance?'
+  faq6Answer = 'An IRRRL (Interest Rate Reduction Refinance Loan), also called a VA Streamline Refinance, lowers your existing VA loan rate without income verification, appraisal, or extensive documentation in most cases. You cannot pull cash out with an IRRRL—it only reduces your rate or switches from adjustable to fixed. A VA cash-out refinance allows you to refinance any existing loan (VA, conventional, FHA) into a new VA loan and pull equity out at up to 100% LTV. Cash-out requires full income documentation and appraisal but delivers cash for any purpose plus no PMI regardless of LTV.'
+  
+  # CTA Section
+  ctaTitle = 'Ready to Connect With VA Loan Specialists?'
+  ctaSubtitle = 'Find VA loan officers who understand residual income, entitlement, and military benefits'
+  ctaButtonText = 'Find VA Loan Officers'
+  ctaButtonLink = 'https://www.middlecreditscore.com'

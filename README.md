@@ -31,6 +31,9 @@ hugo server --environment refimortgagebrokers --port 1327
 
 # Preview mtglenders on port 1328
 hugo server --environment mtglenders --port 1328
+
+# Preview veteransloanofficers on port 1329
+hugo server --environment veteransloanofficers --port 1329
 ```
 #conformingmortgageloans
 Access sites at:
