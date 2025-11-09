@@ -1,0 +1,251 @@
+baseURL = 'https://www.mtglenders.com/'
+languageCode = 'en-us'
+title = 'MTG Lenders'
+theme = 'heloc-blog'
+contentDir = 'content/mtglenders'
+publishDir = 'public/mtglenders'
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = 'assets/.*\.(js|ts|jsx|tsx)'
+    target = '(js|scripts|javascript)'
+  [[build.cachebusters]]
+    source = 'assets/.*\.(css|sass|scss)'
+    target = '(css|styles|scss|sass)'
+
+[module]
+  [[module.mounts]]
+    source = 'content/mtglenders'
+    target = 'content'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = 'Find and compare mortgage lenders across all loan types—conventional, FHA, VA, jumbo, and refinance. Expert guidance on lender selection, rate shopping, and program matching for your credit profile'
+  shortName = 'MTG Lenders'
+  tagline = 'Your Guide to Finding the Right Mortgage Lender'
+  homepage = 'https://www.mtglenders.com/'
+  
+  siteName = 'MTG Lenders'
+  siteDescription = 'Comprehensive mortgage lender comparison platform helping borrowers find the right lenders, compare rates, and match loan programs to credit profiles and financial situations'
+  keywords = ['mortgage lenders', 'compare lenders', 'mortgage rates', 'lender reviews', 'FHA lenders', 'VA lenders', 'conventional lenders', 'mortgage brokers']
+  serviceType = 'Mortgage Lender Information and Comparison Services'
+  supportEmail = 'support@mtglenders.com'
+  
+  # Hero Section
+  heroTitle = 'Find Your Perfect Mortgage Lender—Compare Rates, Programs & Reviews'
+  heroSubtitle = 'Match your credit score, down payment, and loan type to lenders who approve your profile and deliver competitive rates without excessive overlays or hidden fees'
+  heroImage = 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Browse Top Lenders'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Check Credit Requirements'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'Why Comparing Mortgage Lenders Saves You Thousands'
+  aboutSubtitle = 'Different lenders offer different rates, fees, and approval standards—finding the right match matters'
+  aboutImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop'
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  
+  # Programs Section
+  programsTitle = 'Compare Lenders by Loan Type and Credit Profile'
+  programsSubtitle = 'Not all lenders do all loans well—find specialists for your specific needs'
+  
+  program1Title = 'Conventional Loan Lenders'
+  program1Description = 'Compare lenders offering 3%-5% down conventional loans for credit scores 620-850. Some lenders approve 620 scores while others require 680+ due to overlays. Find who actually approves your middle credit range at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> before wasting time on applications destined for denial.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'FHA Loan Specialists'
+  program2Description = 'Find lenders who actually approve FHA loans at 580-620 credit scores instead of requiring 640+ overlays. FHA specialists understand manual underwriting and work with borrowers rebuilding credit. Compare FHA lender options at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> to find flexible approval standards.'
+  program2Image = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'VA Loan Experts'
+  program3Description = 'Compare VA lenders by residual income requirements, credit overlays, and service quality. Some VA specialists approve 580 scores while big banks require 640+. Veterans deserve lenders who understand military income and deployment scenarios—find them through specialized VA lender networks.'
+  program3Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  program4Title = 'Refinance Lenders'
+  program4Description = 'Whether you need rate-and-term refinancing or cash-out equity access, lenders have different rate pricing and LTV limits. Some cap cash-out at 70% LTV while others allow 80-85%. Learn cash-out strategies at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> then compare lender options for best rates and maximum cash access.'
+  program4Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Browse All Lender Types'
+  programsCTALink = 'https://www.browselenders.com'
+  
+  # Education Section
+  educationTitle = 'How to Choose the Right Mortgage Lender'
+  educationSubtitle = 'What separates great lenders from mediocre ones—and how to tell the difference'
+  
+  edu1Title = 'Compare Rates Across Lender Types'
+  edu1Description = 'Banks, credit unions, brokers, and online lenders all price mortgages differently. Your bank might quote 6.5% while a mortgage broker accesses 6.0% wholesale pricing from the same source. Rate differences of 0.5% cost tens of thousands over 30 years—compare at least 3-5 lenders before choosing.'
+  edu1Image = 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1600&auto=format&fit=crop'
+  edu1Link = 'https://www.browselenders.com'
+  
+  edu2Title = 'Match Credit Score to Lender Overlays'
+  edu2Description = 'Fannie Mae allows 620 credit scores but many lenders require 660-680 minimum through overlays. Understanding which lenders approve your actual score range prevents wasted applications. Some lenders specialize in middle credit scores while others only want 740+ borrowers—know before you apply.'
+  edu2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu2Link = 'https://www.middlecreditscore.com'
+  
+  edu3Title = 'Review Program Specializations'
+  edu3Description = 'Not every lender does every loan type well. FHA specialists beat big banks on government loans. Local banks excel at rural properties. Jumbo specialists offer portfolio programs big banks cannot match. Matching lender strengths to your specific loan type delivers better rates and smoother approvals.'
+  edu3Image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop'
+  edu3Link = 'https://www.browselenders.com'
+  
+  edu4Title = 'Compare Total Costs, Not Just Rates'
+  edu4Description = 'A lender quoting 6.125% with $3,000 in fees costs more than 6.25% with $500 in fees on short-term loans. Compare APR and total closing costs across lenders. Some charge $2,500 in lender fees while others charge $0 and make money from the rate—total cost matters more than advertised rate.'
+  edu4Image = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop'
+  edu4Link = 'https://www.cash-outrefinance.com'
+  
+  educationCTA = 'Compare Lender Options'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'Mortgage Lender Selection Mastery'
+  learningSubtitle = 'Expert strategies for finding lenders who approve your profile and deliver best pricing'
+  learningImage = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Choosing the right mortgage lender means matching your credit profile and loan type to lenders who actually approve borrowers like you at competitive pricing. Big banks quote great rates for 780 credit scores but deny 650 scores that credit unions approve easily.'
+  learningPara2 = 'Smart borrowers compare multiple lender types: retail banks for relationship pricing, credit unions for flexible underwriting, mortgage brokers for wholesale rate access, and online lenders for low-fee digital experiences. Each has strengths depending on your situation.'
+  
+  learningBullet1 = 'Compare lender types and program specializations at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> to understand which lenders excel at conventional, FHA, VA, jumbo, or refinance loans'
+  learningBullet2 = 'Match your credit score to lender overlays at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> so you apply to lenders who actually approve your score range instead of guessing'
+  learningBullet3 = 'Understand cash-out refinance lender differences at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> since LTV limits and rate premiums vary dramatically by lender'
+  learningBullet4 = 'Request Loan Estimates from 4-5 lenders within 14 days (counts as single credit inquiry) and compare APR, total costs, and closing timelines before choosing'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Smart Borrowers Compare Multiple Mortgage Lenders'
+  whyChooseSubtitle = 'The savings from lender comparison exceed almost every other financial decision'
+  
+  whyChooseBox1Title = 'Rate Differences of 0.5%+ Common'
+  whyChooseBox1Para = 'Your current bank quotes 6.5%. A competing lender offers 5.875%. That 0.625% difference saves $113 monthly or $40,680 over 30 years on a $300,000 loan. Rate variations of 0.25%-0.75% between lenders for identical borrowers are completely normal—banks count on customer laziness to avoid comparison shopping.'
+  whyChooseBox1Bullet1 = 'Banks charge 0.25%-0.75% more than brokers or credit unions for same loans'
+  whyChooseBox1Bullet2 = 'Each 0.25% rate difference costs $15,000-$20,000 over 30 years'
+  whyChooseBox1Bullet3 = 'Advertised rates require perfect credit—actual rates vary by lender for your profile'
+  
+  whyChooseBox2Title = 'Lender Overlays Determine Approval'
+  whyChooseBox2Para = 'One bank requires 680 minimum credit while another approves 620. One demands 24 months since bankruptcy while another accepts 12 months. Lender overlays above program minimums make the difference between approval and denial for millions of borrowers. Finding lenders without excessive overlays turns denials into approvals.'
+  whyChooseBox2Bullet1 = 'Big banks add 40-60 point credit score overlays above Fannie/FHA minimums'
+  whyChooseBox2Bullet2 = 'Credit unions and specialty lenders have fewer overlays and more flexibility'
+  whyChooseBox2Bullet3 = 'Brokers know which wholesale lenders approve borderline credit profiles'
+  
+  whyChooseBox3Title = 'Fee Structures Differ by Thousands'
+  whyChooseBox3Para = 'Big banks charge $2,000-$3,000 in lender fees (origination, underwriting, processing). Credit unions average $800-$1,200. Many online lenders and brokers charge $0 lender fees and make money from the rate instead. That is $2,000+ in immediate savings just for choosing a low-fee lender—same loan, different cost structure.'
+  whyChooseBox3Bullet1 = 'Big banks: $2,000-$3,500 in lender fees typical'
+  whyChooseBox3Bullet2 = 'Credit unions: $800-$1,500 in lender fees'
+  whyChooseBox3Bullet3 = 'Brokers and online lenders: $0-$1,000 lender fees'
+  
+  whyChooseCTA = 'Start Comparing Lenders'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'Real Borrowers Who Compared Lenders and Saved'
+  testimonialsSubtitle = 'See why lender comparison makes a $30,000-$60,000 difference'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'My bank quoted 6.75% on a conventional loan. I compared 4 lenders and found a credit union offering 6.125%—same loan, 0.625% better rate. That saves me $143 monthly or $51,480 over 30 years on my $350,000 mortgage.'
+  testimonial1Name = 'Michael Torres'
+  testimonial1Subtitle = 'Conventional Loan, Austin TX'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'Three big banks denied my FHA application because of student loan debt. A local FHA specialist manually underwrote my file and approved me in 10 days. Different lenders have completely different underwriting approaches—persistence pays off.'
+  testimonial2Name = 'Jennifer Park'
+  testimonial2Subtitle = 'FHA Loan, Denver CO'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'My first lender took 45 days and still had not cleared underwriting. I switched to a mortgage broker who closed in 14 days. Speed matters when you are trying to win a competitive offer—the broker saved my deal.'
+  testimonial3Name = 'David Chen'
+  testimonial3Subtitle = 'Refinance, Portland OR'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'I thought all lenders charged the same fees. My bank wanted $2,800 in lender fees while an online lender charged $0. Same rate, $2,800 less in closing costs. That one comparison saved me thousands.'
+  testimonial4Name = 'Sarah Martinez'
+  testimonial4Subtitle = 'First-Time Buyer, Phoenix AZ'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'I have a 655 credit score. Big banks denied me or quoted 7.5%. A credit union approved me at 6.625% through manual underwriting. My credit score did not change—I just found the right lender for my profile.'
+  testimonial5Name = 'Robert Thompson'
+  testimonial5Subtitle = 'Conventional Loan, Tampa FL'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Comparing lenders took three hours total. The rate difference between my highest and lowest quote was 0.875%—that is $68,000 in interest savings over 30 years. Best three hours I ever spent.'
+  testimonial6Name = 'Lisa Henderson'
+  testimonial6Subtitle = 'Jumbo Loan, Boston MA'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Find Lenders for Your Credit Score—Match Profile to Approval Odds'
+  creditScoreSubtitle = 'Different lenders approve different credit ranges—know yours before applying'
+  creditScorePara1 = 'Your middle credit score determines which lenders approve your application. A 640 score gets denied by Bank of America but approved by local credit unions. Understanding which lenders work with your actual score saves time and prevents denials.'
+  creditScoreImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  
+  creditScoreHeading1 = '620-679: Credit Union and Broker Territory'
+  creditScoreText1 = 'Middle credit scores limit options at big banks but credit unions and mortgage brokers specialize in this range. Expect manual underwriting, compensating factors requirements (low DTI, reserves, stable income), and slightly higher rates than top-tier. FHA loans work well here—many FHA specialists approve 620-660 scores that conventional lenders deny.'
+  creditScoreLink1 = 'https://www.middlecreditscore.com'
+  
+  creditScoreHeading2 = '680-739: Competitive Across All Lender Types'
+  creditScoreText2 = 'Good credit opens up conventional loans, competitive FHA pricing, and most lender types. Big banks approve this range but credit unions and brokers still offer better pricing. Rates improve significantly at 700+ and again at 720+. Small credit improvements in this range create major rate savings—often worth waiting 3-6 months to optimize.'
+  creditScoreLink2 = 'https://www.browselenders.com'
+  
+  creditScoreHeading3 = '740+: Top-Tier Everything'
+  creditScoreText3 = 'Excellent credit qualifies for best rates across all lenders and all loan types. Rate differences between lenders matter most here because you qualify everywhere—shop aggressively for lowest rate and fees. Brokers can leverage multiple lender competition to drive pricing down further. Even 0.125% savings at this tier equals $15,000-$20,000 over 30 years.'
+  creditScoreLink3 = 'https://www.cash-outrefinance.com'
+  
+  creditScoreCTA = 'Check Your Credit Match'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Employers Section
+  employersTitle = 'Employer Mortgage Lender Partnerships—Help Employees Save Thousands'
+  employersSubtitle = 'Forward-thinking employers connect employees with vetted lender networks offering competitive rates'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Smart employers partner with mortgage lender networks to offer employees exclusive access to competitive rates, flexible underwriting, and dedicated loan officer support. These partnerships help employees save $10,000-$30,000 on home purchases and refinances through preferential pricing and reduced fees—boosting employee retention and financial wellness simultaneously.'
+  employersBullet1 = 'Exclusive employee rate discounts through employer lender partnerships'
+  employersBullet2 = 'Priority underwriting and faster closing timelines for employees'
+  employersBullet3 = 'Dedicated employee loan officers who understand company benefits and income structures'
+  employersCTA = 'Explore Employer Lender Programs'
+  employersCTALink = 'https://www.browselenders.com'
+  
+  # Blog Section
+  blogTitle = 'Mortgage Lender Insights & Comparison Guides'
+  blogSubtitle = 'Expert analysis on choosing lenders, comparing programs, and securing best rates'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Questions About Comparing Mortgage Lenders'
+  faqSubtitle = 'Common questions about finding and choosing the right mortgage lender'
+  
+  faq1Question = 'How many mortgage lenders should I compare before choosing?'
+  faq1Answer = 'Compare at least 3-5 lenders across different types: a big bank, a credit union, a mortgage broker, and an online lender. Rate differences of 0.25%-0.75% are common between lenders for the same borrower, which translates to $30,000-$90,000 in interest over 30 years. Mortgage brokers simplify this by shopping 20+ wholesale lenders on your behalf in one application, but always compare broker quotes against direct lender quotes too.'
+  
+  faq2Question = 'Do all lenders see the same credit score I see?'
+  faq2Answer = 'No. You might see a 720 VantageScore on Credit Karma, but mortgage lenders use your middle FICO score from Experian, TransUnion, and Equifax—often 20-40 points lower than VantageScore. If you have 720/695/680 FICO scores across three bureaus, lenders use 695 (the middle) for pricing and approval. Some lenders also add overlays requiring scores 20-40 points higher than program minimums, so a lender advertising 620 minimum might actually require 660.'
+  
+  faq3Question = 'What is the difference between a mortgage broker and a mortgage banker?'
+  faq3Answer = 'A mortgage banker works for one company (like Wells Fargo or Quicken Loans) and only offers that company loan products and rates. A mortgage broker works with 20-50 wholesale lenders and shops your scenario across all of them to find the best rate and program fit. Brokers typically deliver better rates because they access wholesale pricing that retail banks markup. Brokers get paid by lenders, not borrowers, in most cases.'
+  
+  faq4Question = 'Why do lenders quote me different rates for the same loan?'
+  faq4Answer = 'Lenders have different pricing models, profit margins, operational costs, and risk appetites. A big bank might quote 6.5% with $2,500 in fees because they have high overhead. A credit union quotes 6.25% with $1,000 in fees because they are nonprofits with lower margins. An online lender quotes 6.0% with $0 lender fees because they have minimal operational costs. Rate differences of 0.25%-0.75% are completely normal—which is why comparing multiple lenders saves tens of thousands of dollars.'
+  
+  faq5Question = 'Can I switch lenders after getting pre-approved?'
+  faq5Answer = 'Yes, absolutely. A pre-approval is not binding—it is an estimate of what you could borrow based on initial credit and income review. Many buyers get pre-approved with their bank for credibility with sellers, then shop rates with 3-4 other lenders before submitting an offer. Some borrowers even switch lenders mid-process if they find significantly better rates or service, though this delays closing by 2-4 weeks typically. You are not locked in until you sign final loan documents at closing.'
+  
+  faq6Question = 'Do credit unions really offer better rates than big banks?'
+  faq6Answer = 'Often yes—credit unions are member-owned nonprofits with lower overhead and smaller profit margins, so they typically charge 0.125%-0.5% less than big banks and have lower lender fees ($800-$1,200 versus $2,000-$3,000). However, credit unions may have slower technology, limited loan officer availability, and less flexibility on complex loans like jumbos or non-QM programs. Compare both to see what fits your priorities—sometimes big banks offer relationship discounts for high-net-worth clients that beat credit union pricing.'
+  
+  # CTA Section
+  ctaTitle = 'Ready to Find Your Best Mortgage Lender?'
+  ctaSubtitle = 'Compare rates, programs, and lender reviews to save thousands on your mortgage'
+  ctaButtonText = 'Start Comparing Lenders'
+  ctaButtonLink = 'https://www.browselenders.com'
