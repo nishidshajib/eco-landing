@@ -29,14 +29,6 @@ jobs:
       run: |
         sudo apt-get update -qq && sudo apt-get install -y lftp
         
-        # Create .netrc for credentials
-        cat > ~/.netrc << 'EOF'
-        machine ${{ secrets.FTP_SERVER }}
-        login ${{ secrets.FTP_USERNAME }}
-        password ${{ secrets.FTP_PASSWORD }}
-        EOF
-        chmod 600 ~/.netrc
-        
         for d in public/*/; do
           domain=$(basename $d)
           cfg=config/$domain/hugo.toml
@@ -47,10 +39,5 @@ jobs:
           
           echo "Deploying $domain to $clean"
           
-          lftp -c "
-            set ssl:verify-certificate no
-            open ${{ secrets.FTP_SERVER }}
-            mirror -Rev --delete --parallel=4 $d /domains/$clean/public_html/
-            bye
-          "
+          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" -e "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; set net:reconnect-interval-base 5; mirror -Rev --delete --verbose --parallel=2 $d /domains/$clean/public_html/; bye" "${{ secrets.FTP_SERVER }}"
         done
