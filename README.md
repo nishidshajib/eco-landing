@@ -1,6 +1,6 @@
 # Dynamic Landing Pages - Multi-Domain Hugo Setup
 
-## 🚀 Automated Multi-Domain System
+## 🚀 Automated Multi-Domain System (Updated: Nov 10, 2025)
 
 This repository automatically builds and deploys **11 landing page domains** to Hostinger with zero manual configuration!
 
