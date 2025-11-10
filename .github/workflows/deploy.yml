@@ -26,12 +26,16 @@ jobs:
           hugo --environment $domain --config config/_default/hugo.toml,$d/hugo.toml --destination public/$domain --cleanDestinationDir --minify
         done
     - name: Deploy
-      env:
-        FTP_USER: ${{ secrets.FTP_USERNAME }}
-        FTP_PASS: ${{ secrets.FTP_PASSWORD }}
-        FTP_HOST: ${{ secrets.FTP_SERVER }}
       run: |
         sudo apt-get update -qq && sudo apt-get install -y lftp
+        
+        # Create .netrc for credentials
+        cat > ~/.netrc << 'EOF'
+        machine ${{ secrets.FTP_SERVER }}
+        login ${{ secrets.FTP_USERNAME }}
+        password ${{ secrets.FTP_PASSWORD }}
+        EOF
+        chmod 600 ~/.netrc
         
         for d in public/*/; do
           domain=$(basename $d)
@@ -45,7 +49,7 @@ jobs:
           
           lftp -c "
             set ssl:verify-certificate no
-            open -u $FTP_USER,$FTP_PASS $FTP_HOST
+            open ${{ secrets.FTP_SERVER }}
             mirror -Rev --delete --parallel=4 $d /domains/$clean/public_html/
             bye
           "
