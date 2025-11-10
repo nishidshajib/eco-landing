@@ -33,97 +33,94 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Build All Landing Page Domains
+    - name: Detect Changed Domains
+      id: changed_domains
       run: |
-        echo "🚀 Building all landing page domains automatically..."
-        bash scripts/build-all-domains.sh
-
-    - name: Generate Deployment Configuration
-      id: deploy_config
-      run: |
-        echo "🗺️ Generating deployment configuration..."
+        echo "🔍 Detecting which domains need to be rebuilt..."
         
-        # Create a JSON array of all domains to deploy
-        DOMAINS_JSON="["
-        FIRST=true
+        # Get list of changed files
+        if [ "${{ github.event_name }}" == "pull_request" ]; then
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
+        else
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD 2>/dev/null || echo "ALL")
+        fi
         
-        for CONFIG_DIR in config/*/; do
-          # Skip _default directory
-          if [[ "$CONFIG_DIR" == *"_default"* ]]; then
-            continue
-          fi
-          
-          DOMAIN_NAME=$(basename "$CONFIG_DIR")
-          CONFIG_FILE="${CONFIG_DIR}hugo.toml"
-          
-          if [ ! -f "$CONFIG_FILE" ]; then
-            continue
-          fi
-          
-          # Extract baseURL from config
-          BASE_URL=$(grep -E "^baseURL" "$CONFIG_FILE" | cut -d"'" -f2 | head -1)
-          if [ -z "$BASE_URL" ]; then
-            BASE_URL=$(grep -E "^baseURL" "$CONFIG_FILE" | cut -d'"' -f2 | head -1)
-          fi
-          
-          # Extract clean domain name from URL
-          CLEAN_DOMAIN=$(echo "$BASE_URL" | sed 's|https\?://||' | sed 's|www\.||' | sed 's|/.*||')
-          
-          # Build JSON entry
-          if [ "$FIRST" = true ]; then
-            FIRST=false
-          else
-            DOMAINS_JSON="$DOMAINS_JSON,"
-          fi
-          
-          DOMAINS_JSON="$DOMAINS_JSON{\"name\":\"$DOMAIN_NAME\",\"domain\":\"$CLEAN_DOMAIN\"}"
-        done
+        # If no git history or first push, build all
+        if [ "$CHANGED_FILES" == "ALL" ]; then
+          echo "build_all=true" >> $GITHUB_OUTPUT
+          echo "⚠️ Building ALL domains (first push or no history)"
+          exit 0
+        fi
         
-        DOMAINS_JSON="$DOMAINS_JSON]"
-        echo "domains=$DOMAINS_JSON" >> $GITHUB_OUTPUT
-        echo "📋 Found $(echo $DOMAINS_JSON | grep -o '\"name\"' | wc -l) domains to deploy"
-
-    - name: Deploy All Domains via FTP
-      run: |
-        echo "🚀 Deploying all domains to Hostinger..."
-        
-        # Parse domains JSON and deploy each one
-        DOMAINS='${{ steps.deploy_config.outputs.domains }}'
-        
-        echo "$DOMAINS" | jq -c '.[]' | while read -r domain; do
-          DOMAIN_NAME=$(echo "$domain" | jq -r '.name')
-          CLEAN_DOMAIN=$(echo "$domain" | jq -r '.domain')
-          
-          echo ""
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "📤 Deploying: $DOMAIN_NAME"
-          echo "🌐 Domain: $CLEAN_DOMAIN"
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          
-          LOCAL_DIR="./public/${DOMAIN_NAME}/"
-          
-          if [ ! -d "$LOCAL_DIR" ]; then
-            echo "⚠️  Skipping $DOMAIN_NAME - directory not found"
-            continue
-          fi
-          
-          # Check for custom FTP directory secret
-          SECRET_VAR=$(echo "${DOMAIN_NAME}" | tr '[:lower:]' '[:upper:]')_FTP_DIR
-          
-          # Default FTP path based on domain
-          DEFAULT_FTP_PATH="/domains/${CLEAN_DOMAIN}/public_html/"
-          
-          echo "  📂 Local: $LOCAL_DIR"
-          echo "  📍 Remote: $DEFAULT_FTP_PATH"
-          echo "  💾 Files: $(find "$LOCAL_DIR" -type f | wc -l)"
-          
-          # Store for next step
-          echo "${DOMAIN_NAME}|${CLEAN_DOMAIN}|${LOCAL_DIR}|${DEFAULT_FTP_PATH}" >> /tmp/deploy_list.txt
-        done
-        
+        echo "Changed files:"
+        echo "$CHANGED_FILES"
         echo ""
-        echo "✅ Deployment configuration ready"
-        cat /tmp/deploy_list.txt
+        
+        # Check if global files changed (layouts, themes, scripts, workflow)
+        if echo "$CHANGED_FILES" | grep -qE "^(layouts/|themes/|static/|assets/|scripts/|\.github/workflows/)"; then
+          echo "build_all=true" >> $GITHUB_OUTPUT
+          echo "⚠️ Global files changed - rebuilding ALL domains"
+          exit 0
+        fi
+        
+        # Find specific domains that changed
+        DOMAINS=""
+        for FILE in $CHANGED_FILES; do
+          # Extract domain name from path: config/DOMAIN/ or content/DOMAIN/
+          if [[ "$FILE" =~ ^config/([^/]+)/ ]] || [[ "$FILE" =~ ^content/([^/]+)/ ]]; then
+            DOMAIN="${BASH_REMATCH[1]}"
+            # Skip _default
+            if [ "$DOMAIN" != "_default" ]; then
+              # Add to list if not already there
+              if [[ ! " $DOMAINS " =~ " $DOMAIN " ]]; then
+                DOMAINS="$DOMAINS $DOMAIN"
+                echo "✓ Domain changed: $DOMAIN"
+              fi
+            fi
+          fi
+        done
+        
+        if [ -z "$DOMAINS" ]; then
+          echo "build_all=false" >> $GITHUB_OUTPUT
+          echo "✅ No domain-specific changes detected"
+        else
+          echo "build_all=false" >> $GITHUB_OUTPUT
+          echo "domains=$DOMAINS" >> $GITHUB_OUTPUT
+          echo ""
+          echo "🎯 Domains to build:$DOMAINS"
+        fi
+
+    - name: Build Changed Domains Only
+      run: |
+        if [ "${{ steps.changed_domains.outputs.build_all }}" == "true" ]; then
+          echo "🚀 Building ALL domains..."
+          bash scripts/build-all-domains.sh
+        else
+          DOMAINS="${{ steps.changed_domains.outputs.domains }}"
+          if [ -z "$DOMAINS" ]; then
+            echo "✅ No domains need rebuilding - skipping"
+            exit 0
+          fi
+          
+          echo "🎯 Building only changed domains: $DOMAINS"
+          for DOMAIN in $DOMAINS; do
+            echo ""
+            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            echo "🏗️  Building: $DOMAIN"
+            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            
+            hugo --environment "$DOMAIN" \
+                 --config "config/_default/hugo.toml,config/$DOMAIN/hugo.toml" \
+                 --destination "public/$DOMAIN" \
+                 --cleanDestinationDir \
+                 --minify
+            
+            echo "✅ $DOMAIN built successfully"
+          done
+        fi
+    
+    # Deploy only the domains that were built
+    # Each domain deployment checks if its folder exists in public/
 
     - name: Deploy badcreditloanspecialist
       if: hashFiles('public/badcreditloanspecialist/**') != ''
@@ -133,7 +130,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/badcreditloanspecialist/
-        server-dir: ${{ secrets.BADCREDITLOANSPECIALIST_FTP_DIR || '/domains/badcreditloanspecialist.com/public_html/' }}
+        server-dir: /domains/badcreditloanspecialist.com/public_html/
         exclude: |
           **/.git*
           **/node_modules/**
@@ -146,7 +143,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/conformingmortgageloans/
-        server-dir: ${{ secrets.CONFORMINGMORTGAGELOANS_FTP_DIR || '/domains/www.conformingmortgageloans.com/public_html/' }}
+        server-dir: /domains/conformingmortgageloans.com/public_html/
         exclude: |
           **/.git*
           **/node_modules/**
