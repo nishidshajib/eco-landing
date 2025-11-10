@@ -285,5 +285,6 @@ bash scripts/build-all-domains.sh
 ---
 
 **Your eco-landing repository is now a fully automated multi-domain publishing system!** 🎉
- 
+
+ 
  
