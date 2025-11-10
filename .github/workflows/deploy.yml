@@ -1,143 +1,335 @@
-name: Deploy All Domains to Hostinger
+name: Deploy All Domains to Hostingername: Deploy All Domains to Hostinger
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch: # Allow manual trigger
 
-jobs:
+
+on:on:
+
+  push:  push:
+
+    branches: [ main ]    branches: [ main ]
+
+  workflow_dispatch:  pull_request:
+
+    branches: [ main ]
+
+jobs:  workflow_dispatch: # Allow manual trigger
+
   build-and-deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
+
+    runs-on: ubuntu-latestjobs:
+
+      build-and-deploy:
+
+    steps:    runs-on: ubuntu-latest
+
+    - name: Checkout repository    
+
+      uses: actions/checkout@v4    steps:
+
+      with:    - name: Checkout repository
+
+        submodules: true      uses: actions/checkout@v4
+
+        fetch-depth: 0      with:
+
         submodules: true
-        fetch-depth: 0
 
-    - name: Setup Hugo
+    - name: Setup Hugo        fetch-depth: 0
+
       uses: peaceiris/actions-hugo@v2
-      with:
+
+      with:    - name: Setup Hugo
+
+        hugo-version: 'latest'      uses: peaceiris/actions-hugo@v2
+
+        extended: true      with:
+
         hugo-version: 'latest'
-        extended: true
 
-    - name: Detect Changed Domains
+    - name: Detect Changed Domains        extended: true
+
       id: changed_domains
-      run: |
-        echo "🔍 Detecting which domains need to be rebuilt..."
-        
-        # Get list of changed files
-        if [ "${{ github.event_name }}" == "pull_request" ]; then
-          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
-        else
-          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD 2>/dev/null || echo "ALL")
-        fi
-        
-        # If no git history or first push, build all
-        if [ "$CHANGED_FILES" == "ALL" ]; then
-          echo "build_all=true" >> $GITHUB_OUTPUT
-          echo "⚠️ Building ALL domains (first push or no history)"
-          exit 0
-        fi
-        
-        echo "Changed files:"
-        echo "$CHANGED_FILES"
-        echo ""
-        
-        # Check if global files changed (layouts, themes, scripts, workflow)
-        if echo "$CHANGED_FILES" | grep -qE "^(layouts/|themes/|static/|assets/|scripts/|\.github/workflows/)"; then
-          echo "build_all=true" >> $GITHUB_OUTPUT
-          echo "⚠️ Global files changed - rebuilding ALL domains"
-          exit 0
-        fi
-        
-        # Find specific domains that changed
-        DOMAINS=""
-        for FILE in $CHANGED_FILES; do
-          # Extract domain name from path: config/DOMAIN/ or content/DOMAIN/
-          if [[ "$FILE" =~ ^config/([^/]+)/ ]] || [[ "$FILE" =~ ^content/([^/]+)/ ]]; then
-            DOMAIN="${BASH_REMATCH[1]}"
-            # Skip _default
-            if [ "$DOMAIN" != "_default" ]; then
-              # Add to list if not already there
-              if [[ ! " $DOMAINS " =~ " $DOMAIN " ]]; then
+
+      run: |    - name: Detect Changed Domains
+
+        echo "🔍 Detecting which domains need to be rebuilt..."      id: changed_domains
+
+              run: |
+
+        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD 2>/dev/null || echo "ALL")        echo "🔍 Detecting which domains need to be rebuilt..."
+
+                
+
+        if [ "$CHANGED_FILES" == "ALL" ]; then        # Get list of changed files
+
+          echo "build_all=true" >> $GITHUB_OUTPUT        if [ "${{ github.event_name }}" == "pull_request" ]; then
+
+          echo "⚠️ Building ALL domains"          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
+
+          exit 0        else
+
+        fi          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD 2>/dev/null || echo "ALL")
+
+                fi
+
+        echo "Changed files:"        
+
+        echo "$CHANGED_FILES"        # If no git history or first push, build all
+
+        echo ""        if [ "$CHANGED_FILES" == "ALL" ]; then
+
+                  echo "build_all=true" >> $GITHUB_OUTPUT
+
+        if echo "$CHANGED_FILES" | grep -qE "^(layouts/|themes/|static/|assets/|\.github/workflows/|README)"; then          echo "⚠️ Building ALL domains (first push or no history)"
+
+          echo "build_all=true" >> $GITHUB_OUTPUT          exit 0
+
+          echo "⚠️ Global files changed - rebuilding ALL domains"        fi
+
+          exit 0        
+
+        fi        echo "Changed files:"
+
+                echo "$CHANGED_FILES"
+
+        DOMAINS=""        echo ""
+
+        for FILE in $CHANGED_FILES; do        
+
+          if [[ "$FILE" =~ ^config/([^/]+)/ ]] || [[ "$FILE" =~ ^content/([^/]+)/ ]]; then        # Check if global files changed (layouts, themes, scripts, workflow)
+
+            DOMAIN="${BASH_REMATCH[1]}"        if echo "$CHANGED_FILES" | grep -qE "^(layouts/|themes/|static/|assets/|scripts/|\.github/workflows/)"; then
+
+            if [ "$DOMAIN" != "_default" ]; then          echo "build_all=true" >> $GITHUB_OUTPUT
+
+              if [[ ! " $DOMAINS " =~ " $DOMAIN " ]]; then          echo "⚠️ Global files changed - rebuilding ALL domains"
+
+                DOMAINS="$DOMAINS $DOMAIN"          exit 0
+
+                echo "✓ Domain changed: $DOMAIN"        fi
+
+              fi        
+
+            fi        # Find specific domains that changed
+
+          fi        DOMAINS=""
+
+        done        for FILE in $CHANGED_FILES; do
+
+                  # Extract domain name from path: config/DOMAIN/ or content/DOMAIN/
+
+        if [ -z "$DOMAINS" ]; then          if [[ "$FILE" =~ ^config/([^/]+)/ ]] || [[ "$FILE" =~ ^content/([^/]+)/ ]]; then
+
+          echo "build_all=false" >> $GITHUB_OUTPUT            DOMAIN="${BASH_REMATCH[1]}"
+
+        else            # Skip _default
+
+          echo "build_all=false" >> $GITHUB_OUTPUT            if [ "$DOMAIN" != "_default" ]; then
+
+          echo "domains=$DOMAINS" >> $GITHUB_OUTPUT              # Add to list if not already there
+
+        fi              if [[ ! " $DOMAINS " =~ " $DOMAIN " ]]; then
+
                 DOMAINS="$DOMAINS $DOMAIN"
-                echo "✓ Domain changed: $DOMAIN"
-              fi
-            fi
-          fi
-        done
-        
-        if [ -z "$DOMAINS" ]; then
-          echo "build_all=false" >> $GITHUB_OUTPUT
-          echo "✅ No domain-specific changes detected"
-        else
-          echo "build_all=false" >> $GITHUB_OUTPUT
-          echo "domains=$DOMAINS" >> $GITHUB_OUTPUT
-          echo ""
-          echo "🎯 Domains to build:$DOMAINS"
-        fi
 
-    - name: Build Changed Domains Only
-      run: |
-        if [ "${{ steps.changed_domains.outputs.build_all }}" == "true" ]; then
-          echo "🚀 Building ALL domains..."
-          bash scripts/build-all-domains.sh
-        else
+    - name: Build Domains                echo "✓ Domain changed: $DOMAIN"
+
+      run: |              fi
+
+        if [ "${{ steps.changed_domains.outputs.build_all }}" == "true" ]; then            fi
+
+          echo "🚀 Building ALL domains..."          fi
+
+                  done
+
+          for CONFIG_DIR in config/*/; do        
+
+            if [[ "$CONFIG_DIR" == *"_default"* ]]; then        if [ -z "$DOMAINS" ]; then
+
+              continue          echo "build_all=false" >> $GITHUB_OUTPUT
+
+            fi          echo "✅ No domain-specific changes detected"
+
+                    else
+
+            DOMAIN=$(basename "$CONFIG_DIR")          echo "build_all=false" >> $GITHUB_OUTPUT
+
+                      echo "domains=$DOMAINS" >> $GITHUB_OUTPUT
+
+            if [ ! -f "${CONFIG_DIR}hugo.toml" ]; then          echo ""
+
+              continue          echo "🎯 Domains to build:$DOMAINS"
+
+            fi        fi
+
+            
+
+            echo "🏗️  Building: $DOMAIN"    - name: Build Changed Domains Only
+
+                  run: |
+
+            hugo --environment "$DOMAIN" \        if [ "${{ steps.changed_domains.outputs.build_all }}" == "true" ]; then
+
+                 --config "config/_default/hugo.toml,config/$DOMAIN/hugo.toml" \          echo "🚀 Building ALL domains..."
+
+                 --destination "public/$DOMAIN" \          
+
+                 --cleanDestinationDir \          # Find and build all domains
+
+                 --minify          for CONFIG_DIR in config/*/; do
+
+                        if [[ "$CONFIG_DIR" == *"_default"* ]]; then
+
+            echo "✅ $DOMAIN built"              continue
+
+          done            fi
+
+        else            
+
+          DOMAINS="${{ steps.changed_domains.outputs.domains }}"            DOMAIN=$(basename "$CONFIG_DIR")
+
+                      
+
+          if [ -z "$DOMAINS" ]; then            if [ ! -f "${CONFIG_DIR}hugo.toml" ]; then
+
+            echo "✅ No domains need rebuilding"              echo "⚠️  Skipping $DOMAIN - no hugo.toml found"
+
+            exit 0              continue
+
+          fi            fi
+
+                      
+
+          echo "🎯 Building: $DOMAINS"            echo ""
+
+                      echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+          for DOMAIN in $DOMAINS; do            echo "🏗️  Building: $DOMAIN"
+
+            echo "🏗️  Building: $DOMAIN"            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+                        
+
+            hugo --environment "$DOMAIN" \            hugo --environment "$DOMAIN" \
+
+                 --config "config/_default/hugo.toml,config/$DOMAIN/hugo.toml" \                 --config "config/_default/hugo.toml,config/$DOMAIN/hugo.toml" \
+
+                 --destination "public/$DOMAIN" \                 --destination "public/$DOMAIN" \
+
+                 --cleanDestinationDir \                 --cleanDestinationDir \
+
+                 --minify                 --minify
+
+                        
+
+            echo "✅ $DOMAIN built"            echo "✅ $DOMAIN built successfully"
+
+          done          done
+
+        fi        else
+
           DOMAINS="${{ steps.changed_domains.outputs.domains }}"
-          if [ -z "$DOMAINS" ]; then
-            echo "✅ No domains need rebuilding - skipping"
-            exit 0
-          fi
-          
-          echo "🎯 Building only changed domains: $DOMAINS"
-          for DOMAIN in $DOMAINS; do
-            echo ""
-            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-            echo "🏗️  Building: $DOMAIN"
-            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-            
-            hugo --environment "$DOMAIN" \
-                 --config "config/_default/hugo.toml,config/$DOMAIN/hugo.toml" \
-                 --destination "public/$DOMAIN" \
-                 --cleanDestinationDir \
-                 --minify
-            
-            echo "✅ $DOMAIN built successfully"
-          done
-        fi
-    
-    # Deploy ALL domains dynamically - no hardcoded domain names!
-    # Automatically discovers and deploys any domain in public/ folder
 
-    - name: Deploy All Built Domains via FTP
-      run: |
-        echo "🚀 Starting dynamic FTP deployment..."
-        echo ""
-        
-        # Install lftp for reliable FTP uploads
-        sudo apt-get update && sudo apt-get install -y lftp
-        
-        DEPLOYED_COUNT=0
-        SKIPPED_COUNT=0
-        
-        # Loop through all folders in public/
-        for DOMAIN_DIR in public/*/; do
-          if [ ! -d "$DOMAIN_DIR" ]; then
+    - name: Deploy to Hostinger          if [ -z "$DOMAINS" ]; then
+
+      run: |            echo "✅ No domains need rebuilding - skipping"
+
+        echo "🚀 Deploying to Hostinger..."            exit 0
+
+                  fi
+
+        sudo apt-get update -qq && sudo apt-get install -y lftp          
+
+                  echo "🎯 Building only changed domains: $DOMAINS"
+
+        DEPLOYED=0          for DOMAIN in $DOMAINS; do
+
+                    echo ""
+
+        for DOMAIN_DIR in public/*/; do            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+          if [ ! -d "$DOMAIN_DIR" ]; then            echo "🏗️  Building: $DOMAIN"
+
+            continue            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+          fi            
+
+                      hugo --environment "$DOMAIN" \
+
+          DOMAIN_NAME=$(basename "$DOMAIN_DIR")                 --config "config/_default/hugo.toml,config/$DOMAIN/hugo.toml" \
+
+          CONFIG_FILE="config/${DOMAIN_NAME}/hugo.toml"                 --destination "public/$DOMAIN" \
+
+                           --cleanDestinationDir \
+
+          if [ ! -f "$CONFIG_FILE" ]; then                 --minify
+
+            continue            
+
+          fi            echo "✅ $DOMAIN built successfully"
+
+                    done
+
+          BASE_URL=$(grep -E "^baseURL" "$CONFIG_FILE" | head -1 | sed -E 's/^baseURL[[:space:]]*=[[:space:]]*["\x27]([^"\x27]+)["\x27].*/\1/')        fi
+
+          CLEAN_DOMAIN=$(echo "$BASE_URL" | sed 's|https\?://||' | sed 's|www\.||' | sed 's|/.*||')    
+
+              # Deploy ALL domains dynamically - no hardcoded domain names!
+
+          if [ -z "$CLEAN_DOMAIN" ]; then    # Automatically discovers and deploys any domain in public/ folder
+
             continue
-          fi
-          
-          DOMAIN_NAME=$(basename "$DOMAIN_DIR")
-          
-          # Skip non-domain directories (build artifacts)
-          if [[ "$DOMAIN_NAME" == "blogs" ]] || [[ "$DOMAIN_NAME" == "categories" ]] || \
-             [[ "$DOMAIN_NAME" == "tags" ]] || [[ "$DOMAIN_NAME" == "page" ]]; then
-            echo "⏭️  Skipping artifact directory: $DOMAIN_NAME"
-            continue
-          fi
+
+          fi    - name: Deploy All Built Domains via FTP
+
+                run: |
+
+          echo ""        echo "🚀 Starting dynamic FTP deployment..."
+
+          echo "📤 Deploying: $DOMAIN_NAME → $CLEAN_DOMAIN"        echo ""
+
+                  
+
+          lftp -e "        # Install lftp for reliable FTP uploads
+
+            set ssl:verify-certificate no;        sudo apt-get update && sudo apt-get install -y lftp
+
+            set net:timeout 30;        
+
+            set net:max-retries 2;        DEPLOYED_COUNT=0
+
+            open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }};        SKIPPED_COUNT=0
+
+            mirror -Rev --delete --parallel=4 ${DOMAIN_DIR} /domains/${CLEAN_DOMAIN}/public_html/;        
+
+            bye        # Loop through all folders in public/
+
+          "        for DOMAIN_DIR in public/*/; do
+
+                    if [ ! -d "$DOMAIN_DIR" ]; then
+
+          if [ $? -eq 0 ]; then            continue
+
+            echo "✅ $DOMAIN_NAME deployed"          fi
+
+            DEPLOYED=$((DEPLOYED + 1))          
+
+          else          DOMAIN_NAME=$(basename "$DOMAIN_DIR")
+
+            echo "❌ $DOMAIN_NAME failed"          
+
+            exit 1          # Skip non-domain directories (build artifacts)
+
+          fi          if [[ "$DOMAIN_NAME" == "blogs" ]] || [[ "$DOMAIN_NAME" == "categories" ]] || \
+
+        done             [[ "$DOMAIN_NAME" == "tags" ]] || [[ "$DOMAIN_NAME" == "page" ]]; then
+
+                    echo "⏭️  Skipping artifact directory: $DOMAIN_NAME"
+
+        echo ""            continue
+
+        echo "✅ Deployed $DEPLOYED domains"          fi
+
           
           # Get domain URL from config
           CONFIG_FILE="config/${DOMAIN_NAME}/hugo.toml"
