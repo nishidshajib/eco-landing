@@ -119,151 +119,87 @@ jobs:
           done
         fi
     
-    # Deploy only the domains that were built
-    # Each domain deployment checks if its folder exists in public/
+    # Deploy ALL domains dynamically - no hardcoded domain names!
+    # Automatically discovers and deploys any domain in public/ folder
 
-    - name: Deploy badcreditloanspecialist
-      if: hashFiles('public/badcreditloanspecialist/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/badcreditloanspecialist/
-        server-dir: /domains/badcreditloanspecialist.com/public_html/
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy conformingmortgageloans
-      if: hashFiles('public/conformingmortgageloans/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/conformingmortgageloans/
-        server-dir: /domains/conformingmortgageloans.com/public_html/
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy conventionalmortgagebrokers
-      if: hashFiles('public/conventionalmortgagebrokers/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/conventionalmortgagebrokers/
-        server-dir: ${{ secrets.CONVENTIONALMORTGAGEBROKERS_FTP_DIR || '/domains/conventionalmortgagebrokers.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy conventionalmortgageloans
-      if: hashFiles('public/conventionalmortgageloans/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/conventionalmortgageloans/
-        server-dir: ${{ secrets.CONVENTIONALMORTGAGELOANS_FTP_DIR || '/domains/conventionalmortgageloans.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy fhaloanofficers
-      if: hashFiles('public/fhaloanofficers/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/fhaloanofficers/
-        server-dir: ${{ secrets.FHALOANOFFICERS_FTP_DIR || '/domains/fhaloanofficers.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy firsttimebuyeroptions
-      if: hashFiles('public/firsttimebuyeroptions/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/firsttimebuyeroptions/
-        server-dir: ${{ secrets.FIRSTTIMEBUYEROPTIONS_FTP_DIR || '/domains/firsttimebuyeroptions.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy helocloanofficers
-      if: hashFiles('public/helocloanofficers/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/helocloanofficers/
-        server-dir: ${{ secrets.HELOCLOANOFFICERS_FTP_DIR || '/domains/helocloanofficers.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy mtglenders
-      if: hashFiles('public/mtglenders/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/mtglenders/
-        server-dir: ${{ secrets.MTGLENDERS_FTP_DIR || '/domains/mtglenders.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy refimortgagebrokers
-      if: hashFiles('public/refimortgagebrokers/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/refimortgagebrokers/
-        server-dir: ${{ secrets.REFIMORTGAGEBROKERS_FTP_DIR || '/domains/refimortgagebrokers.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy refinanceloanofficers
-      if: hashFiles('public/refinanceloanofficers/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/refinanceloanofficers/
-        server-dir: ${{ secrets.REFINANCELOANOFFICERS_FTP_DIR || '/domains/refinanceloanofficers.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
-
-    - name: Deploy veteransloanofficers
-      if: hashFiles('public/veteransloanofficers/**') != ''
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/veteransloanofficers/
-        server-dir: ${{ secrets.VETERANSLOANOFFICERS_FTP_DIR || '/domains/veteransloanofficers.com/public_html/' }}
-        exclude: |
-          **/.git*
-          **/node_modules/**
+    - name: Deploy All Built Domains via FTP
+      run: |
+        echo "🚀 Starting dynamic FTP deployment..."
+        echo ""
+        
+        # Install lftp for reliable FTP uploads
+        sudo apt-get update && sudo apt-get install -y lftp
+        
+        DEPLOYED_COUNT=0
+        SKIPPED_COUNT=0
+        
+        # Loop through all folders in public/
+        for DOMAIN_DIR in public/*/; do
+          if [ ! -d "$DOMAIN_DIR" ]; then
+            continue
+          fi
+          
+          DOMAIN_NAME=$(basename "$DOMAIN_DIR")
+          
+          # Skip non-domain directories (build artifacts)
+          if [[ "$DOMAIN_NAME" == "blogs" ]] || [[ "$DOMAIN_NAME" == "categories" ]] || \
+             [[ "$DOMAIN_NAME" == "tags" ]] || [[ "$DOMAIN_NAME" == "page" ]]; then
+            echo "⏭️  Skipping artifact directory: $DOMAIN_NAME"
+            continue
+          fi
+          
+          # Get domain URL from config
+          CONFIG_FILE="config/${DOMAIN_NAME}/hugo.toml"
+          if [ ! -f "$CONFIG_FILE" ]; then
+            echo "⚠️  Skipping $DOMAIN_NAME - no config found"
+            SKIPPED_COUNT=$((SKIPPED_COUNT + 1))
+            continue
+          fi
+          
+          # Extract baseURL
+          BASE_URL=$(grep -E "^baseURL" "$CONFIG_FILE" | head -1 | sed -E 's/^baseURL[[:space:]]*=[[:space:]]*["\x27]([^"\x27]+)["\x27].*/\1/')
+          CLEAN_DOMAIN=$(echo "$BASE_URL" | sed 's|https\?://||' | sed 's|www\.||' | sed 's|/.*||')
+          
+          if [ -z "$CLEAN_DOMAIN" ]; then
+            echo "⚠️  Skipping $DOMAIN_NAME - could not extract domain"
+            SKIPPED_COUNT=$((SKIPPED_COUNT + 1))
+            continue
+          fi
+          
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "📤 Deploying: $DOMAIN_NAME"
+          echo "🌐 Domain: $CLEAN_DOMAIN"
+          echo "📂 Local: $DOMAIN_DIR"
+          echo "📍 Remote: /domains/${CLEAN_DOMAIN}/public_html/"
+          
+          # FTP upload using lftp (handles large deployments efficiently)
+          lftp -e "
+            set ssl:verify-certificate no;
+            set net:timeout 30;
+            set net:max-retries 3;
+            set net:reconnect-interval-base 5;
+            open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }};
+            mirror -Rev --delete --parallel=4 --exclude .git/ --exclude node_modules/ ${DOMAIN_DIR} /domains/${CLEAN_DOMAIN}/public_html/;
+            bye
+          " 2>&1
+          
+          if [ $? -eq 0 ]; then
+            echo "✅ $DOMAIN_NAME deployed successfully"
+            DEPLOYED_COUNT=$((DEPLOYED_COUNT + 1))
+          else
+            echo "❌ $DOMAIN_NAME deployment failed"
+          fi
+          echo ""
+        done
+        
+        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        echo "📊 Deployment Complete"
+        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        echo "✅ Deployed: $DEPLOYED_COUNT domains"
+        if [ $SKIPPED_COUNT -gt 0 ]; then
+          echo "⚠️  Skipped: $SKIPPED_COUNT domains"
+        fi
+        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
     - name: Deployment Summary
       if: always()
