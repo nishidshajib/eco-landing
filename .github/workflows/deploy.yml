@@ -109,14 +109,14 @@ jobs:
           
           echo "Deploying $domain to $clean"
           
-          # Upload with mirror --delete (automatically removes old files not in source)
+          # Upload folder contents (not folder itself) with --delete to remove old files
           lftp -c "
             set ssl:verify-certificate no
             set ftp:ssl-allow yes
             set net:timeout 10
             set net:max-retries 2
             open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }}
-            mirror -Rev --delete --parallel=2 public/$domain /domains/$clean/public_html
+            mirror -Rev --delete --parallel=2 public/$domain/ /domains/$clean/public_html/
             bye
           "
         done
