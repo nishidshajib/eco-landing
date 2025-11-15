@@ -41,7 +41,8 @@ publishDir = 'public/refimortgagebrokers'
   siteDescription = 'Expert mortgage brokers helping homeowners shop refinance rates across multiple lenders to secure optimal terms and lowest costs'
   keywords = ['refinance mortgage brokers', 'refinance rate shopping', 'mortgage refinancing', 'lowest refi rates', 'broker rate comparison', 'cash-out refinance', 'rate-and-term refinance']
   serviceType = 'Refinance Mortgage Brokerage Services'
-  supportEmail = 'support@refimortgagebrokers.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'Shop Refinance Rates with Expert Mortgage Brokers'

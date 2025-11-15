@@ -41,7 +41,8 @@ publishDir = 'public/badcreditloanspecialist'
   siteDescription = 'Find loan officers who specialize in bad credit mortgages—FHA 500-579 scores, manual underwriting, credit repair guidance, and subprime lenders who approve borrowers rebuilding after bankruptcy, foreclosure, or collections'
   keywords = ['bad credit mortgage', 'subprime lenders', 'FHA bad credit', 'credit repair loans', '500 credit score mortgage', 'manual underwriting', 'non-QM loans', 'portfolio lenders']
   serviceType = 'Bad Credit Mortgage Loan Specialist Services'
-  supportEmail = 'support@badcreditloanspecialist.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'Bad Credit Loan Specialists Who Approve 500-579 Scores When Others Say No'

@@ -41,7 +41,8 @@ publishDir = 'public/mtglenders'
   siteDescription = 'Comprehensive mortgage lender comparison platform helping borrowers find the right lenders, compare rates, and match loan programs to credit profiles and financial situations'
   keywords = ['mortgage lenders', 'compare lenders', 'mortgage rates', 'lender reviews', 'FHA lenders', 'VA lenders', 'conventional lenders', 'mortgage brokers']
   serviceType = 'Mortgage Lender Information and Comparison Services'
-  supportEmail = 'support@mtglenders.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'Find Your Perfect Mortgage Lender—Compare Rates, Programs & Reviews'

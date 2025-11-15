@@ -41,7 +41,8 @@ publishDir = 'public/firsttimebuyeroptions'
   siteDescription = 'Expert guidance helping first-time homebuyers navigate mortgage options, credit preparation, and down payment strategies for successful homeownership'
   keywords = ['first-time homebuyers', 'first home mortgage', 'homebuyer programs', 'down payment assistance', 'credit score for mortgage', 'FHA loans', 'conventional loans', 'buyer education']
   serviceType = 'First-Time Homebuyer Services'
-  supportEmail = 'support@firsttimebuyeroptions.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'Your First Home Starts Here—Smart Options for New Buyers'

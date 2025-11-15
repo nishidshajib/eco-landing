@@ -41,7 +41,8 @@ publishDir = 'public/veteransloanofficers'
   siteDescription = 'Connecting veterans, active military, and eligible spouses with VA loan officers who specialize in VA purchase loans, VA cash-out refinancing, IRRRL, and VA construction loans with zero down payment and no PMI'
   keywords = ['VA loan officers', 'veterans mortgage', 'military home loans', 'VA home purchase', 'VA cash-out refinance', 'IRRRL', 'VA loan specialists', 'military lenders']
   serviceType = 'VA Mortgage Loan Officer Services for Military and Veterans'
-  supportEmail = 'support@veteransloanofficers.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'VA Loan Officers Who Understand Military Service & Maximize Your Benefits'

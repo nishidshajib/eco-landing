@@ -45,7 +45,7 @@ path = "page"
   
   # Social Media
   twitterHandle = '@BrowseLenders'
-  supportEmail = 'support@helocloanofficers.com'
+  supportEmail = 'support@browselenders.com'
   
   # Theme configuration
   [params.theme]

@@ -41,7 +41,8 @@ publishDir = 'public/fhaloanofficers'
   siteDescription = 'Expert FHA loan officers helping first-time buyers and middle credit score borrowers achieve homeownership with government-backed FHA mortgages'
   keywords = ['FHA loans', 'FHA loan officers', 'FHA mortgage', 'first-time homebuyers', 'low credit score loans', 'government-backed mortgages', '3.5% down payment', 'FHA specialists']
   serviceType = 'FHA Lending Services'
-  supportEmail = 'support@fhaloanofficers.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'Connect with Licensed FHA Loan Officers'

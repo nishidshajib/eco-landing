@@ -41,7 +41,8 @@ publishDir = 'public/refinanceloanofficers'
   siteDescription = 'Expert refinance loan officers helping homeowners lower rates, access equity, and optimize mortgage terms through strategic refinancing'
   keywords = ['refinance loan officers', 'mortgage refinancing', 'cash-out refinance', 'rate and term refinance', 'home equity', 'lower mortgage rate', 'refinance specialists']
   serviceType = 'Mortgage Refinancing Services'
-  supportEmail = 'support@refinanceloanofficers.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'Expert Refinance Loan Officers—Lower Rates, Access Equity, Save Thousands'

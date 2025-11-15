@@ -13,7 +13,8 @@ publishDir = 'public/helocloanofficers'
   siteDescription = 'Strategic HELOC planning hub for HELOCLoanOfficers.com with equity extraction playbooks, cash-out comparisons, and vetted loan officers.'
   keywords = ['HELOC', 'Home Equity Line of Credit', 'Equity Extraction', 'Cash-Out Refinance', 'Middle Credit Score', 'Browse Lenders®', 'Home Equity Loans', 'Renovation Financing']
   serviceType = 'HELOC Lending Services'
-  supportEmail = 'support@helocloanofficers.com'
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
   
   # Hero Section
   heroTitle = 'Unlock Equity Intelligently With HELOC Loan Officers™'
