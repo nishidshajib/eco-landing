@@ -1,6 +1,6 @@
 baseURL = 'https://www.mtglenders.com/'
 languageCode = 'en-us'
-title = 'MTG Lenders'
+title = 'Mortgage Lenders'
 theme = 'heloc-blog'
 contentDir = 'content/mtglenders'
 publishDir = 'public/mtglenders'
@@ -33,11 +33,11 @@ publishDir = 'public/mtglenders'
 
 [params]
   description = 'Find and compare mortgage lenders across all loan types—conventional, FHA, VA, jumbo, and refinance. Expert guidance on lender selection, rate shopping, and program matching for your credit profile'
-  shortName = 'MTG Lenders'
+  shortName = 'Mortgage Lenders'
   tagline = 'Your Guide to Finding the Right Mortgage Lender'
   homepage = 'https://www.mtglenders.com/'
   
-  siteName = 'MTG Lenders'
+  siteName = 'Mortgage Lenders'
   siteDescription = 'Comprehensive mortgage lender comparison platform helping borrowers find the right lenders, compare rates, and match loan programs to credit profiles and financial situations'
   keywords = ['mortgage lenders', 'compare lenders', 'mortgage rates', 'lender reviews', 'FHA lenders', 'VA lenders', 'conventional lenders', 'mortgage brokers']
   serviceType = 'Mortgage Lender Information and Comparison Services'
