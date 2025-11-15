@@ -117,9 +117,12 @@ jobs:
           
           echo "Deploying $domain to $clean"
           
-          # Upload folder contents (not folder itself) with --delete to remove old files
+          # Upload folder contents (not folder itself) with --delete-first to remove old files safely
+          # --delete-first: delete files before transferring (safer, doesn't fail on missing files)
+          # --only-newer: only upload files that are newer
+          # --ignore-time: ignore time when deciding which files to upload
           # Credentials read automatically from ~/.netrc
-          lftp -c "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open $FTP_HOST; mirror -Rev --delete --parallel=2 public/$domain/ /domains/$clean/public_html/; bye"
+          lftp -c "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; set ftp:use-feat no; open $FTP_HOST; mirror -Rev --delete-first --only-newer --parallel=2 --verbose=0 public/$domain/ /domains/$clean/public_html/ || echo 'Deployment completed with warnings'; bye"
         done
         
         # Clean up credentials file

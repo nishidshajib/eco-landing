@@ -1,0 +1,260 @@
+baseURL = 'https://conformingloanofficers.com/'
+languageCode = 'en-us'
+title = 'Conforming Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conformingloanofficers'
+publishDir = 'public/conformingloanofficers'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Connect with conforming loan officers who specialize in FHFA-backed mortgages—understanding loan limits, rate transparency, and the difference between conforming vs non-conforming loans'
+  author = 'Browse Lenders®'
+  shortName = 'Conforming Loan Officers'
+  tagline = 'Your Guide to Conforming Mortgage Expertise'
+  homepage = 'https://conformingloanofficers.com/'
+  
+  # SEO Configuration
+  siteName = 'Conforming Loan Officers'
+  siteDescription = 'Find loan officers who specialize in conforming loans—FHFA loan limits, rate transparency, Fannie Mae and Freddie Mac guidelines, and the critical differences between conforming and non-conforming mortgages.'
+  keywords = ['Conforming Loan Officers', 'Conforming Mortgages', 'FHFA Loan Limits', 'Fannie Mae Loans', 'Freddie Mac Loans', 'Conforming vs Non-Conforming', 'Loan Limit Guidance', 'Rate Transparency', 'Browse Lenders®']
+  serviceType = 'Conforming Mortgage Loan Officer Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Conforming Loan Officers - Navigate FHFA Limits and Rate Transparency'
+  heroSubtitle = 'Connect with loan officers who specialize in conforming mortgages—understanding Fannie Mae and Freddie Mac guidelines, 2025 loan limits, and the critical differences between conforming and non-conforming loans.'
+  heroImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find a Loan Officer'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Nationwide Conforming Loan Expertise. Rate Transparency.'
+  aboutImage = 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Conforming Loan Guidance for Every Borrower'
+  programsSubtitle = "Understanding conforming loan limits and rate structures is essential for smart borrowing decisions."
+  
+  # Program Cards
+  program1Title = 'Conforming Loan Limits'
+  program1Description = '''Understand 2025 FHFA conforming loan limits by county—baseline caps, high-cost area exceptions, and how limits affect your borrowing power. Learn the difference between standard conforming and <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">high-balance conforming loans</a>.'''
+  program1Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Rate Transparency'
+  program2Description = '''Compare conforming mortgage rates with full transparency—understanding how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit scores</a>, loan-to-value ratios, and points affect your final rate. No hidden fees, no surprise adjustments.'''
+  program2Image = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Conforming vs Non-Conforming'
+  program3Description = '''Learn the critical differences between conforming loans (backed by Fannie Mae/Freddie Mac) and non-conforming options including jumbo loans and <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> programs that exceed FHFA limits.'''
+  program3Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Check Your Loan Limit'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore conforming loan options and understand your county's loan limits, connect with verified loan officers through the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent rate quotes and expert guidance.'''
+  
+  # Education Section
+  educationTitle = 'Conforming Loan Education & Rate Guidance'
+  educationSubtitle = 'Understanding conforming loans means understanding the rules that govern them.'
+  
+  # Education Cards
+  edu1Title = 'FHFA Loan Limits'
+  edu1Description = '''2025 conforming loan limits vary by county—$766,550 baseline for most areas, with high-cost exceptions up to $1,149,825. Understanding your county's limit is the first step to knowing if you need conforming or jumbo financing.'''
+  edu1Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Credit & Rate Tiers'
+  edu2Description = '''Conforming loans offer the best rates for borrowers with strong credit. Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects pricing and how to qualify for the most competitive conforming mortgage rates available.'''
+  edu2Image = 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Fannie Mae & Freddie Mac'
+  edu3Description = '''Conforming loans are purchased by Fannie Mae and Freddie Mac, which sets the underwriting standards. Understanding these guidelines helps you prepare documentation and strengthen your approval odds.'''
+  edu3Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Down Payment Options'
+  edu4Description = 'Conforming loans accept down payments as low as 3% for qualified first-time buyers. Learn PMI requirements, how to reach 20% equity faster, and strategies to minimize monthly costs while staying within conforming limits.'
+  edu4Image = 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Get Pre-Qualified'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center – Smarter Conforming Loan Planning'
+  learningSubtitle = 'Knowledge builds confidence in mortgage decisions.'
+  learningImage = 'https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Conforming loans represent the backbone of American home financing—standardized by Fannie Mae and Freddie Mac, governed by FHFA loan limits, and offering some of the most competitive rates available. Understanding what makes a loan "conforming" helps you compare options confidently and recognize when jumbo or non-conforming financing might be necessary.'''
+  learningBullet1 = '''Compare conforming loan officers and rates through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency.'''
+  learningBullet2 = 'Understand 2025 FHFA loan limits by county—baseline caps and high-cost area exceptions.'
+  learningBullet3 = '''Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit scores</a> affect conforming mortgage pricing and approval.'''
+  learningBullet4 = 'Model different scenarios—conforming purchase, conforming refinance, and cash-out refinance within FHFA limits.'
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping every borrower understand conforming loan standards, county-specific limits, and rate transparency before committing to a mortgage.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for conforming loan calculators, county limit lookup tools, and expert guidance on Fannie Mae and Freddie Mac underwriting standards.'''
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders®'
+  whyChooseSubtitle = 'Conforming loan expertise, rate transparency, and verified loan officers nationwide.'
+  whyChoosePara1 = '''Today's borrowers need more than quotes—they need to understand conforming loan limits, rate structures, and the critical differences between conforming and non-conforming financing before making a decision.'''
+  whyChoosePara2 = '''That's why <strong>Browse Lenders®</strong> was built as a <strong>national mortgage-education and financial-wellness resource</strong> for both consumers and employees seeking conforming loan guidance.'''
+  
+  whyChooseBox1Title = 'Verified Conforming Loan Officers'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in conforming mortgages and understand FHFA loan limits by county.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with conforming loan expertise'
+  whyChooseBox1Bullet2 = 'Transparent rate quotes with no hidden adjustments'
+  whyChooseBox1Bullet3 = 'County-specific loan limit guidance and pre-qualification'
+  
+  whyChooseBox2Title = 'Rate Transparency'
+  whyChooseBox2Para = 'Understand exactly how conforming mortgage rates are calculated—credit tiers, LTV ratios, points, and loan-level price adjustments explained clearly.'
+  whyChooseBox2Bullet1 = 'Side-by-side rate comparisons from multiple lenders'
+  whyChooseBox2Bullet2 = 'Clear explanations of rate adjustments and pricing factors'
+  whyChooseBox2Bullet3 = 'No-surprise quotes with full disclosure of fees and costs'
+  
+  whyChooseBox3Title = 'Conforming vs Non-Conforming Guidance'
+  whyChooseBox3Para = 'Learn when conforming loans make sense and when jumbo or non-conforming options are necessary based on your loan amount and county limits.'
+  whyChooseBox3Bullet1 = 'FHFA loan limit lookup by county for 2025'
+  whyChooseBox3Bullet2 = 'Comparison of conforming vs jumbo loan requirements'
+  whyChooseBox3Bullet3 = 'Education on high-balance conforming loan options'
+  
+  whyChooseCTA = 'Start Comparing Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Borrowers Are Saying'
+  testimonialsSubtitle = 'Real experiences from homebuyers navigating conforming loan limits nationwide.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I didn't realize my county had higher conforming loan limits until Browse Lenders® showed me the difference. That education saved me from going jumbo when I didn't need to—and saved thousands in the process.'''
+  testimonial1Name = 'Verified Borrower'
+  testimonial1Subtitle = 'Understanding loan limits changed everything for my purchase.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''Most lenders quoted me without explaining rate adjustments. Browse Lenders® broke down every pricing factor—credit score, LTV, points—so I understood exactly what I was paying for and why.'''
+  testimonial2Name = 'Verified Borrower'
+  testimonial2Subtitle = 'Rate transparency made me a confident borrower, not a confused one.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'No pressure, no confusing jargon, no hidden fees. Just clear conforming loan guidance, transparent rates, and loan officers who actually explained FHFA limits instead of rushing me to apply.'
+  testimonial3Name = 'Verified Borrower'
+  testimonial3Subtitle = 'It felt like education first, sales never.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''I thought I needed a jumbo loan, but Browse Lenders® helped me understand high-balance conforming options in my county. That knowledge opened up better rates and easier qualification.'''
+  testimonial4Name = 'Verified Borrower'
+  testimonial4Subtitle = 'Knowing my county limits saved me from unnecessary jumbo requirements.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''The connection to MiddleCreditScore helped me see why lenders were quoting different rates. I improved my middle score by 30 points and qualified for a much better conforming mortgage rate.'''
+  testimonial5Name = 'Verified Borrower'
+  testimonial5Subtitle = 'Credit education helped me unlock better conforming loan pricing.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Most platforms are built for lenders. This one is built for borrowers who want to understand conforming loan limits, rate structures, and transparent pricing before committing.'
+  testimonial6Name = 'Verified Borrower'
+  testimonial6Subtitle = '''It's the first platform that treated me like an informed consumer, not a lead.'''
+  
+  # Calculators Section
+  calculatorsTitle = 'Conforming Loan Calculators & Tools'
+  calculatorsSubtitle = 'Check loan limits, estimate payments, and model scenarios before you apply.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Rate Qualification'
+  creditScoreImage = 'https://middlecreditscore.com/wp-content/uploads/2023/03/pexels-kampus-production-8353777.jpg'
+  creditScorePara1 = '''Conforming loan officers qualify you based on your middle credit score—not the highest or lowest. Understanding how lenders calculate your score and how it affects conforming mortgage rates is essential before you apply. Middle Credit Score® provides free education on credit-readiness, rate tiers, and loan-level price adjustments that impact your final interest rate.'''
+  creditScoreHeading1 = 'No-cost credit education'
+  creditScoreText1 = 'Access free, unbiased guidance on how conforming lenders use your middle credit score to determine eligibility and pricing—without subscriptions or credit pulls.'
+  creditScoreHeading2 = 'Understand rate tiers before you apply'
+  creditScoreText2 = 'Learn how your middle credit score affects conforming mortgage rates—and discover targeted strategies to improve your score and unlock better rate tiers before submitting an application.'
+  creditScoreHeading3 = 'Financial literacy builds borrowing power'
+  creditScoreText3 = 'With the right knowledge, consumers can improve eligibility, access better conforming loan rates, and protect themselves from predatory or high-cost non-conforming lending.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers — Conforming Loan Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand conforming loans, FHFA limits, and rate transparency through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Today's HR departments are expanding financial wellness programs by including mortgage and credit education. Through Browse Lenders®, employers can offer no-cost access to conforming loan guidance, FHFA loan limit resources, and verified loan officers who help employees understand rate transparency and qualification standards before applying.'''
+  employersBullet1Title = 'No-cost conforming loan education'
+  employersBullet1Text = 'Add Browse Lenders® conforming loan resources to your financial-wellness program without contracts, fees, or onboarding complexity.'
+  employersBullet2Title = 'Mortgage and credit readiness tools'
+  employersBullet2Text = 'Employees learn how conforming loan limits, credit scores, and rate structures affect eligibility—helping them prepare before sharing personal information with lenders.'
+  employersBullet3Title = 'Support homeownership and retention'
+  employersBullet3Text = 'Empower your workforce with transparent conforming loan guidance and rate education that reduces financial stress, improves home-buying readiness, and supports long-term stability.'
+  employersCTA = 'Learn About Employer Mortgage Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Conforming Loan Insights'
+  blogSubtitle = 'Expert guidance on FHFA limits, rate transparency, and conforming vs non-conforming loans.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Conforming Loan Questions'
+  faqSubtitle = 'Clear answers about conforming loans, FHFA limits, and rate structures.'
+  
+  # FAQ 1
+  faq1Question = 'What is a conforming loan?'
+  faq1Answer = '''A conforming loan is a mortgage that meets the standards set by Fannie Mae and Freddie Mac—including maximum loan limits established annually by the Federal Housing Finance Agency (FHFA). For 2025, the baseline conforming loan limit is $766,550 in most counties, with higher limits in designated high-cost areas. Conforming loans typically offer better rates than non-conforming or jumbo loans.'''
+  
+  # FAQ 2
+  faq2Question = 'What are the 2025 conforming loan limits?'
+  faq2Answer = '''For 2025, the baseline conforming loan limit is $766,550 for single-family homes in most counties. High-cost areas can have limits up to $1,149,825. Your specific county limit depends on local housing costs as determined by FHFA. Check with <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a> to find your county's exact conforming loan limit.'''
+  
+  # FAQ 3
+  faq3Question = '''What's the difference between conforming and non-conforming loans?'''
+  faq3Answer = '''Conforming loans meet Fannie Mae and Freddie Mac standards (including FHFA loan limits), which allows lenders to sell them to these agencies—resulting in lower rates and easier qualification. Non-conforming loans exceed these limits (jumbo loans) or don't meet underwriting standards, requiring portfolio lending with stricter requirements and typically higher rates.'''
+  
+  # FAQ 4
+  faq4Question = 'How does my credit score affect conforming loan rates?'
+  faq4Answer = '''Conforming lenders use your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> to determine rate pricing. Scores of 740+ typically qualify for the best rates, while scores between 620-739 face loan-level price adjustments that increase your interest rate. Understanding your middle score before applying helps you know what rates to expect and whether credit improvement could lower your costs.'''
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Connect with a Conforming Loan Officer?'
+  ctaSubtitle = 'Get expert guidance on FHFA limits, rate transparency, and conforming mortgage options.'
+  ctaDescription = 'Explore verified conforming loan officers at BrowseLenders.com—helping America understand mortgage limits and rate structures with transparency.'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Conforming Loan Officers Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'

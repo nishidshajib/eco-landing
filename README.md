@@ -1,31 +1,33 @@
 # Dynamic Landing Pages - Multi-Domain Hugo Setup
 
-## 🚀 Automated Multi-Domain System (Updated: Nov 10, 2025)
+## 🚀 Automated Multi-Domain System (Updated: Nov 16, 2025)
 
-This repository automatically builds and deploys **11 landing page domains** to Hostinger with zero manual configuration!
+This repository automatically builds and deploys **12 landing page domains** to Hostinger with zero manual configuration!
 
 ### ✨ Key Features
 
 - 🎯 **Automatic Discovery**: Scans config directory for all domains
-- 🏗️ **Parallel Building**: Builds all 11 domains simultaneously
+- 🏗️ **Parallel Building**: Builds all 12 domains simultaneously
 - 📤 **Smart Deployment**: Each domain uploads to its matching Hostinger directory
 - ♻️ **Zero Configuration**: Add new domains without touching workflows
 - 🕐 **Auto-Publishing**: Schedule blog posts for automatic publishing
+- 🎯 **Single Domain Deploy**: Deploy just one domain without rebuilding all
 - 📊 **Full Tracking**: Monitor all deployments in GitHub Actions
 
-### 📋 Currently Configured Domains (11 total)
+### 📋 Currently Configured Domains (12 total)
 
 1. **badcreditloanspecialist.com**
-2. **conformingmortgageloans.com**
-3. **conventionalmortgagebrokers.com**
-4. **conventionalmortgageloans.com**
-5. **fhaloanofficers.com**
-6. **firsttimebuyeroptions.com**
-7. **helocloanofficers.com**
-8. **mtglenders.com**
-9. **refimortgagebrokers.com**
-10. **refinanceloanofficers.com**
-11. **veteransloanofficers.com**
+2. **conformingloanofficers.com** ⭐ NEW
+3. **conformingmortgageloans.com**
+4. **conventionalmortgagebrokers.com**
+5. **conventionalmortgageloans.com**
+6. **fhaloanofficers.com**
+7. **firsttimebuyeroptions.com**
+8. **helocloanofficers.com**
+9. **mtglenders.com**
+10. **refimortgagebrokers.com**
+11. **refinanceloanofficers.com**
+12. **veteransloanofficers.com**
 
 ---
 
@@ -46,7 +48,8 @@ hugo server --environment refimortgagebrokers --port 1327
 hugo server --environment mtglenders --port 1328
 hugo server --environment veteransloanofficers --port 1329
 hugo server --environment badcreditloanspecialist --port 1330
-```
+hugo server --environment conventionalloanofficers --port 1331
+hugo server --environment conformingloanofficers --port 1332
 
 Access sites at http://localhost:PORT
 
@@ -124,6 +127,7 @@ bash scripts/generate-deployment-map.sh
 config/
 ├── _default/                     # Base configuration
 ├── badcreditloanspecialist/      # Bad Credit Loan Specialist domain
+├── conformingloanofficers/       # Conforming Loan Officers domain ⭐ NEW
 ├── conformingmortgageloans/      # Conforming Mortgage Loans domain
 ├── conventionalmortgagebrokers/  # Conventional Brokers domain
 ├── conventionalmortgageloans/    # Conventional Loans domain
@@ -137,6 +141,7 @@ config/
 
 content/
 ├── badcreditloanspecialist/      # Content for Bad Credit domain
+├── conformingloanofficers/       # Content for Conforming Officers domain ⭐ NEW
 ├── conformingmortgageloans/      # Content for Conforming Loans domain
 ├── conventionalmortgagebrokers/  # Content for Brokers domain
 ├── conventionalmortgageloans/    # Content for Conventional domain
@@ -150,6 +155,7 @@ content/
 
 public/                           # Built sites (git-ignored)
 ├── badcreditloanspecialist/      # → badcreditloanspecialist.com
+├── conformingloanofficers/       # → conformingloanofficers.com ⭐ NEW
 ├── conformingmortgageloans/      # → conformingmortgageloans.com
 ├── conventionalmortgagebrokers/  # → conventionalmortgagebrokers.com
 ├── conventionalmortgageloans/    # → conventionalmortgageloans.com
@@ -215,7 +221,7 @@ bash scripts/generate-deployment-map.sh
 
 ### GitHub Actions - Fully Automated
 
-Push changes and **all 11 domains deploy automatically!**
+Push changes and **all 12 domains deploy automatically!**
 
 ```bash
 git add .
@@ -224,10 +230,11 @@ git push origin main
 ```
 
 GitHub Actions will:
-1. ✅ Discover all 11 domain configurations
+1. ✅ Discover all 12 domain configurations
 2. ✅ Build each domain with Hugo
 3. ✅ Deploy each to its Hostinger directory:
    - `public/badcreditloanspecialist/` → badcreditloanspecialist.com
+   - `public/conformingloanofficers/` → conformingloanofficers.com
    - `public/conformingmortgageloans/` → conformingmortgageloans.com
    - `public/conventionalmortgagebrokers/` → conventionalmortgagebrokers.com
    - `public/conventionalmortgageloans/` → conventionalmortgageloans.com
@@ -238,6 +245,28 @@ GitHub Actions will:
    - `public/refimortgagebrokers/` → refimortgagebrokers.com
    - `public/refinanceloanofficers/` → refinanceloanofficers.com
    - `public/veteransloanofficers/` → veteransloanofficers.com
+
+### Deploy Single Domain (Manual Trigger)
+
+Need to deploy just **one domain** without rebuilding all 12?
+
+1. Go to **Actions** tab in GitHub
+2. Click **"Deploy Single Domain"** workflow
+3. Click **"Run workflow"**
+4. Enter domain name (e.g., `conformingloanofficers`)
+5. Click **"Run workflow"** button
+
+This will:
+- ✅ Build only that specific domain
+- ✅ Deploy only to that domain's Hostinger directory
+- ✅ Save time when you only changed one domain
+
+**Example domain names:**
+- `conformingloanofficers`
+- `helocloanofficers`
+- `conventionalmortgageloans`
+- `fhaloanofficers`
+- etc.
 
 ### Setup Instructions
 
@@ -274,10 +303,11 @@ bash scripts/build-all-domains.sh
 
 ## ✨ Key Features
 
-- 🎯 **11 Landing Page Domains** - All automated
+- 🎯 **12 Landing Page Domains** - All automated
 - 🚀 **Auto-Discovery** - New domains detected automatically
 - 🏗️ **Parallel Building** - Fast, efficient builds
 - 📤 **Smart Deployment** - Each domain to its correct location
+- 🎯 **Single Domain Deploy** - Deploy one domain without rebuilding all
 - 🕐 **Scheduled Publishing** - Auto-publish blog posts
 - 📊 **Full Tracking** - Monitor all deployments
 - ♻️ **Zero Configuration** - Add domains without workflow changes
@@ -285,7 +315,3 @@ bash scripts/build-all-domains.sh
 ---
 
 **Your eco-landing repository is now a fully automated multi-domain publishing system!** 🎉
-
- 
- #   R e b u i l d   t r i g g e r  
- 

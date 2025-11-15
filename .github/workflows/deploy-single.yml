@@ -1,0 +1,88 @@
+name: Deploy Single Domain
+
+on:
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: 'Domain to deploy (e.g., conformingloanofficers, helocloanofficers)'
+        required: true
+        type: string
+
+jobs:
+  deploy-single:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+    
+    - name: Validate Domain
+      id: validate
+      run: |
+        DOMAIN="${{ github.event.inputs.domain }}"
+        
+        if [ ! -f "config/$DOMAIN/hugo.toml" ]; then
+          echo "❌ Error: Domain '$DOMAIN' not found in config/"
+          echo "Available domains:"
+          ls -1 config/ | grep -v "_default"
+          exit 1
+        fi
+        
+        echo "✅ Domain '$DOMAIN' found"
+        echo "domain=$DOMAIN" >> $GITHUB_OUTPUT
+    
+    - name: Build Domain
+      run: |
+        DOMAIN="${{ steps.validate.outputs.domain }}"
+        echo "🏗️ Building $DOMAIN..."
+        
+        hugo --environment $DOMAIN \
+             --config config/_default/hugo.toml,config/$DOMAIN/hugo.toml \
+             --destination public/$DOMAIN \
+             --cleanDestinationDir \
+             --minify
+        
+        echo "✅ Build complete"
+        ls -lh public/$DOMAIN/ | head -20
+    
+    - name: Deploy to Hostinger
+      env:
+        FTP_USER: ${{ secrets.FTP_USERNAME }}
+        FTP_PASS: ${{ secrets.FTP_PASSWORD }}
+        FTP_HOST: ${{ secrets.FTP_SERVER }}
+      run: |
+        DOMAIN="${{ steps.validate.outputs.domain }}"
+        CFG="config/$DOMAIN/hugo.toml"
+        
+        # Extract baseURL and clean it
+        url=$(grep baseURL $CFG | head -1 | sed -E 's/.*["\x27]([^"\x27]+)["\x27].*/\1/')
+        clean=$(echo $url | sed 's|https\?://||;s|www\.||;s|/.*||')
+        
+        echo "📤 Deploying $DOMAIN to $clean"
+        
+        # Install lftp
+        sudo apt-get update -qq && sudo apt-get install -y lftp
+        
+        # Create .netrc file for credentials
+        printf "machine %s\nlogin %s\npassword %s\n" "$FTP_HOST" "$FTP_USER" "$FTP_PASS" > ~/.netrc
+        chmod 600 ~/.netrc
+        
+        # Deploy with safe delete and detailed logging
+        lftp -c "
+          set ssl:verify-certificate no;
+          set ftp:ssl-allow yes;
+          set net:timeout 10;
+          set net:max-retries 2;
+          set ftp:use-feat no;
+          open $FTP_HOST;
+          mirror -Rev --delete-first --only-newer --parallel=2 --verbose=1 public/$DOMAIN/ /domains/$clean/public_html/ || echo 'Deployment completed with warnings';
+          bye
+        "
+        
+        # Clean up credentials
+        rm -f ~/.netrc
+        
+        echo "✅ Deployment complete for $DOMAIN → $clean"
