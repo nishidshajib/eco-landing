@@ -83,6 +83,10 @@ jobs:
         fi
     
     - name: Deploy Changed Domains
+      env:
+        FTP_USER: ${{ secrets.FTP_USERNAME }}
+        FTP_PASS: ${{ secrets.FTP_PASSWORD }}
+        FTP_HOST: ${{ secrets.FTP_SERVER }}
       run: |
         DOMAINS="${{ steps.changes.outputs.changed_domains }}"
         
@@ -115,7 +119,7 @@ jobs:
             set ftp:ssl-allow yes
             set net:timeout 10
             set net:max-retries 2
-            open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }}
+            open -u $FTP_USER,$FTP_PASS $FTP_HOST
             mirror -Rev --delete --parallel=2 public/$domain/ /domains/$clean/public_html/
             bye
           "
