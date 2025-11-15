@@ -97,6 +97,10 @@ jobs:
         
         sudo apt-get update -qq && sudo apt-get install -y lftp
         
+        # Create .netrc file to handle credentials securely (avoids special character issues)
+        printf "machine %s\nlogin %s\npassword %s\n" "$FTP_HOST" "$FTP_USER" "$FTP_PASS" > ~/.netrc
+        chmod 600 ~/.netrc
+        
         if [ "$DOMAINS" == "all" ]; then
           DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
         else
@@ -114,5 +118,9 @@ jobs:
           echo "Deploying $domain to $clean"
           
           # Upload folder contents (not folder itself) with --delete to remove old files
-          lftp -c "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rev --delete --parallel=2 public/$domain/ /domains/$clean/public_html/; bye"
+          # Credentials read automatically from ~/.netrc
+          lftp -c "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open $FTP_HOST; mirror -Rev --delete --parallel=2 public/$domain/ /domains/$clean/public_html/; bye"
         done
+        
+        # Clean up credentials file
+        rm -f ~/.netrc
