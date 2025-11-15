@@ -111,6 +111,6 @@ jobs:
           
           # Delete all old files first, then upload fresh
           cd public/$domain
-          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" -e "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open ${{ secrets.FTP_SERVER }}; cd /domains/$clean/public_html/; glob -a rm -rf *; mirror -Rev --parallel=2 . .; bye"
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" -e "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open ${{ secrets.FTP_SERVER }}; cd /domains/$clean/public_html/; glob -a rm -rf *; mirror -Rev --parallel=2 . .; bye"
           cd ../..
         done
