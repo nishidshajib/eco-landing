@@ -27,21 +27,28 @@ jobs:
           echo "Scheduled run - building all domains"
           CHANGED_DOMAINS="all"
         else
-          # Push event: only build changed domains
+          # Push event: detect what changed
           CHANGED_FILES=$(git diff --name-only HEAD^ HEAD)
           
-          # If layouts, themes, or workflow changed, rebuild all
-          if echo "$CHANGED_FILES" | grep -qE '(layouts/|themes/|\.github/workflows/)'; then
+          # If layouts or themes changed, rebuild all (affects all domains)
+          if echo "$CHANGED_FILES" | grep -qE '(^layouts/|^themes/)'; then
+            echo "Layouts or themes changed - rebuilding all domains"
+            CHANGED_DOMAINS="all"
+          # If workflow changed, rebuild all
+          elif echo "$CHANGED_FILES" | grep -q "\.github/workflows/"; then
+            echo "Workflow changed - rebuilding all domains"
             CHANGED_DOMAINS="all"
           else
-            # Otherwise only build domains with content/config changes
+            # Only content or config changed - build specific domains
             CHANGED_DOMAINS=$(echo "$CHANGED_FILES" | grep -E '^(content|config)/' | cut -d'/' -f2 | sort -u | tr '\n' ' ')
-          fi
-          
-          # If no specific domains changed, skip build
-          if [ -z "$CHANGED_DOMAINS" ]; then
-            echo "No domain changes detected"
-            CHANGED_DOMAINS="none"
+            
+            # If no specific domains changed, skip build
+            if [ -z "$CHANGED_DOMAINS" ]; then
+              echo "No domain changes detected"
+              CHANGED_DOMAINS="none"
+            else
+              echo "Building only changed domains: $CHANGED_DOMAINS"
+            fi
           fi
         fi
         
