@@ -109,8 +109,14 @@ jobs:
           
           echo "Deploying $domain to $clean"
           
-          # Delete all old files first, then upload fresh
-          cd public/$domain
-          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" -e "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open ${{ secrets.FTP_SERVER }}; cd /domains/$clean/public_html/; glob -a rm -rf *; mirror -Rev --parallel=2 . .; bye"
-          cd ../..
+          # Upload with mirror --delete (automatically removes old files not in source)
+          lftp -c "
+            set ssl:verify-certificate no
+            set ftp:ssl-allow yes
+            set net:timeout 10
+            set net:max-retries 2
+            open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }}
+            mirror -Rev --delete --parallel=2 public/$domain /domains/$clean/public_html
+            bye
+          "
         done
