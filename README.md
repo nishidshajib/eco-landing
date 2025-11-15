@@ -50,6 +50,10 @@ hugo server --environment veteransloanofficers --port 1329
 hugo server --environment badcreditloanspecialist --port 1330
 hugo server --environment conventionalloanofficers --port 1331
 hugo server --environment conformingloanofficers --port 1332
+hugo server --environment purchaseloanofficers --port 1333
+hugo server --environment newconstructionloanofficers --port 1334
+hugo server --environment renovationloanofficers --port 1335
+hugo server --environment fha203kloanofficers --port 1336
 
 Access sites at http://localhost:PORT
 

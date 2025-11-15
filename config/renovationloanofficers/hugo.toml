@@ -1,0 +1,251 @@
+baseURL = 'https://renovationloanofficers.com/'
+languageCode = 'en-us'
+title = 'Renovation Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/renovationloanofficers'
+publishDir = 'public/renovationloanofficers'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Connect with renovation loan officers who specialize in home improvement financing—from FHA 203(k) renovation loans and Fannie Mae HomeStyle® to cash-out refinance for remodels, contractor-ready financing, and ROI-driven renovation strategies.'
+  author = 'Browse Lenders®'
+  shortName = 'Renovation Loan Officers'
+  tagline = 'Your Guide to Home Improvement Financing'
+  homepage = 'https://renovationloanofficers.com/'
+  
+  # SEO Configuration
+  siteName = 'Renovation Loan Officers'
+  siteDescription = 'Find renovation loan officers who specialize in FHA 203(k), HomeStyle®, and cash-out refinance for home improvements—expert guidance on renovation financing, contractor coordination, and maximizing ROI.'
+  keywords = ['Renovation Loan Officers', 'FHA 203k Loans', 'HomeStyle Renovation', 'Home Improvement Financing', 'Cash-Out Refinance', 'Renovation Budgeting', 'Contractor Financing', 'Home Remodeling Loans', 'Browse Lenders®']
+  serviceType = 'Renovation Loan Officer Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Renovation Loan Officers - From Fixer-Uppers to Dream Remodels'
+  heroSubtitle = 'Connect with loan officers who specialize in renovation financing—guiding homeowners through FHA 203(k), HomeStyle®, and cash-out refinance options for home improvements, contractor coordination, and ROI-driven remodeling strategies.'
+  heroImage = 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find a Loan Officer'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Nationwide Renovation Loan Expertise. Contractor-Ready Financing.'
+  aboutImage = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Renovation Loan Programs for Every Home Improvement Project'
+  programsSubtitle = "Whether you're buying a fixer-upper or renovating your current home, the right renovation loan program makes all the difference."
+  
+  # Program Cards
+  program1Title = 'FHA 203(k) Renovation Loans'
+  program1Image = 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''Finance fixer-uppers and major renovations with FHA 203(k) loans—covering purchase price plus renovation costs (up to $35,000 for Limited 203k or unlimited for Standard 203k) in one loan. Perfect for buying distressed properties, major structural repairs, or full rehabs with lower down payment requirements (3.5% down) and flexible credit guidelines.'''
+  
+  program2Title = 'HomeStyle® Renovation Financing'
+  program2Image = 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''Fannie Mae HomeStyle® renovation loans finance cosmetic and structural updates on primary residences, second homes, or investment properties—covering renovations, additions, energy improvements, and luxury upgrades. Understand how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects HomeStyle® approval and explore financing up to 75-97.5% of after-repair value depending on occupancy.'''
+  
+  program3Title = 'Cash-Out Refinance for Renovations'
+  program3Image = 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''Already own your home? Use <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> to tap your equity and fund kitchen remodels, bathroom upgrades, additions, or major repairs—refinancing your existing mortgage and pulling out cash for renovations at potentially lower rates than personal loans or HELOCs.'''
+  
+  programsCTA = 'Get Started Today'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore renovation loan options and connect with verified loan officers who specialize in home improvement financing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent rate quotes and expert renovation mortgage guidance.'''
+  
+  # Education Section
+  educationTitle = 'Renovation Loan Education & Contractor Coordination Guidance'
+  educationSubtitle = 'Smart renovators start with education—understanding loan options, contractor requirements, and ROI planning before starting home improvement projects.'
+  
+  # Education Cards
+  edu1Title = 'Understanding Renovation Loan Basics'
+  edu1Image = 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''Learn how renovation loans work—including purchase-plus-improvements financing, contractor requirements, draw schedules, renovation timelines, and how to choose between FHA 203(k), HomeStyle®, and cash-out refinance based on your home improvement goals and financial situation.'''
+  
+  edu2Title = 'Contractor Selection & Coordination'
+  edu2Image = 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''Find qualified contractors for renovation loans—understanding contractor licensing requirements, bid processes, HUD consultant roles (for 203k loans), contractor draw schedules, and how to protect yourself from renovation delays or contractor issues during your home improvement project.'''
+  
+  edu3Title = 'Renovation Budgeting & ROI Planning'
+  edu3Image = 'https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''Plan your renovation budget wisely—learn which home improvements offer the best ROI (kitchens, bathrooms, additions), how to avoid over-improving for your neighborhood, contingency planning for cost overruns, and how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects renovation loan rates and affordability.'''
+  
+  edu4Title = 'After-Repair Value (ARV) Appraisals'
+  edu4Image = 'https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''Understand after-repair value appraisals—how lenders determine your home's projected value post-renovation, why ARV matters for loan approval, how to maximize appraised value through smart renovation choices, and what happens if your home doesn't appraise for the expected ARV.'''
+  
+  educationCTA = 'Start Your Renovation'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center – Smarter Renovation Loan Planning'
+  learningSubtitle = 'Knowledge builds confidence in the home improvement journey.'
+  learningImage = 'https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Home renovation is a major financial investment—and choosing the right loan officer, understanding your financing options, and preparing your budget and contractor selection before you start gives you confidence and cost control. Renovation loan officers specialize in guiding homeowners through FHA 203(k), HomeStyle®, and cash-out refinance options with transparency and education at every step.'''
+  learningBullet1 = '''Compare renovation loan officers and rates through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency and no pressure sales tactics.'''
+  learningBullet2 = 'Understand how contractor requirements, draw schedules, and contingency reserves affect renovation loan timelines and budgets.'
+  learningBullet3 = '''Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects renovation loan rates and approval odds.'''
+  learningBullet4 = 'Model different scenarios—FHA 203(k) for fixer-uppers, HomeStyle® for luxury upgrades, cash-out refinance for equity-funded remodels.'
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping every homeowner understand renovation loan options, contractor coordination, and ROI planning before committing to home improvement financing.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for renovation loan calculators, contractor selection checklists, and expert guidance on renovation financing readiness.'''
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Homeowners Are Saying'
+  testimonialsSubtitle = 'Real experiences from homeowners who found the right renovation loan officers nationwide.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I bought a fixer-upper with an FHA 203(k) loan and renovated the entire kitchen, bathrooms, and flooring for $45,000—all financed in one loan with 3.5% down. My renovation loan officer coordinated everything with my contractor and made the draw process seamless. I couldn't have afforded this home without 203(k) financing.'''
+  testimonial1Name = 'Sarah M. - Portland, OR'
+  testimonial1Subtitle = 'FHA 203(k) turned my fixer-upper dream into reality.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''We used a HomeStyle® renovation loan to add a second story to our home—financing the addition and structural work for $180,000. The process was more complex than a regular mortgage, but our renovation loan officer guided us through contractor bids, ARV appraisal, and draw schedules. Our home value increased by $220,000.'''
+  testimonial2Name = 'Michael R. - Austin, TX'
+  testimonial2Subtitle = 'HomeStyle® financing made our home expansion possible.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = '''I used cash-out refinance to pull $85,000 in equity for a kitchen and master bath remodel. My loan officer showed me how refinancing at a lower rate than my original mortgage actually saved me money monthly—even with the cash-out. The renovations increased my home value by $110,000 and I got my dream kitchen.'''
+  testimonial3Name = 'Jennifer L. - Denver, CO'
+  testimonial3Subtitle = 'Cash-out refi funded renovations while lowering my payment.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''Finding a contractor who met FHA 203(k) requirements was challenging, but my renovation loan officer connected me with three qualified contractors and walked me through the bid process. The HUD consultant they required actually protected me from cost overruns—ended up being a valuable safeguard during the renovation.'''
+  testimonial4Name = 'David K. - Charlotte, NC'
+  testimonial4Subtitle = 'Expert contractor guidance prevented costly mistakes.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''The connection to MiddleCreditScore helped me understand why my renovation loan rate was higher than advertised rates. I improved my credit score by 45 points over four months, reapplied, and qualified for significantly better pricing on my HomeStyle® renovation loan—saved thousands in interest.'''
+  testimonial5Name = 'Lisa T. - Nashville, TN'
+  testimonial5Subtitle = 'Credit improvement unlocked better renovation loan rates.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '''I compared FHA 203(k) vs. cash-out refinance for my renovation project. My loan officer showed me that even though 203(k) had slightly higher rates, I'd save money by rolling everything into one loan with a low down payment rather than refinancing my existing low-rate mortgage. Expert guidance made all the difference.'''
+  testimonial6Name = 'Robert H. - Phoenix, AZ'
+  testimonial6Subtitle = 'Comparing options helped me choose the right renovation loan.'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders®'
+  whyChooseSubtitle = 'Renovation loan expertise, transparent contractor coordination, and verified loan officers nationwide.'
+  whyChoosePara1 = '''Today's homeowners need more than just renovation financing—they need to understand FHA 203(k) vs. HomeStyle® options, contractor requirements, draw schedules, and how to maximize ROI before making major home improvement commitments.'''
+  whyChoosePara2 = '''That's why <strong>Browse Lenders®</strong> was built as a <strong>national mortgage-education and lender-matching resource</strong> for both consumers and employees seeking renovation financing guidance.'''
+  
+  whyChooseBox1Title = 'Verified Renovation Loan Officers'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in renovation mortgages and understand FHA 203(k), HomeStyle®, and cash-out refinance options for home improvements.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with renovation loan expertise'
+  whyChooseBox1Bullet2 = 'Transparent rate quotes with no hidden fees or surprise adjustments'
+  whyChooseBox1Bullet3 = 'Contractor coordination guidance and renovation budgeting from application through completion'
+  
+  whyChooseBox2Title = 'Renovation Financing Education'
+  whyChooseBox2Para = 'Understand how to compare renovation loan options—beyond just interest rates—by evaluating contractor requirements, draw schedules, ARV appraisals, and total project costs.'
+  whyChooseBox2Bullet1 = 'Side-by-side comparisons of FHA 203(k), HomeStyle®, and cash-out refinance'
+  whyChooseBox2Bullet2 = 'Clear explanations of draw schedules, contingency reserves, and closing costs'
+  whyChooseBox2Bullet3 = 'Education on contractor selection and after-repair value appraisals'
+  
+  whyChooseBox3Title = 'Home Improvement Readiness'
+  whyChooseBox3Para = 'Learn what you need before starting renovations—credit score targets, renovation budget planning, contractor qualification, and documentation for faster renovation loan approval.'
+  whyChooseBox3Bullet1 = 'Renovation loan checklists and credit readiness resources'
+  whyChooseBox3Bullet2 = 'ROI calculators and renovation budgeting strategy guidance'
+  whyChooseBox3Bullet3 = 'Understanding how renovation loan programs affect project timelines and costs'
+  
+  whyChooseCTA = 'Start Comparing Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Employers Section
+  employersTitle = 'For Employers — Renovation Loan Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand renovation financing, contractor coordination, and home improvement readiness through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Today's HR departments are expanding financial wellness programs by including renovation and home improvement financing education. Through Browse Lenders®, employers can offer no-cost access to renovation loan guidance, contractor coordination resources, and verified loan officers who help employees understand FHA 203(k), HomeStyle®, and cash-out refinance options before starting home improvement projects.'''
+  employersBullet1Title = 'No-cost renovation loan education'
+  employersBullet1Text = 'Add Browse Lenders® renovation loan resources to your financial-wellness program without contracts, fees, or onboarding complexity.'
+  employersBullet2Title = 'Home improvement financing tools'
+  employersBullet2Text = 'Employees learn how FHA 203(k), HomeStyle®, and cash-out refinance work—helping them prepare renovation budgets and understand contractor requirements before applying.'
+  employersBullet3Title = 'Support homeownership and retention'
+  employersBullet3Text = 'Empower your workforce with transparent renovation financing guidance and credit education that reduces financial stress, improves home improvement readiness, and supports long-term employee stability.'
+  employersCTA = 'Learn About Employer Mortgage Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Renovation Loan Insights'
+  blogSubtitle = 'Expert guidance on home improvement financing, contractor selection, renovation budgeting, and ROI planning.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Renovation Loan Qualification'
+  creditScoreImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''Renovation loan officers qualify you based on your middle credit score—not the highest or lowest. Understanding how lenders calculate your score and how it affects FHA 203(k), HomeStyle®, and cash-out refinance rates is essential before starting renovation projects. Middle Credit Score® provides free education on credit-readiness, renovation loan rate tiers, and loan-level price adjustments that impact your final interest rate.'''
+  creditScoreHeading1 = 'No-cost credit education'
+  creditScoreText1 = 'Access free, unbiased guidance on how renovation loan officers use your middle credit score to determine eligibility and pricing—without subscriptions or credit pulls.'
+  creditScoreHeading2 = 'Understand renovation loan rate tiers before you apply'
+  creditScoreText2 = 'Learn how your middle credit score affects FHA 203(k) and HomeStyle® financing rates—and discover targeted strategies to improve your score before starting renovations for better pricing.'
+  creditScoreHeading3 = 'Financial literacy builds renovation power'
+  creditScoreText3 = 'With the right knowledge, homeowners can improve eligibility, access better renovation loan rates, and protect themselves from predatory or high-cost lending before committing to home improvement projects.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Calculators Section
+  calculatorsTitle = 'Renovation Financing Calculators & Tools'
+  calculatorsSubtitle = 'Estimate renovation loan payments, compare 203(k) vs. HomeStyle® vs. cash-out refinance costs, and model ROI for different home improvement projects before committing to financing.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Renovation Loan Questions'
+  faqSubtitle = 'Clear answers about renovation financing, contractor requirements, and home improvement readiness.'
+  
+  faq1Question = 'What is the difference between FHA 203(k) and HomeStyle® renovation loans?'
+  faq1Answer = '''FHA 203(k) loans are government-insured and allow 3.5% down with flexible credit (typically 620+ for Limited 203k, 640+ for Standard 203k). They are ideal for buying fixer-uppers or major structural repairs but have stricter contractor requirements and HUD consultant oversight. HomeStyle® renovation loans (Fannie Mae) allow higher loan amounts, financing for luxury upgrades and investment properties, and simpler contractor coordination—but typically require 5-20% down and 620-680+ credit depending on loan-to-value. Renovation loan officers through <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a> help you compare both options based on your renovation scope and financial profile.'''
+  
+  faq2Question = 'Can I use a renovation loan if I already own my home?'
+  faq2Answer = '''Yes—if you already own your home, you can use a <a class="text-accent hover:underline" href="https://www.cash-outrefinance.com" target="_blank">cash-out refinance</a> to pull equity for renovations, or in some cases a "refinance with renovation" HomeStyle® loan. Cash-out refinance replaces your existing mortgage with a new larger loan, giving you cash for home improvements. This works well if current rates are competitive or you want to consolidate high-interest debt alongside renovation funding. Your renovation loan officer can compare cash-out refinance vs. HELOC vs. home improvement loans to determine the best financing structure for your remodel.'''
+  
+  faq3Question = 'How do contractor requirements work for renovation loans?'
+  faq3Answer = '''FHA 203(k) loans have strict contractor requirements—contractors must be licensed, insured, and approved by your lender or HUD consultant. Standard 203(k) loans require a HUD consultant to oversee the project, review contractor bids, and manage draw inspections. HomeStyle® renovation loans have more flexible contractor requirements but still need licensed, insured contractors with detailed renovation bids. Cash-out refinance has no specific contractor requirements since you receive cash directly—but renovation loan officers recommend using licensed contractors to protect your investment and ensure quality work.'''
+  
+  faq4Question = 'How does my credit score affect renovation loan approval and rates?'
+  faq4Answer = '''Renovation loan officers use your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> to determine rate pricing. FHA 203(k) loans typically require 620-640+ credit (depending on loan type and down payment), while HomeStyle® renovation loans generally need 620-680+ scores. Cash-out refinance requirements vary by lender and loan-to-value but typically need 640-680+ credit. Higher scores (720-740+) qualify for better rates across all renovation loan types. Understanding your middle score before applying helps you set realistic expectations and improve your score if needed to unlock better renovation financing terms.'''
+  
+  # CTA Section
+  ctaTitle = 'Ready to Finance Your Home Renovation?'
+  ctaDescription = 'Connect with experienced renovation loan officers who specialize in FHA 203(k), HomeStyle®, and cash-out refinance for home improvements—get expert guidance on contractor-ready financing, renovation budgeting, and ROI planning.'
+  ctaCTA = 'Find Renovation Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com'

@@ -1,0 +1,255 @@
+baseURL = 'https://fha203kloanofficers.com/'
+languageCode = 'en-us'
+title = 'FHA 203(k) Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/fha203kloanofficers'
+publishDir = 'public/fha203kloanofficers'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Connect with FHA 203(k) loan officers who specialize in fixer-upper and rehab financing—from Standard and Limited 203(k) loans to credit-readiness guidance, contractor coordination, and buying distressed properties with renovation financing in one loan.'
+  author = 'Browse Lenders®'
+  shortName = 'FHA 203(k) Loan Officers'
+  tagline = 'Your Guide to Fixer-Upper Financing'
+  homepage = 'https://fha203kloanofficers.com/'
+  
+  # SEO Configuration
+  siteName = 'FHA 203(k) Loan Officers'
+  siteDescription = 'Find loan officers specializing in FHA 203(k) rehab loans—Standard and Limited 203(k) guidance, fixer-upper financing, contractor coordination, HUD consultant requirements, and credit-readiness for buying and renovating distressed properties.'
+  keywords = ['FHA 203(k) Loan Officers', 'FHA Rehab Loans', 'Fixer-Upper Financing', 'Standard 203k', 'Limited 203k', 'HUD Consultant', 'Contractor Requirements', 'Distressed Property Loans', 'Browse Lenders®']
+  serviceType = 'FHA 203(k) Loan Officer Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'FHA 203(k) Loan Officers - Turn Fixer-Uppers Into Dream Homes'
+  heroSubtitle = 'Connect with loan officers who specialize in FHA 203(k) rehab financing—guiding buyers through Standard and Limited 203(k) loans, contractor requirements, HUD consultant coordination, and credit-readiness for purchasing and renovating distressed properties in one loan.'
+  heroImage = 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find a Loan Officer'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Nationwide FHA 203(k) Expertise. Fixer-Upper Financing Made Simple.'
+  aboutImage = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'FHA 203(k) Loan Programs for Every Rehab Project'
+  programsSubtitle = "Whether you're buying a fixer-upper or refinancing to renovate, FHA 203(k) loans make rehab financing accessible with low down payments and flexible credit."
+  
+  # Program Cards
+  program1Title = 'Standard FHA 203(k) Loans'
+  program1Image = 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''Finance major structural repairs and full rehabs with Standard FHA 203(k) loans—covering unlimited renovation costs, foundation work, structural changes, and major system replacements. Requires HUD consultant oversight, 3.5% down payment, and 640+ credit score. Perfect for distressed properties needing extensive repairs through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'''
+  
+  program2Title = 'Limited FHA 203(k) Loans'
+  program2Image = 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''Streamlined FHA 203(k) Limited loans for minor repairs up to $35,000—cosmetic updates, appliance replacement, flooring, painting, and non-structural improvements. No HUD consultant required, 3.5% down, 620+ credit. Understand how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects FHA 203(k) approval and rate pricing.'''
+  
+  program3Title = 'FHA 203(k) Refinance for Renovations'
+  program3Image = 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''Already own your home? Use FHA 203(k) refinance to fund renovations while replacing your existing mortgage—or compare with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> options to determine the best renovation financing structure for your rehab project and equity position.'''
+  
+  programsCTA = 'Get Pre-Approved Today'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore FHA 203(k) loan options and connect with verified loan officers who specialize in fixer-upper and rehab financing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent rate quotes and expert FHA 203(k) guidance.'''
+  
+  # Education Section
+  educationTitle = 'FHA 203(k) Education & Contractor Coordination Guidance'
+  educationSubtitle = 'Smart fixer-upper buyers start with education—understanding Standard vs. Limited 203(k), contractor requirements, and credit-readiness before purchasing distressed properties.'
+  
+  # Education Cards
+  edu1Title = 'Standard vs. Limited 203(k)'
+  edu1Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''Learn the difference between Standard FHA 203(k) (unlimited repairs, structural work, HUD consultant required) and Limited 203(k) (up to $35,000, cosmetic updates, no consultant). Understand which program fits your fixer-upper project scope and budget.'''
+  
+  edu2Title = 'Contractor Requirements & Selection'
+  edu2Image = 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''Find qualified FHA-approved contractors for 203(k) loans—understanding licensing requirements, bid processes, draw schedules, and how HUD consultants protect you during rehab projects. Learn how to vet contractors and avoid renovation delays.'''
+  
+  edu3Title = 'Credit Readiness for FHA 203(k)'
+  edu3Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''FHA 203(k) loan officers qualify you based on your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a>. Standard 203(k) typically requires 640+ credit, Limited 203(k) accepts 620+. Learn how to improve your score before applying for better rate tiers and approval odds.'''
+  
+  edu4Title = 'HUD Consultant Process'
+  edu4Image = 'https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''Understand the HUD consultant role in Standard FHA 203(k) loans—reviewing contractor bids, creating renovation work plans, managing draw inspections, and ensuring code compliance. Learn how consultant fees work and why their oversight protects your investment.'''
+  
+  educationCTA = 'Start Your Fixer-Upper Search'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center – Smarter FHA 203(k) Planning'
+  learningSubtitle = 'Knowledge builds confidence in the fixer-upper buying journey.'
+  learningImage = 'https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Buying a fixer-upper is one of the most affordable paths to homeownership—and FHA 203(k) loans make rehab financing accessible with 3.5% down and flexible credit requirements. FHA 203(k) loan officers specialize in guiding buyers through Standard and Limited 203(k) options, contractor coordination, HUD consultant processes, and credit-readiness with transparency and education at every step.'''
+  learningBullet1 = '''Compare FHA 203(k) loan officers and rates through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency and no pressure sales tactics.'''
+  learningBullet2 = 'Understand how Standard vs. Limited 203(k) programs differ in repair limits, contractor requirements, and HUD consultant oversight.'
+  learningBullet3 = '''Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects FHA 203(k) approval and rate pricing.'''
+  learningBullet4 = 'Model renovation budgets, contingency reserves, draw schedules, and after-repair values before making offers on distressed properties.'
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping every fixer-upper buyer understand FHA 203(k) requirements, contractor selection, and credit-readiness before committing to rehab financing.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for FHA 203(k) calculators, contractor selection checklists, and expert guidance on fixer-upper financing readiness.'''
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders®'
+  whyChooseSubtitle = 'FHA 203(k) loan expertise, contractor coordination experience, and verified loan officers nationwide.'
+  whyChoosePara1 = '''Today's fixer-upper buyers need more than just pre-approval—they need to understand Standard vs. Limited 203(k) programs, contractor requirements, HUD consultant processes, and credit-readiness before making offers on distressed properties.'''
+  whyChoosePara2 = '''That's why <strong>Browse Lenders®</strong> was built as a <strong>national mortgage-education and lender-matching resource</strong> for both consumers and employees seeking FHA 203(k) rehab financing guidance.'''
+  
+  whyChooseBox1Title = 'Verified FHA 203(k) Loan Officers'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in FHA 203(k) rehab loans and understand Standard and Limited programs, contractor coordination, and HUD consultant requirements.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with FHA 203(k) expertise'
+  whyChooseBox1Bullet2 = 'Transparent rate quotes with no hidden fees or surprise adjustments'
+  whyChooseBox1Bullet3 = 'Contractor coordination and renovation budgeting guidance from application through completion'
+  
+  whyChooseBox2Title = 'FHA 203(k) Education'
+  whyChooseBox2Para = 'Understand how to compare Standard vs. Limited 203(k) programs, contractor requirements, draw schedules, HUD consultant oversight, and total rehab project costs.'
+  whyChooseBox2Bullet1 = 'Clear explanations of FHA 203(k) Standard and Limited differences'
+  whyChooseBox2Bullet2 = 'Contractor selection guidance and HUD consultant process education'
+  whyChooseBox2Bullet3 = 'Draw schedules, contingency reserves, and after-repair value appraisals'
+  
+  whyChooseBox3Title = 'Fixer-Upper Readiness'
+  whyChooseBox3Para = 'Learn what you need before making offers on distressed properties—credit score targets, renovation budget planning, contractor qualification, and FHA 203(k) documentation requirements.'
+  whyChooseBox3Bullet1 = 'FHA 203(k) pre-approval checklists and credit readiness resources'
+  whyChooseBox3Bullet2 = 'Renovation cost calculators and contingency reserve planning'
+  whyChooseBox3Bullet3 = 'Understanding how FHA 203(k) programs affect project timelines and costs'
+  
+  whyChooseCTA = 'Start Comparing Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Fixer-Upper Buyers Are Saying'
+  testimonialsSubtitle = 'Real experiences from buyers who found the right FHA 203(k) loan officers nationwide.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I bought my first home for $185,000 with an FHA 203(k) loan—needed $42,000 in repairs but only put 3.5% down. My loan officer walked me through the HUD consultant process and contractor requirements. Without 203(k), I couldn't have afforded a move-in ready home in my market.'''
+  testimonial1Name = 'Jake M. - Columbus, OH'
+  testimonial1Subtitle = 'FHA 203(k) made homeownership possible on a tight budget.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''Most lenders told me my 635 credit score was too low for a fixer-upper loan. Browse Lenders® connected me with an FHA 203(k) specialist who explained Limited 203(k) options. Four months later, I closed on a home with cosmetic repairs financed into the loan.'''
+  testimonial2Name = 'Maria S. - Phoenix, AZ'
+  testimonial2Subtitle = 'Limited 203(k) worked with my credit and budget.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'The HUD consultant requirement seemed like extra hassle until they caught a contractor trying to overcharge me by $8,000. My FHA 203(k) loan officer explained that consultant oversight protects buyers—and they were right. Best $800 I spent on the whole project.'
+  testimonial3Name = 'David L. - Tampa, FL'
+  testimonial3Subtitle = 'HUD consultant saved me from contractor overcharges.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''I didn't know there were two types of FHA 203(k) loans until Browse Lenders® helped me compare Standard vs. Limited programs. My repairs were under $35,000, so Limited 203(k) saved me consultant fees and closed faster—perfect for my timeline.'''
+  testimonial4Name = 'Emily R. - Atlanta, GA'
+  testimonial4Subtitle = 'Understanding my options saved time and money.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''The connection to MiddleCreditScore helped me understand why my FHA 203(k) rate was higher than conventional loan ads. I improved my credit score by 38 points over three months, reapplied, and qualified for much better pricing—saved $94/month.'''
+  testimonial5Name = 'Carlos T. - Denver, CO'
+  testimonial5Subtitle = 'Credit improvement unlocked better FHA 203(k) rates.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '''Finding FHA-approved contractors was the hardest part. My FHA 203(k) loan officer connected me with three qualified contractors from their network and explained the draw schedule process. That referral network made all the difference in closing on time.'''
+  testimonial6Name = 'Rachel K. - Portland, OR'
+  testimonial6Subtitle = 'Contractor referrals made the process smooth.'
+  
+  # Employers Section
+  employersTitle = 'For Employers — FHA 203(k) Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand fixer-upper financing, contractor coordination, and credit-readiness for FHA 203(k) loans through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Today's HR departments are expanding financial wellness programs by including FHA 203(k) and fixer-upper financing education. Through Browse Lenders®, employers can offer no-cost access to FHA 203(k) guidance, contractor coordination resources, and verified loan officers who help employees understand Standard vs. Limited programs, credit requirements, and renovation budgeting before applying.'''
+  employersBullet1Title = 'No-cost FHA 203(k) education'
+  employersBullet1Text = 'Add Browse Lenders® FHA 203(k) resources to your financial-wellness program without contracts, fees, or onboarding complexity.'
+  employersBullet2Title = 'Fixer-upper financing tools'
+  employersBullet2Text = 'Employees learn how Standard and Limited 203(k) loans work—helping them prepare renovation budgets and understand contractor requirements before house hunting.'
+  employersBullet3Title = 'Support homeownership and retention'
+  employersBullet3Text = 'Empower your workforce with transparent FHA 203(k) guidance and credit education that reduces financial stress, improves fixer-upper buying readiness, and supports long-term employee stability.'
+  employersCTA = 'Learn About Employer Mortgage Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest FHA 203(k) Insights'
+  blogSubtitle = 'Expert guidance on fixer-upper financing, contractor selection, rehab budgeting, and credit-readiness for FHA 203(k) loans.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & FHA 203(k) Qualification'
+  creditScoreImage = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''FHA 203(k) loan officers qualify you based on your middle credit score—not the highest or lowest. Understanding how lenders calculate your score and how it affects Standard FHA 203(k) (640+ required) vs. Limited 203(k) (620+ required) approval is essential before buying fixer-uppers. Middle Credit Score® provides free education on credit-readiness, FHA rate tiers, and loan-level price adjustments that impact your final interest rate.'''
+  creditScoreHeading1 = 'No-cost credit education'
+  creditScoreText1 = 'Access free, unbiased guidance on how FHA 203(k) loan officers use your middle credit score to determine eligibility and pricing—without subscriptions or credit pulls.'
+  creditScoreHeading2 = 'Understand FHA rate tiers before you apply'
+  creditScoreText2 = 'Learn how your middle credit score affects FHA 203(k) approval and rates—and discover targeted strategies to improve your score before applying for fixer-upper financing.'
+  creditScoreHeading3 = 'Financial literacy builds buying power'
+  creditScoreText3 = 'With the right knowledge, fixer-upper buyers can improve eligibility, access better FHA 203(k) rates, and protect themselves from predatory or high-cost lending before making offers on distressed properties.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Calculators Section
+  calculatorsTitle = 'FHA 203(k) Calculators & Fixer-Upper Tools'
+  calculatorsSubtitle = 'Estimate renovation costs, compare Standard vs. Limited 203(k) payments, and model after-repair values before making offers on distressed properties.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked FHA 203(k) Questions'
+  faqSubtitle = 'Clear answers about FHA 203(k) rehab loans, contractor requirements, and fixer-upper financing.'
+  
+  # FAQ 1
+  faq1Question = 'What is the difference between Standard and Limited FHA 203(k) loans?'
+  faq1Answer = '''Standard FHA 203(k) loans finance unlimited renovation costs including structural repairs, foundation work, additions, and major systems—requires HUD consultant oversight, 3.5% down, and 640+ credit. Limited FHA 203(k) loans cover up to $35,000 in cosmetic repairs (painting, flooring, appliances, minor fixes) with no HUD consultant required, 3.5% down, and 620+ credit. Connect with verified FHA 203(k) loan officers through <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a> to compare both programs.'''
+  
+  # FAQ 2
+  faq2Question = 'What credit score do I need for an FHA 203(k) loan?'
+  faq2Answer = '''Standard FHA 203(k) loans typically require 640+ credit score for 3.5% down (some lenders accept 580-639 with 10% down). Limited FHA 203(k) loans generally need 620+ credit. Your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> determines your rate tier—higher scores (680-720+) qualify for better pricing. Understanding your middle score before applying helps you set realistic expectations and improve eligibility if needed.'''
+  
+  # FAQ 3
+  faq3Question = 'Do I need a HUD consultant for FHA 203(k) loans?'
+  faq3Answer = '''Standard FHA 203(k) loans require a HUD consultant to review contractor bids, create renovation work plans, manage draw inspections, and ensure code compliance. Consultant fees typically range $800-$1,500. Limited FHA 203(k) loans (under $35,000 in repairs) do NOT require a HUD consultant—streamlining the process and reducing costs. Your FHA 203(k) loan officer determines which program fits your renovation scope.'''
+  
+  # FAQ 4
+  faq4Question = 'Can I use FHA 203(k) if I already own my home?'
+  faq4Answer = '''Yes—FHA 203(k) refinance loans let existing homeowners refinance their current mortgage and finance renovations in one loan. Compare this with <a class="text-accent hover:underline" href="https://www.cash-outrefinance.com" target="_blank">cash-out refinance</a> options to determine which structure offers better rates and terms based on your equity position and renovation budget. FHA 203(k) loan officers through <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a> can compare both financing options.'''
+  
+  # CTA Section
+  ctaTitle = 'Ready to Finance Your Fixer-Upper?'
+  ctaDescription = 'Connect with experienced FHA 203(k) loan officers who specialize in Standard and Limited rehab financing—get expert guidance on contractor coordination, HUD consultant processes, credit-readiness, and turning distressed properties into dream homes.'
+  ctaCTA = 'Find FHA 203(k) Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com'

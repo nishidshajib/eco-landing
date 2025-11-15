@@ -1,0 +1,260 @@
+baseURL = 'https://purchaseloanofficers.com/'
+languageCode = 'en-us'
+title = 'Purchase Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/purchaseloanofficers'
+publishDir = 'public/purchaseloanofficers'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Connect with purchase loan officers who specialize in home-buying financing—from pre-approval through closing, helping first-time and move-up buyers navigate down payments, credit requirements, and lender matching for purchase mortgages'
+  author = 'Browse Lenders®'
+  shortName = 'Purchase Loan Officers'
+  tagline = 'Your Guide to Home Purchase Financing'
+  homepage = 'https://purchaseloanofficers.com/'
+  
+  # SEO Configuration
+  siteName = 'Purchase Loan Officers'
+  siteDescription = 'Find loan officers specializing in purchase mortgages—pre-approval guidance, down payment strategies, first-time buyer programs, credit readiness, and transparent lender matching for home buyers nationwide.'
+  keywords = ['Purchase Loan Officers', 'Home Purchase Loans', 'First-Time Home Buyers', 'Pre-Approval', 'Down Payment Programs', 'Lender Matching', 'Purchase Mortgage', 'Home Buying Process', 'Browse Lenders®']
+  serviceType = 'Purchase Mortgage Loan Officer Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Purchase Loan Officers - From Pre-Approval to Home Ownership'
+  heroSubtitle = 'Connect with loan officers who specialize in home purchase financing—guiding first-time and move-up buyers through pre-qualification, down payment options, credit readiness, and transparent lender matching from application through closing.'
+  heroImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find a Loan Officer'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Nationwide Purchase Loan Expertise. Lender-Matching Education.'
+  aboutImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Purchase Loan Programs for Every Home Buyer'
+  programsSubtitle = "Whether you're a first-time buyer or moving up, the right purchase loan program makes all the difference."
+  
+  # Program Cards
+  program1Title = 'First-Time Buyer Programs'
+  program1Description = '''Access 3% down conventional loans, FHA 3.5% down options, and state-specific first-time buyer programs with down payment assistance. Compare options through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> to find the best fit for your credit and savings.'''
+  program1Image = 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Conventional Purchase Loans'
+  program2Description = '''Conventional purchase loans offer competitive rates for borrowers with 620+ credit scores and 3-20% down payments. Understand how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects pricing and qualification before you apply.'''
+  program2Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Move-Up Buyer Strategies'
+  program3Description = '''Moving up to a larger home? Learn about bridge financing, selling before buying vs. buying before selling, and using <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> equity from your current home as down payment for your next purchase.'''
+  program3Image = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Get Pre-Approved Today'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore purchase loan options and connect with verified loan officers who specialize in home-buying financing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent rate quotes and expert purchase mortgage guidance.'''
+  
+  # Education Section
+  educationTitle = 'Home Purchase Education & Lender-Matching Guidance'
+  educationSubtitle = 'Smart home buyers start with education—understanding pre-approval, down payments, and credit readiness before shopping for homes.'
+  
+  # Education Cards
+  edu1Title = 'Pre-Approval Process'
+  edu1Description = '''Get pre-approved before house hunting to know your budget, strengthen your offer, and move faster when you find the right home. Learn what documents lenders need and how pre-approval differs from pre-qualification.'''
+  edu1Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Down Payment Strategies'
+  edu2Description = '''Understand 3% down vs. 20% down options—how down payment size affects monthly payments, PMI costs, and long-term affordability. Discover gift funds, down payment assistance programs, and savings strategies for home purchase.'''
+  edu2Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Credit Readiness'
+  edu3Description = '''Purchase loan officers qualify you based on your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a>—not your highest or lowest. Learn how to check your score, improve it before applying, and understand rate tiers that affect your mortgage pricing.'''
+  edu3Image = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Lender Matching Education'
+  edu4Description = 'Not all lenders offer the same programs or rates. Learn how to compare lenders, shop multiple quotes, and understand what makes one purchase loan offer better than another beyond just the interest rate.'
+  edu4Image = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Start Your Home Search'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center – Smarter Purchase Loan Planning'
+  learningSubtitle = 'Knowledge builds confidence in the home-buying journey.'
+  learningImage = 'https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Home purchase is one of the biggest financial decisions you'll ever make—and choosing the right loan officer, understanding your financing options, and preparing your credit and down payment before you start shopping gives you confidence and negotiating power. Purchase loan officers specialize in guiding buyers through pre-approval, application, underwriting, and closing with transparency and education at every step.'''
+  learningBullet1 = '''Compare purchase loan officers and rates through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency and no pressure sales tactics.'''
+  learningBullet2 = 'Understand how down payment size affects monthly payments, PMI costs, and long-term home affordability.'
+  learningBullet3 = '''Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects purchase loan rates and approval odds.'''
+  learningBullet4 = 'Model different scenarios—first-time buyer programs, conventional purchase, FHA, and move-up buyer strategies.'
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping every buyer understand purchase loan options, credit requirements, and down payment strategies before committing to a mortgage.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for purchase loan calculators, pre-approval checklists, and expert guidance on home-buying readiness and lender matching.'''
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders®'
+  whyChooseSubtitle = 'Purchase loan expertise, transparent lender matching, and verified loan officers nationwide.'
+  whyChoosePara1 = '''Today's home buyers need more than just pre-approval—they need to understand purchase loan programs, down payment options, credit readiness, and how to compare lenders before making one of life's biggest financial commitments.'''
+  whyChoosePara2 = '''That's why <strong>Browse Lenders®</strong> was built as a <strong>national mortgage-education and lender-matching resource</strong> for both consumers and employees seeking home-purchase guidance.'''
+  
+  whyChooseBox1Title = 'Verified Purchase Loan Officers'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in purchase mortgages and understand first-time buyer programs, down payment strategies, and credit requirements.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with purchase loan expertise'
+  whyChooseBox1Bullet2 = 'Transparent rate quotes with no hidden fees or surprise adjustments'
+  whyChooseBox1Bullet3 = 'Pre-approval guidance and home-buying education from application through closing'
+  
+  whyChooseBox2Title = 'Lender-Matching Education'
+  whyChooseBox2Para = 'Understand how to compare purchase loan officers—beyond just interest rates—by evaluating fees, closing timelines, communication quality, and program availability.'
+  whyChooseBox2Bullet1 = 'Side-by-side rate comparisons from multiple lenders'
+  whyChooseBox2Bullet2 = 'Clear explanations of APR, closing costs, and total loan costs'
+  whyChooseBox2Bullet3 = 'Education on first-time buyer programs and down payment assistance options'
+  
+  whyChooseBox3Title = 'Home-Purchase Readiness'
+  whyChooseBox3Para = 'Learn what you need before house hunting—credit score targets, down payment savings goals, debt-to-income requirements, and documentation preparation for faster pre-approval.'
+  whyChooseBox3Bullet1 = 'Pre-approval checklists and credit readiness resources'
+  whyChooseBox3Bullet2 = 'Down payment calculators and savings strategy guidance'
+  whyChooseBox3Bullet3 = 'Understanding how purchase loan programs affect monthly budgets'
+  
+  whyChooseCTA = 'Start Comparing Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Home Buyers Are Saying'
+  testimonialsSubtitle = 'Real experiences from buyers who found the right purchase loan officers nationwide.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I thought I couldn't afford a home until Browse Lenders® connected me with a loan officer who explained 3% down conventional programs. Six months later, I closed on my first home with confidence—not confusion.'''
+  testimonial1Name = 'Verified Home Buyer'
+  testimonial1Subtitle = 'Education turned my "someday" into reality.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''Most lenders just quoted me a rate and moved on. Browse Lenders® helped me understand how my middle credit score affected pricing—and that knowledge motivated me to improve my score before applying, saving thousands.'''
+  testimonial2Name = 'Verified Home Buyer'
+  testimonial2Subtitle = 'Credit education saved me $15,000 over 30 years.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'No pressure, no confusing jargon, no hidden fees. Just clear purchase loan guidance, transparent rate comparisons, and loan officers who actually explained my options instead of rushing me to apply.'
+  testimonial3Name = 'Verified Home Buyer'
+  testimonial3Subtitle = 'It felt like education first, sales never.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''I didn't know there were so many first-time buyer programs available. Browse Lenders® helped me compare options—3% down conventional, FHA 3.5%, state assistance—so I could choose what worked best for my situation.'''
+  testimonial4Name = 'Verified Home Buyer'
+  testimonial4Subtitle = 'Knowing my options gave me confidence, not overwhelm.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''The connection to MiddleCreditScore helped me understand why lenders were quoting different rates. I improved my score by 40 points over four months and qualified for a much better purchase loan rate.'''
+  testimonial5Name = 'Verified Home Buyer'
+  testimonial5Subtitle = 'Credit improvement unlocked better loan terms and monthly savings.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Most platforms are built for lenders. This one is built for buyers who want to understand purchase loan options, down payment strategies, and lender comparisons before committing to a mortgage.'
+  testimonial6Name = 'Verified Home Buyer'
+  testimonial6Subtitle = '''It's the first platform that treated me like an informed consumer, not a lead.'''
+  
+  # Calculators Section
+  calculatorsTitle = 'Purchase Loan Calculators & Home-Buying Tools'
+  calculatorsSubtitle = 'Estimate monthly payments, compare down payment scenarios, and model purchase loan affordability before you apply.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Purchase Loan Qualification'
+  creditScoreImage = 'https://middlecreditscore.com/wp-content/uploads/2023/03/pexels-kampus-production-8353777.jpg'
+  creditScorePara1 = '''Purchase loan officers qualify you based on your middle credit score—not the highest or lowest. Understanding how lenders calculate your score and how it affects purchase mortgage rates is essential before you apply. Middle Credit Score® provides free education on credit-readiness, rate tiers, and loan-level price adjustments that impact your final interest rate.'''
+  creditScoreHeading1 = 'No-cost credit education'
+  creditScoreText1 = 'Access free, unbiased guidance on how purchase loan officers use your middle credit score to determine eligibility and pricing—without subscriptions or credit pulls.'
+  creditScoreHeading2 = 'Understand rate tiers before you apply'
+  creditScoreText2 = 'Learn how your middle credit score affects purchase mortgage rates—and discover targeted strategies to improve your score and unlock better rate tiers before house hunting.'
+  creditScoreHeading3 = 'Financial literacy builds buying power'
+  creditScoreText3 = 'With the right knowledge, home buyers can improve eligibility, access better purchase loan rates, and protect themselves from predatory or high-cost lending before making offers.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers — Purchase Loan Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand home-purchase financing, down payments, and credit readiness through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Today's HR departments are expanding financial wellness programs by including mortgage and credit education. Through Browse Lenders®, employers can offer no-cost access to purchase loan guidance, home-buying readiness resources, and verified loan officers who help employees understand down payment strategies and credit requirements before applying.'''
+  employersBullet1Title = 'No-cost purchase loan education'
+  employersBullet1Text = 'Add Browse Lenders® purchase loan resources to your financial-wellness program without contracts, fees, or onboarding complexity.'
+  employersBullet2Title = 'Mortgage and credit readiness tools'
+  employersBullet2Text = 'Employees learn how down payment size, credit scores, and purchase loan programs affect eligibility—helping them prepare before sharing personal information with lenders.'
+  employersBullet3Title = 'Support homeownership and retention'
+  employersBullet3Text = 'Empower your workforce with transparent purchase loan guidance and credit education that reduces financial stress, improves home-buying readiness, and supports long-term employee stability.'
+  employersCTA = 'Learn About Employer Mortgage Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Purchase Loan Insights'
+  blogSubtitle = 'Expert guidance on home-buying financing, pre-approval, down payments, and lender matching.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Purchase Loan Questions'
+  faqSubtitle = 'Clear answers about purchase mortgages, pre-approval, and home-buying readiness.'
+  
+  # FAQ 1
+  faq1Question = 'What is a purchase loan?'
+  faq1Answer = '''A purchase loan is a mortgage used to buy a home—as opposed to a refinance loan, which replaces an existing mortgage. Purchase loans include conventional mortgages, FHA loans, VA loans, and USDA loans. Each program has different credit requirements, down payment minimums, and qualification standards. Connect with verified purchase loan officers through <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a> to compare options.'''
+  
+  # FAQ 2
+  faq2Question = '''What's the difference between pre-qualification and pre-approval?'''
+  faq2Answer = '''Pre-qualification is an informal estimate based on self-reported income and credit—no verification required. Pre-approval is a formal commitment from a lender based on verified income, assets, and credit reports. Sellers take pre-approved buyers more seriously because pre-approval means you've been underwritten and are ready to close. Always get pre-approved before house hunting.'''
+  
+  # FAQ 3
+  faq3Question = 'How much do I need for a down payment on a purchase loan?'
+  faq3Answer = '''Down payment requirements vary by loan type: conventional loans require 3-20%, FHA loans require 3.5%, VA loans require 0% for eligible veterans, and USDA loans require 0% in eligible rural areas. Larger down payments reduce monthly costs and eliminate PMI at 20% down. Learn more about down payment strategies and how they affect affordability through <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a>.'''
+  
+  # FAQ 4
+  faq4Question = 'How does my credit score affect purchase loan rates?'
+  faq4Answer = '''Purchase loan officers use your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> to determine rate pricing. Scores of 740+ qualify for the best rates, while scores between 620-739 face loan-level price adjustments that increase your interest rate. Understanding your middle score before applying helps you set realistic expectations and improve your score if needed to unlock better rates.'''
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Connect with a Purchase Loan Officer?'
+  ctaSubtitle = 'Get expert guidance on home-buying financing, pre-approval, and down payment strategies.'
+  ctaDescription = 'Explore verified purchase loan officers at BrowseLenders.com—helping America achieve homeownership with transparency and education at every step.'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Purchase Loan Officers Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'

@@ -1,0 +1,260 @@
+baseURL = 'https://newconstructionloanofficers.com/'
+languageCode = 'en-us'
+title = 'New Construction Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/newconstructionloanofficers'
+publishDir = 'public/newconstructionloanofficers'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Connect with new construction loan officers who specialize in builder financing—from construction loans and construction-to-permanent mortgages to spec homes, custom builds, and navigating builder incentives with expert guidance'
+  author = 'Browse Lenders®'
+  shortName = 'New Construction Loan Officers'
+  tagline = 'Your Guide to New Construction Financing'
+  homepage = 'https://newconstructionloanofficers.com/'
+  
+  # SEO Configuration
+  siteName = 'New Construction Loan Officers'
+  siteDescription = 'Find loan officers specializing in new construction financing—construction loans, builder partnerships, spec homes, custom builds, construction-to-permanent mortgages, and rate lock strategies for new home purchases nationwide.'
+  keywords = ['New Construction Loan Officers', 'Construction Loans', 'Builder Financing', 'Construction-to-Permanent Loans', 'Spec Homes', 'Custom Home Builds', 'Builder Incentives', 'New Home Construction', 'Browse Lenders®']
+  serviceType = 'New Construction Loan Officer Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'New Construction Loan Officers - Builder Financing Experts'
+  heroSubtitle = 'Connect with loan officers who specialize in new construction financing—navigating construction loans, builder partnerships, spec homes, custom builds, and construction-to-permanent mortgages with transparency and expertise from groundbreaking to closing.'
+  heroImage = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find a Construction Loan Officer'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Nationwide New Construction Expertise. Builder-Financing Specialists.'
+  aboutImage = 'https://images.unsplash.com/photo-1590725140246-20acdee442be?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'New Construction Loan Programs & Builder Financing Options'
+  programsSubtitle = "From construction-only loans to one-time close construction-to-permanent mortgages—find the right financing for your new home build."
+  
+  # Program Cards
+  program1Title = 'Construction-to-Permanent Loans'
+  program1Description = '''One loan, one closing—finance land, construction, and permanent mortgage in a single transaction. Lock your rate before construction starts and convert to a traditional mortgage when the home is complete. Compare options through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for streamlined new construction financing.'''
+  program1Image = 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Spec Home Purchase Financing'
+  program2Description = '''Buying a spec home (move-in ready new construction) often qualifies for traditional purchase loan financing with faster closings than custom builds. Understand how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects builder financing and explore down payment options for new construction purchases.'''
+  program2Image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Custom Home Construction Loans'
+  program3Description = '''Build your dream home from the ground up with construction loan financing for custom builds. Work with lenders who understand construction draw schedules, builder contracts, and how to leverage existing home equity through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> for down payments on new construction projects.'''
+  program3Image = 'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Explore Construction Financing'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore new construction financing options and connect with verified loan officers who specialize in builder financing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent rate quotes and expert construction loan guidance.'''
+  
+  # Education Section
+  educationTitle = 'New Construction Financing Education & Builder Loan Guidance'
+  educationSubtitle = 'Smart new construction buyers understand financing options, construction timelines, and builder partnerships before breaking ground.'
+  
+  # Education Cards
+  edu1Title = 'Construction Loan Basics'
+  edu1Description = '''Learn how construction loans work—draw schedules, interest-only payments during construction, conversion to permanent financing, and what lenders require before funding your new home build.'''
+  edu1Image = 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Builder Partnerships & Incentives'
+  edu2Description = '''Understand preferred lender programs, builder incentives, design center credits, and how to negotiate closing cost assistance when financing through builder-preferred lenders versus independent mortgage companies.'''
+  edu2Image = 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Rate Locks for New Construction'
+  edu3Description = '''New construction rate locks work differently than purchase loans—learn about extended rate lock periods (6-12 months), float-down options, and how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects construction loan pricing and qualification.'''
+  edu3Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Construction Timelines & Delays'
+  edu4Description = 'Manage expectations around construction timelines, understand how delays affect financing (rate lock expirations, appraisal updates, cost overruns), and protect yourself from construction financing pitfalls.'
+  edu4Image = 'https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Start Your New Construction Journey'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center – Smarter New Construction Financing'
+  learningSubtitle = 'Knowledge builds confidence when financing your new home build.'
+  learningImage = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''New construction financing is more complex than traditional home purchases—requiring specialized knowledge of construction loans, builder contracts, draw schedules, rate locks that extend 6-12 months, and conversion processes from construction to permanent financing. New construction loan officers guide you through every phase of the build process with transparency, helping you understand financing options before you sign contracts, choose finishes, or break ground on your dream home.'''
+  learningBullet1 = '''Compare new construction loan officers and construction financing rates through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency and no pressure sales tactics.'''
+  learningBullet2 = 'Understand construction-to-permanent loans, construction-only loans, and traditional purchase financing for spec homes—choosing the right option for your timeline and budget.'
+  learningBullet3 = '''Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects construction loan approval and interest rate pricing.'''
+  learningBullet4 = 'Navigate builder incentives, preferred lender programs, and how to negotiate closing cost assistance while maintaining financing flexibility.'
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping every new construction buyer understand financing options, construction timelines, and builder partnerships before committing to a mortgage or construction contract.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for construction loan calculators, builder financing guides, and expert guidance on new construction financing strategies nationwide.'''
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders®'
+  whyChooseSubtitle = 'New construction expertise, transparent builder financing, and verified loan officers nationwide.'
+  whyChoosePara1 = '''Today's new construction buyers need more than just loan approval—they need to understand construction financing options, builder partnerships, draw schedules, extended rate locks, and how to protect themselves during a 6-12 month build process that involves dozens of decisions and potential pitfalls.'''
+  whyChoosePara2 = '''That's why <strong>Browse Lenders®</strong> was built as a <strong>national mortgage-education and lender-matching resource</strong> for both consumers and employees seeking new construction financing guidance and builder loan expertise.'''
+  
+  whyChooseBox1Title = 'Verified Construction Loan Officers'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in new construction financing and understand construction-to-permanent loans, builder partnerships, and construction draw schedules.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with new construction and builder financing expertise'
+  whyChooseBox1Bullet2 = 'Transparent construction loan rate quotes with no hidden fees or surprise adjustments'
+  whyChooseBox1Bullet3 = 'Pre-approval guidance and construction financing education from contract through closing'
+  
+  whyChooseBox2Title = 'Builder-Financing Education'
+  whyChooseBox2Para = 'Understand how to compare construction loan officers, evaluate builder-preferred lender programs, and negotiate incentives while maintaining financing flexibility and competitive rates.'
+  whyChooseBox2Bullet1 = 'Side-by-side construction financing comparisons from multiple lenders'
+  whyChooseBox2Bullet2 = 'Clear explanations of construction-to-permanent loans, construction-only loans, and spec home financing'
+  whyChooseBox2Bullet3 = 'Education on builder incentives, rate lock strategies, and construction timeline management'
+  
+  whyChooseBox3Title = 'New Construction Readiness'
+  whyChooseBox3Para = 'Learn what you need before signing a builder contract—credit score targets, down payment requirements, construction loan pre-approval, and documentation preparation for construction financing approval.'
+  whyChooseBox3Bullet1 = 'Construction loan pre-approval checklists and credit readiness resources'
+  whyChooseBox3Bullet2 = 'Builder contract review guidance and financing contingency protection'
+  whyChooseBox3Bullet3 = 'Understanding how construction loans affect monthly budgets during and after the build'
+  
+  whyChooseCTA = 'Start Comparing Construction Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What New Construction Buyers Are Saying'
+  testimonialsSubtitle = 'Real experiences from buyers who found the right construction loan officers nationwide.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I thought construction loans were too complicated until Browse Lenders® connected me with a loan officer who explained construction-to-permanent financing step-by-step. My dream home became a reality—not a nightmare.'''
+  testimonial1Name = 'Verified New Construction Buyer'
+  testimonial1Subtitle = 'Education turned complexity into confidence.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''The builder offered incentives if I used their preferred lender—but Browse Lenders® helped me compare rates and realize I could save $18,000 over the loan term by shopping independently. I took the builder incentives and negotiated a better deal elsewhere.'''
+  testimonial2Name = 'Verified New Construction Buyer'
+  testimonial2Subtitle = 'Builder financing education saved me thousands.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'No pressure, no confusing construction loan jargon, no hidden draw schedule fees. Just clear construction financing guidance, transparent rate comparisons, and loan officers who actually explained my options instead of rushing me to sign.'
+  testimonial3Name = 'Verified New Construction Buyer'
+  testimonial3Subtitle = 'It felt like education first, sales never.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''Construction delays pushed my closing back three months—but my loan officer had secured a 12-month rate lock with a float-down option. When rates dropped during construction, I locked in a lower rate. That one decision saved me $22,000.'''
+  testimonial4Name = 'Verified New Construction Buyer'
+  testimonial4Subtitle = 'Rate lock strategy protected me during construction delays.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''The connection to MiddleCreditScore helped me understand why my construction loan rate was higher than advertised. I improved my score by 50 points over six months before construction started and qualified for significantly better pricing.'''
+  testimonial5Name = 'Verified New Construction Buyer'
+  testimonial5Subtitle = 'Credit improvement unlocked better construction loan terms.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Most platforms are built for lenders. This one is built for buyers who want to understand construction financing, builder incentives, and rate lock strategies before signing contracts and breaking ground.'
+  testimonial6Name = 'Verified New Construction Buyer'
+  testimonial6Subtitle = '''It's the first platform that treated me like an informed consumer, not a lead.'''
+  
+  # Calculators Section
+  calculatorsTitle = 'Construction Loan Calculators & New Home Build Tools'
+  calculatorsSubtitle = 'Estimate construction loan payments, compare construction-to-permanent financing scenarios, and model new construction affordability before breaking ground.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Construction Loan Qualification'
+  creditScoreImage = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''New construction loan officers qualify you based on your middle credit score—not the highest or lowest. Understanding how lenders calculate your score and how it affects construction loan rates is essential before signing builder contracts. Middle Credit Score® provides free education on credit-readiness, construction loan rate tiers, and loan-level price adjustments that impact your final interest rate.'''
+  creditScoreHeading1 = 'No-cost credit education'
+  creditScoreText1 = 'Access free, unbiased guidance on how construction loan officers use your middle credit score to determine eligibility and pricing—without subscriptions or credit pulls.'
+  creditScoreHeading2 = 'Understand construction loan rate tiers before you apply'
+  creditScoreText2 = 'Learn how your middle credit score affects construction financing rates—and discover targeted strategies to improve your score before starting your new home build for better pricing.'
+  creditScoreHeading3 = 'Financial literacy builds building power'
+  creditScoreText3 = 'With the right knowledge, new construction buyers can improve eligibility, access better construction loan rates, and protect themselves from predatory or high-cost lending before signing contracts.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers — New Construction Loan Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand new construction financing, builder partnerships, and construction loan options through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Today's HR departments are expanding financial wellness programs by including new construction and builder financing education. Through Browse Lenders®, employers can offer no-cost access to construction loan guidance, new home build readiness resources, and verified loan officers who help employees understand construction-to-permanent loans and builder incentives before signing contracts.'''
+  employersBullet1Title = 'No-cost construction loan education'
+  employersBullet1Text = 'Add Browse Lenders® new construction financing resources to your financial-wellness program without contracts, fees, or onboarding complexity.'
+  employersBullet2Title = 'Builder financing and credit readiness tools'
+  employersBullet2Text = 'Employees learn how construction loans work, how credit scores affect construction financing, and what builder incentives really cost—helping them prepare before sharing personal information with lenders.'
+  employersBullet3Title = 'Support homeownership dreams and retention'
+  employersBullet3Text = 'Empower your workforce with transparent new construction loan guidance and credit education that reduces financial stress, improves building readiness, and supports long-term employee stability.'
+  employersCTA = 'Learn About Employer Mortgage Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest New Construction Financing Insights'
+  blogSubtitle = 'Expert guidance on construction loans, builder financing, rate locks, and new home build strategies.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked New Construction Loan Questions'
+  faqSubtitle = 'Clear answers about construction financing, builder loans, and new home build processes.'
+  
+  # FAQ 1
+  faq1Question = 'What is a construction-to-permanent loan?'
+  faq1Answer = '''A construction-to-permanent loan (also called a one-time close construction loan) finances both the construction phase and the permanent mortgage in a single loan with one closing. You lock your interest rate before construction starts, make interest-only payments during the build, and the loan converts to a traditional mortgage when construction is complete. Connect with verified construction loan officers through <a class="text-accent hover:underline" href="https://www.browselenders.com" target="_blank">Browse Lenders</a> to compare construction-to-permanent options.'''
+  
+  # FAQ 2
+  faq2Question = '''What's the difference between a construction loan and a traditional mortgage?'''
+  faq2Answer = '''Construction loans fund the building process with money released in stages (draws) as construction progresses—requiring interest-only payments during construction and converting to principal + interest after completion. Traditional mortgages fund completed homes with fixed monthly principal and interest payments from day one. Construction loans have higher rates, stricter requirements, and more complexity than traditional purchase loans.'''
+  
+  # FAQ 3
+  faq3Question = 'Do I need 20% down for a construction loan?'
+  faq3Answer = '''Most construction loans require 10-20% down, though some lenders offer construction-to-permanent financing with as little as 5% down for qualified buyers. Larger down payments reduce construction loan rates and improve approval odds. If you own a home with equity, you can use <a class="text-accent hover:underline" href="https://www.cash-outrefinance.com" target="_blank">cash-out refinance</a> proceeds as your down payment for new construction financing.'''
+  
+  # FAQ 4
+  faq4Question = 'How does my credit score affect construction loan rates?'
+  faq4Answer = '''Construction loan officers use your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> to determine rate pricing. Construction loans typically require 680+ credit for approval, with 720+ scores qualifying for the best rates. Lower scores face higher rates and stricter down payment requirements. Understanding your middle score before applying helps you set realistic expectations and improve your score if needed to unlock better construction financing terms.'''
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Connect with a New Construction Loan Officer?'
+  ctaSubtitle = 'Get expert guidance on construction financing, builder partnerships, and new home build strategies.'
+  ctaDescription = 'Explore verified new construction loan officers at BrowseLenders.com—helping America build dream homes with transparency and education at every step.'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'New Construction Loan Officers Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
