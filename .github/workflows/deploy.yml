@@ -114,5 +114,5 @@ jobs:
           echo "Deploying $domain to $clean"
           
           # Upload folder contents (not folder itself) with --delete to remove old files
-          lftp -c "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open -u \$FTP_USER,\$FTP_PASS \$FTP_HOST; mirror -Rev --delete --parallel=2 public/$domain/ /domains/$clean/public_html/; bye"
+          lftp -c "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -Rev --delete --parallel=2 public/$domain/ /domains/$clean/public_html/; bye"
         done
