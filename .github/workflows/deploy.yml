@@ -18,21 +18,80 @@ jobs:
       with:
         hugo-version: 'latest'
         extended: true
-    - name: Build All
+    
+    - name: Detect Changed Domains
+      id: changes
       run: |
-        for d in config/*/; do
-          [[ $d == *"_default"* ]] && continue
-          domain=$(basename $d)
-          [[ ! -f $d/hugo.toml ]] && continue
-          echo "Building $domain"
-          hugo --environment $domain --config config/_default/hugo.toml,$d/hugo.toml --destination public/$domain --cleanDestinationDir --minify
-        done
-    - name: Deploy
+        if [ "${{ github.event_name }}" == "schedule" ]; then
+          # Scheduled run: build all domains (Hugo filters future posts automatically)
+          echo "Scheduled run - building all domains"
+          CHANGED_DOMAINS="all"
+        else
+          # Push event: only build changed domains
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD)
+          CHANGED_DOMAINS=$(echo "$CHANGED_FILES" | grep -E '^(content|config)/' | cut -d'/' -f2 | sort -u | tr '\n' ' ')
+          
+          # If workflow file changed, rebuild all
+          if echo "$CHANGED_FILES" | grep -q "\.github/workflows/"; then
+            CHANGED_DOMAINS="all"
+          fi
+          
+          # If no specific domains changed, skip build
+          if [ -z "$CHANGED_DOMAINS" ]; then
+            echo "No domain changes detected"
+            CHANGED_DOMAINS="none"
+          fi
+        fi
+        
+        echo "changed_domains=$CHANGED_DOMAINS" >> $GITHUB_OUTPUT
+        echo "Strategy: $CHANGED_DOMAINS"
+    
+    - name: Build Changed Domains
       run: |
+        DOMAINS="${{ steps.changes.outputs.changed_domains }}"
+        
+        if [ "$DOMAINS" == "none" ]; then
+          echo "No domains to build"
+          exit 0
+        fi
+        
+        if [ "$DOMAINS" == "all" ]; then
+          echo "Building all domains"
+          for d in config/*/; do
+            [[ $d == *"_default"* ]] && continue
+            domain=$(basename $d)
+            [[ ! -f $d/hugo.toml ]] && continue
+            echo "Building $domain"
+            hugo --environment $domain --config config/_default/hugo.toml,$d/hugo.toml --destination public/$domain --cleanDestinationDir --minify
+          done
+        else
+          echo "Building changed domains only"
+          for domain in $DOMAINS; do
+            [[ ! -f config/$domain/hugo.toml ]] && continue
+            echo "Building $domain"
+            hugo --environment $domain --config config/_default/hugo.toml,config/$domain/hugo.toml --destination public/$domain --cleanDestinationDir --minify
+          done
+        fi
+    
+    - name: Deploy Changed Domains
+      run: |
+        DOMAINS="${{ steps.changes.outputs.changed_domains }}"
+        
+        if [ "$DOMAINS" == "none" ]; then
+          echo "No domains to deploy"
+          exit 0
+        fi
+        
         sudo apt-get update -qq && sudo apt-get install -y lftp
         
-        for d in public/*/; do
-          domain=$(basename $d)
+        if [ "$DOMAINS" == "all" ]; then
+          DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+        else
+          DEPLOY_LIST="$DOMAINS"
+        fi
+        
+        for domain in $DEPLOY_LIST; do
+          [[ ! -d public/$domain ]] && continue
           cfg=config/$domain/hugo.toml
           [[ ! -f $cfg ]] && continue
           
@@ -41,5 +100,5 @@ jobs:
           
           echo "Deploying $domain to $clean"
           
-          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" -e "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; set net:reconnect-interval-base 5; mirror -Rev --delete --verbose --parallel=2 $d /domains/$clean/public_html/; bye" "${{ secrets.FTP_SERVER }}"
+          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" -e "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; set net:reconnect-interval-base 5; mirror -Rev --delete --parallel=2 public/$domain /domains/$clean/public_html/; bye" "${{ secrets.FTP_SERVER }}"
         done
