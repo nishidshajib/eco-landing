@@ -238,6 +238,6 @@ publishDir = 'public/badcreditloanspecialist'
   
   # CTA Section
   ctaTitle = 'Ready to Get Pre-Qualified with a Bad Credit Specialist?'
-  ctaSubtitle = 'Connect with loan officers who specialize in FHA manual underwriting, subprime lending, and credit repair guidance'
-  ctaButtonText = 'Check Your Credit Score Match'
-  ctaButtonLink = 'https://www.middlecreditscore.com'
+  ctaDescription = 'Connect with loan officers who specialize in FHA manual underwriting, subprime lending, and credit repair guidance—get expert support regardless of your credit history.'
+  ctaCTA = 'Check Your Credit Score Match'
+  ctaCTALink = 'https://www.middlecreditscore.com'

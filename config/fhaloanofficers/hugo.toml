@@ -248,11 +248,9 @@ publishDir = 'public/fhaloanofficers'
 
   # CTA Section
   ctaTitle = 'Ready to Connect with FHA Loan Officers?'
-  ctaSubtitle = 'Find licensed FHA specialists who understand government-backed financing and help first-time buyers achieve homeownership'
-  ctaButton1Text = 'Compare FHA Officers'
-  ctaButton1Link = 'https://www.browselenders.com'
-  ctaButton2Text = 'Check Credit Readiness'
-  ctaButton2Link = 'https://www.middlecreditscore.com'
+  ctaDescription = 'Find licensed FHA specialists who understand government-backed financing and help first-time buyers achieve homeownership with competitive rates and expert guidance.'
+  ctaCTA = 'Compare FHA Officers'
+  ctaCTALink = 'https://www.browselenders.com'
 
 [[menu.main]]
   name = 'Home'

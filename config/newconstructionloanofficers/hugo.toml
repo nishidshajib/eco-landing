@@ -250,8 +250,9 @@ path = 'page'
   
   # Contact/CTA Section
   ctaTitle = 'Ready to Connect with a New Construction Loan Officer?'
-  ctaSubtitle = 'Get expert guidance on construction financing, builder partnerships, and new home build strategies.'
-  ctaDescription = 'Explore verified new construction loan officers at BrowseLenders.com—helping America build dream homes with transparency and education at every step.'
+  ctaDescription = 'Get expert guidance on construction financing, builder partnerships, and new home build strategies—explore verified new construction loan officers at BrowseLenders.com helping America build dream homes.'
+  ctaCTA = 'Find Construction Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com'
   
   # Theme configuration
   [params.theme]

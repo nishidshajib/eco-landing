@@ -1,0 +1,267 @@
+baseURL = 'https://fhahomemortgageloan.com/'
+languageCode = 'en-us'
+title = 'FHA Home Mortgage Loans'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/fhahomemortgageloan'
+publishDir = 'public/fhahomemortgageloan'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'FHA home mortgage loans with 3.5% down payments and flexible credit requirements—connect with FHA specialists for qualification guidance, credit-score improvement strategies, and first-time homebuyer financing.'
+  author = 'Browse Lenders®'
+  shortName = 'FHA Home Loans'
+  tagline = 'Your Path to Homeownership with Low Down Payments'
+  homepage = 'https://fhahomemortgageloan.com/'
+  
+  # SEO Configuration
+  siteName = 'FHA Home Mortgage Loans'
+  siteDescription = 'Discover FHA home mortgage loans with 3.5% down payment options, flexible credit requirements (580+ minimum), and credit-score improvement guidance—connect with FHA specialists for first-time homebuyers and borrowers with middle credit scores.'
+  keywords = ['FHA Home Loans', 'FHA Mortgage', 'Low Down Payment', 'Credit Score Requirements', 'First-Time Homebuyer', 'FHA Qualification', '3.5% Down Payment', 'Middle Credit Score', 'Browse Lenders®']
+  serviceType = 'FHA Home Mortgage Loan Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'FHA Home Mortgage Loans - 3.5% Down Payment + Flexible Credit Requirements'
+  heroSubtitle = 'Connect with FHA loan officers who specialize in qualification strategies, credit-score improvement, and helping first-time homebuyers achieve homeownership with low down payments and flexible credit standards.'
+  heroImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find FHA Specialists'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Check Your Credit Score'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'FHA Qualification Expertise. Low Down Payments. Credit Score Improvement Guidance.'
+  aboutImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'FHA Loan Qualification Tiers'
+  programsSubtitle = 'Credit Score Requirements and Down Payment Options for Every Borrower'
+  
+  # Program Cards
+  program1Title = 'FHA 3.5% Down (640+ Credit)'
+  program1Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''Standard FHA loan with 3.5% down payment for borrowers with 640+ credit scores. Most flexible option with competitive rates, DTI up to 50%, and gift funds allowed. Perfect for first-time buyers and borrowers with <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit scores</a> 640-680.'''
+  
+  program2Title = 'FHA 3.5% Down (620-639 Credit)'
+  program2Image = 'https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''Limited lenders offer 3.5% down to borrowers with 620-639 credit, though tighter qualification required. Stronger compensating factors needed and rates 0.25-0.50% higher. Improve your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> 20 points to access better tier.'''
+  
+  program3Title = 'FHA 10% Down (580-619 Credit)'
+  program3Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''FHA loans with 580-619 credit require 10% down payment vs. 3.5%. Qualification tightens with DTI capped at 43% and strong compensating factors mandatory. Consider improving credit to 620+ to save $13,000 down payment on $200K home through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">FHA specialists</a>.'''
+  
+  programsCTA = 'Get Started Today'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore FHA qualification tiers and connect with verified loan officers who specialize in credit-score improvement and first-time homebuyer financing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent guidance and FHA expertise.'''
+  
+  # Education Section
+  educationTitle = 'FHA Qualification & Credit Score Improvement Education'
+  educationSubtitle = 'Master the path from credit improvement to FHA homeownership with expert guidance and proven strategies.'
+  
+  # Education Cards
+  edu1Title = 'Credit Score Requirements: 580 to 680+ Tiers'
+  edu1Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''FHA accepts credit scores as low as 580, but requirements vary by tier. 580-619 requires 10% down, 620-639 requires 3.5-10% down depending on lender, 640-679 qualifies for standard 3.5% down with 50% DTI, 680+ gets best FHA rates. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> tier helps you know whether to apply now or improve score first.'''
+  
+  edu2Title = 'Improving Your Credit Score Before Applying'
+  edu2Image = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''Most borrowers can improve credit scores 20-60 points in 2-4 months: pay down credit cards below 30% utilization, dispute inaccurate items, become authorized user on parent/spouse card with perfect history, and avoid new credit inquiries. Check your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">real FICO score</a> to see improvement timeline.'''
+  
+  edu3Title = 'Debt-to-Income Ratios: 43% vs. 50% DTI Limits'
+  edu3Image = 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''FHA allows up to 50% debt-to-income ratio vs. 43% conventional limit. DTI includes mortgage + taxes + insurance + car loans + student loans + credit cards. To qualify at higher DTI, you need compensating factors: 2+ months reserves, 680+ credit, stable 3+ year employment, or 10%+ down payment through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">FHA specialists</a>.'''
+  
+  edu4Title = 'Down Payment Strategies: 3.5% vs. 10% and Gift Funds'
+  edu4Image = 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''FHA down payment is 3.5% for 620+ credit (640+ with most lenders), 10% for 580-619 credit. FHA allows 100% of down payment from gift funds with proper documentation. You can also use down payment assistance programs offering $5,000-$15,000 grants to cover entire down payment and closing costs.'''
+  
+  educationCTA = 'Start Your Journey'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center - Understanding FHA Mortgage Insurance'
+  learningSubtitle = 'Knowledge builds confidence in the FHA homeownership journey.'
+  learningImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''FHA mortgage insurance has two components: upfront MI (1.75% of loan amount, typically financed) and annual MI (0.55-0.85% of loan balance, paid monthly). While this adds cost, FHA mortgage insurance enables low down payments and flexible credit standards that make homeownership possible years earlier.'''
+  learningBullet1 = '''Compare FHA options through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency.'''
+  learningBullet2 = 'Your credit score and down payment affect annual MI rates—every 20-point improvement saves $10-$20/month.'
+  learningBullet3 = '''Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects FHA rates and MI costs.'''
+  learningBullet4 = '''Refinance to conventional at 20% equity to eliminate MI through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> or rate-and-term refinance.'''
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping every borrower understand FHA qualification, credit improvement, and mortgage insurance costs.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for FHA calculators, credit improvement tools, and expert guidance.'''
+  
+  # Testimonials Section
+  testimonialsTitle = 'What FHA Homebuyers Are Saying'
+  testimonialsSubtitle = 'Real stories from first-time buyers and middle credit borrowers'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''My loan officer explained FHA lets me buy with just 3.5% down and my 642 credit score. My parents gifted $5,000 for down payment, I used a $7,500 state DPA grant, and only paid $2,000 out of pocket. I'm 27 and own my first home.'''
+  testimonial1Name = 'Marcus T. - Phoenix, AZ'
+  testimonial1Subtitle = 'First-Time Buyer, 642 Credit, 3.5% Down'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''My 628 credit score disqualified me from conventional loans. My loan officer suggested waiting 3 months to improve my score to 652. I paid down credit cards and disputed an error. My rate dropped from 7.125% to 6.625%—saving me $4,200 over 5 years.'''
+  testimonial2Name = 'Jessica L. - Austin, TX'
+  testimonial2Subtitle = 'Improved Credit 628 to 652 in 3 Months'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = '''I have $65,000 in student loans and 48% debt-to-income—conventional rejected me. FHA accepted my 48% DTI because I had 4 months reserves and 3 years stable employment as compensating factors. FHA was my only option.'''
+  testimonial3Name = 'David K. - Charlotte, NC'
+  testimonial3Subtitle = '48% DTI with Student Loans, 3.5% Down'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''My 597 credit score required 10% down ($22,000). My rate was 7.375%—higher than friends with 680+ credit. But I'm building equity and improving my credit. Once I hit 680+ and 20% equity, I'll refinance to conventional.'''
+  testimonial4Name = 'Amanda R. - Denver, CO'
+  testimonial4Subtitle = '597 Credit, 10% Down, Refinance Plan'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''I'm self-employed with fluctuating income—conventional underwriting rejected me. FHA offered manual underwriting considering my 12-month bank statements. My 672 credit and 8% down strengthened my application. FHA is the most flexible option for self-employed borrowers.'''
+  testimonial5Name = 'Ryan M. - Nashville, TN'
+  testimonial5Subtitle = 'Self-Employed, Manual Underwriting, 8% Down'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '''Three years after bankruptcy, I qualified for FHA with 620 credit score. I paid 3.5% down and my rate was 7.00%. FHA gave me a second chance. Now 2 years in with perfect payment history, my score is 681. I'll refinance to conventional soon.'''
+  testimonial6Name = 'Linda H. - Tampa, FL'
+  testimonial6Subtitle = '3 Years Post-Bankruptcy, 620 Credit'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders® for FHA Home Loans?'
+  whyChooseSubtitle = 'FHA qualification expertise, credit improvement guidance, and transparent lender connections'
+  whyChoosePara1 = '''Today's homebuyers need more than just FHA loans—they need to understand credit tiers, mortgage insurance costs, down payment strategies, and how to maximize qualification before committing to homeownership.'''
+  whyChoosePara2 = '''That's why <strong>Browse Lenders®</strong> was built as a <strong>national mortgage-education and lender-matching resource</strong> for both consumers and employees seeking FHA financing guidance.'''
+  
+  whyChooseBox1Title = 'Verified FHA Loan Officers'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in FHA qualification and understand credit-score improvement strategies for first-time homebuyers.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with FHA expertise'
+  whyChooseBox1Bullet2 = 'Transparent rate quotes with no hidden fees'
+  whyChooseBox1Bullet3 = 'Credit improvement guidance from application through closing'
+  
+  whyChooseBox2Title = 'FHA Qualification Education'
+  whyChooseBox2Para = 'Understand how to compare FHA tiers—beyond just rates—by evaluating credit requirements, down payments, DTI limits, and mortgage insurance costs through credit score education.'
+  whyChooseBox2Bullet1 = 'Side-by-side comparisons of FHA credit tiers (580, 620, 640, 680+)'
+  whyChooseBox2Bullet2 = 'Clear explanations of mortgage insurance, gift funds, and DPA programs'
+  whyChooseBox2Bullet3 = 'Education on credit improvement strategies before applying'
+  
+  whyChooseBox3Title = 'Homeownership Readiness'
+  whyChooseBox3Para = 'Learn what you need before applying—credit score targets, down payment planning, DTI calculation, and documentation for faster FHA approval.'
+  whyChooseBox3Bullet1 = 'FHA checklists and credit readiness resources'
+  whyChooseBox3Bullet2 = 'Down payment and mortgage insurance calculators'
+  whyChooseBox3Bullet3 = 'Understanding how credit scores affect FHA rates and costs'
+  
+  whyChooseCTA = 'Start Comparing FHA Lenders'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # First-Time Buyers Section
+  firstTimeTitle = 'First-Time Homebuyers & FHA Qualification'
+  firstTimeSubtitle = 'Your step-by-step guide to FHA homeownership'
+  firstTimeImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+  firstTimePara1 = '''FHA loans are designed for first-time homebuyers with limited savings and middle credit scores. With just 3.5% down payment ($7,000 on a $200,000 home) and 640+ credit, you can achieve homeownership years earlier than saving 20% down for conventional loans.'''
+  firstTimeHeading1 = 'Low down payment requirements'
+  firstTimeText1 = '''FHA requires just 3.5% down with 620+ credit (640+ with most lenders) vs. 10-20% conventional—helping first-time buyers purchase sooner with less savings through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">FHA specialists</a>.'''
+  firstTimeHeading2 = 'Gift funds and down payment assistance'
+  firstTimeText2 = '''FHA allows 100% of down payment from gift funds (parents, family) plus down payment assistance programs offering $5,000-$15,000 grants—some buyers purchase with $0 personal savings.'''
+  firstTimeHeading3 = 'Credit improvement guidance'
+  firstTimeText3 = '''Improve your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> 20-60 points in 2-4 months to move up FHA tiers—potentially saving $13,000 in down payment (10% to 3.5%) or $3,000-$5,000 in lower rates.'''
+  firstTimeCTA = 'Start Your FHA Journey'
+  firstTimeCTALink = 'https://www.browselenders.com'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & FHA Qualification'
+  creditScoreImage = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''FHA lenders use your middle credit score—the middle of your three bureau scores (Experian, Equifax, TransUnion)—to determine loan qualification and rates. Understanding which FHA tier you qualify for (580-619 = 10% down, 620-639 = possible 3.5% down, 640+ = standard 3.5% down) helps you plan your homeownership timeline. Middle Credit Score® provides free education on credit-readiness, FHA qualification tiers, and loan-level price adjustments that impact your final interest rate.'''
+  creditScoreHeading1 = 'No-cost credit education'
+  creditScoreText1 = 'Access free, unbiased guidance on how FHA lenders use your middle credit score to determine eligibility and pricing—without subscriptions or credit pulls.'
+  creditScoreHeading2 = 'Understand FHA credit tiers before you apply'
+  creditScoreText2 = 'Learn how your middle credit score affects FHA down payment requirements and rates—and discover targeted strategies to improve your score before applying for better pricing.'
+  creditScoreHeading3 = 'Financial literacy builds homeownership power'
+  creditScoreText3 = 'With the right knowledge, borrowers can improve eligibility, access better FHA rates, and protect themselves from predatory or high-cost lending before committing to home purchase.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers - FHA Homeownership Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand FHA qualification, credit improvement, and homeownership readiness through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Today's HR departments are expanding financial wellness programs by including homeownership education. Through Browse Lenders®, employers can offer no-cost access to FHA qualification guidance, credit improvement resources, and verified loan officers who help employees understand which credit tier they qualify for and how to improve scores before applying.'''
+  employersBullet1Title = 'No-cost FHA education'
+  employersBullet1Text = 'Add Browse Lenders® FHA resources to your financial-wellness program without contracts, fees, or onboarding complexity.'
+  employersBullet2Title = 'Credit improvement tools'
+  employersBullet2Text = 'Employees learn how FHA credit tiers work (580, 620, 640, 680+) and access credit monitoring subscriptions to track improvement toward better qualification.'
+  employersBullet3Title = 'Support homeownership and retention'
+  employersBullet3Text = 'Empower your workforce with transparent FHA guidance and credit education that reduces financial stress and supports long-term employee stability.'
+  employersCTA = 'Learn About Employer Benefits'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest FHA Loan Insights'
+  blogSubtitle = 'Expert guidance on FHA qualification, credit improvement, mortgage insurance, and first-time homebuying'
+  blogCTA = 'Read All Articles'
+  blogCTALink = '/blogs/'
+  
+  # Calculators Section
+  calculatorsTitle = 'FHA Loan Calculators & Planning Tools'
+  calculatorsSubtitle = 'Estimate FHA payments, compare 3.5% vs. 10% down, model credit improvement timelines, and calculate DTI before applying.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked FHA Questions'
+  faqSubtitle = 'Clear answers about FHA qualification, credit requirements, and homeownership readiness'
+  
+  faq1Question = 'What credit score do I need for an FHA loan with 3.5% down?'
+  faq1Answer = '''Most FHA lenders require 640+ credit score for 3.5% down payment. Some lenders accept 620-639 credit with 3.5% down, but qualification is tighter. If your credit score is 580-619, FHA requires 10% down payment—on a $200,000 home, that's $20,000 vs. $7,000 (a $13,000 difference). Check your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> to see which tier you qualify for.'''
+  
+  faq2Question = 'How much is FHA mortgage insurance and can I remove it?'
+  faq2Answer = '''FHA mortgage insurance has two parts: Upfront MI (1.75% of loan amount, typically financed) and Annual MI (0.55-0.85% of loan balance, paid monthly). Total first-year MI cost on $250,000 loan: $4,375 upfront + $2,000 annual = $6,375. To eliminate MI: refinance to conventional loan once you reach 20% equity and 620+ credit through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">refinance strategies</a>.'''
+  
+  faq3Question = 'Can I use gift funds for my FHA down payment and closing costs?'
+  faq3Answer = '''Yes, FHA allows 100% of your down payment and closing costs to come from gift funds (parents, family, employers, nonprofits). Gift funds can be combined with down payment assistance programs—many states offer $5,000-$15,000 grants for first-time buyers. Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">FHA loan officers</a> who can connect you with DPA programs in your area.'''
+  
+  faq4Question = 'What debt-to-income ratio do I need to qualify for FHA?'
+  faq4Answer = '''FHA generally allows up to 43% debt-to-income ratio, with some lenders approving up to 50% DTI if you have compensating factors (2+ months reserves, 680+ credit, stable 3+ year employment, or 10%+ down payment). Lenders on <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> can calculate your DTI and suggest strategies to reduce it if you're over 50%.'''
+  
+  # CTA Section
+  ctaTitle = 'Ready to Start Your FHA Home Loan Journey?'
+  ctaDescription = 'Connect with experienced FHA loan officers who specialize in qualification guidance, credit-score improvement, and first-time homebuyer financing—get expert support from application through closing.'
+  ctaCTA = 'Find FHA Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com'

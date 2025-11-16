@@ -1,0 +1,327 @@
+baseURL = 'https://nonconforminghomeloans.com/'
+languageCode = 'en-us'
+title = 'Non-Conforming Home Loans'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/nonconforminghomeloans'
+publishDir = 'public/nonconforminghomeloans'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Non-conforming home loans and jumbo mortgages for luxury properties, high-balance financing, and alternative documentation—connect with specialized lenders for flexible underwriting beyond conventional loan limits.'
+  author = 'Browse Lenders®'
+  shortName = 'Non-Conforming Loans'
+  tagline = 'Beyond Conventional Limits - Flexible Financing Solutions'
+  homepage = 'https://nonconforminghomeloans.com/'
+  
+  # SEO Configuration
+  siteName = 'Non-Conforming Home Loans'
+  siteDescription = 'Expert guidance on non-conforming mortgages including jumbo loans, non-QM financing, bank statement programs, and alternative documentation for high-net-worth borrowers, self-employed professionals, and luxury property purchases exceeding conventional loan limits.'
+  keywords = ['Non-Conforming Loans', 'Jumbo Mortgages', 'Non-QM Loans', 'Bank Statement Loans', 'High-Balance Mortgages', 'Luxury Home Financing', 'Alternative Documentation', 'Self-Employed Mortgages', 'Browse Lenders®']
+  serviceType = 'Non-Conforming & Jumbo Mortgage Lending'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Non-Conforming Home Loans - Jumbo Mortgages & Flexible Underwriting'
+  heroSubtitle = 'Connect with specialized lenders for non-QM financing, jumbo loans, and alternative documentation for high-balance mortgages and complex income scenarios.'
+  heroImage = 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Find Jumbo Specialists'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Check Credit Requirements'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'Jumbo Expertise. Flexible Underwriting.'
+  aboutImage = 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Non-Conforming Loan Programs for Every Borrower Profile'
+  programsSubtitle = 'Jumbo mortgages, non-QM solutions, and alternative documentation pathways for high-balance financing'
+  
+  # Program Cards
+  program1Title = 'Jumbo Loans (Above Conforming Limits)'
+  program1Image = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''High-balance mortgages exceeding $766,550 conforming limit (2024) for luxury properties and expensive markets. Jumbo loans require 700+ credit, 10-20% down payment, 43% max DTI, and 6-12 months reserves. Rates typically 0.25-0.75% higher than conforming loans, but flexible underwriting available through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">jumbo specialists</a>.'''
+  
+  program2Title = 'Bank Statement Loans (Self-Employed)'
+  program2Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''Non-QM loans using 12-24 months business or personal bank statements instead of tax returns for self-employed borrowers, business owners, and 1099 contractors. Verify income through deposits rather than W-2s—ideal for borrowers with complex deductions who show lower taxable income. Requires 660+ credit and 10-20% down through specialized <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">non-QM lenders</a>.'''
+  
+  program3Title = 'Asset-Based Mortgages (High Net Worth)'
+  program3Image = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''Qualify based on liquid assets (stocks, bonds, retirement accounts, real estate equity) rather than employment income. Lenders calculate monthly "asset income" by dividing portfolio value by 60-120 months. Perfect for retirees, executives with stock compensation, or high-net-worth individuals with fluctuating income. Explore qualification strategies at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Middle Credit Score</a>.'''
+  
+  programsCTA = 'Explore Jumbo Options'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore non-conforming loan programs and connect with jumbo mortgage specialists who understand alternative documentation and flexible underwriting, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent guidance and non-QM expertise.'''
+  
+  # Education Section
+  educationTitle = 'Non-Conforming Mortgage Education & Jumbo Loan Qualification'
+  educationSubtitle = 'Master jumbo financing strategies, non-QM requirements, and alternative documentation pathways for high-balance mortgages.'
+  
+  # Education Cards
+  edu1Title = 'Understanding Conforming vs. Non-Conforming Loan Limits'
+  edu1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''Conforming loans capped at $766,550 in most areas (2024), higher in expensive counties like San Francisco ($1,149,825) and NYC ($970,800). Non-conforming (jumbo) loans start where conforming limits end—financing luxury properties, high-cost markets, and multi-million dollar homes. Understanding which loan type you need based on purchase price affects rate, down payment, and documentation through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'''
+  
+  edu2Title = 'Jumbo Loan Credit Score Requirements: 700-740+ Tiers'
+  edu2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''Jumbo lenders require higher credit standards: 700-719 qualifies but pays premium rates, 720-739 gets standard jumbo pricing, 740+ accesses best rates (within 0.125-0.25% of conforming). Every 20-point improvement saves 0.125-0.25% on rate—$30-$60/month on $1.5M loan. Check your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> before applying to understand pricing tier.'''
+  
+  edu3Title = 'Down Payment Strategies for Jumbo Mortgages'
+  edu3Image = 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''Jumbo loans require 10-20% down depending on loan amount: $766,551-$1.5M requires 10-15% down, $1.5M-$2.5M requires 15-20% down, $2.5M+ requires 20-30% down. Some portfolio lenders accept 10% down with PMI on jumbos up to $2M. Consider <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> on current home for jumbo down payment.'''
+  
+  edu4Title = 'Bank Statement Loans: Qualifying Without Tax Returns'
+  edu4Image = 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''Self-employed borrowers, business owners, and 1099 contractors can qualify using 12-24 months bank statements instead of tax returns. Lenders average monthly deposits and apply 50% expense ratio to calculate qualifying income. Example: $30,000/month deposits × 50% = $15,000 qualifying income. Rates 0.50-1.25% higher than conventional loans but accessible through specialized non-QM lenders.'''
+  
+  educationCTA = 'Connect with Specialists'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center - Jumbo Mortgage Strategies'
+  learningSubtitle = 'Knowledge builds confidence in high-balance financing decisions.'
+  learningImage = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Non-conforming mortgages operate differently than conventional loans—requiring higher credit scores (700+ vs. 620+), larger down payments (10-20% vs. 3-5%), stricter debt-to-income limits (43% vs. 50%), and deeper reserves (6-12 months vs. 0-2 months). But for high-balance purchases and complex income scenarios, jumbo and non-QM loans provide essential flexibility beyond conforming limits.'''
+  learningBullet1 = '''Compare jumbo lenders through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for competitive rates and flexible underwriting.'''
+  learningBullet2 = 'Your credit score affects jumbo rates more than conforming—every 20-point improvement saves significant interest over loan life.'
+  learningBullet3 = '''Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> determines jumbo eligibility and pricing tiers.'''
+  learningBullet4 = '''Explore <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> strategies to access equity for jumbo down payments or debt consolidation.'''
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping high-balance borrowers understand jumbo qualification, alternative documentation pathways, and non-QM solutions for complex financial situations.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for jumbo calculators, non-QM guidance, and connection with specialized lenders.'''
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Non-Conforming Borrowers Are Saying'
+  testimonialsSubtitle = 'Real stories from jumbo buyers, self-employed professionals, and high-net-worth clients'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I'm self-employed with $180,000 gross revenue but only $65,000 taxable income after business deductions. Conventional lenders rejected me. My jumbo specialist used 12-month bank statements showing $15,000/month deposits and qualified me for $625,000 loan using non-QM bank statement program.'''
+  testimonial1Name = 'Marcus R. - San Diego, CA'
+  testimonial1Subtitle = 'Self-Employed, Bank Statement Loan, $1.2M Purchase'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''My husband and I bought a $2.3M home with 15% down ($345,000). Our jumbo rate was 6.875% with 742 credit—only 0.25% higher than conforming rates our friends paid. Jumbo loans are more competitive than we expected, especially with strong credit and reserves.'''
+  testimonial2Name = 'Jennifer K. - Austin, TX'
+  testimonial2Subtitle = 'Jumbo Loan, $2.3M Purchase, 742 Credit'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = '''I'm 62 and retired with $3.2M investment portfolio but no W-2 income. My lender qualified me using asset-based mortgage—dividing my $3.2M assets by 84 months to show $38,000/month qualifying income. I purchased $1.1M home with 20% down and 6.50% rate.'''
+  testimonial3Name = 'David L. - Naples, FL'
+  testimonial3Subtitle = 'Retired, Asset-Based Loan, $1.1M Purchase'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''I needed $950,000 loan in high-cost Seattle market. My loan officer explained Seattle conforming limit is $1,089,300—so I qualified for conforming rates instead of jumbo. Understanding local loan limits saved me 0.50% on rate ($400/month). Always check your county limit before assuming you need jumbo.'''
+  testimonial4Name = 'Amanda S. - Seattle, WA'
+  testimonial4Subtitle = 'High-Cost Area Conforming Loan, Not Jumbo'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''I own rental properties generating $8,500/month cash flow but my tax returns show low income due to depreciation. My jumbo specialist used DSCR loan based on rental income—didn't even verify my personal income. I purchased $875,000 investment property with 25% down and 7.25% rate.'''
+  testimonial5Name = 'Ryan T. - Phoenix, AZ'
+  testimonial5Subtitle = 'Investor, DSCR Loan, $875K Investment Property'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '''We had 710 credit and 10% down ($180,000) for $1.8M home. First jumbo lender required 15% down. Second lender accepted 10% down with jumbo PMI at 0.35%—added $525/month but let us buy our dream home now instead of waiting 2 years to save extra $90,000.'''
+  testimonial6Name = 'Linda & Mark H. - Denver, CO'
+  testimonial6Subtitle = 'Jumbo with 10% Down + PMI, $1.8M Purchase'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Browse Lenders® for Non-Conforming Mortgages?'
+  whyChooseSubtitle = 'Jumbo expertise, non-QM guidance, and connections to specialized high-balance lenders'
+  whyChoosePara1 = '''High-balance borrowers need more than basic mortgage advice—they need specialized guidance on jumbo underwriting, alternative documentation, non-QM qualification, and portfolio lending strategies that most conventional loan officers don't understand.'''
+  whyChoosePara2 = '''That's why <strong>Browse Lenders®</strong> was built as a <strong>national non-conforming mortgage education and lender-matching resource</strong> connecting borrowers with jumbo specialists who understand complex financial scenarios.'''
+  
+  whyChooseBox1Title = 'Jumbo & Non-QM Specialists'
+  whyChooseBox1Para = 'Connect with licensed jumbo loan officers who specialize in high-balance financing, alternative documentation, and flexible underwriting for self-employed and high-net-worth borrowers.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with jumbo and non-QM expertise'
+  whyChooseBox1Bullet2 = 'Transparent jumbo rate quotes with complete fee disclosure'
+  whyChooseBox1Bullet3 = 'Bank statement, asset-based, and DSCR loan guidance'
+  
+  whyChooseBox2Title = 'Non-Conforming Loan Education'
+  whyChooseBox2Para = 'Understand how to compare jumbo options beyond just rates—evaluating credit requirements, down payment tiers, reserve requirements, and alternative documentation pathways through comprehensive education.'
+  whyChooseBox2Bullet1 = 'Side-by-side comparisons of jumbo vs. conforming requirements and pricing'
+  whyChooseBox2Bullet2 = 'Clear explanations of bank statement loans, asset-based mortgages, and DSCR financing'
+  whyChooseBox2Bullet3 = 'Education on credit optimization for jumbo qualification and best pricing'
+  
+  whyChooseBox3Title = 'High-Balance Financing Readiness'
+  whyChooseBox3Para = 'Learn what jumbo lenders require before applying—credit score targets, down payment planning, reserve calculations, and documentation for faster approval on high-balance mortgages.'
+  whyChooseBox3Bullet1 = 'Jumbo qualification checklists and readiness resources'
+  whyChooseBox3Bullet2 = 'Down payment, reserve, and debt-to-income calculators for jumbos'
+  whyChooseBox3Bullet3 = 'Understanding how credit scores affect jumbo rates and approval odds'
+  
+  whyChooseCTA = 'Find Jumbo Specialists'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # First-Time Buyers Section
+  firstTimeTitle = 'High-Balance Home Buyers & Jumbo Qualification'
+  firstTimeSubtitle = 'Your step-by-step guide to non-conforming mortgage success'
+  firstTimeImage = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2000&auto=format&fit=crop'
+  firstTimePara1 = '''Jumbo loans finance properties exceeding conforming loan limits—$766,550 in most areas, up to $1.15M in expensive markets. While jumbo mortgages require higher credit (700+ vs. 620+), larger down payments (10-20% vs. 3-5%), and deeper reserves (6-12 months vs. 0-2 months), they enable luxury home purchases and high-cost market access impossible with conforming financing.'''
+  firstTimeHeading1 = 'Higher credit and reserve requirements'
+  firstTimeText1 = '''Jumbo lenders require 700+ credit (720+ for best rates), 10-20% down payment, and 6-12 months reserves (PITI payments in liquid assets) vs. conforming standards. Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">jumbo specialists</a> who understand underwriting nuances.'''
+  firstTimeHeading2 = 'Alternative documentation for self-employed'
+  firstTimeText2 = '''Bank statement loans let self-employed borrowers qualify using 12-24 months deposits instead of tax returns—perfect for business owners with high gross revenue but low taxable income after deductions. Non-QM lenders calculate income from bank deposits.'''
+  firstTimeHeading3 = 'Credit optimization for jumbo pricing'
+  firstTimeText3 = '''Improve your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> from 710 to 740 to save 0.25% on jumbo rate—$300/month on $1.5M loan or $21,600 over 5 years. Small credit improvements yield massive savings on jumbos.'''
+  firstTimeCTA = 'Explore Jumbo Options'
+  firstTimeCTALink = 'https://www.browselenders.com'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® & Jumbo Mortgage Qualification'
+  creditScoreImage = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''Jumbo lenders use your middle credit score—the middle of three bureau scores—to determine qualification and pricing tiers. Jumbo credit requirements are stricter than conforming: 700-719 qualifies but pays premium, 720-739 gets standard jumbo pricing, 740+ accesses best rates (within 0.125-0.25% of conforming). Understanding which jumbo tier you qualify for helps you plan timeline—waiting 3-6 months to improve credit from 715 to 740 can save $30,000-$50,000 in interest over loan life. Middle Credit Score® provides free education on jumbo credit requirements and score improvement strategies.'''
+  creditScoreHeading1 = 'No-cost jumbo credit education'
+  creditScoreText1 = 'Access free, unbiased guidance on how jumbo lenders use your middle credit score to determine eligibility and pricing—without subscriptions or credit pulls.'
+  creditScoreHeading2 = 'Understand jumbo credit tiers before applying'
+  creditScoreText2 = 'Learn how your middle credit score affects jumbo down payment requirements and rates—and discover targeted strategies to improve score before applying for better pricing tiers.'
+  creditScoreHeading3 = 'Financial literacy for high-balance borrowers'
+  creditScoreText3 = 'With proper knowledge, jumbo borrowers can improve eligibility, access better rates, and protect themselves from predatory high-cost lending before committing to multi-million dollar purchases.'
+  creditScoreCTA = 'Check Jumbo Credit Requirements'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers - Non-Conforming Mortgage Education as an Executive Benefit'
+  employersSubtitle = 'Help high-earning employees understand jumbo qualification, non-QM solutions, and alternative documentation through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Forward-thinking companies are expanding executive benefits to include jumbo mortgage education and non-conforming loan guidance for high-earning employees, executives, and stock-compensated professionals. Through Browse Lenders®, employers can offer no-cost access to jumbo specialists, non-QM education, and alternative documentation guidance that helps employees navigate complex high-balance financing scenarios.'''
+  employersBullet1Title = 'No-cost jumbo mortgage benefit'
+  employersBullet1Text = 'Add Browse Lenders® jumbo resources to your executive compensation or financial-wellness program without contracts, fees, or onboarding complexity.'
+  employersBullet2Title = 'Non-QM and alternative documentation tools'
+  employersBullet2Text = 'Employees learn about bank statement loans, asset-based mortgages, and DSCR financing—plus access to credit monitoring to optimize jumbo qualification.'
+  employersBullet3Title = 'Support high-earning employee stability'
+  employersBullet3Text = 'Empower executives and high-income professionals with transparent jumbo guidance that reduces financial stress and supports successful homeownership in expensive markets.'
+  employersCTA = 'Learn About Executive Benefits'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Non-Conforming & Jumbo Loan Insights'
+  blogSubtitle = 'Expert guidance on jumbo qualification, non-QM strategies, alternative documentation, and high-balance financing'
+  blogCTA = 'Read All Articles'
+  blogCTALink = '/blogs/'
+  
+  # Calculators Section
+  calculatorsTitle = 'Jumbo Loan Calculators & Planning Tools'
+  calculatorsSubtitle = 'Estimate jumbo payments, compare down payment scenarios, model reserve requirements, and calculate qualification before applying.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Jumbo & Non-Conforming Questions'
+  faqSubtitle = 'Clear answers about jumbo qualification, non-QM loans, and alternative documentation'
+  
+  faq1Question = 'What is the difference between conforming and non-conforming loans?'
+  faq1Answer = '''Conforming loans follow Fannie Mae/Freddie Mac guidelines with loan limits capped at $766,550 in most areas (2024), higher in expensive counties. Non-conforming (jumbo) loans exceed these limits—financing luxury properties and high-cost markets. Jumbo loans require higher credit (700+ vs. 620+), larger down payments (10-20% vs. 3-5%), and deeper reserves (6-12 months vs. 0-2 months). Check your county limit at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> to determine if you need jumbo financing.'''
+  
+  faq2Question = 'What credit score do I need for a jumbo loan?'
+  faq2Answer = '''Most jumbo lenders require 700+ credit score minimum, with 720-739 accessing standard jumbo pricing and 740+ getting best rates (within 0.125-0.25% of conforming rates). Some portfolio lenders accept 680-699 credit with higher down payment (20-25%) and deeper reserves (12+ months). Every 20-point improvement saves 0.125-0.25% on rate—check your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> to see which jumbo tier you qualify for.'''
+  
+  faq3Question = 'Can self-employed borrowers get jumbo loans?'
+  faq3Answer = '''Yes, self-employed borrowers can qualify for jumbo loans using traditional documentation (2 years tax returns, P&L statements) or alternative documentation (12-24 month bank statements through non-QM lenders). Bank statement loans calculate income from business or personal deposits—ideal for borrowers with high gross revenue but low taxable income after deductions. Rates typically 0.50-1.25% higher than traditional jumbo loans but accessible through specialized <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">non-QM lenders</a>.'''
+  
+  faq4Question = 'How much down payment do I need for a jumbo loan?'
+  faq4Answer = '''Jumbo down payment requirements vary by loan amount: $766,551-$1.5M requires 10-15% down, $1.5M-$2.5M requires 15-20% down, $2.5M+ requires 20-30% down. Some portfolio lenders offer jumbo PMI allowing 10% down on loans up to $2M. Consider using <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> on current property to access equity for jumbo down payment, or explore gift funds and asset liquidation strategies with jumbo specialists.'''
+  
+  # CTA Section
+  ctaTitle = 'Ready to Explore Non-Conforming Mortgage Options?'
+  ctaDescription = 'Connect with experienced jumbo loan officers who specialize in high-balance financing, non-QM solutions, and alternative documentation—get expert support for luxury property purchases and complex income scenarios.'
+  ctaCTA = 'Find Jumbo Specialists'
+  ctaCTALink = 'https://www.browselenders.com'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Non-Conforming Home Loans Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'jumbo loans', 'non-qm', 'luxury homes']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+  
+  # Favicon configuration
+  favicon = '/favicon.png'
+  
+  # PWA Manifest Settings
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    
+    # App Icons
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+# Custom output formats
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Sitemap configuration for better SEO
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+# URL management
+[permalinks]
+  blogs = '/blogs/:slug/'

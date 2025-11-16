@@ -239,8 +239,6 @@ publishDir = 'public/firsttimebuyeroptions'
   
   # CTA Section
   ctaTitle = 'Ready to Start Your First Home Journey?'
-  ctaSubtitle = 'Take the first step toward homeownership with expert guidance'
-  ctaButtonText = 'Get Started Today'
-  ctaButtonLink = 'https://www.browselenders.com'
-  ctaSecondaryText = 'Check Your Credit First'
-  ctaSecondaryLink = 'https://www.middlecreditscore.com'
+  ctaDescription = 'Take the first step toward homeownership with expert guidance—connect with experienced loan officers who specialize in first-time buyer programs and help you navigate the home buying process.'
+  ctaCTA = 'Get Started Today'
+  ctaCTALink = 'https://www.browselenders.com'

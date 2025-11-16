@@ -247,6 +247,6 @@ publishDir = 'public/mtglenders'
   
   # CTA Section
   ctaTitle = 'Ready to Find Your Best Mortgage Lender?'
-  ctaSubtitle = 'Compare rates, programs, and lender reviews to save thousands on your mortgage'
-  ctaButtonText = 'Start Comparing Lenders'
-  ctaButtonLink = 'https://www.browselenders.com'
+  ctaDescription = 'Compare rates, programs, and lender reviews to save thousands on your mortgage—connect with verified lenders who offer competitive rates and transparent service for your home purchase or refinance.'
+  ctaCTA = 'Start Comparing Lenders'
+  ctaCTALink = 'https://www.browselenders.com'

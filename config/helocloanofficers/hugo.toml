@@ -218,5 +218,6 @@ publishDir = 'public/helocloanofficers'
   
   # Contact/CTA Section
   ctaTitle = "Ready to Unlock Your Home's Equity?"
-  ctaSubtitle = 'Connect with trusted HELOC lenders and get competitive rates with transparent terms.'
-  ctaDescription = 'Explore verified lenders and employee financial-wellness tools at BrowseLenders.com—helping America borrow smarter.'
+  ctaDescription = 'Connect with trusted HELOC lenders and get competitive rates with transparent terms—explore verified lenders and employee financial-wellness tools at BrowseLenders.com helping America borrow smarter.'
+  ctaCTA = 'Find HELOC Lenders'
+  ctaCTALink = 'https://www.browselenders.com'

@@ -1,0 +1,286 @@
+baseURL = 'https://purchasemortgageloans.com/'
+languageCode = 'en-us'
+title = 'Purchase Mortgage Loans'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/purchasemortgageloans'
+publishDir = 'public/purchasemortgageloans'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Purchase mortgage loan program comparison and credit preparation strategies for first-time and repeat homebuyers—compare FHA, conventional, VA, and USDA loan options with transparent qualification guidance'
+  author = 'Browse Lenders®'
+  shortName = 'Purchase Mortgage Loans'
+  tagline = 'Compare Purchase Loan Programs & Prepare Your Credit'
+  homepage = 'https://purchasemortgageloans.com/'
+  
+  # SEO Configuration
+  siteName = 'Purchase Mortgage Loans'
+  siteDescription = 'Compare purchase mortgage loan programs including FHA, conventional, VA, and USDA options—understand credit requirements, down payment strategies, and qualification timelines for home purchase financing nationwide.'
+  keywords = ['Purchase Mortgage Loans', 'Home Purchase Loans', 'FHA vs Conventional', 'Credit Preparation', 'Down Payment Programs', 'First-Time Homebuyers', 'VA Loans', 'USDA Loans', 'Browse Lenders®', 'Mortgage Comparison']
+  serviceType = 'Purchase Mortgage Loan Education & Lender Matching'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Purchase Mortgage Loans - Program Comparison & Credit Preparation'
+  heroSubtitle = 'Compare FHA, conventional, VA, and USDA purchase loan programs with transparent credit requirements, down payment options, and qualification timelines—prepare your credit and match with the right lender for your home purchase goals.'
+  heroImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Compare Loan Programs'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Check Credit Readiness'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'Program Comparison. Credit Preparation. Transparent Guidance.'
+  aboutImage = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Purchase Mortgage Loan Program Comparison for Every Buyer'
+  programsSubtitle = 'FHA, conventional, VA, and USDA loans compared side-by-side with credit requirements and down payment options'
+  
+  # Program Cards
+  program1Title = 'FHA Purchase Loans (3.5% Down)'
+  program1Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''FHA loans require 3.5% down with 580+ credit (most lenders require 640+), allow gift funds and down payment assistance, and accept 43-50% DTI ratios. Ideal for first-time buyers with limited savings. Compare FHA specialists through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> who understand credit tier pricing.'''
+  
+  program2Title = 'Conventional Purchase Loans (3-20% Down)'
+  program2Image = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''Conventional loans require 620+ credit, 3-5% down for primary residence purchases, and 43% DTI max. PMI required below 20% down but removable at 80% LTV. Best rates available at 740+ credit. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> determines your rate tier and qualification odds.'''
+  
+  program3Title = 'VA Purchase Loans (0% Down, No PMI)'
+  program3Image = 'https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''VA loans require 0% down payment, no PMI regardless of LTV, and offer competitive rates for veterans, active military, and eligible spouses. Focus on residual income requirements, not DTI ratios. Combine with existing home equity from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> on previous properties to maximize down payment flexibility.'''
+  
+  programsCTA = 'Compare All Purchase Programs'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = '''To explore purchase loan program options and connect with verified loan officers who specialize in FHA vs. conventional comparison, credit preparation, and first-time homebuyer financing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent guidance and expert purchase mortgage support.'''
+  
+  # Education Section
+  educationTitle = 'Purchase Mortgage Qualification & Credit Score Improvement Education'
+  educationSubtitle = 'Master the path from credit improvement to purchase loan qualification with expert guidance and proven strategies.'
+  
+  # Education Cards
+  edu1Title = 'Credit Score Requirements: FHA vs. Conventional Tiers'
+  edu1Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''FHA accepts 640+ credit for 3.5% down (most lenders), while conventional requires 620+ minimum (740+ for best rates). Credit tiers dramatically affect rates: 660→680 saves 0.25% rate, 720→740 saves 0.375% rate. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> tier helps you determine which program offers better pricing and whether to apply now or improve credit first for thousands in savings.'''
+  
+  edu2Title = 'Down Payment Strategies: 3.5% FHA vs. 3-5% Conventional'
+  edu2Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''FHA 3.5% down requires permanent mortgage insurance ($200-$300/month), while conventional 3-5% down includes removable PMI at 80% LTV. On $300K purchase: FHA = $10,500 down + permanent MI, Conventional 5% = $15,000 down + removable PMI. Gift funds, down payment assistance, and strategic cash-out refinance from existing properties through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">equity access</a> all impact optimal strategy.'''
+  
+  edu3Title = 'Debt-to-Income Ratios: 43-50% DTI Limits by Program'
+  edu3Image = 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''FHA allows up to 50% debt-to-income ratio with compensating factors (reserves, higher credit, stable employment), while conventional caps at 43-45% DTI typically. DTI includes mortgage payment + property taxes + insurance + car loans + student loans + credit cards + other monthly debts. Calculate your DTI before applying to understand which purchase programs accept your debt load through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders specialists</a>.'''
+  
+  edu4Title = 'Program Selection: When FHA Beats Conventional (and Vice Versa)'
+  edu4Image = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''FHA wins when: credit 620-680, limited savings (3.5% down), high DTI (45-50%), need gift funds or DPA grants. Conventional wins when: credit 680+, have 5-10% saved, plan to sell/refinance within 5-7 years (PMI removable), DTI under 43%. Military should always compare VA 0% down vs. conventional. Check your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> to determine which program tier you qualify for today.'''
+  
+  educationCTA = 'Learn Credit Preparation Strategies'
+  educationCTALink = 'https://www.middlecreditscore.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center - Understanding Purchase Loan Program Selection'
+  learningSubtitle = 'Knowledge builds confidence in the homebuying journey.'
+  learningImage = 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Purchase loan program selection involves understanding multiple factors: down payment requirements (3.5% FHA vs. 3-5% conventional vs. 0% VA), mortgage insurance costs and removal options, credit score tiers affecting rates, debt-to-income limits by program, and total cost analysis over your expected holding period. While conventional loans allow PMI removal at 80% LTV, FHA mortgage insurance remains permanent for most purchases—making 5-year cost comparison critical before choosing programs.'''
+  learningBullet1 = '''Compare purchase loan programs through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with full transparency on rates, fees, and qualification requirements.'''
+  learningBullet2 = 'Your credit score affects both approval odds and pricing—improving from 660 to 680 can save $5,000+ over 5 years on typical purchase loan.'
+  learningBullet3 = '''Learn how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects FHA vs. conventional qualification and interest rate pricing across credit tiers.'''
+  learningBullet4 = '''Understand when to buy now vs. improve credit first, and how to plan future refinance to eliminate PMI through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> or rate-and-term refinance strategies.'''
+  learningPara2 = 'Our goal is to replace confusion with clarity—helping every buyer understand purchase loan qualification, program comparison, credit improvement timing, and long-term cost implications.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore Browse Lenders® Resources</a> for purchase mortgage calculators, credit improvement tools, and expert guidance on program selection.'''
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Purchase Mortgage Borrowers Are Saying'
+  testimonialsSubtitle = 'Real stories from first-time buyers and credit-conscious borrowers'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I almost applied for FHA at 658 credit because I thought 3.5% down was my only option. My loan officer showed me conventional 3% down would qualify at 660+ and let me remove PMI later. I spent 3 months improving my score to 667, got approved conventional, and I'll save $8,000 over 5 years by removing PMI at 80% LTV.'''
+  testimonial1Name = 'Jessica M. - Denver, CO'
+  testimonial1Subtitle = 'First-Time Buyer, 658→667 Credit, Conventional 3% Down'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''My wife and I compared FHA vs. conventional for our $345,000 purchase. We had 672 credit and $20,000 saved. FHA 3.5% down meant $12,075 down + permanent MI at $240/month. Conventional 5% down was $17,250 + removable PMI at $180/month. We chose conventional and will cancel PMI in 4 years—saves us $15,000 total.'''
+  testimonial2Name = 'David & Sarah K. - Charlotte, NC'
+  testimonial2Subtitle = '672 Credit, Conventional 5% Down, $345K Purchase'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = '''I'm a veteran with 688 credit and qualified for both VA 0% down and conventional 5% down. VA meant no PMI and $0 down payment but required VA funding fee. My loan officer ran both scenarios—VA saved me $22,000 upfront and $185/month with no mortgage insurance. The funding fee was worth it for my situation.'''
+  testimonial3Name = 'Marcus T. - San Antonio, TX'
+  testimonial3Subtitle = 'Veteran, 688 Credit, VA 0% Down'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''My parents gifted me $12,000 for down payment, and my state offered a $10,000 DPA grant for first-time buyers. I only needed $3,500 out of pocket for my $280,000 FHA purchase with 3.5% down. My loan officer helped me document the gift funds properly and connect with the DPA program—I own my home at 29 years old.'''
+  testimonial4Name = 'Ashley R. - Portland, OR'
+  testimonial4Subtitle = 'First-Time Buyer, Gift Funds + DPA Grant, 651 Credit'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''I had 48% debt-to-income ratio with student loans and car payment. Conventional loans rejected me at 43% DTI limit, but FHA approved me at 48% DTI because I had 682 credit score, 6 months reserves, and 4 years stable employment as compensating factors. FHA understood my full financial picture beyond just DTI numbers.'''
+  testimonial5Name = 'Brandon L. - Austin, TX'
+  testimonial5Subtitle = '48% DTI with Student Loans, 682 Credit, FHA 3.5% Down'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '''I was ready to buy at 718 credit with $25,000 saved. My loan officer suggested waiting 4 months to improve my score to 742 to hit the best conventional tier. I paid off two credit cards and disputed an error. My rate dropped from 6.50% to 5.875%—saving me $115/month or $6,900 over 5 years on my $320,000 purchase.'''
+  testimonial6Name = 'Michael C. - Raleigh, NC'
+  testimonial6Subtitle = '718→742 Credit in 4 Months, Conventional 10% Down'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Purchase Mortgage Program Comparison Matters'
+  whyChooseSubtitle = 'Most buyers focus only on rate—but program structure, credit requirements, and down payment flexibility determine approval odds and total cost.'
+  
+  whyPoint1Title = 'Different programs fit different credit and savings profiles'
+  whyPoint1Description = '''FHA works for 640+ credit with 3.5% down but requires permanent mortgage insurance. Conventional requires 620+ credit with 3-20% down but allows PMI removal at 80% LTV. VA requires 0% down with no PMI for eligible military. Choosing the wrong program costs $5,000-$15,000 in unnecessary fees or higher rates over 5 years.'''
+  whyPoint1Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=600&auto=format&fit=crop'
+  
+  whyPoint2Title = 'Credit improvement timing affects qualification and pricing'
+  whyPoint2Description = '''A borrower with 662 credit applying for FHA today might get 6.75% rate. The same borrower improving to 682 credit in 3 months might get 6.25% rate—saving $85/month or $5,100 over 5 years on a $300,000 loan. Understanding credit timelines prevents rushing into suboptimal rates through professional guidance at Browse Lenders.'''
+  whyPoint2Image = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=600&auto=format&fit=crop'
+  
+  whyPoint3Title = 'Down payment strategy impacts long-term affordability'
+  whyPoint3Description = '''3.5% FHA down on $300,000 ($10,500) includes permanent MI costing $250/month. 5% conventional down ($15,000) includes removable PMI at $150/month until 80% LTV. 20% conventional down ($60,000) eliminates MI but may require liquidating retirement savings or using cash-out refinance from previous property. Right strategy depends on your timeline, savings, and goals.'''
+  whyPoint3Image = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=600&auto=format&fit=crop'
+  
+  whyChooseCTA = 'Compare Purchase Loan Programs'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # First-Time Buyer Section
+  firstTimeTitle = 'First-Time Homebuyer Purchase Loan Guidance'
+  firstTimeSubtitle = 'Navigating down payment requirements, credit preparation, and program selection for your first home purchase'
+  firstTimeImage = 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=2000&auto=format&fit=crop'
+  firstTimePara1 = '''First-time homebuyers face unique challenges: limited savings for down payment, uncertainty about credit requirements, confusion over FHA vs. conventional options, and stress about approval odds. Understanding which purchase loan program matches your credit score, down payment savings, and debt-to-income ratio is the first step toward successful homeownership—and prevents costly mistakes like applying for the wrong loan type or rushing into purchase before credit improvement.'''
+  firstTimeHeading1 = 'Compare FHA 3.5% down vs. conventional 3% down'
+  firstTimeText1 = '''FHA allows 3.5% down with 640+ credit, accepts gift funds and down payment assistance, but requires permanent mortgage insurance ($200-$300/month). Conventional allows 3% down with 620+ credit but requires higher income documentation and credit standards—though PMI is removable at 80% LTV. Right choice depends on your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> and savings timeline.'''
+  firstTimeHeading2 = 'Improve credit 20-60 points before applying saves thousands'
+  firstTimeText2 = '''First-time buyers often discover their credit score is 10-30 points below optimal tier pricing during pre-approval. Waiting 2-4 months to improve credit from 655 to 680, or 715 to 740, can reduce interest rate 0.25-0.5%—saving $50-$100/month or $3,000-$6,000 over 5 years on typical $300,000 purchase loan.'''
+  firstTimeHeading3 = 'Match with lenders who specialize in first-time buyers'
+  firstTimeText3 = '''Not all lenders understand first-time buyer challenges like gift fund documentation, down payment assistance programs, or credit improvement strategies. Connect with specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> who guide first-time buyers through credit preparation, program selection, and approval process with transparency at every step.'''
+  firstTimeCTA = 'Start Your First-Time Buyer Journey'
+  firstTimeCTALink = 'https://www.browselenders.com'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Purchase Loan Qualification'
+  creditScoreImage = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''Purchase mortgage lenders use your middle credit score—the middle of your three bureau scores—to determine loan qualification, program eligibility, and interest rate pricing. Understanding which credit tier you qualify for (FHA: 640-679, 680-719, 720+; Conventional: 620-639, 640-679, 680-719, 720-739, 740+) helps you plan your homebuying timeline and avoid applying before credit improvement. Middle Credit Score® provides free education on credit-readiness, purchase loan qualification tiers, and loan-level price adjustments that impact your final interest rate and approval odds.'''
+  creditScoreHeading1 = 'No-cost credit education without subscriptions'
+  creditScoreText1 = 'Access free, unbiased guidance on how purchase mortgage lenders use your middle credit score to determine eligibility and pricing—without credit pulls, subscriptions, or promotional upsells that inflate costs.'
+  creditScoreHeading2 = 'Understand purchase loan credit tiers before applying'
+  creditScoreText2 = 'Learn how your middle credit score affects FHA vs. conventional qualification, down payment requirements, and interest rate pricing—and discover targeted strategies to improve your score before applying for better qualification odds and lower rates.'
+  creditScoreHeading3 = 'Financial literacy builds homeownership power'
+  creditScoreText3 = 'With the right knowledge, buyers can improve eligibility, access better purchase loan programs, and protect themselves from predatory lending or high-cost mortgage insurance before committing to 30-year obligations on their largest investment.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers - Purchase Mortgage Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand purchase loan options, credit preparation, and homeownership readiness through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''Forward-thinking HR departments are expanding financial wellness programs by including homeownership education and purchase mortgage guidance. Through Browse Lenders®, employers can offer no-cost access to purchase loan program comparison, credit improvement resources, and verified loan officers who help employees understand FHA vs. conventional options, down payment strategies, and qualification timelines before applying—reducing financial stress and supporting long-term employee stability through successful homeownership.'''
+  employersBullet1Title = 'No-cost purchase loan education'
+  employersBullet1Text = 'Add Browse Lenders® purchase mortgage resources to your financial-wellness program without contracts, fees, or onboarding complexity—employees access program comparison tools and credit education instantly.'
+  employersBullet2Title = 'Credit improvement tools for homebuying readiness'
+  employersBullet2Text = 'Employees learn how FHA vs. conventional credit requirements work, access credit monitoring subscriptions to track improvement toward purchase loan qualification, and receive guidance on optimal timing for applications based on credit tier pricing.'
+  employersBullet3Title = 'Support homeownership and employee retention'
+  employersBullet3Text = 'Empower your workforce with transparent purchase mortgage guidance and credit education that reduces financial stress, supports successful homeownership, and improves long-term employee stability and retention through professional education partnerships.'
+  employersCTA = 'Learn About Employer Benefits'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Purchase Mortgage Insights'
+  blogSubtitle = 'Expert guidance on purchase loan programs, credit preparation, and homebuying strategies'
+  blogCTA = 'Read All Articles'
+  blogCTALink = '/blogs/'
+  
+  # Calculators Section
+  calculatorsTitle = 'Purchase Mortgage Calculators & Planning Tools'
+  calculatorsSubtitle = 'Compare FHA vs. conventional payments, estimate down payment needs, model credit improvement timelines, and calculate DTI ratios before applying for purchase loans.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Purchase Mortgage Questions'
+  faqSubtitle = 'Clear answers about purchase loan programs, credit requirements, and homebuying readiness'
+  
+  faq1Question = 'Should I choose FHA or conventional for my first home purchase?'
+  faq1Answer = '''FHA works best if you have 640-679 credit, limited savings (3.5% down = $10,500 on $300,000), or need gift funds/down payment assistance—but includes permanent mortgage insurance ($200-$300/month). Conventional works best if you have 680+ credit, 5-10% down savings, and can document stable income—PMI is removable at 80% LTV saving $150-$200/month long-term. Check your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> first to see which programs you qualify for, then compare total costs through lenders at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'''
+  
+  faq2Question = 'How much does credit score affect my purchase loan rate and approval?'
+  faq2Answer = '''Purchase mortgage rates vary by 0.25-0.75% across credit tiers on same loan. Example on $300,000 conventional purchase: 640 credit = 7.25% rate ($2,050/month), 680 credit = 6.75% rate ($1,945/month), 740 credit = 6.25% rate ($1,847/month). Over 5 years, improving 640→680 saves $6,300; improving 680→740 saves additional $5,880. FHA is more forgiving below 680 but charges higher mortgage insurance. Understanding your middle score determines which program offers better total cost.'''
+  
+  faq3Question = 'Can I use gift funds or down payment assistance for my purchase?'
+  faq3Answer = '''Yes. FHA allows 100% of down payment from gift funds (parents, family, employers) plus down payment assistance programs offering $5,000-$15,000 grants. Conventional allows gift funds covering entire down payment if you qualify otherwise. Many states offer first-time buyer DPA programs—some buyers purchase with $1,000-$3,000 personal savings. Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">purchase loan specialists</a> who know local DPA programs and gift fund documentation requirements.'''
+  
+  faq4Question = 'How long does it take to improve my credit for better purchase loan rates?'
+  faq4Answer = '''Most borrowers can improve 20-40 points in 2-4 months through targeted strategies: pay credit cards below 30% utilization (10-30 point boost in 30-60 days), dispute errors on all three bureaus (potential 10-40 point boost in 45-90 days), avoid new credit inquiries (prevents 5-10 point drops), and become authorized user on established account (potential 15-50 point boost in 60-90 days). If you are at 655 credit, waiting 3 months to reach 680 saves $50-$100/month or $3,000-$6,000 over 5 years—making delay financially worthwhile. Use <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Middle Credit Score</a> education to track your progress and optimal application timing.'''
+  
+  # CTA Section
+  ctaTitle = 'Ready to Compare Purchase Mortgage Loan Programs?'
+  ctaDescription = 'Connect with purchase loan specialists who help you compare FHA, conventional, VA, and USDA options—understand credit requirements, prepare your finances, and match with the right lender for your home purchase goals with transparent guidance at every step.'
+  ctaCTA = 'Compare Purchase Programs'
+  ctaCTALink = 'https://www.browselenders.com'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Purchase Mortgage Loans Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+
+# Navigation Menu
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  name = 'Programs'
+  url = '/#programs'
+  weight = 2
+
+[[menu.main]]
+  name = 'Blog'
+  url = '/blogs/'
+  weight = 3
+
+[[menu.main]]
+  name = 'Contact'
+  url = '/#contact'
+  weight = 4

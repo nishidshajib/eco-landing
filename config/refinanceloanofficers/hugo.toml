@@ -242,6 +242,6 @@ publishDir = 'public/refinanceloanofficers'
   
   # CTA Section
   ctaTitle = 'Ready to Optimize Your Mortgage Through Strategic Refinancing?'
-  ctaSubtitle = 'Connect with refinance specialists who help you lower rates, access equity, or eliminate mortgage insurance'
-  ctaButtonText = 'Start Your Refinance Analysis'
-  ctaButtonLink = 'https://www.cash-outrefinance.com'
+  ctaDescription = 'Connect with refinance specialists who help you lower rates, access equity, or eliminate mortgage insurance—get expert analysis to determine if refinancing makes financial sense for your situation.'
+  ctaCTA = 'Start Your Refinance Analysis'
+  ctaCTALink = 'https://www.cash-outrefinance.com'

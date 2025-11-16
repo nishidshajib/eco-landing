@@ -250,8 +250,9 @@ path = 'page'
   
   # Contact/CTA Section
   ctaTitle = "Ready to Work with a Licensed Mortgage Broker?"
-  ctaSubtitle = 'Connect with experienced brokers who compare lenders and negotiate on your behalf'
-  ctaDescription = 'Explore verified conventional mortgage brokers through Browse Lenders® — helping American homebuyers secure competitive rates through professional broker services.'
+  ctaDescription = 'Connect with experienced brokers who compare lenders and negotiate on your behalf—explore verified conventional mortgage brokers through Browse Lenders® helping American homebuyers secure competitive rates.'
+  ctaCTA = 'Find Mortgage Brokers'
+  ctaCTALink = 'https://www.browselenders.com'
   
   # Theme configuration
   [params.theme]

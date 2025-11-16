@@ -266,12 +266,9 @@ publishDir = 'public/conformingmortgageloans'
   
   # CTA Section
   ctaTitle = 'Ready to Explore Conforming Loan Options?'
-  ctaSubtitle = 'Connect with experienced lenders who specialize in conforming mortgages'
-  ctaDescription = 'Explore verified conforming mortgage lenders through Browse Lenders® — helping American homebuyers secure competitive rates through professional lending services.'
-  ctaPrimary = 'Check Your Credit Score'
-  ctaPrimaryLink = 'https://www.middlecreditscore.com'
-  ctaSecondary = 'Browse Verified Lenders'
-  ctaSecondaryLink = 'https://www.browselenders.com'
+  ctaDescription = 'Connect with experienced lenders who specialize in conforming mortgages—explore verified conforming mortgage lenders through Browse Lenders® helping American homebuyers secure competitive rates.'
+  ctaCTA = 'Browse Verified Lenders'
+  ctaCTALink = 'https://www.browselenders.com'
   
   # Theme configuration
   [params.theme]

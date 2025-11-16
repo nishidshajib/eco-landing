@@ -247,6 +247,6 @@ publishDir = 'public/veteransloanofficers'
   
   # CTA Section
   ctaTitle = 'Ready to Connect With VA Loan Specialists?'
-  ctaSubtitle = 'Find VA loan officers who understand residual income, entitlement, and military benefits'
-  ctaButtonText = 'Find VA Loan Officers'
-  ctaButtonLink = 'https://www.middlecreditscore.com'
+  ctaDescription = 'Find VA loan officers who understand residual income, entitlement, and military benefits—get expert guidance on VA loans for service members, veterans, and eligible spouses.'
+  ctaCTA = 'Find VA Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com'

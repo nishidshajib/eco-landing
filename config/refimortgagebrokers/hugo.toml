@@ -238,6 +238,6 @@ publishDir = 'public/refimortgagebrokers'
   
   # CTA Section
   ctaTitle = 'Ready to Shop Refinance Rates with Expert Brokers?'
-  ctaSubtitle = 'Compare wholesale lender rates and secure the lowest cost refinance for your situation'
-  ctaButtonText = 'Start Rate Shopping'
-  ctaButtonLink = 'https://www.browselenders.com'
+  ctaDescription = 'Compare wholesale lender rates and secure the lowest cost refinance for your situation—connect with mortgage brokers who specialize in rate shopping and negotiating for your best deal.'
+  ctaCTA = 'Start Rate Shopping'
+  ctaCTALink = 'https://www.browselenders.com'

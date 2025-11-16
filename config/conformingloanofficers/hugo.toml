@@ -250,8 +250,9 @@ path = 'page'
   
   # Contact/CTA Section
   ctaTitle = 'Ready to Connect with a Conforming Loan Officer?'
-  ctaSubtitle = 'Get expert guidance on FHFA limits, rate transparency, and conforming mortgage options.'
-  ctaDescription = 'Explore verified conforming loan officers at BrowseLenders.com—helping America understand mortgage limits and rate structures with transparency.'
+  ctaDescription = 'Get expert guidance on FHFA limits, rate transparency, and conforming mortgage options—explore verified conforming loan officers helping American families understand mortgage limits and rate structures.'
+  ctaCTA = 'Find Conforming Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com'
   
   # Theme configuration
   [params.theme]

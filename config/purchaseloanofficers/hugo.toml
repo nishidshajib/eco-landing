@@ -250,8 +250,9 @@ path = 'page'
   
   # Contact/CTA Section
   ctaTitle = 'Ready to Connect with a Purchase Loan Officer?'
-  ctaSubtitle = 'Get expert guidance on home-buying financing, pre-approval, and down payment strategies.'
-  ctaDescription = 'Explore verified purchase loan officers at BrowseLenders.com—helping America achieve homeownership with transparency and education at every step.'
+  ctaDescription = 'Get expert guidance on home-buying financing, pre-approval, and down payment strategies—explore verified purchase loan officers at BrowseLenders.com helping America achieve homeownership.'
+  ctaCTA = 'Find Purchase Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com'
   
   # Theme configuration
   [params.theme]
