@@ -1,0 +1,294 @@
+baseURL = 'https://cashoutrefinancemortgages.com/'
+languageCode = 'en-us'
+title = 'Cash-Out Refinance Mortgages'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/cashoutrefinancemortgages'
+publishDir = 'public/cashoutrefinancemortgages'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Cash-out refinance mortgage strategy and home equity awareness for homeowners—understand equity access, rate analysis, debt consolidation, and credit preparation for cash-out refinancing'
+  author = 'Cash-Out Refinance®'
+  shortName = 'Cash-Out Refinance Mortgages'
+  tagline = 'Access Home Equity & Build Financial Flexibility'
+  homepage = 'https://cashoutrefinancemortgages.com/'
+  
+  # SEO Configuration
+  siteName = 'Cash-Out Refinance Mortgages'
+  siteDescription = 'Cash-out refinance mortgage education including equity access strategies, rate-and-term comparison, debt consolidation analysis, credit preparation, and home equity awareness for strategic refinancing nationwide.'
+  keywords = ['Cash-Out Refinance', 'Home Equity Access', 'Refinance Strategy', 'Debt Consolidation', 'Credit Preparation', 'Equity Awareness', 'Rate Analysis', 'Cash-Out Refinance®', 'Browse Lenders®', 'Middle Credit Score®']
+  serviceType = 'Cash-Out Refinance Education & Lender Matching'
+  
+  # Social Media
+  twitterHandle = '@CashOutRefi'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Cash-Out Refinance Mortgages - Equity Access & Strategic Refinancing'
+  heroSubtitle = 'Understand cash-out refinance strategy, home equity awareness, rate analysis, and credit preparation—access your home equity for debt consolidation, home improvements, or investment opportunities with transparent guidance.'
+  heroImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Explore Cash-Out Options'
+  heroCTA1Link = 'https://www.cash-outrefinance.com'
+  heroCTA2Text = 'Check Credit Readiness'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'Equity Access. Strategic Refinancing. Credit Preparation.'
+  aboutImage = 'https://images.unsplash.com/photo-1565402170291-8491f14678db?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Cash-Out Refinance Options for Every Homeowner'
+  programsSubtitle = 'Conventional, FHA, VA, and jumbo cash-out refinance programs compared with equity requirements and credit tiers'
+  
+  # Program Cards
+  program1Title = 'Conventional Cash-Out Refinance (Up to 80% LTV)'
+  program1Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''Conventional cash-out allows refinancing up to 80% loan-to-value, requiring 620+ credit (720+ for best rates) and documenting how you will use cash proceeds. Ideal for debt consolidation, home improvements, or investment. Maximum equity access with competitive rates through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders specialists</a> who understand cash-out qualification.'''
+  
+  program2Title = 'FHA Cash-Out Refinance (Up to 80% LTV)'
+  program2Image = 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''FHA cash-out refinance allows up to 80% LTV with 580+ credit (most lenders require 620+), accepts higher debt-to-income ratios, and charges mortgage insurance regardless of equity. Best for borrowers with middle credit scores who need flexible qualification. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> determines FHA vs. conventional cash-out pricing.'''
+  
+  program3Title = 'VA Cash-Out Refinance (Up to 90-100% LTV)'
+  program3Image = 'https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''VA cash-out refinance offers up to 90-100% loan-to-value for eligible veterans and military, no mortgage insurance, and competitive rates with flexible credit standards. Access maximum equity with lower costs than conventional or FHA. Learn strategic equity access through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance education</a> before applying.'''
+  
+  programsCTA = 'Compare Cash-Out Options'
+  programsCTALink = 'https://www.cash-outrefinance.com'
+  programsClosingText = '''To explore cash-out refinance options and connect with verified loan officers who specialize in equity access strategies, debt consolidation analysis, and credit preparation for cash-out refinancing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent guidance and expert cash-out refinance support.'''
+  
+  # Education Section
+  educationTitle = 'Cash-Out Refinance Strategy & Home Equity Education'
+  educationSubtitle = 'Master equity access strategies, rate analysis, and credit preparation for successful cash-out refinancing.'
+  
+  # Education Cards
+  edu1Title = 'Understanding Home Equity & Loan-to-Value Ratios'
+  edu1Image = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''Home equity = current property value minus mortgage balance. LTV = loan amount ÷ property value. Conventional cash-out allows 80% LTV, FHA allows 80% LTV, VA allows 90-100% LTV. Example: $400K home with $200K mortgage = $200K equity (50% LTV). Cash-out to 80% LTV = $320K new loan = $120K cash proceeds. Understanding your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> affects rates on equity access.'''
+  
+  edu2Title = 'Cash-Out vs. Rate-and-Term Refinance Comparison'
+  edu2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''Rate-and-term refinance changes rate/term only with minimal cash back (closing costs). Cash-out refinance increases loan balance to access equity with rates 0.25-0.50% higher than rate-and-term. Cash-out makes sense when equity access value exceeds higher rate cost over 5+ years—use cash for debt consolidation, home improvements, or investments. Calculate scenarios at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> before deciding.'''
+  
+  edu3Title = 'Credit Score Impact on Cash-Out Refinance Rates'
+  edu3Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''Cash-out refinance rates increase 0.125-0.375% vs. rate-and-term refinance, and credit tiers add another 0.25-0.75% variation. Example: 680 credit = 7.00% cash-out rate, 720 credit = 6.625% cash-out rate, 760 credit = 6.25% cash-out rate. Over 5 years on $300K loan, improving 680→720 saves $6,750. Compare cash-out lenders through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> to see credit tier pricing.'''
+  
+  edu4Title = 'Debt Consolidation Math: When Cash-Out Saves Money'
+  edu4Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''Cash-out refinance makes financial sense when consolidating high-interest debt (credit cards 18-24%, auto loans 6-8%, student loans 5-7%) into mortgage rate (6-7%). Example: $50K credit card debt at 20% = $10K/year interest. Cash-out at 7% = $3,500/year interest = $6,500 annual savings. But extending 5-year debt into 30-year mortgage increases total interest—calculate breakeven timeline at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance calculators</a>.'''
+  
+  educationCTA = 'Learn Cash-Out Strategies'
+  educationCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center - Strategic Home Equity Access'
+  learningSubtitle = 'Knowledge builds confidence in cash-out refinance decisions.'
+  learningImage = 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Cash-out refinance involves analyzing your equity position, rate differential, intended use of proceeds, and credit score impact on pricing. While accessing equity provides financial flexibility, it requires careful evaluation of long-term costs versus immediate benefits.'''
+  learningBullet1 = '''Compare options through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with transparent rate quotes and qualification guidance.'''
+  learningBullet2 = 'Credit scores affect cash-out rates significantly—improving 680 to 720 can save $6,000+ over 5 years.'
+  learningBullet3 = '''Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> determines rate pricing and maximum LTV across all programs.'''
+  learningBullet4 = '''Learn when cash-out beats alternatives like HELOCs at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance®</a>.'''
+  learningPara2 = 'We help homeowners understand equity access strategies, rate comparisons, credit preparation, and financial implications before refinancing.'
+  learningPara3 = '''<a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Explore Cash-Out Refinance® Resources</a> for calculators and expert guidance.'''
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Cash-Out Refinance Borrowers Are Saying'
+  testimonialsSubtitle = 'Real stories from homeowners who strategically accessed equity'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://randomuser.me/api/portraits/men/32.jpg'
+  testimonial1Text = '''I had $45,000 in credit card debt at 22% average interest costing me $9,900/year. My home had $180,000 equity. I did cash-out refinance at 6.875% to pay off cards—now paying $3,094/year interest on that $45K = $6,806 annual savings. My loan officer showed me the 7-year breakeven analysis and it made financial sense.'''
+  testimonial1Name = 'Robert M. - Phoenix, AZ'
+  testimonial1Subtitle = '695 Credit, Conventional Cash-Out, $45K Debt Consolidation'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://randomuser.me/api/portraits/women/44.jpg'
+  testimonial2Text = '''We needed $85,000 for home addition and had $220,000 equity in our home. HELOC rate was 9.5%, home equity loan was 8.75%, but cash-out refinance at 6.50% made more sense. Yes, we extended our mortgage, but we saved 2-3% on the $85K we borrowed. My loan officer calculated total costs over 10 years—cash-out won by $18,000.'''
+  testimonial2Name = 'Jennifer & Tom K. - Denver, CO'
+  testimonial2Subtitle = '728 Credit, Conventional Cash-Out, $85K Home Improvement'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://randomuser.me/api/portraits/men/52.jpg'
+  testimonial3Text = '''I am a veteran with $150,000 equity and qualified for VA cash-out refinance at 90% LTV with no mortgage insurance. I accessed $95,000 at 6.25% rate to pay off my student loans (6.8%) and car loan (7.2%). The VA funding fee was worth it for the lower rate and consolidated payment—saving me $425/month total.'''
+  testimonial3Name = 'Marcus T. - San Antonio, TX'
+  testimonial3Subtitle = 'Veteran, 712 Credit, VA Cash-Out to 90% LTV'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://randomuser.me/api/portraits/women/65.jpg'
+  testimonial4Text = '''I almost did cash-out refinance at 672 credit but my loan officer suggested waiting 4 months to improve my score to 705. My rate dropped from 7.375% to 6.75% on $320,000 cash-out refinance—saving me $133/month or $7,980 over 5 years. The 4-month wait was absolutely worth it for that rate difference.'''
+  testimonial4Name = 'Angela R. - Charlotte, NC'
+  testimonial4Subtitle = '672→705 Credit in 4 Months, $62K Cash-Out for Investment Property'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://randomuser.me/api/portraits/men/67.jpg'
+  testimonial5Text = '''My wife and I compared cash-out refinance vs. HELOC for $70,000 we needed for business investment. HELOC rate was prime + 2% (currently 10.5%), cash-out refinance was 6.875% fixed. Even though cash-out increased our mortgage by $70K, the 3.625% rate difference saved us $2,538/year—worth it for our 10-year business plan.'''
+  testimonial5Name = 'David & Lisa P. - Austin, TX'
+  testimonial5Subtitle = '698 Credit, Cash-Out vs. HELOC Analysis, $70K Business Investment'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://randomuser.me/api/portraits/men/22.jpg'
+  testimonial6Text = '''I inherited my parents' home with $80,000 remaining mortgage and $350,000 value. I did cash-out refinance to 75% LTV, got $182,500 cash out at 6.50% rate, and used it for down payment on investment property generating $2,400/month rental income. My loan officer helped me see the investment arbitrage opportunity.'''
+  testimonial6Name = 'James C. - Portland, OR'
+  testimonial6Subtitle = '735 Credit, Strategic Cash-Out for Investment Property Purchase'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Cash-Out Refinance® for Home Equity Access?'
+  whyChooseSubtitle = 'Strategic equity access guidance, transparent rate analysis, and expert refinance education'
+  whyChoosePara1 = '''Homeowners considering cash-out refinance need more than rates—they need to understand equity access limits, cash-out vs. rate-and-term cost comparison, debt consolidation math, and credit score impact on pricing before increasing their mortgage balance.'''
+  whyChoosePara2 = '''<strong>Cash-Out Refinance®</strong> provides <strong>strategic home equity education and transparent refinance guidance</strong> for equity access decisions and financial flexibility.'''
+  
+  whyChooseBox1Title = 'Verified Cash-Out Refinance Specialists'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in cash-out refinance strategy, equity access analysis, debt consolidation math, and credit preparation for optimal refinancing.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with cash-out refinance expertise across all loan types'
+  whyChooseBox1Bullet2 = 'Transparent rate quotes comparing cash-out vs. rate-and-term vs. HELOC options'
+  whyChooseBox1Bullet3 = 'Strategic equity access guidance from application through closing'
+  
+  whyChooseBox2Title = 'Home Equity Awareness Education'
+  whyChooseBox2Para = 'Understand how to analyze cash-out refinance—beyond just rates—by evaluating equity position, LTV requirements, intended use of proceeds, and total cost comparison over holding period.'
+  whyChooseBox2Bullet1 = 'Side-by-side comparisons of conventional, FHA, and VA cash-out options'
+  whyChooseBox2Bullet2 = 'Clear explanations of debt consolidation math, breakeven analysis, and long-term costs'
+  whyChooseBox2Bullet3 = 'Education on credit improvement timing and rate tier optimization before refinancing'
+  
+  whyChooseBox3Title = 'Strategic Refinance Decision Support'
+  whyChooseBox3Para = 'Learn when cash-out refinance makes financial sense vs. alternatives—equity access calculators, debt consolidation analysis, and credit readiness assessment before applying.'
+  whyChooseBox3Bullet1 = 'Cash-out refinance calculators showing equity access, payment changes, and total costs'
+  whyChooseBox3Bullet2 = 'Debt consolidation math comparing high-interest debt vs. mortgage rate arbitrage'
+  whyChooseBox3Bullet3 = 'Understanding how credit scores affect cash-out rates and maximum LTV ratios'
+  
+  whyChooseCTA = 'Explore Cash-Out Options'
+  whyChooseCTALink = 'https://www.cash-outrefinance.com'
+  
+  # First-Time Buyer Section
+  firstTimeTitle = 'Cash-Out Refinance for First-Time Equity Access'
+  firstTimeSubtitle = 'Understanding equity building, LTV requirements, and strategic cash-out timing for newer homeowners'
+  firstTimeImage = 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=2000&auto=format&fit=crop'
+  firstTimePara1 = '''First-time homeowners considering cash-out refinance face unique challenges: understanding how much equity they have built through principal paydown and appreciation, navigating 80% LTV limits that require 20%+ equity, analyzing whether rate increase offsets equity access benefits, and avoiding premature cash-out that extends repayment timeline unnecessarily. Knowing when your home equity makes cash-out refinance viable—and when to wait for more equity building—prevents costly mistakes and optimizes long-term financial outcomes.'''
+  firstTimeHeading1 = 'Building equity through principal paydown and appreciation'
+  firstTimeText1 = '''First 5 years of 30-year mortgage: approximately 20-30% of payment goes to principal, building equity slowly. Home appreciation (3-7% annually depending on market) accelerates equity building faster than principal paydown. Verify your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> before refinancing to ensure optimal cash-out rates when you reach 20%+ equity.'''
+  firstTimeHeading2 = 'Understanding 80% LTV limits and cash-out availability'
+  firstTimeText2 = '''Conventional cash-out requires 20%+ equity to access cash (80% LTV limit). Example: $300K home with $250K mortgage = $50K equity (17% equity) = not eligible for conventional cash-out yet. FHA allows 80% LTV cash-out after 12+ months ownership. Calculate your equity position before applying.'''
+  firstTimeHeading3 = 'When to wait vs. when to access equity strategically'
+  firstTimeText3 = '''Cash-out refinance makes sense when: debt consolidation saves significant interest, home improvement increases property value more than cash-out cost, or investment opportunity generates returns exceeding mortgage rate. Cash-out does NOT make sense for: consumer purchases, vacations, or non-strategic spending. Connect with specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for equity access timing guidance.'''
+  firstTimeCTA = 'Learn Equity Access Strategies'
+  firstTimeCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Cash-Out Refinance Rates'
+  creditScoreImage = 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''Cash-out refinance lenders use your middle credit score to determine rate pricing and maximum LTV. Understanding credit tiers (680-719 = better pricing, 720+ = optimal rates) helps you plan refinancing timing and avoid applying before credit improvement that could save thousands.'''
+  creditScoreHeading1 = 'Credit education for refinancing readiness'
+  creditScoreText1 = 'Free guidance on how lenders use your middle credit score to determine cash-out rate tiers and LTV maximums—no credit pulls or subscriptions required.'
+  creditScoreHeading2 = 'Understand cash-out rate tiers'
+  creditScoreText2 = 'Learn how credit scores affect cash-out rates (typically 0.125-0.375% higher than rate-and-term), LTV maximums, and qualification requirements before applying.'
+  creditScoreHeading3 = 'Financial literacy builds equity access power'
+  creditScoreText3 = 'Improve credit scores, time refinancing optimally, and access equity strategically before committing to increased mortgage balance.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers - Home Equity Education as an Employee Benefit'
+  employersSubtitle = 'Help employees understand cash-out refinance strategy, equity awareness, and debt consolidation opportunities through Cash-Out Refinance®.'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''HR departments are expanding financial wellness programs with home equity education. Through Cash-Out Refinance® and Browse Lenders®, employers offer no-cost access to equity strategies, debt consolidation analysis, and verified loan officers—reducing financial stress and supporting employee stability.'''
+  employersBullet1Title = 'No-cost home equity education'
+  employersBullet1Text = 'Add Cash-Out Refinance® resources to your financial-wellness program—employees access equity calculators and refinancing education instantly.'
+  employersBullet2Title = 'Credit improvement tools'
+  employersBullet2Text = 'Employees learn how credit scores affect cash-out rates and receive guidance on refinancing timing for optimal pricing.'
+  employersBullet3Title = 'Support financial flexibility'
+  employersBullet3Text = 'Empower your workforce with transparent refinance guidance that reduces financial stress and improves employee retention.'
+  employersCTA = 'Learn About Employer Benefits'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Cash-Out Refinance Insights'
+  blogSubtitle = 'Expert guidance on equity access strategies, debt consolidation analysis, and refinancing decisions'
+  blogCTA = 'Read All Articles'
+  blogCTALink = '/blogs/'
+  
+  # Calculators Section
+  calculatorsTitle = 'Cash-Out Refinance Calculators & Analysis Tools'
+  calculatorsSubtitle = 'Calculate equity access amounts, compare cash-out vs. rate-and-term costs, analyze debt consolidation savings, and model credit improvement impact on rates before refinancing.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Cash-Out Refinance Questions'
+  faqSubtitle = 'Clear answers about equity access, refinancing strategy, and debt consolidation decisions'
+  
+  faq1Question = 'How much equity do I need for cash-out refinance?'
+  faq1Answer = '''Conventional cash-out refinance requires 20%+ equity (refinance up to 80% LTV). FHA cash-out allows 20%+ equity (up to 80% LTV) after 12 months ownership. VA cash-out allows 10%+ equity for veterans (up to 90% LTV) or even 100% LTV with perfect credit. Example: $400K home with $250K mortgage = $150K equity (37.5% equity position) = can access up to $70K cash at 80% LTV ($320K new loan). Check your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> to determine which program offers best cash-out rates, then connect with specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for equity access calculations.'''
+  
+  faq2Question = 'Is cash-out refinance rate higher than regular refinance?'
+  faq2Answer = '''Yes, cash-out refinance rates are typically 0.125-0.375% higher than rate-and-term refinance on same credit tier. Example: 720 credit rate-and-term = 6.375%, 720 credit cash-out = 6.625-6.75%. The rate premium reflects higher lender risk with cash-out transactions. Over 5 years on $300K loan, 0.25% rate difference = $3,750 additional interest cost. Cash-out makes financial sense when equity access benefits (debt consolidation savings, investment returns, home value increase) exceed this rate premium cost. Calculate your specific scenario at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance calculators</a>.'''
+  
+  faq3Question = 'When does debt consolidation through cash-out refinance make sense?'
+  faq3Answer = '''Cash-out refinance for debt consolidation makes financial sense when: (1) high-interest debt (credit cards 18-24%, personal loans 10-15%) exceeds cash-out refinance rate by 4%+ margin, (2) you plan to stay in home 5+ years to recoup closing costs, (3) you have financial discipline to not re-accumulate credit card debt after payoff. Example: $60K credit card debt at 21% = $12,600/year interest. Cash-out at 7% = $4,200/year interest = $8,400 annual savings. But extending 5-year debt into 30-year mortgage increases total interest—breakeven occurs at year 7-8 typically. Connect with debt consolidation specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for complete analysis before refinancing.'''
+  
+  faq4Question = 'How does credit score affect cash-out refinance rates and LTV limits?'
+  faq4Answer = '''Credit score affects both cash-out refinance rates and maximum LTV ratios. Rate tiers: 620-639 credit = 7.50-8.00% typical, 640-679 credit = 7.00-7.50%, 680-719 credit = 6.50-7.00%, 720-739 credit = 6.25-6.75%, 740+ credit = 6.00-6.50%. LTV limits: 620-639 credit = 70-75% max LTV on cash-out, 640-679 credit = 75-80% max LTV, 680+ credit = 80% max LTV standard. Improving credit 40-60 points (660→720) can save $9,000-$12,000 over 5 years on $300K cash-out refinance and increase equity access by $15,000-$30,000 through higher LTV approval. Use <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Middle Credit Score</a> education to understand your credit tier and improvement timeline before applying for cash-out refinance.'''
+  
+  # CTA Section
+  ctaTitle = 'Ready to Explore Cash-Out Refinance Options?'
+  ctaDescription = 'Connect with cash-out refinance specialists who understand equity access strategies, debt consolidation math, credit preparation, and when refinancing makes financial sense—get transparent guidance from application through closing for strategic home equity decisions.'
+  ctaCTA = 'Explore Cash-Out Options'
+  ctaCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Cash-Out Refinance Mortgages Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+
+# Navigation Menu
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  name = 'Programs'
+  url = '/#programs'
+  weight = 2
+
+[[menu.main]]
+  name = 'Blog'
+  url = '/blogs/'
+  weight = 3
+
+[[menu.main]]
+  name = 'Contact'
+  url = '/#contact'
+  weight = 4
