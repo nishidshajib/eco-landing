@@ -1,12 +1,12 @@
-baseURL = 'https://fha203kloanofficers.com/'
+baseURL = 'https://fha203kloanofficer.com/'
 languageCode = 'en-us'
 title = 'FHA 203(k) Loan Officers'
 theme = 'heloc-blog'
 disableKinds = []
 relativeURLs = true
 canonifyURLs = true
-contentDir = 'content/fha203kloanofficers'
-publishDir = 'public/fha203kloanofficers'
+contentDir = 'content/fha203kloanofficer'
+publishDir = 'public/fha203kloanofficer'
 
 # Build configuration for Tailwind CSS
 [build]

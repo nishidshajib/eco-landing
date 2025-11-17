@@ -53,7 +53,7 @@ hugo server --environment conformingloanofficers --port 1332
 hugo server --environment purchaseloanofficers --port 1333
 hugo server --environment newconstructionloanofficers --port 1334
 hugo server --environment renovationloanofficers --port 1335
-hugo server --environment fha203kloanofficers --port 1336
+hugo server --environment fha203kloanofficer --port 1336
 hugo server --environment fhahomemortgageloan --port 1337
 hugo server --environment nonconforminghomeloans --port 1338
 hugo server --environment purchasemortgageloans --port 1339
