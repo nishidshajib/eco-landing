@@ -8,7 +8,7 @@ categories: ["HELOC Rates", "Market Trends"]
 tags: ["HELOC", "Interest Rates", "Rate Caps", "Variable Rates", "2025 Trends"]
 description: "Complete analysis of 2025 HELOC rates, market trends, Fed policy impacts, and strategies to lock in favorable terms before rate increases."
 excerpt: "Complete analysis of 2025 HELOC rates, market trends, Fed policy impacts, and strategies to lock in favorable terms before rate increases."
-image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop"
+image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1200&auto=format&fit=crop"
 readTime: "7 min read"
 ---
 

@@ -5,7 +5,7 @@ draft: false
 author: "Cash-Out Refinancing Team"
 description: "Comprehensive refinancing timing analysis tracking home value appreciation from $410K to $485K over 18 months while interest rates fluctuated 6.25% to 7.50% and back to 6.75%, including equity growth monitoring, rate environment assessment, credit score improvement 692 to 718, monthly tracking spreadsheet methodology, decision matrix for optimal refinancing timing, and exact financial comparison showing why waiting 18 months vs refinancing immediately saved $43,200."
 tags: ["Refinancing Timing", "Home Value Tracking", "Rate Environment", "Market Analysis", "Equity Growth"]
-image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop"
+image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
 ---
 
 I spent 18 months tracking home values and interest rates before cash-out refinancing. People thought I was overthinking it—but that 18-month wait saved me $43,200 compared to refinancing immediately.
