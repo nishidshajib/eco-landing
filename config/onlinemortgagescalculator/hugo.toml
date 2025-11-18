@@ -1,0 +1,311 @@
+baseURL = 'https://onlinemortgagescalculator.com/'
+languageCode = 'en-us'
+title = 'Online Mortgage Calculator'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/onlinemortgagescalculator'
+publishDir = 'public/onlinemortgagescalculator'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Comprehensive mortgage calculators and financial wellness tools for smart home buying budget planning—calculate affordability, monthly payments, debt-to-income ratios, down payment strategies, and long-term financial impact with interactive tools designed for informed homebuyer decision-making and financial health optimization.'
+  author = 'Online Mortgage Calculator®'
+  shortName = 'Online Mortgage Calculator'
+  tagline = 'Calculate. Plan. Optimize Your Home Budget.'
+  homepage = 'https://onlinemortgagescalculator.com/'
+  
+  # SEO Configuration
+  siteName = 'Online Mortgage Calculator'
+  siteDescription = 'Comprehensive mortgage calculators and financial wellness tools for smart home buying budget planning—calculate affordability, monthly payments, debt-to-income ratios, down payment strategies, and long-term financial impact with interactive tools designed for informed homebuyer decision-making and financial health optimization.'
+  keywords = ['Mortgage Calculator', 'Affordability Calculator', 'Budget Planning', 'Financial Wellness', 'Home Buying Tools', 'Online Mortgage Calculator®', 'Middle Credit Score®', 'Browse Lenders®']
+  serviceType = 'Mortgage Calculator Tools & Financial Wellness Planning'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Online Mortgage Calculator - Smart Budget Planning & Financial Wellness Tools'
+  heroSubtitle = 'Calculate affordability, monthly payments, and long-term financial impact with comprehensive mortgage tools—plan your budget, understand debt-to-income limits, optimize down payment strategies, and make informed homebuying decisions with financial wellness calculators designed for real-life scenarios.'
+  heroImage = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Explore Budget Calculators'
+  heroCTA1Link = 'https://www.middlecreditscore.com'
+  heroCTA2Text = 'Find Financial Advisors'
+  heroCTA2Link = 'https://www.browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Financial Wellness. Budget Planning. Smart Homebuying.'
+  aboutImage = 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Financial Planning Tools for Informed Homebuying Decisions'
+  programsSubtitle = 'Calculate, plan, and optimize your mortgage budget with comprehensive financial wellness tools'
+  
+  # Program Cards
+  program1Title = 'Affordability Calculator (28/36 Rule Budget Analysis)'
+  program1Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''Affordability calculator applies 28/36 debt-to-income rules showing maximum home price based on income, debts, and down payment. Example: $85K income = $1,983 housing budget (28% rule) = $415K home at 20% down, 7% rate. Connect with budget specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for personalized planning.'''
+  
+  program2Title = 'Monthly Payment Calculator (Principal, Interest, Taxes, Insurance)'
+  program2Image = 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''Monthly payment calculator breaks down PITI (principal, interest, taxes, insurance) showing true monthly obligation beyond loan payment. Example: $400K loan at 7% = $2,661 P&I + $500 taxes + $150 insurance = $3,311 total. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> affects interest portion significantly.'''
+  
+  program3Title = 'Down Payment Optimizer (3% vs 5% vs 10% vs 20% Analysis)'
+  program3Image = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''Down payment optimizer compares scenarios from 3% FHA to 20% conventional showing PMI costs, monthly payments, and total interest impact. Example: $400K home at 3% down = $11,772 PMI over 11 years vs 20% down = $0 PMI. Calculate scenarios at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance®</a> tools.'''
+  
+  programsCTA = 'Access All Calculators'
+  programsCTALink = 'https://www.middlecreditscore.com'
+  programsClosingText = '''To explore comprehensive mortgage calculators and connect with financial advisors who specialize in budget planning and affordability analysis, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for personalized guidance on financial wellness strategies and informed homebuying decisions.'''
+  
+  # Education Section
+  educationTitle = 'Financial Wellness Education for Smart Budget Planning'
+  educationSubtitle = 'Master budget planning strategies and financial wellness principles for informed homebuying decisions.'
+  
+  # Education Cards
+  edu1Title = 'Understanding Debt-to-Income Ratio (DTI) for Qualification'
+  edu1Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''DTI ratio measures monthly debt payments against gross income determining qualification. Front-end DTI (housing only) max 28%, back-end DTI (all debts) max 36-43%. Example: $7,000 income, $1,800 housing, $400 car = 31% DTI (qualified). Calculate yours at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Middle Credit Score</a> tools.'''
+  
+  edu2Title = 'Total Cost of Homeownership Beyond Monthly Payment'
+  edu2Image = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''True homeownership costs include mortgage, property taxes, insurance, HOA, maintenance (1% home value annually), utilities. Example: $2,800 mortgage + $600 taxes + $200 insurance + $150 HOA + $300 maintenance + $250 utilities = $4,300 total monthly. Budget planning at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'''
+  
+  edu3Title = 'Emergency Fund Requirements for Homebuyers'
+  edu3Image = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''Financial wellness requires 3-6 months expenses in emergency fund before homebuying. Example: $4,300 monthly housing = $12,900-$25,800 emergency reserve post-purchase. Plus closing costs ($12K-$18K) and moving ($3K-$5K). Model cash needs at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score calculators</a>.'''
+  
+  edu4Title = 'Long-Term Financial Impact: 15-Year vs 30-Year Mortgages'
+  edu4Image = 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''Term length dramatically affects total interest paid. $400K at 7%: 30-year = $558,900 total interest, 15-year = $239,200 total interest (saves $319,700 but $1,548 higher monthly payment). Compare scenarios with refinancing options at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> tools.'''
+  
+  educationCTA = 'Learn Budget Planning Strategies'
+  educationCTALink = 'https://www.middlecreditscore.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center - Financial Wellness & Budget Planning'
+  learningSubtitle = 'Knowledge empowers smart homebuying decisions through comprehensive budget planning.'
+  learningImage = 'https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Mortgage calculators and budget planning tools help homebuyers understand affordability limits, optimize down payment strategies, calculate debt-to-income ratios, and model long-term financial impacts. Strategic financial wellness requires analyzing total homeownership costs beyond mortgage payments and planning emergency fund adequacy.'''
+  learningBullet1 = '''Calculate affordability and monthly payments at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Middle Credit Score</a> with DTI and budget tools.'''
+  learningBullet2 = 'Credit score improvement before buying can save thousands—680 to 720 credit saves $186/month on $400K loan through better rate pricing.'
+  learningBullet3 = '''Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> determines mortgage rates and affordability limits significantly.'''
+  learningBullet4 = '''Connect with budget specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for personalized financial planning.'''
+  learningPara2 = 'We help homebuyers calculate true affordability, understand total costs, optimize down payment decisions, and plan for long-term financial wellness before purchasing.'
+  learningPara3 = '''<a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Explore Financial Planning Tools</a> for comprehensive budget calculators and guidance.'''
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Smart Budget Planners Are Saying'
+  testimonialsSubtitle = 'Real stories from homebuyers who used financial wellness calculators for informed decisions'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://randomuser.me/api/portraits/women/32.jpg'
+  testimonial1Text = '''The affordability calculator helped me understand my true budget. I thought I could afford $450K but the DTI calculator showed $380K was my comfortable limit. Bought within budget, still have emergency fund, and sleep well at night. The tools saved me from overextending.'''
+  testimonial1Name = 'Jennifer Martinez - Portland, OR'
+  testimonial1Subtitle = '712 Credit, First-Time Homebuyer, $380K Purchase'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://randomuser.me/api/portraits/men/67.jpg'
+  testimonial2Text = '''Comparing 30-year vs 15-year mortgages with the payment calculator was eye-opening. Chose 30-year for lower payment, investing the difference. The total cost calculator showed me exactly what I would pay in interest over time. Knowledge is power.'''
+  testimonial2Name = 'David Thompson - Austin, TX'
+  testimonial2Subtitle = '745 Credit, Budget-Conscious Buyer, 30-Year Term Selection'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://randomuser.me/api/portraits/women/58.jpg'
+  testimonial3Text = '''I recommend these calculators to all my clients. The down payment optimizer showing PMI costs versus opportunity cost of large down payment is brilliant. Helped three families make data-driven decisions this year. Comprehensive and accurate.'''
+  testimonial3Name = 'Sarah Kim - San Francisco, CA'
+  testimonial3Subtitle = 'Financial Planner, Uses Tools for Client Guidance'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://randomuser.me/api/portraits/men/46.jpg'
+  testimonial4Text = '''Used the total cost calculator to model renovation financing. Realized cash-out refi was cheaper than HELOC for my scenario. The calculators showed me exactly how much equity I could access and what it would cost monthly. Smart planning tools.'''
+  testimonial4Name = 'Michael Rodriguez - Denver, CO'
+  testimonial4Subtitle = '698 Credit, Home Renovation Planning, Cash-Out Analysis'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://randomuser.me/api/portraits/women/24.jpg'
+  testimonial5Text = '''The DTI calculator helped me see I needed to pay down $4,200 in credit card debt before qualifying. Took 5 months, improved my credit 52 points, and qualified for better rate. The budget planning tools gave me a clear roadmap to homeownership.'''
+  testimonial5Name = 'Emily Watson - Charlotte, NC'
+  testimonial5Subtitle = '658→710 Credit Improvement, Strategic Debt Payoff'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://randomuser.me/api/portraits/men/55.jpg'
+  testimonial6Text = '''Calculated affordability at different credit scores. Improving from 680 to 720 saved me $186/month. Waited 4 months, used the credit tools, and got the better rate. The calculators showed me exactly what credit improvement was worth. Worth the wait.'''
+  testimonial6Name = 'Robert Chen - Seattle, WA'
+  testimonial6Subtitle = '680→720 Credit, Strategic Timing for Rate Optimization'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Online Mortgage Calculator® for Financial Wellness?'
+  whyChooseSubtitle = 'Comprehensive budget planning tools, expert financial guidance, and transparent affordability analysis'
+  whyChoosePara1 = '''Homebuyers need more than qualification calculators—they need comprehensive budget planning tools showing total costs, DTI analysis, down payment optimization, and long-term financial impact modeling for informed decisions.'''
+  whyChoosePara2 = '''<strong>Online Mortgage Calculator®</strong> provides <strong>comprehensive financial wellness tools and transparent budget planning guidance</strong> for smart homebuying aligned with long-term financial health.'''
+  
+  whyChooseBox1Title = 'Complete Budget Planning Tools'
+  whyChooseBox1Para = 'Access comprehensive calculators showing affordability limits, monthly payments, DTI ratios, down payment scenarios, total costs, and long-term financial impacts with real numbers for data-driven decisions.'
+  whyChooseBox1Bullet1 = 'Affordability calculator using 28/36 DTI rules'
+  whyChooseBox1Bullet2 = 'Monthly payment breakdown showing PITI components'
+  whyChooseBox1Bullet3 = 'Down payment optimizer comparing 3%-20% scenarios'
+  whyChooseBox1CTA = 'Access All Calculators'
+  whyChooseBox1CTALink = 'https://www.middlecreditscore.com'
+  
+  whyChooseBox2Title = 'Credit Score Optimization Guidance'
+  whyChooseBox2Para = 'Understand how credit scores affect rates and affordability, when delaying purchase to improve credit saves thousands, and strategies for optimizing credit before applying for maximum value.'
+  whyChooseBox2Bullet1 = 'Credit tier analysis showing rate impact on payments'
+  whyChooseBox2Bullet2 = 'Strategic credit improvement timelines'
+  whyChooseBox2Bullet3 = 'Free credit education without subscriptions'
+  whyChooseBox2CTA = 'Check Your Credit Impact'
+  whyChooseBox2CTALink = 'https://www.middlecreditscore.com'
+  
+  whyChooseBox3Title = 'Financial Wellness Focus'
+  whyChooseBox3Para = 'Tools designed for total financial health—calculate emergency fund needs, total homeownership costs beyond mortgage, and long-term wealth impact ensuring homebuying supports financial stability.'
+  whyChooseBox3Bullet1 = 'Total cost calculator including maintenance and utilities'
+  whyChooseBox3Bullet2 = 'Emergency fund planning for homeowners'
+  whyChooseBox3Bullet3 = 'Connect with financial advisors for personalized guidance'
+  whyChooseBox3CTA = 'Plan Your Budget'
+  whyChooseBox3CTALink = 'https://www.browselenders.com'
+  
+  # Why Choose Main CTA
+  whyChooseCTA = 'Start Budget Planning Now'
+  whyChooseCTALink = 'https://www.middlecreditscore.com'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Impact on Mortgage Affordability & Rates'
+  creditScoreImage = 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''Mortgage lenders use middle credit scores (middle of three bureau scores) to determine rates and affordability limits. Understanding credit tiers (680-719 = better pricing, 720+ = optimal rates) helps time applications and avoid buying before credit improvement that saves thousands on total costs.'''
+  creditScoreHeading1 = 'Credit education for rate optimization'
+  creditScoreText1 = 'Free guidance on how middle credit scores affect mortgage rates and when improving credit before applying maximizes affordability and minimizes total interest costs.'
+  creditScoreHeading2 = 'Understand rate tier pricing'
+  creditScoreText2 = 'Learn how credit scores impact mortgage rates (680 = 7.25%, 720 = 6.75%, 760 = 6.25%) and qualification limits—better rates mean qualifying for larger loans at same payment.'
+  creditScoreHeading3 = 'Optimize credit for maximum savings'
+  creditScoreText3 = 'Improve credit scores, time mortgage applications optimally, and maximize purchasing power through strategic credit preparation before buying.'
+  creditScoreCTA = 'Check Credit Impact on Affordability'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers - Financial Wellness as Employee Benefit'
+  employersSubtitle = 'Help employees make informed homebuying decisions through Online Mortgage Calculator®.'
+  employersImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''HR departments enhance financial wellness programs with budget planning education. Through Online Mortgage Calculator® and Browse Lenders®, employers offer no-cost access to affordability tools and verified financial advisors—reducing financial stress and supporting employee stability.'''
+  employersBullet1Title = 'No-cost budget planning tools'
+  employersBullet1Text = 'Add Online Mortgage Calculator® resources to financial-wellness programs—employees access affordability calculators and budget planning guidance instantly.'
+  employersBullet2Title = 'Credit optimization for better rates'
+  employersBullet2Text = 'Employees learn how credit affects mortgage rates and receive timing guidance for optimal affordability and purchasing power.'
+  employersBullet3Title = 'Reduce financial stress and improve retention'
+  employersBullet3Text = 'Empower your workforce with transparent budget planning guidance through comprehensive financial wellness education that improves stability.'
+  employersCTA = 'Learn About Employer Programs'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Financial Wellness & Budget Planning Insights'
+  blogSubtitle = 'Expert guidance on mortgage calculators, budget planning, and informed homebuying decisions'
+  blogCTA = 'Read All Articles'
+  blogCTALink = '/blogs/'
+  
+  # Calculators Section
+  calculatorsTitle = 'Comprehensive Mortgage & Budget Calculators'
+  calculatorsDescription = 'Access interactive financial planning tools for affordability analysis, payment calculations, and budget optimization'
+  
+  calculator1Title = 'Affordability Calculator'
+  calculator1Description = 'Calculate maximum home price based on income, debts, and down payment using 28/36 DTI rules'
+  calculator1Icon = 'calculator'
+  
+  calculator2Title = 'Monthly Payment Calculator'
+  calculator2Description = 'Break down PITI (Principal, Interest, Taxes, Insurance) showing true monthly obligations'
+  calculator2Icon = 'dollar-sign'
+  
+  calculator3Title = 'DTI Ratio Calculator'
+  calculator3Description = 'Measure debt-to-income ratio for qualification—front-end and back-end DTI analysis'
+  calculator3Icon = 'percent'
+  
+  calculator4Title = 'Down Payment Optimizer'
+  calculator4Description = 'Compare 3%, 5%, 10%, and 20% down payment scenarios with PMI cost analysis'
+  calculator4Icon = 'trending-up'
+  
+  calculator5Title = '15-Year vs 30-Year Comparison'
+  calculator5Description = 'Model mortgage term options showing monthly payment difference and total interest impact'
+  calculator5Icon = 'clock'
+  
+  calculator6Title = 'Total Cost Calculator'
+  calculator6Description = 'Calculate complete homeownership costs including maintenance, utilities, HOA, and hidden expenses'
+  calculator6Icon = 'home'
+  
+  calculatorsCTA = 'Access All Financial Tools'
+  calculatorsCTALink = 'https://www.middlecreditscore.com'
+  
+  # Contact Section
+  contactTitle = 'Questions About Mortgage Calculators or Budget Planning?'
+  contactSubtitle = 'Our team is here to help you understand affordability calculations and financial wellness strategies.'
+  contactEmail = 'support@browselenders.com'
+  contactPhone = '1-888-CALCULATE'
+  contactAddress = 'Online Mortgage Calculator® - Nationwide Financial Wellness Tools'
+  contactPara = '''Have questions about mortgage calculators or budget planning? Need guidance on affordability analysis, DTI calculations, or down payment optimization? Contact our support team at <a href="mailto:support@browselenders.com" class="text-accent hover:underline">support@browselenders.com</a> for personalized assistance with your financial planning questions.'''
+  contactCTA = 'Email Our Support Team'
+  contactCTALink = 'mailto:support@browselenders.com'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Questions About Mortgage Calculators'
+  faqSubtitle = 'Clear answers about affordability calculations, budget planning, and financial wellness strategies'
+  
+  # FAQ 1
+  faq1Question = 'How accurate are online mortgage calculators for budget planning?'
+  faq1Answer = '''Online mortgage calculators provide accurate estimates based on inputs you provide (loan amount, interest rate, term, property taxes, insurance). They use standard formulas (PITI calculations, amortization schedules, DTI ratios) matching lender calculations. However, final rates depend on your credit score, loan type, and lender-specific fees. Use calculators for planning and comparison, then get personalized quotes from lenders for exact numbers. Our tools incorporate real-world assumptions (1.2% property tax rate, 0.5% insurance, 1% maintenance) providing realistic total cost estimates beyond basic payment calculations.'''
+  
+  # FAQ 2
+  faq2Question = 'What is the 28/36 rule for mortgage affordability?'
+  faq2Answer = '''The 28/36 rule is a debt-to-income guideline used by lenders for qualification. 28% rule (front-end DTI): Housing expenses (mortgage, taxes, insurance, HOA) should not exceed 28% of gross monthly income. 36% rule (back-end DTI): Total debt payments (housing + car loans + credit cards + student loans) should not exceed 36% of gross monthly income. Example: $7,000 monthly income × 28% = $1,960 max housing payment, $7,000 × 36% = $2,520 max total debt. Some lenders allow up to 43% back-end DTI for strong credit profiles. Use our DTI calculator to determine your qualification limits.'''
+  
+  # FAQ 3
+  faq3Question = 'Should I choose 15-year or 30-year mortgage for better financial wellness?'
+  faq3Answer = '''15-year vs 30-year decision depends on budget flexibility and financial goals. 15-year mortgage: Higher monthly payment ($1,548 more on $400K at 7%), dramatically lower total interest ($319,700 savings), faster equity building, typically 0.5% lower rate, forced savings discipline, limited cash flow flexibility. 30-year mortgage: Lower monthly payment, more cash flow for emergencies/investments/retirement, flexibility to pay extra principal voluntarily, higher total interest cost, slower equity building. Choose 15-year if you have stable income and want forced wealth building. Choose 30-year if you value flexibility or plan to invest payment difference. Use our term comparison calculator to model both scenarios.'''
+  
+  # FAQ 4
+  faq4Question = 'How much should I put down to avoid PMI and optimize budget?'
+  faq4Answer = '''PMI (Private Mortgage Insurance) is required on conventional loans with less than 20% down, typically costing 0.5-1.5% of loan amount annually. Example: $400K home with 10% down ($40K) = $360K loan × 0.8% PMI = $2,880/year = $240/month. PMI drops off automatically at 78% LTV through payments or can be removed at 80% LTV by requesting appraisal. Strategies: (1) 20% down avoids PMI but depletes savings, (2) 10% down with PMI preserves emergency fund, (3) Piggyback loan (80-10-10) avoids PMI with two mortgages. Down payment decision balances PMI costs versus opportunity cost of large down payment and emergency fund preservation. Use our down payment optimizer to compare scenarios.'''
+  
+  # CTA Section (Contact Us)
+  ctaTitle = 'Ready to Plan Your Home Purchase Budget?'
+  ctaDescription = 'Access comprehensive mortgage calculators, financial wellness tools, and budget planning resources designed for informed homebuying decisions.'
+  ctaCTA = 'Start Budget Planning Now'
+  ctaCTALink = 'https://www.middlecreditscore.com'
+  ctaSecondaryText = 'Connect with Financial Advisors'
+  ctaSecondaryLink = 'https://www.browselenders.com'
+  
+  # Footer
+  footerTagline = 'Online Mortgage Calculator® - Smart Budget Planning for Informed Homebuying'
+  footerDescription = 'Comprehensive mortgage calculators and financial wellness tools for affordability analysis, payment calculations, DTI ratios, down payment optimization, and long-term budget planning—empowering homebuyers with transparent financial guidance for confident decision-making.'
+  copyrightText = '© 2025 Online Mortgage Calculator®. All rights reserved.'
+  privacyPolicyLink = '/privacy-policy/'
+  termsOfServiceLink = '/terms-of-service/'
+  disclaimerLink = '/disclaimer/'
