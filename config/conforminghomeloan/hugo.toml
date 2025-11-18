@@ -1,0 +1,261 @@
+baseURL = 'https://conforminghomeloan.com/'
+languageCode = 'en-us'
+title = 'Conforming Home Loans'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conforminghomeloan'
+publishDir = 'public/conforminghomeloan'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Compare conforming home loan options, qualification standards, and lender programs with transparent education and verified support.'
+  author = 'Browse Lenders®'
+  shortName = 'Conforming Home Loan'
+  tagline = 'Conforming Loan Knowledge for Confident Borrowers'
+  homepage = 'https://conforminghomeloan.com/'
+  
+  # SEO Configuration
+  siteName = 'Conforming Home Loan'
+  siteDescription = 'Consumer-focused education on conforming loans, qualification, underwriting, and lender comparison.'
+  keywords = ['Conforming Home Loan', 'Conforming Mortgage', 'Loan Limits', 'Conforming vs Jumbo', 'Browse Lenders®', 'Middle Credit Score', 'Cash-Out Refinance']
+  serviceType = 'Conforming Mortgage Guidance and Calculators'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Conforming Home Loans — Smarter Qualification Starts Here'
+  heroSubtitle = 'Compare conforming loan limits, underwriting rules, and lender pricing through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>, then take action with confidence backed by consumer-first education.'
+  heroImage = 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Compare Conforming Lenders'
+  heroCTA1Link = 'https://www.browselenders.com'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Conforming Loan Limits, Qualification, and Rate Transparency'
+  aboutImage = 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Guidance for Every Conforming Borrower'
+  programsSubtitle = 'Learn how loan limits, AUS findings, and documentation requirements translate into real approvals.'
+  
+  # Program Cards
+  program1Title = 'Purchase & Rate Stability'
+  program1Description = '''Find fixed-rate conforming purchase programs, understand pricing adjustments, and compare verified lenders through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> before submitting an application.'''
+  program1Image = 'https://images.unsplash.com/photo-1481887328591-3e277f9473dc?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Refinance & Equity Access'
+  program2Description = '''Model rate-and-term savings, analyze conforming cash-out limits, and learn how <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> compares with keeping your current mortgage in place.'''
+  program2Image = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'High-Balance Strategy'
+  program3Description = '''Access high-balance conforming options in designated counties and align your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> with reserve and DTI requirements before underwriting review.'''
+  program3Image = 'https://images.unsplash.com/photo-1453282716202-de94e528067c?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Start Your Scenario'
+  programsCTALink = 'https://www.browselenders.com'
+  programsClosingText = "Compare documented quotes and underwriting expectations through the Browse Lenders® marketplace and build a plan tailored to your timeline, not a lender's sales script."
+  
+  # Education Section
+  educationTitle = 'Conforming Loan Education & Borrower Preparation'
+  educationSubtitle = 'Clarity on the guidelines makes every conversation easier.'
+  
+  # Education Cards
+  edu1Title = 'Credit & LLPAs'
+  edu1Description = '''Understand how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> tiers drive loan-level price adjustments and monthly payment outcomes.'''
+  edu1Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Loan Limits'
+  edu2Description = 'Track FHFA conforming loan limits and high-balance thresholds so you know when your scenario crosses into jumbo territory.'
+  edu2Image = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Documentation'
+  edu3Description = 'Learn which income, asset, and property documents are needed for DU or LP approval before you upload anything to a lender portal.'
+  edu3Image = 'https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Cash-Out Rules'
+  edu4Description = 'Compare conforming cash-out LTV caps with other equity products so you choose the most efficient way to unlock funds.'
+  edu4Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Review Conforming Requirements'
+  educationCTALink = 'https://www.browselenders.com'
+  
+  # Learning Center Section
+  learningTitle = 'Learning Center — Consumer-Focused Conforming Loan Playbook'
+  learningSubtitle = 'Education replaces guesswork and protects your budget.'
+  learningImage = 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''You deserve clear explanations of AUS findings, LLPA hits, and escrow calculations so you can negotiate confidently with lenders, not feel rushed into the first quote you receive.'''
+  learningBullet1 = 'Compare lender margins, credits, and rate sheets with transparent Browse Lenders dashboards.'
+  learningBullet2 = 'Count backward from closing to understand document deadlines, verification calls, and re-disclosure rules.'
+  learningBullet3 = '''Run side-by-side scenarios showing when <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> makes more sense than a second lien or waiting for rates to change again.'''
+  learningBullet4 = 'Know how property type, occupancy, and MI coverage influence AUS approval confidence.'
+  learningPara2 = 'Our resources empower you to ask better questions, push for better pricing, and understand how your file will be decisioned before the underwriter opens it.'
+  learningPara3 = '''<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> delivers calculators, lender comparison tools, and step-by-step guides tailored to conforming borrowers at every stage of the process.'''
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Borrowers Trust Browse Lenders®'
+  whyChooseSubtitle = 'Built for consumers who want transparency—not sales pressure.'
+  whyChoosePara1 = '''Every article, calculator, and lender connection prioritizes borrower protection while still getting you to the closing table on time.'''
+  whyChoosePara2 = '''We combine conforming loan expertise with practical education so you can navigate underwriting with confidence.'''
+  
+  whyChooseBox1Title = 'Verified Conforming Loan Pros'
+  whyChooseBox1Para = 'Match with licensed loan officers who specialize in conforming, high-balance, and AUS-driven approvals.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals'
+  whyChooseBox1Bullet2 = 'Scenario-based consultations'
+  whyChooseBox1Bullet3 = 'Nationwide reach with local insight'
+  
+  whyChooseBox2Title = 'Data-Driven Education'
+  whyChooseBox2Para = 'LLPA charts, worksheet downloads, and credit readiness guides built for today’s borrower.'
+  whyChooseBox2Bullet1 = 'Understand pricing hits before locking'
+  whyChooseBox2Bullet2 = 'Learn how DTI and reserves influence AUS findings'
+  whyChooseBox2Bullet3 = 'Use calculators to preview escrow and MI requirements'
+  
+  whyChooseBox3Title = 'Privacy Control'
+  whyChooseBox3Para = 'Decide when lenders can contact you and protect your scenario until you are ready to engage.'
+  whyChooseBox3Bullet1 = 'No automatic lead selling'
+  whyChooseBox3Bullet2 = 'You choose which loan officers view your file'
+  whyChooseBox3Bullet3 = 'Support team advocates for your experience'
+  
+  whyChooseCTA = 'Compare Conforming Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'Borrowers Explain the Difference'
+  testimonialsSubtitle = 'Education-first conforming loan guidance pays off.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '''I finally understood why my LLPAs were so high and negotiated lender credits that covered my entire appraisal and title fees. No one else explained it like this.'''
+  testimonial1Name = 'Verified Homebuyer'
+  testimonial1Subtitle = 'Clarity turned into real savings.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '''Browse Lenders let me review multiple conforming lenders without my phone blowing up. I picked one after comparing pricing adjustments line by line.'''
+  testimonial2Name = 'Repeat Buyer'
+  testimonial2Subtitle = 'Control stayed in my hands.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'Middle Credit Score resources showed me exactly how to increase my score 18 points before locking. That small jump lowered my payment by $92 a month.'
+  testimonial3Name = 'First-Time Buyer'
+  testimonial3Subtitle = 'Credit literacy matters.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '''The education on cash-out limits helped us budget correctly for renovations without exceeding conforming caps. Every lender conversation felt easier.'''
+  testimonial4Name = 'Equity Borrower'
+  testimonial4Subtitle = 'We planned before we applied.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '''Instead of guessing what DU wanted, I followed the documentation checklist here and sailed through underwriting.'''
+  testimonial5Name = 'Homeowner'
+  testimonial5Subtitle = 'Preparation eliminated stress.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Every support email felt like a coach in my inbox—no pushy sales, just real answers on conforming guidelines.'
+  testimonial6Name = 'HELOC Converter'
+  testimonial6Subtitle = 'Support that actually supports.'
+  
+  # Calculators Section
+  calculatorsTitle = 'Conforming Loan Calculators & Comparison Tools'
+  calculatorsSubtitle = 'Estimate payments, PMI, and benefit timelines before you lock a rate.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® — Know the Number Lenders Use'
+  creditScoreImage = 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''Conforming lenders price your loan from the middle of your three bureau scores. Middle Credit Score® shows how utilization, age of credit, and inquiries drive the rates you receive.'''
+  creditScoreHeading1 = 'Education Without Fees'
+  creditScoreText1 = 'Access credit readiness guidance without subscriptions, soft pulls, or upsells.'
+  creditScoreHeading2 = 'Actionable Playbooks'
+  creditScoreText2 = 'Step-by-step templates for lowering revolving balances, correcting errors, and timing rescoring requests.'
+  creditScoreHeading3 = 'Confidence on Lock Day'
+  creditScoreText3 = 'Know your true pricing tier before lenders quote you—no surprises when the LE arrives.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Employers Section
+  employersTitle = 'Employer Partnerships — Mortgage Wellness as a Benefit'
+  employersSubtitle = 'Give employees access to conforming loan expertise at zero cost.'
+  employersImage = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''HR teams now add mortgage education to wellness programs. Browse Lenders integrates quickly so employees understand conforming loan expectations before paystubs and bank statements are requested.'''
+  employersBullet1Title = 'No Contracts'
+  employersBullet1Text = 'Share resources instantly—no software onboarding or budget approvals required.'
+  employersBullet2Title = 'Credit & Mortgage Literacy'
+  employersBullet2Text = 'Employees learn about middle credit scores, DTI, and MI so they can improve readiness on their own time.'
+  employersBullet3Title = 'Retention Through Readiness'
+  employersBullet3Text = 'Financial confidence reduces stress and increases loyalty when employees pursue homeownership milestones.'
+  employersCTA = 'Partner with Browse Lenders'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Conforming Loan Insights'
+  blogSubtitle = 'Real stories, pricing strategies, and underwriting tips from the field.'
+  
+  # FAQ Section
+  faqTitle = 'Conforming Loan FAQs'
+  faqSubtitle = 'Straight answers to the questions lenders rarely explain clearly.'
+  
+  # FAQ 1
+  faq1Question = 'What makes a mortgage "conforming"?'
+  faq1Answer = '''Conforming loans follow Fannie Mae and Freddie Mac guidelines, stay within FHFA loan limits, and can be sold into agency-backed securities. They offer competitive rates and flexible terms when you meet standard credit, income, and documentation requirements.'''
+  
+  # FAQ 2
+  faq2Question = 'How high can my DTI be?'
+  faq2Answer = '''Most conforming loans allow debt-to-income ratios up to 45%, though AUS approvals sometimes stretch to 50% with strong credit, reserves, or large down payments. Understanding compensating factors helps you plan before applying.'''
+  
+  # FAQ 3
+  faq3Question = 'Do I need 20% down for a conforming loan?'
+  faq3Answer = '''No. First-time buyers can put as little as 3% down, and repeat buyers can use 5%. However, less than 20% down requires private mortgage insurance (PMI) until you reach 78-80% loan-to-value, at which point you can request removal or it drops automatically.'''
+  
+  # FAQ 4
+  faq4Question = 'Can I take cash out with a conforming mortgage?'
+  faq4Answer = 'Yes, you can complete a conforming cash-out refinance up to 80% LTV on primary residences (lower for second homes and investment properties). Evaluate total costs, break-even points, and alternative equity products before locking.'
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Compare Conforming Loan Officers?'
+  ctaDescription = 'Get transparent quotes, middle credit score guidance, and support from BrowseLenders.com—the borrower-first marketplace for conforming loans.'
+  ctaCTA = 'Explore Browse Lenders'
+  ctaCTALink = 'https://www.browselenders.com'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Conforming Home Loan Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
