@@ -1,0 +1,251 @@
+baseURL = 'https://cashoutrefinancecalculators.com/'
+languageCode = 'en-us'
+title = 'Cash-Out Refinance Calculators'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/cashoutrefinancecalculators'
+publishDir = 'public/cashoutrefinancecalculators'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Advanced cash-out refinance calculators for equity extraction modeling, payment change planning, and long-term financial strategy.'
+  author = 'Browse Lenders®'
+  shortName = 'Cash-Out Refinance Calculators'
+  tagline = 'Equity Intelligence for Confident Borrowers'
+  homepage = 'https://cashoutrefinancecalculators.com/'
+  
+  # SEO Configuration
+  siteName = 'Cash-Out Refinance Calculators'
+  siteDescription = 'Consumer-first platform delivering professional cash-out refinance calculators, payment simulations, and lender comparison guidance.'
+  keywords = ['Cash-Out Refinance Calculators', 'Equity Extraction Tools', 'Payment Change Calculators', 'Browse Lenders®', 'Cash-Out Refis', 'Middle Credit Score']
+  serviceType = 'Cash-Out Refinance Education and Calculator Platform'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Cash-Out Refinance Calculators Built for Real Decisions'
+  heroSubtitle = 'Model equity extraction scenarios in minutes, then validate rates with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> to compare lender programs before you lock.'
+  heroImage = 'https://images.unsplash.com/photo-1724482606633-fa74fe4f5de1?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Run Equity Scenarios'
+  heroCTA1Link = 'https://www.cash-outrefinance.com'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Model Equity, Payments, and Planning Timelines'
+  aboutImage = 'https://images.unsplash.com/photo-1758691031749-607d43c14f63?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Guided Workflows for Every Cash-Out Borrower'
+  programsSubtitle = 'Pair calculators with lender-ready preparation so you can control timelines and pricing.'
+  
+  # Program Cards
+  program1Title = 'Equity Extraction Playbooks'
+  program1Description = '''Use amortization-based calculators to map interest savings, then match the right lender through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> before ordering an appraisal.'''
+  program1Image = 'https://images.unsplash.com/photo-1758695537300-cc5f7c85a578?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'Rate & Payment Modeling'
+  program2Description = '''Compare current mortgage terms against projected cash-out refi options with payment shock alerts and real-time LLPA assumptions sourced from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>.'''
+  program2Image = 'https://images.unsplash.com/photo-1717957566742-fd92d32e01d6?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Credit-Aware Approaches'
+  program3Description = '''Sync calculator outputs with credit optimization milestones so your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> supports the equity release target you need.'''
+  program3Image = 'https://images.unsplash.com/photo-1559067096-d109b66fd5af?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Start an Equity Plan'
+  programsCTALink = 'https://www.cash-outrefinance.com'
+  programsClosingText = 'Every scenario includes downloadable worksheets so you and your lender can align on proceeds, closing costs, and reserves before disclosures arrive.'
+  
+  # Education Section
+  educationTitle = 'Cash-Out Refinance Education & Calculator Tutorials'
+  educationSubtitle = 'Understand every variable: equity, pricing, taxes, and reinvestment.'
+  
+  # Education Cards
+  edu1Title = 'Equity Positioning'
+  edu1Description = 'Learn how combined loan-to-value, appraisal buffers, and project contingencies affect accessible equity before you submit a full application.'
+  edu1Image = 'https://images.unsplash.com/photo-1759428935131-cee6cd331234?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Payment Transition'
+  edu2Description = 'Simulate principal-and-interest shifts, escrow adjustments, and MI removal timelines so you never guess what the new monthly payment will be.'
+  edu2Image = 'https://images.unsplash.com/photo-1762941177632-fe37c485c428?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Tax & Cash Planning'
+  edu3Description = 'Forecast how cash-out proceeds impact reserves, renovations, or debt payoff strategies, including federal deduction considerations.'
+  edu3Image = 'https://images.unsplash.com/photo-1736319666684-a0f1f6b679cc?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Credit Thresholds'
+  edu4Description = 'Identify the FICO tiers that control LLPAs and learn how small score changes shift pricing on large loan amounts.'
+  edu4Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'View Calculator Guides'
+  educationCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Learning Center Section
+  learningTitle = 'Learning Center — Advanced Cash-Out Planning'
+  learningSubtitle = 'Use calculators, case studies, and lender comparisons to stay in control.'
+  learningImage = 'https://images.unsplash.com/photo-1759429084833-334282cbd58d?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Our calculator stack pairs amortization schedules with payoff timelines, showing you how proceeds, points, and breakeven periods interact so you can defend your plan with any lender.'
+  learningBullet1 = 'Chart equity release, closing costs, and recoup timelines for renovations or debt payoff use-cases.'
+  learningBullet2 = 'Align rate locks and appraisal windows with Browse Lenders® status boards.'
+  learningBullet3 = 'Decide when to refinance versus combine cash-out and HELOC strategies for phased projects.'
+  learningBullet4 = 'Share exported calculator outputs with financial planners for tax-aware execution.'
+  learningPara2 = 'Education replaces guesswork—every article covers underwriting expectations, compliance timing, and strategies for keeping draws on schedule.'
+  learningPara3 = '''Detailed lender comparison dashboards from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> sync with our calculators so you always know who offers the best pricing for your equity goals.'''
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Borrowers Trust Cash-Out Refinance Calculators'
+  whyChooseSubtitle = 'Because numbers, education, and verified partners belong together.'
+  whyChoosePara1 = 'Every tool is built for homeowners balancing equity access with payment stability—no rate bait, no lead selling.'
+  whyChoosePara2 = 'We combine data-driven calculators with experienced lender partners so you can evaluate every outcome before committing.'
+  
+  whyChooseBox1Title = 'Precision Calculators'
+  whyChooseBox1Para = 'Model payout schedules, reserve requirements, and reinvestment timelines using up-to-date FHFA, Freddie, and Fannie data.'
+  whyChooseBox1Bullet1 = 'Breakeven and payback tracking'
+  whyChooseBox1Bullet2 = 'Interest comparison against HELOCs'
+  whyChooseBox1Bullet3 = 'Scenario exports for professionals'
+  
+  whyChooseBox2Title = 'Lender Collaboration'
+  whyChooseBox2Para = 'Easily share calculator PDFs with loan officers so conditions and pricing stay aligned.'
+  whyChooseBox2Bullet1 = 'Processor-ready documentation'
+  whyChooseBox2Bullet2 = 'Status dashboards for lock dates'
+  whyChooseBox2Bullet3 = 'Support team monitors experience'
+  
+  whyChooseBox3Title = 'Credit & Risk Coaching'
+  whyChooseBox3Para = 'Understand how reserves, DTI, and credit interact before underwriting sees your file.'
+  whyChooseBox3Bullet1 = 'DTI waterline mapping'
+  whyChooseBox3Bullet2 = 'Reserve requirement calculators'
+  whyChooseBox3Bullet3 = 'Middle credit score tutorials'
+  
+  whyChooseCTA = 'Compare Equity Lenders'
+  whyChooseCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'Borrowers Using Our Calculators Share Their Wins'
+  testimonialsSubtitle = 'Real stories from homeowners optimizing equity pulls.'
+  
+  testimonial1Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'The payment shock simulator showed exactly how much my escrow would change, so I negotiated a larger lender credit before locking.'
+  testimonial1Name = 'Renovation Borrower'
+  testimonial1Subtitle = 'No surprises on closing day.'
+  
+  testimonial2Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'I exported the amortization comparison to my CPA and financial advisor—we aligned on the plan in one meeting.'
+  testimonial2Name = 'Financial Planner'
+  testimonial2Subtitle = 'Calculator downloads saved hours.'
+  
+  testimonial3Image = 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'Browse Lenders matches let me compare pricing without handing my data to call centers.'
+  testimonial3Name = 'Debt Consolidation Borrower'
+  testimonial3Subtitle = 'Privacy plus clarity.'
+  
+  testimonial4Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'Credit readiness tips raised my middle score 14 points, dropping LLPA costs by $3,200.'
+  testimonial4Name = 'Equity Optimizer'
+  testimonial4Subtitle = 'Score knowledge equals money.'
+  
+  testimonial5Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'Having calculators and support email access meant I could plan my contractor draws months ahead.'
+  testimonial5Name = 'Project Manager'
+  testimonial5Subtitle = 'Confidence every step.'
+  
+  testimonial6Image = 'https://images.unsplash.com/photo-1738750908048-14200459c3c9?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'The cash flow projection tool helped me decide to split proceeds between debt payoff and reserves.'
+  testimonial6Name = 'Debt Strategist'
+  testimonial6Subtitle = 'Math over marketing.'
+  
+  # Calculators Section
+  calculatorsTitle = 'Signature Cash-Out Refinance Calculators'
+  calculatorsSubtitle = 'Every tool exports to CSV, PDF, and shared dashboards.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® + Cash-Out Planning'
+  creditScoreImage = 'https://images.unsplash.com/photo-1730094915697-bd504b857145?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Middle Credit Score® resources pair perfectly with cash-out refi timelines by showing which tradelines to pay first and how LLPA tiers shift when your score improves even slightly.'
+  creditScoreHeading1 = 'Educate Before You Apply'
+  creditScoreText1 = 'Video tutorials explain which score version lenders will use and how to spot discrepancies quickly.'
+  creditScoreHeading2 = 'Score Playbooks'
+  creditScoreText2 = 'Follow 30, 60, and 90-day plans to boost pricing power before ordering the appraisal.'
+  creditScoreHeading3 = 'Confidence at Lock'
+  creditScoreText3 = 'Know exactly which tier you occupy before the Loan Estimate arrives.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Employers Section
+  employersTitle = 'Employer Access — Add Cash-Out Literacy to Benefits'
+  employersSubtitle = 'Equip teams with calculators and coaching for renovation, tuition, or debt payoff goals.'
+  employersImage = 'https://images.unsplash.com/photo-1760802136542-0cefb143f1f5?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Forward-thinking employers add mortgage literacy to financial wellness programs. Our plug-and-play toolkit helps employees evaluate cash-out refis without sales pressure.'
+  employersBullet1Title = 'Zero-Cost Integration'
+  employersBullet1Text = 'Share the portal through intranet pages or benefits emails—no contracts, no invoices.'
+  employersBullet2Title = 'Guided Workshops'
+  employersBullet2Text = 'Live sessions walk through calculator outputs, tax planning, and lender selection.'
+  employersBullet3Title = 'Retention & Stability'
+  employersBullet3Text = 'Employees feel supported when funding education, caregiving, or renovations with equity.'
+  employersCTA = 'Learn About Employer Mortgage Benefits'
+  employersCTALink = 'https://www.browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Cash-Out Refinance Insights'
+  blogSubtitle = 'Stories, strategies, and calculator tutorials straight from the field.'
+  
+  # FAQ Section
+  faqTitle = 'Cash-Out Refinance FAQs'
+  faqSubtitle = 'Clear answers backed by data and calculators.'
+  
+  faq1Question = 'How much equity can I actually access?'
+  faq1Answer = 'Most lenders allow up to 80% LTV on primary homes (65-75% on second homes, 70% on investment). Use our calculators to subtract outstanding liens, closing costs, and reserve requirements to see true net proceeds.'
+  
+  faq2Question = 'Will my payment skyrocket after a cash-out refi?'
+  faq2Answer = 'Payment changes depend on rate, term, and escrow adjustments. The payment transition calculator shows principal, interest, taxes, insurance, and MI deltas so you can plan budgets and request lender credits when needed.'
+  
+  faq3Question = 'Is cash-out refinancing better than a HELOC?'
+  faq3Answer = 'For large projects or debt payoff strategies, fixed-rate cash-out refis provide predictable payments and simpler accounting. HELOCs offer flexibility but carry variable rates. Use our blended-rate tool to compare both on the same screen.'
+  
+  faq4Question = 'How do I avoid delays once I apply?'
+  faq4Answer = 'Complete calculator worksheets first, gather payoff statements for all liens, document reserves, and monitor credit. That preparation keeps underwriting conditions light and closing timelines short.'
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Plan Your Cash-Out Refinance?'
+  ctaDescription = 'Pair professional calculators with verified lender introductions and credit coaching for a confident equity release experience.'
+  ctaCTA = 'Launch the Calculator Suite'
+  ctaCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Cash-Out Refinance Calculators Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'

@@ -64,6 +64,7 @@ hugo server --environment onlinemortgagescalculator --port 1343
 hugo server --environment homemortgagescalculator --port 1344
 hugo server --environment onlineheloccalculator --port 1345
 hugo server --environment conforminghomeloan --port 1346
+hugo server --environment cashoutrefinancecalculators --port 1347
 
 
 Access sites at http://localhost:PORT
