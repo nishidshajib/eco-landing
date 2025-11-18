@@ -57,6 +57,8 @@ hugo server --environment fha203kloanofficer --port 1336
 hugo server --environment fhahomemortgageloan --port 1337
 hugo server --environment nonconforminghomeloans --port 1338
 hugo server --environment purchasemortgageloans --port 1339
+hugo server --environment cashoutrefinancemortgages --port 1340
+hugo server --environment cashoutrefimortgage --port 1341
 
 
 Access sites at http://localhost:PORT

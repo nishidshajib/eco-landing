@@ -1,0 +1,276 @@
+baseURL = 'https://cashoutrefimortgage.com/'
+languageCode = 'en-us'
+title = 'Cash-Out Refi Mortgage'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/cashoutrefimortgage'
+publishDir = 'public/cashoutrefimortgage'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Cash-out refinance mortgage guidance focused on equity access and debt consolidation—learn strategic refinancing, rate analysis, credit preparation, and when cash-out refi makes financial sense for debt payoff'
+  author = 'Cash-Out Refi Mortgage®'
+  shortName = 'Cash-Out Refi Mortgage'
+  tagline = 'Access Equity. Consolidate Debt. Build Financial Freedom.'
+  homepage = 'https://cashoutrefimortgage.com/'
+  
+  # SEO Configuration
+  siteName = 'Cash-Out Refi Mortgage'
+  siteDescription = 'Cash-out refinance mortgage education specializing in equity access and debt consolidation strategies—understand rate-and-term vs cash-out comparison, credit score optimization, debt payoff math, and strategic refinancing for financial flexibility nationwide.'
+  keywords = ['Cash-Out Refinance', 'Debt Consolidation', 'Equity Access', 'Refi Mortgage', 'Credit Preparation', 'Cash-Out Refi®', 'Middle Credit Score®', 'Browse Lenders®']
+  serviceType = 'Cash-Out Refinance Education & Debt Consolidation Guidance'
+  
+  # Social Media
+  twitterHandle = '@CashOutRefi'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Cash-Out Refi Mortgage - Access Equity & Consolidate Debt Strategically'
+  heroSubtitle = 'Learn cash-out refinance strategies for debt consolidation, equity access, and financial flexibility—understand when refinancing makes sense, how credit affects rates, and the math behind debt payoff with home equity.'
+  heroImage = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Explore Cash-Out Strategies'
+  heroCTA1Link = 'https://www.cash-outrefinance.com'
+  heroCTA2Text = 'Check Your Credit Impact'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'Equity Access. Debt Consolidation. Strategic Refinancing.'
+  aboutImage = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'BrowseLenders.com'
+  tertiaryDomainURL = 'https://www.browselenders.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Cash-Out Refi Options for Debt Consolidation & Equity Access'
+  programsSubtitle = 'Compare conventional, FHA, and VA cash-out refinance programs with focus on debt payoff strategies'
+  
+  # Program Cards
+  program1Title = 'Conventional Cash-Out Refi for Debt Consolidation (80% LTV)'
+  program1Image = 'https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''Conventional cash-out refinance up to 80% LTV requires 620+ credit (720+ optimal) with documented debt consolidation use. Ideal for consolidating credit cards (18-24%), auto loans (6-9%), and personal loans into lower mortgage rate (6-7%). Connect with specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> who understand debt consolidation cash-out strategies.'''
+  
+  program2Title = 'FHA Cash-Out Refi for Middle Credit Scores (80% LTV)'
+  program2Image = 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''FHA cash-out refinance accepts 580-680 credit scores with higher DTI ratios, allowing debt consolidation even with middle credit tiers. Mortgage insurance required but flexible qualification helps borrowers access equity for debt payoff. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> determines FHA vs conventional cash-out pricing for optimal debt consolidation strategy.'''
+  
+  program3Title = 'VA Cash-Out Refi for Veterans (90% LTV)'
+  program3Image = 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''VA cash-out refinance offers up to 90% LTV for eligible veterans with no mortgage insurance and competitive rates for debt consolidation. Maximum equity access with lower costs than conventional or FHA for debt payoff strategies. Learn more at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance®</a> before refinancing.'''
+  
+  programsCTA = 'Compare Debt Consolidation Options'
+  programsCTALink = 'https://www.cash-outrefinance.com'
+  programsClosingText = '''To explore cash-out refi mortgage options for debt consolidation and connect with verified loan officers who specialize in equity access strategies and credit-optimized refinancing, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for transparent guidance on strategic debt payoff through refinancing.'''
+  
+  # Education Section
+  educationTitle = 'Cash-Out Refi Education - Debt Consolidation & Equity Strategies'
+  educationSubtitle = 'Master the math behind debt consolidation through cash-out refinancing and strategic equity access.'
+  
+  # Education Cards
+  edu1Title = 'Debt Consolidation Math: When Cash-Out Refi Saves Money'
+  edu1Image = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''Cash-out refi works when high-interest debt (18-24%) converts to lower mortgage rate (6-7%). Example: $50K at 20% = $10K/year interest. Cash-out at 6.5% = $3,250/year = $6,750 savings. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> determines optimal rates.'''
+  
+  edu2Title = 'Credit Score Impact on Cash-Out Refi Debt Consolidation'
+  edu2Image = 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''Credit scores affect rates significantly. 680 credit = 7.00%, 720 credit = 6.50%, 760 credit = 6.00%. Improving 680→720 saves $91/month or $5,460 over 5 years. Compare at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'''
+  
+  edu3Title = 'Equity Requirements for Debt Consolidation Cash-Out Refi'
+  edu3Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''Cash-out refi requires 20%+ equity (80% LTV conventional, 80% FHA, 90% VA). Example: $400K home with $280K mortgage = $120K equity. Cash-out to 80% = $40K available. Calculate at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance®</a>.'''
+  
+  edu4Title = 'Breakeven Timeline: Debt Consolidation vs Closing Costs'
+  edu4Image = 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''Closing costs ($7K-10K) must be recovered through savings. Example: $50K debt payoff saves $400/month, costs $8K = 20-month breakeven. Model your timeline at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> calculators.'''
+  
+  educationCTA = 'Learn Debt Consolidation Strategies'
+  educationCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center - Debt Consolidation Through Cash-Out Refi'
+  learningSubtitle = 'Knowledge empowers smart debt payoff decisions through strategic refinancing.'
+  learningImage = 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = '''Cash-out refi for debt consolidation requires analyzing total interest savings, monthly payment impact, breakeven timeline, and credit score optimization. Strategic debt payoff through refinancing works when high-interest debt converts to lower mortgage rates with sufficient equity and long holding period.'''
+  learningBullet1 = '''Compare debt consolidation strategies at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> with rate quotes and payoff calculations.'''
+  learningBullet2 = 'Credit score improvement before cash-out refi can save thousands—680 to 720 credit saves $5K+ over 5 years on typical debt consolidation.'
+  learningBullet3 = '''Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> determines cash-out refi rates and debt consolidation effectiveness.'''
+  learningBullet4 = '''Learn when cash-out refi beats alternatives at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance®</a> for debt payoff.'''
+  learningPara2 = 'We help homeowners understand debt consolidation math, rate optimization, credit preparation, and breakeven timelines before refinancing.'
+  learningPara3 = '''<a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Explore Cash-Out Refinance® Resources</a> for debt consolidation calculators and guidance.'''
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Cash-Out Refi Borrowers Are Saying'
+  testimonialsSubtitle = 'Real stories from homeowners who consolidated debt through refinancing'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://randomuser.me/api/portraits/men/45.jpg'
+  testimonial1Text = '''I had $62,000 in credit card debt at 21% average interest costing me $13,020/year. Cash-out refi at 6.75% dropped interest to $4,185/year—saving me $8,835 annually. My loan officer showed me the 11-month breakeven including closing costs. Best financial decision I made.'''
+  testimonial1Name = 'Michael R. - Tampa, FL'
+  testimonial1Subtitle = '702 Credit, $62K Debt Consolidation, Conventional Cash-Out'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://randomuser.me/api/portraits/women/32.jpg'
+  testimonial2Text = '''My 658 credit score qualified for FHA cash-out refi at 7.125% to pay off $38,000 in credit cards and car loan. Previous payments were $1,285/month. New mortgage increased $620/month but eliminated all debt payments—net savings $665/month. My cash flow improved immediately.'''
+  testimonial2Name = 'Sarah T. - Phoenix, AZ'
+  testimonial2Subtitle = '658 Credit, FHA Cash-Out, $38K Debt Payoff'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://randomuser.me/api/portraits/men/58.jpg'
+  testimonial3Text = '''As a veteran, I used VA cash-out refi at 90% LTV to consolidate $71,000 in student loans and personal debt at 6.25% rate with no mortgage insurance. Saved $512/month in payments and paid off high-interest debt. The funding fee was worth it for lower rates and simplified finances.'''
+  testimonial3Name = 'James K. - San Diego, CA'
+  testimonial3Subtitle = 'Veteran, 715 Credit, VA Cash-Out Debt Consolidation'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://randomuser.me/api/portraits/women/47.jpg'
+  testimonial4Text = '''I waited 5 months to improve my credit from 672 to 708 before doing cash-out refi for debt consolidation. Rate dropped from 7.50% to 6.875% on $285,000 refinance—saving me $148/month or $8,880 over 5 years. My loan officer advised waiting and it paid off.'''
+  testimonial4Name = 'Patricia L. - Charlotte, NC'
+  testimonial4Subtitle = '672→708 Credit Improvement, $45K Debt Consolidation'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://randomuser.me/api/portraits/men/36.jpg'
+  testimonial5Text = '''We compared cash-out refi vs keeping our 4.25% mortgage and getting HELOC for debt consolidation. Cash-out at 6.75% on full balance cost more than HELOC at 9.5% on just the debt amount. My loan officer ran both scenarios—we kept low rate and did HELOC instead.'''
+  testimonial5Name = 'David & Maria S. - Austin, TX'
+  testimonial5Subtitle = '689 Credit, Chose HELOC Over Cash-Out After Analysis'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://randomuser.me/api/portraits/women/54.jpg'
+  testimonial6Text = '''Cash-out refi consolidated $54,000 in debt at 6.875% rate. Closing costs were $8,400 but monthly savings of $720 meant breakeven in 12 months. After 18 months, I have saved $12,960 and eliminated all credit card debt. Financial stress is gone.'''
+  testimonial6Name = 'Linda M. - Denver, CO'
+  testimonial6Subtitle = '725 Credit, $54K Debt Consolidation, 12-Month Breakeven'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why Choose Cash-Out Refi Mortgage® for Debt Consolidation?'
+  whyChooseSubtitle = 'Expert debt payoff guidance, strategic refinancing education, and transparent rate analysis'
+  whyChoosePara1 = '''Homeowners considering cash-out refi for debt consolidation need more than rates—they need debt payoff math, breakeven analysis, credit optimization guidance, and understanding when refinancing saves money versus alternatives.'''
+  whyChoosePara2 = '''<strong>Cash-Out Refi Mortgage®</strong> provides <strong>strategic debt consolidation education and transparent refinancing guidance</strong> for smart debt payoff decisions.'''
+  
+  whyChooseBox1Title = 'Debt Consolidation Specialists'
+  whyChooseBox1Para = 'Connect with licensed loan officers who specialize in cash-out refi for debt consolidation, understanding the math behind debt payoff and credit optimization.'
+  whyChooseBox1Bullet1 = 'NMLS-verified professionals with debt consolidation expertise'
+  whyChooseBox1Bullet2 = 'Transparent rate quotes with debt payoff savings calculations'
+  whyChooseBox1Bullet3 = 'Strategic refinancing guidance for optimal debt consolidation'
+  whyChooseBox1CTA = 'Find Debt Consolidation Specialists'
+  whyChooseBox1CTALink = 'https://www.browselenders.com'
+  
+  whyChooseBox2Title = 'Credit Score Optimization for Better Rates'
+  whyChooseBox2Para = 'Learn how credit scores affect cash-out refi rates and when delaying refinancing to improve credit saves thousands in debt consolidation costs.'
+  whyChooseBox2Bullet1 = 'Credit tier analysis showing rate impact on debt payoff savings'
+  whyChooseBox2Bullet2 = 'Strategic credit improvement timelines before refinancing'
+  whyChooseBox2Bullet3 = 'Free credit education without subscriptions or upsells'
+  whyChooseBox2CTA = 'Check Your Credit Impact'
+  whyChooseBox2CTALink = 'https://www.middlecreditscore.com'
+  
+  whyChooseBox3Title = 'Breakeven & Payoff Analysis Tools'
+  whyChooseBox3Para = 'Access calculators that show closing cost recovery timelines, total interest savings, and monthly payment impact of debt consolidation through cash-out refi.'
+  whyChooseBox3Bullet1 = 'Debt consolidation breakeven calculators'
+  whyChooseBox3Bullet2 = 'Total interest savings over debt payoff timeline'
+  whyChooseBox3Bullet3 = 'Cash-out refi vs alternative comparison tools'
+  whyChooseBox3CTA = 'Access Calculators'
+  whyChooseBox3CTALink = 'https://www.cash-outrefinance.com'
+  
+  # Why Choose Main CTA
+  whyChooseCTA = 'Connect with Debt Consolidation Specialists'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Impact on Debt Consolidation Cash-Out Refi'
+  creditScoreImage = 'https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''Cash-out refi lenders use middle credit scores to determine debt consolidation rates and LTV maximums. Understanding credit tiers (680-719 = better debt consolidation pricing, 720+ = optimal rates) helps time refinancing and avoid applying before credit improvement that saves thousands on debt payoff interest.'''
+  creditScoreHeading1 = 'Credit education for debt consolidation readiness'
+  creditScoreText1 = 'Free guidance on how middle credit scores affect cash-out refi debt consolidation rates and when improving credit before refinancing maximizes debt payoff savings.'
+  creditScoreHeading2 = 'Understand debt consolidation rate tiers'
+  creditScoreText2 = 'Learn how credit scores impact cash-out refi rates for debt consolidation (typically 0.25-0.50% higher than rate-and-term) and LTV maximums affecting debt payoff amounts.'
+  creditScoreHeading3 = 'Optimize credit for maximum debt payoff savings'
+  creditScoreText3 = 'Improve credit scores, time cash-out refi optimally, and maximize debt consolidation effectiveness through strategic credit preparation before refinancing.'
+  creditScoreCTA = 'Check Credit Impact on Debt Consolidation'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers - Debt Consolidation Education as Financial Wellness'
+  employersSubtitle = 'Help employees understand cash-out refi strategies for debt payoff through Cash-Out Refi Mortgage®.'
+  employersImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''HR departments enhance financial wellness programs with debt consolidation education. Through Cash-Out Refi Mortgage® and Browse Lenders®, employers offer no-cost access to debt payoff strategies and verified loan officers—reducing financial stress and supporting employee stability.'''
+  employersBullet1Title = 'No-cost debt consolidation education'
+  employersBullet1Text = 'Add Cash-Out Refi Mortgage® resources to financial-wellness programs—employees access debt consolidation calculators and refinancing guidance instantly.'
+  employersBullet2Title = 'Credit optimization for better rates'
+  employersBullet2Text = 'Employees learn how credit affects cash-out refi debt consolidation rates and receive timing guidance for optimal debt payoff savings.'
+  employersBullet3Title = 'Reduce financial stress and improve retention'
+  employersBullet3Text = 'Empower your workforce with transparent debt consolidation guidance through strategic refinancing education that improves financial stability.'
+  employersCTA = 'Learn About Employer Programs'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Debt Consolidation & Cash-Out Refi Insights'
+  blogSubtitle = 'Expert guidance on debt payoff strategies and refinancing decisions'
+  blogCTA = 'Read All Articles'
+  blogCTALink = '/blogs/'
+  
+  # Calculators Section
+  calculatorsTitle = 'Debt Consolidation & Cash-Out Refi Calculators'
+  calculatorsSubtitle = 'Calculate debt payoff savings, breakeven timelines, credit score impact on rates, and monthly payment changes before refinancing.'
+  
+  # Contact Section
+  contactTitle = 'Questions About Debt Consolidation Through Cash-Out Refi?'
+  contactSubtitle = 'Our team is here to help you understand debt payoff strategies and strategic refinancing decisions.'
+  contactEmail = 'support@browselenders.com'
+  contactPhone = '1-800-CASHOUT'
+  contactAddress = 'Cash-Out Refi Mortgage® - Nationwide Debt Consolidation Education'
+  contactPara = '''Have questions about cash-out refi for debt consolidation? Need guidance on breakeven analysis, credit optimization, or comparing debt payoff strategies? Contact our support team at <a href="mailto:support@browselenders.com" class="text-accent hover:underline">support@browselenders.com</a> for personalized assistance with your debt consolidation questions.'''
+  contactCTA = 'Email Our Support Team'
+  contactCTALink = 'mailto:support@browselenders.com'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Debt Consolidation & Cash-Out Refi Questions'
+  faqSubtitle = 'Clear answers about debt payoff through refinancing and strategic equity access'
+  
+  # FAQ 1
+  faq1Question = 'When does cash-out refi make sense for debt consolidation?'
+  faq1Answer = '''Cash-out refi makes financial sense for debt consolidation when: (1) High-interest debt (credit cards 18%+, auto loans 7%+) converts to lower mortgage rate (6-7%), (2) You have 20%+ equity (80% LTV conventional), (3) Monthly savings from lower interest exceed increased mortgage payment, (4) Closing costs recover within 18-24 months through debt payoff savings, (5) You plan to stay in home 3+ years. Example: $50K credit card debt at 20% costs $10K/year interest. Cash-out refi at 6.5% costs $3,250/year = $6,750 annual savings. But extending debt into 30-year mortgage requires careful breakeven analysis. Connect with debt consolidation specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> for personalized analysis.'''
+  
+  # FAQ 2
+  faq2Question = 'How much can I save consolidating debt with cash-out refi?'
+  faq2Answer = '''Debt consolidation savings through cash-out refi depend on: current debt interest rates, cash-out refi rate (affected by your credit score), debt amount consolidated, and payoff timeline. Example scenarios: (1) $40K credit cards at 22% = $8,800/year interest → cash-out at 6.75% = $2,700/year interest = $6,100 annual savings, (2) $60K mixed debt (cards + auto) at 15% average = $9,000/year interest → cash-out at 6.5% = $3,900/year interest = $5,100 annual savings. However, extending 5-year debt into 30-year mortgage increases total interest paid over full term. Strategic debt consolidation requires breaking even on closing costs ($7K-10K) within 18-24 months through monthly savings, then aggressively paying down mortgage principal. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> significantly affects cash-out refi rates and total debt consolidation savings.'''
+  
+  # FAQ 3
+  faq3Question = 'What credit score do I need for cash-out refi debt consolidation?'
+  faq3Answer = '''Cash-out refi credit score requirements for debt consolidation: Conventional: 620 minimum (640-679 = standard pricing, 680-719 = better rates, 720+ = optimal rates for maximum debt payoff savings). FHA: 580 minimum (most lenders require 620+, 640+ = better debt consolidation rates). VA: 620-640 typical minimum (700+ = optimal veteran debt consolidation pricing). Your middle credit score (middle of three bureau scores) determines qualification and rate pricing. Credit score impact on debt consolidation: 680 credit = 7.00% cash-out rate, 720 credit = 6.50% cash-out rate on $300K refinance = $91/month difference or $5,460 savings over 5 years. Often worth improving credit 3-6 months before cash-out refi for debt consolidation to optimize rates and maximize debt payoff savings. Calculate your credit tier pricing at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance®</a> before applying.'''
+  
+  # FAQ 4
+  faq4Question = 'Should I do cash-out refi or HELOC for debt consolidation?'
+  faq4Answer = '''Cash-out refi vs HELOC for debt consolidation depends on: (1) Current mortgage rate (if you have 3-4% rate, HELOC may preserve low rate better than cash-out refi at 6-7%), (2) Debt amount (large debt $50K+ often favors cash-out refi lower rates, smaller debt $20K-30K may favor HELOC flexibility), (3) Rate environment (fixed cash-out refi vs variable HELOC rates). Example: $60K debt consolidation with 3.75% existing mortgage: Cash-out refi at 6.75% on full $360K balance costs more than HELOC at 9.5% on just $60K—keep low mortgage rate and use HELOC for debt payoff. But if existing mortgage is 5.5%+, cash-out refi at 6.5-7% may offer better overall debt consolidation strategy. Compare both scenarios with loan officers at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a> who specialize in debt consolidation analysis.'''
+  
+  # CTA Section (Contact Us)
+  ctaTitle = 'Ready to Explore Debt Consolidation Through Cash-Out Refi?'
+  ctaDescription = 'Connect with verified loan officers who specialize in strategic debt payoff through refinancing.'
+  ctaCTA = 'Get Started with Debt Consolidation Analysis'
+  ctaCTALink = 'https://www.browselenders.com'
+  ctaSecondaryText = 'Learn More About Cash-Out Strategies'
+  ctaSecondaryLink = 'https://www.cash-outrefinance.com'
