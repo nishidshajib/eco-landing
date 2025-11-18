@@ -59,6 +59,7 @@ hugo server --environment nonconforminghomeloans --port 1338
 hugo server --environment purchasemortgageloans --port 1339
 hugo server --environment cashoutrefinancemortgages --port 1340
 hugo server --environment cashoutrefimortgage --port 1341
+hugo server --environment cash-outrefinancing --port 1342
 
 
 Access sites at http://localhost:PORT
