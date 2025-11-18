@@ -1,0 +1,423 @@
+baseURL = 'https://onlineheloccalculator.com/'
+languageCode = 'en-us'
+title = 'Online HELOC Calculator'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/onlineheloccalculator'
+publishDir = 'public/onlineheloccalculator'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Professional HELOC calculators with equity access planning and refinance preparation tools—calculate available credit lines, compare HELOC versus cash-out refinancing options, understand draw periods and repayment structures, evaluate home equity strategies, and optimize borrowing decisions with comprehensive financial calculators designed for informed home equity management and long-term financial wellness.'
+  author = 'Online HELOC Calculator®'
+  shortName = 'Online HELOC Calculator'
+  tagline = 'Calculate. Access. Optimize Your Home Equity.'
+  homepage = 'https://onlineheloccalculator.com/'
+  
+  # SEO Configuration
+  siteName = 'Online HELOC Calculator'
+  siteDescription = 'Professional HELOC calculators with equity access planning and refinance preparation tools—calculate available credit lines, compare HELOC versus cash-out refinancing options, understand draw periods and repayment structures, evaluate home equity strategies, and optimize borrowing decisions with comprehensive financial calculators designed for informed home equity management and long-term financial wellness.'
+  keywords = ['Online HELOC Calculator', 'Home Equity Line of Credit', 'Equity Access Calculator', 'HELOC vs Cash-Out Refinance', 'Home Equity Planning', 'Online HELOC Calculator®', 'Cash-Out Refinance®', 'Middle Credit Score®']
+  serviceType = 'HELOC Calculator Tools & Equity Access Planning'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Online HELOC Calculator - Plan Your Home Equity Access with Refinance Preparation'
+  heroSubtitle = 'Calculate available HELOC amounts, compare equity access options, understand draw periods and payment structures—professional HELOC planning tools with refinance preparation guidance help you optimize home equity borrowing, evaluate HELOC versus cash-out refinance decisions, and make informed financial choices backed by transparent rate analysis and comprehensive equity utilization strategies.'
+  heroImage = 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Explore Cash-Out Refinance Options'
+  heroCTA1Link = 'https://www.cash-outrefinance.com'
+  heroCTA2Text = 'Check Your Credit Score Impact'
+  heroCTA2Link = 'https://www.middlecreditscore.com'
+  
+  # About Section
+  aboutTitle = 'HELOC Planning. Equity Access. Smart Refinance Decisions.'
+  aboutImage = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'BrowseLenders.com'
+  tertiaryDomainURL = 'https://www.browselenders.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Comprehensive HELOC Planning Tools for Smart Equity Access'
+  programsSubtitle = 'Calculate credit lines, compare options, and optimize home equity borrowing decisions'
+  
+  # Program Cards
+  program1Title = 'HELOC Credit Line Calculator (Available Equity Analysis)'
+  program1Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  program1Description = '''HELOC calculator determines maximum credit line based on home value, existing mortgage balance, and lender LTV limits. Example: $500K home value - $280K mortgage = $220K equity. At 85% CLTV = $425K max - $280K mortgage = $145K HELOC available. Consider <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> alternatives for different equity access strategies.'''
+  
+  program2Title = 'HELOC vs Cash-Out Refinance Comparison Tool'
+  program2Image = 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=1600&auto=format&fit=crop'
+  program2Description = '''Compare HELOC flexibility with variable rates versus cash-out refinance fixed rates and consolidated debt. Example: $100K HELOC at Prime + 1% (currently 9.50%) with interest-only draw period versus <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> at 7.25% fixed with immediate principal payments. Analyze total costs, payment structures, tax implications across equity access methods.'''
+  
+  program3Title = 'Draw Period & Repayment Calculator (Payment Planning)'
+  program3Image = 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=1600&auto=format&fit=crop'
+  program3Description = '''Calculate HELOC payments during 10-year draw period (interest-only option) versus 20-year repayment period (principal + interest required). Example: $80K drawn at 9.0% = $600/month interest-only during draw, then $720/month P&I during repayment. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> affects HELOC approval and rate tier significantly.'''
+  
+  program4Title = 'Combined Loan-to-Value (CLTV) Calculator'
+  program4Image = 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop'
+  program4Description = '''CLTV calculator determines maximum borrowing combining first mortgage and HELOC. Most lenders allow 80-90% CLTV depending on credit profile. Example: $450K home, $250K first mortgage, 85% CLTV = $382,500 max combined - $250K first = $132,500 HELOC limit. Compare with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">refinancing</a> to potentially access more equity at fixed rates.'''
+  
+  program5Title = 'Rate Adjustment Impact Calculator (Variable Rate Analysis)'
+  program5Image = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1600&auto=format&fit=crop'
+  program5Description = '''Analyze HELOC payment changes across rate environments. Example: $100K balance at Prime + 0.5%. If Prime increases 8.50% to 10.00%, monthly interest rises $708 to $833 ($125/month increase). Rate caps (typically 18% lifetime) protect against extreme increases. Find competitive <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">HELOC lenders</a> with favorable margin terms and flexible repayment options.'''
+  
+  program6Title = 'Equity Utilization Strategy Calculator'
+  program6Image = 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1600&auto=format&fit=crop'
+  program6Description = '''Calculate optimal equity usage balancing immediate needs with maintaining home equity cushion for market fluctuations. Example: $300K equity, using $150K (50% utilization) versus $225K (75% utilization). Analyze buffer for market downturns, future borrowing flexibility, and long-term wealth building. <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-out refinancing</a> may preserve credit line flexibility while accessing needed funds.'''
+  
+  programsCTA = 'Access HELOC Calculators'
+  programsCTALink = 'https://www.middlecreditscore.com'
+  programsClosingText = '''To explore comprehensive HELOC calculators and connect with lenders who provide transparent rate quotes based on your credit profile, visit the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for personalized HELOC planning guidance and credit optimization strategies aligned with your financial goals.'''
+  
+  # About Section Details
+  aboutPara1 = '''Online HELOC Calculator provides professional calculators and comprehensive planning tools for home equity line of credit evaluation—determine available credit lines based on current home value and existing mortgage liens, compare HELOC variable rates with cash-out refinance fixed rates across various market conditions, understand draw period flexibility versus repayment period requirements and payment structure transitions, calculate combined loan-to-value ratios under different lender guidelines (typically 80-90% CLTV limits), and evaluate equity access strategies optimized for your specific financial goals, risk tolerance, and long-term homeownership objectives. Our platform empowers homeowners with transparent analysis tools that illuminate the true costs, benefits, and strategic considerations of accessing home equity through HELOCs versus alternative refinance products.'''
+  
+  aboutPara2 = '''Our HELOC planning tools analyze home equity comprehensively across multiple dimensions—calculate maximum borrowing capacity under lender CLTV limits while maintaining appropriate equity cushions for market volatility, compare interest-only draw periods with principal-plus-interest repayment phases to understand payment transition impacts, evaluate rate adjustment impacts on variable HELOC payments as Prime Rate fluctuates with Federal Reserve policy changes, assess HELOC versus <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> trade-offs considering rate structure differences and total borrowing costs over time, understand credit score requirements affecting HELOC approval rates and margin pricing tiers, model various equity utilization scenarios for renovations versus debt consolidation versus investment funding, and develop equity utilization strategies balancing immediate access needs with long-term financial security and home equity preservation goals. These tools provide homeowners with data-driven insights for confident borrowing decisions aligned with comprehensive financial planning objectives.'''
+  
+  aboutPara3 = '''Whether you need funds for major home renovations that increase property value, debt consolidation to eliminate high-interest credit card balances, emergency reserves for financial security, investment opportunities requiring capital access, education funding for family members, or other significant financial needs, Online HELOC Calculator® helps evaluate equity access options with complete transparency and educational context. Our calculators model draw period flexibility advantages allowing access to funds as needed rather than receiving lump sums, analyze variable rate scenarios across different Prime Rate environments to understand payment variability and rate cap protections, compare total costs of HELOC versus fixed-rate alternatives over full loan terms including draw and repayment periods, provide credit score guidance for optimal rate tier qualification and margin reduction strategies, and offer scenario planning tools for various equity access amounts and repayment strategies. Connect with competitive <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">HELOC lenders</a> through Browse Lenders® for transparent pricing, flexible terms, and professional equity access guidance tailored to your unique financial situation and homeownership goals.'''
+  
+  aboutPara4 = '''Understanding HELOC structure is critical for smart borrowing decisions and long-term financial planning—draw periods typically offer 10 years of access with interest-only payment options allowing maximum cash flow flexibility while building balances, followed by 20-year repayment periods requiring principal-plus-interest payments that substantially increase monthly obligations at transition points. Our calculators help you plan strategically for payment transitions by modeling payment increases when entering repayment phase, develop balance paydown strategies during draw years that reduce interest-only payment amounts and minimize repayment period payment shock, evaluate when early principal payments during draw periods reduce long-term interest costs substantially (often saving tens of thousands in interest over full loan terms), and understand optimal draw utilization timing relative to anticipated income changes or other financial obligations. Variable rates tied to Prime Rate create both opportunities and risks requiring careful analysis—rates adjust quarterly or monthly with Federal Reserve policy changes impacting payment amounts throughout loan life, rate caps (typically 18% lifetime maximum) provide protection against extreme increases during high-rate environments, periodic rate adjustment caps (typically 2% per adjustment) limit payment volatility, and strategic timing of HELOC applications relative to rate environments impacts total borrowing costs significantly over 30-year combined draw and repayment periods.'''
+  
+  aboutPara5 = '''Credit scores play decisive roles in HELOC approval and pricing outcomes—minimum scores typically require 680 for approval consideration, with optimal pricing tiers achieved at 720 or higher resulting in margin reductions of 0.50-1.50 percentage points below lower score tiers. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> (middle of three bureau scores from Equifax, Experian, and TransUnion) determines margin over Prime Rate, affecting monthly interest costs substantially over credit line life (potentially saving $5,000-15,000 in interest over 10-year draw periods for $100,000 credit lines). Strategic credit improvement before applying through paying down revolving balances below 30% utilization, resolving any derogatory items or collection accounts, disputing credit report errors that artificially suppress scores, and timing applications after recent credit inquiries age beyond 6-12 months can reduce margins significantly and improve approval likelihood with preferred lenders. Our credit education resources explain rate tier thresholds specific to major HELOC lenders, credit optimization strategies with timeline expectations for score improvements, debt-to-income ratio management for approval qualification, and optimal timing for HELOC applications relative to credit profile improvements to maximize rate tier benefits and minimize borrowing costs across full loan terms.'''
+  
+  aboutPara6 = '''Home equity represents significant financial resource and substantial accumulated wealth—using it wisely requires comprehensive planning, transparent cost-benefit analysis, and strategic consideration of alternative financing options. Online HELOC Calculator® provides tools, educational resources, and lender connections for informed equity access decisions, helping you evaluate HELOC options comprehensively, understand true costs including interest, fees, and payment structure transitions, assess benefits including flexible access, potential tax deductibility (when used for home improvements), and lower rates than unsecured borrowing, optimize credit profiles for better pricing and approval terms through targeted score improvement strategies, and connect with professional lenders offering competitive rates and flexible terms tailored to diverse borrower profiles. Whether choosing between HELOC and <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> based on rate environment and borrowing needs, planning for draw period management and balance utilization strategies, optimizing credit for better rate tiers through pre-application score improvement, evaluating equity access timing relative to market conditions and rate trends, or developing comprehensive equity utilization plans balancing multiple financial goals, our resources support smart financial decisions aligned with long-term homeownership objectives, wealth preservation, and financial wellness goals throughout the complete home equity borrowing lifecycle.'''
+  
+  aboutHeading1 = 'Calculate available HELOC amounts accurately'
+  aboutText1 = 'Determine maximum credit lines based on appraised home values, existing mortgage balances, lender CLTV policies (typically 80-90%), and calculate available equity access under various borrowing scenarios.'
+  
+  aboutHeading2 = 'Compare HELOC vs cash-out refinance options'
+  aboutText2 = 'Analyze variable-rate HELOC flexibility with draw period advantages versus fixed-rate cash-out refinance debt consolidation benefits, comparing total costs, payment structures, and optimal equity access methods for specific financial situations.'
+  
+  aboutHeading3 = 'Understand draw and repayment periods'
+  aboutText3 = 'Calculate payments during interest-only draw periods (typically 10 years) versus principal-plus-interest repayment periods (typically 20 years), planning for payment increases when transitioning from draw to repayment phase.'
+  
+  aboutHeading4 = 'Analyze rate adjustment impacts'
+  aboutText4 = 'Model HELOC payment changes across interest rate environments, understand rate caps protecting against extreme increases, and evaluate when fixed-rate alternatives provide better long-term stability and predictability.'
+  
+  aboutHeading5 = 'Optimize equity utilization strategies'
+  aboutText5 = 'Balance immediate borrowing needs with maintaining equity cushions for market volatility, evaluate strategic uses of home equity (renovations, debt consolidation, investments), and preserve financial flexibility for future needs.'
+  
+  aboutHeading6 = 'Access professional HELOC guidance'
+  aboutText6 = '''Connect with experienced <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">HELOC lenders</a> offering competitive rates, flexible terms, and transparent equity access solutions tailored to individual financial profiles and homeownership goals.'''
+  
+  # Why Choose Section
+  whyTitle = 'Why Online HELOC Calculator for Equity Access Planning?'
+  whySubtitle = 'Professional HELOC calculators with comprehensive equity analysis and refinance comparison'
+  
+  whyReason1 = 'Accurate Credit Line Calculations'
+  whyText1 = '''HELOC calculators determine precise borrowing capacity under lender CLTV policies—analyze available equity, calculate maximum credit lines, understand approval requirements, compare with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> alternatives for optimal equity access matching financial goals and market conditions.'''
+  
+  whyReason2 = 'Draw Period & Repayment Planning'
+  whyText2 = 'Calculate payment obligations during interest-only draw periods versus principal-plus-interest repayment phases—model payment increases when draw period ends, plan budget adjustments, understand total borrowing costs across full HELOC lifecycle including rate adjustment impacts.'
+  
+  whyReason3 = 'HELOC vs Refinance Comparison'
+  whyText3 = '''Comprehensive analysis comparing variable-rate HELOC flexibility with fixed-rate cash-out refinance stability—evaluate interest rate risk, payment predictability, total costs, debt consolidation benefits, tax implications, and strategic advantages of different equity access methods for specific financial situations and goals.'''
+  
+  whyReason4 = 'Rate Environment Modeling'
+  whyText4 = '''Analyze HELOC payments across interest rate scenarios—understand Prime rate adjustments affecting HELOC costs, evaluate rate caps limiting maximum increases, model payment changes during rising or falling rate environments, compare variable rate risk with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">fixed-rate refinancing</a> alternatives.'''
+  
+  whyReason5 = 'Credit Score Impact Education'
+  whyText5 = '''Understand how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit scores</a> affect HELOC approval decisions and rate tiers—learn credit requirements for optimal pricing (typically 700+ for best rates), discover credit improvement strategies before applying, calculate rate savings from higher credit scores reducing HELOC margin significantly.'''
+  
+  whyReason6 = 'Equity Strategy Optimization'
+  whyText6 = 'Develop smart equity utilization plans balancing immediate borrowing needs with long-term financial security—maintain equity cushions for market downturns, preserve future borrowing capacity, evaluate strategic uses maximizing home equity benefits while protecting overall financial wellness and homeownership stability.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Impact on HELOC Approval & Rate Pricing'
+  creditScoreImage = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = '''HELOC lenders use middle credit scores (middle of three bureau scores) for approval decisions and rate tier assignments. Most lenders require 680+ minimum, with best rates typically at 720+. Understanding credit thresholds helps time HELOC applications after credit improvement that reduces margin significantly, lowering monthly interest payments dramatically over credit line life.'''
+  creditScoreHeading1 = 'Credit education for HELOC optimization'
+  creditScoreText1 = '''Free guidance on how middle credit scores affect HELOC approval and margin pricing. Learn when improving credit before applying reduces HELOC rates substantially through better rate tier qualification and lower margin assignments over Prime rate.'''
+  creditScoreHeading2 = 'Understand HELOC credit requirements'
+  creditScoreText2 = '''HELOC credit standards explained—minimum scores for approval (typically 680), rate tier thresholds (700, 720, 740), how combined loan-to-value ratios interact with credit scores affecting maximum credit lines and pricing terms significantly.'''
+  creditScoreHeading3 = 'Optimize credit timing for better HELOC margins'
+  creditScoreText3 = '''Strategic credit improvement before HELOC applications can reduce margins by 0.50-1.50%, saving thousands over draw period. Learn optimal timing for credit enhancement and HELOC rate shopping strategies.'''
+  creditScoreLink = 'https://www.middlecreditscore.com'
+  creditScoreLinkText = 'Learn About Credit Score Impact →'
+  creditScoreCTA = 'Check Your Credit Impact'
+  creditScoreCTALink = 'https://www.middlecreditscore.com'
+  
+  # Cash-Out Refinance Section
+  cashOutTitle = 'Cash-Out Refinance® Alternative to HELOC for Fixed-Rate Equity Access'
+  cashOutImage = 'https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=2000&auto=format&fit=crop'
+  cashOutPara1 = '''Cash-out refinancing provides fixed-rate equity access alternative to variable-rate HELOCs—replace existing mortgage with larger loan accessing equity through rate and term consolidation. Compare HELOC flexibility (draw/repay cycles, variable rates) versus cash-out refinance stability (fixed payments, single loan simplicity). Optimal choice depends on equity access needs, interest rate environment, credit profile, and long-term financial goals.'''
+  cashOutHeading1 = 'Compare HELOC vs cash-out refinance'
+  cashOutText1 = 'Analyze variable-rate HELOC flexibility versus fixed-rate cash-out refinance predictability. Calculate total costs, evaluate payment structures, understand debt consolidation benefits, and determine optimal equity access method for specific financial situations.'
+  cashOutHeading2 = 'Fixed-rate equity access strategies'
+  cashOutText2 = '''Cash-out refinancing guidance—understand rate and term requirements, calculate total borrowing costs with fixed payments, evaluate debt consolidation advantages, compare with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">HELOC lenders</a> for best equity access approach.'''
+  cashOutLink = 'https://www.cash-outrefinance.com'
+  cashOutLinkText = 'Explore Cash-Out Refinance Options →'
+  cashOutCTA = 'Compare Refinance Options'
+  cashOutCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Browse Lenders Section
+  lendersTitle = 'Browse Lenders® for Competitive HELOC Rates & Flexible Terms'
+  lendersImage = 'https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=2000&auto=format&fit=crop'
+  lendersPara1 = '''Browse Lenders connects borrowers with HELOC specialists offering competitive margins over Prime rate, flexible draw/repayment terms, and transparent equity access solutions. Compare multiple HELOC offers evaluating rate pricing, closing costs, draw period flexibility, repayment structures, and customer service quality. Professional HELOC loan officers guide equity access decisions optimized for financial goals and market conditions.'''
+  lendersHeading1 = 'Find competitive HELOC lenders'
+  lendersText1 = '''Compare HELOC offers from multiple lenders—evaluate margins over Prime rate, analyze closing costs and annual fees, understand draw period terms and repayment flexibility, assess customer service quality and equity access guidance tailored to individual financial profiles.'''
+  lendersHeading2 = 'Expert HELOC guidance and support'
+  lendersText2 = 'Professional HELOC loan officers provide equity access education—explain draw period flexibility, model repayment scenarios, compare HELOC with cash-out refinance alternatives, and optimize home equity strategies for long-term financial wellness and homeownership goals.'
+  lendersLink = 'https://www.browselenders.com'
+  lendersLinkText = 'Browse HELOC Lenders →'
+  lendersCTA = 'Find HELOC Lenders'
+  lendersCTALink = 'https://www.browselenders.com'
+  
+  # Education Section
+  educationTitle = 'HELOC Planning Education for Equity-Smart Homeowners'
+  educationSubtitle = 'Master HELOC strategies and equity access principles for optimized borrowing decisions.'
+  
+  # Education Cards
+  edu1Title = 'How HELOCs Work: Draw Periods vs Repayment Phases'
+  edu1Image = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop'
+  edu1Description = '''HELOCs offer 10-year draw periods with interest-only payment options, followed by 20-year repayment periods requiring principal-plus-interest payments. Example: $80K HELOC at 9.0% = $600/month interest-only during draw, then $720/month P&I during repayment. Understanding payment transitions helps budget for increases when draw period ends and repayment phase begins requiring principal paydown.'''
+  
+  edu2Title = 'HELOC vs Cash-Out Refinance: Which Equity Access Method?'
+  edu2Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop'
+  edu2Description = '''Compare variable-rate HELOC flexibility versus fixed-rate cash-out refinance stability. HELOC advantages: draw/repay cycles, access funds as needed, potentially lower initial costs. Cash-out refi advantages: fixed payments, debt consolidation, potentially lower rate. Analyze total costs comparing HELOC variable rates with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> fixed payments over borrowing timeline.'''
+  
+  edu3Title = 'Credit Score Impact on HELOC Approval and Rate Pricing'
+  edu3Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'
+  edu3Description = '''HELOC lenders use middle credit scores for rate tier assignments—minimum 680 for approval, 720+ for best rates. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> affects margin over Prime Rate substantially. Improving credit before applying can reduce margin by 0.50-1.50%, saving thousands over ten-year draw period through better rate tier qualification.'''
+  
+  edu4Title = 'Variable Rate Management: Understanding Prime Rate Adjustments'
+  edu4Image = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1600&auto=format&fit=crop'
+  edu4Description = '''HELOCs have variable rates = Prime Rate + Margin. Example: Prime at 8.50% + 1.00% margin = 9.50% HELOC rate. As Prime changes following Federal Reserve policy, HELOC rate adjusts accordingly. Rate caps (typically 18% lifetime) protect against extreme increases. Understanding rate environment helps time HELOC applications and evaluate fixed-rate conversion options strategically.'''
+  
+  educationCTA = 'Access HELOC Planning Tools'
+  educationCTALink = 'https://www.middlecreditscore.com'
+  
+  # Learning Center Section
+  learningTitle = 'From Our Learning Center - Strategic HELOC Planning & Equity Access'
+  learningSubtitle = 'Expert HELOC calculators and equity access guidance for informed borrowing decisions'
+  learningImage = 'https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Online HELOC Calculator provides professional tools for evaluating equity access options—calculate available credit lines under lender CLTV policies, compare draw period flexibility versus repayment requirements, analyze variable rate impacts, and understand how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit profile</a> affects HELOC approval and margin pricing significantly.'
+  learningBullet1 = 'Calculate maximum HELOC amounts based on home value, existing mortgage, and lender CLTV limits (80-90%).'
+  learningBullet2 = 'Compare HELOC variable rates with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> fixed rates for optimal equity access.'
+  learningBullet3 = 'Model draw period interest-only payments versus repayment period principal-plus-interest requirements.'
+  learningBullet4 = 'Connect with competitive <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">HELOC lenders</a> offering transparent pricing and flexible terms.'
+  learningPara2 = 'Our education-first approach helps homeowners make informed equity access decisions without sales pressure—understanding CLTV calculations, comparing lender options, and choosing the right equity access method (HELOC versus cash-out refinance) for your financial situation and goals.'
+  learningPara3 = '<a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Explore our HELOC Lender Network</a> for rate comparisons, credit impact guidance, and expert tutorials on home equity strategies optimized for draw period management and long-term financial wellness.'
+  
+  # Testimonials Section
+  testimonialsTitle = 'Real HELOC Experiences from Homeowners'
+  testimonialsSubtitle = 'How strategic HELOC usage and equity access planning helped achieve financial goals'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://i.pravatar.cc/150?img=12'
+  testimonial1Name = 'Michael R.'
+  testimonial1Subtitle = 'Denver, CO'
+  testimonial1Text = 'Used HELOC calculators to compare equity access options. Chose HELOC for kitchen renovation instead of cash-out refi, saved $18K by drawing only what I needed over six months rather than taking lump sum at higher fixed rate. Draw-as-needed flexibility was perfect for phased project with uncertain final costs.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://i.pravatar.cc/150?img=45'
+  testimonial2Name = 'Jennifer L.'
+  testimonial2Subtitle = 'Austin, TX'
+  testimonial2Text = 'Credit score was 698, Pre-qualified at Prime + 1.5%. Waited four months improving credit to 722, reapplied at Prime + 0.75%—saving $42 monthly on $95K credit line. Understanding rate tiers before applying saved $5,040 over ten-year draw period. Worth the wait for better pricing tier.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://i.pravatar.cc/150?img=33'
+  testimonial3Name = 'David & Sarah T.'
+  testimonial3Subtitle = 'Seattle, WA'
+  testimonial3Text = 'HELOC payment jumped from $625 to $1,083 when draw period ended. Wished we had made principal payments during draw years. Now using calculators to plan aggressive paydown. Learning draw period is opportunity to reduce balance before repayment phase—do not just pay interest-only for ten years.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://i.pravatar.cc/150?img=27'
+  testimonial4Name = 'Amanda K.'
+  testimonial4Subtitle = 'Phoenix, AZ'
+  testimonial4Text = 'Consolidated $67K high-interest credit card debt into HELOC at 8.75%. Saving $708 monthly versus old minimum payments. Critical lesson: closed three of five credit cards immediately to prevent reaccumulating debt. HELOC debt consolidation works only with discipline to avoid running up cards again while carrying home-secured debt.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://i.pravatar.cc/150?img=52'
+  testimonial5Name = 'Robert M.'
+  testimonial5Subtitle = 'Charlotte, NC'
+  testimonial5Text = 'Opened $110K HELOC as emergency backup, never drew from it for three years. Annual fee $75. During medical emergency, having HELOC available prevented 401k early withdrawal that would have cost $10,200 in penalties and taxes. Zero-balance HELOC provided financial optionality worth far more than annual fee.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://i.pravatar.cc/150?img=8'
+  testimonial6Name = 'Lisa H.'
+  testimonial6Subtitle = 'Portland, OR'
+  testimonial6Text = 'Compared cash-out refinance versus HELOC for $120K equity access. Cash-out refi at 6.875% fixed beat HELOC at 9.75% variable in my situation—needed full amount immediately, valued payment stability, and refinancing entire mortgage made sense. Running detailed five-year cost comparison showed refinancing saved $26K versus HELOC despite higher closing costs.'
+
+  
+  # Why Choose Boxes Section
+  whyChooseTitle = 'Why Choose Online HELOC Calculator® for Equity Access Planning?'
+  whyChooseSubtitle = 'Comprehensive HELOC tools, credit impact analysis, and refinance comparison guidance'
+  
+  whyChooseBox1Title = 'Professional HELOC Calculators & Analysis'
+  whyChooseBox1Para = 'Calculate available credit lines under lender CLTV policies, model draw period versus repayment payments, analyze rate adjustment impacts, compare HELOC with cash-out refinance alternatives, and develop equity utilization strategies optimized for your financial goals and rate environment.'
+  whyChooseBox1Bullet1 = 'CLTV calculators for maximum credit line determination'
+  whyChooseBox1Bullet2 = 'Draw period vs repayment payment modeling'
+  whyChooseBox1Bullet3 = 'Variable rate scenario analysis and planning'
+  whyChooseBox1CTA = 'Access HELOC Calculators'
+  whyChooseBox1CTALink = '/#programs'
+  
+  whyChooseBox2Title = 'Credit Score Impact & HELOC Optimization'
+  whyChooseBox2Para = 'Understand how middle credit scores affect HELOC approval and margin pricing, learn optimal credit tier thresholds (680, 700, 720, 740), discover credit improvement strategies before applying, and calculate rate savings from higher scores reducing HELOC margin significantly over credit line life.'
+  whyChooseBox2Bullet1 = 'Credit tier analysis for HELOC rate pricing'
+  whyChooseBox2Bullet2 = 'Strategic credit timing for better margins'
+  whyChooseBox2Bullet3 = 'Free credit education without subscriptions'
+  whyChooseBox2CTA = 'Learn Credit Impact Strategies'
+  whyChooseBox2CTALink = 'https://www.middlecreditscore.com'
+  
+  whyChooseBox3Title = 'Compare Equity Access Options & Lenders'
+  whyChooseBox3Para = 'Evaluate HELOC versus cash-out refinancing for your situation, connect with competitive HELOC lenders offering transparent pricing, compare margins over Prime Rate across multiple lenders, and receive expert guidance on optimal equity access strategies tailored to financial goals.'
+  whyChooseBox3Bullet1 = 'HELOC vs refinance comparison tools'
+  whyChooseBox3Bullet2 = 'Competitive lender marketplace with rate transparency'
+  whyChooseBox3Bullet3 = 'Expert HELOC and refinance guidance'
+  whyChooseBox3CTA = 'Compare HELOC Lenders'
+  whyChooseBox3CTALink = 'https://www.browselenders.com'
+  
+  # Why Choose Main CTA
+  whyChooseCTA = 'Start HELOC Planning Now'
+  whyChooseCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Employers Section
+  employersTitle = 'For Employers - HELOC Education as Financial Wellness Benefit'
+  employersSubtitle = 'Help employees make informed home equity decisions through Online HELOC Calculator® education.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop'
+  employersPara = '''HR departments enhance financial wellness programs with HELOC education resources. Through Online HELOC Calculator® and Browse Lenders®, employers offer no-cost access to professional equity access tools and credit education—reducing financial stress, supporting informed borrowing decisions, and demonstrating investment in workforce financial wellness and homeownership stability.'''
+  employersBullet1Title = 'No-cost HELOC planning tools'
+  employersBullet1Text = 'Add Online HELOC Calculator® resources to financial wellness programs—employees access credit line calculators, equity analysis tools, and HELOC education instantly without subscriptions or complex enrollments.'
+  employersBullet2Title = 'Credit optimization for better HELOC rates'
+  employersBullet2Text = 'Employees learn how credit scores affect HELOC margins and receive strategic timing guidance for credit improvement that reduces HELOC rates substantially through better tier qualification and lower margin assignments.'
+  employersBullet3Title = 'Reduce financial stress and improve retention'
+  employersBullet3Text = 'Empower workforce with transparent HELOC planning guidance through comprehensive education that improves financial confidence, supports smart equity access decisions, and demonstrates employer commitment to employee financial wellness and stability.'
+  employersCTA = 'Learn About Employer Programs'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest HELOC & Equity Access Insights'
+  blogSubtitle = 'Expert guidance on HELOC planning, credit optimization, and smart home equity decisions'
+  blogCTA = 'Read All Articles'
+  blogCTALink = '/blogs/'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Questions About HELOC Calculators & Equity Access'
+  faqSubtitle = 'Clear answers about HELOC planning, credit impact, and equity access strategies'
+  
+  # FAQ 1
+  faq1Question = 'How much HELOC can I qualify for based on home equity?'
+  faq1Answer = '''HELOC qualification typically allows borrowing up to 80-90% combined loan-to-value (CLTV) depending on credit profile. Example: $500K home value at 85% CLTV = $425K maximum combined debt. With $300K existing mortgage, maximum HELOC = $125K. Lenders consider credit scores (typically 680+ required), debt-to-income ratios (usually under 43%), income stability, and home equity cushions. Higher credit scores (720+) may qualify for higher CLTV limits and better rate pricing. Calculate available credit lines accurately, understand lender-specific CLTV policies, and compare with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> potentially accessing different equity amounts.'''
+  
+  # FAQ 2
+  faq2Question = 'What is the difference between HELOC draw period and repayment period?'
+  faq2Answer = '''HELOC draw period (typically 10 years) allows borrowing up to credit limit with interest-only payments optional. Repayment period (typically 20 years after draw ends) requires principal-plus-interest payments on outstanding balance with no additional borrowing allowed. Example: $80K HELOC at 9.0% during draw = $600/month interest-only. After draw period ends, same balance requires $720/month P&I for 20 years. Some lenders offer interest-only options during draw (pay only accrued interest) or principal-plus-interest options (reduce balance during draw period). Understanding payment structures helps budget for increases when transitioning from draw to repayment phase.'''
+  
+  # FAQ 3
+  faq3Question = 'Should I choose HELOC or cash-out refinance for accessing home equity?'
+  faq3Answer = '''HELOC advantages: draw/repay flexibility, access funds as needed, potentially lower initial costs, revolving credit line. Cash-out refinance advantages: fixed interest rate, predictable payments, debt consolidation into single loan, potentially lower rate than HELOC. Choose HELOC when: need ongoing access flexibility, prefer interest-only draw period, current mortgage rate is favorable (don't want to refinance first mortgage at higher rate). Choose cash-out refinance when: prefer fixed payments, want debt consolidation, can secure favorable fixed rate, need large lump sum upfront. Analyze total costs comparing HELOC variable rate scenarios with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance</a> fixed payments over intended borrowing period.'''
+  
+  # FAQ 4
+  faq4Question = 'How do HELOC rates work and what affects my rate pricing?'
+  faq4Answer = '''HELOCs have variable rates typically structured as Prime Rate + Margin. Example: Prime at 8.50% + 1.00% margin = 9.50% HELOC rate. Margin depends on credit score (720+ gets best pricing), loan-to-value ratio (lower LTV = lower margin), and relationship with lender. As Prime Rate changes (set by banks following Federal Reserve policy), HELOC rate adjusts accordingly. Rate caps (typically 18% lifetime maximum) protect against extreme increases. Your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> significantly affects margin assignment—improving credit before applying can reduce margin by 0.50-1.50%, saving substantially over credit line life.'''
+  
+  # FAQ 5
+  faq5Question = 'What are typical HELOC closing costs and fees?'
+  faq5Answer = '''HELOC closing costs vary significantly by lender—some offer no-closing-cost HELOCs with slightly higher margins, others charge $500-$2,000 covering appraisal, title search, and administrative fees. Common fees: appraisal ($400-$600), title search ($100-$300), origination fee (0-2% of credit line), annual maintenance fee ($0-$100/year), early closure fee if paid off within 2-3 years ($250-$500). Compare total costs including closing fees, annual fees, and interest rates when evaluating <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">HELOC lenders</a>. Some lenders waive fees for high credit scores or large credit lines, making comprehensive comparison essential for optimal value.'''
+  
+  # FAQ 6
+  faq6Question = 'Can I convert my HELOC to a fixed-rate loan?'
+  faq6Answer = '''Many lenders offer fixed-rate conversion options allowing you to lock in fixed rates on all or portion of HELOC balance, protecting against future rate increases. Conversion features vary: some allow multiple fixed-rate advances (lock different amounts at different times), others charge fees for conversions ($50-$250), some limit conversion amounts or frequency. Fixed-rate conversion periods typically range 5-20 years with rates slightly higher than current HELOC variable rate at conversion time. Alternative: consider <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinancing</a> to consolidate HELOC into fixed-rate first mortgage if substantial balance exists and mortgage rates are favorable.'''
+  
+  # Calculators Section
+  calculatorsTitle = 'Comprehensive HELOC Planning Calculators'
+  calculatorsDescription = 'Access professional HELOC calculation tools for credit line analysis, payment planning, and equity access comparison'
+  
+  calculator1Title = 'HELOC Credit Line Calculator'
+  calculator1Description = 'Calculate maximum HELOC amount based on home value, existing mortgage, and lender CLTV limits (typically 80-90%)'
+  calculator1Icon = 'calculator'
+  
+  calculator2Title = 'Draw Period Payment Calculator'
+  calculator2Description = 'Model interest-only payments during draw period and principal-plus-interest payments during repayment phase'
+  calculator2Icon = 'dollar-sign'
+  
+  calculator3Title = 'HELOC vs Cash-Out Refi Comparison'
+  calculator3Description = 'Compare total costs of variable-rate HELOC versus fixed-rate cash-out refinancing over borrowing timeline'
+  calculator3Icon = 'git-compare'
+  
+  calculator4Title = 'Rate Adjustment Impact Calculator'
+  calculator4Description = 'Analyze HELOC payment changes across Prime Rate environments and understand rate cap protections'
+  calculator4Icon = 'trending-up'
+  
+  calculator5Title = 'Combined Loan-to-Value (CLTV) Calculator'
+  calculator5Description = 'Determine maximum borrowing capacity combining first mortgage and HELOC under lender CLTV policies'
+  calculator5Icon = 'percent'
+  
+  calculator6Title = 'Credit Score Rate Impact'
+  calculator6Description = 'Calculate how credit score affects HELOC margin pricing and monthly interest costs over draw period'
+  calculator6Icon = 'bar-chart'
+  
+  calculatorsCTA = 'Access All HELOC Tools'
+  calculatorsCTALink = 'https://www.middlecreditscore.com'
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Calculate Your HELOC Options and Plan Your Equity Access Strategy?'
+  ctaDescription = 'Use professional HELOC calculators and connect with verified lenders for transparent equity access guidance—explore competitive HELOC specialists at BrowseLenders.com for informed borrowing decisions.'
+  ctaCTA = 'Start HELOC Planning Now'
+  ctaCTALink = 'https://www.middlecreditscore.com'
+  ctaSecondaryText = 'Browse HELOC Lenders'
+  ctaSecondaryLink = 'https://www.browselenders.com'
+  
+  # Footer
+  footerTagline = 'Online HELOC Calculator® - Professional HELOC Planning with Credit Education'
+  footerDescription = 'Comprehensive HELOC calculators and credit impact analysis tools for equity access planning, payment calculations, loan scenario comparison, HELOC planning, and informed borrowing decisions—empowering homeowners with transparent financial guidance for confident equity access selection and credit optimization strategies aligned with long-term financial wellness.'
+  copyrightText = '© 2025 Online HELOC Calculator®. All rights reserved.'
+  privacyPolicyLink = '/privacy-policy/'
+  termsOfServiceLink = '/terms-of-service/'
+  disclaimerLink = '/disclaimer/'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'HELOC Calculators'
+    url = '/#programs'
+    weight = 2
+  [[menu.main]]
+    name = 'About'
+    url = '/#about'
+    weight = 3
+  [[menu.main]]
+    name = 'Blog'
+    url = '/blogs/'
+    weight = 4
+  [[menu.main]]
+    name = 'Contact'
+    url = '/#contact'
+    weight = 5
