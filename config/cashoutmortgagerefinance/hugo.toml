@@ -1,0 +1,315 @@
+baseURL = 'https://cashoutmortgagerefinance.com/'
+languageCode = 'en-us'
+title = 'Cash Out Mortgage Refinance'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/cashoutmortgagerefinance'
+publishDir = 'public/cashoutmortgagerefinance'
+
+# Build configuration for Tailwind CSS
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+# Module mounts for Hugo stats
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+# Pagination settings
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Strategic cash-out refinancing solutions with rate comparisons, equity calculators, and expert guidance for debt consolidation and home improvements'
+  author = 'Browse Lenders®'
+  shortName = 'Cash-Out Refinance'
+  tagline = 'Smart Equity Access Through Cash-Out Refinancing'
+  homepage = 'https://cashoutmortgagerefinance.com/'
+  
+  # SEO Configuration
+  siteName = 'Cash Out Mortgage Refinance'
+  siteDescription = 'Access home equity through cash-out refinancing with expert guidance on debt consolidation, home improvements, and strategic equity extraction nationwide.'
+  keywords = ['Cash-Out Refinance', 'Mortgage Refinance', 'Home Equity', 'Debt Consolidation', 'Refinancing', 'Cash-Out Mortgage', 'Browse Lenders®']
+  serviceType = 'Cash-Out Refinancing Services'
+  
+  # Social Media
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  
+  # Hero Section
+  heroTitle = 'Cash-Out Mortgage Refinance - Strategic Equity Access'
+  heroSubtitle = 'Access your home equity while potentially securing better rates. Connect with refinancing specialists who structure cash-out scenarios around your financial goals through transparent guidance and competitive lender options.'
+  heroImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Explore Cash-Out Options'
+  heroCTA1Link = 'https://www.cash-outrefinance.com'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+  
+  # About Section
+  aboutTitle = 'Strategic Equity Extraction. Expert Guidance.'
+  aboutImage = 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop'
+  
+  # Core Domains
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'BrowseLenders.com'
+  tertiaryDomainURL = 'https://www.browselenders.com'
+  
+  # Program Guidance Section
+  programsTitle = 'Cash-Out Refinance Programs & Solutions'
+  programsSubtitle = "Every homeowner's equity situation is unique. Our structured approach ensures informed decisions."
+  
+  # Program Cards
+  program1Title = 'Conventional Cash-Out'
+  program1Description = 'Access up to 80% of your home value with conventional cash-out refinancing. Understand LTV requirements, rate structures, and how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit score</a> impacts available equity and pricing.'
+  program1Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+  
+  program2Title = 'FHA & VA Cash-Out'
+  program2Description = 'Government-backed cash-out options with flexible qualification standards. FHA allows up to 80% LTV, while VA offers up to 100% for eligible veterans. Connect with specialists at <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'
+  program2Image = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop'
+  
+  program3Title = 'Debt Consolidation Strategy'
+  program3Description = 'Replace high-interest debt with lower mortgage rates. Calculate savings by consolidating credit cards and personal loans into your refinanced mortgage through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">strategic cash-out planning</a>.'
+  program3Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+  
+  programsCTA = 'Check Cash-Out Eligibility'
+  programsCTALink = 'https://www.cash-outrefinance.com'
+  programsClosingText = 'Compare cash-out refinance options through the <a href="https://www.browselenders.com" class="font-bold text-accent hover:underline" target="_blank">Browse Lenders® marketplace</a> for competitive rates and expert guidance.'
+  
+  # Education Section
+  educationTitle = 'Cash-Out Refinance Education & Planning'
+  educationSubtitle = 'Understanding equity access leads to smarter financial decisions.'
+  
+  # Education Cards
+  edu1Title = 'Basics'
+  edu1Description = 'Learn how cash-out refinancing works—replacing your mortgage with a larger loan and receiving the difference in cash. Compare against HELOCs and home equity loans through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>.'
+  edu1Image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop'
+  
+  edu2Title = 'Documentation'
+  edu2Description = 'Cash-out refinancing requires property appraisals, income verification, credit checks, and debt calculations. Lenders assess loan-to-value ratios and debt-to-income standards for approval.'
+  edu2Image = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1600&auto=format&fit=crop'
+  
+  edu3Title = 'Timing'
+  edu3Description = 'Understand rate trends, breakeven calculations, and market conditions. Strategic timing maximizes equity access while minimizing costs. Explore options at <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>.'
+  edu3Image = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop'
+  
+  edu4Title = 'Readiness'
+  edu4Description = 'Ensure your equity position, credit scores, and payment history meet cash-out standards. Visit <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">MiddleCreditScore.com</a> to understand credit requirements for optimal cash-out refinancing approval.'
+  edu4Image = 'https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=1600&auto=format&fit=crop'
+  
+  educationCTA = 'Start Learning Today'
+  educationCTALink = 'https://www.cash-outrefinance.com'
+  
+  # Learning Center Section
+  learningTitle = 'Master Cash-Out Refinancing'
+  learningSubtitle = 'Comprehensive education on equity access strategies and cash-out scenarios.'
+  learningImage = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Cash-out refinancing allows you to tap into your home equity while potentially securing better interest rates. Our comprehensive resources help you understand strategic advantages, compare <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">verified lender options</a>, and calculate whether refinancing makes financial sense for your specific situation.'
+  learningPara2 = 'Whether consolidating high-interest debt, funding home improvements, or covering major expenses, we provide expert guidance on maximizing equity while minimizing costs. Understand how your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit score</a> impacts cash-out eligibility and explore current rates before committing to any lender.'
+  learningPara3 = 'Access unbiased education on LTV requirements, debt-to-income standards, closing costs, and tax implications. Connect with experienced refinancing professionals through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> who structure scenarios around your financial goals, not sales quotas.'
+  learningBullet1 = 'Understand conventional, FHA, and VA cash-out refinance programs'
+  learningBullet2 = 'Calculate maximum cash-out amounts based on home value and equity'
+  learningBullet3 = 'Compare debt consolidation savings versus refinancing costs'
+  learningBullet4 = 'Learn about credit score requirements and rate tier impacts'
+  
+  # Why Choose Section
+  whyChooseTitle = 'Why CashOutMortgageRefinance.com'
+  whyChooseSubtitle = 'Education-first approach to strategic equity access.'
+  whyChoosePara1 = 'Most refinance sites push immediate applications. We believe homeowners deserve transparent education before sharing personal financial information. Our platform prioritizes understanding cash-out scenarios, LTV calculations, and rate structures before ever connecting with a lender.'
+  whyChoosePara2 = 'By partnering with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>, <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, we provide comprehensive resources for informed refinancing decisions without pressure or hidden agendas.'
+  
+  whyChooseBox1Title = 'Unbiased Education'
+  whyChooseBox1Para = 'Access comprehensive cash-out refinancing education without sales pressure or lead capture forms.'
+  whyChooseBox1Bullet1 = 'Understand LTV ratios and maximum cash-out amounts'
+  whyChooseBox1Bullet2 = 'Compare conventional, FHA, and VA cash-out programs'
+  whyChooseBox1Bullet3 = 'Learn debt consolidation strategies and breakeven analysis'
+  
+  whyChooseBox2Title = 'Credit Readiness'
+  whyChooseBox2Para = 'Understand how credit scores impact cash-out refinancing eligibility and rate pricing before applying.'
+  whyChooseBox2Bullet1 = 'Learn how middle credit scores determine lender approval'
+  whyChooseBox2Bullet2 = 'Discover credit improvements that unlock better terms'
+  whyChooseBox2Bullet3 = 'Access free credit education through MiddleCreditScore.com'
+  
+  whyChooseBox3Title = 'Verified Lenders'
+  whyChooseBox3Para = 'Connect with licensed refinancing specialists who structure cash-out scenarios transparently.'
+  whyChooseBox3Bullet1 = 'Compare rates and terms from multiple verified lenders'
+  whyChooseBox3Bullet2 = 'No obligation to proceed with any lender recommendation'
+  whyChooseBox3Bullet3 = 'Ask questions, compare scenarios, and lock rates when ready'
+  
+  whyChooseCTA = 'Start Comparing Options'
+  whyChooseCTALink = 'https://www.browselenders.com'
+  
+  # Testimonials Section
+  testimonialsTitle = 'What Cash-Out Refinance Clients Are Saying'
+  testimonialsSubtitle = 'Real feedback from homeowners who accessed equity strategically.'
+  
+  # Testimonial 1
+  testimonial1Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'Most refinance sites push you straight into applying, but CashOutMortgageRefinance.com actually taught me HOW cash-out refinancing works before I ever spoke to a lender. That education alone helped me avoid mistakes and choose the right equity strategy.'
+  testimonial1Name = 'Verified Borrower'
+  testimonial1Subtitle = 'I understood my options before making any commitments.'
+  
+  # Testimonial 2
+  testimonial2Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'The connection to MiddleCreditScore.com helped me understand why lenders were pricing me at certain rates. I spent two months improving my credit profile and qualified for significantly better cash-out refinance terms.'
+  testimonial2Name = 'Verified Borrower'
+  testimonial2Subtitle = 'Credit education changed my entire refinancing outcome.'
+  
+  # Testimonial 3
+  testimonial3Image = 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'There was no pressure, no nonstop emails, no rate-gimmick advertisements. Just clear education on debt consolidation strategies, verified lenders, and guidance on when cash-out refinancing actually makes sense. I wish every mortgage site operated this way.'
+  testimonial3Name = 'Verified Borrower'
+  testimonial3Subtitle = 'It felt like education, not a sales funnel.'
+  
+  # Testimonial 4
+  testimonial4Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'Instead of my data being sold immediately, I chose when and how lenders could see my refinancing scenario. That privacy and control alone makes CashOutMortgageRefinance.com different from every other mortgage comparison site.'
+  testimonial4Name = 'Verified Borrower'
+  testimonial4Subtitle = 'I compared options without giving up control.'
+  
+  # Testimonial 5
+  testimonial5Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'The LTV calculators and debt consolidation tools helped me model different cash-out scenarios before contacting any lender. I saved thousands by understanding exactly what I qualified for and how different loan amounts affected my monthly payment.'
+  testimonial5Name = 'Verified Borrower'
+  testimonial5Subtitle = 'I knew my numbers before speaking with anyone.'
+  
+  # Testimonial 6
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Most refinance platforms are built for lead generation. This one is built for homeowner education. I got clear guidance on cash-out refinancing first, then matched with verified lenders second—and by the time I applied, I was confident, not overwhelmed.'
+  testimonial6Name = 'Verified Borrower'
+  testimonial6Subtitle = 'Its the first refinance site that actually feels "for the consumer."'
+  
+  # Calculators Section
+  calculatorsTitle = 'Cash-Out Refinance Calculators & Tools'
+  calculatorsSubtitle = 'Model equity scenarios, estimate costs, and calculate debt consolidation savings before applying.'
+  
+  # Middle Credit Score Section
+  creditScoreTitle = 'Middle Credit Score® Financial Literacy & Refinancing Readiness'
+  creditScoreImage = 'https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Most homeowners dont realize that cash-out refinance lenders qualify them based on their middle credit score — not the highest or the lowest. Middle Credit Score® helps you understand how refinancing lenders evaluate you, which factors are lowering your score, and what small improvements can do to increase your borrowing power and unlock better cash-out refinance rates before you ever apply.'
+  creditScoreHeading1 = 'No-cost access to trusted guidance'
+  creditScoreText1 = 'Gain free access to unbiased credit-readiness education without subscriptions, monthly fees, or credit pulls.'
+  creditScoreHeading2 = 'Know your numbers before applying for cash-out refinancing'
+  creditScoreText2 = 'Learn how your middle credit score is calculated — and how targeted corrections or improvements can unlock better cash-out refinance terms, lower interest rates, and higher LTV approval thresholds.'
+  creditScoreHeading3 = 'Real progress through financial literacy'
+  creditScoreText3 = 'With the right knowledge, homeowners can strengthen refinancing eligibility, build long-term confidence, and protect themselves from predatory or high-cost cash-out lending.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://middlecreditscore.com/'
+  
+  # Employers Section
+  employersTitle = 'For Employers — Cash-Out Refinancing Education as an Employee Benefit'
+  employersSubtitle = 'Help employees access refinancing education through Browse Lenders.'
+  employersImage = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Todays HR departments are expanding their wellness strategies beyond healthcare and retirement benefits by including mortgage refinancing and credit education. Through Browse Lenders®, employers can offer no-cost access to verified cash-out refinancing specialists and mortgage guidance that help employees understand equity extraction strategies, improve credit readiness, and make confident refinancing decisions.'
+  employersBullet1Title = 'No-cost refinancing benefit integration'
+  employersBullet1Text = 'Add Browse Lenders® cash-out refinancing resources to your financial-wellness or EAP program without contracts, fees, or onboarding friction.'
+  employersBullet2Title = 'Credit & equity readiness tools'
+  employersBullet2Text = 'Employees learn how middle credit scores, LTV ratios, and debt-to-income calculations affect cash-out refinance eligibility before sharing personal information with lenders.'
+  employersBullet3Title = 'Boost retention through financial flexibility access'
+  employersBullet3Text = 'Empower your workforce with transparent cash-out refinancing guidance and credit education that reduces financial stress, improves debt management capabilities, and supports long-term stability.'
+  employersCTA = 'Learn About Employer Refinancing Access'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+  
+  # Blog Section
+  blogTitle = 'Latest Cash-Out Refinance Insights'
+  blogSubtitle = 'Stay informed with the latest cash-out refinancing trends and guidance.'
+  
+  # FAQ Section
+  faqTitle = 'Frequently Asked Cash-Out Refinancing Questions'
+  faqSubtitle = 'Clear answers to common cash-out refinance questions.'
+  
+  # FAQ 1
+  faq1Question = 'What is cash-out refinancing and how does it differ from regular refinancing?'
+  faq1Answer = 'Cash-out refinancing replaces your existing mortgage with a larger loan, allowing you to receive the difference in cash. Unlike rate-and-term refinancing (which only changes your rate or term), cash-out refinancing increases your loan balance to access home equity. Most lenders allow up to 80% LTV for conventional loans, though VA loans may permit up to 100% for eligible veterans.'
+  
+  # FAQ 2
+  faq2Question = 'What credit score do I need for cash-out refinancing?'
+  faq2Answer = 'Most conventional cash-out refinance lenders require a minimum credit score of 620, though scores of 680+ typically unlock the best rates and terms. Understanding your <a class="text-accent hover:underline" href="https://www.middlecreditscore.com" target="_blank">middle credit score</a> is crucial, as lenders use your mid-score among all three bureaus to determine cash-out refinance eligibility and pricing.'
+  
+  # FAQ 3
+  faq3Question = 'How much equity do I need to qualify for cash-out refinancing?'
+  faq3Answer = 'Most lenders require at least 20% equity remaining after cash-out refinancing, meaning you can access up to 80% of your home value. For example, if your home is worth $400,000, you could potentially refinance up to $320,000. VA loans offer more flexibility, sometimes allowing up to 100% LTV for eligible veterans. Compare options through <a class="text-accent hover:underline" href="https://www.cash-outrefinance.com" target="_blank">Cash-OutRefinance.com</a>.'
+  
+  # FAQ 4
+  faq4Question = 'Can my employer offer Browse Lenders® access as a benefit?'
+  faq4Answer = 'Yes. Employers can integrate Browse Lenders® resources into financial wellness programs at no cost to the organization. Employees gain access to educational tools on cash-out refinancing, transparent lender comparisons, and professional mortgage guidance—helping support financial flexibility and long-term stability for American families.'
+  
+  # Contact/CTA Section
+  ctaTitle = 'Ready to Access Your Home Equity?'
+  ctaDescription = 'Connect with trusted cash-out refinancing specialists and get competitive rates for your equity access needs—explore verified lenders helping American homeowners achieve financial flexibility.'
+  ctaCTA = 'Find Cash-Out Refinance Lenders'
+  ctaCTALink = 'https://www.browselenders.com'
+  
+  # Theme configuration
+  [params.theme]
+    name = 'Cash Out Refinance Blog Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'cash-out refinance', 'home equity']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+  
+  # Favicon configuration
+  favicon = '/favicon.png'
+  
+  # PWA Manifest Settings
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    
+    # App Icons
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+# Custom output formats
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Sitemap configuration for better SEO
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+# URL management
+[permalinks]
+  blogs = '/blogs/:slug/'
