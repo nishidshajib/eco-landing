@@ -1,0 +1,274 @@
+baseURL = 'https://conforminghomerates.com/'
+languageCode = 'en-us'
+title = 'Conforming Home Rates'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conforminghomerates'
+publishDir = 'public/conforminghomerates'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Conforming-rate intel, lender match coaching, and comparison templates built for borrowers who want the best pricing without the noise.'
+  author = 'Browse Lenders®'
+  shortName = 'Conforming Home Rates'
+  tagline = 'Rate Shopping with Clarity'
+  homepage = 'https://conforminghomerates.com/'
+
+  siteName = 'Conforming Home Rates'
+  siteDescription = 'A dynamic hub for conforming borrowers who need transparent lender comparisons, incentive tracking, and credit-ready timelines.'
+  keywords = ['Conforming Mortgage', 'Rate Shopping', 'Browse Lenders®', 'Middle Credit Score', 'Cash-OutRefinance.com', 'Lender Matching', 'Rate Lock Strategy']
+  serviceType = 'Conforming Mortgage Readiness'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Rate Shopping That Respects Your Timeline'
+  heroSubtitle = 'Line up lender offers with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, protect every score move alongside <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and keep equity pivots in view with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so your lock decision feels calm instead of chaotic.'
+  heroImage = 'https://images.unsplash.com/photo-1497493292307-31c376b6e479?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Compare Rate Paths'
+  heroCTA1Link = 'https://conforminghomerates.com/rate-workbook'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Inside the Borrower War Room That Powers ConformingHomeRates.com'
+  aboutImage = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2000&auto=format&fit=crop'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Rate-Savvy Programs for Everyday Borrowers'
+  programsSubtitle = 'Each workflow turns market noise into lender-ready talking points you can reuse with spouses, agents, and underwriters.'
+
+  program1Title = 'Offer Stack Studio'
+  program1Description = 'Drop every quote into one view, highlight APR gaps, and tag the assumptions so anyone—from your partner to your agent—can see why one offer beats another.'
+  program1Image = 'https://images.unsplash.com/photo-1488998527040-85054a85150e?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Credit & Pricing Guardrails'
+  program2Description = 'Pull your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> plan straight into the tracker so every lender sees the utilization drops, dispute proofs, and rapid-rescore timing that back up your pricing request.'
+  program2Image = 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'Equity Move Playbooks'
+  program3Description = 'Pair today’s purchase or refi with future cash-out ideas from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>, proving to lenders that you already mapped the next chapter and can execute it without drama.'
+  program3Image = 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Book a Rate Strategy Call'
+  programsCTALink = 'https://conforminghomerates.com/consult'
+  programsClosingText = 'Each deliverable includes timestamped assumptions, lender-ready notes, and reminders when rate locks expire.'
+
+  educationTitle = 'Conforming Education Tracks'
+  educationSubtitle = 'Short lessons pulled from real files so underwriting questions never blindside you.'
+
+  edu1Title = 'Rate Sheet Literacy'
+  edu1Description = 'Walk line by line through par pricing, rebate grids, and LLPAs so you can point to the exact cell that explains a lender’s APR.'
+  edu1Image = 'https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'Income Packaging Clinic'
+  edu2Description = 'Bundle W-2s, bonus letters, and gig income the way underwriters prefer, complete with yellow-highlighted summaries and upload checklists.'
+  edu2Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Appraisal Reality Brief'
+  edu3Description = 'Curate comp packets, renovation notes, and calm rebuttal scripts so you can defend value without sounding combative.'
+  edu3Image = 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Closing Cost Forecasts'
+  edu4Description = 'Estimate prepaids, escrows, buydowns, and insurance quotes so no one panics when the final CD lands.'
+  edu4Image = 'https://images.unsplash.com/photo-1464029902023-f42eba355bde?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Download Conforming Briefs'
+  educationCTALink = 'https://conforminghomerates.com/guides'
+
+  learningTitle = 'Learning Center — Everyday Rate Ops'
+  learningSubtitle = 'Reusable boards, email drafts, and calculators that make your mortgage feel like a well-run project.'
+  learningImage = 'https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Shared dashboards blend notes from BrowseLenders.com coaches with every lender reply so you never lose context during a busy week.'
+  learningPara2 = 'Score updates flowing in from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> automatically attach to the condition they support, which saves time when processors ask follow-up questions.'
+  learningPara3 = 'Equity pivots sourced from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> live beside amortization calculators so you can see how today’s lock impacts tomorrow’s options.'
+  learningBullet1 = 'Centralized quote vaults'
+  learningBullet2 = 'Officer comparison worksheets'
+  learningBullet3 = 'Lock-expiration timers'
+  learningBullet4 = 'Condition trackers with owners'
+
+  whyChooseTitle = 'Why Borrowers Trust ConformingHomeRates.com'
+  whyChooseSubtitle = 'Calm, repeatable steps beat frantic phone calls.'
+  whyChoosePara1 = 'Every checklist is written by people who have negotiated conforming files for years, so you borrow their experience instead of guessing.'
+  whyChoosePara2 = 'Our anchors—BrowseLenders.com, MiddleCreditScore.com, and Cash-OutRefinance.com—stay in the workflow long after closing, which keeps your next move ready.'
+
+  whyChooseBox1Title = 'Transparent Comparisons'
+  whyChooseBox1Para = 'Highlight APR gaps, true cash-to-close, and incentive rules in one glance so you can defend your decision to anyone on the deal.'
+  whyChooseBox1Bullet1 = 'Color-coded offer tiers'
+  whyChooseBox1Bullet2 = 'LLPA explanation cards'
+  whyChooseBox1Bullet3 = 'Timeline-aware recommendations'
+
+  whyChooseBox2Title = 'Risk Communication'
+  whyChooseBox2Para = 'Surface contingencies and backup plans before underwriting asks so you look proactive, not reactive.'
+  whyChooseBox2Bullet1 = 'Debt-to-income monitors'
+  whyChooseBox2Bullet2 = 'Rate-lock plan B notes'
+  whyChooseBox2Bullet3 = 'Scenario testing checklists'
+
+  whyChooseBox3Title = 'Stakeholder Updates'
+  whyChooseBox3Para = 'Give spouses, agents, and financial coaches the same version of the truth without rewriting emails every night.'
+  whyChooseBox3Bullet1 = 'Auto-generated status briefs'
+  whyChooseBox3Bullet2 = 'Document request receipts'
+  whyChooseBox3Bullet3 = 'Escalation paths'
+
+  whyChooseCTA = 'Schedule a Comparison Session'
+  whyChooseCTALink = 'https://conforminghomerates.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Dialed Down Rate Anxiety'
+  testimonialsSubtitle = 'Real quotes from conforming clients who used the system.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1514315384763-ba401779410f?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'The BrowseLenders worksheets let me email lenders screenshots instead of feelings—one replied with an extra $2,000 credit the same afternoon.'
+  testimonial1Name = 'First-Time Buyer'
+  testimonial1Subtitle = 'Closed with a lender credit instead of points.'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1506089676908-3592f7389d4d?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'Middle Credit Score triggers lived right next to my to-dos, so I stopped wasting Saturdays on tasks that did not move pricing.'
+  testimonial2Name = 'Dual-Income Household'
+  testimonial2Subtitle = 'Protected a sub-6% rate without panic.'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'The appraisal brief read like a playbook, so our agent walked into negotiations with comps, photos, and scripts already printed.'
+  testimonial3Name = 'Move-Up Family'
+  testimonial3Subtitle = 'Closed early despite tight inventory.'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'Stakeholder dashboards gave my financial coach the same timeline the lender saw, which meant fewer “just checking in” calls.'
+  testimonial4Name = 'Remote Worker'
+  testimonial4Subtitle = 'Handled relocation without drama.'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'Seeing the Cash-OutRefinance playbook next to the amortization table convinced me to choose the lender who respected our future plans.'
+  testimonial5Name = 'Equity Planner'
+  testimonial5Subtitle = 'Already prepping the next refi move.'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Every condition lived in one tracker, so when underwriting asked for an update I dropped a link instead of digging through email chains.'
+  testimonial6Name = 'Detail-Oriented Borrower'
+  testimonial6Subtitle = 'Sailed through approval.'
+
+  calculatorsTitle = 'Conforming Tools & Calculators'
+  calculatorsSubtitle = 'Bring receipts to every lender call instead of back-of-napkin math.'
+
+  creditScoreTitle = 'Middle Credit Score® Readiness for Conforming Loans'
+  creditScoreImage = 'https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Pricing tiers shift the moment your middle score moves. Document each action so underwriters already trust the math before they re-pull.'
+  creditScoreHeading1 = 'Track utilization drops'
+  creditScoreText1 = 'Pair before-and-after screenshots with bureau timestamps so there is zero debate.'
+  creditScoreHeading2 = 'Document disputes'
+  creditScoreText2 = 'Store letters, outcomes, and rescoring notes in one folder the processor can forward immediately.'
+  creditScoreHeading3 = 'Align with cash plans'
+  creditScoreText3 = 'Tie score goals to lock windows and cite BrowseLenders data to explain why the timing matters.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Member Organizations'
+  employersSubtitle = 'Offer rate-literacy support as a retention perk.'
+  employersImage = 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Hand employees copy-ready resources, curated officer lists from BrowseLenders.com, and automated progress recaps so productivity stays high during mortgage season.'
+  employersBullet1Title = 'Plug-and-play comms'
+  employersBullet1Text = 'Intranet articles, FAQ blocks, and booking links you can publish in minutes.'
+  employersBullet2Title = 'Compliance friendly'
+  employersBullet2Text = 'Centralized documentation keeps HR, lenders, and borrowers aligned.'
+  employersBullet3Title = 'Retention impact'
+  employersBullet3Text = 'Less mortgage stress equals more focus on the job.'
+  employersCTA = 'Add the Benefit'
+  employersCTALink = 'https://conforminghomerates.com/employers'
+
+  blogTitle = 'Conforming Rate Dispatch'
+  blogSubtitle = 'Field logs from real borrowers and analysts navigating today’s pricing swings.'
+
+  faqTitle = 'Questions Borrowers Ask Before Locking'
+  faqSubtitle = 'Use these replies in lender calls or email threads.'
+
+  faq1Question = 'How many quotes should I collect?'
+  faq1Answer = 'Pull three to five quotes on the same day, log APR, credits, and lock rules in the Offer Stack Studio, and negotiate from there. Spreading them across multiple days turns every conversation into guesswork.'
+
+  faq2Question = 'What if my score changes mid-process?'
+  faq2Answer = 'Document every action inside your Middle Credit Score® plan, share screenshots before the lender re-pulls credit, and log the conversation in the tracker so pricing stays protected.'
+
+  faq3Question = 'Can I float the rate longer?'
+  faq3Answer = 'Yes—if you publish milestones and backup lock strategies. When lenders see the steps you are tracking, they are more willing to extend floats while you watch the market.'
+
+  faq4Question = 'How do I compare lender credits vs. points?'
+  faq4Answer = 'Run both options through the Offer Stack Studio to calculate breakeven months, tax impact, and net cash to close. Hand the math to the officer and matching concessions becomes a straightforward ask.'
+
+  ctaTitle = 'Ready to Run a Smarter Rate Comparison?'
+  ctaDescription = 'Share your scenario once and we return curated lenders, scripts, and calculators within the same business day.'
+  ctaCTA = 'Start the Intake'
+  ctaCTALink = 'https://conforminghomerates.com/start'
+
+  [params.theme]
+    name = 'Conforming Home Rates Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'conforming rates', 'mortgage']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
