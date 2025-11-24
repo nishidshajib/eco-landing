@@ -1,8 +1,8 @@
 # Dynamic Landing Pages - Multi-Domain Hugo Setup
 
-## 🚀 Automated Multi-Domain System (Updated: Nov 16, 2025)
+## 🚀 Automated Multi-Domain System (Updated: Nov 24, 2025)
 
-This repository automatically builds and deploys **12 landing page domains** to Hostinger with zero manual configuration!
+This repository automatically builds and deploys **dozens of landing page domains** to Hostinger with zero manual configuration!
 
 ### ✨ Key Features
 
@@ -14,20 +14,22 @@ This repository automatically builds and deploys **12 landing page domains** to 
 - 🎯 **Single Domain Deploy**: Deploy just one domain without rebuilding all
 - 📊 **Full Tracking**: Monitor all deployments in GitHub Actions
 
-### 📋 Currently Configured Domains (12 total)
+### 📋 Currently Configured Domains (highlights)
 
 1. **badcreditloanspecialist.com**
-2. **conformingloanofficers.com** ⭐ NEW
+2. **conformingloanofficers.com**
 3. **conformingmortgageloans.com**
 4. **conventionalmortgagebrokers.com**
 5. **conventionalmortgageloans.com**
 6. **fhaloanofficers.com**
 7. **firsttimebuyeroptions.com**
 8. **helocloanofficers.com**
-9. **mtglenders.com**
-10. **refimortgagebrokers.com**
-11. **refinanceloanofficers.com**
-12. **veteransloanofficers.com**
+9. **homeloanpurchase.com**
+10. **mtglenders.com**
+11. **refimortgagebrokers.com**
+12. **refinanceloanofficers.com**
+13. **veteranmortgagelenders.com** ⭐ NEW
+14. **veteransloanofficers.com**
 
 ---
 
@@ -69,6 +71,7 @@ hugo server --environment newconstructionmortgagebrokers --port 1348
 hugo server --environment cashoutmortgagerefinance --port 1349
 hugo server --environment onlinevaluecalculator --port 1350
 hugo server --environment homeloanpurchase --port 1351
+hugo server --environment veteranmortgagelenders --port 1352
 
 
 
@@ -81,7 +84,7 @@ Access sites at http://localhost:PORT
 ### Build All Domains Automatically (Recommended)
 
 ```bash
-# Build all 11 domains with a single command
+# Build all domains with a single command
 bash scripts/build-all-domains.sh
 ```
 
@@ -110,6 +113,8 @@ Output directories:
 - `public/mtglenders/`
 - `public/refimortgagebrokers/`
 - `public/refinanceloanofficers/`
+- `public/homeloanpurchase/`
+- `public/veteranmortgagelenders/`
 - `public/veteransloanofficers/`
 
 ---
@@ -154,11 +159,13 @@ config/
 ├── conventionalmortgageloans/    # Conventional Loans domain
 ├── fhaloanofficers/              # FHA Loan Officers domain
 ├── firsttimebuyeroptions/        # First-Time Buyer Options domain
-├── helocloanofficers/            # HELOC Loan Officers domain
-├── mtglenders/                   # MTG Lenders domain
-├── refimortgagebrokers/          # Refi Mortgage Brokers domain
-├── refinanceloanofficers/        # Refinance Loan Officers domain
-└── veteransloanofficers/         # Veterans Loan Officers domain
+├── helocloanofficers/           # HELOC Loan Officers domain
+├── homeloanpurchase/            # Home Loan Purchase domain
+├── mtglenders/                  # MTG Lenders domain
+├── refimortgagebrokers/         # Refi Mortgage Brokers domain
+├── refinanceloanofficers/       # Refinance Loan Officers domain
+├── veteranmortgagelenders/      # Veteran Mortgage Lenders domain ⭐ NEW
+└── veteransloanofficers/        # Veterans Loan Officers domain
 
 content/
 ├── badcreditloanspecialist/      # Content for Bad Credit domain
@@ -168,11 +175,13 @@ content/
 ├── conventionalmortgageloans/    # Content for Conventional domain
 ├── fhaloanofficers/              # Content for FHA domain
 ├── firsttimebuyeroptions/        # Content for First-Time domain
-├── helocloanofficers/            # Content for HELOC domain
-├── mtglenders/                   # Content for MTG domain
-├── refimortgagebrokers/          # Content for Refi Brokers domain
-├── refinanceloanofficers/        # Content for Refinance domain
-└── veteransloanofficers/         # Content for Veterans domain
+├── helocloanofficers/           # Content for HELOC domain
+├── homeloanpurchase/            # Content for Home Loan Purchase domain
+├── mtglenders/                  # Content for MTG domain
+├── refimortgagebrokers/         # Content for Refi Brokers domain
+├── refinanceloanofficers/       # Content for Refinance domain
+├── veteranmortgagelenders/      # Content for Veteran Mortgage domain ⭐ NEW
+└── veteransloanofficers/        # Content for Veterans domain
 
 public/                           # Built sites (git-ignored)
 ├── badcreditloanspecialist/      # → badcreditloanspecialist.com
@@ -182,11 +191,13 @@ public/                           # Built sites (git-ignored)
 ├── conventionalmortgageloans/    # → conventionalmortgageloans.com
 ├── fhaloanofficers/              # → fhaloanofficers.com
 ├── firsttimebuyeroptions/        # → firsttimebuyeroptions.com
-├── helocloanofficers/            # → helocloanofficers.com
-├── mtglenders/                   # → mtglenders.com
-├── refimortgagebrokers/          # → refimortgagebrokers.com
-├── refinanceloanofficers/        # → refinanceloanofficers.com
-└── veteransloanofficers/         # → veteransloanofficers.com
+├── helocloanofficers/           # → helocloanofficers.com
+├── homeloanpurchase/            # → homeloanpurchase.com
+├── mtglenders/                  # → mtglenders.com
+├── refimortgagebrokers/         # → refimortgagebrokers.com
+├── refinanceloanofficers/       # → refinanceloanofficers.com
+├── veteranmortgagelenders/      # → veteranmortgagelenders.com ⭐ NEW
+└── veteransloanofficers/        # → veteransloanofficers.com
 ```
 
 ---

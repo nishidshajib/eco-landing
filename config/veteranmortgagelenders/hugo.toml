@@ -1,0 +1,274 @@
+baseURL = 'https://veteranmortgagelenders.com/'
+languageCode = 'en-us'
+title = 'Veteran Mortgage Lenders'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/veteranmortgagelenders'
+publishDir = 'public/veteranmortgagelenders'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'VA mortgage fluency, credit clean-up plans, and benefit-backed scenario coaching for service members and military families.'
+  author = 'Browse Lenders®'
+  shortName = 'Veteran Mortgage Lenders'
+  tagline = 'VA Expertise Paired with Daily Readiness'
+  homepage = 'https://veteranmortgagelenders.com/'
+
+  siteName = 'Veteran Mortgage Lenders'
+  siteDescription = 'Coaching for VA loan approvals that blends entitlement strategy, credit timelines, and underwriting communication drills.'
+  keywords = ['VA Loan', 'Veteran Mortgage', 'Browse Lenders®', 'Middle Credit Score', 'Cash-OutRefinance.com', 'Benefit Entitlement']
+  serviceType = 'VA Mortgage Coaching'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'VA Loan Clarity Without Paper-Chasing Chaos'
+  heroSubtitle = 'Coordinate lending playbooks with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, time credit updates beside <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and model equity pivots with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> before locking a VA rate.'
+  heroImage = 'https://images.unsplash.com/photo-1521790797524-b2497295b8a0?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Launch VA Prep Workbook'
+  heroCTA1Link = 'https://veteranmortgagelenders.com/workbook'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Benefit-Literate Mortgage Coaches'
+  aboutImage = 'https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=2000&auto=format&fit=crop'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Benefit-Savvy VA Programs'
+  programsSubtitle = 'Line up entitlement math, funding fee strategy, and inspection pacing before you tour homes.'
+
+  program1Title = 'Entitlement Mapping Lab'
+  program1Description = 'Stack current orders, COEs, and residual income numbers so no underwriter questions how you qualify on paper.'
+  program1Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Credit & Rate Guardrails'
+  program2Description = 'Translate the coaching from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> into VA-friendly utilization, late-payment recovery, and rate-watch triggers.'
+  program2Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'PCS & Timeline Switchboard'
+  program3Description = 'Plan alternate closing dates, temporary housing, and escrow extensions so military moves never derail financing.'
+  program3Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Reserve a Coaching Slot'
+  programsCTALink = 'https://veteranmortgagelenders.com/consult'
+  programsClosingText = 'Every program ends with action items your agent, lender, and family can reference during deployments or PCS changes.'
+
+  educationTitle = 'Veteran Education Tracks'
+  educationSubtitle = 'Short bursts of entitlement literacy tied to each milestone.'
+
+  edu1Title = 'COE Fast-Track'
+  edu1Description = 'Understand where your Certificate of Eligibility lives, how to request updates, and what lenders scan for first.'
+  edu1Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'Residual Income Reality'
+  edu2Description = 'Break down family size, region, and allowance data so residual income checks become automatic.'
+  edu2Image = 'https://images.unsplash.com/photo-1444653389962-8149286c578a?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Appraisal + Tidewater'
+  edu3Description = 'Prepare comps and narratives before a Tidewater notice ever arrives.'
+  edu3Image = 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Benefit Communication Scripts'
+  edu4Description = 'Explain funding fees, disability waivers, and occupancy to agents and sellers with confidence.'
+  edu4Image = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Download VA Guides'
+  educationCTALink = 'https://veteranmortgagelenders.com/guides'
+
+  learningTitle = 'Learning Center — Mission Ready Mortgage Prep'
+  learningSubtitle = 'Templates, timelines, and negotiation drills built for VA buyers.'
+  learningImage = 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'We start by auditing active-duty orders, LES histories, disability letters, and COEs so every lender sees the same verified packet.'
+  learningPara2 = 'You get annotated scripts and shared folders sourced from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> to keep agents, inspectors, and escrow on the same page.'
+  learningPara3 = 'When appraisals, Tidewater notices, or repairs shift the deal, we map concessions, credits, and backup offers in hours, not days.'
+  learningBullet1 = 'Track orders, LES, and COE expirations in one view.'
+  learningBullet2 = 'Model funding fee scenarios against exemptions.'
+  learningBullet3 = 'Digest Tidewater responses before appraisers ask.'
+  learningBullet4 = 'Document every underwriting condition until cleared.'
+
+  whyChooseTitle = 'Why Veterans Trust VeteranMortgageLenders.com'
+  whyChooseSubtitle = 'Transparent entitlement math plus modern collaboration.'
+  whyChoosePara1 = 'We translate VA guidelines into plain speak so you can brief spouses, commanders, and agents without guesswork.'
+  whyChoosePara2 = 'When markets require a refinance or equity pivot, we lean on insights from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> to keep options open.'
+
+  whyChooseBox1Title = 'Verified Readiness Kits'
+  whyChooseBox1Para = 'Turn LES, leave statements, and COEs into labeled, lender-friendly packets.'
+  whyChooseBox1Bullet1 = 'Shared entitlement summaries'
+  whyChooseBox1Bullet2 = 'Funding fee cheat sheets'
+  whyChooseBox1Bullet3 = 'Condition trackers with owners'
+
+  whyChooseBox2Title = 'Budget Reality Checks'
+  whyChooseBox2Para = 'Align BAH, COLA, and reserves with realistic payment ladders.'
+  whyChooseBox2Bullet1 = 'Dual-allowance modeling'
+  whyChooseBox2Bullet2 = 'PCS overlap budgets'
+  whyChooseBox2Bullet3 = 'Rate-move guardrails'
+
+  whyChooseBox3Title = 'First-Time VA Advocacy'
+  whyChooseBox3Para = 'Rehearse lender, agent, and seller conversations before big calls.'
+  whyChooseBox3Bullet1 = 'Talk-track libraries'
+  whyChooseBox3Bullet2 = 'Email templates'
+  whyChooseBox3Bullet3 = 'Escalation checklists'
+
+  whyChooseCTA = 'Book VA Coaching'
+  whyChooseCTALink = 'https://veteranmortgagelenders.com/schedule'
+
+  testimonialsTitle = 'Proof from Recently Cleared VA Buyers'
+  testimonialsSubtitle = 'They stayed organized, confident, and funded.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'My COE, LES history, and PCS orders lived in one synced folder, so the lender issued the clear-to-close in record time.'
+  testimonial1Name = 'COE Collector'
+  testimonial1Subtitle = 'Delivered every document on day one.'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'Funding fee options and exemption math were ready before the underwriter even asked for them.'
+  testimonial2Name = 'Fee Strategist'
+  testimonial2Subtitle = 'Turned disability waiver into savings.'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'When Tidewater hit, we had comps and scripts within hours, and the appraisal sailed through.'
+  testimonial3Name = 'Calm Negotiator'
+  testimonial3Subtitle = 'Handled valuation surprises with data.'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'PCS overlap budgets meant we never panicked about double housing costs.'
+  testimonial4Name = 'PCS Planner'
+  testimonial4Subtitle = 'Mapped every move-in scenario.'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'Talk tracks for sellers and inspectors made our VA offer feel bulletproof.'
+  testimonial5Name = 'Offer Confidant'
+  testimonial5Subtitle = 'Sounded seasoned on every call.'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Condition trackers kept every lender request visible, so nothing slipped.'
+  testimonial6Name = 'Tracker Captain'
+  testimonial6Subtitle = 'Cleared every condition early.'
+
+  calculatorsTitle = 'VA Tools & Calculators'
+  calculatorsSubtitle = 'Show your math in every meeting.'
+
+  creditScoreTitle = 'Middle Credit Score® Guardrails for VA Loans'
+  creditScoreImage = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Your middle credit score still drives pricing, funding fees, and underwriting comfort. Keep it moving the right way with guided action items.'
+  creditScoreHeading1 = 'Spot the drivers'
+  creditScoreText1 = 'Identify tradelines influencing your score so you can focus cleanup efforts.'
+  creditScoreHeading2 = 'Sequence the wins'
+  creditScoreText2 = 'Order updates so score jumps align with contract timelines.'
+  creditScoreHeading3 = 'Prove the math'
+  creditScoreText3 = 'Pair improved scores with entitlement-ready budgets so lenders see the big picture.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers: Support Veteran Homebuyers on Your Team'
+  employersSubtitle = 'Financial wellness now includes VA literacy.'
+  employersImage = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Offer VeteranMortgageLenders.com coaching as part of relocation or retention perks so service members and spouses stay focused at work.'
+  employersBullet1Title = 'Plug-and-play rollout'
+  employersBullet1Text = 'We provide comms, booking links, and progress recaps your HR team can share instantly.'
+  employersBullet2Title = 'Actionable handouts'
+  employersBullet2Text = 'Employees leave with personalized checklists and lender-ready folders.'
+  employersBullet3Title = 'Retention-friendly'
+  employersBullet3Text = 'Cut stress during PCS orders or deployments.'
+  employersCTA = 'Offer the Benefit'
+  employersCTALink = 'https://veteranmortgagelenders.com/employers'
+
+  blogTitle = 'VA Buyer Field Notes'
+  blogSubtitle = 'Familiar voices explaining how real VA files clear underwriting.'
+
+  faqTitle = 'Questions VA Buyers Ask Daily'
+  faqSubtitle = 'Here are the answers we repeat most.'
+
+  faq1Question = 'How soon should I request my COE?'
+  faq1Answer = 'Request it the moment you decide to explore listings, not when you are ready to write an offer. Upload it with LES samples, ID, disability letters, and prior VA loan payoff statements so lenders can validate entitlement within hours. Refresh it after major life events—new duty station, marriage, or a refinance—so no one questions whether the data is current.'
+
+  faq2Question = 'Does residual income matter more than DTI?'
+  faq2Answer = 'Both matter, but residual income is the VA-specific pass/fail metric that underwriters cite when they pause files. We map it by region, family size, BAH, COLA, and childcare costs, then show how those numbers shift if you change the loan amount or add a co-borrower. When your tracker proves you exceed the threshold even during PCS overlap months, DTI debates tend to disappear.'
+
+  faq3Question = 'How do I prep for Tidewater?'
+  faq3Answer = 'Stage a digital folder with recent comps, renovation receipts, neighborhood upgrades, and any concessions already negotiated before the appraiser arrives. Share that packet with your agent so everyone can respond the minute a Tidewater notice hits. Because you already drafted the narrative, the rebuttal becomes an organized email instead of a frantic scramble.'
+
+  faq4Question = 'Can I buy while deployed?'
+  faq4Answer = 'Yes, but you need an executed power of attorney, a spouse or trusted proxy who can attend walk-throughs, and a clear occupancy timeline that satisfies VA guidelines. We script how to explain the arrangement to listing agents, outline which documents the proxy signs, and document travel plans so the underwriter knows when you will occupy the property. When everyone sees dates, orders, and communications in writing, those approvals move forward smoothly.'
+
+  ctaTitle = 'Ready to Lead Your VA Approval?'
+  ctaDescription = 'Book a session, align your paperwork, and brief every stakeholder with confidence.'
+  ctaCTA = 'Book VA Coaching'
+  ctaCTALink = 'https://veteranmortgagelenders.com/book'
+
+  [params.theme]
+    name = 'Veteran Mortgage Lenders Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'VA loan', 'mortgage']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
