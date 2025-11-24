@@ -1,0 +1,274 @@
+baseURL = 'https://onlinevaluecalculator.com/'
+languageCode = 'en-us'
+title = 'Online Value Calculator'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/onlinevaluecalculator'
+publishDir = 'public/onlinevaluecalculator'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Home-value intelligence, benchmarking tools, and readiness coaching for equity extraction or confident purchase planning.'
+  author = 'Browse Lenders®'
+  shortName = 'Online Value Calculator'
+  tagline = 'Home Value Intelligence for Confident Equity Moves'
+  homepage = 'https://onlinevaluecalculator.com/'
+
+  siteName = 'Online Value Calculator'
+  siteDescription = 'Track home value, prep your credit posture, and compare equity strategies with dynamic guidance and calculators.'
+  keywords = ['Home Value Calculator', 'Equity Extraction', 'Mortgage Prep', 'Browse Lenders®', 'Middle Credit Score', 'Cash-Out Refinance']
+  serviceType = 'Home Value & Equity Planning Tools'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Home Value Signals That Power Smart Equity Moves'
+  heroSubtitle = 'Benchmark your property value, understand your <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> readiness, and line up negotiation insight through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> before you tap or leverage equity.'
+  heroImage = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Check My Home Value'
+  heroCTA1Link = 'https://onlinevaluecalculator.com/tools'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Valuation Tools That Translate Into Real Offers'
+  aboutImage = 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Valuation Programs & Scenario Modeling'
+  programsSubtitle = 'Pair data-backed estimates with lender expectations so you know how much leverage you actually hold before listing, refinancing, or making offers.'
+
+  program1Title = 'Equity Outlook Workshop'
+  program1Description = 'Overlay automated valuation models with local comps, then connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> strategists to understand how buyers and lenders may treat your price story.'
+  program1Image = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Cash-Out Readiness Scan'
+  program2Description = 'Plug your projected value into refinance calculators and align cash-out expectations through <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> scenarios before you lock a rate.'
+  program2Image = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'Purchase Leverage Blueprint'
+  program3Description = 'Use contract-ready worksheets plus <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> action plans to show sellers you have the borrowing power to back up your offer.'
+  program3Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Start My Scenario'
+  programsCTALink = 'https://onlinevaluecalculator.com/consult'
+  programsClosingText = 'Every valuation session is followed by a plain-language summary so you can brief agents, contractors, or lenders without second-guessing the math.'
+
+  educationTitle = 'Education That Keeps Values Honest'
+  educationSubtitle = 'Use these quick reads to interpret pricing swings, assessor data, and lender overlays.'
+
+  edu1Title = 'Market Signals'
+  edu1Description = 'Break down inventory, absorption, and neighbor comps so pricing conversations stay grounded in facts—not bidding-war myths.'
+  edu1Image = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'Documentation'
+  edu2Description = 'Collect permits, improvement receipts, and inspection notes to defend your valuation when underwriters request backup.'
+  edu2Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Timing Windows'
+  edu3Description = 'Track seasonality, rate movements, and buyer demand to decide whether to refinance now or hold for stronger comps.'
+  edu3Image = 'https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Credit Prep'
+  edu4Description = 'Translate valuation goals into credit steps so your profile matches the loan size you want.'
+  edu4Image = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Review Value Guides'
+  educationCTALink = 'https://onlinevaluecalculator.com/guides'
+
+  learningTitle = 'Learning Center — Value Confidence'
+  learningSubtitle = 'Blend math, credit coaching, and negotiation framing.'
+  learningImage = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Online Value Calculator translates automated valuations, local data, and appraisal patterns into language homeowners understand. You get context for why numbers move and how to present them credibly to appraisers or listing agents.'
+  learningPara2 = 'We layer credit preparedness, renovation ROI snapshots, and offer-to-close checklists so you see how value data influences approvals and seller trust.'
+  learningPara3 = 'Bring the entire picture together with negotiation storyboards that show how your pricing compares with recent transactions and lender overlays.'
+  learningBullet1 = 'Compare automated value outputs with human appraisals.'
+  learningBullet2 = 'Project equity accessible for renovations, debt payoff, or reserves.'
+  learningBullet3 = 'Stress-test offers with different down payment mixes.'
+  learningBullet4 = 'Document improvements to boost appraisal credibility.'
+
+  whyChooseTitle = 'Why Homeowners Trust OnlineValueCalculator.com'
+  whyChooseSubtitle = 'We translate math into practical action.'
+  whyChoosePara1 = 'Instead of guessing what your home is worth, we capture the signals lenders, buyers, and underwriters actually review and hand you the narrative that fits the data.'
+  whyChoosePara2 = 'You leave with talking points, value evidence, and calculators that prevent overpricing, underpricing, or overborrowing.'
+
+  whyChooseBox1Title = 'Transparent Valuations'
+  whyChooseBox1Para = 'See three data sources side by side and understand how each responds to upgrades or repairs.'
+  whyChooseBox1Bullet1 = 'Automated models, private data, and human comps'
+  whyChooseBox1Bullet2 = 'Variance explanations in plain English'
+  whyChooseBox1Bullet3 = 'Exportable recap for agents and lenders'
+
+  whyChooseBox2Title = 'Equity Strategy Clarity'
+  whyChooseBox2Para = 'Know exactly how much cash you can responsibly pull without wrecking future plans.'
+  whyChooseBox2Bullet1 = 'Equity guardrails based on goals'
+  whyChooseBox2Bullet2 = 'Debt payoff vs renovation ROI views'
+  whyChooseBox2Bullet3 = 'Break-even math with timeline cues'
+
+  whyChooseBox3Title = 'Offer-Ready Proof'
+  whyChooseBox3Para = 'Package value data, credit readiness, and funds-to-close documentation before you bid.'
+  whyChooseBox3Bullet1 = 'Seller-friendly one-page brief'
+  whyChooseBox3Bullet2 = 'Credit readiness summary'
+  whyChooseBox3Bullet3 = 'Funds sourcing checklist'
+
+  whyChooseCTA = 'Book a Value Session'
+  whyChooseCTALink = 'https://onlinevaluecalculator.com/schedule'
+
+  testimonialsTitle = 'Proof from Value-Obsessed Homeowners'
+  testimonialsSubtitle = 'They paired data with action and removed the guesswork.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'Our listing agent stopped debating price once we showed the valuation workbook and supporting comps from OnlineValueCalculator.com.'
+  testimonial1Name = 'Equity Planner'
+  testimonial1Subtitle = 'Turned valuation math into seller confidence.'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'The cash-out readiness scan told us exactly how much to pull for renovations without crushing our future purchase plans.'
+  testimonial2Name = 'Strategic Renovator'
+  testimonial2Subtitle = 'Balanced renovation budget with equity limits.'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'I walked into appraisal with documented upgrades, market stats, and credit readiness already organized.'
+  testimonial3Name = 'Confident Refinancer'
+  testimonial3Subtitle = 'Appraisal nerves disappeared.'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'We won a multiple-offer scenario because our valuation packet showed sellers we were serious and funded.'
+  testimonial4Name = 'Prepared Buyer'
+  testimonial4Subtitle = 'Data-backed offer beat higher bids.'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'I finally understood how lenders would review my numbers and which documents mattered most.'
+  testimonial5Name = 'First-Time Remodeler'
+  testimonial5Subtitle = 'Clarity on docs saved me weeks.'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'Instead of chasing random estimates online, I got one actionable scorecard tailored to my property.'
+  testimonial6Name = 'Data-Driven Owner'
+  testimonial6Subtitle = 'One workbook replaced six tabs.'
+
+  calculatorsTitle = 'Home Value & Equity Calculators'
+  calculatorsSubtitle = 'Stack the math before you request quotes.'
+
+  creditScoreTitle = 'Middle Credit Score® Valuation & Lending Alignment'
+  creditScoreImage = 'https://images.unsplash.com/photo-1523958203904-cdcb402031fd?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Your middle credit score dictates how seriously lenders treat your projected value. Align the numbers before they rule your file out.'
+  creditScoreHeading1 = 'Know the baseline'
+  creditScoreText1 = 'See which tradelines and utilization ratios are moving your middle score today.'
+  creditScoreHeading2 = 'Forecast improvements'
+  creditScoreText2 = 'Model how quick adjustments can unlock better pricing or higher LTV caps.'
+  creditScoreHeading3 = 'Walk in confident'
+  creditScoreText3 = 'Package credit readiness with your valuation workbook for a faster yes.'
+  creditScoreCTA = 'Explore Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers: Offer Home Value Coaching as a Benefit'
+  employersSubtitle = 'Your teams crave financial clarity—give them valuation and equity resources.'
+  employersImage = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Financial wellness programs now extend beyond retirement accounts. Add valuation coaching so employees plan relocations, renovations, and cash-out moves with confidence and less stress.'
+  employersBullet1Title = 'Zero-cost rollout'
+  employersBullet1Text = 'Plug OnlineValueCalculator.com sessions into existing benefits without new vendors.'
+  employersBullet2Title = 'Actionable takeaways'
+  employersBullet2Text = 'Employees leave with valuation packets, credit steps, and lender-ready documentation.'
+  employersBullet3Title = 'Retention catalyst'
+  employersBullet3Text = 'Reduce financial anxiety and keep high performers focused.'
+  employersCTA = 'Offer the Benefit'
+  employersCTALink = 'https://onlinevaluecalculator.com/employers'
+
+  blogTitle = 'Home Value & Equity Insights'
+  blogSubtitle = 'Practical guidance on valuations, calculators, and lender expectations.'
+
+  faqTitle = 'Valuation Questions We Tackle Daily'
+  faqSubtitle = 'Use these answers to guide your next move.'
+
+  faq1Question = 'How accurate are online home value estimates?'
+  faq1Answer = 'Online estimates are a starting point, not the finish line. We compare automated models, private data, and hyper-local comps, then explain the variance so you can decide whether to challenge, accept, or bolster the number.'
+
+  faq2Question = 'When should I order a professional appraisal?'
+  faq2Answer = 'If you are within 5% of a target price that changes your strategy—like triggering PMI removal or listing above a round number—schedule an appraisal. Bring documentation and upgrades so the appraiser can validate your stance quickly.'
+
+  faq3Question = 'Can I use the same valuation packet for refinancing and selling?'
+  faq3Answer = 'Yes, but adjust the storytelling. Refinances demand more lender overlays, while listings require market narrative. We provide templates for both so you simply swap focus points without rebuilding the data.'
+
+  faq4Question = 'How do I keep my valuation current?'
+  faq4Answer = 'Refresh your workbook every quarter or after major improvements. Updating comps, credit, and renovation receipts ensures lenders or buyers see the latest picture instead of last year’s profile.'
+
+  ctaTitle = 'Ready to Trust Your Numbers?'
+  ctaDescription = 'Book a valuation consult, sync your credit posture, and walk into negotiations with math you can defend.'
+  ctaCTA = 'Book My Session'
+  ctaCTALink = 'https://onlinevaluecalculator.com/book'
+
+  [params.theme]
+    name = 'Online Value Calculator Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'home value', 'equity']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
