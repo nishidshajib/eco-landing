@@ -1,0 +1,274 @@
+baseURL = 'https://jumboloanofficers.com/'
+languageCode = 'en-us'
+title = 'Jumbo Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/jumboloanofficers'
+publishDir = 'public/jumboloanofficers'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Optimize jumbo-mortgage applications with vetted officers, private-client planning tools, and SEO-ready resources built for seven-figure approvals.'
+  author = 'Browse Lenders®'
+  shortName = 'Jumbo Loan Officers'
+  tagline = 'Jumbo Mortgage Strategy + Officer Directory'
+  homepage = 'https://jumboloanofficers.com/'
+
+  siteName = 'Jumbo Loan Officers'
+  siteDescription = 'Searchable jumbo-loan officer directory plus strategic planning lab for luxury buyers, relocation teams, and advisors who manage complex balance sheets.'
+  keywords = ['Jumbo Loan', 'Jumbo Mortgage Officers', 'High-Balance Mortgage', 'Browse Lenders®', 'Middle Credit Score', 'Cash-OutRefinance.com', 'Portfolio Lending', 'High Net Worth Financing']
+  serviceType = 'Jumbo Mortgage Strategy & Officer Matching'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Private-Client Jumbo Mortgage Command Center'
+  heroSubtitle = 'Curate lender-ready officer shortlists with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, protect middle-score requirements beside <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and plan future equity pivots with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> before the committee review.'
+  heroImage = 'https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Compare Jumbo Officers'
+  heroCTA1Link = 'https://jumboloanofficers.com/officers'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Private-Client Efficiency With Mortgage Precision'
+  aboutImage = 'https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=2000&auto=format&fit=crop'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Jumbo Readiness Programs for Complex Balance Sheets'
+  programsSubtitle = 'Underwriting narratives, liquidity ladders, and portfolio bank outreach live in one SEO-friendly command deck built for luxury closings.'
+
+  program1Title = 'Liquidity Mapping Studio'
+  program1Description = 'Stack brokerage statements, K-1s, trust distributions, and executive comp summaries so jumbo loan officers never question where cash to close resides.'
+  program1Image = 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Credit & Rate Guardrails'
+  program2Description = 'Translate the credit tactics from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> into utilization, inquiry, and rapid-rescore plans that satisfy private bank overlays.'
+  program2Image = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'Equity Pivot Playbooks'
+  program3Description = 'Model recast, recoup, and premium amortization strategies that dovetail with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so wealth managers stay aligned with jumbo officers.'
+  program3Image = 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Book a Strategy Call'
+  programsCTALink = 'https://jumboloanofficers.com/consult'
+  programsClosingText = 'Every plan ends with stakeholder assignments so borrowers, CPAs, and loan officers move in lockstep.'
+
+  educationTitle = 'Jumbo Education Tracks'
+  educationSubtitle = 'Briefings for managing partners, tech founders, and relocation teams that need jumbo mortgage clarity.'
+
+  edu1Title = 'Portfolio Bank Outreach'
+  edu1Description = 'Know which private banks lean aggressive on reserves, asset depletion, and cross-collateralization before you disclose tax returns or equity positions.'
+  edu1Image = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'Income Layering Clinic'
+  edu2Description = 'Clarify how W-2, K-1, deferred comp, and carried interest flow into jumbo underwriting so there are no “surprise” add-backs.'
+  edu2Image = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Appraisal & Luxury Comparables'
+  edu3Description = 'Pre-build talking points, supporting comps, and renovation packets for estates, pied-à-terres, and hybrid-use properties so appraisers see value immediately.'
+  edu3Image = 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Cash-Flow Stress Tests'
+  edu4Description = 'Blend bonus seasonality with reserve triggers so jumbo officers can defend your risk posture to committees during rate reviews.'
+  edu4Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Download Jumbo Briefs'
+  educationCTALink = 'https://jumboloanofficers.com/guides'
+
+  learningTitle = 'Learning Center — Private Client Mortgage Ops'
+  learningSubtitle = 'Templates, underwriting call scripts, and compliance trackers for teams handling multi-million-dollar mortgages.'
+  learningImage = 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'We centralize audited financials, CPA letters, and liquidity attestations so every jumbo loan officer reviews the same updated files.'
+  learningPara2 = 'Client teams remix the decks with benchmarks sourced via BrowseLenders.com insights and underwriting queues that mirror how private banks think.'
+  learningPara3 = 'Equity conversations stay coordinated with dashboards that flag when <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> scenarios or liquidity releases should be triggered.'
+  learningBullet1 = 'Consolidated financial statement vaults'
+  learningBullet2 = 'Officer-ready summary decks'
+  learningBullet3 = 'Luxury comparable worksheets'
+  learningBullet4 = 'Condition trackers with time stamps'
+
+  whyChooseTitle = 'Why Leaders Trust JumboLoanOfficers.com'
+  whyChooseSubtitle = 'We translate complex balance sheets into confident jumbo underwriting narratives.'
+  whyChoosePara1 = 'High earners juggle stock awards, pass-through income, and global assets. We document every line so jumbo mortgage officers see stability, not noise.'
+  whyChoosePara2 = 'When it is time to leverage or harvest equity, we keep alignment between loan officers, wealth managers, and strategic partners in one secure portal.'
+
+  whyChooseBox1Title = 'Underwriting Narratives'
+  whyChooseBox1Para = 'Executive summaries that make sense of multi-entity income for jumbo mortgage reviews.'
+  whyChooseBox1Bullet1 = 'Chronological liquidity story'
+  whyChooseBox1Bullet2 = 'Executive comp breakdowns'
+  whyChooseBox1Bullet3 = 'Committee-friendly highlights'
+
+  whyChooseBox2Title = 'Risk Communication'
+  whyChooseBox2Para = 'Forecast DSCR, cash burn, and deferred comp cliffs before the portfolio bank committee asks.'
+  whyChooseBox2Bullet1 = 'Scenario variance tables'
+  whyChooseBox2Bullet2 = 'Stress-test dashboards'
+  whyChooseBox2Bullet3 = 'Rate-move talking points'
+
+  whyChooseBox3Title = 'Stakeholder Alignment'
+  whyChooseBox3Para = 'Give spouses, CFOs, and relocation teams identical updates even when they live in different time zones.'
+  whyChooseBox3Bullet1 = 'Multi-channel status pings'
+  whyChooseBox3Bullet2 = 'Shared document indexes'
+  whyChooseBox3Bullet3 = 'Escalation runbooks'
+
+  whyChooseCTA = 'Schedule a Jumbo Briefing'
+  whyChooseCTALink = 'https://jumboloanofficers.com/schedule'
+
+  testimonialsTitle = 'Executive Households Already Upgraded Their Process'
+  testimonialsSubtitle = 'Here is what their teams reported back.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'Our CFO uploaded audited statements once, and every lender question was answered with a single link. Closings finally felt predictable.'
+  testimonial1Name = 'Multi-Entity Founder'
+  testimonial1Subtitle = 'Closed two jumbo loans in 90 days.'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'Middle Credit Score guardrails plus liquidity trackers convinced the private bank to extend 89.99% financing on a $3M condo.'
+  testimonial2Name = 'Tech Couple'
+  testimonial2Subtitle = 'Used officer scripts to win the bid.'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1545996124-0501ebae84d0?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'Our relocation vendor plugged into the dashboards, so every reimbursement, appraisal, and inspection was synced.'
+  testimonial3Name = 'Global Executive'
+  testimonial3Subtitle = 'Moved across continents without drama.'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'Committee questions were answered before they were asked because the talking points were scripted with data tables.'
+  testimonial4Name = 'Private Equity Partner'
+  testimonial4Subtitle = 'Cleared underwriting in record time.'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1544723795-4325370d5b88?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'My spouse, wealth manager, and CPA all saw the same updates, so no one double-worked documents.'
+  testimonial5Name = 'Dual-Income Household'
+  testimonial5Subtitle = 'Closed while juggling IPO prep.'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'The officer roster plus negotiation scripts meant we could swap lenders mid-process without stress.'
+  testimonial6Name = 'Entertainment Attorney'
+  testimonial6Subtitle = 'Protected timelines despite market swings.'
+
+  calculatorsTitle = 'High-Balance Mortgage Tools'
+  calculatorsSubtitle = 'Show jumbo-loan math to committees, co-signers, and CPAs alike.'
+
+  creditScoreTitle = 'Middle Credit Score® Oversight for Jumbo Loans'
+  creditScoreImage = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Score volatility triggers pricing changes faster at jumbo levels. Guardrail utilization, inquiries, and new tradelines before rate locks to preserve pricing.'
+  creditScoreHeading1 = 'Plot utilization ladders'
+  creditScoreText1 = 'Know which cards can float expenses without tipping past 10% usage.'
+  creditScoreHeading2 = 'Document rapid rescoring'
+  creditScoreText2 = 'Show underwriters proof-of-payoff packets ready for submission.'
+  creditScoreHeading3 = 'Link to liquidity plans'
+  creditScoreText3 = 'Tie every credit move to the cash schedule jumbo loan officers expect to see.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Relocation Teams'
+  employersSubtitle = 'Offer jumbo-loan readiness as a retention perk.'
+  employersImage = 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Provide officer matching, documentation playbooks, and milestone reporting so executives can close jumbo mortgages while staying productive at work.'
+  employersBullet1Title = 'Plug-and-play launch kits'
+  employersBullet1Text = 'Copy deck templates, talking points, and booking links for HR portals.'
+  employersBullet2Title = 'Real transparency'
+  employersBullet2Text = 'Leadership teams see anonymized progress snapshots without chasing emails.'
+  employersBullet3Title = 'Retention impact'
+  employersBullet3Text = 'Reduce relocation attrition by removing jumbo-loan stress.'
+  employersCTA = 'Offer the Benefit'
+  employersCTALink = 'https://jumboloanofficers.com/employers'
+
+  blogTitle = 'Jumbo Loan Field Notes'
+  blogSubtitle = 'Candid recaps from borrowers, officers, and advisors inside complex jumbo files.'
+
+  faqTitle = 'Questions High-Balance Buyers Ask'
+  faqSubtitle = 'Brief answers your team can reuse in every jumbo-mortgage meeting.'
+
+  faq1Question = 'How much liquidity do jumbo lenders require?'
+  faq1Answer = 'Most jumbo lenders want 6-12 months of reserves after closing, and they prefer seasoned assets. We tag accounts that qualify, explain the seasoning timeline, and write short memos so committees know why capital gains, RSU sales, or trust distributions are dependable.'
+
+  faq2Question = 'Can I use asset depletion to qualify?'
+  faq2Answer = 'Yes, but each jumbo bank has a different divisor. We compare them, document how you derived the monthly income figure, and show stress tests that still meet DSCR even if markets dip 20%.'
+
+  faq3Question = 'What if my bonus arrives after closing?'
+  faq3Answer = 'We model bridge liquidity and pair it with employer letters so the jumbo officer can treat the pending bonus as compensating strength. Transparent calendars keep everyone calm.'
+
+  faq4Question = 'How do jumbo appraisals handle unique homes?'
+  faq4Answer = 'We preload comps, renovation receipts, rental histories, and narrative letters so the jumbo appraiser has context before driving the valuation. If adjustments are required, your agent already has the data to defend the number.'
+
+  ctaTitle = 'Need a Jumbo Loan Officer Who Gets It?'
+  ctaDescription = 'Share your balance sheet once, and we will mobilize the right jumbo officer, wealth partners, and scripts today.'
+  ctaCTA = 'Start the Intake'
+  ctaCTALink = 'https://jumboloanofficers.com/start'
+
+  [params.theme]
+    name = 'Jumbo Loan Officers Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'jumbo loans', 'mortgage']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
