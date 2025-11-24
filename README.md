@@ -68,6 +68,7 @@ hugo server --environment cashoutrefinancecalculators --port 1347
 hugo server --environment newconstructionmortgagebrokers --port 1348
 hugo server --environment cashoutmortgagerefinance --port 1349
 hugo server --environment onlinevaluecalculator --port 1350
+hugo server --environment homeloanpurchase --port 1351
 
 
 

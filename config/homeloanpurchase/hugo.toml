@@ -1,0 +1,274 @@
+baseURL = 'https://homeloanpurchase.com/'
+languageCode = 'en-us'
+title = 'Home Loan Purchase'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/homeloanpurchase'
+publishDir = 'public/homeloanpurchase'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'First-time buyer guidance, documentation prep, and confidence-building checklists for every step between curiosity and clear-to-close.'
+  author = 'Browse Lenders®'
+  shortName = 'Home Loan Purchase'
+  tagline = 'First-Time Buyer Guidance That Travels With You'
+  homepage = 'https://homeloanpurchase.com/'
+
+  siteName = 'Home Loan Purchase'
+  siteDescription = 'Purchase-ready coaching that blends documentation walkthroughs, credit clarity, and lender expectations so first-time buyers can make confident offers.'
+  keywords = ['First-Time Buyer', 'Purchase Loan', 'Browse Lenders®', 'Middle Credit Score', 'Cash-OutRefinance.com', 'Documentation Checklist']
+  serviceType = 'Home Loan & Purchase Coaching'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Pre-Approval Confidence Without Guesswork'
+  heroSubtitle = 'Line up your education, paperwork, and payment strategy with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, tune your credit posture through <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and compare financing pivots alongside insights from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> before you ever tour a home.'
+  heroImage = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Start Buyer Workbook'
+  heroCTA1Link = 'https://homeloanpurchase.com/workbook'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Documentation Coaching for Every Buyer Milestone'
+  aboutImage = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2000&auto=format&fit=crop'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Buyer Readiness Programs'
+  programsSubtitle = 'Mix education with lender expectations so you always know what comes next.'
+
+  program1Title = 'Offer-Ready Paperwork Lab'
+  program1Description = 'Audit pay stubs, assets, and gift letters with coaches who explain how underwriters stack your file before rates are even discussed.'
+  program1Image = 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Credit & Budget Sync'
+  program2Description = 'Translate action items from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> into real payment ranges so you can defend your offer price with math.'
+  program2Image = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'Scenario Switchboard'
+  program3Description = 'Walk through primary, backup, and renovation-ready purchase options so lenders see you have plans even if appraisals or inspections shift.'
+  program3Image = 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Reserve a Session'
+  programsCTALink = 'https://homeloanpurchase.com/consult'
+  programsClosingText = 'Every program ends with a digestible checklist so you, your agent, and your lender reference the same facts.'
+
+  educationTitle = 'Buyer Education Tracks'
+  educationSubtitle = 'Keep learning sessions short, practical, and tied to real milestones.'
+
+  edu1Title = 'Income Clarity'
+  edu1Description = 'Understand base pay, variable income, and gaps so files flow through underwriting the first time.'
+  edu1Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'Asset Structuring'
+  edu2Description = 'Show lenders where funds live, how they season, and how gifts are documented.'
+  edu2Image = 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Timeline Navigation'
+  edu3Description = 'Predict how long disclosures, inspections, and appraisals will actually take in your market.'
+  edu3Image = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Confidence Scripts'
+  edu4Description = 'Communicate with sellers and lenders clearly so no one doubts your readiness.'
+  edu4Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Download Guides'
+  educationCTALink = 'https://homeloanpurchase.com/guides'
+
+  learningTitle = 'Learning Center — From Inquiry to Clear-to-Close'
+  learningSubtitle = 'Short lessons, real documentation examples, and practical negotiation prep.'
+  learningImage = 'https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Home Loan Purchase sessions start with a walkthrough of what buyers forget most: organizing payroll histories, verifying employment, and aligning debt ratios with real lender overlays.'
+  learningPara2 = 'You get annotated samples—gift letters, LOE templates, inspection responses—so you can plug in your facts without rewriting everything from scratch.'
+  learningPara3 = 'When markets move or inspections surprise you, we help script the counteroffers and concession requests that keep the deal moving.'
+  learningBullet1 = 'Build a home loan binder that travels to every showing.'
+  learningBullet2 = 'Compare payment ladders against lifestyle expenses.'
+  learningBullet3 = 'Translate inspection findings into negotiation math.'
+  learningBullet4 = 'Track every underwriting condition until it is cleared.'
+
+  whyChooseTitle = 'Why Buyers Trust HomeLoanPurchase.com'
+  whyChooseSubtitle = 'Transparent coaching and modern tooling.'
+  whyChoosePara1 = 'You are not just collecting random tips—you are building a purchase file that any lender can review without confusion.'
+  whyChoosePara2 = 'Anchoring your education to partners like <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> means you can pivot quickly if life or inventory changes.'
+
+  whyChooseBox1Title = 'Documented Readiness'
+  whyChooseBox1Para = 'Understand why each document matters and how to update it before it expires.'
+  whyChooseBox1Bullet1 = 'Underwriting-friendly file names'
+  whyChooseBox1Bullet2 = 'Expiration reminders'
+  whyChooseBox1Bullet3 = 'Shared folders for agents'
+
+  whyChooseBox2Title = 'Budget Truth Serum'
+  whyChooseBox2Para = 'Pressure-test monthly payments with realistic lifestyle expenses so approvals feel livable.'
+  whyChooseBox2Bullet1 = 'Dual-income projections'
+  whyChooseBox2Bullet2 = 'Reserve targets'
+  whyChooseBox2Bullet3 = 'Rate-move stress tests'
+
+  whyChooseBox3Title = 'First-Time Buyer Advocacy'
+  whyChooseBox3Para = 'Practice conversations with lenders, inspectors, and sellers so you walk in sounding confident.'
+  whyChooseBox3Bullet1 = 'Talk-track libraries'
+  whyChooseBox3Bullet2 = 'Email templates'
+  whyChooseBox3Bullet3 = 'Escalation checklists'
+
+  whyChooseCTA = 'Book Buyer Coaching'
+  whyChooseCTALink = 'https://homeloanpurchase.com/schedule'
+
+  testimonialsTitle = 'Proof from Newly Minted Homeowners'
+  testimonialsSubtitle = 'They stayed organized, confident, and funded.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = 'Every document lived in one annotated packet, so my lender issued the commitment letter in four days.'
+  testimonial1Name = 'Organized Borrower'
+  testimonial1Subtitle = 'Filed every condition early.'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = 'Practice calls with the coaching team made discussing seller credits and rate locks feel natural.'
+  testimonial2Name = 'Negotiation Rookie'
+  testimonial2Subtitle = 'Sounded seasoned during offers.'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = 'We walked into underwriting with LOEs, pay history, and reserve proof already labeled.'
+  testimonial3Name = 'Docs-Ready Duo'
+  testimonial3Subtitle = 'No back-and-forth delays.'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = 'Budget ladders showed me the payment tiers I could truly stomach before signing contracts.'
+  testimonial4Name = 'Payment Planner'
+  testimonial4Subtitle = 'Zero surprises on closing day.'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = 'When inspection issues popped up, we had scripts ready to request repairs and timeline extensions.'
+  testimonial5Name = 'Calm Negotiator'
+  testimonial5Subtitle = 'Kept the deal moving.'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = 'The team translated mortgage terms into language I could repeat to my family and agent.'
+  testimonial6Name = 'Clarity Seeker'
+  testimonial6Subtitle = 'Understood every acronym.'
+
+  calculatorsTitle = 'Purchase Tools & Calculators'
+  calculatorsSubtitle = 'Bring receipts to every conversation.'
+
+  creditScoreTitle = 'Middle Credit Score® Alignment for Purchases'
+  creditScoreImage = 'https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Your middle credit score still sets the tone for pricing, MI, and closing costs. Keep it moving in the right direction with guided updates.'
+  creditScoreHeading1 = 'Spot the drivers'
+  creditScoreText1 = 'Identify tradelines influencing your score so you can focus effort where it matters.'
+  creditScoreHeading2 = 'Map quick wins'
+  creditScoreText2 = 'Stack weekly action items that raise scores before rate locks.'
+  creditScoreHeading3 = 'Show the math'
+  creditScoreText3 = 'Pair improved scores with payment scenarios so lenders see the full picture.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers: Support First-Time Buyers on Your Team'
+  employersSubtitle = 'Financial wellness now includes housing literacy.'
+  employersImage = 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Offer HomeLoanPurchase.com sessions as part of onboarding or relocation packages so employees can focus at work while they move through underwriting.'
+  employersBullet1Title = 'Plug-and-play rollout'
+  employersBullet1Text = 'We provide internal comms, booking links, and progress recaps.'
+  employersBullet2Title = 'Actionable handouts'
+  employersBullet2Text = 'Employees leave with personalized checklists and lender-ready folders.'
+  employersBullet3Title = 'Retention-friendly'
+  employersBullet3Text = 'Cut stress during relocation or life transitions.'
+  employersCTA = 'Offer the Benefit'
+  employersCTALink = 'https://homeloanpurchase.com/employers'
+
+  blogTitle = 'Buyer Field Notes'
+  blogSubtitle = 'Familiar voices explaining how real files get approved.'
+
+  faqTitle = 'Questions First-Time Buyers Ask Daily'
+  faqSubtitle = 'Here are the answers we repeat most.'
+
+  faq1Question = 'How early should I start collecting documents?'
+  faq1Answer = 'Start the moment you decide to explore buying. Pay stubs, W-2s, asset statements, photo IDs, and gift letters should all be current before pre-qualification calls.'
+
+  faq2Question = 'Do I need perfect credit to buy?'
+  faq2Answer = 'No. You need to understand your middle credit score, what drives it, and how changes influence pricing. A plan matters more than perfection.'
+
+  faq3Question = 'What if my income is variable?'
+  faq3Answer = 'We show you how lenders average commissions, bonuses, or gig income so you can present a believable history.'
+
+  faq4Question = 'How do I stay calm through underwriting?'
+  faq4Answer = 'Keep a running condition tracker, reply quickly, and document every conversation. Momentum is the best antidote to stress.'
+
+  ctaTitle = 'Ready to Walk Into Pre-Approval Prepared?'
+  ctaDescription = 'Book a session, collect your documents, and approach every showing with proof in hand.'
+  ctaCTA = 'Book Buyer Coaching'
+  ctaCTALink = 'https://homeloanpurchase.com/book'
+
+  [params.theme]
+    name = 'Home Loan Purchase Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'home loan', 'first-time buyer']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#002D62'
+    backgroundColor = '#F7F9FC'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
