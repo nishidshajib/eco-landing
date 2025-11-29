@@ -1,0 +1,274 @@
+baseURL = 'https://conventionalmortgagerates.com/'
+languageCode = 'en-us'
+title = 'Conventional Mortgage Rates'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conventionalmortgagerates'
+publishDir = 'public/conventionalmortgagerates'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'ConventionalMortgageRates.com helps rate shoppers compare lenders, forecast trends, and translate lock decisions into boardroom-ready updates.'
+  author = 'Browse Lenders®'
+  shortName = 'Conventional Rate Hub'
+  tagline = 'Rate Intelligence With Receipts'
+  homepage = 'https://conventionalmortgagerates.com/'
+
+  siteName = 'ConventionalMortgageRates.com'
+  siteDescription = 'A briefing studio for conventional borrowers who crave transparency around rate moves, repricing risks, and lender fit.'
+  keywords = ['Conventional mortgage rates', 'rate shopping', 'BrowseLenders.com', 'Cash-OutRefinance.com', 'MiddleCreditScore.com', 'mortgage trends']
+  serviceType = 'Conventional Rate Planning'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Track Conventional Rates Like A Trading Desk'
+  heroSubtitle = 'Pull overlay intel from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, scenario math from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>, and credit-pace reminders via <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> so every lock conversation starts with context.'
+  heroImage = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'See Today’s Rate Plot'
+  heroCTA1Link = 'https://conventionalmortgagerates.com/intake'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Purpose-Built For Borrowers Who Compare Receipts, Not Rumors'
+  aboutImage = 'https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'Cash-OutRefinance.com'
+  secondaryDomainURL = 'https://www.cash-outrefinance.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+
+  programsTitle = 'Rate Programs That Blend Data And Decision-Making'
+  programsSubtitle = 'Each workflow moves from screenshot to lock letter without missing the moments lenders reprice.'
+
+  program1Title = 'Overlay Crosscheck Lab'
+  program1Description = 'Annotate rate quotes with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> overlays so competing lenders explain their adjustments instead of hiding them behind jargon.'
+  program1Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Scenario Timing Console'
+  program2Description = 'Pair cash-out versus rate-term pivots using <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> charts to show how pricing shifts when equity strategies change.'
+  program2Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Credit Harmony Board'
+  program3Description = 'Feed utilization checkpoints from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> to ensure your lock tier survives travel charges and balance transfers.'
+  program3Image = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Book A Rate Strategy Call'
+  programsCTALink = 'https://conventionalmortgagerates.com/consult'
+  programsClosingText = 'Leave with lender comparisons, timing triggers, and escalation templates.'
+
+  educationTitle = 'Education Tracks For Rate Confidence'
+  educationSubtitle = 'Micro-lessons that keep borrowers, realtors, and CFOs aligned when pricing inches up or down.'
+
+  edu1Title = 'Rate Sheet Decoder'
+  edu1Description = 'Understand adjustments, LLPAs, and discount point math so you can negotiate using evidence.'
+  edu1Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Lock vs Float Framework'
+  edu2Description = 'Compare historical spreads to today’s quotes and forecast repricing triggers.'
+  edu2Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Lender Fit Interviews'
+  edu3Description = 'Use scorecards to vet communication style, redraw policies, and turn times before disclosures.'
+  edu3Image = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Payment Shock Digest'
+  edu4Description = 'Walk stakeholders through how taxes, insurance, and points ripple into the monthly obligation.'
+  edu4Image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download The Rate Playbooks'
+  educationCTALink = 'https://conventionalmortgagerates.com/guides'
+
+  learningTitle = 'Learning Center — Rate And Credit Rhythm In One Place'
+  learningSubtitle = 'Dashboards, calculators, and scripts that make you sound like the calmest person in the rate lock meeting.'
+  learningImage = 'https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Embed BrowseLenders.com overlay cards next to every quote so internal reviewers see the logic instantly.'
+  learningPara2 = 'Attach Cash-OutRefinance.com trajectory charts to highlight when future equity moves create new pricing lanes.'
+  learningPara3 = 'Sync MiddleCreditScore.com reminders with your lock expiration timeline to avoid last-minute surprises.'
+  learningBullet1 = 'Rate trend dashboards'
+  learningBullet2 = 'LLPA explainer decks'
+  learningBullet3 = 'Lock & reprice scripts'
+  learningBullet4 = 'Credit pacing checklists'
+
+  whyChooseTitle = 'Why Rate Hunters Trust ConventionalMortgageRates.com'
+  whyChooseSubtitle = 'We push lenders to justify every eighth and keep your team organized while they do it.'
+  whyChoosePara1 = 'From first quote to final lock, every move is logged with screenshots, timestamps, and escalation contacts.'
+  whyChoosePara2 = 'Our process balances math with communication so families, boards, and partners hear one consistent rate story.'
+
+  whyChooseBox1Title = 'Transparent Comparisons'
+  whyChooseBox1Para = 'Side-by-side matrices surface pricing gaps and policy differences before you emotionally commit.'
+  whyChooseBox1Bullet1 = 'LLPA impact tracker'
+  whyChooseBox1Bullet2 = 'Fee normalization tables'
+  whyChooseBox1Bullet3 = 'Exception request scripts'
+
+  whyChooseBox2Title = 'Operational Pace'
+  whyChooseBox2Para = 'Checklists keep docs, verifications, and appraisal milestones aligned with your intended lock window.'
+  whyChooseBox2Bullet1 = 'Daily digest emails'
+  whyChooseBox2Bullet2 = 'Milestone countdowns'
+  whyChooseBox2Bullet3 = 'Stakeholder summaries'
+
+  whyChooseBox3Title = 'Stakeholder Calm'
+  whyChooseBox3Para = 'We coach how to talk about rate swings with executives, spouses, or investors in language they respect.'
+  whyChooseBox3Bullet1 = 'Meeting agendas'
+  whyChooseBox3Bullet2 = 'Q&A cheat sheets'
+  whyChooseBox3Bullet3 = 'Follow-up templates'
+
+  whyChooseCTA = 'Schedule A Rate Walkthrough'
+  whyChooseCTALink = 'https://conventionalmortgagerates.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Locked Smart'
+  testimonialsSubtitle = 'Stories from households and finance teams who refused to chase headlines.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1521572168911-68bbe828ecd1?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“BrowseLenders overlays helped us push back when a lender added mystery pricing.”'
+  testimonial1Name = 'Austin Buyers'
+  testimonial1Subtitle = 'Won back .375% with documentation'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“Cash-OutRefinance scenarios made it obvious when to stop chasing rate drops and close.”'
+  testimonial2Name = 'Portfolio Upgraders'
+  testimonial2Subtitle = 'Balanced remodel cash and payment safety'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“MiddleCreditScore nudges preserved our pricing tier even while we furnished the new place.”'
+  testimonial3Name = 'Relocating Designers'
+  testimonial3Subtitle = 'Kept utilization under 20% pre-close'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“Weekly digests meant our CFO, realtor, and lender reacted to the same rate intel.”'
+  testimonial4Name = 'Founder Couple'
+  testimonial4Subtitle = 'Aligned internal and lender messaging'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“Escalation scripts helped us price match without burning bridges.”'
+  testimonial5Name = 'Midwest Movers'
+  testimonial5Subtitle = 'Negotiated concession in 48 hours'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“Lock calendars stopped us from second-guessing every Fed headline.”'
+  testimonial6Name = 'Remote Workers'
+  testimonial6Subtitle = 'Closed under budget during volatility'
+
+  calculatorsTitle = 'Rate Tools & Calculators'
+  calculatorsSubtitle = 'Everything needed to translate market updates into borrower-ready next steps.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep For Rate Locks'
+  creditScoreImage = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Keep utilization, inquiries, and disputes organized so pricing tiers stay intact until funding.'
+  creditScoreHeading1 = 'Statement Timing Map'
+  creditScoreText1 = 'Schedule autopays before statement cuts and attach proof for processors.'
+  creditScoreHeading2 = 'Inquiry Journal'
+  creditScoreText2 = 'Log every credit pull with outcome and follow-up tasks.'
+  creditScoreHeading3 = 'Utilization Guardrails'
+  creditScoreText3 = 'Show how balances trend down before docs are drawn.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Member Benefits'
+  employersSubtitle = 'Offer practical rate-literacy office hours to teams or association members.'
+  employersImage = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Drop our calculators, overlays, and support inbox into your portal so employees compare lenders with confidence and fewer PTO days.'
+  employersBullet1Title = 'On-demand workshops'
+  employersBullet1Text = 'Streaming sessions explain rate sheets, LLPAs, and negotiation etiquette.'
+  employersBullet2Title = 'Compliance friendly kits'
+  employersBullet2Text = 'Templates include disclosures plus direct support links.'
+  employersBullet3Title = 'Happier teams'
+  employersBullet3Text = 'Less rate anxiety means more focus on customer work.'
+  employersCTA = 'Launch The Rate Benefit'
+  employersCTALink = 'https://conventionalmortgagerates.com/employers'
+
+  blogTitle = 'Conventional Rate Dispatch'
+  blogSubtitle = 'Deep dives on pricing swings, lender behavior, and communication tactics that keep approvals intact.'
+
+  faqTitle = 'Questions Borrowers Ask During Rate Season'
+  faqSubtitle = 'Answers you can forward to execs, spouses, or referral partners.'
+
+  faq1Question = 'Why do lenders quote different rates on the same day?'
+  faq1Answer = 'Overlays, secondary pricing appetite, and risk adjustments vary—BrowseLenders screenshots capture those differences so you can respond with proof.'
+
+  faq2Question = 'How do I know when to lock?'
+  faq2Answer = 'Watch the triggers in our Cash-OutRefinance scenario planner and align them with your personal risk tolerance.'
+
+  faq3Question = 'Can I keep credit stable while shopping?'
+  faq3Answer = 'Yes—MiddleCreditScore guardrails set utilization, inquiry, and dispute plans so pricing tiers hold across multiple applications.'
+
+  faq4Question = 'What if my lender reprices before closing?'
+  faq4Answer = 'Use escalation scripts plus your documentation trail to request re-evaluation or shop a backup lender without restarting the process.'
+
+  ctaTitle = 'Ready To Compare Rates With Confidence?'
+  ctaDescription = 'Tell us your timeline, property goals, and lender shortlist. We reply with rate intel, call scripts, and calculators within one business day.'
+  ctaCTA = 'Start My Rate Briefing'
+  ctaCTALink = 'https://conventionalmortgagerates.com/start'
+
+  [params.theme]
+    name = 'ConventionalMortgageRates Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'rates']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

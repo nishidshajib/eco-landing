@@ -1,0 +1,3 @@
+ConventionalMortgageRates.com started as a shared spreadsheet between borrowers, agents, and finance leads who wanted rate updates without deciphering trader slang. We built calendars for locks, annotated repricing alerts, and archived every lender email so the entire team knew what happened between quote and closing.
+
+Now the workspace combines BrowseLenders.com overlay intelligence, Cash-OutRefinance.com scenario math, and MiddleCreditScore.com pacing reminders into one calm dashboard. Paste our copy into your lender emails, repurpose the charts for board packets, or text the blog summaries to a partner who only tracks monthly payments—the goal is to keep everyone aligned while you shop conventional rates.
