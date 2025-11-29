@@ -1,0 +1,274 @@
+baseURL = 'https://onlineheloc.com/'
+languageCode = 'en-us'
+title = 'Online HELOC'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/onlineheloc'
+publishDir = 'public/onlineheloc'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'OnlineHELOC.com blends calculators, underwriting insight, and equity coaching so borrowers know exactly how much credit they can tap and how a HELOC compares to a cash-out refinance.'
+  author = 'Browse Lenders®'
+  shortName = 'Online HELOC'
+  tagline = 'Equity Lines With Evidence'
+  homepage = 'https://onlineheloc.com/'
+
+  siteName = 'OnlineHELOC.com'
+  siteDescription = 'A planning desk for homeowners comparing HELOCs, hybrid equity lines, and cash-out refinancing with lender-ready math.'
+  keywords = ['HELOC calculator', 'Cash-OutRefinance.com', 'BrowseLenders.com', 'Middle Credit Score', 'Equity access', 'Home equity line']
+  serviceType = 'HELOC Strategy Desk'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Calculate, Qualify, and Communicate Your HELOC Story'
+  heroSubtitle = 'Plug your equity numbers into our calculators, compare lender overlays via <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, sync credit milestones through <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and prove how your line partners with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> scenarios.'
+  heroImage = 'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Launch the HELOC Calculator'
+  heroCTA1Link = 'https://onlineheloc.com/calculators'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'A HELOC Planning Kit Built From Real Files'
+  aboutImage = 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2000&auto=format&fit=crop'
+
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+
+  programsTitle = 'HELOC Workstreams That Keep Approvals Predictable'
+  programsSubtitle = 'Pair calculators, underwriting notes, and equity allocation plans so every draw is intentional.'
+
+  program1Title = 'Rate + Draw Modeling'
+  program1Description = 'Blend introductory HELOC rates with amortization scenarios from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so you can show why a line beats or complements a refi.'
+  program1Image = 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Approval Insight Board'
+  program2Description = 'Log lender overlays, CLTV limits, and fee schedules sourced from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> comparisons so households don’t guess what documentation is required.'
+  program2Image = 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'Credit Alignment Sprint'
+  program3Description = 'Use <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> alerts to time paydowns, balance transfers, and tradeline updates so HELOC approvals survive underwriter refreshes.'
+  program3Image = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Book a HELOC Strategy Call'
+  programsCTALink = 'https://onlineheloc.com/consult'
+  programsClosingText = 'Deliverables include calculator exports, lender comparison grids, and draw-period scripts.'
+
+  educationTitle = 'HELOC Education Tracks'
+  educationSubtitle = 'Short lessons explaining approvals, draw periods, and equity access safeguards.'
+
+  edu1Title = 'HELOC vs Cash-Out Decision Tree'
+  edu1Description = 'Walk through blended-rate math and repayment differences so you can defend the product you choose.'
+  edu1Image = 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'CLTV & Appraisal Prep'
+  edu2Description = 'Prep comps, photo logs, and scope summaries that keep valuations high enough to unlock the line you need.'
+  edu2Image = 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Draw Period Planning'
+  edu3Description = 'Stage purchases, contractor deposits, and tuition payments so usage aligns with your goals.'
+  edu3Image = 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Repayment + Recast Safety'
+  edu4Description = 'See how interest-only periods flip to amortizing payments and how to prepare your budget ahead of time.'
+  edu4Image = 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Download HELOC Briefs'
+  educationCTALink = 'https://onlineheloc.com/guides'
+
+  learningTitle = 'Learning Center — Equity Lines In Plain English'
+  learningSubtitle = 'Templates that merge calculators, credit cues, and lender communication.'
+  learningImage = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'We marry <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> projections with HELOC calculators so you can show whichever option preserves more equity.'
+  learningPara2 = 'Lender comparison boards pull data from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> to highlight processing times, fees, and CLTV ceilings.'
+  learningPara3 = 'Credit readiness reminders from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> sit beside each step so utilization never surprises an underwriter.'
+  learningBullet1 = 'Interactive equity calculators'
+  learningBullet2 = 'Approval requirement checklists'
+  learningBullet3 = 'Draw period schedulers'
+  learningBullet4 = 'Stakeholder recap templates'
+
+  whyChooseTitle = 'Why Households Trust OnlineHELOC.com'
+  whyChooseSubtitle = 'Because HELOC math is clearer when the story is documented.'
+  whyChoosePara1 = 'Every workflow began as a family tracker we used while juggling tuition payments, remodels, and reserve-building goals.'
+  whyChoosePara2 = 'We keep <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>, and <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> inside every deck so stakeholders see verified data.'
+
+  whyChooseBox1Title = 'Transparency'
+  whyChooseBox1Para = 'Show your lender the same math you use internally, complete with comps and payoff plans.'
+  whyChooseBox1Bullet1 = 'Side-by-side product narratives'
+  whyChooseBox1Bullet2 = 'Instant CLTV visuals'
+  whyChooseBox1Bullet3 = 'Draw vs refinance comparisons'
+
+  whyChooseBox2Title = 'Risk Communication'
+  whyChooseBox2Para = 'Flag payment shocks, variable-rate moves, or spending limits before they become crises.'
+  whyChooseBox2Bullet1 = 'Rate-change alerts'
+  whyChooseBox2Bullet2 = 'Budget stress tests'
+  whyChooseBox2Bullet3 = 'Equity cushion tracking'
+
+  whyChooseBox3Title = 'Stakeholder Sync'
+  whyChooseBox3Para = 'Keep spouses, financial planners, and loan officers aligned without endless email threads.'
+  whyChooseBox3Bullet1 = 'Weekly digest emails'
+  whyChooseBox3Bullet2 = 'Document vault links'
+  whyChooseBox3Bullet3 = 'Escalation paths'
+
+  whyChooseCTA = 'Schedule a HELOC Walkthrough'
+  whyChooseCTALink = 'https://onlineheloc.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Landed HELOCs Without Guessing'
+  testimonialsSubtitle = 'Real quotes from households that used the toolkit.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '“The calculator plus BrowseLenders overlay told us exactly which bank would fund in 14 days, so we lined up tuition payments without sweating.”'
+  testimonial1Name = 'Parents Planning Tuition'
+  testimonial1Subtitle = 'Locked line before semester start'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '“Cash-OutRefinance scenarios made it obvious we only needed a small HELOC, not a full refi, and the lender loved seeing the comparison.”'
+  testimonial2Name = 'DIY Remodeler'
+  testimonial2Subtitle = 'Chose blended financing'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = '“Middle Credit Score reminders kept our utilization below 20% even while we ordered materials, so underwriting approved us on the first pass.”'
+  testimonial3Name = 'Side-Hustle Couple'
+  testimonial3Subtitle = 'Protecting score thresholds'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '“Weekly digests meant my advisor and spouse saw the same HELOC plan, which made signatures painless.”'
+  testimonial4Name = 'Blended Household'
+  testimonial4Subtitle = 'Everyone on the same page'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '“Having lender overlays from BrowseLenders printed meant the branch manager fast-tracked our appraisal review.”'
+  testimonial5Name = 'Small Business Owner'
+  testimonial5Subtitle = 'Kept funds moving fast'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '“The calculators helped us model paydowns so we could promise the bank how we’d recycle the line every year.”'
+  testimonial6Name = 'Equity Planner'
+  testimonial6Subtitle = 'Showed repayment discipline'
+
+  calculatorsTitle = 'HELOC Tools & Calculators'
+  calculatorsSubtitle = 'Prove your math before an underwriter asks.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep for HELOCs'
+  creditScoreImage = 'https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Track every utilization tweak, disputed entry, and authorized user change so HELOC pricing tiers stay favorable.'
+  creditScoreHeading1 = 'Balance timing'
+  creditScoreText1 = 'Schedule big purchases and paydowns so the bureaus report the numbers your lender expects.'
+  creditScoreHeading2 = 'Documentation hub'
+  creditScoreText2 = 'Store bureau letters and payoff proofs directly alongside lender tasks.'
+  creditScoreHeading3 = 'Overlay alignment'
+  creditScoreText3 = 'Compare your score to <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> overlays before you apply.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Member Programs'
+  employersSubtitle = 'Give teams equity-access literacy as a retention perk.'
+  employersImage = 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Share ready-to-post explainers, calculators, and booking links so employees can secure HELOCs without taking half days off.'
+  employersBullet1Title = 'Copy-ready resources'
+  employersBullet1Text = 'Intranet articles, FAQ blocks, and calculator embeds copy over in minutes.'
+  employersBullet2Title = 'Compliance-aware templates'
+  employersBullet2Text = 'Centralized documentation keeps HR, counselors, and lenders referencing the same playbook.'
+  employersBullet3Title = 'Productivity boost'
+  employersBullet3Text = 'Less panic over approvals leads to calmer teams.'
+  employersCTA = 'Launch the Benefit'
+  employersCTALink = 'https://onlineheloc.com/employers'
+
+  blogTitle = 'Online HELOC Dispatch'
+  blogSubtitle = 'Field notes from borrowers balancing equity goals, credit hygiene, and lender pacing.'
+
+  faqTitle = 'Questions Borrowers Ask Before Opening a HELOC'
+  faqSubtitle = 'Use these when lenders, co-borrowers, or advisors need quick clarity.'
+
+  faq1Question = 'How much equity do I need to open a HELOC?'
+  faq1Answer = 'Most lenders want you below 80-85% CLTV. Our calculators show exactly where you land and how a small paydown or appraisal packet can help.'
+
+  faq2Question = 'What documents should I prep before applying?'
+  faq2Answer = 'Submit income verification, mortgage statements, insurance, and a purpose statement outlining how funds stabilize your budget.'
+
+  faq3Question = 'Can I keep a HELOC and a cash-out refinance in play?'
+  faq3Answer = 'Yes—use our comparison worksheets powered by <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> to show why you’re sequencing products a certain way.'
+
+  faq4Question = 'How do I avoid payment shock when the draw period ends?'
+  faq4Answer = 'Model amortizing payments now, dedicate part of every draw to a reserve bucket, and document those plans for the lender.'
+
+  ctaTitle = 'Ready to Document Your HELOC Plan?'
+  ctaDescription = 'Send your property details, current balance, and target line amount. We reply with calculators, lender intel, and coaching within one business day.'
+  ctaCTA = 'Start the HELOC Intake'
+  ctaCTALink = 'https://onlineheloc.com/start'
+
+  [params.theme]
+    name = 'Online HELOC Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'heloc', 'equity']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
