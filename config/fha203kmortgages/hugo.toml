@@ -1,0 +1,274 @@
+baseURL = 'https://fha203kmortgages.com/'
+languageCode = 'en-us'
+title = 'FHA 203(k) Mortgages'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/fha203kmortgages'
+publishDir = 'public/fha203kmortgages'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'FHA 203(k) rehab planning, credit readiness coaching, and contractor-ready paperwork all in one borrower hub.'
+  author = 'Browse Lenders®'
+  shortName = 'FHA 203(k) Mortgages'
+  tagline = 'Rehab Financing With Receipts'
+  homepage = 'https://fha203kmortgages.com/'
+
+  siteName = 'FHA203KMortgages.com'
+  siteDescription = 'A learning center for buyers and homeowners using FHA 203(k) rehab loans who need transparent budgets, contractor coordination, and credit-safe timelines.'
+  keywords = ['FHA 203(k)', 'Rehab Loan', 'Browse Lenders®', 'Middle Credit Score', 'Cash-OutRefinance.com', 'Renovation Budgeting']
+  serviceType = 'FHA 203(k) Prep'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Coordinate Your FHA 203(k) Like a Project Manager'
+  heroSubtitle = 'Sync credit tactics with <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, shop rehab-friendly lenders through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, and map equity exits alongside <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so every draw request feels calm, not chaotic.'
+  heroImage = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Start the Rehab Plan'
+  heroCTA1Link = 'https://fha203kmortgages.com/rehab-intake'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Inside the Rehab Command Center We Hand to FHA Borrowers'
+  aboutImage = 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2000&auto=format&fit=crop'
+
+  primaryDomain = 'MiddleCreditScore.com'
+  primaryDomainURL = 'https://www.middlecreditscore.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'FHA 203(k) Workstreams Built for Real Life'
+  programsSubtitle = 'Each playbook ties contractor bids, HUD forms, and credit safeguards together so your file stays purchasable.'
+
+  program1Title = 'Scope & Bid Studio'
+  program1Description = 'Organize contractor bids, HUD Consultant notes, and change-order scripts in one worksheet so lenders see the math behind every upgrade.'
+  program1Image = 'https://images.unsplash.com/photo-1486946255434-2466348c2166?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Credit & Eligibility Guardrails'
+  program2Description = 'Keep <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> actions tethered to your draw calendar so utilization dips or dispute letters land before each lender check-in.'
+  program2Image = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'Equity & Exit Playbooks'
+  program3Description = 'Pair today’s rehab with future options from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so you can prove every improvement feeds a long-term wealth plan.'
+  program3Image = 'https://images.unsplash.com/photo-1503389152951-9f343605f61e?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Book a 203(k) Strategy Call'
+  programsCTALink = 'https://fha203kmortgages.com/consult'
+  programsClosingText = 'Deliverables include draw calendars, HUD form walkthroughs, and lender-ready notes on every contingency.'
+
+  educationTitle = 'FHA 203(k) Education Tracks'
+  educationSubtitle = 'Short lessons pulled from real renovation files so nothing blindsides you between appraisal and final inspection.'
+
+  edu1Title = 'Consultant & Contractor Alignment'
+  edu1Description = 'Learn how to script kick-off calls, compare bid scopes, and keep your HUD consultant looped into every change.'
+  edu1Image = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'Draw Timeline Confidence'
+  edu2Description = 'See sample draw schedules, inspection expectations, and what to send lenders 48 hours before requesting funds.'
+  edu2Image = 'https://images.unsplash.com/photo-1481277542470-605612bd2d61?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Budget Cushion Mechanics'
+  edu3Description = 'Document contingency reserves, self-help labor, and borrowed tools without spooking underwriting.'
+  edu3Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Rehab Appraisal Literacy'
+  edu4Description = 'Walk through as-is vs. after-improved valuations so you can defend the ARV during lender reviews.'
+  edu4Image = 'https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Download FHA 203(k) Briefs'
+  educationCTALink = 'https://fha203kmortgages.com/guides'
+
+  learningTitle = 'Learning Center — Rehab Ops in Plain English'
+  learningSubtitle = 'Dashboards, checklists, and call scripts that turn multi-month rehabs into documented steps.'
+  learningImage = 'https://images.unsplash.com/photo-1462899006636-339e08d1844e?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Shared boards blend BrowseLenders.com lender notes with contractor milestones so everyone sees when the next draw triggers.'
+  learningPara2 = 'MiddleCreditScore.com updates sit beside every large purchase reminder, keeping your rehab spending aligned with credit goals even when delivery delays hit.'
+  learningPara3 = 'Cash-OutRefinance.com playbooks show how today’s improvements translate into future equity taps or HELOC conversions once the rehab seasons.'
+  learningBullet1 = 'Centralized bid vaults'
+  learningBullet2 = 'Draw readiness timers'
+  learningBullet3 = 'Inspector Q&A logs'
+  learningBullet4 = 'Stakeholder status digests'
+
+  whyChooseTitle = 'Why Rehab Borrowers Trust FHA203KMortgages.com'
+  whyChooseSubtitle = 'We translate FHA jargon into reusable workflows.'
+  whyChoosePara1 = 'Every checklist comes from borrowers who actually lived through consultant delays, supply swaps, and HUD re-inspections.'
+  whyChoosePara2 = 'We keep MiddleCreditScore.com, BrowseLenders.com, and Cash-OutRefinance.com in the loop long after closing so your equity plan stays organized.'
+
+  whyChooseBox1Title = 'Transparent Scopes'
+  whyChooseBox1Para = 'Compare bids apples-to-apples, highlight contingency usage, and brief lenders before they ask.'
+  whyChooseBox1Bullet1 = 'Side-by-side bid cards'
+  whyChooseBox1Bullet2 = 'HUD 92700A cheat notes'
+  whyChooseBox1Bullet3 = 'Change-order alerts'
+
+  whyChooseBox2Title = 'Risk Communication'
+  whyChooseBox2Para = 'Flag weather delays, contractor swaps, or appraisal tweaks early so underwriters see solutions, not surprises.'
+  whyChooseBox2Bullet1 = 'Issue-tracking lanes'
+  whyChooseBox2Bullet2 = 'Float-down + extension scripts'
+  whyChooseBox2Bullet3 = 'Equity exit scenarios'
+
+  whyChooseBox3Title = 'Stakeholder Updates'
+  whyChooseBox3Para = 'Give spouses, inspectors, and housing counselors a single source of truth.'
+  whyChooseBox3Bullet1 = 'Auto-generated recap emails'
+  whyChooseBox3Bullet2 = 'Document request receipts'
+  whyChooseBox3Bullet3 = 'Escalation paths'
+
+  whyChooseCTA = 'Schedule a Rehab Walkthrough'
+  whyChooseCTALink = 'https://fha203kmortgages.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Finished Rehab Without Losing Sleep'
+  testimonialsSubtitle = 'Real quotes from FHA 203(k) clients who used the platform.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '“The BrowseLenders tracker gave my consultant and lender the same milestones, so our first draw arrived three days sooner than promised.”'
+  testimonial1Name = 'Duplex Investor'
+  testimonial1Subtitle = 'Full 203(k) Standard'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '“Middle Credit Score reminders kept me from charging materials to the wrong card, which protected our approval while the roof went up.”'
+  testimonial2Name = 'First-Time Buyer'
+  testimonial2Subtitle = 'Kept utilization in range'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = '“Cash-OutRefinance worksheets showed how today’s rehab feeds our five-year plan, so the underwriter approved our contingency bump.”'
+  testimonial3Name = 'Growing Family'
+  testimonial3Subtitle = 'Mapped future equity plays'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '“Weekly status digests meant my housing counselor, contractor, and lender were never guessing about next steps.”'
+  testimonial4Name = 'Community Buyer'
+  testimonial4Subtitle = 'Cleared conditions early'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '“The appraisal brief taught me how to defend ARV without sounding combative—our valuation came back exactly where we needed.”'
+  testimonial5Name = 'DIY Borrower'
+  testimonial5Subtitle = 'Protected final value'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '“I forwarded the contractor scope directly from the portal and the lender granted our change order in one phone call.”'
+  testimonial6Name = 'Military Family'
+  testimonial6Subtitle = 'Fast-tracked change order'
+
+  calculatorsTitle = 'FHA 203(k) Tools & Calculators'
+  calculatorsSubtitle = 'Show your math before anyone asks.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep for 203(k) Loans'
+  creditScoreImage = 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'FHA approvals still live and die by your middle score. Attach every purchase, payoff, and dispute to the rehab milestones so lenders trust your plan.'
+  creditScoreHeading1 = 'Time purchases with draws'
+  creditScoreText1 = 'Log which materials get charged when, and drop in receipts so utilization spikes never blindside the underwriter.'
+  creditScoreHeading2 = 'Document disputes'
+  creditScoreText2 = 'Upload bureau letters, results, and follow-ups directly from MiddleCreditScore.com to the same portal the lender uses.'
+  creditScoreHeading3 = 'Align with BrowseLenders data'
+  creditScoreText3 = 'Prove how each score milestone keeps you eligible for the lenders inside BrowseLenders.com.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Housing Counselors'
+  employersSubtitle = 'Give employees rehab literacy as a retention perk.'
+  employersImage = 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Share FHA 203(k) explainers, curated lenders from BrowseLenders.com, and automated progress recaps so teams stay focused even while juggling construction calls.'
+  employersBullet1Title = 'Plug-and-play comms'
+  employersBullet1Text = 'Use our intranet articles, FAQ blocks, and booking links without rewriting a thing.'
+  employersBullet2Title = 'Compliance friendly'
+  employersBullet2Text = 'Centralized documentation keeps HR, counselors, and lenders aligned.'
+  employersBullet3Title = 'Productivity lift'
+  employersBullet3Text = 'Less panic about rehab funding equals more focus on work.'
+  employersCTA = 'Add the Benefit'
+  employersCTALink = 'https://fha203kmortgages.com/employers'
+
+  blogTitle = 'FHA 203(k) Dispatch'
+  blogSubtitle = 'Field notes from borrowers balancing construction crews, credit moves, and lock decisions.'
+
+  faqTitle = 'Questions Borrowers Ask Mid-Rehab'
+  faqSubtitle = 'Use these replies when lenders, consultants, or sellers need clarity.'
+
+  faq1Question = 'How do I keep my approval while buying materials?'
+  faq1Answer = 'Map every major purchase inside your Middle Credit Score® tracker, charge them strategically, and share receipts with your lender so utilization stays predictable.'
+
+  faq2Question = 'What if my contractor changes pricing mid-project?'
+  faq2Answer = 'Use the Scope & Bid Studio to document the delta, attach supporting bids, and forward the packet to your lender before requesting a change order.'
+
+  faq3Question = 'Can I switch lenders after we start rehab?'
+  faq3Answer = 'Yes, but only if you already cataloged every draw, inspection, and expense. BrowseLenders.com comparison sheets make the re-submission faster.'
+
+  faq4Question = 'Do I have to refinance once the rehab is done?'
+  faq4Answer = 'Not necessarily. Keep the Cash-OutRefinance.com scenarios handy so you can decide whether a future HELOC or refi aligns with your goals once the home seasons.'
+
+  ctaTitle = 'Ready to Run Your FHA 203(k) With Confidence?'
+  ctaDescription = 'Share your property, scope, and credit plan once—we respond with templates, calculators, and coaches within one business day.'
+  ctaCTA = 'Start the Intake'
+  ctaCTALink = 'https://fha203kmortgages.com/start'
+
+  [params.theme]
+    name = 'FHA 203(k) Mortgages Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'fha203k', 'rehab']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
