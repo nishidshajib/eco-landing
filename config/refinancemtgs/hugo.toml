@@ -1,0 +1,274 @@
+baseURL = 'https://refinancemtgs.com/'
+languageCode = 'en-us'
+title = 'Refinance MTGs'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/refinancemtgs'
+publishDir = 'public/refinancemtgs'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Refinance MTGs lines up live rate intel, lender comparisons, and credit coaching so borrowers unlock equity without derailing monthly cash flow.'
+  author = 'Browse Lenders®'
+  shortName = 'Refinance MTGs'
+  tagline = 'Refinance Plans With Proof'
+  homepage = 'https://refinancemtgs.com/'
+
+  siteName = 'RefinanceMTGs.com'
+  siteDescription = 'Guides and calculators for homeowners comparing refinance rates, restructuring debt, and planning equity withdrawals with lender-ready paperwork.'
+  keywords = ['Refinance rates', 'Cash-OutRefinance.com', 'BrowseLenders.com', 'Middle Credit Score', 'Debt Restructure', 'Equity Planning']
+  serviceType = 'Refinance Strategy Desk'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Map Your Refinance Like a CFO'
+  heroSubtitle = 'Layer rate alerts from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>, lender comparisons inside <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, and credit moves from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> so every signature supports equity growth and clean debt ratios.'
+  heroImage = 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Start My Refinance Brief'
+  heroCTA1Link = 'https://refinancemtgs.com/intake'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'A Refinance Field Kit Built for Busy Households'
+  aboutImage = 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2000&auto=format&fit=crop'
+
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+
+  programsTitle = 'Refinance Workstreams That Remove Guesswork'
+  programsSubtitle = 'Rate intelligence, equity math, and debt clean-up templates packaged into one shareable plan.'
+
+  program1Title = 'Rate Windows & Lock Scripts'
+  program1Description = 'Track lender-specific pricing tolerances, float-down triggers, and target lock windows using our simple dashboards so you never freeze up when rates slip.'
+  program1Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop'
+
+  program2Title = 'Credit & Liability Sync'
+  program2Description = 'Coordinate balances, dispute letters, and utilization drops through <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> so every refinance option keeps approvals intact.'
+  program2Image = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop'
+
+  program3Title = 'Equity Exit Modeling'
+  program3Description = 'Pair today’s rate sheet with future equity access scenarios sourced from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so you can prove exactly how funds will reset debt or seed investments.'
+  program3Image = 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=1600&auto=format&fit=crop'
+
+  programsCTA = 'Book a Refinance Strategy Session'
+  programsCTALink = 'https://refinancemtgs.com/consult'
+  programsClosingText = 'Expect a rate brief, lender summary, credit milestones, and detailed fund-allocation plan in your inbox within two business days.'
+
+  educationTitle = 'Refinance Education Tracks'
+  educationSubtitle = 'Micro-lessons explaining pricing swings, blended-debt outcomes, and predictable post-close cash flow.'
+
+  edu1Title = 'Rate Sheet Interpretation'
+  edu1Description = 'Understand discount points, LLPAs, and lender credits before you choose a lock commitment.'
+  edu1Image = 'https://images.unsplash.com/photo-1462899006636-339e08d1844e?q=80&w=1600&auto=format&fit=crop'
+
+  edu2Title = 'Debt Restructure Math'
+  edu2Description = 'Rebuild liabilities into fewer payments while showing the underwriter how reserves stay intact.'
+  edu2Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop'
+
+  edu3Title = 'Equity Access Safety'
+  edu3Description = 'Document how cash-out proceeds stabilize budgets rather than inflate lifestyle costs.'
+  edu3Image = 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop'
+
+  edu4Title = 'Post-Close Monitoring'
+  edu4Description = 'Build a 90-day follow-through plan so credit rebounds quickly after the new loan funds.'
+  edu4Image = 'https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1600&auto=format&fit=crop'
+
+  educationCTA = 'Download Refinance Briefs'
+  educationCTALink = 'https://refinancemtgs.com/guides'
+
+  learningTitle = 'Learning Center — Refinance Ops In Plain Language'
+  learningSubtitle = 'Templates and dashboards that tie rates, credit, and debt objectives into one storyline.'
+  learningImage = 'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2000&auto=format&fit=crop'
+  learningPara1 = 'Shared canvases blend BrowseLenders.com lender recaps with in-flight action items so families can divide tasks without losing context.'
+  learningPara2 = 'We time credit actions alongside lock targets, referencing MiddleCreditScore.com score bands to keep approvals clear even when balances shift.'
+  learningPara3 = 'Future-looking summaries explain how cash-out proceeds shore up emergency funds, reduce revolving debt, and prepare for the next rate review.'
+  learningBullet1 = 'Rate-change alert stack'
+  learningBullet2 = 'Debt reshuffle calculators'
+  learningBullet3 = 'Equity allocation briefs'
+  learningBullet4 = 'Stakeholder comms templates'
+
+  whyChooseTitle = 'Why Refinance Borrowers Trust RefinanceMTGs.com'
+  whyChooseSubtitle = 'We translate rate chatter into actions everyone can follow.'
+  whyChoosePara1 = 'Every workflow started as a family document, then was vetted by loan officers who wanted clearer borrower communication.'
+  whyChoosePara2 = 'We pair BrowseLenders.com market data with your household goals so you see what each lender demands before you apply.'
+
+  whyChooseBox1Title = 'Context-Rich Rate Watch'
+  whyChooseBox1Para = 'Know how inflation prints, treasury moves, or pricing hits affect your personal lock timeline.'
+  whyChooseBox1Bullet1 = 'Daily summary emails'
+  whyChooseBox1Bullet2 = 'Point-vs-credit visuals'
+  whyChooseBox1Bullet3 = 'Lock scenario log'
+
+  whyChooseBox2Title = 'Debt Storytelling'
+  whyChooseBox2Para = 'Explain how consolidations, HELOC payoffs, or student loan refis improve long-term affordability.'
+  whyChooseBox2Bullet1 = 'Before/after payment charts'
+  whyChooseBox2Bullet2 = 'Reserve and DTI checks'
+  whyChooseBox2Bullet3 = 'Advisor-ready slides'
+
+  whyChooseBox3Title = 'Household Coordination'
+  whyChooseBox3Para = 'Keep spouses, co-borrowers, and financial planners synced on timelines, paperwork, and signature dates.'
+  whyChooseBox3Bullet1 = 'Task digest automation'
+  whyChooseBox3Bullet2 = 'Document vault sharing'
+  whyChooseBox3Bullet3 = 'Escalation checkpoints'
+
+  whyChooseCTA = 'Schedule a Rate Review'
+  whyChooseCTALink = 'https://refinancemtgs.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Rebuilt Their Loan Files Without Stress'
+  testimonialsSubtitle = 'Stories from homeowners who used the playbooks to lock favorable terms.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop'
+  testimonial1Text = '“The rate window tracker showed the exact day our preferred lender widened credits, so we locked in 28 minutes after the alert.”'
+  testimonial1Name = 'Equity Optimizer'
+  testimonial1Subtitle = 'Consolidated cards and auto loans'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop'
+  testimonial2Text = '“We staged every balance transfer script ahead of time, so underwriting had zero questions about the debt we paid at closing.”'
+  testimonial2Name = 'Dual-Income Family'
+  testimonial2Subtitle = 'Debt restructure success'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop'
+  testimonial3Text = '“Cash-out proceeds were earmarked line by line, letting the underwriter see how we would rebuild reserves and fund renovations.”'
+  testimonial3Name = 'Equity Planner'
+  testimonial3Subtitle = 'Mapped cash-out strategy'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=400&auto=format&fit=crop'
+  testimonial4Text = '“Weekly updates meant my spouse, advisor, and lender never wondered who owed the next document.”'
+  testimonial4Name = 'Coordinated Couple'
+  testimonial4Subtitle = 'Smooth underwriting'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=400&auto=format&fit=crop'
+  testimonial5Text = '“The equity modeling spreadsheet helped us show why the cash-out request created safer monthly payments, not lifestyle creep.”'
+  testimonial5Name = 'Budget-Forward Borrower'
+  testimonial5Subtitle = 'Approved on first submission'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=400&auto=format&fit=crop'
+  testimonial6Text = '“Our housing counselor now uses the same scripts because they explain refinance terms without jargon.”'
+  testimonial6Name = 'Community Mentor'
+  testimonial6Subtitle = 'Shared toolkit with others'
+
+  calculatorsTitle = 'Refinance Tools & Calculators'
+  calculatorsSubtitle = 'Give your lender a math-backed story before they ask.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep for Refinance'
+  creditScoreImage = 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=2000&auto=format&fit=crop'
+  creditScorePara1 = 'Use the score tracker to time balance paydowns, dispute updates, and new tradelines so your pricing tiers stay favorable.'
+  creditScoreHeading1 = 'Pre-plan paydowns'
+  creditScoreText1 = 'Assign each card or loan to a payoff timeline and attach statements that prove the work is done.'
+  creditScoreHeading2 = 'Document score deltas'
+  creditScoreText2 = 'Upload alerts, bureau letters, and lender responses to show proactive credit management.'
+  creditScoreHeading3 = 'Mirror lender overlays'
+  creditScoreText3 = 'Line up BrowseLenders.com overlays beside your current credit plan to avoid last-second surprises.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Member Benefits'
+  employersSubtitle = 'Offer refinance literacy as a financial wellness perk.'
+  employersImage = 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2000&auto=format&fit=crop'
+  employersPara = 'Plug curated explainers, rate alerts, and lender-selection scripts into your employee resource hubs so teams stay focused while restructuring debt.'
+  employersBullet1Title = 'Copy-ready content'
+  employersBullet1Text = 'Reuse our FAQs, calculators, and booking links without extra editing.'
+  employersBullet2Title = 'Compliance aware'
+  employersBullet2Text = 'Centralized documentation keeps HR, counselors, and lenders referencing the same material.'
+  employersBullet3Title = 'Morale boost'
+  employersBullet3Text = 'When employees feel confident about their refinance, they bring that calm back to work.'
+  employersCTA = 'Launch the Benefit'
+  employersCTALink = 'https://refinancemtgs.com/employers'
+
+  blogTitle = 'Refinance Dispatch'
+  blogSubtitle = 'Daily notes from homeowners comparing rates, restructuring debt, and protecting equity.'
+
+  faqTitle = 'Questions Borrowers Ask While Restructuring Debt'
+  faqSubtitle = 'Use these answers when lenders, financial advisors, or spouses need clarity.'
+
+  faq1Question = 'How do I know when to lock my refinance rate?'
+  faq1Answer = 'Monitor daily pricing moves, set guardrails for acceptable APR, and use our lock scripts so lenders understand exactly what you are targeting.'
+
+  faq2Question = 'What documentation proves I will pay off debt at closing?'
+  faq2Answer = 'Attach payoff letters, draft wire instructions, and a proceeds worksheet that allocates funds line by line.'
+
+  faq3Question = 'Can I blend a rate-and-term refi with a small cash-out?'
+  faq3Answer = 'Yes, if you clearly show how the funds stabilize reserves or consolidate revolving balances without raising risk.'
+
+  faq4Question = 'How long should I plan to recover my closing costs?'
+  faq4Answer = 'Run our break-even calculator to see when interest savings surpass closing expenses, then decide whether to buy points or keep cash on hand.'
+
+  ctaTitle = 'Ready to Align Your Refinance With Real Goals?'
+  ctaDescription = 'Send your current statement, target payment, and debt wish list. We reply with scripts, calculators, and support in one business day.'
+  ctaCTA = 'Start the Refinance Intake'
+  ctaCTALink = 'https://refinancemtgs.com/start'
+
+  [params.theme]
+    name = 'Refinance MTGs Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'refinance', 'equity']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
