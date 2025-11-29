@@ -21,22 +21,23 @@ This repository automatically builds and deploys **dozens of landing page domain
 3. **conformingmortgageloans.com**
 4. **conventionalmortgagebrokers.com**
 5. **conventionalmortgageloans.com**
-6. **fhaloanofficers.com**
-7. **firsttimebuyeroptions.com**
-8. **helocloanofficers.com**
-9. **homeloanpurchase.com**
-10. **mtglenders.com**
-11. **refimortgagebrokers.com**
-12. **refinanceloanofficers.com**
-13. **veteranmortgagelenders.com** ⭐ NEW
-14. **veteransloanofficers.com**
-15. **refinancemtgs.com** ⭐ NEW
-16. **onlineheloc.com** ⭐ NEW
-17. **heloclending.com** ⭐ NEW
-18. **conventionalmtg.com** ⭐ NEW
-19. **nonconformingloanofficers.com** ⭐ NEW
-20. **homeequityloanspecialist.com** ⭐ NEW
-21. **conventionalmortgagerates.com** ⭐ NEW
+6. **conformingmortgagerates.com** ⭐ NEW
+7. **fhaloanofficers.com**
+8. **firsttimebuyeroptions.com**
+9. **helocloanofficers.com**
+10. **homeloanpurchase.com**
+11. **mtglenders.com**
+12. **refimortgagebrokers.com**
+13. **refinanceloanofficers.com**
+14. **veteranmortgagelenders.com** ⭐ NEW
+15. **veteransloanofficers.com**
+16. **refinancemtgs.com** ⭐ NEW
+17. **onlineheloc.com** ⭐ NEW
+18. **heloclending.com** ⭐ NEW
+19. **conventionalmtg.com** ⭐ NEW
+20. **nonconformingloanofficers.com** ⭐ NEW
+21. **homeequityloanspecialist.com** ⭐ NEW
+22. **conventionalmortgagerates.com** ⭐ NEW
 
 ---
 
@@ -89,6 +90,7 @@ hugo server --environment conventionalmtg --port 1359
 hugo server --environment nonconformingloanofficers --port 1360
 hugo server --environment homeequityloanspecialist --port 1361
 hugo server --environment conventionalmortgagerates --port 1362
+hugo server --environment conformingmortgagerates --port 1363
 
 
 Access sites at http://localhost:PORT
@@ -136,6 +138,7 @@ Output directories:
 - `public/nonconformingloanofficers/`
 - `public/homeequityloanspecialist/`
 - `public/conventionalmortgagerates/`
+- `public/conformingmortgagerates/`
 
 ---
 
@@ -178,6 +181,7 @@ config/
 ├── conventionalmortgagebrokers/  # Conventional Brokers domain
 ├── conventionalmortgageloans/    # Conventional Loans domain
 ├── conventionalmortgagerates/    # Conventional Mortgage Rates domain ⭐ NEW
+├── conformingmortgagerates/      # Conforming Mortgage Rates domain ⭐ NEW
 ├── fhaloanofficers/              # FHA Loan Officers domain
 ├── firsttimebuyeroptions/        # First-Time Buyer Options domain
 ├── helocloanofficers/           # HELOC Loan Officers domain
@@ -201,6 +205,7 @@ content/
 ├── conventionalmortgagebrokers/  # Content for Brokers domain
 ├── conventionalmortgageloans/    # Content for Conventional domain
 ├── conventionalmortgagerates/    # Content for Conventional Mortgage Rates domain ⭐ NEW
+├── conformingmortgagerates/      # Content for Conforming Mortgage Rates domain ⭐ NEW
 ├── fhaloanofficers/              # Content for FHA domain
 ├── firsttimebuyeroptions/        # Content for First-Time domain
 ├── helocloanofficers/           # Content for HELOC domain
@@ -224,6 +229,7 @@ public/                           # Built sites (git-ignored)
 ├── conventionalmortgagebrokers/  # → conventionalmortgagebrokers.com
 ├── conventionalmortgageloans/    # → conventionalmortgageloans.com
 ├── conventionalmortgagerates/    # → conventionalmortgagerates.com ⭐ NEW
+├── conformingmortgagerates/      # → conformingmortgagerates.com ⭐ NEW
 ├── fhaloanofficers/              # → fhaloanofficers.com
 ├── firsttimebuyeroptions/        # → firsttimebuyeroptions.com
 ├── helocloanofficers/           # → helocloanofficers.com
@@ -318,6 +324,7 @@ GitHub Actions will:
    - `public/refimortgagebrokers/` → refimortgagebrokers.com
    - `public/refinanceloanofficers/` → refinanceloanofficers.com
    - `public/veteransloanofficers/` → veteransloanofficers.com
+   - `public/conformingmortgagerates/` → conformingmortgagerates.com
    - `public/conventionalmortgagerates/` → conventionalmortgagerates.com
 
 ### Deploy Single Domain (Manual Trigger)

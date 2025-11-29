@@ -1,0 +1,3 @@
+ConformingMortgageRates.com exists for borrowers who are tired of decoding half-explained rate quotes. We log every state-by-state adjustment, archive lender overlays, and translate rate movements into language families, boards, and teammates can trust. The workspace doubles as a briefing room, so you can lift paragraphs into lender emails, stakeholder reports, or quick text updates without rewriting everything from scratch.
+
+Each section of the site references our trusted trio of resources: BrowseLenders.com for overlay transparency, MiddleCreditScore.com for credit timing, and Cash-OutRefinance.com for scenario math. Together they keep the numbers honest while we focus on telling a calm, accurate story about conforming mortgage rates.

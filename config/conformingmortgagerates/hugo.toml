@@ -1,0 +1,274 @@
+baseURL = 'https://conformingmortgagerates.com/'
+languageCode = 'en-us'
+title = 'Conforming Mortgage Rates'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conformingmortgagerates'
+publishDir = 'public/conformingmortgagerates'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'ConformingMortgageRates.com delivers lender-ready rate briefings with state-by-state visuals, underwriting context, and built-in support scripts.'
+  author = 'Browse Lenders®'
+  shortName = 'Conforming Rate Desk'
+  tagline = 'Conforming Rate Guidance Without Guesswork'
+  homepage = 'https://conformingmortgagerates.com/'
+
+  siteName = 'ConformingMortgageRates.com'
+  siteDescription = 'A collaboration hub for borrowers, realtors, and finance leads who want transparent conforming-rate comparisons across states.'
+  keywords = ['conforming mortgage rates', 'BrowseLenders.com', 'MiddleCreditScore.com', 'Cash-OutRefinance.com', 'state rate trends', 'rate shopping']
+  serviceType = 'Conforming Rate Intelligence'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'State-by-State Conforming Rates With Context Built In'
+  heroSubtitle = 'Overlay analysis from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, credit pacing from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and equity trajectory modeling from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so your conforming rate story stays consistent from bid to closing.'
+  heroImage = 'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Build My Rate Briefing'
+  heroCTA1Link = 'https://conformingmortgagerates.com/intake'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Why We Built A Conforming Rate Situation Room'
+  aboutImage = 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Conforming Rate Programs For Real-World Borrowers'
+  programsSubtitle = 'Each workflow bundles data, scripts, and accountability checklists for multi-state shopping.'
+
+  program1Title = 'Overlay & Adjustment Decoder'
+  program1Description = 'Surface LLPA shifts and property-specific add-ons with reference notes from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> so lenders explain variances instead of hiding them.'
+  program1Image = 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Credit Timing Board'
+  program2Description = 'Sync utilization guardrails from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> with lock expirations so state comparisons stay inside the best pricing tier.'
+  program2Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Equity Scenario Studio'
+  program3Description = 'Model cash-out versus rate-term pivots using <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> so borrowers understand how today’s rate choice impacts tomorrow’s equity release.'
+  program3Image = 'https://images.unsplash.com/photo-1488998527040-85054a85150e?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Schedule A Conforming Strategy Call'
+  programsCTALink = 'https://conformingmortgagerates.com/consult'
+  programsClosingText = 'Leave with annotated rate sheets, state variance notes, and stakeholder emails ready to send.'
+
+  educationTitle = 'Education Tracks For Conforming Borrowers'
+  educationSubtitle = 'Short lessons that explain rate math, policy nuance, and communication etiquette.'
+
+  edu1Title = 'State Variance Explainer'
+  edu1Description = 'Walk through how property taxes, insurance, and overlays interact with base pricing in different markets.'
+  edu1Image = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Lock vs Float Playbook'
+  edu2Description = 'Set guardrails for when to lock based on economic releases, appraisal timing, and internal approvals.'
+  edu2Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Lender Interview Guide'
+  edu3Description = 'Score communication style, redraw policies, and escalation options before you commit.'
+  edu3Image = 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Payment Impact Lab'
+  edu4Description = 'Translate eighth-of-a-point changes into monthly payment deltas your stakeholders understand.'
+  edu4Image = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download The Conforming Guides'
+  educationCTALink = 'https://conformingmortgagerates.com/guides'
+
+  learningTitle = 'Learning Center — Rate Guidance + Communication'
+  learningSubtitle = 'Dashboards, calculators, and scripts that keep multi-state teams aligned.'
+  learningImage = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'State comparison boards track pricing deltas, tax impacts, and lender credits in one glance.'
+  learningPara2 = 'Lock and float logs record every conversation so escalation teams can pick up the thread instantly.'
+  learningPara3 = 'Credit pacing reminders, payment charts, and appraisal trackers live side by side to prevent bottlenecks.'
+  learningBullet1 = 'Rate + LLPA dashboards'
+  learningBullet2 = 'Lock scripts and recap decks'
+  learningBullet3 = 'Stakeholder messaging packs'
+  learningBullet4 = 'Credit + documentation trackers'
+
+  whyChooseTitle = 'Why Households Trust ConformingMortgageRates.com'
+  whyChooseSubtitle = 'You get receipts, not recycled talking points.'
+  whyChoosePara1 = 'Every deliverable is timestamped, annotated, and ready to forward to spouses, boards, or processors.'
+  whyChoosePara2 = 'We blend data and diplomacy so lenders respect your preparation and answer faster.'
+
+  whyChooseBox1Title = 'Transparent Comparisons'
+  whyChooseBox1Para = 'Side-by-side grids normalize fees, points, and concessions across lenders and states.'
+  whyChooseBox1Bullet1 = 'LLPA breakdowns'
+  whyChooseBox1Bullet2 = 'Fee normalization tables'
+  whyChooseBox1Bullet3 = 'Exception request notes'
+
+  whyChooseBox2Title = 'Operational Rhythm'
+  whyChooseBox2Para = 'Checklists trigger reminders for docs, verifications, and appraisal follow-ups.'
+  whyChooseBox2Bullet1 = 'Daily digest emails'
+  whyChooseBox2Bullet2 = 'Milestone countdowns'
+  whyChooseBox2Bullet3 = 'Escalation templates'
+
+  whyChooseBox3Title = 'Stakeholder Confidence'
+  whyChooseBox3Para = 'Conversation guides translate mortgage jargon into clear next steps for any audience.'
+  whyChooseBox3Bullet1 = 'Meeting agendas'
+  whyChooseBox3Bullet2 = 'Q&A cheat sheets'
+  whyChooseBox3Bullet3 = 'Follow-up scripts'
+
+  whyChooseCTA = 'Book A Conforming Rate Walkthrough'
+  whyChooseCTALink = 'https://conformingmortgagerates.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Won The Rate They Wanted'
+  testimonialsSubtitle = 'Proof that organized communication beats headline chasing.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1573497019418-b400bb3ab074?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“The overlay decoder let us challenge a .25% hike and get it reversed in one call.”'
+  testimonial1Name = 'Coastal Relocators'
+  testimonial1Subtitle = 'Locked during a volatile week'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“Credit pacing reminders kept utilization under 25% even while we furnished the new place.”'
+  testimonial2Name = 'Growing Family'
+  testimonial2Subtitle = 'Protected the preferred tier'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“State-by-state comparisons helped our board approve the move in a single meeting.”'
+  testimonial3Name = 'Remote Team Leads'
+  testimonial3Subtitle = 'Coordinated multi-state approvals'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“We shared the weekly recap with our realtor and everyone stayed on the same page.”'
+  testimonial4Name = 'First-Time Buyers'
+  testimonial4Subtitle = 'No surprises during underwriting'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“Escalation scripts made it easy to price-match without burning bridges.”'
+  testimonial5Name = 'Military Family'
+  testimonial5Subtitle = 'Won concessions in 48 hours'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“The learning center turned into our lender meeting agenda every single week.”'
+  testimonial6Name = 'Multi-State Investors'
+  testimonial6Subtitle = 'Aligned partners quickly'
+
+  calculatorsTitle = 'Conforming Rate Calculators'
+  calculatorsSubtitle = 'Show the math behind every eighth and every concession.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep'
+  creditScoreImage = 'https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Tie utilization, disputes, and inquiries to your lock calendar so pricing tiers never slip.'
+  creditScoreHeading1 = 'Statement Timing Map'
+  creditScoreText1 = 'Schedule payments ahead of statement cuts and store proof for processors.'
+  creditScoreHeading2 = 'Inquiry Log'
+  creditScoreText2 = 'Track every pull, why it happened, and what follow-up is required.'
+  creditScoreHeading3 = 'Utilization Guardrails'
+  creditScoreText3 = 'Show exactly how balances trend down before docs are drawn.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Member Benefits'
+  employersSubtitle = 'Offer rate-literacy office hours to employees or association members.'
+  employersImage = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Plug our calculators, overlays, and support desk into your benefits portal so teams make rate decisions without losing billable hours.'
+  employersBullet1Title = 'Ready-to-stream workshops'
+  employersBullet1Text = 'Sessions cover rate sheets, lock etiquette, and escalation tactics.'
+  employersBullet2Title = 'Compliance friendly kits'
+  employersBullet2Text = 'Every download includes disclosures and direct support access.'
+  employersBullet3Title = 'Happier teams'
+  employersBullet3Text = 'Less rate anxiety equals more focus on customers.'
+  employersCTA = 'Launch The Rate Benefit'
+  employersCTALink = 'https://conformingmortgagerates.com/employers'
+
+  blogTitle = 'Conforming Rate Dispatch'
+  blogSubtitle = 'Stories from borrowers comparing rates, negotiating locks, and coordinating multi-state closings.'
+
+  faqTitle = 'Questions Borrowers Ask During Conforming Rate Season'
+  faqSubtitle = 'Forward these to decision makers who need answers fast.'
+
+  faq1Question = 'Why are rates different between neighboring states?'
+  faq1Answer = 'Property taxes, insurance requirements, and lender overlays vary—our trackers show each factor so conversations stay factual.'
+
+  faq2Question = 'How do I talk about rate swings with executives or family?'
+  faq2Answer = 'Use the weekly recap template to summarize macro moves, lender responses, and your recommended action.'
+
+  faq3Question = 'Can I shop multiple lenders without hurting my pricing tier?'
+  faq3Answer = 'Yes—Middle Credit Score® reminders keep utilization and inquiry timing aligned with your lock window.'
+
+  faq4Question = 'When should I escalate a pricing discrepancy?'
+  faq4Answer = 'If the documentation trail shows a mismatch, reference the overlay decoder and escalate within one business day.'
+
+  ctaTitle = 'Ready To Compare Conforming Rates With Confidence?'
+  ctaDescription = 'Send us your target states, property type, and timeline. We reply with annotated rate sheets, calculators, and call scripts within one business day.'
+  ctaCTA = 'Start My Rate Briefing'
+  ctaCTALink = 'https://conformingmortgagerates.com/start'
+
+  [params.theme]
+    name = 'ConformingMortgageRates Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'rates']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
