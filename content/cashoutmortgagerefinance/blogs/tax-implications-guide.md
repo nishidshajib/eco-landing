@@ -5,7 +5,7 @@ draft: false
 author: "Cash Out Mortgage Refinance Team"
 categories: ["Taxes", "Refinancing"]
 tags: ["tax deductions", "IRS rules", "mortgage interest", "tax planning"]
-image: "https://images.unsplash.com/photo-1454165205744-3b78555e5572?q=80&w=1200&auto=format&fit=crop"
+image: "https://images.unsplash.com/photo-1486365227551-f3f90034a57c?auto=format&fit=crop&w=1200&q=80"
 description: "Navigate the complex tax implications of cash-out refinancing, including deduction rules, reporting requirements, and strategies to optimize your tax position."
 ---
 

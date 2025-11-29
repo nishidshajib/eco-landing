@@ -1,0 +1,274 @@
+baseURL = 'https://nonconformingloanofficers.com/'
+languageCode = 'en-us'
+title = 'Nonconforming Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/nonconformingloanofficers'
+publishDir = 'public/nonconformingloanofficers'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'NonConformingLoanOfficers.com equips self-employed buyers, investors, and alternative-income households with lender-ready narratives and calculator packs.'
+  author = 'Browse Lenders®'
+  shortName = 'NonConforming LO'
+  tagline = 'Non-QM Clarity Without Guesswork'
+  homepage = 'https://nonconformingloanofficers.com/'
+
+  siteName = 'NonConformingLoanOfficers.com'
+  siteDescription = 'A briefing room for DSCR, bank statement, and asset-utilization loans that ties underwriting math to communication templates.'
+  keywords = ['Non-QM loans', 'BrowseLenders.com', 'MiddleCreditScore.com', 'Cash-OutRefinance.com', 'self-employed mortgages', 'bank statement loans']
+  serviceType = 'Non-QM Planning and Education'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Prove Your Non-QM Story Before The Underwriter Asks'
+  heroSubtitle = 'Overlay intelligence from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, credit pacing from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and exit-scenario math from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> to defend every exception you request.'
+  heroImage = 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Start My Non-QM Plan'
+  heroCTA1Link = 'https://nonconformingloanofficers.com/intake'
+  heroCTA2Text = 'Talk With Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'A Platform Born From Toughest Loan Files'
+  aboutImage = 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Non-QM Workstreams That Keep Exceptions Organized'
+  programsSubtitle = 'Each workflow bundles lender overlays, documentation scripts, and math-forward calculators.'
+
+  program1Title = 'Bank Statement Analyzer'
+  program1Description = 'Roll 12- and 24-month income averages with overlays sourced from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> so each lender sees deposits the way their matrix expects.'
+  program1Image = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Score & Trade Line Guardrails'
+  program2Description = 'Map seasoning rules, utilization drops, and authorized user strategies through <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> so pricing tiers survive sudden balance spikes.'
+  program2Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Exit + Refinance Logic'
+  program3Description = 'Show DSCR to conventional-refi pivots using <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> forecasts so investors and underwriters agree on long-range plans.'
+  program3Image = 'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Book A Non-QM Strategy Call'
+  programsCTALink = 'https://nonconformingloanofficers.com/consult'
+  programsClosingText = 'Leave with a checklist covering asset docs, CPA letters, and compensating factors.'
+
+  educationTitle = 'Education Tracks For Alternative Qualification'
+  educationSubtitle = 'Short lessons that translate underwriting jargon into plain speech.'
+
+  edu1Title = 'Self-Employed Income Playbook'
+  edu1Description = 'Compare CPA letters, P&L statements, and bank statement blends so you can justify every line item.'
+  edu1Image = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Asset Depletion + Bridges'
+  edu2Description = 'Show lenders your liquidity waterfall and how it supports payment reserves for 12+ months.'
+  edu2Image = 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Investor + DSCR Flow'
+  edu3Description = 'Translate rent rolls and expense ratios into DSCR math lenders accept without a second meeting.'
+  edu3Image = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Communication Scripts'
+  edu4Description = 'Align spouses, CPAs, and loan officers with Friday digests and underwriting recap decks.'
+  edu4Image = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download Non-QM Briefs'
+  educationCTALink = 'https://nonconformingloanofficers.com/guides'
+
+  learningTitle = 'Learning Center — Alt-Doc Files Simplified'
+  learningSubtitle = 'Templates, calculators, and talking points you can send to underwriting tonight.'
+  learningImage = 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'BrowseLenders.com overlays sit inside every workbook so you point to page numbers instead of guessing requirements.'
+  learningPara2 = 'MiddleCreditScore.com milestones remind you when to refresh tradelines before a pricing review.'
+  learningPara3 = 'Cash-OutRefinance.com charts show the refinance or exit options once seasoning requirements are met.'
+  learningBullet1 = 'Bank statement parsers'
+  learningBullet2 = 'DSCR + asset models'
+  learningBullet3 = 'CPA + borrower scripts'
+  learningBullet4 = 'Exception tracking boards'
+
+  whyChooseTitle = 'Why Borrowers And Brokers Trust NonConformingLoanOfficers.com'
+  whyChooseSubtitle = 'We turn messy financials into concise storyboards.'
+  whyChoosePara1 = 'Every deliverable backs the narrative with math, documentation labels, and lender overlay citations.'
+  whyChoosePara2 = 'You gain a command center for self-employed buyers, investors, and anyone who needs more than a standard DU approval.'
+
+  whyChooseBox1Title = 'Underwriting Ready Math'
+  whyChooseBox1Para = 'From DSCR to expense add-backs, the calculators show exactly how we arrived at each number.'
+  whyChooseBox1Bullet1 = 'Bank statement averaging'
+  whyChooseBox1Bullet2 = 'Expense factor toggles'
+  whyChooseBox1Bullet3 = 'CLTV + exit options'
+
+  whyChooseBox2Title = 'Risk Visibility'
+  whyChooseBox2Para = 'We flag gaps in reserves, seasoning timelines, and compensating factors before the credit desk does.'
+  whyChooseBox2Bullet1 = 'Reserve ladders'
+  whyChooseBox2Bullet2 = 'Timeline trackers'
+  whyChooseBox2Bullet3 = 'Exception summaries'
+
+  whyChooseBox3Title = 'Stakeholder Sync'
+  whyChooseBox3Para = 'Loan officers, CPAs, and borrowers work from the same briefings so no one contradicts the plan.'
+  whyChooseBox3Bullet1 = 'Shared recap decks'
+  whyChooseBox3Bullet2 = 'Weekly digest emails'
+  whyChooseBox3Bullet3 = 'Document vault links'
+
+  whyChooseCTA = 'Schedule A Non-QM Walkthrough'
+  whyChooseCTALink = 'https://nonconformingloanofficers.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Closed The Hard Files'
+  testimonialsSubtitle = 'Real stories from non-QM approvals and rapid refinances.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“BrowseLenders overlay screenshots helped us defend every bank statement add-back within minutes.”'
+  testimonial1Name = 'Creative Agency Owners'
+  testimonial1Subtitle = 'Closed a 12-month bank statement loan'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“MiddleCreditScore reminders kept utilization under 30% while we juggled business travel charges.”'
+  testimonial2Name = 'Consulting Duo'
+  testimonial2Subtitle = 'Protected top pricing tier'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“Cash-OutRefinance exit charts gave investors confidence that our DSCR loan would roll into a lower rate next year.”'
+  testimonial3Name = 'Short-Term Rental Hosts'
+  testimonial3Subtitle = 'Mapped refinance strategy'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1521572168911-68bbe828ecd1?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“The exception tracker meant underwriters never had to chase us for CPA letters or P&L updates.”'
+  testimonial4Name = 'Restaurant Group'
+  testimonial4Subtitle = 'Delivered a full alt-doc package'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“Stakeholder digests kept our real estate attorney, CPA, and lender reacting to the same facts.”'
+  testimonial5Name = 'Portfolio Investors'
+  testimonial5Subtitle = 'Coordinated multi-state purchases'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“We followed the drawdown plan and refinanced into a conventional loan exactly when the Cash-OutRefinance projections predicted.”'
+  testimonial6Name = 'Tech Founders'
+  testimonial6Subtitle = 'Executed exit to agency loan'
+
+  calculatorsTitle = 'Non-QM Calculators & Tools'
+  calculatorsSubtitle = 'Hand lenders the math they expect.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep For Non-QM Loans'
+  creditScoreImage = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Stay ahead of pricing tier shifts by scripting utilization targets, tradeline updates, and rapid-rescore plans.'
+  creditScoreHeading1 = 'Utilization Scheduler'
+  creditScoreText1 = 'Line up payments with statement cycles and attach proof to every exception request.'
+  creditScoreHeading2 = 'Seasoning Tracker'
+  creditScoreText2 = 'Log aging of tradelines, bank accounts, and reserves so lenders see stability.'
+  creditScoreHeading3 = 'Overlay Crosscheck'
+  creditScoreText3 = 'Match MiddleCreditScore milestones to BrowseLenders matrices before locking.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Member Benefits'
+  employersSubtitle = 'Offer non-QM literacy to your teams and clients.'
+  employersImage = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Drop our calculators, policy explainers, and support inbox into your portal so employees close on time even with complex finances.'
+  employersBullet1Title = 'Ready-to-share modules'
+  employersBullet1Text = 'Embed FAQs, calculators, and scripts in intranets or newsletters.'
+  employersBullet2Title = 'Compliance friendly'
+  employersBullet2Text = 'Documentation templates keep HR, legal, and lending partners aligned.'
+  employersBullet3Title = 'Productivity boost'
+  employersBullet3Text = 'Less loan anxiety frees teams to focus on serving customers.'
+  employersCTA = 'Launch The Benefit'
+  employersCTALink = 'https://nonconformingloanofficers.com/employers'
+
+  blogTitle = 'NonConforming Dispatch'
+  blogSubtitle = 'Field notes from bank statement loans, DSCR approvals, and exit strategies that actually close.'
+
+  faqTitle = 'Questions Self-Employed Borrowers Ask'
+  faqSubtitle = 'Use these responses when stakeholders need assurance fast.'
+
+  faq1Question = 'How do I prove income without tax transcripts?'
+  faq1Answer = 'Show bank statement averages, CPA letters, and deposit worksheets labeled with the BrowseLenders overlay you are following.'
+
+  faq2Question = 'Will my credit score hold with business spend on personal cards?'
+  faq2Answer = 'Route charges through Middle Credit Score® reminders so utilization drops before the next pricing review.'
+
+  faq3Question = 'How do I explain my exit strategy?'
+  faq3Answer = 'Pair DSCR math with Cash-OutRefinance.com projections to outline exactly when you will refinance into conventional terms.'
+
+  faq4Question = 'Can my team stay aligned without endless calls?'
+  faq4Answer = 'Send weekly recap decks that summarize documentation status, exception requests, and next milestones.'
+
+  ctaTitle = 'Ready To Package Your Non-QM File?'
+  ctaDescription = 'Send your income sources, property goals, and timeline. We reply with overlay notes, calculator exports, and stakeholder scripts within one business day.'
+  ctaCTA = 'Start The Non-QM Intake'
+  ctaCTALink = 'https://nonconformingloanofficers.com/start'
+
+  [params.theme]
+    name = 'NonConformingLoanOfficers Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'non-qm', 'mortgage']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
