@@ -1,0 +1,274 @@
+baseURL = 'https://homeequityloanspecialist.com/'
+languageCode = 'en-us'
+title = 'Home Equity Loan Specialist'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/homeequityloanspecialist'
+publishDir = 'public/homeequityloanspecialist'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'HomeEquityLoanSpecialist.com keeps homeowners and advisors aligned on HELOC timelines, debt consolidation math, and draw strategies.'
+  author = 'Browse Lenders®'
+  shortName = 'Home Equity LO'
+  tagline = 'Equity Plans That Survive Rate Swings'
+  homepage = 'https://homeequityloanspecialist.com/'
+
+  siteName = 'HomeEquityLoanSpecialist.com'
+  siteDescription = 'A decision lab for tapping home equity with confidence, tying payoff forecasts to lender requirements and family conversations.'
+  keywords = ['home equity loans', 'heloc planning', 'Cash-OutRefinance.com', 'BrowseLenders.com', 'MiddleCreditScore.com', 'debt consolidation']
+  serviceType = 'Home Equity Scenario Design'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Design A Home Equity Strategy That Doubles As A Family Briefing'
+  heroSubtitle = 'Layer refinance projections from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a>, lender overlays curated by <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, and credit pacing checkpoints from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> so every stakeholder understands how the line will be used.'
+  heroImage = 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Map My Equity Plan'
+  heroCTA1Link = 'https://homeequityloanspecialist.com/intake'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'We Translate Home Equity Into Plain Language'
+  aboutImage = 'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'Cash-OutRefinance.com'
+  primaryDomainURL = 'https://www.cash-outrefinance.com'
+  secondaryDomain = 'BrowseLenders.com'
+  secondaryDomainURL = 'https://www.browselenders.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+
+  programsTitle = 'Home Equity Workflows Ready For Borrowers And Advisors'
+  programsSubtitle = 'Each module merges lender math with household cash flow conversations.'
+
+  program1Title = 'Equity Replay Simulator'
+  program1Description = 'Pair payout schedules with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> amortization charts so you know exactly how a draw impacts future refinance windows.'
+  program1Image = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Lender Overlay Decoder'
+  program2Description = 'Attach requirement snapshots straight from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> so processors and borrowers are referencing the same HELOC checklist.'
+  program2Image = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Utilization & Credit Guardrails'
+  program3Description = 'Feed <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> reminders into the plan to prevent utilization spikes from torching pricing tiers before closing.'
+  program3Image = 'https://images.unsplash.com/photo-1521540216272-a50305cd4421?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Schedule A Home Equity Briefing'
+  programsCTALink = 'https://homeequityloanspecialist.com/consult'
+  programsClosingText = 'Walk away with repayment guardrails, talking points, and a funding-day checklist.'
+
+  educationTitle = 'Education Tracks For HELOC + Cash-Out Readiness'
+  educationSubtitle = 'Bite-sized lessons that explain the “why” behind each document request.'
+
+  edu1Title = 'Debt Consolidation Decision Tree'
+  edu1Description = 'Learn which debts to roll in first, how to present payoff letters, and where emergency reserves should live.'
+  edu1Image = 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Draw Strategies For Renovations'
+  edu2Description = 'Tie contractor milestones to disbursement plans so everyone knows when funds release.'
+  edu2Image = 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Income Buffer + Reserves Lab'
+  edu3Description = 'Model how part-time work, rental income, or bonus season protects the line when markets wobble.'
+  edu3Image = 'https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Family Communication Scripts'
+  edu4Description = 'Share ready-made agendas for spouse reviews, adult children check-ins, or business partner approvals.'
+  edu4Image = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download The Playbooks'
+  educationCTALink = 'https://homeequityloanspecialist.com/guides'
+
+  learningTitle = 'Learning Center — Home Equity Without Guesswork'
+  learningSubtitle = 'All the calculators and scripts live in one calm workspace.'
+  learningImage = 'https://images.unsplash.com/photo-1498075702571-ecb018f3752d?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Scenario boards show when to lean on cash-out refi routes versus HELOC draws so you can defend the plan in underwriting and dinner-table conversations.'
+  learningPara2 = 'Overlay cards summarize the lender expectations, keeping docs and signatures within arm’s reach.'
+  learningPara3 = 'Credit pacing reminders sit next to payoff charts, making it simple to prove that today’s utilization will still qualify next quarter.'
+  learningBullet1 = 'Equity + payoff calculators'
+  learningBullet2 = 'HELOC + cash-out playbooks'
+  learningBullet3 = 'Stakeholder recap templates'
+  learningBullet4 = 'Live credit + utilization trackers'
+
+  whyChooseTitle = 'Why Households Trust HomeEquityLoanSpecialist.com'
+  whyChooseSubtitle = 'We slow the process down enough to make confident, math-backed decisions.'
+  whyChoosePara1 = 'Every deliverable is geared toward clarity: repayment pacing, tax considerations, and lender scripts in one place.'
+  whyChoosePara2 = 'Your financial team, from CPAs to loan officers, can peek into the same dashboard and avoid conflicting advice.'
+
+  whyChooseBox1Title = 'Forecasts That Hold Up'
+  whyChooseBox1Para = 'We model rate changes, draw schedules, and payoff stacks so even conservative lenders can follow along.'
+  whyChooseBox1Bullet1 = 'Multi-path payoff charts'
+  whyChooseBox1Bullet2 = 'Scenario comparison notes'
+  whyChooseBox1Bullet3 = 'Equity buffer alerts'
+
+  whyChooseBox2Title = 'Documentation Rhythm'
+  whyChooseBox2Para = 'Requests arrive in checklists with assignees, due dates, and example files so nothing stalls funding.'
+  whyChooseBox2Bullet1 = 'Auto reminders'
+  whyChooseBox2Bullet2 = 'Shared folders'
+  whyChooseBox2Bullet3 = 'Status digests'
+
+  whyChooseBox3Title = 'Stakeholder Calm'
+  whyChooseBox3Para = 'We teach how to talk through risk, reward, and guardrails with the people who matter most.'
+  whyChooseBox3Bullet1 = 'Conversation guides'
+  whyChooseBox3Bullet2 = 'Escalation scripts'
+  whyChooseBox3Bullet3 = 'Follow-up templates'
+
+  whyChooseCTA = 'Book A Home Equity Session'
+  whyChooseCTALink = 'https://homeequityloanspecialist.com/schedule'
+
+  testimonialsTitle = 'Stories From Households Who Tapped Equity Smartly'
+  testimonialsSubtitle = 'Real borrowers, planners, and business owners who made HELOCs work for them.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“The draw calendar and payoff emails meant cash-out proceeds landed exactly when our contractor needed deposits.”'
+  testimonial1Name = 'Phoenix Remodelers'
+  testimonial1Subtitle = 'Linked HELOC draws to renovation phases'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“BrowseLenders overlay snapshots helped us win approval even after a late payment because we addressed it before underwriting asked.”'
+  testimonial2Name = 'Dual-Income Household'
+  testimonial2Subtitle = 'Organized a debt consolidation HELOC'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“Our financial planner loved the Cash-OutRefinance projections because they made it clear when to pivot into a new first mortgage.”'
+  testimonial3Name = 'Bay Area Family'
+  testimonial3Subtitle = 'Planned a staged equity release'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“The scripts kept sibling co-borrowers synced, so everyone understood the budget and repayment rules.”'
+  testimonial4Name = 'Family Trust Borrowers'
+  testimonial4Subtitle = 'Shared HELOC responsibilities smoothly'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“MiddleCreditScore reminders stopped us from maxing cards while we waited for appraisal comps.”'
+  testimonial5Name = 'Gig Economy Duo'
+  testimonial5Subtitle = 'Protected pricing tiers pre-close'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“Having one support inbox to email whenever lenders changed terms saved us days of confusion.”'
+  testimonial6Name = 'Boutique Agency Owners'
+  testimonial6Subtitle = 'Coordinated HELOC + cash-out blend'
+
+  calculatorsTitle = 'Home Equity Calculators & Toolkits'
+  calculatorsSubtitle = 'Bring lender math, payoff planning, and household budgeting into one doc.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep For HELOCs'
+  creditScoreImage = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Keep utilization, inquiries, and rapid-rescore plans organized so equity approvals stick even when business spend jumps.'
+  creditScoreHeading1 = 'Statement Timing Map'
+  creditScoreText1 = 'Schedule payments before statement cuts and attach proof for processors.'
+  creditScoreHeading2 = 'Inquiries + Disputes Log'
+  creditScoreText2 = 'Track who pulled credit, when, and how you responded so pricing teams stay calm.'
+  creditScoreHeading3 = 'Utilization Guardrails'
+  creditScoreText3 = 'Show exactly how each card’s balance will trend after the draw, reinforcing your discipline.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Member Benefits'
+  employersSubtitle = 'Offer practical HELOC literacy sessions to employees, members, or clients.'
+  employersImage = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Plug in office-hour replays, calculator packs, and support scripts so your people make confident borrowing decisions without missing work.'
+  employersBullet1Title = 'Ready-to-stream workshops'
+  employersBullet1Text = 'Short videos explain everything from draw strategies to credit pacing.'
+  employersBullet2Title = 'Compliance friendly kits'
+  employersBullet2Text = 'Each download includes disclosures and support-email access.'
+  employersBullet3Title = 'Happier teammates'
+  employersBullet3Text = 'Less financial anxiety frees them to focus on customers and projects.'
+  employersCTA = 'Launch The HELOC Benefit'
+  employersCTALink = 'https://homeequityloanspecialist.com/employers'
+
+  blogTitle = 'Home Equity Dispatch'
+  blogSubtitle = 'Field reports from HELOC drawdowns, consolidation wins, and refinance pivots.'
+
+  faqTitle = 'Questions Borrowers Ask Before Tapping Equity'
+  faqSubtitle = 'Here are the answers we keep handy for families, CPAs, and loan officers.'
+
+  faq1Question = 'How do I decide between a HELOC and a cash-out refinance?'
+  faq1Answer = 'We compare draw flexibility, blended interest rates, and Cash-OutRefinance scenarios so you see the full math before choosing.'
+
+  faq2Question = 'Can I consolidate debt without hurting my credit score?'
+  faq2Answer = 'Yes—Middle Credit Score® reminders help coordinate payments and balances so the transition keeps you inside the target tier.'
+
+  faq3Question = 'What does my loan officer actually need from me?'
+  faq3Answer = 'BrowseLenders overlay cards spell out documentation, signatures, and timing so you deliver everything before they have to ask.'
+
+  faq4Question = 'How do we explain this plan to other decision makers?'
+  faq4Answer = 'Use our meeting agendas and recap templates to brief spouses, business partners, or board members in under 15 minutes.'
+
+  ctaTitle = 'Ready To Unlock Your Equity With Confidence?'
+  ctaDescription = 'Send us your payoff goals, debts to consolidate, and renovation wish list. We reply with calculators, timelines, and scripts within one business day.'
+  ctaCTA = 'Start My Equity Intake'
+  ctaCTALink = 'https://homeequityloanspecialist.com/start'
+
+  [params.theme]
+    name = 'HomeEquityLoanSpecialist Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'heloc', 'mortgage']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0C1B33'
+    backgroundColor = '#F5F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
