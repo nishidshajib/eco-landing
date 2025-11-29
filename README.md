@@ -32,6 +32,7 @@ This repository automatically builds and deploys **dozens of landing page domain
 14. **veteransloanofficers.com**
 15. **refinancemtgs.com** ⭐ NEW
 16. **onlineheloc.com** ⭐ NEW
+17. **heloclending.com** ⭐ NEW
 
 ---
 
@@ -79,7 +80,7 @@ hugo server --environment conforminghomerates --port 1354
 hugo server --environment fha203kmortgages --port 1355
 hugo server --environment refinancemtgs --port 1356
 hugo server --environment onlineheloc --port 1357
-hugo server --environment onlineheloc --port 1357
+hugo server --environment heloclending --port 1358
 
 
 Access sites at http://localhost:PORT
@@ -174,7 +175,8 @@ config/
 ├── veteranmortgagelenders/      # Veteran Mortgage Lenders domain ⭐ NEW
 ├── veteransloanofficers/        # Veterans Loan Officers domain
 ├── refinancemtgs/               # Refinance MTGs domain ⭐ NEW
-└── onlineheloc/                 # Online HELOC domain ⭐ NEW
+├── onlineheloc/                 # Online HELOC domain ⭐ NEW
+└── heloclending/                # HELOCLending domain ⭐ NEW
 
 content/
 ├── badcreditloanspecialist/      # Content for Bad Credit domain
@@ -192,7 +194,8 @@ content/
 ├── veteranmortgagelenders/      # Content for Veteran Mortgage domain ⭐ NEW
 ├── veteransloanofficers/        # Content for Veterans domain
 ├── refinancemtgs/               # Content for Refinance MTGs domain ⭐ NEW
-└── onlineheloc/                 # Content for Online HELOC domain ⭐ NEW
+├── onlineheloc/                 # Content for Online HELOC domain ⭐ NEW
+└── heloclending/                # Content for HELOCLending domain ⭐ NEW
 
 public/                           # Built sites (git-ignored)
 ├── badcreditloanspecialist/      # → badcreditloanspecialist.com
@@ -210,7 +213,8 @@ public/                           # Built sites (git-ignored)
 ├── veteranmortgagelenders/      # → veteranmortgagelenders.com ⭐ NEW
 ├── veteransloanofficers/        # → veteransloanofficers.com
 ├── refinancemtgs/               # → refinancemtgs.com ⭐ NEW
-└── onlineheloc/                 # → onlineheloc.com ⭐ NEW
+├── onlineheloc/                 # → onlineheloc.com ⭐ NEW
+└── heloclending/                # → heloclending.com ⭐ NEW
 ```
 
 ---
