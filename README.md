@@ -38,12 +38,19 @@ This repository automatically builds and deploys **dozens of landing page domain
 20. **nonconformingloanofficers.com** ⭐ NEW
 21. **homeequityloanspecialist.com** ⭐ NEW
 22. **conventionalmortgagerates.com** ⭐ NEW
+23. **nonconformingmortgagerates.com** ⭐ NEW
 
 ---
 
 ## 🚀 Quick Start
 
 ### Preview Domain Sites (Development)
+
+> **Important:** `--environment` only sets the environment name. To load a specific domain’s content you must also pass `--config config/<domain>/hugo.toml`. Example:
+>
+> ```bash
+> hugo server --config config/nonconformingmortgagerates/hugo.toml --environment nonconformingmortgagerates --port 1364
+> ```
 
 ```bash
 # Preview individual domains on different ports
@@ -91,6 +98,7 @@ hugo server --environment nonconformingloanofficers --port 1360
 hugo server --environment homeequityloanspecialist --port 1361
 hugo server --environment conventionalmortgagerates --port 1362
 hugo server --environment conformingmortgagerates --port 1363
+hugo server --environment nonconformingmortgagerates --port 1364
 
 
 Access sites at http://localhost:PORT
@@ -139,6 +147,7 @@ Output directories:
 - `public/homeequityloanspecialist/`
 - `public/conventionalmortgagerates/`
 - `public/conformingmortgagerates/`
+- `public/nonconformingmortgagerates/`
 
 ---
 
@@ -196,7 +205,8 @@ config/
 ├── heloclending/                # HELOCLending domain ⭐ NEW
 ├── homeequityloanspecialist/    # Home Equity Loan Specialist domain ⭐ NEW
 ├── conventionalmtg/             # ConventionalMTG domain ⭐ NEW
-└── nonconformingloanofficers/   # NonConforming Loan Officers domain ⭐ NEW
+├── nonconformingloanofficers/   # NonConforming Loan Officers domain ⭐ NEW
+└── nonconformingmortgagerates/  # NonConforming Mortgage Rates domain ⭐ NEW
 
 content/
 ├── badcreditloanspecialist/      # Content for Bad Credit domain
@@ -220,7 +230,8 @@ content/
 ├── heloclending/                # Content for HELOCLending domain ⭐ NEW
 ├── homeequityloanspecialist/    # Content for Home Equity Loan Specialist domain ⭐ NEW
 ├── conventionalmtg/             # Content for ConventionalMTG domain ⭐ NEW
-└── nonconformingloanofficers/   # Content for NonConforming Loan Officers domain ⭐ NEW
+├── nonconformingloanofficers/   # Content for NonConforming Loan Officers domain ⭐ NEW
+└── nonconformingmortgagerates/  # Content for NonConforming Mortgage Rates domain ⭐ NEW
 
 public/                           # Built sites (git-ignored)
 ├── badcreditloanspecialist/      # → badcreditloanspecialist.com
@@ -244,7 +255,8 @@ public/                           # Built sites (git-ignored)
 ├── heloclending/                # → heloclending.com ⭐ NEW
 ├── homeequityloanspecialist/    # → homeequityloanspecialist.com ⭐ NEW
 ├── conventionalmtg/             # → conventionalmtg.com ⭐ NEW
-└── nonconformingloanofficers/   # → nonconformingloanofficers.com ⭐ NEW
+├── nonconformingloanofficers/   # → nonconformingloanofficers.com ⭐ NEW
+└── nonconformingmortgagerates/  # → nonconformingmortgagerates.com ⭐ NEW
 ```
 
 ---

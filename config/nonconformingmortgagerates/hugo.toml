@@ -1,0 +1,274 @@
+baseURL = 'https://nonconformingmortgagerates.com/'
+languageCode = 'en-us'
+title = 'Non-Conforming Mortgage Rates'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/nonconformingmortgagerates'
+publishDir = 'public/nonconformingmortgagerates'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'NonConformingMortgageRates.com turns jumbo, non-QM, and expanded-criteria pricing into transparent narratives that lenders and borrowers can both trust.'
+  author = 'Browse Lenders®'
+  shortName = 'Non-Conforming Rate Desk'
+  tagline = 'Expanded-Criteria Intelligence In Plain English'
+  homepage = 'https://nonconformingmortgagerates.com/'
+
+  siteName = 'NonConformingMortgageRates.com'
+  siteDescription = 'Built for finance chiefs, founders, and relocation teams who need to compare non-conforming rates without guesswork.'
+  keywords = ['non-conforming mortgage rates', 'jumbo loans', 'non-QM pricing', 'BrowseLenders.com', 'MiddleCreditScore.com', 'Cash-OutRefinance.com']
+  serviceType = 'Non-Conforming Rate Intelligence'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Jumbo And Non-QM Rates With Receipts Attached'
+  heroSubtitle = 'Blend lender scorecards from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a>, credit pacing alerts from <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a>, and equity stress tests from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> to keep every non-conforming rate conversation factual.'
+  heroImage = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Start My Rate Map'
+  heroCTA1Link = 'https://nonconformingmortgagerates.com/intake'
+  heroCTA2Text = 'Talk With Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Where Jumbo Transparency Meets Execution'
+  aboutImage = 'https://images.unsplash.com/photo-1473186505569-9c61870c11f9?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Rate Programs Built For Expanded Criteria Borrowers'
+  programsSubtitle = 'Each workflow packages underwriting context, supporting documents, and escalation scripts so jumbo lenders see a complete story.'
+
+  program1Title = 'Jumbo Receipt Locker'
+  program1Description = 'Organize bank statement, asset-depletion, and RSU documentation so lenders can validate terms in minutes instead of days.'
+  program1Image = 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Non-QM Pricing Console'
+  program2Description = 'Compare DSCR, P&L-only, and 1099 programs with auto-generated talking points for decision makers.'
+  program2Image = 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Equity Flex Studio'
+  program3Description = 'Model second-home, investment, and delayed-financing options to show how today’s lock affects future cash-out strategy.'
+  program3Image = 'https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Schedule A Non-QM Strategy Call'
+  programsCTALink = 'https://nonconformingmortgagerates.com/consult'
+  programsClosingText = 'Leave the call with annotated rate sheets, lender questions, and stakeholder recap templates.'
+
+  educationTitle = 'Education Tracks For Jumbo + Non-QM Decisions'
+  educationSubtitle = 'Micro-lessons that translate underwriting nuance into everyday language.'
+
+  edu1Title = 'Rate Structure Deep Dive'
+  edu1Description = 'Break down margin, index, and pricing caps so adjustable-rate offers never feel mysterious.'
+  edu1Image = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Liquidity Readiness Lab'
+  edu2Description = 'Show how reserves, vesting schedules, and vesting cliffs satisfy lender overlays.'
+  edu2Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Credit Timing Workshop'
+  edu3Description = 'Align utilization dips, rapid rescores, and trade-line updates with the target lock window.'
+  edu3Image = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Communication Blueprint'
+  edu4Description = 'Equip executives, spouses, and boards with ready-to-send talking points for every rate update.'
+  edu4Image = 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download The Non-Conforming Playbooks'
+  educationCTALink = 'https://nonconformingmortgagerates.com/guides'
+
+  learningTitle = 'Learning Center — Transparency Over Hype'
+  learningSubtitle = 'Dashboards, calculators, and reports that defend every rate choice.'
+  learningImage = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Portfolio-grade dashboards show every lender quote, adjustment, and exception request on a single canvas.'
+  learningPara2 = 'Stakeholder recaps translate payment swings into budget, equity, and tax implications.'
+  learningPara3 = 'Escalation scripts and compliance notes keep communication consistent even when markets move fast.'
+  learningBullet1 = 'Exception-ready quote logs'
+  learningBullet2 = 'Payment + liquidity overlays'
+  learningBullet3 = 'Executive-ready recap kits'
+  learningBullet4 = 'Appraisal + conditions trackers'
+
+  whyChooseTitle = 'Why Teams Trust NonConformingMortgageRates.com'
+  whyChooseSubtitle = 'We treat every jumbo request like an investor memo: sourced, cited, and shareable.'
+  whyChoosePara1 = 'Documentation packs bundle transcripts, supporting documents, and calculator outputs so lenders can approve faster.'
+  whyChoosePara2 = 'Borrowers see every trade-off in writing, reducing surprises when rates or guidelines change mid-process.'
+
+  whyChooseBox1Title = 'Audit-Ready Receipts'
+  whyChooseBox1Para = 'Every quote is timestamped with supporting documentation, so escalations stick.'
+  whyChooseBox1Bullet1 = 'Lender deltas flagged'
+  whyChooseBox1Bullet2 = 'Conditions checklist'
+  whyChooseBox1Bullet3 = 'Escalation archive'
+
+  whyChooseBox2Title = 'Coordinated Stakeholders'
+  whyChooseBox2Para = 'Lock decisions align with treasury teams, tax planners, and relocation partners.'
+  whyChooseBox2Bullet1 = 'Calendar-synced alerts'
+  whyChooseBox2Bullet2 = 'Stakeholder briefings'
+  whyChooseBox2Bullet3 = 'Decision audit trails'
+
+  whyChooseBox3Title = 'Future-Proof Planning'
+  whyChooseBox3Para = 'Equity stress tests show how today’s jumbo lock supports tomorrow’s liquidity needs.'
+  whyChooseBox3Bullet1 = 'Cash-flow projections'
+  whyChooseBox3Bullet2 = 'Equity release scenarios'
+  whyChooseBox3Bullet3 = 'Exit-strategy notes'
+
+  whyChooseCTA = 'Book A Non-Conforming Rate Review'
+  whyChooseCTALink = 'https://nonconformingmortgagerates.com/schedule'
+
+  testimonialsTitle = 'Borrowers Who Made Non-QM Decisions With Confidence'
+  testimonialsSubtitle = 'Real stories from families, founders, and relocation teams.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“The rate map gave our CFO proof for every jumbo lender we interviewed, so approvals came back faster.”'
+  testimonial1Name = 'Remote Tech Team'
+  testimonial1Subtitle = 'Coordinated multi-state move'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“Non-QM pricing console kept DSCR quotes honest and helped us negotiate servicing terms.”'
+  testimonial2Name = 'Portfolio Investors'
+  testimonial2Subtitle = 'Closed on two rentals'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1520854220072-3d00a6cfac3e?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“Liquidity readiness lab spelled out every reserve requirement so underwriting never stalled.”'
+  testimonial3Name = 'Founders Reinvesting'
+  testimonial3Subtitle = 'Leveraged RSU income'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1544723795-432537f52b0c?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“Escalation scripts helped us challenge a surprise 0.375% hike and win a concession.”'
+  testimonial4Name = 'Design Duo'
+  testimonial4Subtitle = 'Won pricing exception'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“Payment overlays gave our board peace of mind before they approved the relo package.”'
+  testimonial5Name = 'Corporate Relocation'
+  testimonial5Subtitle = 'Aligned HR + finance'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“Being able to forward a single dashboard kept our lender, CPA, and attorney on the same page.”'
+  testimonial6Name = 'Coastal Entrepreneurs'
+  testimonial6Subtitle = 'Balanced multiple advisors'
+
+  calculatorsTitle = 'Non-Conforming Calculators'
+  calculatorsSubtitle = 'Expose every adjustment before you sign.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep'
+  creditScoreImage = 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Map utilization, statement dates, and paydowns so jumbo-ready scores stay intact through closing.'
+  creditScoreHeading1 = 'Utilization Timing'
+  creditScoreText1 = 'Coordinate auto-pays and manual sweeps with statement cycles to prevent score dips.'
+  creditScoreHeading2 = 'Inquiry Ledger'
+  creditScoreText2 = 'Log each hard pull and share context with lender teams instantly.'
+  creditScoreHeading3 = 'Reserve Proof Kit'
+  creditScoreText3 = 'Show where every reserve dollar lives—brokerage, cash, RSUs, or vested options.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Membership Groups'
+  employersSubtitle = 'Offer loan-literacy office hours for globe-trotting teams.'
+  employersImage = 'https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Drop our calculators, scripts, and support desk into your benefit portal so employees close faster without derailing work.'
+  employersBullet1Title = 'On-demand workshops'
+  employersBullet1Text = 'Cover jumbo documentation, non-QM underwriting, and escalation etiquette.'
+  employersBullet2Title = 'Compliance-friendly templates'
+  employersBullet2Text = 'Every download is formatted with disclosures and sharing guidelines.'
+  employersBullet3Title = 'Happier relocations'
+  employersBullet3Text = 'Transparent rates reduce churn and keep focus on customers.'
+  employersCTA = 'Launch The Rate Benefit'
+  employersCTALink = 'https://nonconformingmortgagerates.com/employers'
+
+  blogTitle = 'Non-Conforming Rate Dispatch'
+  blogSubtitle = 'Field notes from jumbo borrowers, non-QM lenders, and transparency advocates.'
+
+  faqTitle = 'Questions Jumbo Borrowers Ask Every Week'
+  faqSubtitle = 'Share these answers with whoever signs off on the lock.'
+
+  faq1Question = 'How do I prove reserves for a jumbo or non-QM loan?'
+  faq1Answer = 'We package brokerage statements, RSU vests, and business cash-flow summaries so underwriters see the full liquidity picture.'
+
+  faq2Question = 'What makes non-QM pricing jump mid-process?'
+  faq2Answer = 'Secondary-market appetite, documentation gaps, and data-entry errors can all move pricing. Our logs record each change and the lender who requested it.'
+
+  faq3Question = 'Can I negotiate exceptions without damaging relationships?'
+  faq3Answer = 'Yes—documented comparisons plus respectful escalation scripts keep conversations factual and productive.'
+
+  faq4Question = 'How do I keep stakeholders aligned across states and time zones?'
+  faq4Answer = 'Weekly recaps summarize macro moves, lock decisions, and pending conditions so everyone stays aligned.'
+
+  ctaTitle = 'Ready To Compare Non-Conforming Rates With Confidence?'
+  ctaDescription = 'Send us your target loan amount, documentation type, and timeline. We reply with annotated rate sheets, calculators, and scripts within one business day.'
+  ctaCTA = 'Start My Non-QM Briefing'
+  ctaCTALink = 'https://nonconformingmortgagerates.com/start'
+
+  [params.theme]
+    name = 'NonConformingMortgageRates Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'rates']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#101B2D'
+    backgroundColor = '#F4F7FA'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
