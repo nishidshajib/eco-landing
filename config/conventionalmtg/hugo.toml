@@ -1,0 +1,274 @@
+baseURL = 'https://conventionalmtg.com/'
+languageCode = 'en-us'
+title = 'Conventional Mortgage'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/conventionalmtg'
+publishDir = 'public/conventionalmtg'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'ConventionalMTG.com helps borrowers script every conventional mortgage conversation with data-backed comparisons, credit guardrails, and lender-ready recap decks.'
+  author = 'Browse Lenders®'
+  shortName = 'ConventionalMTG'
+  tagline = 'Purchase + Refi Readiness, Scripted'
+  homepage = 'https://conventionalmtg.com/'
+
+  siteName = 'ConventionalMTG.com'
+  siteDescription = 'A planning bench for comparing fixed-rate loans, pricing hits, and timeline pivots without scrambling for paperwork the night before underwriting.'
+  keywords = ['Conventional mortgage planning', 'BrowseLenders.com', 'Cash-OutRefinance.com', 'MiddleCreditScore.com', 'Purchase readiness', 'Rate shopping']
+  serviceType = 'Conventional Mortgage Playbooks'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Conventional Mortgage Narratives Built Before The Rate Lock'
+  heroSubtitle = 'Layer lender overlays from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> with pricing tests from <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> and credit guardrails sourced at <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> so every stakeholder sees the same math.'
+  heroImage = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Map My Conventional Loan'
+  heroCTA1Link = 'https://conventionalmtg.com/intake'
+  heroCTA2Text = 'Email Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'A Mortgage Desk Built From Real Underwriting Feedback'
+  aboutImage = 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'Cash-OutRefinance.com'
+  secondaryDomainURL = 'https://www.cash-outrefinance.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+
+  programsTitle = 'Workstreams For Purchase + Refinance Readiness'
+  programsSubtitle = 'Each track blends calculators, scripts, and documentation packs.'
+
+  program1Title = 'Pricing + Scenario Lab'
+  program1Description = 'Compare base pricing, LLPAs, and cash-out pivots with worksheets fed by <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-OutRefinance.com</a> data so borrowers see the breakeven story before locking.'
+  program1Image = 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Credit Reliability Sprint'
+  program2Description = 'Stage utilization trims, rapid re-score timelines, and compensating factors with reminders that sync to <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">MiddleCreditScore.com</a> dashboards.'
+  program2Image = 'https://images.unsplash.com/photo-1484981138541-3d074aa97716?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Stakeholder Briefcase'
+  program3Description = 'Curate lender comparison boards, realtor talking points, and post-close checklists sourced from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">BrowseLenders.com</a> research so decisions stay aligned.'
+  program3Image = 'https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Book A Scenario Review'
+  programsCTALink = 'https://conventionalmtg.com/consult'
+  programsClosingText = 'Expect a punch list covering documentation, pricing triggers, and post-close guardrails.'
+
+  educationTitle = 'Conventional Mortgage Education Tracks'
+  educationSubtitle = 'Short sessions that translate rate sheets into plain language.'
+
+  edu1Title = 'Loan Structure Analyzer'
+  edu1Description = 'Dissect 15, 20, and 30-year amortization options with total-interest storytelling your loan officer will love.'
+  edu1Image = 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Purchase Timeline Control'
+  edu2Description = 'Stage earnest money, appraisal dates, and insurance proofs so contract deadlines stop feeling chaotic.'
+  edu2Image = 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Refi vs Recast Decisions'
+  edu3Description = 'Show exactly when to deploy equity, when to pay points, and when a refi beats a principal curtailment.'
+  edu3Image = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Communication Scripts'
+  edu4Description = 'Keep spouses, co-borrowers, and advisors synchronized with one-page Friday digests.'
+  edu4Image = 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download Mortgage Briefs'
+  educationCTALink = 'https://conventionalmtg.com/guides'
+
+  learningTitle = 'Learning Center — Conventional Lending, Clarified'
+  learningSubtitle = 'Use battle-tested templates to walk underwriters through your logic.'
+  learningImage = 'https://images.unsplash.com/photo-1457694587812-e8bf29a43845?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'We align BrowseLenders.com overlays with your file so you can pre-answer the questions each bank will ask.'
+  learningPara2 = 'Cash-OutRefinance.com comparisons sit beside every amortization model so pivots never feel emotional.'
+  learningPara3 = 'MiddleCreditScore.com milestones keep pricing tiers safe even when balances spike mid-escrow.'
+  learningBullet1 = 'Scenario calculators'
+  learningBullet2 = 'Rate-move simulations'
+  learningBullet3 = 'Contract deadline trackers'
+  learningBullet4 = 'Stakeholder briefing kits'
+
+  whyChooseTitle = 'Why Borrowers Trust ConventionalMTG.com'
+  whyChooseSubtitle = 'We package data and dialogue in one workspace.'
+  whyChoosePara1 = 'Files move faster when underwriters see amortization math, pricing overlays, and cash-flow plans inside the same recap deck.'
+  whyChoosePara2 = 'Our scripts borrow from real purchase and refi pipelines, not theory, so you can speak underwriting language with confidence.'
+
+  whyChooseBox1Title = 'Data-Backed Stories'
+  whyChooseBox1Para = 'Every recommendation references calculator outputs, not hunches, so pricing hits are easy to defend.'
+  whyChooseBox1Bullet1 = 'CLTV + DTI snapshots'
+  whyChooseBox1Bullet2 = 'LLPA impact charts'
+  whyChooseBox1Bullet3 = 'Break-even comparisons'
+
+  whyChooseBox2Title = 'Risk Radar'
+  whyChooseBox2Para = 'We highlight reserve gaps, document expirations, and post-close obligations before they trigger surprises.'
+  whyChooseBox2Bullet1 = 'Reserve stress tests'
+  whyChooseBox2Bullet2 = 'Document expiry tracker'
+  whyChooseBox2Bullet3 = 'Rate-lock reminders'
+
+  whyChooseBox3Title = 'Team Alignment'
+  whyChooseBox3Para = 'Weekly digests keep agents, CPAs, and spouses reacting to the same facts, not text threads.'
+  whyChooseBox3Bullet1 = 'Shared task boards'
+  whyChooseBox3Bullet2 = 'Call recap templates'
+  whyChooseBox3Bullet3 = 'Post-close maintenance tips'
+
+  whyChooseCTA = 'Schedule A Mortgage Walkthrough'
+  whyChooseCTALink = 'https://conventionalmtg.com/schedule'
+
+  testimonialsTitle = 'Borrowers + Pros Sharing Their Wins'
+  testimonialsSubtitle = 'Conventional files that closed without the chaos.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“Our agent and lender read the same BrowseLenders recap, so conditions cleared in two days.”'
+  testimonial1Name = 'Move-Up Buyers'
+  testimonial1Subtitle = 'Bid + close inside 30 days'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“Cash-OutRefinance comparisons proved staying conventional cost less than a refi, and we negotiated closing costs confidently.”'
+  testimonial2Name = 'Equity Consolidators'
+  testimonial2Subtitle = 'Lowered payments without refi'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“MiddleCreditScore alerts caught a surprise card balance, and we kept our best-pricing tier.”'
+  testimonial3Name = 'First-Time Buyers'
+  testimonial3Subtitle = 'Protected rate lock'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“The stakeholder briefcase meant my CPA, spouse, and lender got identical updates.”'
+  testimonial4Name = 'Serial Investor'
+  testimonial4Subtitle = 'Coordinated multiple escrows'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“Scenario lab screenshots helped us justify buying points and still keep reserves intact.”'
+  testimonial5Name = 'Rate Shopper'
+  testimonial5Subtitle = 'Optimized payment curve'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“We walked into underwriting with every condition already documented—nothing felt uncertain.”'
+  testimonial6Name = 'Remote Workers'
+  testimonial6Subtitle = 'Closed while traveling'
+
+  calculatorsTitle = 'Conventional Mortgage Calculators & Tools'
+  calculatorsSubtitle = 'Show the numbers before anyone asks.'
+
+  creditScoreTitle = 'Middle Credit Score® Prep For Conventional Loans'
+  creditScoreImage = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Map utilization targets, seasoned tradelines, and rapid rescore scripts so conventional pricing tiers stay intact.'
+  creditScoreHeading1 = 'Utilization Timeline'
+  creditScoreText1 = 'Align statement dates with paydowns and upload proof instantly.'
+  creditScoreHeading2 = 'Tradeline Tracker'
+  creditScoreText2 = 'Log authorized user updates, disputes, and inquiries in one place.'
+  creditScoreHeading3 = 'Overlay Checker'
+  creditScoreText3 = 'Compare lender overlays before they surprise your file.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Membership Programs'
+  employersSubtitle = 'Deliver conventional mortgage literacy as a benefit.'
+  employersImage = 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Plug our scripts, calculators, and office-hour calendar into your HR portal so employees make confident housing decisions.'
+  employersBullet1Title = 'Ready-to-use explainers'
+  employersBullet1Text = 'Drop FAQs and amortization charts straight into handbooks.'
+  employersBullet2Title = 'Compliance aware'
+  employersBullet2Text = 'We keep disclosures tidy so HR and legal sign off faster.'
+  employersBullet3Title = 'Productivity friendly'
+  employersBullet3Text = 'Less loan anxiety means better focus at work.'
+  employersCTA = 'Launch The Benefit'
+  employersCTALink = 'https://conventionalmtg.com/employers'
+
+  blogTitle = 'ConventionalMTG Dispatch'
+  blogSubtitle = 'Human stories about prepping files, partners, and cash flow for conventional loans.'
+
+  faqTitle = 'Questions Borrowers Ask Before Closing'
+  faqSubtitle = 'Use these scripts when the group text demands answers.'
+
+  faq1Question = 'How do I prove I’m ready for a conventional purchase?'
+  faq1Answer = 'Share CLTV, DTI, reserve, and income documentation through one recap deck so underwriting sees stability instantly.'
+
+  faq2Question = 'Is a cash-out refinance better than a conventional refi?'
+  faq2Answer = 'Run both through the scenario lab—when equity use is targeted, conventional refis usually preserve long-term flexibility.'
+
+  faq3Question = 'What if my credit shifts mid-escrow?'
+  faq3Answer = 'Use Middle Credit Score® reminders to time payoffs and document every update. Lenders love proactive status reports.'
+
+  faq4Question = 'How do I keep everyone aligned?'
+  faq4Answer = 'Send Friday briefs with updated timelines, appraisal notes, and conditions so nobody is surprised by lender calls.'
+
+  ctaTitle = 'Ready To Show Your Conventional Readiness?'
+  ctaDescription = 'Send your target payment, property notes, and credit timeline. We reply with calculators, overlays, and stakeholder scripts within one business day.'
+  ctaCTA = 'Start The Mortgage Intake'
+  ctaCTALink = 'https://conventionalmtg.com/start'
+
+  [params.theme]
+    name = 'ConventionalMTG Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'conventional']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B2845'
+    backgroundColor = '#F4F7FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
