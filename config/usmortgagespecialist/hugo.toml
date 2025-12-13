@@ -1,0 +1,274 @@
+baseURL = 'https://usmortgagespecialist.com/'
+languageCode = 'en-us'
+title = 'US Mortgage Specialist'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/usmortgagespecialist'
+publishDir = 'public/usmortgagespecialist'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'US Mortgage Specialist is the national matching funnel where consumers compare mortgage lenders, explore loan options, and begin prequalification with full transparency.'
+  author = 'Browse Lenders®'
+  shortName = 'US Mortgage Hub'
+  tagline = 'Compare Lenders, Start Prequalification, Own Your Path'
+  homepage = 'https://usmortgagespecialist.com/'
+
+  siteName = 'USMortgageSpecialist.com'
+  siteDescription = 'The national conversion domain connecting borrowers with vetted mortgage specialists, transparent rate comparisons, and streamlined prequalification workflows.'
+  keywords = ['mortgage specialist comparison', 'lender matching funnel', 'prequalification', 'BrowseLenders.com', 'Cash-OutRefinance.com', 'MiddleCreditScore.com']
+  serviceType = 'Consumer Mortgage Routing'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Find Your Mortgage Specialist In Minutes'
+  heroSubtitle = 'Start by browsing vetted lenders through <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>, model your equity moves with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a>, and protect your pricing with <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Middle Credit Score</a> before you ever submit a single application.'
+  heroImage = 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Start My Match'
+  heroCTA1Link = 'https://usmortgagespecialist.com/match'
+  heroCTA2Text = 'Talk To Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Why Lender Matching Matters More Than Ever'
+  aboutImage = 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'Cash-OutRefinance.com'
+  secondaryDomainURL = 'https://www.cash-outrefinance.com'
+  tertiaryDomain = 'MiddleCreditScore.com'
+  tertiaryDomainURL = 'https://www.middlecreditscore.com'
+
+  programsTitle = 'Programs That Match You With The Right Specialist'
+  programsSubtitle = 'Every consumer deserves transparent lender intelligence, equity modeling, and credit guidance before committing to an application.'
+
+  program1Title = 'National Lender Directory'
+  program1Description = 'Browse real narratives, verified reviews, and program overlays from hundreds of specialists so you know who fits before you share documents.'
+  program1Image = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Prequalification Routing Engine'
+  program2Description = 'Answer six questions and we connect you with specialists who have closed loans matching your profile, timeline, and geography.'
+  program2Image = 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Rate + Term Transparency Hub'
+  program3Description = 'Compare live rate sheets, lock guidance, and closing cost breakdowns in a format designed for humans, not industry insiders.'
+  program3Image = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Explore My Options'
+  programsCTALink = 'https://usmortgagespecialist.com/explore'
+  programsClosingText = 'Walk away with lender shortlists, personalized prequalification steps, and side-by-side equity scenarios.'
+
+  educationTitle = 'Education Tracks For Smart Borrowers'
+  educationSubtitle = 'We believe every consumer should understand the process before they commit to a lender relationship.'
+
+  edu1Title = 'Lender Comparison Fundamentals'
+  edu1Description = 'Learn how to decode rate sheets, evaluate overlays, and spot when a lender genuinely matches your scenario.'
+  edu1Image = 'https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Prequalification Readiness Checklist'
+  edu2Description = 'Discover which documents, credit moves, and income proofs you need before your first lender conversation.'
+  edu2Image = 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Equity Strategy Briefings'
+  edu3Description = 'Understand cash-out timing, appraisal impacts, and how to model renovation or debt consolidation without guessing.'
+  edu3Image = 'https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Credit Protection Workshop'
+  edu4Description = 'Protect your middle score with utilization calendars, dispute strategies, and verification upload best practices.'
+  edu4Image = 'https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download Borrower Guides'
+  educationCTALink = 'https://usmortgagespecialist.com/guides'
+
+  learningTitle = 'Learning Center — Your Mortgage Command Dashboard'
+  learningSubtitle = 'Track lenders, compare scenarios, and monitor your credit pacing all in one transparent workspace.'
+  learningImage = 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Your personal dashboard shows shortlisted lenders, pending prequalification tasks, and document upload progress in real time.'
+  learningPara2 = 'Scenario calculators let you model purchase, refinance, and cash-out options side by side so you can see tradeoffs instantly.'
+  learningPara3 = 'Credit pacing reminders nudge you toward the best possible pricing without requiring daily logins or spreadsheet gymnastics.'
+  learningBullet1 = 'Lender shortlist manager'
+  learningBullet2 = 'Side-by-side rate comparison'
+  learningBullet3 = 'Document readiness tracker'
+  learningBullet4 = 'Credit pacing calendar'
+
+  whyChooseTitle = 'Why Consumers Trust US Mortgage Specialist'
+  whyChooseSubtitle = 'We built the platform borrowers wish existed when they started their own mortgage journeys.'
+  whyChoosePara1 = 'Every lender narrative, rate sheet, and overlay note is verified and updated weekly so you never waste time on outdated intel.'
+  whyChoosePara2 = 'Your data stays private until you choose which specialists to contact, and you control every step of the prequalification handoff.'
+
+  whyChooseBox1Title = 'Lender Intelligence First'
+  whyChooseBox1Para = 'Read real reviews, verified program details, and overlay alerts before you ever share personal information.'
+  whyChooseBox1Bullet1 = 'Verified lender profiles'
+  whyChooseBox1Bullet2 = 'Weekly overlay updates'
+  whyChooseBox1Bullet3 = 'Borrower-submitted reviews'
+
+  whyChooseBox2Title = 'Transparent Routing Logic'
+  whyChooseBox2Para = 'Our matching engine prioritizes specialists who have closed loans like yours, not whoever pays the highest referral fee.'
+  whyChooseBox2Bullet1 = 'Profile-matched specialists'
+  whyChooseBox2Bullet2 = 'Transparent routing criteria'
+  whyChooseBox2Bullet3 = 'No hidden lead auctions'
+
+  whyChooseBox3Title = 'Support Without Sales Pressure'
+  whyChooseBox3Para = 'Reach our team anytime for guidance on documents, credit moves, or choosing between lenders without upsell tactics.'
+  whyChooseBox3Bullet1 = 'No-pressure guidance'
+  whyChooseBox3Bullet2 = 'Document prep assistance'
+  whyChooseBox3Bullet3 = 'Credit strategy support'
+
+  whyChooseCTA = 'Start My Lender Search'
+  whyChooseCTALink = 'https://usmortgagespecialist.com/search'
+
+  testimonialsTitle = 'Stories From Borrowers Who Compared Before Committing'
+  testimonialsSubtitle = 'See how transparent lender matching changed outcomes for real families.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '"I compared three specialists side by side and saved 0.375% because I knew what questions to ask upfront."'
+  testimonial1Name = 'Marcus T.'
+  testimonial1Subtitle = 'First-time buyer in Texas'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '"The prequalification routing connected me with someone who actually understood VA loans instead of wasting weeks with generic lenders."'
+  testimonial2Name = 'Jennifer L.'
+  testimonial2Subtitle = 'Military relocation to Florida'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '"Cash-out modeling showed me I could refinance and fund a renovation without draining savings—game changer."'
+  testimonial3Name = 'David K.'
+  testimonial3Subtitle = 'Refinance with equity pull'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '"Credit pacing reminders kept my score above the next tier cutoff, saving me thousands over the loan term."'
+  testimonial4Name = 'Angela M.'
+  testimonial4Subtitle = 'Purchase in California'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '"I appreciated being able to read lender bios and reviews before sharing income documents—felt much more secure."'
+  testimonial5Name = 'Chris W.'
+  testimonial5Subtitle = 'Self-employed borrower'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '"The side-by-side rate comparison let me negotiate confidently because I knew exactly where market pricing sat."'
+  testimonial6Name = 'Rachel P.'
+  testimonial6Subtitle = 'Refinance shopper'
+
+  calculatorsTitle = 'Consumer Calculators'
+  calculatorsSubtitle = 'Model your mortgage journey with tools built for clarity, not confusion.'
+
+  creditScoreTitle = 'Middle Credit Score® Protection'
+  creditScoreImage = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Protect the score lenders actually use by tracking utilization, statement dates, and verification uploads in one transparent calendar.'
+  creditScoreHeading1 = 'Utilization Watchdog'
+  creditScoreText1 = 'Set alerts when revolving balances creep toward thresholds that could cost you a pricing tier.'
+  creditScoreHeading2 = 'Dispute Timeline Manager'
+  creditScoreText2 = 'Track dispute status and ensure corrections post before your lender pulls credit.'
+  creditScoreHeading3 = 'Verification Upload Vault'
+  creditScoreText3 = 'Store paystubs, tax returns, and letters of explanation so you can share instantly when specialists request them.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Membership Organizations'
+  employersSubtitle = 'Offer mortgage guidance as a vetted benefit your people will actually use.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'White-label our lender directory, prequalification routing, and education tracks so employees or members gain mortgage clarity without leaving your ecosystem.'
+  employersBullet1Title = 'Co-branded portals'
+  employersBullet1Text = 'Publish a mortgage hub under your brand with our intelligence feeds running behind the scenes.'
+  employersBullet2Title = 'HR-ready briefings'
+  employersBullet2Text = 'Equip people teams with talking points, compliance checklists, and stakeholder recaps.'
+  employersBullet3Title = 'Member satisfaction metrics'
+  employersBullet3Text = 'Track utilization, satisfaction scores, and closing outcomes so leadership sees ROI.'
+  employersCTA = 'Launch A Mortgage Benefit'
+  employersCTALink = 'https://usmortgagespecialist.com/employers'
+
+  blogTitle = 'US Mortgage Specialist Insights'
+  blogSubtitle = 'Real talk about lender selection, prequalification strategy, and mortgage timing from borrowers and specialists who have been there.'
+
+  faqTitle = 'Questions Borrowers Ask Before Starting Their Search'
+  faqSubtitle = 'Get clarity on the lender matching process before you share a single document.'
+
+  faq1Question = 'How do you choose which specialists to show me?'
+  faq1Answer = 'We match based on loan type, geography, credit profile, and timeline, prioritizing specialists with verified closings in your scenario.'
+
+  faq2Question = 'Is my information shared with lenders automatically?'
+  faq2Answer = 'No. You control when and which specialists receive your contact details and prequalification documents.'
+
+  faq3Question = 'Do lenders pay to appear in my results?'
+  faq3Answer = 'Specialists join our directory, but ranking is driven by match quality and verified reviews, not bid amount.'
+
+  faq4Question = 'Can I compare rates before I apply?'
+  faq4Answer = 'Yes. Our rate transparency hub shows live pricing ranges, lock guidance, and closing cost estimates for common scenarios.'
+
+  ctaTitle = 'Ready To Find Your Mortgage Specialist?'
+  ctaDescription = 'Answer a few questions about your loan goals and timeline. We will show you vetted specialists, side-by-side rate comparisons, and next steps within minutes.'
+  ctaCTA = 'Start My Lender Match'
+  ctaCTALink = 'https://usmortgagespecialist.com/start'
+
+  [params.theme]
+    name = 'USMortgageSpecialist Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'consumer']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B1F3A'
+    backgroundColor = '#F5F7FA'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

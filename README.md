@@ -40,6 +40,7 @@ This repository automatically builds and deploys **dozens of landing page domain
 22. **conventionalmortgagerates.com** ⭐ NEW
 23. **nonconformingmortgagerates.com** ⭐ NEW
 24. **usamortgagespecialist.com** ⭐ NEW
+25. **usmortgagespecialist.com** ⭐ NEW
 
 ---
 
@@ -101,6 +102,7 @@ hugo server --environment conventionalmortgagerates --port 1362
 hugo server --environment conformingmortgagerates --port 1363
 hugo server --environment nonconformingmortgagerates --port 1364
 hugo server --environment usamortgagespecialist --port 1365
+hugo server --environment usmortgagespecialist --port 1366
 
 
 Access sites at http://localhost:PORT
@@ -151,6 +153,7 @@ Output directories:
 - `public/conformingmortgagerates/`
 - `public/nonconformingmortgagerates/`
 - `public/usamortgagespecialist/`
+- `public/usmortgagespecialist/`
 
 ---
 
@@ -210,7 +213,8 @@ config/
 ├── conventionalmtg/             # ConventionalMTG domain ⭐ NEW
 ├── nonconformingloanofficers/   # NonConforming Loan Officers domain ⭐ NEW
 ├── nonconformingmortgagerates/  # NonConforming Mortgage Rates domain ⭐ NEW
-└── usamortgagespecialist/       # USA Mortgage Specialist domain ⭐ NEW
+├── usamortgagespecialist/       # USA Mortgage Specialist domain ⭐ NEW
+└── usmortgagespecialist/        # US Mortgage Specialist domain ⭐ NEW
 
 content/
 ├── badcreditloanspecialist/      # Content for Bad Credit domain
