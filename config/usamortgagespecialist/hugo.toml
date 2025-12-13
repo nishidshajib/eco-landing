@@ -1,0 +1,274 @@
+baseURL = 'https://usamortgagespecialist.com/'
+languageCode = 'en-us'
+title = 'USA Mortgage Specialist'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/usamortgagespecialist'
+publishDir = 'public/usamortgagespecialist'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'USA Mortgage Specialist is the national authority hub for mortgage strategists, HR partners, and referral sources who need state-by-state expertise plus enterprise-ready education.'
+  author = 'Browse Lenders®'
+  shortName = 'USA Mortgage Desk'
+  tagline = 'National Mortgage Authority + State Specialists'
+  homepage = 'https://usamortgagespecialist.com/'
+
+  siteName = 'USAMortgageSpecialist.com'
+  siteDescription = 'Connects consumers, HR teams, and referral partners with vetted mortgage specialists in every state, backed by national playbooks and classroom-grade resources.'
+  keywords = ['USA mortgage specialists', 'national mortgage authority', 'BrowseLenders.com', 'MiddleCreditScore.com', 'Cash-OutRefinance.com', 'state mortgage guidance']
+  serviceType = 'National Mortgage Advisory'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'A National Mortgage Authority With State-Level Execution'
+  heroSubtitle = 'Compare lender narratives from <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders</a>, align credit pacing via <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">Middle Credit Score</a>, and prove equity strategies with <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">Cash-Out Refinance</a> so every HR sponsor and referral source can guide borrowers with confidence.'
+  heroImage = 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Match Me With A Specialist'
+  heroCTA1Link = 'https://usamortgagespecialist.com/intake'
+  heroCTA2Text = 'Talk With Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Why A Central Mortgage Authority Matters'
+  aboutImage = 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Programs Connecting National Strategy To Local Closings'
+  programsSubtitle = 'Each track pairs national governance with state-by-state resource kits for HR, relocation, and referral teams.'
+
+  program1Title = 'National Intake Command'
+  program1Description = 'Route inquiries through a single intake experience that tags borrowers by state, loan type, and urgency so specialists receive complete dossiers.'
+  program1Image = 'https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'State Specialist Bench'
+  program2Description = 'Maintain an always-on roster of vetted loan officers with published bios, compliance notes, and HR-facing escalation paths.'
+  program2Image = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Education + Equity Studio'
+  program3Description = 'Deliver enterprise-approved workshops showing how cash-out, relocation, and talent retention strategies interact across states.'
+  program3Image = 'https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Schedule A National Strategy Call'
+  programsCTALink = 'https://usamortgagespecialist.com/consult'
+  programsClosingText = 'Leave with referral-ready playbooks, communications templates, and tracked assignments for every stakeholder.'
+
+  educationTitle = 'Education Tracks For HR + Referral Teams'
+  educationSubtitle = 'Give people leaders and partner channels language they can reuse immediately.'
+
+  edu1Title = 'State Compliance Clinic'
+  edu1Description = 'Map licensing, disclosure, and timeline differences for every state you recruit or relocate from.'
+  edu1Image = 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Credit Timing Briefings'
+  edu2Description = 'Teach teams how to sequence paydowns and verifications without disrupting payroll or relocation allowances.'
+  edu2Image = 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Equity Narrative Lab'
+  edu3Description = 'Translate cash-out, retention bonuses, and RSU liquidation options into HR-ready talking points.'
+  edu3Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Referral Source Masterclass'
+  edu4Description = 'Arm realtors, financial advisors, and relocation vendors with co-branded scripts and compliance-approved visuals.'
+  edu4Image = 'https://images.unsplash.com/photo-1485988412941-77a35537dae4?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download The Authority Playbooks'
+  educationCTALink = 'https://usamortgagespecialist.com/guides'
+
+  learningTitle = 'Learning Center — National Oversight, Local Precision'
+  learningSubtitle = 'Dashboards and calculators that let HQ support every state office simultaneously.'
+  learningImage = 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Command dashboards surface pipeline health, compliance checkpoints, and specialist availability in real time.'
+  learningPara2 = 'Communication kits summarize rate moves, lock guidance, and HR-approved messaging for each state.'
+  learningPara3 = 'Escalation logs capture lender conversations so national teams can intervene quickly when service stalls.'
+  learningBullet1 = 'State readiness scorecards'
+  learningBullet2 = 'HR + referral briefing decks'
+  learningBullet3 = 'Credit + documentation trackers'
+  learningBullet4 = 'Equity scenario calculators'
+
+  whyChooseTitle = 'Why HR And Referral Leaders Trust USA Mortgage Specialist'
+  whyChooseSubtitle = 'We blend national governance with state-level follow-through.'
+  whyChoosePara1 = 'Every referral, education touchpoint, and borrower update is timestamped, scripted, and ready to forward to stakeholders.'
+  whyChoosePara2 = 'Your teams gain a command center that keeps messaging, compliance, and timelines consistent across states.'
+
+  whyChooseBox1Title = 'Centralized Accountability'
+  whyChooseBox1Para = 'Track every intake, assignment, and specialist recap so there is always a clear owner.'
+  whyChooseBox1Bullet1 = 'Audit-proof intake logs'
+  whyChooseBox1Bullet2 = 'Escalation-ready transcripts'
+  whyChooseBox1Bullet3 = 'Live status dashboards'
+
+  whyChooseBox2Title = 'State Expertise On Demand'
+  whyChooseBox2Para = 'Borrowers connect with pros who already know local overlays, grant programs, and underwriting nuance.'
+  whyChooseBox2Bullet1 = 'State policy cheat sheets'
+  whyChooseBox2Bullet2 = 'Local incentive trackers'
+  whyChooseBox2Bullet3 = 'Preferred specialist roster'
+
+  whyChooseBox3Title = 'Enterprise-Grade Messaging'
+  whyChooseBox3Para = 'HR and referral partners receive emails, slide decks, and calculators that align with corporate standards.'
+  whyChooseBox3Bullet1 = 'HR-ready communications'
+  whyChooseBox3Bullet2 = 'Executive summary templates'
+  whyChooseBox3Bullet3 = 'Video-ready talking points'
+
+  whyChooseCTA = 'Book A National Mortgage Briefing'
+  whyChooseCTALink = 'https://usamortgagespecialist.com/schedule'
+
+  testimonialsTitle = 'Stories From Teams Who Standardized Mortgage Guidance'
+  testimonialsSubtitle = 'See how national oversight plus local pros changed outcomes.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“The national intake workflow meant our recruiters always knew which specialist was working each relocation.”'
+  testimonial1Name = 'Healthcare Talent Office'
+  testimonial1Subtitle = 'Coordinated five states at once'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“HR trusted the education series because every slide came compliance-approved and ready to share.”'
+  testimonial2Name = 'Enterprise HR BP'
+  testimonial2Subtitle = 'Delivered nationwide office hours'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“Referral partners finally had one dashboard to reference, so communication never stalled.”'
+  testimonial3Name = 'Regional Realtor Collective'
+  testimonial3Subtitle = 'Faster turn times with lenders'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“Weekly stakeholder briefs proved to finance that every cash-out request had documentation behind it.”'
+  testimonial4Name = 'Corporate Treasury Team'
+  testimonial4Subtitle = 'Protected equity while relocating'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“State specialization plus national messaging helped us keep member satisfaction above 95%.”'
+  testimonial5Name = 'Association Benefits Director'
+  testimonial5Subtitle = 'Launched a member mortgage perk'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“The learning center became our recurring leadership update—it answered questions before they surfaced.”'
+  testimonial6Name = 'Remote Tech People Ops'
+  testimonial6Subtitle = 'Simplified exec reporting'
+
+  calculatorsTitle = 'Authority Calculators'
+  calculatorsSubtitle = 'Show stakeholders how rate, credit, and equity decisions change across states.'
+
+  creditScoreTitle = 'Middle Credit Score® Command'
+  creditScoreImage = 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Coordinate utilization campaigns, dispute follow-ups, and verification uploads against every relocation timeline.'
+  creditScoreHeading1 = 'Credit Calendar Builder'
+  creditScoreText1 = 'Auto-generate reminders HR can share with relocating talent or referral partners.'
+  creditScoreHeading2 = 'Verification Vault'
+  creditScoreText2 = 'Store paystubs, VOEs, and income letters with version control.'
+  creditScoreHeading3 = 'Tier Protection Scripts'
+  creditScoreText3 = 'Explain why the next 30 days of behavior matters for pricing.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Membership Networks'
+  employersSubtitle = 'Deliver mortgage certainty as a benefit.'
+  employersImage = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Roll out a plug-and-play portal with calculators, support access, and vetted specialists so employees and members stay focused on customers.'
+  employersBullet1Title = 'Enterprise-ready programming'
+  employersBullet1Text = 'Workshops and office hours tailored for HR, referral partners, and executives.'
+  employersBullet2Title = 'Compliance-first assets'
+  employersBullet2Text = 'Each download includes disclosures, sharing language, and support contacts.'
+  employersBullet3Title = 'Happier relocations'
+  employersBullet3Text = 'Transparent pathways keep teams productive even while they move.'
+  employersCTA = 'Launch The Authority Benefit'
+  employersCTALink = 'https://usamortgagespecialist.com/employers'
+
+  blogTitle = 'USA Mortgage Dispatch'
+  blogSubtitle = 'Field notes from national strategists, HR teams, and state specialists working in sync.'
+
+  faqTitle = 'Questions Leaders Ask Before Rolling Out A Mortgage Program'
+  faqSubtitle = 'Forward these to anyone who signs off on relocations or referral partnerships.'
+
+  faq1Question = 'How do we keep messaging consistent across dozens of states?'
+  faq1Answer = 'Centralized templates plus shared dashboards mean every office uses the same scripts, disclosures, and timelines.'
+
+  faq2Question = 'Can HR access specialist updates without chasing email threads?'
+  faq2Answer = 'Yes—intake forms feed our command board so HR can see the exact status, owner, and next milestone.'
+
+  faq3Question = 'How is compliance managed when multiple referral partners are involved?'
+  faq3Answer = 'We log every touchpoint, attach required disclosures, and archive documents so audits stay painless.'
+
+  faq4Question = 'What if a borrower needs cash-out guidance before relocation approvals finish?'
+  faq4Answer = 'We pair the borrower with a state specialist and supply equity calculators plus comms templates for the HR sponsor.'
+
+  ctaTitle = 'Ready To Launch A National Mortgage Authority?'
+  ctaDescription = 'Share your states, partner mix, and HR objectives. We respond with a mapped specialist roster, education plan, and next steps within one business day.'
+  ctaCTA = 'Start My Authority Intake'
+  ctaCTALink = 'https://usamortgagespecialist.com/start'
+
+  [params.theme]
+    name = 'USAMortgageSpecialist Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage', 'national']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B1F3A'
+    backgroundColor = '#F5F7FA'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

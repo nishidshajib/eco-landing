@@ -39,6 +39,7 @@ This repository automatically builds and deploys **dozens of landing page domain
 21. **homeequityloanspecialist.com** ⭐ NEW
 22. **conventionalmortgagerates.com** ⭐ NEW
 23. **nonconformingmortgagerates.com** ⭐ NEW
+24. **usamortgagespecialist.com** ⭐ NEW
 
 ---
 
@@ -99,6 +100,7 @@ hugo server --environment homeequityloanspecialist --port 1361
 hugo server --environment conventionalmortgagerates --port 1362
 hugo server --environment conformingmortgagerates --port 1363
 hugo server --environment nonconformingmortgagerates --port 1364
+hugo server --environment usamortgagespecialist --port 1365
 
 
 Access sites at http://localhost:PORT
@@ -148,6 +150,7 @@ Output directories:
 - `public/conventionalmortgagerates/`
 - `public/conformingmortgagerates/`
 - `public/nonconformingmortgagerates/`
+- `public/usamortgagespecialist/`
 
 ---
 
@@ -206,7 +209,8 @@ config/
 ├── homeequityloanspecialist/    # Home Equity Loan Specialist domain ⭐ NEW
 ├── conventionalmtg/             # ConventionalMTG domain ⭐ NEW
 ├── nonconformingloanofficers/   # NonConforming Loan Officers domain ⭐ NEW
-└── nonconformingmortgagerates/  # NonConforming Mortgage Rates domain ⭐ NEW
+├── nonconformingmortgagerates/  # NonConforming Mortgage Rates domain ⭐ NEW
+└── usamortgagespecialist/       # USA Mortgage Specialist domain ⭐ NEW
 
 content/
 ├── badcreditloanspecialist/      # Content for Bad Credit domain
@@ -231,7 +235,8 @@ content/
 ├── homeequityloanspecialist/    # Content for Home Equity Loan Specialist domain ⭐ NEW
 ├── conventionalmtg/             # Content for ConventionalMTG domain ⭐ NEW
 ├── nonconformingloanofficers/   # Content for NonConforming Loan Officers domain ⭐ NEW
-└── nonconformingmortgagerates/  # Content for NonConforming Mortgage Rates domain ⭐ NEW
+├── nonconformingmortgagerates/  # Content for NonConforming Mortgage Rates domain ⭐ NEW
+└── usamortgagespecialist/       # Content for USA Mortgage Specialist domain ⭐ NEW
 
 public/                           # Built sites (git-ignored)
 ├── badcreditloanspecialist/      # → badcreditloanspecialist.com
@@ -256,7 +261,8 @@ public/                           # Built sites (git-ignored)
 ├── homeequityloanspecialist/    # → homeequityloanspecialist.com ⭐ NEW
 ├── conventionalmtg/             # → conventionalmtg.com ⭐ NEW
 ├── nonconformingloanofficers/   # → nonconformingloanofficers.com ⭐ NEW
-└── nonconformingmortgagerates/  # → nonconformingmortgagerates.com ⭐ NEW
+├── nonconformingmortgagerates/  # → nonconformingmortgagerates.com ⭐ NEW
+└── usamortgagespecialist/       # → usamortgagespecialist.com ⭐ NEW
 ```
 
 ---
