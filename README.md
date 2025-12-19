@@ -41,6 +41,7 @@ This repository automatically builds and deploys **dozens of landing page domain
 23. **nonconformingmortgagerates.com** ⭐ NEW
 24. **usamortgagespecialist.com** ⭐ NEW
 25. **usmortgagespecialist.com** ⭐ NEW
+26. **floridajumbolenders.com** ⭐ NEW
 
 ---
 
@@ -103,6 +104,7 @@ hugo server --environment conformingmortgagerates --port 1363
 hugo server --environment nonconformingmortgagerates --port 1364
 hugo server --environment usamortgagespecialist --port 1365
 hugo server --environment usmortgagespecialist --port 1366
+hugo server --environment floridajumbolenders --port 1367
 
 
 Access sites at http://localhost:PORT
@@ -154,6 +156,7 @@ Output directories:
 - `public/nonconformingmortgagerates/`
 - `public/usamortgagespecialist/`
 - `public/usmortgagespecialist/`
+- `public/floridajumbolenders/`
 
 ---
 
@@ -214,7 +217,8 @@ config/
 ├── nonconformingloanofficers/   # NonConforming Loan Officers domain ⭐ NEW
 ├── nonconformingmortgagerates/  # NonConforming Mortgage Rates domain ⭐ NEW
 ├── usamortgagespecialist/       # USA Mortgage Specialist domain ⭐ NEW
-└── usmortgagespecialist/        # US Mortgage Specialist domain ⭐ NEW
+├── usmortgagespecialist/        # US Mortgage Specialist domain ⭐ NEW
+└── floridajumbolenders/         # Florida Jumbo Lenders domain ⭐ NEW
 
 content/
 ├── badcreditloanspecialist/      # Content for Bad Credit domain
@@ -240,7 +244,9 @@ content/
 ├── conventionalmtg/             # Content for ConventionalMTG domain ⭐ NEW
 ├── nonconformingloanofficers/   # Content for NonConforming Loan Officers domain ⭐ NEW
 ├── nonconformingmortgagerates/  # Content for NonConforming Mortgage Rates domain ⭐ NEW
-└── usamortgagespecialist/       # Content for USA Mortgage Specialist domain ⭐ NEW
+├── usamortgagespecialist/       # Content for USA Mortgage Specialist domain ⭐ NEW
+├── usmortgagespecialist/        # Content for US Mortgage Specialist domain ⭐ NEW
+└── floridajumbolenders/         # Content for Florida Jumbo Lenders domain ⭐ NEW
 
 public/                           # Built sites (git-ignored)
 ├── badcreditloanspecialist/      # → badcreditloanspecialist.com

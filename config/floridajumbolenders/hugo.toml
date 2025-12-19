@@ -1,0 +1,274 @@
+baseURL = 'https://floridajumbolenders.com/'
+languageCode = 'en-us'
+title = 'Florida Jumbo Lenders'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/floridajumbolenders'
+publishDir = 'public/floridajumbolenders'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Florida Jumbo Lenders connects high-net-worth borrowers with specialists who understand luxury markets, jumbo overlays, and Florida property nuances.'
+  author = 'Browse Lenders®'
+  shortName = 'Florida Jumbo'
+  tagline = 'Jumbo Loan Expertise For Florida Luxury Markets'
+  homepage = 'https://floridajumbolenders.com/'
+
+  siteName = 'FloridaJumboLenders.com'
+  siteDescription = 'Specialized jumbo mortgage guidance for Florida luxury properties, connecting borrowers with lenders who know high-balance conforming limits, portfolio products, and coastal insurance requirements.'
+  keywords = ['Florida jumbo loans', 'luxury mortgage Florida', 'high-balance loans', 'jumbo lenders', 'Florida luxury real estate']
+  serviceType = 'Florida Jumbo Mortgage Specialists'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+
+  heroTitle = 'Florida Jumbo Loan Specialists Who Know Luxury Markets'
+  heroSubtitle = 'Access Florida specialists who close high-balance loans in Naples, Miami Beach, Palm Beach, and Tampa luxury markets with transparent overlays, portfolio options, and concierge-level service.'
+  heroImage = 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Find A Jumbo Specialist'
+  heroCTA1Link = 'https://browselenders.com/search/'
+  heroCTA2Text = 'Talk To Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Why Jumbo Lending In Florida Demands Specialized Knowledge'
+  aboutImage = 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Jumbo Programs Tailored For Florida Buyers'
+  programsSubtitle = 'High-balance financing that addresses waterfront risks, condo liability, and luxury appraisal complexity. Every specialist brings documented Florida jumbo closings and transparent overlay guidance.'
+
+  program1Title = 'Coastal Jumbo Mortgages'
+  program1Description = 'Financing for beachfront estates, barrier islands, and canal properties with specialized wind and flood insurance coordination.'
+  program1Image = 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'High-Rise Condo Financing'
+  program2Description = 'Jumbo loans for luxury towers in Miami, Tampa, and Fort Lauderdale with warrantable and non-warrantable expertise.'
+  program2Image = 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Portfolio Jumbo Products'
+  program3Description = 'Non-QM jumbo options for self-employed borrowers, foreign nationals, and complex income scenarios common in Florida luxury markets.'
+  program3Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Explore Jumbo Options'
+  programsCTALink = 'https://floridajumbolenders.com/programs'
+  programsClosingText = 'Every jumbo scenario includes lender overlays, insurance coordination, and appraisal strategy tailored to Florida property types.'
+
+  educationTitle = 'Jumbo Lending Education For Florida Buyers'
+  educationSubtitle = 'Master the nuances of high-balance financing in Florida luxury markets.'
+
+  edu1Title = 'Understanding Jumbo Limits In Florida'
+  edu1Description = 'Learn how conforming loan limits vary by county and when portfolio products become the better option for your property type.'
+  edu1Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Credit Requirements For Jumbo Loans'
+  edu2Description = 'Discover why jumbo lenders demand higher credit scores, lower DTI ratios, and larger reserves than conforming programs.'
+  edu2Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Insurance Challenges In Coastal Florida'
+  edu3Description = 'Navigate wind, flood, and umbrella insurance requirements that complicate jumbo closings on waterfront properties.'
+  edu3Image = 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Appraisal Complexity In Luxury Markets'
+  edu4Description = 'Understand why jumbo appraisals take longer, require comparable analysis across broader geographies, and influence pricing.'
+  edu4Image = 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'Download Jumbo Guides'
+  educationCTALink = 'https://floridajumbolenders.com/guides'
+
+  learningTitle = 'Learning Center — Florida Jumbo Intelligence'
+  learningSubtitle = 'Track loan limits, lender overlays, and insurance requirements specific to Florida luxury markets with credit monitoring tools to maintain optimal jumbo pricing.'
+  learningImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'County-by-county conforming loan limit maps show you exactly when your purchase price triggers jumbo financing requirements.'
+  learningPara2 = 'Lender overlay databases reveal which jumbo specialists accept higher DTI ratios, non-warrantable condos, or foreign national income.'
+  learningPara3 = 'Insurance coordination tools connect you with agents who specialize in coastal wind, flood zone analysis, and excess liability coverage.'
+  learningBullet1 = 'Florida jumbo loan limit tracker'
+  learningBullet2 = 'Lender overlay comparison'
+  learningBullet3 = 'Coastal insurance network'
+  learningBullet4 = 'Luxury appraisal timelines'
+
+  whyChooseTitle = 'Why Florida Jumbo Buyers Trust Our Network'
+  whyChooseSubtitle = 'High-balance loans demand specialists who understand luxury property risks and financing nuances.'
+  whyChoosePara1 = 'Every lender in our network has documented jumbo closings in Florida within the past twelve months and maintains active relationships with luxury appraisers.'
+  whyChoosePara2 = 'We filter specialists by property type expertise—waterfront, high-rise condo, golf estate, or gated community—so you match with someone who knows your market.'
+
+  whyChooseBox1Title = 'Jumbo Overlay Transparency'
+  whyChooseBox1Para = 'See exactly which lenders accept non-warrantable condos, higher loan-to-value ratios, or complex income documentation before you apply.'
+  whyChooseBox1Bullet1 = 'Portfolio product databases'
+  whyChooseBox1Bullet2 = 'DTI and reserve requirements'
+  whyChooseBox1Bullet3 = 'Property type restrictions'
+
+  whyChooseBox2Title = 'Insurance Coordination Experts'
+  whyChooseBox2Para = 'Connect with specialists who coordinate wind, flood, and umbrella policies so insurance never delays your jumbo closing.'
+  whyChooseBox2Bullet1 = 'Coastal insurance referrals'
+  whyChooseBox2Bullet2 = 'Flood zone analysis'
+  whyChooseBox2Bullet3 = 'Citizens Property migration strategies'
+
+  whyChooseBox3Title = 'Luxury Appraisal Networks'
+  whyChooseBox3Para = 'Access appraisers experienced in waterfront estates, penthouses, and golf communities who understand comparable selection challenges.'
+  whyChooseBox3Bullet1 = 'Verified luxury appraisers'
+  whyChooseBox3Bullet2 = 'Rush appraisal options'
+  whyChooseBox3Bullet3 = 'Comparable strategy consultations'
+
+  whyChooseCTA = 'Start My Jumbo Search'
+  whyChooseCTALink = 'https://browselenders.com/search/'
+
+  testimonialsTitle = 'Stories From Florida Jumbo Borrowers'
+  testimonialsSubtitle = 'See how specialized jumbo expertise changed outcomes for luxury buyers.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '"Our waterfront estate appraisal was complex, but the lender knew exactly which appraisers could handle barrier island comparables."'
+  testimonial1Name = 'Thomas R.'
+  testimonial1Subtitle = 'Naples beachfront purchase'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '"The specialist coordinated wind and flood insurance in parallel with underwriting so we closed on time despite hurricane season."'
+  testimonial2Name = 'Linda K.'
+  testimonial2Subtitle = 'Miami Beach condo'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '"Portfolio jumbo let us qualify using our international income without two years of US tax returns."'
+  testimonial3Name = 'Carlos M.'
+  testimonial3Subtitle = 'Brickell high-rise'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '"The lender understood non-warrantable condo rules and found financing when three others declined our building."'
+  testimonial4Name = 'Sarah P.'
+  testimonial4Subtitle = 'Fort Lauderdale tower'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '"Self-employed income documentation was seamless because the specialist knew exactly what portfolio lenders accept."'
+  testimonial5Name = 'David L.'
+  testimonial5Subtitle = 'Tampa golf community'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '"Credit score coaching before we applied saved us a full rate tier on our two million dollar loan."'
+  testimonial6Name = 'Jennifer W.'
+  testimonial6Subtitle = 'Palm Beach estate'
+
+  calculatorsTitle = 'Jumbo Loan Calculators For Florida'
+  calculatorsSubtitle = 'Model high-balance scenarios with tools built for luxury property financing.'
+
+  creditScoreTitle = 'Credit Tier Protection For Jumbo Pricing'
+  creditScoreImage = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Jumbo rates shift dramatically at credit score thresholds. Track your middle credit score and utilization patterns to protect your pricing tier before lenders pull reports.'
+  creditScoreHeading1 = 'Jumbo Score Thresholds'
+  creditScoreText1 = 'See exactly how rates change at 740, 760, and 780 scores for different jumbo loan amounts and property types.'
+  creditScoreHeading2 = 'Utilization Impact Modeling'
+  creditScoreText2 = 'Calculate how paying down credit cards before application affects your jumbo rate tier and total interest cost.'
+  creditScoreHeading3 = 'Reserve Requirement Planning'
+  creditScoreText3 = 'Model how liquid reserves, retirement accounts, and investment holdings satisfy jumbo lender reserve rules.'
+  creditScoreCTA = 'Visit Middle Credit Score®'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employers & Relocation Partners'
+  employersSubtitle = 'Support executives and high earners relocating to Florida luxury markets.'
+  employersImage = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Provide jumbo mortgage guidance as a relocation benefit, connecting relocating executives with specialists who understand luxury Florida markets. Equity modeling tools help teams plan cash-out scenarios alongside relocation financing.'
+  employersBullet1Title = 'Executive relocation support'
+  employersBullet1Text = 'White-label jumbo lending resources for HR teams managing C-suite moves to Miami, Tampa, and Naples.'
+  employersBullet2Title = 'Portfolio jumbo education'
+  employersBullet2Text = 'Workshops explaining non-QM options for executives with equity compensation, deferred bonuses, or international income.'
+  employersBullet3Title = 'Coastal insurance coordination'
+  employersBullet3Text = 'Connect relocating employees with insurance agents who specialize in Florida waterfront and high-value properties.'
+  employersCTA = 'Launch Executive Program'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+
+  blogTitle = 'Florida Jumbo Lending Insights'
+  blogSubtitle = 'Expert guidance on luxury mortgage financing, insurance challenges, and Florida market dynamics.'
+
+  faqTitle = 'Questions Florida Jumbo Buyers Ask'
+  faqSubtitle = 'Get clarity on high-balance loan requirements and Florida-specific challenges.'
+
+  faq1Question = 'What loan amount triggers jumbo financing in Florida?'
+  faq1Answer = 'Conforming loan limits vary by county. Miami-Dade, Broward, and Palm Beach have higher limits than inland counties. Any loan above the county limit requires jumbo financing with stricter guidelines.'
+
+  faq2Question = 'Why do jumbo lenders require higher credit scores?'
+  faq2Answer = 'Jumbo loans carry more risk because they exceed government-backed limits. Lenders compensate by requiring 700+ scores, lower debt-to-income ratios, and larger cash reserves.'
+
+  faq3Question = 'How does coastal property affect jumbo approval?'
+  faq3Answer = 'Waterfront properties require wind and flood insurance that complicate underwriting. Lenders want proof of coverage and reserve funds to cover higher premiums before approving jumbo loans.'
+
+  faq4Question = 'What if my Florida condo is non-warrantable?'
+  faq4Answer = 'Non-warrantable condos—those with litigation, rental ratios above limits, or incomplete projects—require portfolio jumbo lenders willing to accept higher risk in exchange for stricter terms.'
+
+  ctaTitle = 'Ready To Explore Florida Jumbo Financing?'
+  ctaDescription = 'Share your property type, loan amount, and credit profile. We will match you with jumbo specialists experienced in your Florida market and provide transparent overlays within one business day.'
+  ctaCTA = 'Start My Jumbo Match'
+  ctaCTALink = 'https://middlecreditscore.com/'
+
+  [params.theme]
+    name = 'FloridaJumboLenders Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'jumbo loans', 'Florida']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B1F3A'
+    backgroundColor = '#F5F7FA'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'
