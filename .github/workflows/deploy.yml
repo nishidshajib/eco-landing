@@ -72,7 +72,19 @@ jobs:
           # --only-newer: only upload files that are newer
           # --ignore-time: ignore time when deciding which files to upload
           # Credentials read automatically from ~/.netrc
-          lftp -c "set ssl:verify-certificate no; set ftp:ssl-allow yes; set net:timeout 10; set net:max-retries 2; set ftp:use-feat no; open $FTP_HOST; mirror -Rev --delete-first --only-newer --parallel=2 --verbose=0 public/$domain/ /domains/$clean/public_html/ || echo 'Deployment completed with warnings'; bye"
+          lftp -c "set ssl:verify-certificate no; \
+                    set ftp:ssl-allow yes; \
+                    set ftp:passive-mode on; \
+                    set net:timeout 30; \
+                    set net:max-retries 5; \
+                    set net:persist-retries 2; \
+                    set net:reconnect-interval-base 5; \
+                    set net:reconnect-interval-max 60; \
+                    set ftp:use-feat no; \
+                    set dns:order inet; \
+                    open $FTP_HOST; \
+                    mirror -Rev --delete-first --only-newer --parallel=2 --verbose=0 public/$domain/ /domains/$clean/public_html/ || echo 'Deployment completed with warnings'; \
+                    bye"
         done
         
         # Clean up credentials file
