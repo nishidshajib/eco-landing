@@ -1,0 +1,281 @@
+baseURL = "https://brokerstx.com/"
+languageCode = "en-us"
+title = "Brokers Texas"
+theme = "heloc-blog"
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = "content/brokerstx"
+publishDir = "public/brokerstx"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    disableWatch = true
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Texas mortgage brokers who shop rates across dozens of lenders—FHA, conventional, VA, jumbo, and non-QM—with transparent pricing for every borrower profile."
+  author = "Browse Lenders®"
+  shortName = "Brokers Texas"
+  tagline = "Texas Mortgage Broker Directory & Rate Power Plays"
+  homepage = "https://brokerstx.com/"
+
+  siteName = "Brokers Texas"
+  siteDescription = "Find Texas mortgage brokers who deliver power-rate shopping across lenders, manage complex files, and provide transparent advice for first-time buyers, veterans, self-employed, and luxury borrowers."
+  keywords = ["Texas mortgage brokers", "broker rate shopping", "Houston mortgage brokers", "Dallas mortgage brokers", "VA mortgage brokers Texas", "jumbo broker Texas"]
+  serviceType = "Texas Mortgage Broker Services"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Brokers Texas – Power Rate Shopping Across Lenders"
+  heroSubtitle = "Licensed Texas mortgage brokers who compare FHA, conventional, VA, jumbo, and specialty programs—power moves for better pricing, clearer terms, and faster closings."
+  heroImage = "https://images.unsplash.com/photo-1714974528703-e5ad41abc259?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Texas Brokers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Texas Homebuyers Choose Mortgage Brokers"
+  aboutImage = "https://images.unsplash.com/photo-1714974528693-f77f6fcc56af?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Brokered Mortgage Programs in Texas"
+  programsSubtitle = "Understand the power programs brokers shop daily: FHA, conventional, VA, jumbo, and non-QM."
+
+  program1Title = "FHA & First-Time Buyer Power Plays"
+  program1Description = "FHA flexibility with 3.5% down, manual underwriting, and credit coaching. Brokers target lenders that price aggressively for 580-640 credit tiers."
+  program1Image = "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA & Conventional Rate Wins"
+  program2Description = "Zero-down VA with funding-fee strategy, plus conventional pricing with PMI minimization and lender credits. Brokers pit lenders against each other to drop APR."
+  program2Image = "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo & Non-QM Flex"
+  program3Description = "Texas luxury and self-employed borrowers need portfolio and bank-statement options. Brokers source niche jumbo lenders and non-QM investors for complex income."
+  program3Image = "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare Texas Brokers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Each program demands different overlays, pricing grids, and documentation. Brokers orchestrate the fastest, most cost-effective path for your profile."
+
+  educationTitle = "Broker Education Center"
+  educationSubtitle = "Power guides on shopping, pricing, underwriting strategy, and closing execution."
+
+  edu1Title = "How Brokers Win Rate Battles"
+  edu1Description = "Requesting multiple lender quotes, structuring files for AUS and manual review, and timing locks to maximize pricing concessions."
+  edu1Image = "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Documentation Playbook"
+  edu2Description = "What underwriters need for W2, self-employed, bonus/commission, and RSU income—and how brokers package files to reduce conditions."
+  edu2Image = "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Rate Lock Timing"
+  edu3Description = "Lock vs. float decisions, float-down options, and how market signals inform timing for Texas pipelines."
+  edu3Image = "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Closing With Fewer Conditions"
+  edu4Description = "How brokers front-load appraisals, title, and credit supplements to clear conditions early and avoid last-minute delays."
+  edu4Image = "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "View Broker Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Learning Center – Texas Broker Power Keys"
+  learningSubtitle = "Know the levers: pricing grids, credits, lender overlays, and lock timing."
+  learningImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Texas borrowers gain leverage by understanding how brokers negotiate pricing, structure files, and time locks. This site focuses on power keys you can use before signing."
+  learningBullet1 = "Use the <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">Texas broker directory</a> to compare lenders without multiple hard inquiries."
+  learningBullet2 = "Check your <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">credit tier</a> to predict pricing brackets and plan improvements."
+  learningBullet3 = "Run <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">payment and APR scenarios</a> before locking to see total cost."
+  learningBullet4 = "Ask for lender credits vs. points—brokers can shift costs depending on your timeline."
+  learningPara2 = "No teaser rates, no pressure—just transparent broker education built for Texas borrowers."
+  learningPara3 = "Start with Browse Lenders®, learn the power keys, then choose the broker who earns your trust."
+
+  whyChooseTitle = "Why Work With Texas Mortgage Brokers"
+  whyChooseSubtitle = "Power rate competition, faster clear-to-close, and fewer surprises."
+  whyChoosePara1 = "Brokers unlock wider lender coverage, aggressive jumbo and VA specialists, and credit-union pricing most borrowers never see on their own."
+  whyChoosePara2 = "Education-first approach: clear APR math, lock timing advice, and condition management—so you close on time with transparent costs."
+
+  whyChooseBox1Title = "Rate Competition Power"
+  whyChooseBox1Para = "Brokers shop 10-50 lenders. That competition drops APR and opens lender credits you won't see when you apply directly."
+  whyChooseBox1Bullet1 = "Side-by-side APR comparisons across lenders"
+  whyChooseBox1Bullet2 = "Negotiated lender credits to offset closing costs"
+  whyChooseBox1Bullet3 = "Pricing exceptions for strong compensating factors"
+
+  whyChooseBox2Title = "File Strength & Speed"
+  whyChooseBox2Para = "Front-loaded docs, clean AUS runs, and credit supplements reduce conditions. Brokers aim for faster clear-to-close with fewer surprises."
+  whyChooseBox2Bullet1 = "Document checklists tailored to your income type"
+  whyChooseBox2Bullet2 = "Credit supplements to fix reporting errors quickly"
+  whyChooseBox2Bullet3 = "Underwriter-ready files to minimize conditions"
+
+  whyChooseBox3Title = "Lock Timing & Protection"
+  whyChooseBox3Para = "Market monitoring, float-down options, and rate-cap strategies reduce risk during volatile weeks."
+  whyChooseBox3Bullet1 = "Lock vs. float guidance with market signals"
+  whyChooseBox3Bullet2 = "Float-down and renegotiation tactics"
+  whyChooseBox3Bullet3 = "Cap and extension planning for complex deals"
+
+  whyChooseCTA = "Find Texas Brokers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Texas Borrower Wins"
+  testimonialsSubtitle = "Real borrowers who used broker power plays to save."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = """"My broker pitted three lenders against each other. End result: lower APR and $3,200 in lender credits.""""
+  testimonial1Name = "Verified Texas Homeowner"
+  testimonial1Subtitle = "APR drop + credits"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = """"Self-employed with volatile income. Broker found a bank-statement lender and closed in 28 days.""""
+  testimonial2Name = "Verified Austin Borrower"
+  testimonial2Subtitle = "Bank-statement approval"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = """"We compared VA offers. Broker cut our funding fee with a seller credit strategy and saved $150/month.""""
+  testimonial3Name = "Verified Veteran"
+  testimonial3Subtitle = "VA funding fee win"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = """"Jumbo condo in Dallas. Broker secured a portfolio lender when banks declined the HOA. Closed on time.""""
+  testimonial4Name = "Verified Dallas Buyer"
+  testimonial4Subtitle = "Jumbo portfolio approval"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = """"Rate-lock timing saved us when the Fed signaled hikes. Locked early, avoided a 0.375% increase.""""
+  testimonial5Name = "Verified Houston Buyer"
+  testimonial5Subtitle = "Lock timing win"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = """"Clear explanations, no pressure, and the broker showed total cost—not teaser rates. We trusted the math.""""
+  testimonial6Name = "Verified San Antonio Buyer"
+  testimonial6Subtitle = "Transparent guidance"
+
+  calculatorsTitle = "Mortgage Planning Tools for Texas"
+  calculatorsSubtitle = "Neutral calculators and APR modeling before you lock."
+
+  creditScoreTitle = "Credit Score Impact on Brokered Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers drive pricing. Brokers show how 10-30 point improvements drop margins and open better lenders."
+  creditScoreHeading1 = "Score Tiers"
+  creditScoreText1 = "Tiered pricing: 780+, 760-779, 740-759, 720-739, 700-719, 680-699, 660-679, 640-659, 620-639, 600-619."
+  creditScoreHeading2 = "Rate Impact"
+  creditScoreText2 = "Each tier shifts margins; brokers target the next tier to cut APR."
+  creditScoreHeading3 = "Optimization Strategies"
+  creditScoreText3 = "Utilization drops, rapid rescores, and dispute support can move you into cheaper tiers."
+  creditScoreCTA = "Explore Credit Education"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers & Member Groups"
+  employersSubtitle = "Add broker literacy to benefits across Texas."
+  employersImage = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Employers, associations, and unions can share broker education and vetted directories so teams avoid junk fees and teaser-rate traps."
+  employersBullet1Title = "No-cost broker education"
+  employersBullet1Text = "Plug-and-play modules on rate shopping, APR math, and lender credits."
+  employersBullet2Title = "Credit readiness"
+  employersBullet2Text = "Guides for improving scores before application windows."
+  employersBullet3Title = "Transparent comparisons"
+  employersBullet3Text = "Tools to compare brokers, lenders, and APR—not just rate quotes."
+  employersCTA = "Add Broker Education"
+  employersCTALink = "https://browselenders.com/employer-benefits/"
+
+  blogTitle = "Texas Broker Insights"
+  blogSubtitle = "Power keys on shopping, pricing, and execution for Texas borrowers."
+
+  faqTitle = "Broker Questions in Texas"
+  faqSubtitle = "Straight answers on how brokers work and how to use them."
+
+  faq1Question = "Do brokers charge fees in Texas?"
+  faq1Answer = "Brokers are paid by lenders (lender-paid comp) or via borrower-paid origination. Ask for total APR math and who pays compensation."
+
+  faq2Question = "How many lenders should a broker shop?"
+  faq2Answer = "Strong brokers quote 10-30 lenders. Ask how many they shop and how they present APR and lender credits."
+
+  faq3Question = "Do brokers hurt my credit with many inquiries?"
+  faq3Answer = "Brokers use one credit pull to shop multiple lenders. Rate shopping within a short window counts as a single event for scoring."
+
+  faq4Question = "Can brokers help self-employed or jumbo?"
+  faq4Answer = "Yes—bank-statement, asset-depletion, and portfolio jumbo programs are broker strengths."
+
+  faq5Question = "When should I lock my rate?"
+  faq5Answer = "Lock when markets are rising or volatile; float only with a clear plan and float-down options. Your broker should explain the risk."
+
+  faq6Question = "Can I negotiate broker compensation?"
+  faq6Answer = "Yes. You can choose lender-paid vs. borrower-paid. Compare APR including compensation to see the real cost."
+
+  ctaTitle = "Ready to Work With a Texas Broker?"
+  ctaDescription = "Learn the power keys, compare lenders through brokers, and lock with confidence."
+  ctaCTA = "Find Texas Brokers"
+  ctaCTALink = "https://www.browselenders.com/search/"
+
+  [params.theme]
+    name = "Brokers Texas Theme"
+    license = "MIT"
+    licenseLink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+    tags = ["blog", "responsive", "mortgage brokers", "Texas"]
+    features = ["blog", "responsive"]
+    minVersion = "0.100.0"
+
+  favicon = "/favicon.png"
+
+  [params.pwa]
+    display = "standalone"
+    themeColor = "#0B2E4E"
+    backgroundColor = "#F6F8FB"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "192x192"
+      type = "image/png"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "512x512"
+      type = "image/png"
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = "application/json"
+    baseName = "manifest"
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = "application/toml"
+    baseName = "theme"
+    isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "MANIFEST", "THEMETOML"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+[permalinks]
+  blogs = "/blogs/:slug/"

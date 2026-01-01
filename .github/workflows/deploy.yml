@@ -18,6 +18,21 @@ jobs:
       with:
         fetch-depth: 0
     
+    - name: Fix localhost URLs in public folder
+      run: |
+        echo "🔧 Replacing localhost URLs with production domains..."
+        for domain in $(ls -d config/*/ 2>/dev/null | xargs -n1 basename | grep -v '^_default$'); do
+          cfg="config/$domain/hugo.toml"
+          if [ -f "$cfg" ]; then
+            url=$(grep baseURL "$cfg" | head -1 | sed -E 's/.*["\x27]([^"\x27]+)["\x27].*/\1/')
+            if [ -n "$url" ]; then
+              echo "  Fixing $domain: localhost -> $url"
+              find "public/$domain" -type f -name "*.html" -exec sed -i "s|http://localhost:[0-9]*|$url|g" {} \;
+            fi
+          fi
+        done
+        echo "✅ localhost URLs fixed"
+
     - name: Deploy All Domains
       env:
         FTP_USER: ${{ secrets.FTP_USERNAME }}
