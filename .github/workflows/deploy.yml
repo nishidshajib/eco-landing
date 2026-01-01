@@ -47,7 +47,7 @@ jobs:
           fi
           
           # Extract unique domain names from changed files
-          DEPLOY_LIST=$(echo "$CHANGED_FILES" | grep -E '^(content|config|public)/' | sed -E 's|^(content|config|public)/([^/]+)/.*|\2|' | sort -u | grep -v '^_default$' | tr '\n' ' ')
+          DEPLOY_LIST=$(echo "$CHANGED_FILES" | grep -E '^(content|config|public)/' | cut -d'/' -f2 | sort -u | grep -v '^_default$' | tr '\n' ' ')
           
           if [ -z "$DEPLOY_LIST" ]; then
             echo "No domain-specific changes detected, skipping deployment"
