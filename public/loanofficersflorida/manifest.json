@@ -1,18 +1,1 @@
-{
-  "name": "Loan Officers Florida",
-  "short_name": "Florida Loan Officers",
-  "description": "Florida-focused mortgage education and loan-officer directory that helps consumers compare state-licensed professionals with transparent, educational guidance.",
-  "start_url": "http://localhost:1368/",
-  "display": "standalone",
-  "theme_color": "#0B2E4E",
-  "background_color": "#F6F8FB",
-  "icons": [{
-      "src": "/favicon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },{
-      "src": "/favicon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }]
-}
+{"name":"Loan Officers Florida","short_name":"Florida Loan Officers","description":"Florida-focused mortgage education and loan-officer directory that helps consumers compare state-licensed professionals with transparent, educational guidance.","start_url":"https://loanofficersflorida.com/","display":"standalone","theme_color":"#0B2E4E","background_color":"#F6F8FB","icons":[{"src":"/favicon.png","sizes":"192x192","type":"image/png"},{"src":"/favicon.png","sizes":"512x512","type":"image/png"}]}

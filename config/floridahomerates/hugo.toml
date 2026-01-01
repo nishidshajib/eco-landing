@@ -1,4 +1,4 @@
-baseURL = 'https://floridahomerates.com/'
+baseURL = 'https://floridahomerates.com'
 languageCode = 'en-us'
 title = 'Florida Home Rates'
 theme = 'heloc-blog'

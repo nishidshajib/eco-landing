@@ -1,4 +1,4 @@
-baseURL = 'https://www.refimortgagebrokers.com/'
+baseURL = 'https://www.refimortgagebrokers.com'
 languageCode = 'en-us'
 title = 'Refi Mortgage Brokers'
 theme = 'heloc-blog'

@@ -1,4 +1,4 @@
-baseURL = 'https://refinancemtgs.com/'
+baseURL = 'https://refinancemtgs.com'
 languageCode = 'en-us'
 title = 'Refinance MTGs'
 theme = 'heloc-blog'

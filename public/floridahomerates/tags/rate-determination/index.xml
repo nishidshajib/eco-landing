@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Rate Determination on Florida Home Rates</title>
-    <link>http://localhost:1370/tags/rate-determination/</link>
-    <description>Recent content in Rate Determination on Florida Home Rates</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1370/tags/rate-determination/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How Florida Mortgage Rates Are Actually Determined: The Truth Behind Rate Quotes</title>
-      <link>http://localhost:1370/blogs/how-florida-mortgage-rates-are-actually-determined-the-truth-behind-rate-quotes/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1370/blogs/how-florida-mortgage-rates-are-actually-determined-the-truth-behind-rate-quotes/</guid>
-      <description>&lt;p&gt;You see &amp;ldquo;3.75% rates!&amp;rdquo; on a billboard. You check online and see &amp;ldquo;3.50% available now!&amp;rdquo; Then you apply and suddenly your rate is 4.25%. What happened? Here&amp;rsquo;s how Florida mortgage rates actually work—and why advertised rates rarely apply to your situation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-three-layers-of-mortgage-rate-pricing&#34;&gt;The Three Layers of Mortgage Rate Pricing&lt;/h2&gt;&#xA;&lt;p&gt;Mortgage rates aren&amp;rsquo;t pulled from thin air. They&amp;rsquo;re built in layers:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Layer 1: Base Rate (Market-Driven)&lt;/strong&gt;&#xA;The foundation comes from the 10-year Treasury yield and mortgage-backed securities (MBS) market. When bond investors demand higher returns, mortgage rates rise. When they accept lower returns, rates drop.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rate Determination on Florida Home Rates</title><link>https://floridahomerates.com/tags/rate-determination/</link><description>Recent content in Rate Determination on Florida Home Rates</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://floridahomerates.com/tags/rate-determination/index.xml" rel="self" type="application/rss+xml"/><item><title>How Florida Mortgage Rates Are Actually Determined: The Truth Behind Rate Quotes</title><link>https://floridahomerates.com/blogs/how-florida-mortgage-rates-are-actually-determined-the-truth-behind-rate-quotes/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>https://floridahomerates.com/blogs/how-florida-mortgage-rates-are-actually-determined-the-truth-behind-rate-quotes/</guid><description>&lt;p&gt;You see &amp;ldquo;3.75% rates!&amp;rdquo; on a billboard. You check online and see &amp;ldquo;3.50% available now!&amp;rdquo; Then you apply and suddenly your rate is 4.25%. What happened? Here&amp;rsquo;s how Florida mortgage rates actually work—and why advertised rates rarely apply to your situation.&lt;/p&gt;
+&lt;h2 id="the-three-layers-of-mortgage-rate-pricing"&gt;The Three Layers of Mortgage Rate Pricing&lt;/h2&gt;
+&lt;p&gt;Mortgage rates aren&amp;rsquo;t pulled from thin air. They&amp;rsquo;re built in layers:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Layer 1: Base Rate (Market-Driven)&lt;/strong&gt;
+The foundation comes from the 10-year Treasury yield and mortgage-backed securities (MBS) market. When bond investors demand higher returns, mortgage rates rise. When they accept lower returns, rates drop.&lt;/p&gt;</description></item></channel></rss>

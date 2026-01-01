@@ -1,4 +1,4 @@
-baseURL = 'https://homemortgagescalculator.com/'
+baseURL = 'https://homemortgagescalculator.com'
 languageCode = 'en-us'
 title = 'Home Mortgage Calculator'
 theme = 'heloc-blog'

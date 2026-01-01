@@ -1,4 +1,4 @@
-baseURL = 'https://www.fhaloanofficers.com/'
+baseURL = 'https://www.fhaloanofficers.com'
 languageCode = 'en-us'
 title = 'FHA Loan Officers'
 theme = 'heloc-blog'

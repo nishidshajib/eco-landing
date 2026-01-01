@@ -1,4 +1,4 @@
-baseURL = 'https://loanofficersflorida.com/'
+baseURL = 'https://loanofficersflorida.com'
 languageCode = 'en-us'
 title = 'Loan Officers Florida'
 theme = 'heloc-blog'

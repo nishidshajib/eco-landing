@@ -1,4 +1,4 @@
-baseURL = 'https://homeloanpurchase.com/'
+baseURL = 'https://homeloanpurchase.com'
 languageCode = 'en-us'
 title = 'Home Loan Purchase'
 theme = 'heloc-blog'

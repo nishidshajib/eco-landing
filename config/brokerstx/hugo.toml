@@ -1,4 +1,4 @@
-baseURL = "https://brokerstx.com/"
+baseURL = "https://brokerstx.com"
 languageCode = "en-us"
 title = "Brokers Texas"
 theme = "heloc-blog"

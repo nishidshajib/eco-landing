@@ -1,4 +1,4 @@
-baseURL = 'https://jumboloanofficers.com/'
+baseURL = 'https://jumboloanofficers.com'
 languageCode = 'en-us'
 title = 'Jumbo Loan Officers'
 theme = 'heloc-blog'

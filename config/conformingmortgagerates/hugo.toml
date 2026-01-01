@@ -1,4 +1,4 @@
-baseURL = 'https://conformingmortgagerates.com/'
+baseURL = 'https://conformingmortgagerates.com'
 languageCode = 'en-us'
 title = 'Conforming Mortgage Rates'
 theme = 'heloc-blog'

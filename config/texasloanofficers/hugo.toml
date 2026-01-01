@@ -1,4 +1,4 @@
-baseURL = 'https://texasloanofficers.com/'
+baseURL = 'https://texasloanofficers.com'
 languageCode = 'en-us'
 title = 'Texas Loan Officers'
 theme = 'heloc-blog'

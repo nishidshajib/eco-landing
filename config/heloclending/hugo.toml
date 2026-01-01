@@ -1,4 +1,4 @@
-baseURL = 'https://heloclending.com/'
+baseURL = 'https://heloclending.com'
 languageCode = 'en-us'
 title = 'HELOC Lending'
 theme = 'heloc-blog'

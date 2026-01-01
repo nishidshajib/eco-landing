@@ -1,4 +1,4 @@
-baseURL = 'https://conforminghomerates.com/'
+baseURL = 'https://conforminghomerates.com'
 languageCode = 'en-us'
 title = 'Conforming Home Rates'
 theme = 'heloc-blog'

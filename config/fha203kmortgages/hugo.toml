@@ -1,4 +1,4 @@
-baseURL = 'https://fha203kmortgages.com/'
+baseURL = 'https://fha203kmortgages.com'
 languageCode = 'en-us'
 title = 'FHA 203(k) Mortgages'
 theme = 'heloc-blog'

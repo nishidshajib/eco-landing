@@ -1,4 +1,4 @@
-baseURL = 'https://onlineheloc.com/'
+baseURL = 'https://onlineheloc.com'
 languageCode = 'en-us'
 title = 'Online HELOC'
 theme = 'heloc-blog'

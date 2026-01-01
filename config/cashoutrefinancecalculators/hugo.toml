@@ -1,4 +1,4 @@
-baseURL = 'https://cashoutrefinancecalculators.com/'
+baseURL = 'https://cashoutrefinancecalculators.com'
 languageCode = 'en-us'
 title = 'Cash-Out Refinance Calculators'
 theme = 'heloc-blog'

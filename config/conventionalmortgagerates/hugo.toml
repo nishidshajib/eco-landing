@@ -1,4 +1,4 @@
-baseURL = 'https://conventionalmortgagerates.com/'
+baseURL = 'https://conventionalmortgagerates.com'
 languageCode = 'en-us'
 title = 'Conventional Mortgage Rates'
 theme = 'heloc-blog'

@@ -1,4 +1,4 @@
-baseURL = 'https://conventionalloanofficers.com/'
+baseURL = 'https://conventionalloanofficers.com'
 languageCode = 'en-us'
 title = 'Conventional Loan Officers'
 theme = 'heloc-blog'

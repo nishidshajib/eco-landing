@@ -1,4 +1,4 @@
-baseURL = 'https://refifl.com/'
+baseURL = 'https://refifl.com'
 languageCode = 'en-us'
 title = 'Refinance Florida'
 theme = 'heloc-blog'

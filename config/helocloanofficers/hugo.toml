@@ -1,4 +1,4 @@
-baseURL = 'https://helocloanofficers.com/'
+baseURL = 'https://helocloanofficers.com'
 title = 'HELOC Loan Officers'
 contentDir = 'content/helocloanofficers'
 publishDir = 'public/helocloanofficers'
