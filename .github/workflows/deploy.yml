@@ -42,19 +42,19 @@ jobs:
           CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
           
           if [ -z "$CHANGED_FILES" ]; then
-            echo "No changes detected, skipping deployment"
-            exit 0
+            echo "No changes detected - deploying all domains for first-time setup"
+            DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+          else
+            # Extract unique domain names from changed files
+            DEPLOY_LIST=$(echo "$CHANGED_FILES" | grep -E '^(content|config|public)/' | cut -d'/' -f2 | sort -u | grep -v '^_default$' | tr '\n' ' ')
+            
+            if [ -z "$DEPLOY_LIST" ]; then
+              echo "No domain-specific changes - deploying all domains"
+              DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+            else
+              echo "Deploying changed domains: $DEPLOY_LIST"
+            fi
           fi
-          
-          # Extract unique domain names from changed files
-          DEPLOY_LIST=$(echo "$CHANGED_FILES" | grep -E '^(content|config|public)/' | cut -d'/' -f2 | sort -u | grep -v '^_default$' | tr '\n' ' ')
-          
-          if [ -z "$DEPLOY_LIST" ]; then
-            echo "No domain-specific changes detected, skipping deployment"
-            exit 0
-          fi
-          
-          echo "Deploying changed domains: $DEPLOY_LIST"
         fi
         
         for domain in $DEPLOY_LIST; do
