@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Connect with FHA 203(k) loan officers who specialize in fixer-upper and rehab financing—from Standard and Limited 203(k) loans to credit-readiness guidance, contractor coordination, and buying distressed properties with renovation financing in one loan."
+homepage = "https://fha203kloanofficers.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://fha203kloanofficers.com/"

@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "FHA home mortgage loans with 3.5% down payments and flexible credit requirements—connect with FHA specialists for qualification guidance, credit-score improvement strategies, and first-time homebuyer financing."
+homepage = "https://fhahomemortgageloan.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://fhahomemortgageloan.com/"

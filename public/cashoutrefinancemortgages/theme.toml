@@ -1,0 +1,12 @@
+name = "Cash-Out Refinance Mortgages Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Cash-out refinance mortgage strategy and home equity awareness for homeowners—understand equity access, rate analysis, debt consolidation, and credit preparation for cash-out refinancing"
+homepage = "https://cashoutrefinancemortgages.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Cash-Out Refinance®"
+  homepage = "https://cashoutrefinancemortgages.com/"

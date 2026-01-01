@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Comprehensive mortgage calculators and financial wellness tools for smart home buying budget planning—calculate affordability, monthly payments, debt-to-income ratios, down payment strategies, and long-term financial impact with interactive tools designed for informed homebuyer decision-making and financial health optimization."
+homepage = "https://onlinemortgagescalculator.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Online Mortgage Calculator®"
+  homepage = "https://onlinemortgagescalculator.com/"

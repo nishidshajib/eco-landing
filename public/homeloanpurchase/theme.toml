@@ -1,0 +1,12 @@
+name = "Home Loan Purchase Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "First-time buyer guidance, documentation prep, and confidence-building checklists for every step between curiosity and clear-to-close."
+homepage = "https://homeloanpurchase.com/"
+tags = ["blog", "responsive", "home loan", "first-time buyer"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://homeloanpurchase.com/"

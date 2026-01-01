@@ -1,0 +1,12 @@
+name = "Jumbo Loan Officers Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Optimize jumbo-mortgage applications with vetted officers, private-client planning tools, and SEO-ready resources built for seven-figure approvals."
+homepage = "https://jumboloanofficers.com/"
+tags = ["blog", "responsive", "jumbo loans", "mortgage"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://jumboloanofficers.com/"

@@ -1,0 +1,12 @@
+name = "Conforming Home Loan Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Compare conforming home loan options, qualification standards, and lender programs with transparent education and verified support."
+homepage = "https://conforminghomeloan.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://conforminghomeloan.com/"

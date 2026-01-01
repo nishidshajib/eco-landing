@@ -1,0 +1,12 @@
+name = "New Construction Mortgage Brokers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Connect with construction mortgage brokers specializing in builder financing, construction-to-permanent loans, custom home builds, spec home purchases, and renovation construction—guiding borrowers through every phase of new construction financing nationwide"
+homepage = "https://newconstructionmortgagebrokers.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://newconstructionmortgagebrokers.com/"

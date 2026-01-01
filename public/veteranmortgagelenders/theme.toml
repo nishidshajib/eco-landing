@@ -1,0 +1,12 @@
+name = "Veteran Mortgage Lenders Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "VA mortgage fluency, credit clean-up plans, and benefit-backed scenario coaching for service members and military families."
+homepage = "https://veteranmortgagelenders.com/"
+tags = ["blog", "responsive", "VA loan", "mortgage"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://veteranmortgagelenders.com/"

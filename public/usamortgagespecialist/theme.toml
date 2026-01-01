@@ -1,0 +1,12 @@
+name = "USAMortgageSpecialist Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "USA Mortgage Specialist is the national authority hub for mortgage strategists, HR partners, and referral sources who need state-by-state expertise plus enterprise-ready education."
+homepage = "https://usamortgagespecialist.com/"
+tags = ["blog", "responsive", "mortgage", "national"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://usamortgagespecialist.com/"

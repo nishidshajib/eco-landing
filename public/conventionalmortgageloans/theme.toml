@@ -1,0 +1,12 @@
+name = "Conventional Mortgage Loans Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Expert conventional mortgage loan solutions with competitive rates and professional guidance for homebuyers nationwide"
+homepage = "https://conventionalmortgageloans.com/"
+tags = ["blog", "responsive", "mortgage", "jumbo loans", "luxury homes"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://conventionalmortgageloans.com/"

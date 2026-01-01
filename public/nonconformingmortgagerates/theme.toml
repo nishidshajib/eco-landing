@@ -1,0 +1,12 @@
+name = "NonConformingMortgageRates Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "NonConformingMortgageRates.com turns jumbo, non-QM, and expanded-criteria pricing into transparent narratives that lenders and borrowers can both trust."
+homepage = "https://nonconformingmortgagerates.com/"
+tags = ["blog", "responsive", "mortgage", "rates"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://nonconformingmortgagerates.com/"

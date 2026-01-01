@@ -1,0 +1,12 @@
+name = "Conforming Mortgage Loans Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Compare conforming mortgage loans backed by Fannie Mae and Freddie Mac with competitive rates, flexible terms, and transparent qualification."
+homepage = "https://helocloanofficers.com/"
+tags = ["blog", "responsive", "mortgage", "conforming loans", "conventional loans"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Conforming Loans Team"
+  homepage = "https://helocloanofficers.com/"

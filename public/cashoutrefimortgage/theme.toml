@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Cash-out refinance mortgage guidance focused on equity access and debt consolidation—learn strategic refinancing, rate analysis, credit preparation, and when cash-out refi makes financial sense for debt payoff"
+homepage = "https://cashoutrefimortgage.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Cash-Out Refi Mortgage®"
+  homepage = "https://cashoutrefimortgage.com/"

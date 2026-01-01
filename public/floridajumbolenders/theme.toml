@@ -1,0 +1,12 @@
+name = "FloridaJumboLenders Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Florida Jumbo Lenders connects high-net-worth borrowers with specialists who understand luxury markets, jumbo overlays, and Florida property nuances."
+homepage = "https://floridajumbolenders.com/"
+tags = ["blog", "responsive", "jumbo loans", "Florida"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://floridajumbolenders.com/"

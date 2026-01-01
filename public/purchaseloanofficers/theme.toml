@@ -1,0 +1,12 @@
+name = "Purchase Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Connect with purchase loan officers who specialize in home-buying financing—from pre-approval through closing, helping first-time and move-up buyers navigate down payments, credit requirements, and lender matching for purchase mortgages"
+homepage = "https://purchaseloanofficers.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://purchaseloanofficers.com/"

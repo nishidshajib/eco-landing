@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Bad credit loan specialists who approve 500-579 credit scores through manual underwriting—FHA, subprime conventional, portfolio loans, and non-QM options for consumers rebuilding credit"
+homepage = "https://www.badcreditloanspecialist.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://www.badcreditloanspecialist.com/"

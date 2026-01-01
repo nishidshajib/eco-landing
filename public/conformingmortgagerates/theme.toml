@@ -1,0 +1,12 @@
+name = "ConformingMortgageRates Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "ConformingMortgageRates.com delivers lender-ready rate briefings with state-by-state visuals, underwriting context, and built-in support scripts."
+homepage = "https://conformingmortgagerates.com/"
+tags = ["blog", "responsive", "mortgage", "rates"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://conformingmortgagerates.com/"

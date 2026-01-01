@@ -1,0 +1,12 @@
+name = "Cash Out Refinance Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Strategic cash-out refinancing solutions with rate comparisons, equity calculators, and expert guidance for debt consolidation and home improvements"
+homepage = "https://cashoutmortgagerefinance.com/"
+tags = ["blog", "responsive", "mortgage", "cash-out refinance", "home equity"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://cashoutmortgagerefinance.com/"

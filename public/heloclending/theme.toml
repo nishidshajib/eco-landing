@@ -1,0 +1,12 @@
+name = "HELOCLending Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "HELOCLending.com guides homeowners through HELOC qualification, lender conversations, and credit readiness so every equity line is backed by math."
+homepage = "https://heloclending.com/"
+tags = ["blog", "responsive", "heloc", "equity"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://heloclending.com/"

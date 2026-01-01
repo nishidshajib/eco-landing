@@ -1,0 +1,12 @@
+name = "Online HELOC Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "OnlineHELOC.com blends calculators, underwriting insight, and equity coaching so borrowers know exactly how much credit they can tap and how a HELOC compares to a cash-out refinance."
+homepage = "https://onlineheloc.com/"
+tags = ["blog", "responsive", "heloc", "equity"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://onlineheloc.com/"

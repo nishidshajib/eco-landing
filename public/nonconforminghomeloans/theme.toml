@@ -1,0 +1,12 @@
+name = "Non-Conforming Home Loans Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Non-conforming home loans and jumbo mortgages for luxury properties, high-balance financing, and alternative documentation—connect with specialized lenders for flexible underwriting beyond conventional loan limits."
+homepage = "https://nonconforminghomeloans.com/"
+tags = ["blog", "responsive", "mortgage", "jumbo loans", "non-qm", "luxury homes"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://nonconforminghomeloans.com/"

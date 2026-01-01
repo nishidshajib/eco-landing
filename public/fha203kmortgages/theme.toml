@@ -1,0 +1,12 @@
+name = "FHA 203(k) Mortgages Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "FHA 203(k) rehab planning, credit readiness coaching, and contractor-ready paperwork all in one borrower hub."
+homepage = "https://fha203kmortgages.com/"
+tags = ["blog", "responsive", "fha203k", "rehab"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://fha203kmortgages.com/"

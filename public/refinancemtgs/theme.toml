@@ -1,0 +1,12 @@
+name = "Refinance MTGs Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Refinance MTGs lines up live rate intel, lender comparisons, and credit coaching so borrowers unlock equity without derailing monthly cash flow."
+homepage = "https://refinancemtgs.com/"
+tags = ["blog", "responsive", "refinance", "equity"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://refinancemtgs.com/"

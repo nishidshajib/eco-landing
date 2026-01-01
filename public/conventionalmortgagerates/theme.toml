@@ -1,0 +1,12 @@
+name = "ConventionalMortgageRates Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "ConventionalMortgageRates.com helps rate shoppers compare lenders, forecast trends, and translate lock decisions into boardroom-ready updates."
+homepage = "https://conventionalmortgagerates.com/"
+tags = ["blog", "responsive", "mortgage", "rates"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://conventionalmortgagerates.com/"

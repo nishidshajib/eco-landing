@@ -1,0 +1,12 @@
+name = "HomeEquityLoanSpecialist Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "HomeEquityLoanSpecialist.com keeps homeowners and advisors aligned on HELOC timelines, debt consolidation math, and draw strategies."
+homepage = "https://homeequityloanspecialist.com/"
+tags = ["blog", "responsive", "heloc", "mortgage"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://homeequityloanspecialist.com/"

@@ -1,0 +1,12 @@
+name = "Conforming Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Connect with conforming loan officers who specialize in FHFA-backed mortgages—understanding loan limits, rate transparency, and the difference between conforming vs non-conforming loans"
+homepage = "https://conformingloanofficers.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://conformingloanofficers.com/"

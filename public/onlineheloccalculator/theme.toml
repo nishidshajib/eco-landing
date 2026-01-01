@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Professional HELOC calculators with equity access planning and refinance preparation tools—calculate available credit lines, compare HELOC versus cash-out refinancing options, understand draw periods and repayment structures, evaluate home equity strategies, and optimize borrowing decisions with comprehensive financial calculators designed for informed home equity management and long-term financial wellness."
+homepage = "https://onlineheloccalculator.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Online HELOC Calculator®"
+  homepage = "https://onlineheloccalculator.com/"

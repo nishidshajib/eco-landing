@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Professional home mortgage calculators with credit impact education—calculate monthly payments, compare loan scenarios, understand how credit scores affect rates and affordability, explore mortgage planning strategies, and optimize your homebuying budget with comprehensive financial tools designed for informed decision-making and long-term financial wellness."
+homepage = "https://homemortgagescalculator.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Home Mortgage Calculator®"
+  homepage = "https://homemortgagescalculator.com/"

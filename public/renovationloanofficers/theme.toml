@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Connect with renovation loan officers who specialize in home improvement financing—from FHA 203(k) renovation loans and Fannie Mae HomeStyle® to cash-out refinance for remodels, contractor-ready financing, and ROI-driven renovation strategies."
+homepage = "https://renovationloanofficers.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://renovationloanofficers.com/"

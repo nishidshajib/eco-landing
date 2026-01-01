@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Connect with mortgage brokers specializing in refinance rate shopping and multi-lender comparisons to secure the lowest rates and best terms for your refinance"
+homepage = "https://www.refimortgagebrokers.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://www.refimortgagebrokers.com/"

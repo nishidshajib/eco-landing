@@ -1,0 +1,12 @@
+name = "Purchase Mortgage Loans Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Purchase mortgage loan program comparison and credit preparation strategies for first-time and repeat homebuyers—compare FHA, conventional, VA, and USDA loan options with transparent qualification guidance"
+homepage = "https://purchasemortgageloans.com/"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://purchasemortgageloans.com/"
