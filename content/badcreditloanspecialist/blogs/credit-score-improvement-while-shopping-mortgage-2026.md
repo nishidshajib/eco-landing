@@ -1,7 +1,7 @@
 ---
 title: "Credit Score Improvement While Shopping for Mortgage: Safe Strategies for Bad Credit Borrowers"
-date: 2026-01-01T12:00:00Z
-publishdate: 2026-01-01T12:00:00Z
+date: 2025-12-31T12:00:00Z
+publishdate: 2025-12-31T12:00:00Z
 draft: false
 author: "Credit Strategy Expert"
 tags: ["credit score", "bad credit", "mortgage shopping", "credit improvement"]

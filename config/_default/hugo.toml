@@ -6,9 +6,7 @@ disableKinds = []
 relativeURLs = true
 canonifyURLs = true
 contentDir = 'content'
-# publishDir disabled - use build.ps1 to build all domains or preview.ps1 to test individual domains
-# Running plain 'hugo' command will fail intentionally to prevent incorrect builds
-publishDir = 'public/_DO_NOT_USE_PLAIN_HUGO_USE_BUILD_SCRIPT'
+publishDir = 'public'
 
 # Build configuration for Tailwind CSS
 [build]
