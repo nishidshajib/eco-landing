@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+    inputs:
+      domain:
+        description: 'Deploy specific domain only (e.g., badcreditloanspecialist) or leave empty for all'
+        required: false
+        type: string
 
 jobs:
   deploy:
@@ -25,13 +30,21 @@ jobs:
         printf "machine %s\nlogin %s\npassword %s\n" "$FTP_HOST" "$FTP_USER" "$FTP_PASS" > ~/.netrc
         chmod 600 ~/.netrc
         
-        # Deploy all domains found in public/ folder
-        DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+        # Check if specific domain requested (manual trigger with input)
+        SPECIFIC_DOMAIN="${{ github.event.inputs.domain }}"
+        
+        if [ -n "$SPECIFIC_DOMAIN" ]; then
+          echo "Deploying single domain: $SPECIFIC_DOMAIN"
+          DEPLOY_LIST="$SPECIFIC_DOMAIN"
+        else
+          echo "Deploying all domains from public/ folder"
+          DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+        fi
         
         for domain in $DEPLOY_LIST; do
-          [[ ! -d public/$domain ]] && continue
+          [[ ! -d public/$domain ]] && echo "Warning: public/$domain not found, skipping" && continue
           cfg=config/$domain/hugo.toml
-          [[ ! -f $cfg ]] && continue
+          [[ ! -f $cfg ]] && echo "Warning: $cfg not found, skipping" && continue
           
           url=$(grep baseURL $cfg | head -1 | sed -E 's/.*["\x27]([^"\x27]+)["\x27].*/\1/')
           clean=$(echo $url | sed 's|https\?://||;s|www\.||;s|/.*||')
