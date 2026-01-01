@@ -9,7 +9,7 @@ dist/
 build/
 
 # Hugo generated files
-public/
+# public/ - now committed to git for deployment
 resources/
 
 # OS generated files

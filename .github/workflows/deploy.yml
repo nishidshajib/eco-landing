@@ -3,8 +3,6 @@
 on:
   push:
     branches: [ main ]
-  schedule:
-    - cron: '0 2 * * *'  # Run daily at 2 AM UTC
   workflow_dispatch:
 
 jobs:
@@ -14,73 +12,7 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
-    
-    - name: Detect Changed Domains
-      id: changes
-      run: |
-        if [ "${{ github.event_name }}" == "schedule" ]; then
-          # Scheduled run: build all domains (Hugo filters future posts automatically)
-          echo "Scheduled run - building all domains"
-          CHANGED_DOMAINS="all"
-        else
-          # Push event: detect what changed
-          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD)
-          
-          # If layouts or themes changed, rebuild all (affects all domains)
-          if echo "$CHANGED_FILES" | grep -qE '(^layouts/|^themes/)'; then
-            echo "Layouts or themes changed - rebuilding all domains"
-            CHANGED_DOMAINS="all"
-          # If workflow changed, rebuild all
-          elif echo "$CHANGED_FILES" | grep -q "\.github/workflows/"; then
-            echo "Workflow changed - rebuilding all domains"
-            CHANGED_DOMAINS="all"
-          else
-            # Only content or config changed - build specific domains
-            CHANGED_DOMAINS=$(echo "$CHANGED_FILES" | grep -E '^(content|config)/' | cut -d'/' -f2 | sort -u | tr '\n' ' ')
-            
-            # If no specific domains changed, skip build
-            if [ -z "$CHANGED_DOMAINS" ]; then
-              echo "No domain changes detected"
-              CHANGED_DOMAINS="none"
-            else
-              echo "Building only changed domains: $CHANGED_DOMAINS"
-            fi
-          fi
-        fi
-        
-        echo "changed_domains=$CHANGED_DOMAINS" >> $GITHUB_OUTPUT
-        echo "Strategy: $CHANGED_DOMAINS"
-    
-    - name: Build Changed Domains
-      run: |
-        DOMAINS="${{ steps.changes.outputs.changed_domains }}"
-        
-        if [ "$DOMAINS" == "none" ]; then
-          echo "No domains to build"
-          exit 0
-        fi
-        
-        if [ "$DOMAINS" == "all" ]; then
-          echo "Building all domains"
-          for d in config/*/; do
-            [[ $d == *"_default"* ]] && continue
-            domain=$(basename $d)
-            [[ ! -f $d/hugo.toml ]] && continue
-            echo "Building $domain"
-            hugo --environment $domain --config config/_default/hugo.toml,$d/hugo.toml --destination public/$domain --cleanDestinationDir --minify
-          done
-        else
-          echo "Building changed domains only"
-          for domain in $DOMAINS; do
-            [[ ! -f config/$domain/hugo.toml ]] && continue
-            echo "Building $domain"
-            hugo --environment $domain --config config/_default/hugo.toml,config/$domain/hugo.toml --destination public/$domain --cleanDestinationDir --minify
-          done
-        fi
+    # Build step removed - build locally and commit public/ folder instead
     
     - name: Deploy Changed Domains
       env:
