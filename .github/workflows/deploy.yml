@@ -1,8 +1,8 @@
 ﻿name: Deploy to Hostinger
 
 on:
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
   workflow_dispatch:
     inputs:
       domain:
@@ -37,8 +37,24 @@ jobs:
           echo "Deploying single domain: $SPECIFIC_DOMAIN"
           DEPLOY_LIST="$SPECIFIC_DOMAIN"
         else
-          echo "Deploying all domains from public/ folder"
-          DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+          # Smart deployment: only deploy domains with changed files
+          echo "Detecting changed domains from git diff..."
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No changes detected, skipping deployment"
+            exit 0
+          fi
+          
+          # Extract unique domain names from changed files
+          DEPLOY_LIST=$(echo "$CHANGED_FILES" | grep -E '^(content|config|public)/' | sed -E 's|^(content|config|public)/([^/]+)/.*|\2|' | sort -u | grep -v '^_default$' | tr '\n' ' ')
+          
+          if [ -z "$DEPLOY_LIST" ]; then
+            echo "No domain-specific changes detected, skipping deployment"
+            exit 0
+          fi
+          
+          echo "Deploying changed domains: $DEPLOY_LIST"
         fi
         
         for domain in $DEPLOY_LIST; do
