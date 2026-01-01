@@ -1,0 +1,12 @@
+name = "Mortgage Brokers Texas Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Texas mortgage brokers connecting homebuyers with competitive rates across multiple lenders—FHA, conventional, jumbo, and specialty loan programs."
+homepage = "https://mortgagebrokerstx.com/"
+tags = ["blog", "responsive", "mortgage brokers", "Texas"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://mortgagebrokerstx.com/"

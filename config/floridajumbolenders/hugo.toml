@@ -42,6 +42,7 @@ path = 'page'
 
   twitterHandle = '@BrowseLenders'
   supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
 
   heroTitle = 'Florida Jumbo Loan Specialists Who Know Luxury Markets'
   heroSubtitle = 'Access Florida specialists who close high-balance loans in Naples, Miami Beach, Palm Beach, and Tampa luxury markets with transparent overlays, portfolio options, and concierge-level service.'

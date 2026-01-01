@@ -1,0 +1,281 @@
+baseURL = 'https://texasloanofficers.com/'
+languageCode = 'en-us'
+title = 'Texas Loan Officers'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/texasloanofficers'
+publishDir = 'public/texasloanofficers'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Find licensed Texas loan officers specializing in FHA, conventional, VA, jumbo, and refinance mortgages—expert guidance for homebuyers and refinancers.'
+  author = 'Browse Lenders®'
+  shortName = 'Texas Loan Officers'
+  tagline = 'Texas Loan Officer Directory & Mortgage Guidance'
+  homepage = 'https://texasloanofficers.com/'
+
+  siteName = 'Texas Loan Officers'
+  siteDescription = 'Connect with licensed Texas loan officers who specialize in FHA, conventional, VA, jumbo, and refinance mortgages—expert guidance for first-time buyers, credit challenges, and luxury home financing.'
+  keywords = ['Texas loan officers', 'loan officers Houston', 'loan officers Dallas', 'mortgage loan officers Texas', 'FHA loan officers', 'VA loan officers Texas']
+  serviceType = 'Mortgage Loan Officer Services Texas'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
+
+  heroTitle = 'Texas Loan Officers - Expert Mortgage Guidance for Every Home Goal'
+  heroSubtitle = 'Connect with licensed Texas loan officers specializing in FHA, conventional, VA, jumbo, and refinance mortgages—expert guidance without pressure or misleading promises.'
+  heroImage = 'https://images.unsplash.com/photo-1557335200-a65f7f032602?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Find Loan Officers'
+  heroCTA1Link = 'https://www.browselenders.com/search/'
+  heroCTA2Text = 'Get Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Why Texas Homebuyers Work with Loan Officers'
+  aboutImage = 'https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'HomeLoanCalculator.com'
+  tertiaryDomainURL = 'https://www.homeloancalculator.com'
+
+  programsTitle = 'Mortgage Programs Texas Loan Officers Specialize In'
+  programsSubtitle = 'Understand FHA, conventional, VA, jumbo, and refinance programs that Texas loan officers navigate every day.'
+
+  program1Title = 'FHA Mortgages - First-Time Buyer Programs'
+  program1Description = 'FHA loans allow lower down payments and flexible credit requirements. Texas loan officers specialize in FHA qualification strategies, credit repair timing, and manual underwriting for borrowers banks reject.'
+  program1Image = 'https://images.unsplash.com/photo-1573166364839-1bfe9196c23e?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'VA Mortgages - Military Homebuyer Benefits'
+  program2Description = 'VA loans offer zero-down-payment financing for military members and veterans. Texas loan officers understand VA entitlements, funding fees, and how to maximize veteran benefits for Texas purchases and refinances.'
+  program2Image = 'https://images.unsplash.com/photo-1600427652630-f97cc4db10cd?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Conventional Mortgages - Competitive Rate Programs'
+  program3Description = 'Conventional loans offer lower rates for well-qualified borrowers. Texas loan officers navigate down payment options, PMI elimination, and competitive pricing across conventional lenders and portfolio programs.'
+  program3Image = 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Find Texas Loan Officers'
+  programsCTALink = 'https://www.browselenders.com/search/'
+  programsClosingText = 'Each loan program has different qualification criteria, rate structures, and lender requirements. Texas loan officers help you navigate these programs to find your best mortgage option.'
+
+  educationTitle = 'Mortgage Education Center'
+  educationSubtitle = 'Learn how loan officers guide homebuyers and refinancers through the mortgage process transparently.'
+
+  edu1Title = 'How Loan Officers Help You Qualify'
+  edu1Description = 'Loan officers pre-qualify you by analyzing credit score, down payment capacity, debt-to-income ratio, and employment history. Understanding qualification factors helps you strengthen your mortgage application before formal underwriting.'
+  edu1Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Rate Lock Strategy and Timing'
+  edu2Description = 'Rate locks protect you from daily market fluctuations. Loan officers advise when to lock based on market conditions and your timeline—balancing rate protection with opportunity for rate decreases.'
+  edu2Image = 'https://images.unsplash.com/photo-1758518730136-1bf4fa26ccbf?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Closing Process and Document Requirements'
+  edu3Description = 'Loan officers guide you through underwriting, appraisal, inspections, and closing. Understanding what documents are needed and why prevents delays and surprises at closing.'
+  edu3Image = 'https://images.unsplash.com/photo-1573166364839-1bfe9196c23e?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Refinance Benefits and Break-Even Analysis'
+  edu4Description = 'Refinancing can lower payments or tap equity, but only if savings exceed closing costs. Loan officers calculate break-even timelines and recommend refinance options that truly improve your financial situation.'
+  edu4Image = 'https://images.unsplash.com/photo-1600427652630-f97cc4db10cd?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'View Education Library'
+  educationCTALink = 'https://www.browselenders.com/education'
+
+  learningTitle = 'Learning Center – Mortgage Guidance You Can Trust'
+  learningSubtitle = 'Understand how loan officers work and why expert guidance saves you thousands.'
+  learningImage = 'https://images.unsplash.com/photo-1709715357520-5e1047a2b691?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Texas homebuyers benefit from loan officer education before mortgage shopping. Understanding qualification factors, rate locking strategy, and closing requirements helps you navigate the process confidently and avoid costly mistakes.'
+  learningBullet1 = '''Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Texas-licensed loan officers</a> through a transparent directory focused on mortgage education and transparent guidance.'''
+  learningBullet2 = 'Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit scores</a> impact mortgage approval and rates—and how to optimize credit before applying.'
+  learningBullet3 = 'Use <a href="https://www.homeloancalculator.com" class="text-accent hover:underline" target="_blank">mortgage calculators</a> to understand payment impacts, refinance benefits, and closing cost implications.'
+  learningBullet4 = 'Take your time—loan officer education first, then apply when ready.'
+  learningPara2 = 'This resource exists to serve Texas homebuyers seeking mortgage guidance without pressure tactics or misleading promises.'
+  learningPara3 = '''Start with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders® mortgage education</a> to prepare, then connect with Texas loan officers at your own pace.'''
+
+  whyChooseTitle = 'Why Texas Homebuyers Work with Experienced Loan Officers'
+  whyChooseSubtitle = 'Loan officers provide expert guidance, manage complex qualification factors, and navigate program options transparently.'
+  whyChoosePara1 = 'Homebuyers can work with loan officers in a transparent environment that explains mortgage programs, qualification requirements, and lender options without pressure.'
+  whyChoosePara2 = 'Resources point to loan officer directories and education so you maintain control of your mortgage timeline and can ask informed questions throughout the process.'
+
+  whyChooseBox1Title = 'Expert Program Navigation'
+  whyChooseBox1Para = 'Loan officers understand FHA manual underwriting nuances, VA entitlements, conventional overlays, and jumbo lender requirements. This expertise helps you avoid application rejection and qualifies you for programs big-box banks might miss.'
+  whyChooseBox1Bullet1 = 'Guidance on which programs match your credit, income, and down payment'
+  whyChooseBox1Bullet2 = 'Application strategies that maximize approval odds for borderline profiles'
+  whyChooseBox1Bullet3 = 'Knowledge of portfolio lenders and credit union options'
+
+  whyChooseBox2Title = 'Qualification Strengthening and Credit Strategy'
+  whyChooseBox2Para = 'Before applying, loan officers analyze your financial profile and recommend improvements—credit disputes, debt payoff strategies, down payment planning. These recommendations often result in approval when quick applications would be denied.'
+  whyChooseBox2Bullet1 = 'Credit score analysis and dispute recommendations'
+  whyChooseBox2Bullet2 = 'Down payment and cash reserve optimization'
+  whyChooseBox2Bullet3 = 'Employment and income documentation strategies'
+
+  whyChooseBox3Title = 'Rate Lock Timing and Market Navigation'
+  whyChooseBox3Para = 'Loan officers advise when to lock rates based on market trends and your personal timeline. The difference between locking too early or too late can cost $10,000-$30,000 in total interest. Expert guidance protects you from rate volatility.'
+  whyChooseBox3Bullet1 = 'Market analysis and locking recommendations'
+  whyChooseBox3Bullet2 = 'Float-down negotiation when rates drop'
+  whyChooseBox3Bullet3 = 'Rate comparison across multiple lenders'
+
+  whyChooseCTA = 'Find Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com/search/'
+
+  testimonialsTitle = 'Texas Homeowner Perspectives'
+  testimonialsSubtitle = 'Feedback from Texas borrowers who valued loan officer expertise and guidance.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '''"My loan officer explained why my application was rejected by direct lenders and helped me strengthen my credit before reapplying. Approval came quickly the second time."'''
+  testimonial1Name = 'Verified Texas Homeowner'
+  testimonial1Subtitle = 'Application guidance'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '''"My officer locked my rate at exactly the right time. When rates spiked a week later, I saved $150/month. That expertise was worth thousands over the loan term."'''
+  testimonial2Name = 'Verified Texas Homeowner'
+  testimonial2Subtitle = 'Rate lock strategy'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '''"The loan officer walked me through every step of closing—no surprises, no hidden documents. The process felt manageable instead of overwhelming."'''
+  testimonial3Name = 'Verified Texas Homeowner'
+  testimonial3Subtitle = 'Closing guidance'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '''"As a self-employed borrower, my loan officer knew which lenders accepted my tax returns and helped organize documentation. Approval happened when banks initially rejected me."'''
+  testimonial4Name = 'Verified Texas Homeowner'
+  testimonial4Subtitle = 'Self-employed guidance'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '''"The loan officer compared FHA vs. conventional options and showed me the real numbers. I chose FHA based on actual cost analysis, not advertised rates."'''
+  testimonial5Name = 'Verified Texas Homeowner'
+  testimonial5Subtitle = 'Program comparison'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '''"No pressure, no sales pitch. My loan officer answered every question and let me decide at my pace. That integrity made me feel confident."'''
+  testimonial6Name = 'Verified Texas Homeowner'
+  testimonial6Subtitle = 'Professional integrity'
+
+  calculatorsTitle = 'Mortgage Planning Tools for Texas Homebuyers'
+  calculatorsSubtitle = 'Use neutral calculators and education to understand mortgage scenarios before committing.'
+
+  creditScoreTitle = 'Credit Score Mortgage Impact'
+  creditScoreImage = 'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Your credit score drives mortgage rate pricing in Texas. Loan officers explain how credit tiers affect rates and why optimizing credit before applying can improve your terms significantly.'
+  creditScoreHeading1 = 'Score Tiers'
+  creditScoreText1 = 'Learn how lenders price mortgage rates across credit score tiers—780+, 760-779, 740-759, etc.—and why small credit improvements matter.'
+  creditScoreHeading2 = 'Rate Impact'
+  creditScoreText2 = 'See how mortgage rates and APR change across score ranges without guaranteed promises.'
+  creditScoreHeading3 = 'Optimization Strategies'
+  creditScoreText3 = 'Improve credit before mortgage shopping to qualify for better rates and larger loan amounts.'
+  creditScoreCTA = 'Explore Credit Education'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'For Employers & Organizations'
+  employersSubtitle = 'Add mortgage loan officer education to financial wellness benefits in Texas.'
+  employersImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Organizations can share Texas mortgage loan officer education, qualification guidance, and lender directories so employees or members buy homes confidently without misleading advertising.'
+  employersBullet1Title = 'No-cost loan officer education resources'
+  employersBullet1Text = 'Offer education modules explaining how loan officers work, what affects mortgage qualification, and how to evaluate offers.'
+  employersBullet2Title = 'Credit score optimization'
+  employersBullet2Text = 'Point to credit education showing how score improvements affect mortgage rates and approval odds.'
+  employersBullet3Title = 'Transparent loan officer comparison'
+  employersBullet3Text = 'Share loan officer directories and mortgage guidance so teams find experts matching their financial profiles.'
+  employersCTA = 'Add Mortgage Education'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+
+  blogTitle = 'Texas Loan Officer Insights'
+  blogSubtitle = 'Articles on mortgage qualification, rate strategy, and loan officer guidance for Texas homebuyers.'
+
+  faqTitle = 'Texas Loan Officer Questions'
+  faqSubtitle = 'Straightforward answers about how loan officers work and how they guide homebuyers.'
+
+  faq1Question = 'What do loan officers charge in Texas?'
+  faq1Answer = 'Loan officers are typically employed by lenders and do not charge separate fees. The lender pays the loan officer salary/commission, funded through loan origination fees, interest rates, or processing fees. Never pay a loan officer directly—compensation flows from the lender.'
+
+  faq2Question = 'How do I find a good Texas loan officer?'
+  faq2Answer = "Look for loan officers who explain clearly, don't pressure you, and take time to understand your financial goals. Verify licensing through NMLS and the Texas Department of Licensing and Regulation. Read reviews and ask references about their experience."
+
+  faq3Question = 'Should I use a loan officer at a bank or independent?'
+  faq3Answer = "Bank loan officers have access only to their bank's products and pricing. Independent loan officers access multiple lenders. Both can be good, but independent officers typically offer wider options. Compare offers from each to see who gives best pricing."
+
+  faq4Question = 'Can loan officers help me with bad credit?'
+  faq4Answer = 'Yes, experienced loan officers understand FHA manual underwriting, credit repair strategies, and non-QM lender options. Before formal application, they analyze your credit, recommend improvements, and identify which programs you qualify for despite credit challenges.'
+
+  faq5Question = 'What is rate locking and when should I do it?'
+  faq5Answer = "Rate locking protects your interest rate for 30-45 days during underwriting. Loan officers advise locking based on market trends—locking when rates are likely to rise, floating when rates might decrease. The timing decision can save thousands in interest."
+
+  faq6Question = 'Can loan officers help with VA loans?'
+  faq6Answer = 'Yes, experienced Texas loan officers understand VA entitlements, funding fees, occupancy requirements, and how to maximize veteran benefits. Many specialize in VA lending and have relationships with VA-focused lenders.'
+
+  ctaTitle = 'Ready to Work with a Texas Loan Officer?'
+  ctaDescription = 'Learn about mortgage qualification and guidance, then connect with Texas-licensed loan officers who provide transparent advice and support throughout your mortgage process.'
+  ctaCTA = 'Find Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com/search/'
+
+  [params.theme]
+    name = 'Texas Loan Officers Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'loan officers', 'Texas']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B2E4E'
+    backgroundColor = '#F6F8FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

@@ -1,0 +1,12 @@
+name = "Florida Home Rates Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Florida mortgage rate education covering how rates are determined, what factors influence pricing, and how to compare lenders transparently without rate guarantees."
+homepage = "https://floridahomerates.com/"
+tags = ["blog", "responsive", "Florida rates", "mortgage rates"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://floridahomerates.com/"

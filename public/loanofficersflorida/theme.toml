@@ -1,0 +1,12 @@
+name = "Florida Loan Officers Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Florida-focused mortgage education and loan-officer directory that helps consumers compare state-licensed professionals with transparent, educational guidance."
+homepage = "https://loanofficersflorida.com/"
+tags = ["blog", "responsive", "Florida mortgage", "loan officers"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://loanofficersflorida.com/"

@@ -58,11 +58,11 @@ tmp/
 temp/
 
 # Hugo stats
-hugo_stats.json
+# hugo_stats.json - now committed for deployment tracking
 
-# Package-lock files (optional - uncomment if you prefer to exclude)
+# Package-lock files (optional - uncomment if you prefer to exclude)       
 # package-lock.json
 # yarn.lock
 
-# Ignore modified public files
-public/
+# Public folder now tracked for deployment
+# public/

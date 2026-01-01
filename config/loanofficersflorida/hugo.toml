@@ -1,0 +1,282 @@
+baseURL = 'https://loanofficersflorida.com/'
+languageCode = 'en-us'
+title = 'Loan Officers Florida'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/loanofficersflorida'
+publishDir = 'public/loanofficersflorida'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Florida-focused mortgage education and loan-officer directory that helps consumers compare state-licensed professionals with transparent, educational guidance.'
+  author = 'Browse Lenders®'
+  shortName = 'Florida Loan Officers'
+  tagline = 'Education-First Mortgage Guidance Across Florida'
+  homepage = 'https://loanofficersflorida.com/'
+
+  siteName = 'Loan Officers Florida'
+  siteDescription = 'Consumer-first Florida mortgage education and loan-officer directory. Built to help Floridians understand loan options, credit readiness, documentation, and state-level compliance before speaking with a lender.'
+  keywords = ['Florida loan officers', 'Florida mortgage education', 'Florida mortgage directory', 'Florida home loan guidance', 'Florida mortgage readiness']
+  serviceType = 'Florida Mortgage Loan Officer Directory'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
+
+  heroTitle = 'Florida Loan Officers - Transparent Guidance, Statewide Directory'
+  heroSubtitle = 'Connect with Florida-licensed loan officers who prioritize education on documentation, credit readiness, and qualification factors before applications.'
+  heroImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Browse Florida Loan Officers'
+  heroCTA1Link = 'https://www.browselenders.com/search/'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Education First. Licensed Professionals. No Rate Promises.'
+  aboutImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Florida Mortgage Guidance Categories'
+  programsSubtitle = 'Education-first pathways that help Floridians prepare for conversations with licensed loan officers.'
+
+  program1Title = 'Purchase Planning'
+  program1Description = 'Learn what documents Florida loan officers typically request, how income is reviewed, and why clarity on occupancy and property type matters.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Refinance Readiness'
+  program2Description = 'Understand equity considerations, cash-out documentation expectations, and how to compare refinance paths before sharing personal data.'
+  program2Image = 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Credit & Qualification'
+  program3Description = 'See how Florida loan officers evaluate middle credit scores, debt-to-income ratios, and reserves without making rate or approval claims.'
+  program3Image = 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Browse Loan Officers'
+  programsCTALink = 'https://www.browselenders.com/search/'
+  programsClosingText = 'Each category links you to education-first loan officers licensed in Florida who operate inside a neutral directory experience.'
+
+  educationTitle = 'Florida Mortgage Education Center'
+  educationSubtitle = 'Consumer-first guides focused on documentation, credit hygiene, and transparent expectations for Florida borrowers.'
+
+  edu1Title = 'Preparing Your File'
+  edu1Description = 'What Florida loan officers review in a standard file—income documentation, assets, liabilities, and property intent—before discussing options.'
+  edu1Image = 'https://images.unsplash.com/photo-1450101215322-bf5cd27642fc?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Understanding Middle Credit Scores'
+  edu2Description = 'Why lenders focus on the middle credit score, how to monitor it responsibly, and how score tiers influence available products without quoting rates.'
+  edu2Image = 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Equity and Cash-Out Basics'
+  edu3Description = 'How equity is calculated, how cash-out requests are documented, and how to compare scenarios using unbiased refinance education tools.'
+  edu3Image = 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Compliance & Consumer Protection'
+  edu4Description = 'The directory highlights Florida-licensed professionals and reinforces disclosures, timelines, and consumer protection steps before applications begin.'
+  edu4Image = 'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'View Education Library'
+  educationCTALink = 'https://www.browselenders.com/education'
+
+  learningTitle = 'Learning Center – Florida Mortgage Education'
+  learningSubtitle = 'Build confidence in your mortgage decisions with transparent, statewide guidance.'
+  learningImage = 'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Florida borrowers benefit from education before conversations with loan officers. Understanding documentation requirements, credit score factors, and equity calculation helps you prepare confidently and make informed decisions.'
+  learningBullet1 = '''Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Florida-licensed loan officers</a> through a transparent directory.'''
+  learningBullet2 = 'Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit scores</a> affect qualification and loan options.'
+  learningBullet3 = 'Use <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance planning tools</a> to model equity scenarios.'
+  learningBullet4 = 'Maintain control—education first, then connect with professionals when ready.'
+  learningPara2 = 'This directory exists to serve Floridians seeking transparent mortgage guidance without pressure, rates, or approval claims.'
+  learningPara3 = '''Start with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders® education resources</a> to prepare, then browse state-licensed professionals at your own pace.'''
+
+  whyChooseTitle = 'Why Floridians Use This Directory'
+  whyChooseSubtitle = 'Built for education, transparency, and licensed guidance—never high-pressure sales.'
+  whyChoosePara1 = 'Consumers can compare Florida loan officers in a neutral environment that emphasizes documentation readiness and credit hygiene before any application.'
+  whyChoosePara2 = 'Resources point to unbiased directories and education hubs so borrowers maintain control of their information and next steps.'
+
+  whyChooseBox1Title = 'Licensed, Florida-Focused Pros'
+  whyChooseBox1Para = 'Profiles highlight Florida licensing and experience without promoting rates, approvals, or city-level targeting.'
+  whyChooseBox1Bullet1 = 'State-level expertise and compliance awareness'
+  whyChooseBox1Bullet2 = 'Consumer-first education before any application'
+  whyChooseBox1Bullet3 = 'Transparent expectations and timelines'
+
+  whyChooseBox2Title = 'Education Before Applications'
+  whyChooseBox2Para = 'Borrowers receive clear checklists and literacy resources before sharing documentation.'
+  whyChooseBox2Bullet1 = 'Credit literacy focused on middle scores'
+  whyChooseBox2Bullet2 = 'Refinance planning guidance for equity decisions'
+  whyChooseBox2Bullet3 = 'Documentation and disclosure readiness'
+
+  whyChooseBox3Title = 'Transparent, No-Pressure Approach'
+  whyChooseBox3Para = 'Borrowers maintain control—education resources first, then directory browsing at your own pace, with support when you ask for it.'
+  whyChooseBox3Bullet1 = 'Education on documentation and credit readiness'
+  whyChooseBox3Bullet2 = 'Browse when ready, apply only when you choose'
+  whyChooseBox3Bullet3 = 'Support without rate quotes or approval pressure'
+
+  whyChooseCTA = 'Browse Florida Loan Officers'
+  whyChooseCTALink = 'https://www.browselenders.com/search/'
+
+  testimonialsTitle = 'Borrower Perspectives'
+  testimonialsSubtitle = 'Education-first feedback from Floridians who valued transparency.'
+
+  blogCTATitle = 'Ready to browse Florida loan officers?'
+  blogCTASubtitle = 'Move at your pace—start with education, then choose a Florida-licensed professional when you are ready.'
+  blogCTAButtonText = 'Browse Florida Loan Officers'
+  blogCTAButtonLink = 'https://www.browselenders.com/search/'
+  blogCTASecondaryText = 'Back to Home'
+  blogCTASecondaryLink = '/'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '“The directory made it easy to see which loan officers prioritized education and clear next steps without pushing an application.”'
+  testimonial1Name = 'Verified Florida Borrower'
+  testimonial1Subtitle = 'Education-first experience'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '“I appreciated the focus on documentation readiness and credit literacy before anyone asked for my personal details.”'
+  testimonial2Name = 'Verified Florida Borrower'
+  testimonial2Subtitle = 'Prepared before applying'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '“Neutral calls-to-action let me move at my own pace and choose when to connect with a loan officer.”'
+  testimonial3Name = 'Verified Florida Borrower'
+  testimonial3Subtitle = 'Controlled the timeline'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '“Links to statewide education, credit resources, and refinance guides helped me understand my options without any rate talk.”'
+  testimonial4Name = 'Verified Florida Borrower'
+  testimonial4Subtitle = 'Clarity before commitment'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '“Everything stayed focused on Florida licensing and consumer protection—exactly what I needed.”'
+  testimonial5Name = 'Verified Florida Borrower'
+  testimonial5Subtitle = 'Trusted compliance focus'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '“The credit education links helped me understand middle scores without feeling sold.”'
+  testimonial6Name = 'Verified Florida Borrower'
+  testimonial6Subtitle = 'Credit literacy support'
+
+  calculatorsTitle = 'Planning Tools for Florida Borrowers'
+  calculatorsSubtitle = 'Use neutral calculators and education to model scenarios before choosing a path.'
+
+  creditScoreTitle = 'Middle Credit Score Education'
+  creditScoreImage = 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Loan officers rely on the middle credit score. Education resources explain how it is calculated, how utilization impacts it, and why to monitor it before sharing applications.'
+  creditScoreHeading1 = 'Score Awareness'
+  creditScoreText1 = 'Learn how middle scores are derived and why they matter for eligibility without quoting rates.'
+  creditScoreHeading2 = 'Responsible Monitoring'
+  creditScoreText2 = 'Use literacy tools to track credit health without unnecessary inquiries.'
+  creditScoreHeading3 = 'Readiness Checklists'
+  creditScoreText3 = 'Prepare documentation and reserve plans before meeting a Florida loan officer.'
+  creditScoreCTA = 'Explore Credit Education'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employer & Member Education'
+  employersSubtitle = 'Add mortgage literacy to financial wellness benefits in Florida.'
+  employersImage = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Organizations can share statewide mortgage education, credit literacy, and refinance planning tools so employees or members engage with licensed professionals when ready.'
+  employersBullet1Title = 'No-cost mortgage literacy resources'
+  employersBullet1Text = 'Offer checklists and education modules without collecting applications.'
+  employersBullet2Title = 'Credit readiness guidance'
+  employersBullet2Text = 'Point to middle credit score education to help teams prepare responsibly.'
+  employersBullet3Title = 'Equity and refinance education'
+  employersBullet3Text = 'Share neutral calculators and cash-out planning guides without promotional claims.'
+  employersCTA = 'Add Mortgage Education'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+
+  blogTitle = 'Florida Mortgage Education Updates'
+  blogSubtitle = 'Articles focused on state-level loan officer selection, documentation, and consumer protection.'
+
+  faqTitle = 'Florida Borrower Questions'
+  faqSubtitle = 'Straightforward answers about how this directory works and how to prepare.'
+
+  faq1Question = 'Is this directory a lender or broker?'
+  faq1Answer = 'No. It is an informational directory highlighting Florida-licensed loan officers and providing education before any application.'
+
+  faq2Question = 'How should I use the directory?'
+  faq2Answer = 'Review education resources, prepare documents, then browse Florida-licensed loan officers at your pace with neutral calls-to-action.'
+
+  faq3Question = 'Will I see rates or approvals here?'
+  faq3Answer = 'No. The site avoids rates, approvals, or guarantees. It focuses on education, preparation, and connecting with licensed professionals when you choose.'
+
+  faq4Question = 'What if I need credit or refinance guidance first?'
+  faq4Answer = 'Use the linked credit literacy and cash-out education resources to prepare before deciding whether to speak with a Florida loan officer.'
+
+  ctaTitle = 'Ready to Browse Florida Loan Officers?'
+  ctaDescription = 'Move at your own pace—start with education, then connect with Florida-licensed professionals when you are ready.'
+  ctaCTA = 'Browse Florida Loan Officers'
+  ctaCTALink = 'https://www.browselenders.com/search/'
+
+  [params.theme]
+    name = 'Florida Loan Officers Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'Florida mortgage', 'loan officers']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B2E4E'
+    backgroundColor = '#F6F8FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

@@ -47,6 +47,7 @@ path = 'page'
   # Social Media
   twitterHandle = '@BrowseLenders'
   supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
   
   # Hero Section
   heroTitle = 'Conforming Loan Officers - Navigate FHFA Limits and Rate Transparency'

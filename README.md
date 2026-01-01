@@ -105,7 +105,12 @@ hugo server --environment nonconformingmortgagerates --port 1364
 hugo server --environment usamortgagespecialist --port 1365
 hugo server --environment usmortgagespecialist --port 1366
 hugo server --environment floridajumbolenders --port 1367
-
+hugo server --environment loanofficersflorida --port 1368
+hugo server --environment refifl --port 1369
+hugo server --environment floridahomerates --port 1370
+hugo server --environment helocfl --port 1371
+hugo server --environment mortgagebrokerstx --port 1372
+hugo server --environment texasloanofficers --port 1373
 
 Access sites at http://localhost:PORT
 

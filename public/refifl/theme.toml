@@ -1,0 +1,12 @@
+name = "Refinance Florida Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Florida mortgage refinance education covering rate-and-term, cash-out, equity planning, and licensed loan officer selection with transparent statewide guidance."
+homepage = "https://refifl.com/"
+tags = ["blog", "responsive", "Florida refinance", "mortgage refinance"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://refifl.com/"

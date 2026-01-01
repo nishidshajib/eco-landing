@@ -1,0 +1,282 @@
+baseURL = 'https://refifl.com/'
+languageCode = 'en-us'
+title = 'Refinance Florida'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/refifl'
+publishDir = 'public/refifl'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Florida mortgage refinance education covering rate-and-term, cash-out, equity planning, and licensed loan officer selection with transparent statewide guidance.'
+  author = 'Browse Lenders®'
+  shortName = 'Refinance Florida'
+  tagline = 'Education-First Refinance Guidance Across Florida'
+  homepage = 'https://refifl.com/'
+
+  siteName = 'Refinance Florida'
+  siteDescription = 'Consumer-first Florida mortgage refinance education covering rate-and-term scenarios, cash-out equity planning, documentation readiness, and licensed loan officer selection.'
+  keywords = ['Florida refinance', 'Florida mortgage refinance', 'cash-out refinance Florida', 'Florida refinance rates', 'Florida refinance education']
+  serviceType = 'Florida Mortgage Refinance Education'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
+
+  heroTitle = 'Refinance Florida - Equity Planning, Transparent Guidance'
+  heroSubtitle = 'Learn about Florida mortgage refinance options—rate-and-term, cash-out equity, documentation requirements, and how to compare scenarios before choosing a lender.'
+  heroImage = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2000&auto=format&fit=crop'
+  heroCTA1Text = 'Browse Florida Refinance Lenders'
+  heroCTA1Link = 'https://www.browselenders.com/search/'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Equity Planning. Transparent Costs. Zero Rate Promises.'
+  aboutImage = 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'Florida Refinance Pathways'
+  programsSubtitle = 'Education-first guidance on rate-and-term refinance, cash-out equity, and documentation preparation.'
+
+  program1Title = 'Rate-and-Term Refinance'
+  program1Description = 'Understand how rate-and-term refinance works, what documentation lenders review, and how to prepare without rate guarantees or approval claims.'
+  program1Image = 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Cash-Out Refinance Planning'
+  program2Description = 'Learn how equity is calculated, how cash-out scenarios are documented, and how to model different equity strategies transparently.'
+  program2Image = 'https://images.unsplash.com/photo-1592595896616-c37162298647?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Refinance Qualification'
+  program3Description = 'See how Florida lenders evaluate middle credit scores, debt-to-income ratios, and home equity when reviewing refinance applications.'
+  program3Image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Browse Refinance Lenders'
+  programsCTALink = 'https://www.browselenders.com/search/'
+  programsClosingText = 'Each pathway connects you to Florida-licensed refinance professionals who prioritize education and transparent expectations.'
+
+  educationTitle = 'Florida Refinance Education Center'
+  educationSubtitle = 'Consumer-first guides on equity calculation, cash-out documentation, and refinance qualification factors.'
+
+  edu1Title = 'Preparing Your Refinance File'
+  edu1Description = 'What Florida lenders review in refinance applications—income verification, asset documentation, current mortgage details, and property equity.'
+  edu1Image = 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Credit Scores in Refinance'
+  edu2Description = 'Why lenders focus on middle credit scores, how refinance impacts credit utilization, and how to monitor credit health before applications.'
+  edu2Image = 'https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Equity & Cash-Out Strategies'
+  edu3Description = 'How home equity is determined, how cash-out amounts are calculated, and how to compare different cash-out scenarios responsibly.'
+  edu3Image = 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Refinance Compliance & Disclosures'
+  edu4Description = 'Florida-specific compliance requirements, standard refinance disclosures, and consumer protection timelines before closing.'
+  edu4Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'View Education Library'
+  educationCTALink = 'https://www.browselenders.com/education'
+
+  learningTitle = 'Learning Center – Florida Refinance Education'
+  learningSubtitle = 'Build confidence in your refinance decisions with transparent, statewide guidance.'
+  learningImage = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Florida homeowners benefit from refinance education before contacting lenders. Understanding equity calculation, cash-out documentation requirements, and credit factors helps you prepare confidently and make informed decisions.'
+  learningBullet1 = '''Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Florida-licensed refinance lenders</a> through a transparent directory.'''
+  learningBullet2 = 'Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit scores</a> affect refinance qualification and available options.'
+  learningBullet3 = 'Use <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">cash-out refinance planning tools</a> to model equity scenarios and compare strategies.'
+  learningBullet4 = 'Maintain control—education first, then connect with lenders when ready.'
+  learningPara2 = 'This site exists to serve Florida homeowners seeking transparent refinance guidance without pressure, rate promises, or approval guarantees.'
+  learningPara3 = '''Start with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders® refinance education resources</a> to prepare, then browse Florida-licensed professionals at your own pace.'''
+
+  whyChooseTitle = 'Why Florida Homeowners Use This Resource'
+  whyChooseSubtitle = 'Built for education, transparency, and licensed guidance—never high-pressure sales.'
+  whyChoosePara1 = 'Homeowners can compare Florida refinance lenders in a neutral environment that emphasizes equity planning, documentation readiness, and credit preparation before any application.'
+  whyChoosePara2 = 'Resources point to unbiased directories and refinance education hubs so you maintain control of your information and next steps.'
+
+  whyChooseBox1Title = 'Licensed Florida Refinance Pros'
+  whyChooseBox1Para = 'Profiles highlight Florida licensing and refinance expertise without promoting rates, approvals, or city-level targeting.'
+  whyChooseBox1Bullet1 = 'State-level refinance expertise and compliance awareness'
+  whyChooseBox1Bullet2 = 'Consumer-first education before any application'
+  whyChooseBox1Bullet3 = 'Transparent equity calculations and timelines'
+
+  whyChooseBox2Title = 'Education Before Applications'
+  whyChooseBox2Para = 'Homeowners receive clear checklists and refinance literacy resources before sharing documentation.'
+  whyChooseBox2Bullet1 = 'Credit literacy focused on refinance impacts'
+  whyChooseBox2Bullet2 = 'Cash-out planning guidance for equity decisions'
+  whyChooseBox2Bullet3 = 'Documentation and disclosure readiness'
+
+  whyChooseBox3Title = 'Transparent, No-Pressure Approach'
+  whyChooseBox3Para = 'Homeowners maintain control—education resources first, then directory browsing at your own pace, with support when you ask for it.'
+  whyChooseBox3Bullet1 = 'Education on equity, credit, and documentation'
+  whyChooseBox3Bullet2 = 'Browse when ready, apply only when you choose'
+  whyChooseBox3Bullet3 = 'Support without rate quotes or approval pressure'
+
+  whyChooseCTA = 'Browse Florida Refinance Lenders'
+  whyChooseCTALink = 'https://www.browselenders.com/search/'
+
+  testimonialsTitle = 'Homeowner Perspectives'
+  testimonialsSubtitle = 'Education-first feedback from Florida homeowners who valued transparent refinance guidance.'
+
+  blogCTATitle = 'Ready to explore Florida refinance options?'
+  blogCTASubtitle = 'Move at your pace—start with education, then choose a Florida-licensed refinance lender when you are ready.'
+  blogCTAButtonText = 'Browse Refinance Lenders'
+  blogCTAButtonLink = 'https://www.browselenders.com/search/'
+  blogCTASecondaryText = 'Back to Home'
+  blogCTASecondaryLink = '/'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '"The refinance education helped me understand my equity options and documentation requirements before contacting any lenders."'
+  testimonial1Name = 'Verified Florida Homeowner'
+  testimonial1Subtitle = 'Education-first refinance planning'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '"I appreciated the focus on cash-out scenarios and credit preparation without anyone pushing rate quotes or applications."'
+  testimonial2Name = 'Verified Florida Homeowner'
+  testimonial2Subtitle = 'Prepared before refinancing'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '"Neutral calls-to-action let me learn about refinance options and choose when to connect with a Florida lender."'
+  testimonial3Name = 'Verified Florida Homeowner'
+  testimonial3Subtitle = 'Controlled the refinance timeline'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '"Links to statewide refinance education, credit resources, and cash-out guides helped me understand my options without pressure."'
+  testimonial4Name = 'Verified Florida Homeowner'
+  testimonial4Subtitle = 'Clarity before commitment'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '"Everything stayed focused on Florida compliance and consumer protection—exactly what I needed for my refinance."'
+  testimonial5Name = 'Verified Florida Homeowner'
+  testimonial5Subtitle = 'Trusted compliance focus'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '"The credit education links helped me understand how refinancing would impact my middle score."'
+  testimonial6Name = 'Verified Florida Homeowner'
+  testimonial6Subtitle = 'Credit literacy support'
+
+  calculatorsTitle = 'Refinance Planning Tools for Florida Homeowners'
+  calculatorsSubtitle = 'Use neutral calculators and education to model refinance scenarios before choosing a path.'
+
+  creditScoreTitle = 'Middle Credit Score Education'
+  creditScoreImage = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Refinance lenders rely on your middle credit score. Education resources explain how it is calculated, how refinancing impacts it, and why to monitor it before applications.'
+  creditScoreHeading1 = 'Score Awareness'
+  creditScoreText1 = 'Learn how middle scores are derived and why they matter for refinance eligibility without quoting rates.'
+  creditScoreHeading2 = 'Responsible Monitoring'
+  creditScoreText2 = 'Use literacy tools to track credit health and understand refinance impacts without unnecessary inquiries.'
+  creditScoreHeading3 = 'Readiness Checklists'
+  creditScoreText3 = 'Prepare documentation and reserve plans before meeting a Florida refinance lender.'
+  creditScoreCTA = 'Explore Credit Education'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'Employer & Member Refinance Education'
+  employersSubtitle = 'Add mortgage refinance literacy to financial wellness benefits in Florida.'
+  employersImage = 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Organizations can share statewide refinance education, equity planning tools, and credit literacy resources so employees or members engage with licensed lenders when ready.'
+  employersBullet1Title = 'No-cost refinance literacy resources'
+  employersBullet1Text = 'Offer checklists and education modules without collecting applications.'
+  employersBullet2Title = 'Equity planning guidance'
+  employersBullet2Text = 'Point to cash-out calculators and equity education to help teams prepare responsibly.'
+  employersBullet3Title = 'Credit and qualification education'
+  employersBullet3Text = 'Share neutral credit score resources and refinance qualification guides without promotional claims.'
+  employersCTA = 'Add Refinance Education'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+
+  blogTitle = 'Florida Refinance Education Updates'
+  blogSubtitle = 'Articles focused on cash-out planning, rate-and-term scenarios, documentation, and lender selection.'
+
+  faqTitle = 'Florida Refinance Questions'
+  faqSubtitle = 'Straightforward answers about refinance options and how to prepare.'
+
+  faq1Question = 'Is this site a lender or broker?'
+  faq1Answer = 'No. It is an educational resource highlighting Florida-licensed refinance lenders and providing equity planning education before any application.'
+
+  faq2Question = 'How should I use this resource?'
+  faq2Answer = 'Review refinance education resources, calculate your equity, prepare documents, then browse Florida-licensed lenders at your pace with neutral calls-to-action.'
+
+  faq3Question = 'Will I see rates or approvals here?'
+  faq3Answer = 'No. The site avoids rates, approvals, or guarantees. It focuses on refinance education, equity planning, and connecting with licensed professionals when you choose.'
+
+  faq4Question = 'What if I need cash-out guidance first?'
+  faq4Answer = 'Use the linked cash-out refinance planning tools and equity education resources to model scenarios before deciding whether to speak with a Florida lender.'
+
+  ctaTitle = 'Ready to Explore Florida Refinance Options?'
+  ctaDescription = 'Move at your own pace—start with education, then connect with Florida-licensed refinance lenders when you are ready.'
+  ctaCTA = 'Browse Refinance Lenders'
+  ctaCTALink = 'https://www.browselenders.com/search/'
+
+  [params.theme]
+    name = 'Refinance Florida Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'Florida refinance', 'mortgage refinance']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B2E4E'
+    backgroundColor = '#F6F8FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

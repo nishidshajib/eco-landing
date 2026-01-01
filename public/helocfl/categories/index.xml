@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on HELOC Florida</title>
+    <link>http://localhost:1371/categories/</link>
+    <description>Recent content in Categories on HELOC Florida</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1371/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HELOC Education</title>
+      <link>http://localhost:1371/categories/heloc-education/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1371/categories/heloc-education/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

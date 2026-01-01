@@ -1,1 +1,41 @@
-[{"title":"Why Florida Jumbo Loans Demand Higher Credit Scores","date":"December 18, 2025","categories":["Jumbo Lending","Credit Requirements"],"excerpt":null,"image":"https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format\u0026fit=crop\u0026w=1200\u0026q=80","permalink":"https://floridajumbolenders.com/blogs/why-florida-jumbo-loans-demand-higher-credit-scores/","tags":["jumbo credit scores","Florida jumbo loans","high-balance lending"]},{"title":"What Coastal Insurance Actually Costs on Florida Waterfront Jumbo Properties","date":"December 17, 2025","categories":["Jumbo Lending","Insurance"],"excerpt":null,"image":"https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format\u0026fit=crop\u0026w=1200\u0026q=80","permalink":"https://floridajumbolenders.com/blogs/what-coastal-insurance-actually-costs-on-florida-waterfront-jumbo-properties/","tags":["coastal insurance","Florida waterfront","hurricane insurance"]},{"title":"How to Finance Non-Warrantable Condos in South Florida","date":"December 16, 2025","categories":["Jumbo Lending","Condo Financing"],"excerpt":null,"image":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format\u0026fit=crop\u0026w=1200\u0026q=80","permalink":"https://floridajumbolenders.com/blogs/how-to-finance-non-warrantable-condos-in-south-florida/","tags":["non-warrantable condos","South Florida condos","condo financing"]},{"title":"Florida Jumbo Loan Limits by County: When Your Purchase Triggers High-Balance Financing","date":"December 15, 2025","categories":["Jumbo Lending","Florida Real Estate"],"excerpt":null,"image":"https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format\u0026fit=crop\u0026w=1200\u0026q=80","permalink":"https://floridajumbolenders.com/blogs/florida-jumbo-loan-limits-by-county-when-your-purchase-triggers-high-balance-financing/","tags":["jumbo loan limits","Florida counties","conforming limits"]},{"title":"Navigating Jumbo Financing for Luxury Condo Towers in Miami and Tampa","date":"December 14, 2025","categories":["Jumbo Lending","Condo Financing"],"excerpt":null,"image":"https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format\u0026fit=crop\u0026w=1200\u0026q=80","permalink":"https://floridajumbolenders.com/blogs/navigating-jumbo-financing-for-luxury-condo-towers-in-miami-and-tampa/","tags":["luxury condos","Miami condos","Tampa high-rise"]}]
+[{
+            "title": "Why Florida Jumbo Loans Demand Higher Credit Scores",
+            "date": "December 18, 2025",
+            "categories": ["Jumbo Lending","Credit Requirements"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+            "permalink": "http://localhost:1367/blogs/why-florida-jumbo-loans-demand-higher-credit-scores/",
+            "tags": ["jumbo credit scores","Florida jumbo loans","high-balance lending"]
+        },{
+            "title": "What Coastal Insurance Actually Costs on Florida Waterfront Jumbo Properties",
+            "date": "December 17, 2025",
+            "categories": ["Jumbo Lending","Insurance"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+            "permalink": "http://localhost:1367/blogs/what-coastal-insurance-actually-costs-on-florida-waterfront-jumbo-properties/",
+            "tags": ["coastal insurance","Florida waterfront","hurricane insurance"]
+        },{
+            "title": "How to Finance Non-Warrantable Condos in South Florida",
+            "date": "December 16, 2025",
+            "categories": ["Jumbo Lending","Condo Financing"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+            "permalink": "http://localhost:1367/blogs/how-to-finance-non-warrantable-condos-in-south-florida/",
+            "tags": ["non-warrantable condos","South Florida condos","condo financing"]
+        },{
+            "title": "Florida Jumbo Loan Limits by County: When Your Purchase Triggers High-Balance Financing",
+            "date": "December 15, 2025",
+            "categories": ["Jumbo Lending","Florida Real Estate"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+            "permalink": "http://localhost:1367/blogs/florida-jumbo-loan-limits-by-county-when-your-purchase-triggers-high-balance-financing/",
+            "tags": ["jumbo loan limits","Florida counties","conforming limits"]
+        },{
+            "title": "Navigating Jumbo Financing for Luxury Condo Towers in Miami and Tampa",
+            "date": "December 14, 2025",
+            "categories": ["Jumbo Lending","Condo Financing"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+            "permalink": "http://localhost:1367/blogs/navigating-jumbo-financing-for-luxury-condo-towers-in-miami-and-tampa/",
+            "tags": ["luxury condos","Miami condos","Tampa high-rise"]
+        }]

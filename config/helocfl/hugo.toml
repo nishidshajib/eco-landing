@@ -1,0 +1,282 @@
+baseURL = 'https://helocfl.com/'
+languageCode = 'en-us'
+title = 'HELOC Florida'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/helocfl'
+publishDir = 'public/helocfl'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Florida HELOC education covering how home equity lines of credit work, rates, terms, and how to use HELOCs strategically for home improvements or debt consolidation.'
+  author = 'Browse Lenders®'
+  shortName = 'HELOC Florida'
+  tagline = 'HELOC Education and Strategic Borrowing Guide'
+  homepage = 'https://helocfl.com/'
+
+  siteName = 'HELOC Florida'
+  siteDescription = 'Consumer-first Florida HELOC education explaining how home equity lines of credit work, what affects HELOC rates and terms, and how to use equity strategically without overborrowing.'
+  keywords = ['Florida HELOC', 'home equity line of credit Florida', 'HELOC rates', 'home equity borrowing', 'HELOC rates Florida']
+  serviceType = 'Florida HELOC Education'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
+
+  heroTitle = 'HELOC Florida - Tap Your Home Equity Strategically'
+  heroSubtitle = 'Learn how HELOCs work, what rates and terms you qualify for, and how to use home equity lines strategically for renovations, debt consolidation, or emergency funds--with transparent pricing guidance.'
+  heroImage = 'https://images.unsplash.com/photo-1573166364839-1bfe9196c23e?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Compare HELOC Lenders'
+  heroCTA1Link = 'https://www.browselenders.com/search/'
+  heroCTA2Text = 'Get Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Home Equity Education. Strategic Borrowing. Transparent Terms.'
+  aboutImage = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'HomeLoanCalculator.com'
+  tertiaryDomainURL = 'https://www.homeloancalculator.com'
+
+  programsTitle = 'What We Cover: HELOC Solutions'
+  programsSubtitle = 'Explore HELOC basics, qualification requirements, and strategic applications for Florida homeowners.'
+
+  program1Title = 'HELOC Basics and Structure'
+  program1Description = 'Learn how HELOCs work as revolving credit lines, draw periods vs. repayment periods, variable vs. fixed rates, and how they differ from home equity loans.'
+  program1Image = 'https://images.unsplash.com/photo-1700241956176-82ec52cb2872?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'HELOC Rates and Qualification'
+  program2Description = 'Understand what affects HELOC rates--credit score, home value, equity position, DTI--and how lenders determine your credit limit and draw period terms.'
+  program2Image = 'https://images.unsplash.com/photo-1616587895596-11641131b78b?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Strategic HELOC Uses'
+  program3Description = 'Explore when HELOCs make sense for home improvements, debt consolidation, emergency funds, or investment purposes--and when they carry unnecessary risk.'
+  program3Image = 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Compare HELOC Lenders in Florida'
+  programsCTALink = 'https://www.browselenders.com/search/'
+  programsClosingText = 'Each category helps Florida homeowners understand HELOC pricing, qualification factors, and strategic borrowing without misleading guarantees or hidden fees.'
+
+  educationTitle = 'In-Depth HELOC Guides'
+  educationSubtitle = 'Detailed resources on rates, qualification, payment planning, and comparison strategies.'
+
+  edu1Title = 'How HELOC Rates Are Determined'
+  edu1Description = 'What drives HELOC rates--Prime Rate, lender margins, credit score, home equity, DTI, and individual risk factors that affect your HELOC pricing.'
+  edu1Image = 'https://images.unsplash.com/photo-1714974528232-f62051870736?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Draw Period vs. Repayment Period'
+  edu2Description = 'Understanding HELOC structure--interest-only draw periods, principal + interest repayment, payment shock risks, and how to plan for the transition.'
+  edu2Image = 'https://images.unsplash.com/photo-1714974528693-f77f6fcc56af?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'HELOC vs. Cash-Out Refinance'
+  edu3Description = 'Compare HELOCs and refinances based on rates, flexibility, closing costs, and which option fits your timeline and risk tolerance.'
+  edu3Image = 'https://images.unsplash.com/photo-1590650423710-ffa6e7f63440?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Qualification Factors and Credit Impact'
+  edu4Description = 'How credit score, home value, equity position, and debt-to-income ratio affect your HELOC credit limit, rates, and approval odds.'
+  edu4Image = 'https://images.unsplash.com/photo-1623679659566-acae36c0226d?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'View Education Library'
+  educationCTALink = 'https://www.browselenders.com/education'
+
+  learningTitle = 'Learning Center – Build HELOC Literacy'
+  learningSubtitle = 'Tap home equity strategically with transparent rate and term information.'
+  learningImage = 'https://images.unsplash.com/photo-1600427652630-f97cc4db10cd?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Florida homeowners benefit from HELOC education before shopping lenders. Understanding what affects your rate, how draw and repayment periods work, and what questions to ask helps you compare options confidently without falling for misleading advertising.'
+  learningBullet1 = '''Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Florida-licensed lenders</a> through a transparent directory focused on HELOC education.'''
+  learningBullet2 = 'Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit scores</a> impact HELOC rates and credit limits across different lender programs.'
+  learningBullet3 = 'Use <a href="https://www.homeloancalculator.com" class="text-accent hover:underline" target="_blank">home equity planning tools</a> to understand HELOC vs. refinance strategies for tapping equity.'
+  learningBullet4 = 'Maintain control--HELOC education first, then compare lenders when ready.'
+  learningPara2 = 'This resource exists to serve Florida homeowners seeking HELOC transparency without misleading promises, teaser rates, or approval guarantees.'
+  learningPara3 = '''Start with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders® HELOC education resources</a> to prepare, then compare Florida-licensed lenders at your own pace.'''
+
+  whyChooseTitle = 'Why Florida Homeowners Use This Resource'
+  whyChooseSubtitle = 'Built for HELOC literacy, pricing transparency, and honest comparisons--never misleading rate promises.'
+  whyChoosePara1 = 'Homeowners can learn about Florida HELOCs in a neutral environment that explains rate factors, qualification criteria, and comparison methods without advertising unattainable rates.'
+  whyChoosePara2 = 'Resources point to unbiased education and lender directories so you maintain control of your HELOC shopping and decision timeline.'
+
+  whyChooseBox1Title = 'Honest HELOC Education'
+  whyChooseBox1Para = 'Understand how HELOC rates are priced without seeing teaser rates, bait-and-switch advertising, or guaranteed rate claims.'
+  whyChooseBox1Bullet1 = 'Clear explanations of HELOC rate factors and qualification tiers'
+  whyChooseBox1Bullet2 = 'No misleading rate advertisements or approval guarantees'
+  whyChooseBox1Bullet3 = 'Transparent rate comparisons and fee disclosures'
+
+  whyChooseBox2Title = 'HELOC Literacy Before Shopping'
+  whyChooseBox2Para = 'Learn what affects your HELOC rate so you can ask informed questions and spot misleading lender advertising.'
+  whyChooseBox2Bullet1 = 'Credit score tiers and rate cap impact'
+  whyChooseBox2Bullet2 = 'LTV and home equity pricing adjustments'
+  whyChooseBox2Bullet3 = 'Draw period and repayment period planning'
+
+  whyChooseBox3Title = 'Transparent Lender Comparisons'
+  whyChooseBox3Para = '''Compare Florida HELOC lenders based on full cost transparency--rates plus fees--instead of advertised rates that don't apply to your scenario.'''
+  whyChooseBox3Bullet1 = 'Education on Prime Rate + Margin structure'
+  whyChooseBox3Bullet2 = 'How to evaluate HELOC terms and rate caps'
+  whyChooseBox3Bullet3 = 'HELOC vs. refinance comparison guidance'
+
+  whyChooseCTA = 'Compare HELOC Lenders'
+  whyChooseCTALink = 'https://www.browselenders.com/search/'
+
+  testimonialsTitle = 'Homeowner Perspectives'
+  testimonialsSubtitle = 'Feedback from Florida homeowners who valued HELOC transparency over empty promises.'
+
+  blogCTATitle = 'Ready to compare Florida HELOC lenders?'
+  blogCTASubtitle = 'Learn about HELOC rates and qualification factors first, then browse Florida-licensed lenders who provide transparent pricing.'
+  blogCTAButtonText = 'Compare HELOC Lenders'
+  blogCTAButtonLink = 'https://www.browselenders.com/search/'
+  blogCTASecondaryText = 'Back to Home'
+  blogCTASecondaryLink = '/'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '''"Understanding HELOC draw periods and repayment shock helped me plan properly instead of being surprised by payment increases."'''
+  testimonial1Name = 'Verified Florida Homeowner'
+  testimonial1Subtitle = 'Payment planning clarity'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '''"Learning about Prime Rate + Margin structure made comparing HELOC lenders much easier than chasing advertised rates."'''
+  testimonial2Name = 'Verified Florida Homeowner'
+  testimonial2Subtitle = 'Rate comparison confidence'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '''"The education on HELOC vs. cash-out refinance helped me choose the right strategy for my home improvement project."'''
+  testimonial3Name = 'Verified Florida Homeowner'
+  testimonial3Subtitle = 'Strategic borrowing decision'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '''"I appreciated learning about rate caps and floor rates--no lender explained these clearly before this resource."'''
+  testimonial4Name = 'Verified Florida Homeowner'
+  testimonial4Subtitle = 'HELOC term education'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '''"The focus on transparent HELOC education without guaranteed rate promises was exactly what I needed before borrowing."'''
+  testimonial5Name = 'Verified Florida Homeowner'
+  testimonial5Subtitle = 'Honest guidance value'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '''"Understanding how credit score affects my HELOC credit limit helped me improve my financial position before applying."'''
+  testimonial6Name = 'Verified Florida Homeowner'
+  testimonial6Subtitle = 'Credit score impact'
+
+  calculatorsTitle = 'HELOC Planning Tools for Florida Homeowners'
+  calculatorsSubtitle = 'Use neutral calculators and education to understand HELOC scenarios and payment structures before committing.'
+
+  creditScoreTitle = 'Credit Score HELOC Impact'
+  creditScoreImage = 'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Your credit score determines your HELOC rate margin and credit limit. Education resources explain how each credit tier affects HELOC pricing and why optimizing credit before applying can improve your terms significantly.'
+  creditScoreHeading1 = 'Score Tiers'
+  creditScoreText1 = 'Learn how lenders price HELOC margins in tiers--780+, 740-779, 720-739, etc.--and why small credit improvements matter.'
+  creditScoreHeading2 = 'Rate Impact'
+  creditScoreText2 = 'See how HELOC rate margins and credit limits change across score ranges without misleading rate guarantees.'
+  creditScoreHeading3 = 'Optimization Strategies'
+  creditScoreText3 = 'Improve credit before applying for a HELOC to qualify for better margins and larger credit limits.'
+  creditScoreCTA = 'Explore Credit Education'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'For Employers & Organizations'
+  employersSubtitle = 'Add HELOC literacy to financial wellness benefits in Florida.'
+  employersImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Organizations can share statewide HELOC education, pricing transparency resources, and lender comparison tools so employees or members tap home equity confidently without misleading promises.'
+  employersBullet1Title = 'No-cost HELOC literacy resources'
+  employersBullet1Text = 'Offer education modules explaining HELOC rates, terms, and qualification factors without advertising specific rates.'
+  employersBullet2Title = 'Credit score optimization'
+  employersBullet2Text = 'Point to credit education showing how score improvements affect HELOC rates and credit limits.'
+  employersBullet3Title = 'Transparent lender comparison'
+  employersBullet3Text = 'Share HELOC comparison guides and term education so teams evaluate total cost, not just rates.'
+  employersCTA = 'Add HELOC Education'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+
+  blogTitle = 'Latest HELOC Insights'
+  blogSubtitle = 'Articles on HELOC rates, terms, qualification factors, and lender comparison strategies.'
+
+  faqTitle = 'Florida HELOC Questions'
+  faqSubtitle = 'Straightforward answers about how HELOCs work and how to shop transparently for the best terms.'
+
+  faq1Question = '''Why don't you show HELOC rates on this site?'''
+  faq1Answer = 'Advertised HELOC rates rarely apply to your specific situation. We focus on education so you understand rate factors, qualification criteria, and can compare lenders based on your actual terms--not misleading teaser rates.'
+
+  faq2Question = 'How should I use this resource?'
+  faq2Answer = 'Learn about HELOC rates and qualification factors, understand how your credit and equity position affect pricing, then browse Florida lenders and request personalized HELOC terms to compare accurately.'
+
+  faq3Question = '''What's the difference between Prime Rate and my HELOC rate?'''
+  faq3Answer = 'Prime Rate is the base rate set by banks (changes with Federal Reserve policy). Your HELOC rate = Prime + Lender Margin. The margin varies by lender based on your credit, equity, and DTI.'
+
+  faq4Question = 'How can I get the best HELOC terms?'
+  faq4Answer = 'Optimize your credit score, maintain high home equity (lower LTV), reduce debt-to-income ratio, and compare multiple Florida lenders for their rate margins and credit limits.'
+
+  ctaTitle = 'Ready to Compare Florida HELOC Lenders?'
+  ctaDescription = 'Learn about HELOC rates and qualification factors first, then connect with Florida-licensed lenders who provide transparent pricing based on your actual scenario.'
+  ctaCTA = 'Compare HELOC Lenders'
+  ctaCTALink = 'https://www.browselenders.com/search/'
+
+  [params.theme]
+    name = 'HELOC Florida Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'Florida HELOC', 'home equity']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B2E4E'
+    backgroundColor = '#F6F8FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

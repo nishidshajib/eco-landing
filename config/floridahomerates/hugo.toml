@@ -1,0 +1,282 @@
+baseURL = 'https://floridahomerates.com/'
+languageCode = 'en-us'
+title = 'Florida Home Rates'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/floridahomerates'
+publishDir = 'public/floridahomerates'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Florida mortgage rate education covering how rates are determined, what factors influence pricing, and how to compare lenders transparently without rate guarantees.'
+  author = 'Browse Lenders®'
+  shortName = 'Florida Home Rates'
+  tagline = 'Rate Education and Transparent Pricing Guidance'
+  homepage = 'https://floridahomerates.com/'
+
+  siteName = 'Florida Home Rates'
+  siteDescription = 'Consumer-first Florida mortgage rate education explaining how rates are priced, what factors influence your rate, and how to compare lenders without misleading rate promises.'
+  keywords = ['Florida mortgage rates', 'Florida home rates education', 'mortgage rate factors', 'Florida rate comparison', 'mortgage pricing']
+  serviceType = 'Florida Mortgage Rate Education'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
+
+  heroTitle = 'Florida Home Rates - Understand Pricing Without Empty Promises'
+  heroSubtitle = 'Learn how Florida mortgage rates are determined, what factors affect your pricing, and how to compare lenders transparently--no bait-and-switch tactics.'
+  heroImage = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Browse Florida Lenders'
+  heroCTA1Link = 'https://www.browselenders.com/search/'
+  heroCTA2Text = 'Contact Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Rate Literacy. No Guarantees. Transparent Comparisons.'
+  aboutImage = 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'Cash-OutRefinance.com'
+  tertiaryDomainURL = 'https://www.cash-outrefinance.com'
+
+  programsTitle = 'What We Cover: Rate Factors'
+  programsSubtitle = 'Explore how loan types, borrower profiles, and property characteristics impact Florida mortgage pricing.'
+
+  program1Title = 'Purchase Rate Factors'
+  program1Description = 'Learn what affects purchase mortgage rates--credit scores, loan-to-value, property type, occupancy, and loan program without guaranteed rate claims.'
+  program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'Refinance Rate Factors'
+  program2Description = 'Understand how refinance rates are priced differently than purchase rates--cash-out vs. rate-and-term, equity position, and current rate environment.'
+  program2Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Rate vs. APR Understanding'
+  program3Description = 'See the difference between interest rate and APR, how fees affect total cost, and why comparing APR gives you the true pricing picture.'
+  program3Image = 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Browse Florida Lenders'
+  programsCTALink = 'https://www.browselenders.com/search/'
+  programsClosingText = 'Each category helps Florida borrowers understand rate pricing without misleading guarantees or bait-and-switch advertising.'
+
+  educationTitle = 'In-Depth Rate Guides'
+  educationSubtitle = 'Detailed resources on rate mechanics, pricing transparency, and lender comparison strategies.'
+
+  edu1Title = 'How Rates Are Determined'
+  edu1Description = 'What drives mortgage rates--Federal Reserve policy, bond markets, lender margins, and individual borrower risk factors that affect your pricing.'
+  edu1Image = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'Credit Score Impact on Rates'
+  edu2Description = 'How middle credit scores affect rate pricing in tiers, why each 20-point increment matters, and how to optimize credit before rate shopping.'
+  edu2Image = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Lock Strategies and Timing'
+  edu3Description = 'When to lock your rate, how long locks last, what happens if rates drop after locking, and float-down options without guarantees.'
+  edu3Image = 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Points, Fees, and True Cost'
+  edu4Description = 'How discount points work, when buying down rates makes sense, and how to calculate break-even on upfront costs vs. monthly savings.'
+  edu4Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'View Education Library'
+  educationCTALink = 'https://www.browselenders.com/education'
+
+  learningTitle = 'Learning Center – Build Rate Literacy'
+  learningSubtitle = 'Compare lenders transparently before committing to a mortgage.'
+  learningImage = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Florida borrowers benefit from rate education before shopping lenders. Understanding what affects your rate, how APR differs from interest rate, and what questions to ask helps you compare options confidently without falling for bait-and-switch advertising.'
+  learningBullet1 = '''Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Florida-licensed lenders</a> through a transparent directory focused on education.'''
+  learningBullet2 = 'Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">middle credit scores</a> impact rate pricing across different loan programs.'
+  learningBullet3 = 'Use <a href="https://www.cash-outrefinance.com" class="text-accent hover:underline" target="_blank">refinance planning tools</a> to understand rate-and-term vs. cash-out pricing.'
+  learningBullet4 = 'Maintain control--rate education first, then compare lenders when ready.'
+  learningPara2 = 'This resource exists to serve Florida borrowers seeking rate transparency without misleading promises, teaser rates, or approval guarantees.'
+  learningPara3 = '''Start with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders® rate education resources</a> to prepare, then compare Florida-licensed lenders at your own pace.'''
+
+  whyChooseTitle = 'Why Florida Borrowers Use This Resource'
+  whyChooseSubtitle = 'Built for rate literacy, pricing transparency, and honest comparisons--never misleading rate promises.'
+  whyChoosePara1 = 'Borrowers can learn about Florida mortgage rates in a neutral environment that explains pricing factors and comparison methods without advertising unattainable rates.'
+  whyChoosePara2 = 'Resources point to unbiased education and lender directories so you maintain control of your rate shopping and decision timeline.'
+
+  whyChooseBox1Title = 'Honest Rate Education'
+  whyChooseBox1Para = 'Understand how rates are priced without seeing teaser rates, bait-and-switch advertising, or guaranteed rate claims.'
+  whyChooseBox1Bullet1 = 'Clear explanations of rate factors and pricing tiers'
+  whyChooseBox1Bullet2 = 'No misleading rate advertisements or guarantees'
+  whyChooseBox1Bullet3 = 'Transparent APR comparisons and fee disclosures'
+
+  whyChooseBox2Title = 'Rate Literacy Before Shopping'
+  whyChooseBox2Para = 'Learn what affects your rate so you can ask informed questions and spot misleading lender advertising.'
+  whyChooseBox2Bullet1 = 'Credit score tiers and rate impact'
+  whyChooseBox2Bullet2 = 'LTV and occupancy pricing adjustments'
+  whyChooseBox2Bullet3 = 'Points, fees, and break-even calculations'
+
+  whyChooseBox3Title = 'Transparent Lender Comparisons'
+  whyChooseBox3Para = '''Compare Florida lenders based on full cost transparency--rate plus fees--instead of advertised rates that don't apply to your scenario.'''
+  whyChooseBox3Bullet1 = 'Education on APR vs. interest rate'
+  whyChooseBox3Bullet2 = 'How to read Loan Estimates accurately'
+  whyChooseBox3Bullet3 = 'Rate shopping without multiple credit hits'
+
+  whyChooseCTA = 'Browse Florida Lenders'
+  whyChooseCTALink = 'https://www.browselenders.com/search/'
+
+  testimonialsTitle = 'Borrower Perspectives'
+  testimonialsSubtitle = 'Feedback from Florida borrowers who valued rate transparency over empty promises.'
+
+  blogCTATitle = 'Ready to compare Florida mortgage rates?'
+  blogCTASubtitle = 'Learn about rate factors first, then browse Florida-licensed lenders who provide transparent pricing.'
+  blogCTAButtonText = 'Browse Florida Lenders'
+  blogCTAButtonLink = 'https://www.browselenders.com/search/'
+  blogCTASecondaryText = 'Back to Home'
+  blogCTASecondaryLink = '/'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '''"Understanding how my credit score affected rate pricing helped me avoid lenders advertising rates I would never actually qualify for."'''
+  testimonial1Name = 'Verified Florida Borrower'
+  testimonial1Subtitle = 'Rate literacy experience'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '''"I appreciated learning about APR vs. interest rate before shopping lenders. It helped me compare total costs, not just advertised rates."'''
+  testimonial2Name = 'Verified Florida Borrower'
+  testimonial2Subtitle = 'Informed rate comparison'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '''"The education on rate locks and timing helped me make confident decisions without feeling pressured by lender urgency tactics."'''
+  testimonial3Name = 'Verified Florida Borrower'
+  testimonial3Subtitle = 'Controlled rate shopping'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '''"Learning about discount points and break-even helped me decide whether paying upfront fees made sense for my timeline."'''
+  testimonial4Name = 'Verified Florida Borrower'
+  testimonial4Subtitle = 'Cost-benefit clarity'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '''"The focus on honest rate education without guaranteed rate promises was exactly what I needed."'''
+  testimonial5Name = 'Verified Florida Borrower'
+  testimonial5Subtitle = 'Transparent guidance'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '''"Understanding LTV pricing adjustments explained why my rate quote changed when my appraisal came in lower than expected."'''
+  testimonial6Name = 'Verified Florida Borrower'
+  testimonial6Subtitle = 'Pricing transparency'
+
+  calculatorsTitle = 'Rate Planning Tools for Florida Borrowers'
+  calculatorsSubtitle = 'Use neutral calculators and education to understand rate scenarios before committing.'
+
+  creditScoreTitle = 'Credit Score Rate Impact'
+  creditScoreImage = 'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Your middle credit score determines your rate tier. Education resources explain how each 20-point increment affects pricing and why optimizing credit before rate shopping can save thousands over the loan life.'
+  creditScoreHeading1 = 'Score Tiers'
+  creditScoreText1 = 'Learn how lenders price rates in tiers--740+, 720-739, 700-719, etc.--and why small credit improvements matter.'
+  creditScoreHeading2 = 'Rate Impact'
+  creditScoreText2 = 'See how rate pricing changes across score ranges without misleading rate guarantees.'
+  creditScoreHeading3 = 'Optimization Strategies'
+  creditScoreText3 = 'Prepare credit before rate shopping to qualify for better pricing tiers.'
+  creditScoreCTA = 'Explore Credit Education'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'For Employers & Organizations'
+  employersSubtitle = 'Add mortgage rate literacy to financial wellness benefits in Florida.'
+  employersImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Organizations can share statewide rate education, pricing transparency resources, and lender comparison tools so employees or members shop rates confidently without misleading promises.'
+  employersBullet1Title = 'No-cost rate literacy resources'
+  employersBullet1Text = 'Offer education modules explaining rate factors and pricing without advertising specific rates.'
+  employersBullet2Title = 'Credit score optimization'
+  employersBullet2Text = 'Point to credit education showing how score improvements affect rate pricing.'
+  employersBullet3Title = 'Transparent lender comparison'
+  employersBullet3Text = 'Share APR education and Loan Estimate guides so teams compare total cost, not just rates.'
+  employersCTA = 'Add Rate Education'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+
+  blogTitle = 'Latest Rate Insights'
+  blogSubtitle = 'Articles on rate factors, pricing transparency, and lender comparison strategies.'
+
+  faqTitle = 'Florida Rate Questions'
+  faqSubtitle = 'Straightforward answers about how mortgage rates work and how to shop transparently.'
+
+  faq1Question = '''Why don't you show rates on this site?'''
+  faq1Answer = 'Advertised rates rarely apply to your specific situation. We focus on education so you understand rate factors and can compare lenders based on your actual pricing--not bait-and-switch teaser rates.'
+
+  faq2Question = 'How should I use this resource?'
+  faq2Answer = 'Learn about rate factors, understand how your credit and loan scenario affect pricing, then browse Florida lenders and request personalized Loan Estimates to compare accurately.'
+
+  faq3Question = '''What's the difference between rate and APR?'''
+  faq3Answer = 'Interest rate is the cost to borrow. APR includes the rate plus fees, giving you the true cost comparison. Always compare APR when shopping lenders.'
+
+  faq4Question = 'How can I get the best rate?'
+  faq4Answer = 'Optimize your middle credit score, increase down payment to lower LTV, reduce debt-to-income ratio, and compare multiple Florida lenders using Loan Estimates within a 14-day window.'
+
+  ctaTitle = 'Ready to Compare Florida Mortgage Rates?'
+  ctaDescription = 'Learn about rate factors first, then connect with Florida-licensed lenders who provide transparent pricing based on your actual scenario.'
+  ctaCTA = 'Browse Florida Lenders'
+  ctaCTALink = 'https://www.browselenders.com/search/'
+
+  [params.theme]
+    name = 'Florida Home Rates Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'Florida rates', 'mortgage rates']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B2E4E'
+    backgroundColor = '#F6F8FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

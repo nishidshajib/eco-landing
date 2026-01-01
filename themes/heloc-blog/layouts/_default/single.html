@@ -157,16 +157,23 @@
             </div>
         </div>
 
-        <!-- CTA Section -->
+        <!-- CTA Section (configurable per site) -->
+        {{ $ctaTitle := .Site.Params.blogCTATitle | default "Ready to browse loan officers?" }}
+        {{ $ctaSubtitle := .Site.Params.blogCTASubtitle | default "Compare licensed professionals in our directory — education first, no pressure." }}
+        {{ $ctaPrimaryText := .Site.Params.blogCTAButtonText | default "Browse Loan Officers" }}
+        {{ $ctaPrimaryLink := .Site.Params.blogCTAButtonLink | default "https://www.browselenders.com/search/" }}
+        {{ $ctaSecondaryText := .Site.Params.blogCTASecondaryText | default "Back to Home" }}
+        {{ $ctaSecondaryLink := .Site.Params.blogCTASecondaryLink | default "/" }}
+
         <div class="mt-12 p-8 bg-gradient-to-br from-primary to-blue-900 rounded-2xl text-white text-center">
-            <h3 class="text-2xl font-bold mb-4">Ready to Explore Your HELOC Options?</h3>
-            <p class="mb-6 text-white/90">Connect with trusted lenders and get competitive rates with transparent terms.</p>
+            <h3 class="text-2xl font-bold mb-4">{{ $ctaTitle }}</h3>
+            <p class="mb-6 text-white/90">{{ $ctaSubtitle }}</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://www.browselenders.com" class="bg-accent hover:bg-blue-500 text-white font-medium py-3 px-8 rounded-md transition-colors">
-                    Get Pre-Qualified
+                <a href="{{ $ctaPrimaryLink }}" class="bg-accent hover:bg-blue-500 text-white font-medium py-3 px-8 rounded-md transition-colors">
+                    {{ $ctaPrimaryText }}
                 </a>
-                <a href="/" class="bg-white/10 border border-white/30 hover:bg-white/20 text-white font-medium py-3 px-8 rounded-md transition-colors">
-                    Back to Home
+                <a href="{{ $ctaSecondaryLink }}" class="bg-white/10 border border-white/30 hover:bg-white/20 text-white font-medium py-3 px-8 rounded-md transition-colors">
+                    {{ $ctaSecondaryText }}
                 </a>
             </div>
         </div>

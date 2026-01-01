@@ -1,0 +1,12 @@
+name = "Texas Loan Officers Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Find licensed Texas loan officers specializing in FHA, conventional, VA, jumbo, and refinance mortgages—expert guidance for homebuyers and refinancers."
+homepage = "https://texasloanofficers.com/"
+tags = ["blog", "responsive", "loan officers", "Texas"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://texasloanofficers.com/"

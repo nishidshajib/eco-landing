@@ -65,6 +65,9 @@ publishDir = 'public/badcreditloanspecialist'
   tertiaryDomainURL = 'https://www.cash-outrefinance.com'
   
   # Programs Section
+  programsTitle = 'Bad Credit Loan Programs & Approval Paths'
+  programsSubtitle = 'Explore loan options designed for borrowers with 500-660 credit scores rebuilding after financial hardship.'
+  
   program1Title = 'FHA 500-579 Score Loans (10% Down)'
   program1Description = 'FHA allows 500-579 credit scores with 10% down payment through manual underwriting. Bad credit specialists know which FHA lenders approve this range and how to structure applications for approval despite recent collections, charge-offs, or medical debt.'
   program1Image = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600&auto=format&fit=crop'
@@ -85,6 +88,9 @@ publishDir = 'public/badcreditloanspecialist'
   programsCTALink = 'https://www.middlecreditscore.com'
   
   # Education Section
+  educationTitle = 'In-Depth Bad Credit Mortgage Guides'
+  educationSubtitle = 'Detailed resources on manual underwriting, compensating factors, and approval strategies for subprime borrowers.'
+  
   edu1Title = 'Manual Underwriting for Bad Credit'
   edu1Description = 'Automated underwriting systems reject most bad credit applications instantly. Manual underwriting allows human review of compensating factors—strong income, payment history improvements, or large down payments that offset low scores.'
   edu1Image = 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop'

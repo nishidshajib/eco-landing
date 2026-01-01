@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Florida Home Rates</title>
+    <link>http://localhost:1370/categories/</link>
+    <description>Recent content in Categories on Florida Home Rates</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1370/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rate Education</title>
+      <link>http://localhost:1370/categories/rate-education/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1370/categories/rate-education/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Credit Education</title>
+      <link>http://localhost:1370/categories/credit-education/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1370/categories/credit-education/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

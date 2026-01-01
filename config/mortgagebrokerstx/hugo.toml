@@ -1,0 +1,281 @@
+baseURL = 'https://mortgagebrokerstx.com/'
+languageCode = 'en-us'
+title = 'Mortgage Brokers Texas'
+theme = 'heloc-blog'
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = 'content/mortgagebrokerstx'
+publishDir = 'public/mortgagebrokerstx'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[pagination]
+pagerSize = 12
+path = 'page'
+
+[params]
+  description = 'Texas mortgage brokers connecting homebuyers with competitive rates across multiple lenders—FHA, conventional, jumbo, and specialty loan programs.'
+  author = 'Browse Lenders®'
+  shortName = 'Mortgage Brokers Texas'
+  tagline = 'Texas Mortgage Broker Directory & Rate Comparison'
+  homepage = 'https://mortgagebrokerstx.com/'
+
+  siteName = 'Mortgage Brokers Texas'
+  siteDescription = 'Find Texas mortgage brokers who compare rates across multiple lenders for FHA, conventional, jumbo, and specialty loans—connect with local experts who shop lenders for better pricing and terms.'
+  keywords = ['Texas mortgage brokers', 'mortgage brokers Houston', 'mortgage brokers Dallas', 'TX mortgage lenders', 'mortgage rate shopping Texas', 'best mortgage brokers Texas']
+  serviceType = 'Mortgage Broker Services Texas'
+
+  twitterHandle = '@BrowseLenders'
+  supportEmail = 'support@browselenders.com'
+  ehoLogo = 'https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png'
+
+  heroTitle = 'Mortgage Brokers Texas - Shop Rates Across Multiple Lenders'
+  heroSubtitle = 'Connect with licensed Texas mortgage brokers who compare FHA, conventional, jumbo, and specialty loans from multiple lenders—finding you better rates and terms without juggling applications.'
+  heroImage = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80'
+  heroCTA1Text = 'Find Brokers Near Me'
+  heroCTA1Link = 'https://www.browselenders.com/search/'
+  heroCTA2Text = 'Get Support'
+  heroCTA2Link = 'mailto:support@browselenders.com'
+
+  aboutTitle = 'Why Texas Homebuyers Work with Mortgage Brokers'
+  aboutImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80'
+
+  primaryDomain = 'BrowseLenders.com'
+  primaryDomainURL = 'https://www.browselenders.com'
+  secondaryDomain = 'MiddleCreditScore.com'
+  secondaryDomainURL = 'https://www.middlecreditscore.com'
+  tertiaryDomain = 'HomeLoanCalculator.com'
+  tertiaryDomainURL = 'https://www.homeloancalculator.com'
+
+  programsTitle = 'Mortgage Programs Brokers Access'
+  programsSubtitle = 'Understand FHA, conventional, jumbo, and specialty loans Texas brokers shop across multiple lenders.'
+
+  program1Title = 'Conventional 20% Down Mortgages'
+  program1Description = 'Conventional loans with 20% down eliminate PMI and offer competitive rates. Brokers compare conventional rates across lenders to find your best pricing and terms.'
+  program1Image = 'https://images.unsplash.com/photo-1758519289559-f4d0ead39634?auto=format&fit=crop&w=1600&q=80'
+
+  program2Title = 'FHA 3.5% Down Financing'
+  program2Description = 'FHA loans make homeownership accessible with lower down payments and flexible credit requirements. Brokers match you with FHA lenders offering the best rates and terms for your situation.'
+  program2Image = 'https://images.unsplash.com/photo-1573166364839-1bfe9196c23e?auto=format&fit=crop&w=1600&q=80'
+
+  program3Title = 'Jumbo Mortgage Programs (High-Balance)'
+  program3Description = 'Texas luxury markets require jumbo financing expertise. Brokers access portfolio lenders and jumbo specialists offering rates and terms for high-balance properties in Austin, Dallas, and Houston.'
+  program3Image = 'https://images.unsplash.com/photo-1600427652630-f97cc4db10cd?auto=format&fit=crop&w=1600&q=80'
+
+  programsCTA = 'Find Texas Mortgage Brokers'
+  programsCTALink = 'https://www.browselenders.com/search/'
+  programsClosingText = 'Each loan type has different qualification criteria, rate structures, and lender overlays. Mortgage brokers navigate these differences to find programs matching your financial profile.'
+
+  educationTitle = 'Mortgage Broker Education Center'
+  educationSubtitle = 'Learn how brokers shop rates, what affects mortgage pricing, and how to compare loan offers accurately.'
+
+  edu1Title = 'How Mortgage Brokers Shop Rates'
+  edu1Description = 'Mortgage brokers connect you with multiple lenders simultaneously, comparing FHA, conventional, jumbo, and portfolio products. Instead of shopping 5-10 lenders yourself, brokers do the legwork—submitting applications, gathering documentation, and comparing offers.'
+  edu1Image = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80'
+
+  edu2Title = 'What Affects Your Mortgage Rate'
+  edu2Description = 'Credit score, down payment, loan type, property location, and market conditions drive pricing. Understanding these factors helps you work strategically with brokers to negotiate the best terms.'
+  edu2Image = 'https://images.unsplash.com/photo-1758519288355-fe5b6fcc9f39?auto=format&fit=crop&w=1600&q=80'
+
+  edu3Title = 'Locking Rates and Timeline Management'
+  edu3Description = 'Rate locks protect you from daily market swings during underwriting. Brokers advise when to lock rates based on market conditions and your personal timeline—balancing protection with rate shopping opportunities.'
+  edu3Image = 'https://images.unsplash.com/photo-1573166364839-1bfe9196c23e?auto=format&fit=crop&w=1600&q=80'
+
+  edu4Title = 'Comparing Loan Offers from Multiple Lenders'
+  edu4Description = 'Mortgage shopping requires comparing apples-to-apples: interest rate, APR, closing costs, lender fees, and loan terms. Brokers help you evaluate total cost of borrowing across competing offers.'
+  edu4Image = 'https://images.unsplash.com/photo-1600427652630-f97cc4db10cd?auto=format&fit=crop&w=1600&q=80'
+
+  educationCTA = 'View Education Library'
+  educationCTALink = 'https://www.browselenders.com/education'
+
+  learningTitle = 'Learning Center – Mortgage Shopping Made Simple'
+  learningSubtitle = 'Understand how mortgage brokers work and why they can save you thousands.'
+  learningImage = 'https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?auto=format&fit=crop&w=2000&q=80'
+  learningPara1 = 'Texas homebuyers benefit from mortgage broker education before shopping. Understanding what affects your rate, how brokers compare lenders, and what questions to ask helps you negotiate confidently and avoid costly mistakes.'
+  learningBullet1 = '''Connect with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Texas-licensed brokers</a> through a transparent directory focused on rate shopping and lender transparency.'''
+  learningBullet2 = 'Learn how <a href="https://www.middlecreditscore.com" class="text-accent hover:underline" target="_blank">credit scores</a> impact mortgage rates and how to optimize your profile before applying.'
+  learningBullet3 = 'Use <a href="https://www.homeloancalculator.com" class="text-accent hover:underline" target="_blank">mortgage calculators</a> to understand payment impacts, APR differences, and closing cost implications.'
+  learningBullet4 = 'Maintain control—broker education first, then shop at your own pace.'
+  learningPara2 = 'This resource exists to serve Texas homebuyers seeking mortgage transparency without misleading rate quotes or pressure tactics.'
+  learningPara3 = '''Start with <a href="https://www.browselenders.com" class="text-accent hover:underline" target="_blank">Browse Lenders® mortgage education</a> to prepare, then compare Texas-licensed brokers at your own pace.'''
+
+  whyChooseTitle = 'Why Texas Homebuyers Work with Mortgage Brokers'
+  whyChooseSubtitle = 'Brokers access multiple lenders, shop rates transparently, and save you time and money.'
+  whyChoosePara1 = 'Homebuyers can research mortgage options in a transparent environment that explains how brokers work, what affects pricing, and how to evaluate competing offers without pressure.'
+  whyChoosePara2 = 'Resources point to mortgage broker directories and education so you maintain control of your shopping and decision timeline.'
+
+  whyChooseBox1Title = 'Access to Multiple Lenders'
+  whyChooseBox1Para = 'Banks and direct lenders limit you to their products and pricing. Mortgage brokers connect you with 50+ lenders including portfolio banks, credit unions, jumbo specialists, and non-QM investors—exposing you to wider pricing and term options.'
+  whyChooseBox1Bullet1 = 'Shop conventional, FHA, jumbo, VA, and specialty loans simultaneously'
+  whyChooseBox1Bullet2 = 'Access portfolio lenders and credit unions most homebuyers never find'
+  whyChooseBox1Bullet3 = 'Compare rates across 20-50+ lenders without multiple hard inquiries'
+
+  whyChooseBox2Title = 'Rate Shopping Without Application Burnout'
+  whyChooseBox2Para = 'Submitting applications to 5-10 lenders yourself costs time, repeated documentation, and hard inquiries. Brokers manage the application process with their lender relationships—you submit once, brokers shop multiple lenders and deliver competing offers.'
+  whyChooseBox2Bullet1 = 'Brokers leverage lender relationships for faster approvals and priority underwriting'
+  whyChooseBox2Bullet2 = 'One application spreads across multiple lenders without repeated submissions'
+  whyChooseBox2Bullet3 = 'Brokers manage appraisals, inspections, and timeline coordination across lenders'
+
+  whyChooseBox3Title = 'Transparent Pricing and Fee Comparison'
+  whyChooseBox3Para = 'Mortgage pricing is complex—comparing interest rates alone misleads you. Brokers present competing offers with clear breakdowns of APR, total closing costs, and lender fees so you evaluate true borrowing cost, not advertised rates.'
+  whyChooseBox3Bullet1 = 'Side-by-side comparison of interest rates AND APR across lenders'
+  whyChooseBox3Bullet2 = 'Transparent breakdown of lender fees, broker fees, and third-party costs'
+  whyChooseBox3Bullet3 = 'Negotiation on lock periods, rate adjustments, and fee concessions'
+
+  whyChooseCTA = 'Find Mortgage Brokers'
+  whyChooseCTALink = 'https://www.browselenders.com/search/'
+
+  testimonialsTitle = 'Texas Homeowner Perspectives'
+  testimonialsSubtitle = 'Feedback from Texas borrowers who valued broker transparency and rate shopping.'
+
+  testimonial1Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial1Text = '''"My broker compared rates from 15 lenders and saved me $8,000 in closing costs. I would never have found that pricing shopping direct lenders."'''
+  testimonial1Name = 'Verified Texas Homeowner'
+  testimonial1Subtitle = 'Rate shopping savings'
+
+  testimonial2Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial2Text = '''"As a freelancer with irregular income, I needed a jumbo lender who understood my financials. My broker found a portfolio bank that approved me when banks said no."'''
+  testimonial2Name = 'Verified Texas Homeowner'
+  testimonial2Subtitle = 'Specialized loan access'
+
+  testimonial3Image = 'https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80'
+  testimonial3Text = '''"The broker handled all the paperwork and coordination between lenders. I just needed to sign documents—they did the heavy lifting."'''
+  testimonial3Name = 'Verified Texas Homeowner'
+  testimonial3Subtitle = 'Simplified process'
+
+  testimonial4Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial4Text = '''"Comparing offers from multiple lenders helped me understand why rates vary. My broker explained it clearly without pressure tactics."'''
+  testimonial4Name = 'Verified Texas Homeowner'
+  testimonial4Subtitle = 'Price transparency'
+
+  testimonial5Image = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80'
+  testimonial5Text = '''"I locked in a rate that beat my bank's offer by 0.5%. That 0.5% saved me $30,000 over the loan term."'''
+  testimonial5Name = 'Verified Texas Homeowner'
+  testimonial5Subtitle = 'Rate lock strategy'
+
+  testimonial6Image = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
+  testimonial6Text = '''"My broker answered every question and never rushed me. The education upfront made the process stress-free."'''
+  testimonial6Name = 'Verified Texas Homeowner'
+  testimonial6Subtitle = 'Expert guidance value'
+
+  calculatorsTitle = 'Mortgage Planning Tools for Texas Homebuyers'
+  calculatorsSubtitle = 'Use neutral calculators and education to understand mortgage scenarios before committing.'
+
+  creditScoreTitle = 'Credit Score Mortgage Impact'
+  creditScoreImage = 'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80'
+  creditScorePara1 = 'Your credit score drives mortgage rate pricing in Texas. Education resources explain how credit tiers affect pricing and why optimizing credit before applying can improve your terms significantly.'
+  creditScoreHeading1 = 'Score Tiers'
+  creditScoreText1 = 'Learn how lenders price mortgage rates across credit score tiers—780+, 760-779, 740-759, etc.—and why small credit improvements matter.'
+  creditScoreHeading2 = 'Rate Impact'
+  creditScoreText2 = 'See how mortgage rates and APR change across score ranges without misleading rate guarantees.'
+  creditScoreHeading3 = 'Optimization Strategies'
+  creditScoreText3 = 'Improve credit before mortgage shopping to qualify for better rates and larger loan amounts.'
+  creditScoreCTA = 'Explore Credit Education'
+  creditScoreCTALink = 'https://www.middlecreditscore.com/'
+
+  employersTitle = 'For Employers & Organizations'
+  employersSubtitle = 'Add mortgage broker education to financial wellness benefits in Texas.'
+  employersImage = 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80'
+  employersPara = 'Organizations can share Texas mortgage broker education, rate shopping transparency resources, and lender comparison tools so employees or members buy homes confidently without misleading advertising.'
+  employersBullet1Title = 'No-cost broker education resources'
+  employersBullet1Text = 'Offer education modules explaining how brokers work, what affects mortgage rates, and how to evaluate offers.'
+  employersBullet2Title = 'Credit score optimization'
+  employersBullet2Text = 'Point to credit education showing how score improvements affect mortgage rates and approval odds.'
+  employersBullet3Title = 'Transparent broker comparison'
+  employersBullet3Text = 'Share broker directories and rate shopping guides so teams evaluate all available options.'
+  employersCTA = 'Add Mortgage Education'
+  employersCTALink = 'https://browselenders.com/employer-benefits/'
+
+  blogTitle = 'Texas Mortgage Broker Insights'
+  blogSubtitle = 'Articles on rate shopping, lender comparison, and mortgage strategy for Texas homebuyers.'
+
+  faqTitle = 'Texas Mortgage Broker Questions'
+  faqSubtitle = 'Straightforward answers about how mortgage brokers work and how to shop transparently.'
+
+  faq1Question = 'What do mortgage brokers charge in Texas?'
+  faq1Answer = 'Brokers charge either origination fees (1%) paid by you or lender fees paid by the lender. Most borrowers prefer lender-paid compensation—the broker shops lenders and you pay nothing extra. Compare total costs (broker fees + lender origination fees) across offers to evaluate true pricing.'
+
+  faq2Question = 'How long does mortgage broker shopping take in Texas?'
+  faq2Answer = 'Typical timeline is 30-45 days from application to closing. Brokers can accelerate with portfolio lenders (15-20 days) or extend timelines if you need time to improve credit, save down payment, or coordinate with a home purchase.'
+
+  faq3Question = 'Can brokers get better rates than direct lenders?'
+  faq3Answer = 'Yes, brokers access lenders most homebuyers never find—portfolio banks, credit unions, jumbo specialists—exposing you to wider pricing. Brokers also leverage relationships for priority processing and rate discounts. Comparing broker offers to direct lender offers typically favors the broker.'
+
+  faq4Question = 'How do I know if a broker is legitimate in Texas?'
+  faq4Answer = 'Verify licensing through the Texas Workforce Commission and NMLS. Ask for references, compare competing offers with written terms, and avoid brokers who guarantee rates or pressure quick decisions. Transparent brokers provide clear fee breakdowns and explain why their offer is competitive.'
+
+  faq5Question = 'Do mortgage brokers work with borrowers with bad credit?'
+  faq5Answer = 'Yes, brokers access FHA, non-QM, and portfolio lenders who approve scores below 620. Brokers often help credit strategies before applying—disputing errors, paying collections strategically—to maximize approval odds and improve rates.'
+
+  faq6Question = 'Can brokers help with jumbo mortgages in Texas?'
+  faq6Answer = 'Yes, Texas brokers specialize in jumbo financing for luxury markets like Austin, Dallas, and Houston. Brokers access portfolio lenders and jumbo specialists with competitive rates, portfolio flexibility, and faster approvals than traditional banks.'
+
+  ctaTitle = 'Ready to Compare Texas Mortgage Brokers?'
+  ctaDescription = 'Learn about mortgage rates and broker services, then connect with Texas-licensed brokers who provide transparent pricing and rate shopping without pressure.'
+  ctaCTA = 'Find Mortgage Brokers'
+  ctaCTALink = 'https://www.browselenders.com/search/'
+
+  [params.theme]
+    name = 'Mortgage Brokers Texas Theme'
+    license = 'MIT'
+    licenseLink = 'https://github.com/yourname/yourtheme/blob/master/LICENSE'
+    tags = ['blog', 'responsive', 'mortgage brokers', 'Texas']
+    features = ['blog', 'responsive']
+    minVersion = '0.100.0'
+
+  favicon = '/favicon.png'
+
+  [params.pwa]
+    display = 'standalone'
+    themeColor = '#0B2E4E'
+    backgroundColor = '#F6F8FB'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '192x192'
+      type = 'image/png'
+    [[params.pwa.icons]]
+      src = '/favicon.png'
+      sizes = '512x512'
+      type = 'image/png'
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = 'application/json'
+    baseName = 'manifest'
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = 'application/toml'
+    baseName = 'theme'
+    isPlainText = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON', 'MANIFEST', 'THEMETOML']
+  section = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
+
+[permalinks]
+  blogs = '/blogs/:slug/'

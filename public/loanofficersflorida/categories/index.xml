@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Loan Officers Florida</title>
+    <link>http://localhost:1368/categories/</link>
+    <description>Recent content in Categories on Loan Officers Florida</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1368/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1368/categories/documentation/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/documentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mortgage Education</title>
+      <link>http://localhost:1368/categories/mortgage-education/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/mortgage-education/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Qualification</title>
+      <link>http://localhost:1368/categories/qualification/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/qualification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Credit Education</title>
+      <link>http://localhost:1368/categories/credit-education/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/credit-education/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mortgage Qualification</title>
+      <link>http://localhost:1368/categories/mortgage-qualification/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/mortgage-qualification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home Equity</title>
+      <link>http://localhost:1368/categories/home-equity/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/home-equity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Refinancing</title>
+      <link>http://localhost:1368/categories/refinancing/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/refinancing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First-Time Buyers</title>
+      <link>http://localhost:1368/categories/first-time-buyers/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/first-time-buyers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Employed</title>
+      <link>http://localhost:1368/categories/self-employed/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/self-employed/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loan Comparison</title>
+      <link>http://localhost:1368/categories/loan-comparison/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/loan-comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mortgage Programs</title>
+      <link>http://localhost:1368/categories/mortgage-programs/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1368/categories/mortgage-programs/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
