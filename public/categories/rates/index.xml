@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rates on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</title>
+    <link>http://localhost:1379/categories/rates/</link>
+    <description>Recent content in Rates on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Nov 2025 11:10:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1379/categories/rates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Sunday Brunch Rate Lab</title>
+      <link>http://localhost:1379/heloclending/blogs/brunch-rate-lab/</link>
+      <pubDate>Sat, 29 Nov 2025 11:10:00 -0500</pubDate>
+      <guid>http://localhost:1379/heloclending/blogs/brunch-rate-lab/</guid>
+      <description>&lt;p&gt;Every Sunday we used to argue about chores. Now we run a “rate lab” over brunch and leave the table with HELOC action items instead of crumbs. It sounds quirky, but the ritual keeps our calculators current, our credit on track, and our loan officer impressed. If you want to copy it, here’s how we structure the 60-minute session.&lt;/p&gt;&#xA;&lt;h2 id=&#34;segment-1-market-pulse-10-minutes&#34;&gt;Segment 1: Market pulse (10 minutes)&lt;/h2&gt;&#xA;&lt;p&gt;We open laptops while the waffles cook and pull up the HELOCLending dashboard. One person reads the latest rate commentary from &lt;a href=&#34;https://www.cash-outrefinance.com&#34; class=&#34;text-accent hover:underline&#34; target=&#34;_blank&#34;&gt;Cash-OutRefinance.com&lt;/a&gt;; another updates the HELOC calculator with current balances and estimated home value. We capture three numbers on a whiteboard: CLTV, target line amount, and blended rate if we combined a HELOC with a small cash-out refi. Seeing those numbers weekly prevents us from overreacting when headlines shift midweek.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inside My Rate Window War Room</title>
+      <link>http://localhost:1379/refinancemtgs/blogs/rate-window-war-room/</link>
+      <pubDate>Thu, 27 Nov 2025 08:20:00 -0500</pubDate>
+      <guid>http://localhost:1379/refinancemtgs/blogs/rate-window-war-room/</guid>
+      <description>&lt;p&gt;I used to think refinance timing was just about watching headlines. Then I sat through four failed lock attempts in one year and realized I needed a war room, not a group chat. This fall I built one, complete with rate guardrails, debt reshuffle plans, and clear marching orders for everyone involved. The result: a lock that felt boring—in the best way—and a closing table where every dollar already had a job. Here is the play-by-play.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Our Rate-Lock Fire Drill: Points vs Par In One Evening</title>
+      <link>http://localhost:1379/conventionalmtg/blogs/rate-lock-fire-drill/</link>
+      <pubDate>Wed, 26 Nov 2025 09:15:00 -0500</pubDate>
+      <guid>http://localhost:1379/conventionalmtg/blogs/rate-lock-fire-drill/</guid>
+      <description>&lt;p&gt;When our lender texts “I’d lock by tonight,” we default to a playbook we nicknamed the rate-lock fire drill. The protocol keeps us from panic-deciding whether to pay points, float, or pivot to a shorter lock. Within two hours we have updated pricing tests, fresh credit notes, and talking points for the entire decision chain.&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-1-define-the-window-and-the-stakes&#34;&gt;Step 1: Define the window and the stakes&lt;/h2&gt;&#xA;&lt;p&gt;The first voice memo goes into the family chat explaining what is happening and why tonight matters. Then we confirm the real deadline. Sometimes “lock tonight” is code for “rates are trending up but you likely have until noon tomorrow.” We pin the actual cut-off to the top of our shared task board. At the same time we confirm the property status: appraisal done, title clear, insurance quote ready. If one of those is missing, we can’t justify an expensive lock.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

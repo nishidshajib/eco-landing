@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflow on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</title>
+    <link>http://localhost:1379/tags/workflow/</link>
+    <description>Recent content in Workflow on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Nov 2025 09:10:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1379/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Our Bank Statement War Room Weekend</title>
+      <link>http://localhost:1379/nonconformingloanofficers/blogs/bank-statement-war-room/</link>
+      <pubDate>Fri, 28 Nov 2025 09:10:00 -0500</pubDate>
+      <guid>http://localhost:1379/nonconformingloanofficers/blogs/bank-statement-war-room/</guid>
+      <description>&lt;p&gt;We call it the Bank Statement War Room because it feels like one: laptops everywhere, sticky notes across the wall, and group texts flying between CPAs and loan officers. The weekend before our lender meeting we gathered 24 months of personal and business statements, every 1099, and the latest P&amp;amp;L. By Sunday night we had a single PDF that a non-QM underwriter could digest in minutes. Here is the exact process we ran.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>We Treated Our Rate Lock Like A Fire Drill</title>
+      <link>http://localhost:1379/conventionalmortgagerates/blogs/rate-lock-fire-drill/</link>
+      <pubDate>Tue, 18 Nov 2025 07:45:00 -0500</pubDate>
+      <guid>http://localhost:1379/conventionalmortgagerates/blogs/rate-lock-fire-drill/</guid>
+      <description>&lt;p&gt;Locking a conventional rate felt less like a quiet paperwork step and more like launching a new product. The headline noise, conflicting advice from friends, and lender portal notifications created paralysis. So we treated the lock as a fire drill: three short sprints, repeatable documentation, and clear rules about who could approve changes. By Monday morning we submitted conditions, negotiated a float-down clause, and still had energy left to eat dinner like normal people.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Turn Your Condition Tracker into a War Room</title>
+      <link>http://localhost:1379/homeloanpurchase/blogs/condition-tracker-war-room/</link>
+      <pubDate>Tue, 18 Nov 2025 07:40:00 -0500</pubDate>
+      <guid>http://localhost:1379/homeloanpurchase/blogs/condition-tracker-war-room/</guid>
+      <description>&lt;p&gt;Every mortgage file eventually runs into conditions—small requests from underwriting that can feel enormous when you are juggling work, family, and the emotions of buying a first home. Most buyers treat those requests reactively. They dig through email threads, forward blurry screenshots, and hope the lender stops asking. Instead, treat conditions like a project sprint. Build a mini war room around them and you will clear each item faster than the processor expects.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inside Our Conforming Reprice Watch Log</title>
+      <link>http://localhost:1379/conformingmortgagerates/blogs/conforming-reprice-watch-log/</link>
+      <pubDate>Mon, 17 Nov 2025 07:55:00 -0500</pubDate>
+      <guid>http://localhost:1379/conformingmortgagerates/blogs/conforming-reprice-watch-log/</guid>
+      <description>&lt;p&gt;Nothing spikes blood pressure like a surprise lender reprice. Your phone lights up, borrowers panic, and suddenly every stakeholder wants an update five minutes ago. To keep those moments orderly we maintain a “reprice watch log,” a single document that tracks volatility across all active conforming loans. The log has five columns, a few automation rules, and a playbook that anyone on the team can follow. Here’s how it works.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Our Sunday Rate Trend Huddle</title>
+      <link>http://localhost:1379/conventionalmortgagerates/blogs/reading-rate-trends-huddle/</link>
+      <pubDate>Sun, 16 Nov 2025 08:30:00 -0500</pubDate>
+      <guid>http://localhost:1379/conventionalmortgagerates/blogs/reading-rate-trends-huddle/</guid>
+      <description>&lt;p&gt;Rates change faster than most of us can refresh our news apps, so we created a weekly “rate trend huddle” to interpret the noise. The huddle happens Sunday evening, lasts 40 minutes, and feeds every decision we make the following week. It has become the calmest part of the mortgage journey because it replaces speculation with receipts and responsibilities.&lt;/p&gt;&#xA;&lt;h2 id=&#34;gather-inputs-before-anyone-joins&#34;&gt;Gather inputs before anyone joins&lt;/h2&gt;&#xA;&lt;p&gt;Two hours before the huddle, we drop three items into a shared folder: a digest of headlines with links to primary sources, a spreadsheet of lender pricing pulled from our shortlist, and a clip of the most relevant economic calendar events. For overlays and pricing quirks, we paste annotated screenshots from &lt;a href=&#34;https://www.browselenders.com&#34; class=&#34;text-accent hover:underline&#34; target=&#34;_blank&#34;&gt;BrowseLenders.com&lt;/a&gt; so participants see exactly where the adjustments are hiding. Preparation is non-negotiable; the meeting is for decisions, not reading.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

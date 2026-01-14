@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on California Loan Officers</title>
+    <link>http://localhost:1378/tags/</link>
+    <description>Recent content in Tags on California Loan Officers</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1378/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>California</title>
+      <link>http://localhost:1378/tags/california/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/california/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Licensing</title>
+      <link>http://localhost:1378/tags/licensing/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/licensing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NMLS</title>
+      <link>http://localhost:1378/tags/nmls/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/nmls/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reviews</title>
+      <link>http://localhost:1378/tags/reviews/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vetting</title>
+      <link>http://localhost:1378/tags/vetting/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/vetting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Banks</title>
+      <link>http://localhost:1378/tags/banks/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/banks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brokers</title>
+      <link>http://localhost:1378/tags/brokers/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/brokers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lending</title>
+      <link>http://localhost:1378/tags/lending/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/lending/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mortgage Comparison</title>
+      <link>http://localhost:1378/tags/mortgage-comparison/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/mortgage-comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CalHFA</title>
+      <link>http://localhost:1378/tags/calhfa/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/calhfa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Down Payment Assistance</title>
+      <link>http://localhost:1378/tags/down-payment-assistance/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/down-payment-assistance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dream for All</title>
+      <link>http://localhost:1378/tags/dream-for-all/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/dream-for-all/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prop 13</title>
+      <link>http://localhost:1378/tags/prop-13/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1378/tags/prop-13/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

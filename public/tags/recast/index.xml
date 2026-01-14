@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recast on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</title>
+    <link>http://localhost:1379/tags/recast/</link>
+    <description>Recent content in Recast on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Nov 2025 11:45:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1379/tags/recast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Sunday Recast Dry Run That Keeps Our Conventional Refi Honest</title>
+      <link>http://localhost:1379/conventionalmtg/blogs/sunday-recast-dry-run/</link>
+      <pubDate>Thu, 27 Nov 2025 11:45:00 -0500</pubDate>
+      <guid>http://localhost:1379/conventionalmtg/blogs/sunday-recast-dry-run/</guid>
+      <description>&lt;p&gt;A recast sounds glamorous until you actually have to wire the lump sum and prove you understand the math. Our lender asks for a “recast readiness summary” once a quarter, so we turned the request into a standing Sunday ritual. The dry run forces us to document payments, rehearse how we would explain the cash source, and show we have a plan if markets shift.&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-1-pull-the-latest-amortization-snapshot&#34;&gt;Step 1: Pull the latest amortization snapshot&lt;/h2&gt;&#xA;&lt;p&gt;We open the amortization tab in our scenario lab spreadsheet and download the current balance, next payment, and unpaid principal portion. Then we duplicate the sheet and drop in our target principal curtailment. Watching the payment change—even slightly—makes the future recast feel real. It also arms us with a slide that shows exactly how much faster the loan would pay off.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

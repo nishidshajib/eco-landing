@@ -1,0 +1,12 @@
+name = "California Jumbo Lenders Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "California jumbo loan specialists for luxury homes above conforming limits. Portfolio lenders, private banks, and credit unions with competitive high-balance rates."
+homepage = "https://californiajumbolenders.com"
+tags = ["blog", "responsive", "jumbo loans", "California"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://californiajumbolenders.com"

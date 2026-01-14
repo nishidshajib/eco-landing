@@ -1,0 +1,25 @@
+[{
+            "title": "California Mortgage Rates by Loan Type: Conforming, FHA, VA, Jumbo (2026 Guide)",
+            "date": "January 13, 2026",
+            "categories": ["Mortgage Rates"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1573164574048-f968d7ee9f20?auto=format\u0026fit=crop\u0026w=1600\u0026q=80",
+            "permalink": "http://localhost:1380/blogs/california-mortgage-rates-by-loan-type-conforming-fha-va-jumbo-2026-guide/",
+            "tags": ["California rates","conforming","FHA","VA","jumbo","loan types"]
+        },{
+            "title": "How to Lock California Mortgage Rates: 30-Day vs 45-Day vs 60-Day Lock Strategy",
+            "date": "January 12, 2026",
+            "categories": ["Rate Locks"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format\u0026fit=crop\u0026w=1600\u0026q=80",
+            "permalink": "http://localhost:1380/blogs/how-to-lock-california-mortgage-rates-30-day-vs-45-day-vs-60-day-lock-strategy/",
+            "tags": ["California","rate locks","lock strategy","float vs lock","rate lock periods"]
+        },{
+            "title": "Regional California Mortgage Rates: Bay Area vs LA vs San Diego vs Inland Empire (2026)",
+            "date": "January 11, 2026",
+            "categories": ["Regional Rates"],
+            "excerpt": null,
+            "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format\u0026fit=crop\u0026w=1600\u0026q=80",
+            "permalink": "http://localhost:1380/blogs/regional-california-mortgage-rates-bay-area-vs-la-vs-san-diego-vs-inland-empire-2026/",
+            "tags": ["California","Bay Area rates","LA rates","San Diego rates","regional pricing"]
+        }]

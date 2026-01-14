@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Texas Home Rates</title>
+    <link>http://localhost:1375/tags/</link>
+    <description>Recent content in Tags on Texas Home Rates</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1375/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lock Timing</title>
+      <link>http://localhost:1375/tags/lock-timing/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1375/tags/lock-timing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Market Trends</title>
+      <link>http://localhost:1375/tags/market-trends/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1375/tags/market-trends/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Texas Rates</title>
+      <link>http://localhost:1375/tags/texas-rates/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1375/tags/texas-rates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Market Signals</title>
+      <link>http://localhost:1375/tags/market-signals/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1375/tags/market-signals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rate Trends</title>
+      <link>http://localhost:1375/tags/rate-trends/</link>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1375/tags/rate-trends/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>APR</title>
+      <link>http://localhost:1375/tags/apr/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1375/tags/apr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lender Fees</title>
+      <link>http://localhost:1375/tags/lender-fees/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1375/tags/lender-fees/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

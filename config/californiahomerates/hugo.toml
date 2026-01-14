@@ -1,0 +1,231 @@
+baseURL = "https://californiahomerates.com"
+languageCode = "en-us"
+title = "California Home Rates"
+theme = "heloc-blog"
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = "content/californiahomerates"
+publishDir = "public/californiahomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Compare California mortgage rates by loan type and region. See today's conventional, FHA, VA, and jumbo rates for Bay Area, LA, San Diego, and statewide markets."
+  author = "Browse Lenders®"
+  shortName = "California Home Rates"
+  tagline = "Compare Mortgage Rates Across California Markets"
+  homepage = "https://californiahomerates.com"
+
+  siteName = "California Home Rates"
+  siteDescription = "Compare California mortgage rates for conventional, FHA, VA, jumbo, and high-balance conforming loans. See regional rate differences and rate lock strategies for California buyers."
+  keywords = ["California mortgage rates", "CA home rates", "California jumbo rates", "high-balance conforming", "Bay Area mortgage rates", "LA mortgage rates"]
+  serviceType = "California Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "California Home Rates – Compare Statewide Mortgage Pricing"
+  heroSubtitle = "See today's conventional, FHA, VA, and jumbo rates across Bay Area, LA, San Diego, and California regions. Rate shopping saves 0.25%–0.50%."
+  heroImage = "https://images.unsplash.com/photo-1519227355453-8f982e425321?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare CA Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why California Rates Vary by Region and Loan Type"
+  aboutImage = "https://images.unsplash.com/photo-1616587896595-51352538155b?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "California Mortgage Rate Tiers"
+  programsSubtitle = "Conventional, FHA, VA, high-balance conforming, and jumbo pricing across California."
+
+  program1Title = "Conventional Conforming (Up to $806,500)"
+  program1Description = "Standard conforming rates 6.375%–6.75% (740+ credit, 20% down). Best for California homes under $920K with 20% down. Rate shopping saves 0.25%–0.50%."
+  program1Image = "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "High-Balance Conforming ($806,500–$1,149,825)"
+  program2Description = "California high-balance rates 6.50%–7.00% (0.125%–0.25% above standard conforming). Applies to LA, SF, SD, OC, SJ counties. Saves 0.50%–0.75% vs. jumbo."
+  program2Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Loans ($1,149,825+)"
+  program3Description = "California jumbo rates 6.75%–7.50% (0.50%–0.75% above conforming). Bay Area/LA jumbo specialists offer best pricing. Brokers beat banks by 0.25%–0.50%."
+  program3Image = "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare California Lenders"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "California's high-balance conforming limits ($1,149,825) save borrowers 0.50%–0.75% vs. jumbo on $800K–1.15M loans."
+
+  educationTitle = "California Rate Intelligence"
+  educationSubtitle = "Understand rate locks, APR vs. rate, and regional pricing differences."
+
+  edu1Title = "Rate Lock Strategies for California"
+  edu1Description = "45-day locks cost 0.125% but cover California's 32-day average closing. Float-down options cost 0.125% upfront for one-time re-lock if rates drop 0.375%+."
+  edu1Image = "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "APR vs. Rate on California Loans"
+  edu2Description = "California lenders charge $1,500–3,500 origination fees. Compare APR (includes fees) not just rate—0.125% APR difference = $5,000+ over 5 years."
+  edu2Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Regional California Rate Differences"
+  edu3Description = "Bay Area brokers offer 0.25% lower rates than Inland Empire banks. Lender competition drives pricing—60+ lenders in SF vs. 20 in Riverside."
+  edu3Image = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "High-Balance vs. Jumbo Pricing"
+  edu4Description = "$1.1M loan in LA = high-balance conforming (6.625%), not jumbo (7.25%). Knowing California limits saves 0.625% = $434/month."
+  edu4Image = "https://images.unsplash.com/photo-1524758870432-af57e54afa26?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "View Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "California Rate Shopping Intelligence"
+  learningSubtitle = "High-balance conforming limits, regional lender competition, and rate lock timing for California markets."
+  learningImage = "https://images.unsplash.com/photo-1573164574144-649081e9421a?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "California mortgage rates vary 0.25%–0.50% based on loan type (conforming vs. high-balance vs. jumbo), region (Bay Area vs. Inland Empire), and lender type (broker vs. bank). Rate shopping is non-negotiable on $800K–1.5M California loans."
+  learningBullet1 = "Use the <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">California lender directory</a> to compare brokers, banks, and credit unions by region."
+  learningBullet2 = "Check your <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">credit tier</a>—740+ unlocks best pricing on California's large loan amounts."
+  learningBullet3 = "Run <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">payment scenarios</a> to see how 0.25% rate difference impacts monthly cost."
+  learningBullet4 = "Understand California high-balance limits ($1,149,825) to avoid jumbo pricing on $800K–1.15M loans."
+  learningPara2 = "No teaser rates, no bait-and-switch—just transparent rate comparison for California's expensive housing markets."
+  learningPara3 = "Compare lenders, lock strategically, and save 0.25%–0.50% = $15,000–30,000 over 5 years."
+
+  whyChooseTitle = "Why Compare California Mortgage Rates"
+  whyChooseSubtitle = "Regional pricing, loan type tiers, and lender competition create 0.25%–0.75% rate spreads."
+  whyChoosePara1 = "California is not one mortgage market—Bay Area, LA, San Diego, Sacramento, and Inland Empire have different lender competition and pricing. Brokers access 20–50 wholesale lenders statewide, banks offer one rate sheet."
+  whyChoosePara2 = "Education-first approach: understand high-balance conforming limits, rate lock strategies, and APR vs. rate to avoid overpaying on large California loans."
+
+  whyChooseBox1Title = "High-Balance Conforming Savings"
+  whyChooseBox1Para = "California's $1,149,825 conforming limit (LA, SF, OC, SD counties) saves 0.50%–0.75% vs. jumbo on $800K–1.15M loans."
+  whyChooseBox1Bullet1 = "$900K loan: high-balance conforming 6.625%, jumbo 7.25% (0.625% savings = $391/month)"
+  whyChooseBox1Bullet2 = "$1.1M loan: high-balance conforming 6.75%, jumbo 7.50% (0.75% savings = $579/month)"
+  whyChooseBox1Bullet3 = "Know California limits—lenders sometimes misprice high-balance as jumbo (overpay 0.50%–0.75%)"
+
+  whyChooseBox2Title = "Regional Rate Competition"
+  whyChooseBox2Para = "Bay Area brokers offer 0.25%–0.375% lower rates than Inland Empire banks. Lender concentration drives pricing."
+  whyChooseBox2Bullet1 = "Bay Area: 60+ lenders, conforming 6.375%–6.50%"
+  whyChooseBox2Bullet2 = "Inland Empire: 20 lenders, conforming 6.625%–7.00%"
+  whyChooseBox2Bullet3 = "Brokers access statewide wholesale lenders (same pricing whether you're in SF or Riverside)"
+
+  whyChooseBox3Title = "Rate Lock Timing"
+  whyChooseBox3Para = "California closings average 32 days. 30-day locks expire early, 60-day locks cost 0.25%. 45-day locks (+0.125%) are California standard."
+  whyChooseBox3Bullet1 = "45-day lock costs $69/month on $800K loan, saves $347/month if rates rise 0.50%"
+  whyChooseBox3Bullet2 = "Float-down options cost 0.125% for one-time re-lock if rates drop 0.375%+"
+  whyChooseBox3Bullet3 = "Lock at application for 45 days (don't gamble on California rate volatility)"
+
+  whyChooseCTA = "Compare California Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "California Rate Shopping Wins"
+  testimonialsSubtitle = "Real borrowers, real savings from comparing California lenders."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Shopped 4 lenders for SF home. Bank quoted 6.875% (priced $1.1M as jumbo). Broker knew high-balance limit, got 6.50% conforming. Saved $285/month."
+  testimonial1Name = "Rachel Kim"
+  testimonial1Subtitle = "San Francisco, $1.1M loan"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Credit union quoted 6.75%. Broker shopped 40 lenders, got 6.375% from UWM. Same loan, 0.375% lower = $216/month savings on $850K LA loan."
+  testimonial2Name = "James Torres"
+  testimonial2Subtitle = "Los Angeles, $850K loan"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "VA rates 6.25%–6.75% across 5 lenders. Veterans United: 6.25%, $4,500 fees. Broker: 6.375%, $1,800 fees. Lower APR with broker."
+  testimonial3Name = "Priya Patel"
+  testimonial3Subtitle = "San Diego VA, $720K"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Locked 45 days at 6.625%. Rates spiked to 6.875% during escrow. 45-day lock saved $173/month. Worth the 0.125% lock fee."
+  testimonial4Name = "Michael Chen"
+  testimonial4Subtitle = "San Jose, $1M loan"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Bay Area jumbo: Wells 7.50%, Chase 7.25%, broker (Pennymac) 6.875%. Broker saved $388/month on $1.5M loan vs. Wells."
+  testimonial5Name = "Sarah Johnson"
+  testimonial5Subtitle = "Palo Alto jumbo, $1.5M"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Compared APR, not just rate. Lender A: 6.375% rate, 6.72% APR (high fees). Lender B: 6.50% rate, 6.62% APR. Lender B won (lower total cost)."
+  testimonial6Name = "David Martinez"
+  testimonial6Subtitle = "Sacramento, $650K loan"
+
+  calculatorsTitle = "California Rate Planning Tools"
+  calculatorsSubtitle = "Model rate scenarios, compare APR, and calculate lock costs."
+
+  creditScoreTitle = "Credit Score Impact on California Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095564985-89765398121e?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "California's large loan amounts ($800K–1.5M) amplify credit score pricing. Moving 680 → 740 saves 0.50%–0.75% = $347–521/month on $1M loan."
+  creditScoreHeading1 = "California Credit Tiers"
+  creditScoreText1 = "760+ gets best pricing; 740–759 adds 0.125%; 720–739 adds 0.25%–0.375%; 700–719 adds 0.50%; below 680 adds 0.75%–1.00%."
+  creditScoreHeading2 = "Monthly Payment Impact (On $1M Loan)"
+  creditScoreText2 = "680 credit: $6,897/month | 740 credit: $6,376/month | Difference: $521/month = $31,260 over 5 years."
+  creditScoreHeading3 = "Improving Credit Before Applying"
+  creditScoreText3 = "Pay down credit cards to <10% utilization, dispute errors, wait 6 months before applying. 40-point improvement = $250–400/month savings."
+  creditScoreCTA = "Check Your California Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – California Rate Education as a Benefit"
+  employersSubtitle = "Help employees understand high-balance conforming limits and rate shopping for expensive California markets."
+  employersImage = "https://images.unsplash.com/photo-1622790410882-c1f00a56083e?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Employers in California's expensive markets (Bay Area, LA, OC) can add mortgage rate education to financial wellness programs—teaching employees how to rate-shop, understand high-balance conforming limits, and save thousands."
+  employersBullet1Title = "High-balance conforming education"
+  employersBullet1Text = "Teach employees that $800K–1.15M loans use high-balance conforming (not jumbo), saving 0.50%–0.75%."
+  employersBullet2Title = "Broker access vs. bank retail"
+  employersBullet2Text = "Connect employees with California brokers who access 20–50 wholesale lenders (vs. one bank rate sheet)."
+  employersBullet3Title = "Rate lock strategy"
+  employersBullet3Text = "Educate on 45-day locks (+0.125%) vs. 30-day locks (risky in California's 32-day average closing market)."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "California Rate Insights"
+  blogSubtitle = "High-balance conforming limits, rate locks, and regional pricing strategies."
+
+  faqTitle = "California Mortgage Rate Questions"
+  faqSubtitle = "Common questions about California rates, high-balance conforming, and rate locks."
+
+  faq1Question = "What is California's high-balance conforming limit?"
+  faq1Answer = "$1,149,825 in LA, SF, OC, SD, SJ, and other high-cost counties (2025). $806,500 in Inland Empire/Central Valley. High-balance rates save 0.50%–0.75% vs. jumbo on $800K–1.15M loans."
+
+  faq2Question = "Why do Bay Area rates beat Inland Empire rates by 0.25%?"
+  faq2Answer = "Lender competition. Bay Area has 60+ brokers accessing wholesale lenders; Inland Empire has fewer banks offering retail rates. Brokers anywhere in CA can access same wholesale pricing."
+
+  faq3Question = "Should I lock at application or wait?"
+  faq3Answer = "Lock at application for 45 days (+0.125%). California closings average 32 days—30-day locks expire early. Floating saves 0.125% upfront but risks 0.50%+ rate increase."
+
+  faq4Question = "Is APR or rate more important on California loans?"
+  faq4Answer = "APR includes fees. California lenders charge $1,500–3,500 origination fees. 6.375% with $3,500 fees (6.72% APR) costs more than 6.50% with $1,500 fees (6.62% APR). Compare APR."
+
+  faq5Question = "Do California brokers beat banks on jumbo loans?"
+  faq5Answer = "Yes. Brokers access 10–20 jumbo lenders (UWM, Pennymac, LoanDepot), banks offer one rate sheet. Brokers save 0.25%–0.50% on California jumbo loans."
+
+  faq6Question = "How much does 0.25% save on a $1M California loan?"
+  faq6Answer = "$173/month = $10,380 over 5 years. Rate shopping (comparing 3–5 lenders) routinely saves 0.25%–0.50% on California loans."
+
+  ctaTitle = "Ready to Compare California Mortgage Rates?"
+  ctaDescription = "Find brokers, banks, and credit unions across Bay Area, LA, San Diego, and all California regions with competitive rates."
+  ctaCTA = "Find California Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

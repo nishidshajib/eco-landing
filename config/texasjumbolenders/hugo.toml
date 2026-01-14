@@ -1,0 +1,281 @@
+baseURL = "https://texasjumbolenders.com"
+languageCode = "en-us"
+title = "Texas Jumbo Lenders"
+theme = "heloc-blog"
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = "content/texasjumbolenders"
+publishDir = "public/texasjumbolenders"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    disableWatch = true
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Texas jumbo loan specialists for luxury homes above conforming limits. Portfolio lenders, private banks, and credit unions with competitive high-balance rates."
+  author = "Browse Lenders®"
+  shortName = "Texas Jumbo Lenders"
+  tagline = "Luxury Home Financing Above Conforming Limits"
+  homepage = "https://texasjumbolenders.com"
+
+  siteName = "Texas Jumbo Lenders"
+  siteDescription = "Find Texas jumbo mortgage lenders for homes exceeding $766,550. Portfolio lenders, private banks, and specialty jumbo programs with flexible underwriting for high-net-worth borrowers."
+  keywords = ["Texas jumbo lenders", "jumbo mortgage Texas", "luxury home loans Texas", "high-balance mortgage", "portfolio lenders Texas", "jumbo loan rates Texas"]
+  serviceType = "Texas Jumbo Mortgage Lending"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Texas Jumbo Lenders – Luxury Home Financing Specialists"
+  heroSubtitle = "Portfolio lenders, private banks, and jumbo specialists for Texas homes above $766,550. Flexible underwriting, competitive rates, and high-balance expertise."
+  heroImage = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Jumbo Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why High-Net-Worth Texans Choose Jumbo Specialists"
+  aboutImage = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Texas Jumbo Loan Programs"
+  programsSubtitle = "Portfolio, conforming jumbo, and super-jumbo programs for luxury Texas properties."
+
+  program1Title = "Conforming Jumbo ($766,550–$1.5M)"
+  program1Description = "High-balance conforming loans for expensive Texas metros. Lower rates than super-jumbo, flexible credit (700+), and 10%–20% down options."
+  program1Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Super-Jumbo ($1.5M+)"
+  program2Description = "Portfolio and private bank financing for ultra-luxury Texas properties. Custom underwriting, asset-based approval, and relationship pricing for high-net-worth clients."
+  program2Image = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Foreign National & Investment Jumbo"
+  program3Description = "Specialty jumbo programs for foreign nationals, vacation homes, and investment properties. Non-resident approval, asset depletion, and portfolio flexibility."
+  program3Image = "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare Jumbo Lenders"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Jumbo lending demands specialized expertise. Portfolio lenders offer flexibility that agency guidelines can't match."
+
+  educationTitle = "Jumbo Lending Education"
+  educationSubtitle = "Understand underwriting, reserves, and portfolio lender advantages."
+
+  edu1Title = "Jumbo Underwriting Standards"
+  edu1Description = "Cash reserves (6–12 months PITI), debt-to-income flexibility, and compensating factors that help high-earners qualify."
+  edu1Image = "https://images.unsplash.com/photo-1746682817408-ee9ca79ece74?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Portfolio vs. Agency Jumbo"
+  edu2Description = "Portfolio lenders hold loans vs. selling to agencies—more flexibility for self-employed, foreign nationals, and complex income."
+  edu2Image = "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Texas Jumbo Rate Factors"
+  edu3Description = "How LTV, credit score, reserves, and property type affect jumbo pricing—and why relationship banking cuts rates."
+  edu3Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Asset-Based & Bank Statement Jumbo"
+  edu4Description = "Alternative income documentation for self-employed, retirees with large portfolios, and business owners with complex tax returns."
+  edu4Image = "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "View Jumbo Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Texas Jumbo Lending Intelligence"
+  learningSubtitle = "Portfolio lenders, private banks, and specialty jumbo programs for Texas luxury markets."
+  learningImage = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Jumbo loans in Texas start at $766,550 (2025 conforming limit). Above that, you need lenders with portfolio expertise, flexible underwriting, and competitive high-balance pricing."
+  learningBullet1 = "Use the <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">Texas jumbo lender directory</a> to compare portfolio lenders and private banks."
+  learningBullet2 = "Check your <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">credit tier</a>—jumbo pricing is sensitive to 720, 740, 760+ thresholds."
+  learningBullet3 = "Run <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">reserve scenarios</a> to see how cash holdings affect approval."
+  learningBullet4 = "Ask about portfolio retention vs. agency sale—portfolio lenders offer more flexibility for complex income."
+  learningPara2 = "No teaser rates, no bait-and-switch—just transparent jumbo lending for Texas luxury buyers."
+  learningPara3 = "Compare portfolio lenders, understand reserve requirements, and lock with confidence."
+
+  whyChooseTitle = "Why Work With Texas Jumbo Specialists"
+  whyChooseSubtitle = "Portfolio flexibility, relationship pricing, and high-balance expertise."
+  whyChoosePara1 = "Jumbo loans demand lenders who understand complex income, asset verification, and luxury property appraisal. Portfolio lenders and private banks offer flexibility that agency lenders can't match."
+  whyChoosePara2 = "Education-first approach: understand reserves, LTV pricing, and how relationship banking cuts rates on multi-million-dollar properties."
+
+  whyChooseBox1Title = "Portfolio Lender Flexibility"
+  whyChooseBox1Para = "Portfolio lenders hold loans instead of selling to agencies—enabling manual underwriting for self-employed, foreign nationals, and complex income."
+  whyChooseBox1Bullet1 = "Bank statement income (12–24 months)"
+  whyChooseBox1Bullet2 = "Asset depletion for retirees and high-net-worth clients"
+  whyChooseBox1Bullet3 = "Manual underwriting for compensating factors"
+
+  whyChooseBox2Title = "Competitive Jumbo Rates"
+  whyChooseBox2Para = "Relationship banking, large balances, and cross-selling drive better jumbo pricing than advertised conforming spreads suggest."
+  whyChooseBox2Bullet1 = "Private banking discounts for deposit relationships"
+  whyChooseBox2Bullet2 = "Portfolio lender competition in Texas luxury markets"
+  whyChooseBox2Bullet3 = "Credit tier pricing: 740+ unlocks best jumbo rates"
+
+  whyChooseBox3Title = "Reserve & Cash Management"
+  whyChooseBox3Para = "Jumbo lenders require 6–12 months PITI in reserves. Smart structuring preserves liquidity while meeting requirements."
+  whyChooseBox3Bullet1 = "Liquid vs. non-liquid asset treatment"
+  whyChooseBox3Bullet2 = "Retirement account reserve counting rules"
+  whyChooseBox3Bullet3 = "Gift funds and portfolio liquidation strategies"
+
+  whyChooseCTA = "Find Texas Jumbo Lenders"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Texas Luxury Buyer Wins"
+  testimonialsSubtitle = "Real jumbo approvals and rate wins."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Self-employed, complex K-1 income. Portfolio lender used bank statements and approved $1.2M in 21 days."
+  testimonial1Name = "Verified Dallas Buyer"
+  testimonial1Subtitle = "Portfolio approval"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Shopped 4 jumbo lenders. Private bank matched best rate and waived appraisal fee ($2,500 savings)."
+  testimonial2Name = "Verified Houston Luxury Buyer"
+  testimonial2Subtitle = "Private banking win"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "$2.5M loan, foreign national. Asset-based jumbo program approved with 30% down, no U.S. credit."
+  testimonial3Name = "Verified Austin Investor"
+  testimonial3Subtitle = "Foreign national approval"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Credit union jumbo rate 0.375% below big banks. Saved $540/month on $1.8M loan."
+  testimonial4Name = "Verified San Antonio Buyer"
+  testimonial4Subtitle = "Credit union jumbo win"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Needed 80% LTV jumbo. Portfolio lender approved with compensating factors (760 credit, 18 months reserves)."
+  testimonial5Name = "Verified Texas Homebuyer"
+  testimonial5Subtitle = "High LTV jumbo approval"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Transparent reserve guidance, flexible underwriting, and competitive pricing. No pressure, no surprises."
+  testimonial6Name = "Verified Houston Homeowner"
+  testimonial6Subtitle = "Clear jumbo process"
+
+  calculatorsTitle = "Jumbo Loan Planning Tools"
+  calculatorsSubtitle = "Model reserves, LTV, and jumbo payment scenarios."
+
+  creditScoreTitle = "Credit Score Impact on Texas Jumbo Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095564985-89765398121e?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Jumbo lenders price in tight credit tiers. Moving from 720 to 740 can save 0.25%–0.50% APR—worth $200–400/month on a $1M+ loan."
+  creditScoreHeading1 = "Jumbo Credit Tiers"
+  creditScoreText1 = "760+ gets best jumbo pricing; 740–759 adds 0.125%–0.25%; 720–739 adds 0.375%–0.625%; below 700 faces steep pricing or denial."
+  creditScoreHeading2 = "Monthly Payment Impact"
+  creditScoreText2 = "On a $1.5M jumbo, moving from 725 to 750 credit saves $200–300/month."
+  creditScoreHeading3 = "Reserve & Credit Synergy"
+  creditScoreText3 = "High reserves (12+ months PITI) can offset lower credit (700–720). Portfolio lenders weight compensating factors."
+  creditScoreCTA = "Check Your Jumbo Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Jumbo Lending as an Executive Benefit"
+  employersSubtitle = "Help high-earning employees access portfolio lenders and jumbo expertise."
+  employersImage = "https://images.unsplash.com/photo-1622790410882-c1f00a56083e?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Employers with executive teams and high-earners can add jumbo lending education and lender access to financial wellness programs—helping employees navigate complex underwriting and secure competitive rates."
+  employersBullet1Title = "Portfolio lender access"
+  employersBullet1Text = "Connect employees with Texas jumbo specialists and private banks for flexible underwriting."
+  employersBullet2Title = "Reserve planning education"
+  employersBullet2Text = "Teach employees how to structure assets to meet 6–12 month PITI reserve requirements."
+  employersBullet3Title = "Jumbo rate transparency"
+  employersBullet3Text = "Help teams compare portfolio lenders and understand credit tier pricing."
+  employersCTA = "Add Jumbo Lending Benefits"
+  employersCTALink = "https://browselenders.com/employer-benefits/"
+
+  blogTitle = "Texas Jumbo Insights"
+  blogSubtitle = "Portfolio lending, underwriting, and jumbo rate strategy."
+
+  faqTitle = "Texas Jumbo Questions"
+  faqSubtitle = "Common questions about jumbo loans and portfolio lenders."
+
+  faq1Question = "What is the jumbo loan limit in Texas?"
+  faq1Answer = "$766,550 for most Texas counties (2025 conforming limit). High-cost counties may have higher limits. Loans above this require jumbo financing."
+
+  faq2Question = "Do I need 20% down for a jumbo loan in Texas?"
+  faq2Answer = "Most jumbo lenders require 10%–20% down. Some portfolio lenders offer 10% down jumbo with strong credit (740+) and reserves. Super-jumbo ($2M+) often requires 20%–25% down."
+
+  faq3Question = "What credit score do I need for Texas jumbo loans?"
+  faq3Answer = "Minimum 700 for most jumbo lenders; best pricing starts at 740+. Portfolio lenders may approve 680–700 with compensating factors (high reserves, low LTV, strong income)."
+
+  faq4Question = "How many months of reserves do jumbo lenders require?"
+  faq4Answer = "6–12 months of PITI (principal, interest, taxes, insurance) in liquid reserves. Higher loan amounts and LTV ratios require more reserves. Portfolio lenders may count retirement accounts with discounting."
+
+  faq5Question = "Can self-employed borrowers get Texas jumbo loans?"
+  faq5Answer = "Yes. Portfolio lenders offer bank statement jumbo programs (12–24 months of deposits) and asset-based underwriting for self-employed, business owners, and high-net-worth clients with complex income."
+
+  faq6Question = "What are jumbo mortgage rates in Texas right now?"
+  faq6Answer = "Jumbo rates vary widely by lender, credit tier, LTV, and reserves. As of early 2026, expect 6.50%–7.50% for 740+ credit, 20% down. Portfolio lenders and private banks may offer relationship discounts."
+
+  ctaTitle = "Ready to Compare Texas Jumbo Lenders?"
+  ctaDescription = "Find portfolio lenders, private banks, and jumbo specialists with flexible underwriting and competitive rates."
+  ctaCTA = "Find Jumbo Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"
+
+  [params.theme]
+    name = "Texas Jumbo Lenders Theme"
+    license = "MIT"
+    licenseLink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+    tags = ["blog", "responsive", "jumbo loans", "Texas"]
+    features = ["blog", "responsive"]
+    minVersion = "0.100.0"
+
+  favicon = "/favicon.png"
+
+  [params.pwa]
+    display = "standalone"
+    themeColor = "#0B2E4E"
+    backgroundColor = "#F6F8FB"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "192x192"
+      type = "image/png"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "512x512"
+      type = "image/png"
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = "application/json"
+    baseName = "manifest"
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = "application/toml"
+    baseName = "theme"
+    isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "MANIFEST", "THEMETOML"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+[permalinks]
+  blogs = "/blogs/:slug/"

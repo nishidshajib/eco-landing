@@ -1,0 +1,281 @@
+baseURL = "https://californialoanofficers.com"
+languageCode = "en-us"
+title = "California Loan Officers"
+theme = "heloc-blog"
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = "content/californialoanofficers"
+publishDir = "public/californialoanofficers"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    disableWatch = true
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Find top California mortgage loan officers with expertise in FHA, VA, conventional, jumbo, and first-time buyer programs. Compare lenders, read reviews, and connect with local experts."
+  author = "Browse Lenders®"
+  shortName = "California Loan Officers"
+  tagline = "Connect With California's Top Mortgage Experts"
+  homepage = "https://californialoanofficers.com"
+
+  siteName = "California Loan Officers"
+  siteDescription = "Directory of California mortgage loan officers specializing in purchase loans, refinancing, jumbo mortgages, FHA/VA loans, and first-time buyer programs across Bay Area, LA, San Diego, and beyond."
+  keywords = ["California loan officers", "mortgage loan officers California", "Bay Area loan officers", "LA mortgage brokers", "San Diego lenders", "California mortgage experts"]
+  serviceType = "California Mortgage Loan Officer Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "California Loan Officers – Local Mortgage Expertise"
+  heroSubtitle = "Connect with experienced California loan officers who understand local markets, competitive pricing, and first-time buyer programs. Bay Area to San Diego coverage."
+  heroImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Work With California Loan Officers"
+  aboutImage = "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "California Loan Officer Specialties"
+  programsSubtitle = "Find loan officers with expertise in your specific loan type and local market."
+
+  program1Title = "Purchase & First-Time Buyers"
+  program1Description = "Loan officers specializing in purchase transactions, down payment assistance, first-time buyer programs, and California Housing Finance Agency (CalHFA) loans."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Jumbo & Luxury Home Specialists"
+  program2Description = "Experienced loan officers for California jumbo loans, portfolio lending, private banking, and high-balance conforming ($1,149,825 limit) in expensive markets."
+  program2Image = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Refinance & Cash-Out Experts"
+  program3Description = "Loan officers who specialize in rate-and-term refinancing, cash-out refinancing, and Prop 13 tax implications for California homeowners."
+  program3Image = "https://images.unsplash.com/photo-1524758870432-af57e54afa26?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Browse Loan Officers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "California's diverse markets demand local expertise. Find loan officers who understand your city, county, and property type."
+
+  educationTitle = "Loan Officer Selection Guide"
+  educationSubtitle = "How to choose, vet, and work with California mortgage loan officers."
+
+  edu1Title = "How to Vet California Loan Officers"
+  edu1Description = "Check NMLS licensing, read reviews, ask about pricing transparency, and compare Loan Estimates from multiple loan officers before committing."
+  edu1Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Broker vs. Bank Loan Officers"
+  edu2Description = "Understand the difference between mortgage brokers (access to multiple lenders) and bank loan officers (one lender only)—and which serves your needs best."
+  edu2Image = "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "California-Specific Loan Programs"
+  edu3Description = "CalHFA loans, Prop 13 portability, California Dream For All, and local down payment assistance programs—loan officers who know these save you money."
+  edu3Image = "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Red Flags to Avoid"
+  edu4Description = "Spot predatory loan officers: teaser rates, pressure tactics, hidden fees, and refusal to provide Loan Estimates in writing. Protect yourself."
+  edu4Image = "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "View Loan Officer Resources"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "California Loan Officer Intelligence"
+  learningSubtitle = "Find experienced mortgage professionals who understand California's unique lending landscape."
+  learningImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "California loan officers navigate complex state regulations, high property values, and competitive markets. Whether you're buying in the Bay Area, LA, San Diego, or Central Valley, working with a local expert who understands regional pricing, down payment assistance programs, and jumbo underwriting makes the difference between approval and denial."
+  learningBullet1 = "Use the <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">California loan officer directory</a> to compare local mortgage experts by specialty and location."
+  learningBullet2 = "Check your <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">credit tier</a> before contacting loan officers—knowing your score helps you negotiate better rates."
+  learningBullet3 = "Run <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">payment scenarios</a> to understand what you can afford before applying."
+  learningBullet4 = "Ask loan officers about CalHFA programs, high-balance conforming limits, and regional pricing—expertise in California-specific programs saves thousands."
+  learningPara2 = "No teaser rates, no bait-and-switch—just transparent loan officer vetting for California homebuyers."
+  learningPara3 = "Compare loan officers, verify licensing, and choose with confidence."
+
+  whyChooseTitle = "Why California Buyers Choose Local Loan Officers"
+  whyChooseSubtitle = "Regional expertise, competitive pricing, and personalized service."
+  whyChoosePara1 = "California's housing market is the most complex in the U.S.—high property values, strict regulations, diverse loan programs, and competitive rates. Local loan officers understand county-specific down payment assistance, jumbo underwriting for tech workers, and Prop 13 portability for relocating homeowners."
+  whyChoosePara2 = "Education-first approach: learn about NMLS licensing, Loan Estimate comparison, and how to spot red flags before committing to a loan officer."
+
+  whyChooseBox1Title = "Local Market Expertise"
+  whyChooseBox1Para = "California loan officers who specialize in your region (Bay Area, LA, San Diego) understand local property values, competitive pricing, and county-specific programs that out-of-state lenders miss."
+  whyChooseBox1Bullet1 = "Bay Area: jumbo loans, stock compensation underwriting, foreign nationals"
+  whyChooseBox1Bullet2 = "LA/OC: luxury condos, entertainment industry income, vacation homes"
+  whyChooseBox1Bullet3 = "San Diego: military VA loans, coastal property financing, cross-border buyers"
+
+  whyChooseBox2Title = "Competitive Rate Shopping"
+  whyChooseBox2Para = "Working with multiple California loan officers (not just one) uncovers rate differences of 0.25%–0.50%—worth $200–$500/month on a $1M+ California loan."
+  whyChooseBox2Bullet1 = "Get 3–5 Loan Estimates to compare rates, fees, and closing costs"
+  whyChooseBox2Bullet2 = "Negotiate using competing quotes—loan officers can match or beat"
+  whyChooseBox2Bullet3 = "Avoid teaser rates—verify APR includes all lender fees"
+
+  whyChooseBox3Title = "California-Specific Programs"
+  whyChooseBox3Para = "Experienced California loan officers know CalHFA loans, California Dream For All, local down payment assistance, and Prop 13 portability—programs that save tens of thousands on California purchases."
+  whyChooseBox3Bullet1 = "CalHFA down payment assistance (up to 3.5% of purchase price)"
+  whyChooseBox3Bullet2 = "High-balance conforming limits ($1,149,825 in most counties)"
+  whyChooseBox3Bullet3 = "Prop 13 portability for seniors, disaster victims, and relocating homeowners"
+
+  whyChooseCTA = "Find California Loan Officers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "California Borrower Success Stories"
+  testimonialsSubtitle = "Real loan officer experiences across California."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Bay Area loan officer helped me structure CalHFA loan + down payment assistance. Bought my first home with 3% down."
+  testimonial1Name = "Verified San Jose Buyer"
+  testimonial1Subtitle = "First-time buyer success"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Shopped 4 loan officers. One matched the best rate and explained all fees upfront. No surprises at closing."
+  testimonial2Name = "Verified LA Homebuyer"
+  testimonial2Subtitle = "Rate shopping win"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Loan officer specialized in VA loans, got me 0% down in San Diego. Smooth process, closed in 28 days."
+  testimonial3Name = "Verified Veteran Buyer"
+  testimonial3Subtitle = "VA loan expertise"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Tech worker with RSUs. Loan officer understood stock compensation, counted unvested RSUs as reserves. Approved $2M jumbo."
+  testimonial4Name = "Verified Palo Alto Buyer"
+  testimonial4Subtitle = "Stock comp approval"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Transparent pricing, no pressure tactics, and helped me understand Prop 13 portability. Saved $8K/year in property taxes."
+  testimonial5Name = "Verified Orange County Homeowner"
+  testimonial5Subtitle = "Prop 13 guidance"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Self-employed. Loan officer used bank statements instead of tax returns. Got approved when others declined me."
+  testimonial6Name = "Verified Sacramento Buyer"
+  testimonial6Subtitle = "Self-employed approval"
+
+  calculatorsTitle = "Loan Calculators & Tools"
+  calculatorsSubtitle = "Model payments, affordability, and down payment scenarios before contacting loan officers."
+
+  creditScoreTitle = "Credit Score Impact on California Mortgage Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "California loan officers price mortgages in credit tiers. Moving from 680 to 720 credit can save 0.50%–0.75% APR—worth $300–$600/month on a California median home ($800K–$1.2M loan)."
+  creditScoreHeading1 = "Credit Tiers & Rate Adjustments"
+  creditScoreText1 = "740+ gets best pricing; 700–739 adds 0.25%–0.50%; 680–699 adds 0.75%–1.25%; below 680 faces steep adjustments or FHA requirement."
+  creditScoreHeading2 = "Monthly Payment Impact"
+  creditScoreText2 = "On a $900K California loan, moving from 690 to 720 credit saves $250–$400/month."
+  creditScoreHeading3 = "Ask Loan Officers for Credit Tier Pricing"
+  creditScoreText3 = "Request rate quotes at your current score + target score (e.g., 695 vs. 720). See if delaying purchase to boost credit saves thousands."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Loan Officer Referrals as a Benefit"
+  employersSubtitle = "Help employees navigate California's expensive housing market with vetted loan officer referrals."
+  employersImage = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "California employers can add vetted loan officer referrals to financial wellness programs—connecting employees with mortgage experts who understand stock compensation, first-time buyer programs, and competitive pricing in expensive markets."
+  employersBullet1Title = "Vetted loan officer network"
+  employersBullet1Text = "Provide employees with pre-screened California loan officers who offer transparent pricing and local expertise."
+  employersBullet2Title = "First-time buyer education"
+  employersBullet2Text = "Help employees understand CalHFA loans, down payment assistance, and high-balance conforming limits."
+  employersBullet3Title = "Stock compensation guidance"
+  employersBullet3Text = "Connect tech employees with loan officers who specialize in RSU underwriting and jumbo loans."
+  employersCTA = "Add Loan Officer Referrals"
+  employersCTALink = "https://browselenders.com/employer-benefits/"
+
+  blogTitle = "California Loan Officer Insights"
+  blogSubtitle = "How to choose, vet, and work with mortgage loan officers in California."
+
+  faqTitle = "California Loan Officer FAQs"
+  faqSubtitle = "Common questions about finding and working with mortgage loan officers."
+
+  faq1Question = "How do I verify a California loan officer's license?"
+  faq1Answer = "Check the NMLS Consumer Access website (nmlsconsumeraccess.org). Enter the loan officer's name or NMLS number to verify licensing, employment history, and any regulatory actions."
+
+  faq2Question = "Should I use a mortgage broker or a bank loan officer in California?"
+  faq2Answer = "Brokers access multiple lenders (better rate shopping); bank loan officers work for one lender (streamlined process). For competitive California markets, brokers often find better pricing."
+
+  faq3Question = "How many California loan officers should I shop before choosing one?"
+  faq3Answer = "Get Loan Estimates from 3–5 loan officers. California rates vary by 0.25%–0.50% between lenders—shopping uncovers $200–500/month savings on large loans."
+
+  faq4Question = "What California-specific programs should my loan officer know?"
+  faq4Answer = "CalHFA loans, California Dream For All, high-balance conforming limits ($1,149,825), Prop 13 portability, and local down payment assistance programs (varies by county/city)."
+
+  faq5Question = "Can a California loan officer help with stock compensation underwriting?"
+  faq5Answer = "Yes—Bay Area loan officers specialize in tech worker RSUs, stock options, and equity compensation. They count vested stock as reserves and use bank statements for inconsistent income."
+
+  faq6Question = "How do I spot predatory loan officers in California?"
+  faq6Answer = "Red flags: refusing written Loan Estimates, pressure to sign quickly, teaser rates that 'expire today,' upfront fees before approval, and rates far below market. Always verify NMLS licensing."
+
+  ctaTitle = "Ready to Find California Loan Officers?"
+  ctaDescription = "Compare local mortgage experts, verify licensing, and connect with loan officers who understand California's unique lending landscape."
+  ctaCTA = "Find Loan Officers"
+  ctaCTALink = "https://www.browselenders.com/search/"
+
+  [params.theme]
+    name = "California Loan Officers Theme"
+    license = "MIT"
+    licenseLink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+    tags = ["blog", "responsive", "loan officers", "California"]
+    features = ["blog", "responsive"]
+    minVersion = "0.100.0"
+
+  favicon = "/favicon.png"
+
+  [params.pwa]
+    display = "standalone"
+    themeColor = "#0B2E4E"
+    backgroundColor = "#F6F8FB"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "192x192"
+      type = "image/png"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "512x512"
+      type = "image/png"
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = "application/json"
+    baseName = "manifest"
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = "application/toml"
+    baseName = "theme"
+    isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "MANIFEST", "THEMETOML"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+[permalinks]
+  blogs = "/blogs/:slug/"

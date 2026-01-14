@@ -1,0 +1,12 @@
+name = "Texas Jumbo Lenders Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Texas jumbo loan specialists for luxury homes above conforming limits. Portfolio lenders, private banks, and credit unions with competitive high-balance rates."
+homepage = "https://texasjumbolenders.com"
+tags = ["blog", "responsive", "jumbo loans", "Texas"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://texasjumbolenders.com"

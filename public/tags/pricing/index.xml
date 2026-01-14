@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pricing on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</title>
+    <link>http://localhost:1379/tags/pricing/</link>
+    <description>Recent content in Pricing on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1379/tags/pricing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Texas Jumbo Rates Are Priced: LTV, Credit, and Relationship Banking</title>
+      <link>http://localhost:1379/texasjumbolenders/blogs/texas-jumbo-rate-pricing/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1379/texasjumbolenders/blogs/texas-jumbo-rate-pricing/</guid>
+      <description>&lt;h2 id=&#34;why-jumbo-rates-arent-one-size-fits-all&#34;&gt;Why Jumbo Rates Aren&amp;rsquo;t One-Size-Fits-All&lt;/h2&gt;&#xA;&lt;p&gt;Jumbo mortgage pricing is &lt;strong&gt;radically more complex&lt;/strong&gt; than conforming loans. Conforming rates (Fannie/Freddie) follow standardized Loan Level Price Adjustments (LLPAs)—predictable grids based on credit score and LTV. Jumbo rates? Portfolio lenders and private banks price based on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Loan-to-value (LTV)&lt;/strong&gt;: 70%, 75%, 80%, 85%, 90% → each tier changes rate by 0.125%–0.50%&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Credit score tiers&lt;/strong&gt;: 720, 740, 760, 780+ → jumbo pricing is hypersensitive to credit&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Loan amount&lt;/strong&gt;: $800K, $1.5M, $2.5M → higher balances trigger risk-based pricing&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reserves&lt;/strong&gt;: 6 months, 9 months, 12+ months PITI → more reserves can lower rate&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Relationship banking&lt;/strong&gt;: Deposits, investment accounts, private banking tier → 0.25%–0.75% discounts&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Property type&lt;/strong&gt;: Primary residence, second home, investment → non-primary adds 0.50%–1.00%&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Occupancy &amp;amp; citizenship&lt;/strong&gt;: U.S. citizen, foreign national, investor → foreign nationals pay 0.75%–1.50% more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Unlike conforming loans where &amp;ldquo;760 credit + 75% LTV&amp;rdquo; yields a predictable adjustment, &lt;strong&gt;jumbo pricing is negotiable&lt;/strong&gt;—especially at portfolio lenders and private banks. Understanding these levers helps you &lt;strong&gt;shop strategically&lt;/strong&gt; instead of accepting the first quote.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How To Read A Rate Sheet Without A Finance Degree</title>
+      <link>http://localhost:1379/usmortgagespecialist/blogs/read-rate-sheet-guide/</link>
+      <pubDate>Sat, 13 Dec 2025 11:15:00 -0500</pubDate>
+      <guid>http://localhost:1379/usmortgagespecialist/blogs/read-rate-sheet-guide/</guid>
+      <description>&lt;p&gt;Rate sheets intimidate most borrowers because they look like spreadsheets designed for loan officers, not humans. Rows of basis points, adjustment grids, and cryptic footnotes make it nearly impossible to compare one lender against another. US Mortgage Specialist translates rate sheets into a format you can actually use, but understanding the basics yourself gives you negotiating power and helps you spot when a lender is hiding costs. Here is how to decode the most important pieces without needing a finance degree.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>We Treated Our Rate Lock Like A Fire Drill</title>
+      <link>http://localhost:1379/conventionalmortgagerates/blogs/rate-lock-fire-drill/</link>
+      <pubDate>Tue, 18 Nov 2025 07:45:00 -0500</pubDate>
+      <guid>http://localhost:1379/conventionalmortgagerates/blogs/rate-lock-fire-drill/</guid>
+      <description>&lt;p&gt;Locking a conventional rate felt less like a quiet paperwork step and more like launching a new product. The headline noise, conflicting advice from friends, and lender portal notifications created paralysis. So we treated the lock as a fire drill: three short sprints, repeatable documentation, and clear rules about who could approve changes. By Monday morning we submitted conditions, negotiated a float-down clause, and still had energy left to eat dinner like normal people.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

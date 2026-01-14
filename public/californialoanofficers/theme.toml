@@ -1,0 +1,12 @@
+name = "California Loan Officers Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Find top California mortgage loan officers with expertise in FHA, VA, conventional, jumbo, and first-time buyer programs. Compare lenders, read reviews, and connect with local experts."
+homepage = "https://californialoanofficers.com"
+tags = ["blog", "responsive", "loan officers", "California"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://californialoanofficers.com"

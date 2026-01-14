@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Repricing on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</title>
+    <link>http://localhost:1379/tags/repricing/</link>
+    <description>Recent content in Repricing on California Home Rates - Compare Mortgage Rates Across CA | Browse Lenders®</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Nov 2025 07:55:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1379/tags/repricing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inside Our Conforming Reprice Watch Log</title>
+      <link>http://localhost:1379/conformingmortgagerates/blogs/conforming-reprice-watch-log/</link>
+      <pubDate>Mon, 17 Nov 2025 07:55:00 -0500</pubDate>
+      <guid>http://localhost:1379/conformingmortgagerates/blogs/conforming-reprice-watch-log/</guid>
+      <description>&lt;p&gt;Nothing spikes blood pressure like a surprise lender reprice. Your phone lights up, borrowers panic, and suddenly every stakeholder wants an update five minutes ago. To keep those moments orderly we maintain a “reprice watch log,” a single document that tracks volatility across all active conforming loans. The log has five columns, a few automation rules, and a playbook that anyone on the team can follow. Here’s how it works.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

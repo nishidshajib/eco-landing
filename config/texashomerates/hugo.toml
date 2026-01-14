@@ -1,0 +1,281 @@
+baseURL = "https://texashomerates.com"
+languageCode = "en-us"
+title = "Texas Home Rates"
+theme = "heloc-blog"
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = "content/texashomerates"
+publishDir = "public/texashomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    disableWatch = true
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Compare Texas mortgage rates across lenders for FHA, VA, conventional, and jumbo loans. Real-time rate data, APR transparency, and local market insights."
+  author = "Browse Lenders®"
+  shortName = "Texas Home Rates"
+  tagline = "Real-Time Texas Mortgage Rates & APR Transparency"
+  homepage = "https://texashomerates.com"
+
+  siteName = "Texas Home Rates"
+  siteDescription = "Track live Texas mortgage rates, compare APR across loan types, and understand market trends in Houston, Dallas, Austin, and San Antonio with daily updates and transparent pricing."
+  keywords = ["Texas mortgage rates", "Texas home loan rates", "Houston mortgage rates", "Dallas mortgage rates", "Austin home rates", "Texas APR comparison"]
+  serviceType = "Texas Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Texas Home Rates – Daily Updates, Real APR Transparency"
+  heroSubtitle = "Track mortgage rates across Texas lenders for FHA, conventional, VA, and jumbo loans. Compare APR, understand rate trends, and lock smarter with real-time market data."
+  heroImage = "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare Texas Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Texas Homebuyers Track Rates Daily"
+  aboutImage = "https://images.unsplash.com/photo-1746682817408-ee9ca79ece74?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Texas Mortgage Rates by Loan Type"
+  programsSubtitle = "See how rates differ across FHA, conventional, VA, and jumbo programs in Texas markets."
+
+  program1Title = "FHA Rates in Texas"
+  program1Description = "Low down payment (3.5%) with flexible credit. Track Texas FHA rates across Houston, Dallas, Austin metro areas—updated daily with APR and lender fees."
+  program1Image = "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Conventional & VA Rates"
+  program2Description = "Zero-down VA and 3% conventional options with competitive APR. Monitor Texas rate spreads between loan types and lock when markets favor your program."
+  program2Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Texas Jumbo Rates"
+  program3Description = "Luxury home financing above conforming limits ($766,550+ in most Texas counties). Track jumbo spreads, portfolio lender pricing, and credit tier impacts."
+  program3Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Live Texas Rates"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Rates change daily. Understanding trends helps you time locks and avoid overpaying when markets shift."
+
+  educationTitle = "Rate Intelligence Center"
+  educationSubtitle = "Learn how Texas rates move, what drives APR, and when to lock."
+
+  edu1Title = "Reading Texas Rate Trends"
+  edu1Description = "How Fed policy, 10-year Treasury yields, and local housing demand impact Texas mortgage rates—and what signals matter most."
+  edu1Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "APR vs. Rate: The Real Cost"
+  edu2Description = "Why APR matters more than advertised rates. How lender fees, points, and closing costs inflate true borrowing cost."
+  edu2Image = "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Lock Timing Strategy"
+  edu3Description = "When to lock, when to float, and how to use rate trend data to avoid panic-locking during volatility."
+  edu3Image = "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Credit's Impact on Your Rate"
+  edu4Description = "How credit score tiers shift APR by 0.25%–1.50%. Why improving from 680 to 740 saves thousands over loan life."
+  edu4Image = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Texas Rate Tracker – Daily Market Intelligence"
+  learningSubtitle = "Real-time rate data, APR comparisons, and lock timing tools for Texas borrowers."
+  learningImage = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Texas mortgage rates fluctuate daily based on Fed policy, bond markets, and lender competition. Tracking trends helps you lock at the right time and avoid overpaying."
+  learningBullet1 = "Use the <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">Texas rate comparison tool</a> to see live APR across loan types and lenders."
+  learningBullet2 = "Check your <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">credit tier</a> to predict pricing before you apply."
+  learningBullet3 = "Run <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">payment scenarios</a> to see how rate shifts affect monthly costs."
+  learningBullet4 = "Monitor Fed announcements and 10-year Treasury yields—they drive Texas rate direction."
+  learningPara2 = "No ads, no bait-and-switch rates—just transparent market data for Texas homebuyers."
+  learningPara3 = "Track rates daily, understand APR, and lock with confidence when markets align."
+
+  whyChooseTitle = "Why Track Texas Rates Here"
+  whyChooseSubtitle = "Transparent data, daily updates, and no teaser rates."
+  whyChoosePara1 = "Most rate sites show advertised minimums that few borrowers qualify for. We show APR ranges across credit tiers so you see realistic pricing for your profile."
+  whyChoosePara2 = "Education-first: Learn what moves rates, how to compare lenders, and when to lock—so you control timing instead of reacting to pressure."
+
+  whyChooseBox1Title = "Real APR Transparency"
+  whyChooseBox1Para = "See total borrowing cost (rate + fees + points) across Texas lenders. No hidden costs, no fine print."
+  whyChooseBox1Bullet1 = "APR includes lender fees, origination, and points"
+  whyChooseBox1Bullet2 = "Credit tier breakdowns show your likely rate"
+  whyChooseBox1Bullet3 = "Compare FHA, VA, conventional, and jumbo side-by-side"
+
+  whyChooseBox2Title = "Daily Market Updates"
+  whyChooseBox2Para = "Texas rates change daily. Track trends across Houston, Dallas, Austin, and San Antonio to time your lock."
+  whyChooseBox2Bullet1 = "Fed policy impact on Texas mortgage markets"
+  whyChooseBox2Bullet2 = "10-year Treasury yield tracking"
+  whyChooseBox2Bullet3 = "Local market demand signals"
+
+  whyChooseBox3Title = "Lock Timing Tools"
+  whyChooseBox3Para = "Understand when to lock vs. float with market trend analysis and volatility alerts."
+  whyChooseBox3Bullet1 = "Rate direction indicators (rising, falling, stable)"
+  whyChooseBox3Bullet2 = "Lock cost calculators (30, 45, 60-day locks)"
+  whyChooseBox3Bullet3 = "Float-down option guidance"
+
+  whyChooseCTA = "Compare Live Texas Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Texas Borrowers Who Locked Smarter"
+  testimonialsSubtitle = "Real stories of rate tracking and timing wins."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Tracked rates for 3 weeks. Locked when 10-year yields dipped—saved 0.375% vs. my initial quote."
+  testimonial1Name = "Verified Houston Buyer"
+  testimonial1Subtitle = "Lock timing win"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "APR transparency showed me lender A's 'low rate' had $4K more fees than lender B. Saved thousands."
+  testimonial2Name = "Verified Dallas Refinancer"
+  testimonial2Subtitle = "APR clarity"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Watched Fed signals and floated. When rates dropped 0.25%, I locked and cut $120/month off my payment."
+  testimonial3Name = "Verified Austin Homebuyer"
+  testimonial3Subtitle = "Float strategy"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Jumbo rates were all over the map. Comparison showed a 0.50% spread—locked with the best lender."
+  testimonial4Name = "Verified San Antonio Buyer"
+  testimonial4Subtitle = "Jumbo rate win"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Credit tier tool showed improving from 695 to 720 would save $85/month. I waited, fixed credit, locked lower."
+  testimonial5Name = "Verified Texas Borrower"
+  testimonial5Subtitle = "Credit optimization"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "No pressure, no teaser rates. Just real APR data and lock timing advice. Locked with confidence."
+  testimonial6Name = "Verified Houston Homeowner"
+  testimonial6Subtitle = "Transparent guidance"
+
+  calculatorsTitle = "Texas Rate Planning Tools"
+  calculatorsSubtitle = "Model scenarios before you lock."
+
+  creditScoreTitle = "Credit Score Impact on Texas Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Texas lenders price in tiers: 780+, 760–779, 740–759, 720–739, 700–719, 680–699, 660–679, 640–659. Each tier shifts APR by 0.125%–0.50%."
+  creditScoreHeading1 = "Rate Tier Pricing"
+  creditScoreText1 = "740+ gets best rates; 680–719 pays 0.50%–1.00% more; below 640 faces steep pricing."
+  creditScoreHeading2 = "Monthly Payment Impact"
+  creditScoreText2 = "On a $300K loan, moving from 680 to 740 saves $50–100/month."
+  creditScoreHeading3 = "Optimization Strategy"
+  creditScoreText3 = "Rapid rescores, utilization drops, and dispute fixes can jump you into a better tier before locking."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Rate Education as a Benefit"
+  employersSubtitle = "Help employees understand mortgage markets and lock smarter."
+  employersImage = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Employers can add Texas rate tracking and mortgage education to financial wellness programs at no cost—helping teams avoid overpaying and make confident timing decisions."
+  employersBullet1Title = "Rate literacy training"
+  employersBullet1Text = "Teach employees how to read APR, compare lenders, and time locks."
+  employersBullet2Title = "Credit readiness"
+  employersBullet2Text = "Help teams improve credit tiers before applying to unlock better rates."
+  employersBullet3Title = "Lock timing tools"
+  employersBullet3Text = "Give employees access to market signals and rate trend analysis."
+  employersCTA = "Add Rate Education"
+  employersCTALink = "https://browselenders.com/employer-benefits/"
+
+  blogTitle = "Texas Rate Insights"
+  blogSubtitle = "Market analysis, lock timing, and APR strategy for Texas borrowers."
+
+  faqTitle = "Texas Rate Questions"
+  faqSubtitle = "Common questions about tracking and locking rates."
+
+  faq1Question = "How often do Texas mortgage rates change?"
+  faq1Answer = "Daily. Lenders adjust rates based on 10-year Treasury yields, Fed policy, and market demand. Tracking daily helps you spot trends and lock at optimal times."
+
+  faq2Question = "What is a good mortgage rate in Texas right now?"
+  faq2Answer = "Rates vary by loan type, credit score, and down payment. As of early 2026, strong-credit conventional buyers see 6.00%–6.50%; FHA 6.25%–6.75%; VA 5.75%–6.25%; jumbo 6.50%–7.25%. Check live APR for your profile."
+
+  faq3Question = "Should I lock or float my Texas mortgage rate?"
+  faq3Answer = "Lock if rates are rising or volatile; float if falling and you have timeline flexibility. Watch Fed announcements and 10-year Treasury trends for signals."
+
+  faq4Question = "Why is APR higher than my quoted rate?"
+  faq4Answer = "APR includes lender fees, origination, points, and closing costs—showing true borrowing cost. Always compare APR, not just rate."
+
+  faq5Question = "How does credit score affect my Texas rate?"
+  faq5Answer = "Each credit tier shifts APR by 0.125%–0.50%. Improving from 680 to 740 can save $50–100/month on a $300K loan."
+
+  faq6Question = "Can I negotiate my Texas mortgage rate?"
+  faq6Answer = "Yes. Show competing lender quotes, ask for lender credits, or negotiate points. Rate shopping creates leverage."
+
+  ctaTitle = "Ready to Track Texas Rates?"
+  ctaDescription = "Compare live APR, understand market trends, and lock with confidence."
+  ctaCTA = "View Texas Rates Now"
+  ctaCTALink = "https://www.browselenders.com/search/"
+
+  [params.theme]
+    name = "Texas Home Rates Theme"
+    license = "MIT"
+    licenseLink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+    tags = ["blog", "responsive", "mortgage rates", "Texas"]
+    features = ["blog", "responsive"]
+    minVersion = "0.100.0"
+
+  favicon = "/favicon.png"
+
+  [params.pwa]
+    display = "standalone"
+    themeColor = "#0B2E4E"
+    backgroundColor = "#F6F8FB"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "192x192"
+      type = "image/png"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "512x512"
+      type = "image/png"
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = "application/json"
+    baseName = "manifest"
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = "application/toml"
+    baseName = "theme"
+    isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "MANIFEST", "THEMETOML"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+[permalinks]
+  blogs = "/blogs/:slug/"

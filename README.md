@@ -112,6 +112,11 @@ hugo server --environment helocfl --port 1371
 hugo server --environment mortgagebrokerstx --port 1372
 hugo server --environment texasloanofficers --port 1373
 hugo server --environment brokerstx --port 1374
+hugo server --environment texashomerates --port 1375
+hugo server --environment texasjumbolenders --port 1376
+hugo server --environment californiajumbolenders --port 1377
+hugo server --environment californialoanofficers --port 1378
+hugo server --environment californiahomerates --port 1379
 
 Access sites at http://localhost:PORT
 

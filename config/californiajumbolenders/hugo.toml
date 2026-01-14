@@ -1,0 +1,281 @@
+baseURL = "https://californiajumbolenders.com"
+languageCode = "en-us"
+title = "California Jumbo Lenders"
+theme = "heloc-blog"
+disableKinds = []
+relativeURLs = true
+canonifyURLs = true
+contentDir = "content/californiajumbolenders"
+publishDir = "public/californiajumbolenders"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    disableWatch = true
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "California jumbo loan specialists for luxury homes above conforming limits. Portfolio lenders, private banks, and credit unions with competitive high-balance rates."
+  author = "Browse Lenders®"
+  shortName = "California Jumbo Lenders"
+  tagline = "High-Balance Financing for California Luxury Markets"
+  homepage = "https://californiajumbolenders.com"
+
+  siteName = "California Jumbo Lenders"
+  siteDescription = "Find California jumbo mortgage lenders for homes exceeding $1,149,825. Portfolio lenders, private banks, and specialty jumbo programs with flexible underwriting for high-net-worth borrowers."
+  keywords = ["California jumbo lenders", "jumbo mortgage California", "luxury home loans California", "high-balance mortgage", "portfolio lenders California", "jumbo loan rates California"]
+  serviceType = "California Jumbo Mortgage Lending"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "California Jumbo Lenders – High-Balance Financing Experts"
+  heroSubtitle = "Portfolio lenders, private banks, and jumbo specialists for California homes above $1,149,825. Flexible underwriting, competitive rates, and Bay Area to San Diego expertise."
+  heroImage = "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Jumbo Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why California Buyers Need Jumbo Specialists"
+  aboutImage = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "California Jumbo Loan Programs"
+  programsSubtitle = "High-balance conforming, super-jumbo, and portfolio programs for California's expensive markets."
+
+  program1Title = "High-Balance Conforming ($766,550–$1,149,825)"
+  program1Description = "California's high-cost areas get elevated conforming limits ($1,149,825 in most counties). Lower rates than jumbo, flexible credit (700+), and 10%–20% down options."
+  program1Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Super-Jumbo ($1,149,825–$3M+)"
+  program2Description = "Portfolio and private bank financing for Bay Area, LA, San Diego luxury properties. Custom underwriting, asset-based approval, and relationship pricing for high-net-worth clients."
+  program2Image = "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Foreign National & Investment Jumbo"
+  program3Description = "Specialty jumbo programs for foreign nationals, vacation homes, and investment properties. Non-resident approval, asset depletion, and portfolio flexibility for California real estate."
+  program3Image = "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare Jumbo Lenders"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "California's expensive housing demands jumbo expertise. Portfolio lenders offer flexibility that agency guidelines can't match."
+
+  educationTitle = "Jumbo Lending Education"
+  educationSubtitle = "Understand underwriting, reserves, and California-specific jumbo strategies."
+
+  edu1Title = "California Jumbo Limits & Pricing"
+  edu1Description = "$1,149,825 high-balance conforming limit in most CA counties. Understand how crossing this threshold affects rates, reserves, and approval odds."
+  edu1Image = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Portfolio vs. Agency Jumbo in California"
+  edu2Description = "Portfolio lenders hold loans vs. selling to agencies—more flexibility for self-employed, foreign nationals, and Bay Area tech workers with stock compensation."
+  edu2Image = "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "California Jumbo Reserve Requirements"
+  edu3Description = "How LTV, credit score, reserves, and property value affect jumbo pricing—and why relationship banking cuts rates in expensive markets."
+  edu3Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Stock Compensation & Jumbo Loans"
+  edu4Description = "Bay Area tech workers with RSUs, stock options, and equity compensation—how portfolio lenders underwrite unvested stock for jumbo approval."
+  edu4Image = "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "View Jumbo Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "California Jumbo Lending Intelligence"
+  learningSubtitle = "Portfolio lenders, private banks, and specialty jumbo programs for California's high-cost markets."
+  learningImage = "https://images.unsplash.com/photo-1499310226026-b9d598980b90?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "California jumbo loans start at $1,149,825 (2025 high-balance conforming limit). Above that, you need lenders with portfolio expertise, flexible underwriting, and competitive pricing for Bay Area, LA, and San Diego luxury markets."
+  learningBullet1 = "Use the <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">California jumbo lender directory</a> to compare portfolio lenders and private banks."
+  learningBullet2 = "Check your <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">credit tier</a>—jumbo pricing is sensitive to 720, 740, 760+ thresholds."
+  learningBullet3 = "Run <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">reserve scenarios</a> to see how cash holdings and stock comp affect approval."
+  learningBullet4 = "Ask about portfolio retention vs. agency sale—portfolio lenders offer more flexibility for stock compensation and foreign nationals."
+  learningPara2 = "No teaser rates, no bait-and-switch—just transparent jumbo lending for California luxury buyers."
+  learningPara3 = "Compare portfolio lenders, understand high-balance limits, and lock with confidence."
+
+  whyChooseTitle = "Why Work With California Jumbo Specialists"
+  whyChooseSubtitle = "Portfolio flexibility, relationship pricing, and high-balance expertise for expensive markets."
+  whyChoosePara1 = "California jumbo loans demand lenders who understand stock compensation, high property taxes, and luxury appraisals. Portfolio lenders and private banks offer flexibility that agency lenders can't match."
+  whyChoosePara2 = "Education-first approach: understand reserves, LTV pricing, and how relationship banking cuts rates on multi-million-dollar Bay Area properties."
+
+  whyChooseBox1Title = "Portfolio Lender Flexibility"
+  whyChooseBox1Para = "Portfolio lenders hold loans instead of selling to agencies—enabling manual underwriting for tech workers with RSUs, foreign nationals, and complex income."
+  whyChooseBox1Bullet1 = "Bank statement income (12–24 months)"
+  whyChooseBox1Bullet2 = "Stock compensation underwriting (vested/unvested RSUs)"
+  whyChooseBox1Bullet3 = "Manual underwriting for compensating factors"
+
+  whyChooseBox2Title = "Competitive California Jumbo Rates"
+  whyChooseBox2Para = "Relationship banking, large balances, and California market competition drive better jumbo pricing than advertised conforming spreads suggest."
+  whyChooseBox2Bullet1 = "Private banking discounts for deposit relationships"
+  whyChooseBox2Bullet2 = "Portfolio lender competition in Bay Area, LA, San Diego"
+  whyChooseBox2Bullet3 = "Credit tier pricing: 740+ unlocks best jumbo rates"
+
+  whyChooseBox3Title = "High-Balance Conforming Advantage"
+  whyChooseBox3Para = "California's $1,149,825 conforming limit means many \"jumbo\" loans qualify as high-balance conforming—better rates, lower reserves, easier approval."
+  whyChooseBox3Bullet1 = "Know your county's conforming limit (varies by county)"
+  whyChooseBox3Bullet2 = "High-balance conforming = agency pricing, jumbo flexibility"
+  whyChooseBox3Bullet3 = "Shop both conforming and portfolio jumbo lenders"
+
+  whyChooseCTA = "Find California Jumbo Lenders"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "California Luxury Buyer Wins"
+  testimonialsSubtitle = "Real jumbo approvals and rate wins across California."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Tech worker with RSUs. Portfolio lender counted unvested stock as reserves and approved $1.8M in Palo Alto."
+  testimonial1Name = "Verified Bay Area Buyer"
+  testimonial1Subtitle = "Stock comp approval"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Shopped 5 jumbo lenders. Private bank matched best rate and waived appraisal fee ($3,500 savings)."
+  testimonial2Name = "Verified LA Luxury Buyer"
+  testimonial2Subtitle = "Private banking win"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1557804506-669714d2e9d8?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "$3M loan, foreign national. Asset-based jumbo program approved with 35% down, no U.S. credit."
+  testimonial3Name = "Verified San Diego Investor"
+  testimonial3Subtitle = "Foreign national approval"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Credit union jumbo rate 0.50% below big banks. Saved $720/month on $2M San Francisco loan."
+  testimonial4Name = "Verified SF Buyer"
+  testimonial4Subtitle = "Credit union jumbo win"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Needed 80% LTV jumbo. Portfolio lender approved with compensating factors (770 credit, 18 months reserves)."
+  testimonial5Name = "Verified California Homebuyer"
+  testimonial5Subtitle = "High LTV jumbo approval"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Transparent reserve guidance, flexible underwriting, and competitive pricing. No pressure, no surprises."
+  testimonial6Name = "Verified Orange County Homeowner"
+  testimonial6Subtitle = "Clear jumbo process"
+
+  calculatorsTitle = "Jumbo Loan Planning Tools"
+  calculatorsSubtitle = "Model reserves, LTV, and jumbo payment scenarios for California markets."
+
+  creditScoreTitle = "Credit Score Impact on California Jumbo Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Jumbo lenders price in tight credit tiers. Moving from 720 to 740 can save 0.25%–0.50% APR—worth $300–600/month on a $2M California loan."
+  creditScoreHeading1 = "Jumbo Credit Tiers"
+  creditScoreText1 = "760+ gets best jumbo pricing; 740–759 adds 0.125%–0.25%; 720–739 adds 0.375%–0.625%; below 700 faces steep pricing or denial."
+  creditScoreHeading2 = "Monthly Payment Impact"
+  creditScoreText2 = "On a $2M jumbo, moving from 725 to 750 credit saves $300–500/month."
+  creditScoreHeading3 = "Reserve & Credit Synergy"
+  creditScoreText3 = "High reserves (12+ months PITI) can offset lower credit (700–720). Portfolio lenders weight compensating factors."
+  creditScoreCTA = "Check Your Jumbo Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Jumbo Lending as an Executive Benefit"
+  employersSubtitle = "Help high-earning employees access portfolio lenders and jumbo expertise in California's expensive markets."
+  employersImage = "https://images.unsplash.com/photo-1565402170291-8491f14678db?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "California employers with executive teams and tech workers can add jumbo lending education and lender access to financial wellness programs—helping employees navigate complex underwriting and secure competitive rates in expensive markets."
+  employersBullet1Title = "Portfolio lender access"
+  employersBullet1Text = "Connect employees with California jumbo specialists and private banks for flexible underwriting."
+  employersBullet2Title = "Stock compensation guidance"
+  employersBullet2Text = "Teach employees how RSUs, stock options, and equity comp affect jumbo approval and reserves."
+  employersBullet3Title = "Jumbo rate transparency"
+  employersBullet3Text = "Help teams compare portfolio lenders and understand credit tier pricing in California markets."
+  employersCTA = "Add Jumbo Lending Benefits"
+  employersCTALink = "https://browselenders.com/employer-benefits/"
+
+  blogTitle = "California Jumbo Insights"
+  blogSubtitle = "Portfolio lending, underwriting, and jumbo rate strategy for California markets."
+
+  faqTitle = "California Jumbo Questions"
+  faqSubtitle = "Common questions about jumbo loans and portfolio lenders in California."
+
+  faq1Question = "What is the jumbo loan limit in California?"
+  faq1Answer = "$1,149,825 for most California counties (2025 high-balance conforming limit). Loans above this require jumbo financing. Some rural counties have lower limits ($766,550)."
+
+  faq2Question = "Do I need 20% down for a jumbo loan in California?"
+  faq2Answer = "Most jumbo lenders require 10%–20% down. Some portfolio lenders offer 10% down jumbo with strong credit (740+) and reserves. Super-jumbo ($2M+) often requires 20%–25% down."
+
+  faq3Question = "What credit score do I need for California jumbo loans?"
+  faq3Answer = "Minimum 700 for most jumbo lenders; best pricing starts at 740+. Portfolio lenders may approve 680–700 with compensating factors (high reserves, low LTV, strong income)."
+
+  faq4Question = "How many months of reserves do California jumbo lenders require?"
+  faq4Answer = "6–12 months of PITI (principal, interest, taxes, insurance) in liquid reserves. California property taxes are high (1%+ of value), so PITI is higher than other states. More reserves help approval."
+
+  faq5Question = "Can tech workers with stock compensation get California jumbo loans?"
+  faq5Answer = "Yes. Portfolio lenders offer programs for tech workers with RSUs, stock options, and equity compensation. Vested stock counts as reserves; some lenders count unvested stock at a discount."
+
+  faq6Question = "What are California jumbo mortgage rates right now?"
+  faq6Answer = "California jumbo rates vary by lender, credit tier, LTV, and reserves. As of early 2026, expect 6.25%–7.25% for 740+ credit, 20% down. Portfolio lenders and private banks may offer relationship discounts."
+
+  ctaTitle = "Ready to Compare California Jumbo Lenders?"
+  ctaDescription = "Find portfolio lenders, private banks, and jumbo specialists with flexible underwriting and competitive rates for California luxury markets."
+  ctaCTA = "Find Jumbo Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"
+
+  [params.theme]
+    name = "California Jumbo Lenders Theme"
+    license = "MIT"
+    licenseLink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+    tags = ["blog", "responsive", "jumbo loans", "California"]
+    features = ["blog", "responsive"]
+    minVersion = "0.100.0"
+
+  favicon = "/favicon.png"
+
+  [params.pwa]
+    display = "standalone"
+    themeColor = "#0B2E4E"
+    backgroundColor = "#F6F8FB"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "192x192"
+      type = "image/png"
+    [[params.pwa.icons]]
+      src = "/favicon.png"
+      sizes = "512x512"
+      type = "image/png"
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = "application/json"
+    baseName = "manifest"
+    isPlainText = true
+  [outputFormats.THEMETOML]
+    mediaType = "application/toml"
+    baseName = "theme"
+    isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "MANIFEST", "THEMETOML"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+
+[permalinks]
+  blogs = "/blogs/:slug/"
