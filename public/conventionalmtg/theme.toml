@@ -1,0 +1,12 @@
+name = "ConventionalMTG Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "ConventionalMTG.com helps borrowers script every conventional mortgage conversation with data-backed comparisons, credit guardrails, and lender-ready recap decks."
+homepage = "https://conventionalmtg.com/"
+tags = ["blog", "responsive", "mortgage", "conventional"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://conventionalmtg.com/"
