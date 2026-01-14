@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Veteran Mortgage Lenders'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/veteranmortgagelenders'
 publishDir = 'public/veteranmortgagelenders'
 

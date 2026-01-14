@@ -1,18 +1,1 @@
-{
-  "name": "California Jumbo Lenders",
-  "short_name": "California Jumbo Lenders",
-  "description": "California jumbo loan specialists for luxury homes above conforming limits. Portfolio lenders, private banks, and credit unions with competitive high-balance rates.",
-  "start_url": "http://localhost:1377/",
-  "display": "standalone",
-  "theme_color": "#0B2E4E",
-  "background_color": "#F6F8FB",
-  "icons": [{
-      "src": "/favicon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },{
-      "src": "/favicon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }]
-}
+{"name":"California Jumbo Lenders","short_name":"California Jumbo Lenders","description":"California jumbo loan specialists for luxury homes above conforming limits. Portfolio lenders, private banks, and credit unions with competitive high-balance rates.","start_url":"https://californiajumbolenders.com/","display":"standalone","theme_color":"#0B2E4E","background_color":"#F6F8FB","icons":[{"src":"/favicon.png","sizes":"192x192","type":"image/png"},{"src":"/favicon.png","sizes":"512x512","type":"image/png"}]}

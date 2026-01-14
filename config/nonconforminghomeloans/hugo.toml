@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Non-Conforming Home Loans'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/nonconforminghomeloans'
 publishDir = 'public/nonconforminghomeloans'
 

@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Florida Jumbo Lenders'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/floridajumbolenders'
 publishDir = 'public/floridajumbolenders'
 

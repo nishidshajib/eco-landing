@@ -3,8 +3,8 @@ languageCode = "en-us"
 title = "Texas Jumbo Lenders"
 theme = "heloc-blog"
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = "content/texasjumbolenders"
 publishDir = "public/texasjumbolenders"
 

@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Texas Loan Officers'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/texasloanofficers'
 publishDir = 'public/texasloanofficers'
 

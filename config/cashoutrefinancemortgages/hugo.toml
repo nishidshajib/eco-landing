@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Cash-Out Refinance Mortgages'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/cashoutrefinancemortgages'
 publishDir = 'public/cashoutrefinancemortgages'
 

@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'FHA 203(k) Loan Officers'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/fha203kloanofficer'
 publishDir = 'public/fha203kloanofficer'
 

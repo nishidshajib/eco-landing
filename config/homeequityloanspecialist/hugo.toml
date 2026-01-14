@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Home Equity Loan Specialist'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/homeequityloanspecialist'
 publishDir = 'public/homeequityloanspecialist'
 

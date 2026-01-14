@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Purchase Mortgage Loans'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/purchasemortgageloans'
 publishDir = 'public/purchasemortgageloans'
 

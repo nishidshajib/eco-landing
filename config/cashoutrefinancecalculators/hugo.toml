@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Cash-Out Refinance Calculators'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/cashoutrefinancecalculators'
 publishDir = 'public/cashoutrefinancecalculators'
 

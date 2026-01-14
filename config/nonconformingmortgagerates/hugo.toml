@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'Non-Conforming Mortgage Rates'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/nonconformingmortgagerates'
 publishDir = 'public/nonconformingmortgagerates'
 

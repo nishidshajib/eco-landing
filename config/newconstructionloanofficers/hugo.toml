@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'New Construction Loan Officers'
 theme = 'heloc-blog'
 disableKinds = []
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 contentDir = 'content/newconstructionloanofficers'
 publishDir = 'public/newconstructionloanofficers'
 
