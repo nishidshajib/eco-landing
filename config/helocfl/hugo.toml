@@ -280,3 +280,5 @@ path = 'page'
 
 [permalinks]
   blogs = '/blogs/:slug/'
+
+# Production deployment trigger
