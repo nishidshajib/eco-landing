@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Wyoming mortgage brokers in Cheyenne, Casper, Jackson Hole, and statewide. Access 20+ lenders for wholesale pricing and rural property expertise."
+homepage = "https://mortgagebrokerswy.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://mortgagebrokerswy.com"

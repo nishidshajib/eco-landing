@@ -1,0 +1,228 @@
+baseURL = "https://arizonajumbolenders.com"
+languageCode = "en-us"
+title = "Arizona Jumbo Lenders"
+theme = "heloc-blog"
+contentDir = "content/arizonajumbolenders"
+publishDir = "public/arizonajumbolenders"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Arizona jumbo lenders for Phoenix, Scottsdale, Paradise Valley, and luxury markets statewide. Access jumbo loans up to $5M+ with portfolio and agency options."
+  author = "Browse Lenders®"
+  shortName = "AZ Jumbo Lenders"
+  tagline = "Luxury Mortgage Financing for Arizona Properties"
+  homepage = "https://arizonajumbolenders.com"
+
+  siteName = "Arizona Jumbo Lenders"
+  siteDescription = "Finance Arizona luxury homes with specialized jumbo lenders. Access $750K-$5M+ loans for Phoenix, Scottsdale, Paradise Valley, and premium Arizona markets with expert underwriting."
+  keywords = ["Arizona jumbo lenders", "AZ jumbo mortgages", "Scottsdale jumbo loans", "Paradise Valley luxury financing", "Phoenix jumbo lenders", "high balance Arizona mortgages"]
+  serviceType = "Arizona Jumbo Mortgage Lender Network"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Arizona Jumbo Lenders — Luxury Mortgage Specialists"
+  heroSubtitle = "Access specialized jumbo financing for Phoenix, Scottsdale, and Paradise Valley properties. Compare lenders offering $750K-$5M+ jumbo loans across Arizona."
+  heroImage = "https://images.unsplash.com/photo-1444084316824-dc26d6657664?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Jumbo Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Arizona Jumbo Lending Expertise Matters"
+  aboutImage = "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Arizona Jumbo Mortgage Programs"
+  programsSubtitle = "Compare portfolio lenders, bank jumbo programs, and specialized underwriting for Arizona luxury properties."
+
+  program1Title = "Standard Jumbo Mortgages ($750K-$2M)"
+  program1Description = "Competitive rates for jumbo loans in Phoenix, Scottsdale, and Tucson markets. Access portfolio lenders, bank jumbo programs, and specialized brokers with wholesale pricing."
+  program1Image = "https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Super Jumbo Mortgages ($2M-$5M)"
+  program2Description = "Ultra-high balance financing for Paradise Valley estates and luxury properties. Asset-based underwriting and flexible qualification criteria for exceptional borrowers."
+  program2Image = "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Portfolio Lending for Specialty Properties"
+  program3Description = "Portfolio loans for unique Arizona properties including custom builds, desert acreage, and luxury condos with HOA complexity."
+  program3Image = "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Explore Jumbo Programs"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Arizona jumbo lenders specialize in Phoenix metro luxury markets—portfolio lenders offer flexibility for complex income and unique properties." 
+
+  educationTitle = "Arizona Jumbo Lending Intelligence"
+  educationSubtitle = "Understand loan limits, qualification requirements, and portfolio vs agency options."
+
+  edu1Title = "Jumbo Loan Limits & Categories"
+  edu1Description = "Arizona jumbo mortgages start at $806,550. Standard jumbo ($806K-$2M), super jumbo ($2M-$5M), and ultra-jumbo ($5M+) each have distinct underwriting and rate environments."
+  edu1Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Portfolio vs Agency Jumbo Loans"
+  edu2Description = "Agency jumbo programs follow Fannie Mae/Freddie Mac guidelines. Portfolio lenders keep loans in-house, offering flexibility for self-employed, complex income, and unique properties."
+  edu2Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Phoenix-Scottsdale Luxury Markets"
+  edu3Description = "Scottsdale, Paradise Valley, and North Phoenix each have distinct jumbo financing needs. Match lender expertise to your specific market and property type."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Asset-Based Underwriting"
+  edu4Description = "Portfolio lenders emphasize borrower assets and wealth over traditional income documentation. Ideal for business owners and high-net-worth borrowers in Arizona."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Jumbo Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Arizona Jumbo Lender Selection"
+  learningSubtitle = "Find specialized jumbo lenders with Arizona market expertise and competitive rates."
+  learningImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Arizona jumbo lending requires specialized expertise. Lenders with Phoenix metro experience understand local market dynamics, HOA requirements, and appraisal considerations for luxury properties."
+  learningBullet1 = "Find Arizona jumbo lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with verified NMLS credentials."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to understand rate tiers for jumbo qualification."
+  learningBullet3 = "Model jumbo payments at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for $750K to $5M+ scenarios."
+  learningBullet4 = "Compare agency vs portfolio jumbo options to find best rates and flexibility for your financial profile."
+  learningPara2 = "Interview 3+ Arizona jumbo lenders covering portfolio, bank, and broker options to compare rates, terms, and underwriting expertise."
+  learningPara3 = "Arizona jumbo borrowers save by choosing portfolio lenders for complex situations and brokers with wholesale access for standard jumbo scenarios."
+
+  whyChooseTitle = "Why Arizona Jumbo Lender Choice Impacts Your Deal"
+  whyChooseSubtitle = "Portfolio flexibility, rate competitiveness, and market expertise create significant cost differences."
+  whyChoosePara1 = "Arizona’s luxury market demands specialized jumbo expertise. Portfolio lenders offer flexibility that agency programs cannot match, while competition between jumbo specialists creates rate advantages for informed borrowers."
+  whyChoosePara2 = "Education-first: understand jumbo loan limits, portfolio vs agency programs, and regional market differences to secure optimal rates and terms."
+
+  whyChooseBox1Title = "Portfolio Lender Flexibility"
+  whyChooseBox1Para = "Portfolio lenders keep loans on balance sheet, enabling creative underwriting for complex income, non-traditional assets, and unique properties."
+  whyChooseBox1Bullet1 = "Flexible DTI: 45-50% possible vs agency 43%"
+  whyChooseBox1Bullet2 = "Asset-based qualifying for high-net-worth borrowers"
+  whyChooseBox1Bullet3 = "Specialty properties: luxury condos, custom builds"
+
+  whyChooseBox2Title = "Arizona Market Expertise"
+  whyChooseBox2Para = "Scottsdale and Paradise Valley present underwriting challenges. Experienced jumbo lenders understand local market values, HOA rules, and appraisal nuances."
+  whyChooseBox2Bullet1 = "Scottsdale luxury market knowledge"
+  whyChooseBox2Bullet2 = "Paradise Valley estate expertise"
+  whyChooseBox2Bullet3 = "Phoenix metro appraisal experience"
+
+  whyChooseBox3Title = "Competitive Rate Advantages"
+  whyChooseBox3Para = "Multiple Arizona jumbo lenders create rate competition. Wholesale brokers accessing portfolio lenders often beat direct bank applications by 0.25%-0.50%."
+  whyChooseBox3Bullet1 = "Portfolio lenders: 0-0.25% rate advantage possible"
+  whyChooseBox3Bullet2 = "Wholesale broker access to 10+ jumbo programs"
+  whyChooseBox3Bullet3 = "0.25% difference = $3,750/year on $1.5M loan"
+
+  whyChooseCTA = "Find Arizona Jumbo Specialists"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Arizona Jumbo Borrowers Who Found Optimal Financing"
+  testimonialsSubtitle = "Real success from specialized jumbo lender partnerships and competitive rate shopping."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Scottsdale luxury purchase: Portfolio lender’s flexible underwriting made the $2.6M jumbo financing smooth and competitive."
+  testimonial1Name = "Michael & Jenna R."
+  testimonial1Subtitle = "Scottsdale Estate"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Paradise Valley home: Specialized jumbo lender understood appraisal challenges and saved $11,200 in rate costs."
+  testimonial2Name = "David L."
+  testimonial2Subtitle = "Paradise Valley Home"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "North Phoenix purchase: Broker shopping multiple jumbo lenders found a 0.375% better rate than our bank."
+  testimonial3Name = "Priya K."
+  testimonial3Subtitle = "North Phoenix Purchase"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1533611432671-cb966fcb6cb3?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Luxury condo in Old Town Scottsdale: Portfolio lender managed HOA review and delivered a smooth closing."
+  testimonial4Name = "Robert C."
+  testimonial4Subtitle = "Scottsdale Condo"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Paradise Valley estate: Asset-based underwriting worked perfectly for our business income. Closed in 34 days."
+  testimonial5Name = "Jennifer S."
+  testimonial5Subtitle = "Paradise Valley Estate"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Jumbo refinance: Wholesale broker beat our original lender by 0.50%. Saved $410/month on $1.8M balance."
+  testimonial6Name = "Patricia W."
+  testimonial6Subtitle = "Jumbo Refi"
+
+  calculatorsTitle = "Arizona Jumbo Financing Tools"
+  calculatorsSubtitle = "Model payments, compare rates, and plan jumbo qualification strategy."
+
+  creditScoreTitle = "Credit Optimization for Arizona Jumbo Loans"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score significantly impacts jumbo loan pricing. For jumbo mortgages, lenders prefer 740+ scores. A 40–60 point improvement can save 0.25%–0.50% on rates."
+  creditScoreHeading1 = "Jumbo Credit Score Tiers"
+  creditScoreText1 = "760+ gets best jumbo rates; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; portfolio lenders may accept 680+ with compensating factors."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$1.6M jumbo loan: 760 tier $9,650/month vs. 700 tier $9,890/month — about $240/month difference in payment impact."
+  creditScoreHeading3 = "Pre-Application Improvements"
+  creditScoreText3 = "Pay down revolving credit to under 10% utilization, dispute errors, avoid new inquiries 60–90 days before jumbo application."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Arizona Jumbo Mortgage Guidance"
+  employersSubtitle = "Support executives and high-net-worth employees with jumbo lending education and specialist referrals."
+  employersImage = "https://images.unsplash.com/photo-1603202662747-00e33e7d1468?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Arizona employers can offer jumbo mortgage education and specialist referrals for executives relocating to or purchasing luxury properties in Phoenix and Scottsdale."
+  employersBullet1Title = "Jumbo lending expertise"
+  employersBullet1Text = "Teach executives about portfolio vs agency programs and specialized underwriting for complex wealth."
+  employersBullet2Title = "Arizona market guidance"
+  employersBullet2Text = "Explain Phoenix, Scottsdale, and Paradise Valley market differences and appropriate jumbo lender selection."
+  employersBullet3Title = "NMLS verification"
+  employersBullet3Text = "Help employees verify credentials and select NMLS-licensed specialists with jumbo expertise."
+
+  employersCTA = "Partner for Employer Relocation"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Arizona Jumbo Insights"
+  blogSubtitle = "Scottsdale and Phoenix jumbo trends, lender comparisons, and luxury financing strategies."
+
+  faqTitle = "Arizona Jumbo Lender Questions"
+  faqSubtitle = "Common questions about Arizona jumbo loans and lender selection."
+
+  faq1Question = "What is the jumbo loan limit in Arizona?"
+  faq1Answer = "Arizona's conforming loan limit is $806,550. Loans above this amount are jumbo and require specialized lenders or portfolio programs."
+
+  faq2Question = "Do Arizona jumbo lenders require higher credit scores?"
+  faq2Answer = "Most jumbo lenders prefer 740+ credit scores. Portfolio lenders may approve 700+ with compensating factors and larger reserves."
+
+  faq3Question = "Are Arizona jumbo rates higher than conventional?"
+  faq3Answer = "Typically yes. Jumbo rates are often 0.25%–0.50% higher than conforming, though portfolio lenders can be competitive depending on borrower profile."
+
+  faq4Question = "How much down payment is needed for Arizona jumbo loans?"
+  faq4Answer = "Standard jumbo loans typically require 20% down. Super jumbo loans may require 25%–30% depending on loan amount and property type."
+
+  faq5Question = "Can I use portfolio lenders for condos in Scottsdale?"
+  faq5Answer = "Yes. Portfolio lenders can finance condos with HOA complexity or non-warrantable status, often with higher down payments and reserves."
+
+  faq6Question = "How many jumbo lenders should I compare?"
+  faq6Answer = "Compare at least 3 jumbo lenders (bank, portfolio, and broker options) to evaluate rates, fees, and underwriting flexibility."
+
+  ctaTitle = "Ready to Compare Arizona Jumbo Lenders?"
+  ctaDescription = "Find Arizona jumbo lenders with luxury market expertise and competitive pricing."
+  ctaCTA = "Start Jumbo Comparison"
+  ctaCTALink = "https://www.browselenders.com/search/"

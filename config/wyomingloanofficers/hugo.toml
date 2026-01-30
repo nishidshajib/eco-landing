@@ -1,0 +1,228 @@
+baseURL = "https://wyomingloanofficers.com"
+languageCode = "en-us"
+title = "Wyoming Loan Officers"
+theme = "heloc-blog"
+contentDir = "content/wyomingloanofficers"
+publishDir = "public/wyomingloanofficers"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Wyoming licensed loan officers in Cheyenne, Casper, Jackson Hole, and statewide. Compare brokers vs bank MLOs for wholesale pricing, multi-lender access, and regional expertise."
+  author = "Browse Lenders®"
+  shortName = "WY Loan Officers"
+  tagline = "Find Licensed Wyoming Mortgage Professionals"
+  homepage = "https://wyomingloanofficers.com"
+
+  siteName = "Wyoming Loan Officers"
+  siteDescription = "Connect with Wyoming NMLS-licensed loan officers offering wholesale pricing, multi-lender access, and regional market expertise across Cheyenne, Casper, Jackson Hole, and rural WY markets."
+  keywords = ["Wyoming loan officers", "WY mortgage brokers", "Cheyenne loan officers", "Casper MLOs", "Jackson Hole mortgage professionals", "Wyoming NMLS licensed"]
+  serviceType = "Wyoming Mortgage Loan Officer Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Wyoming Loan Officers — NMLS-Licensed Mortgage Professionals"
+  heroSubtitle = "Find Wyoming loan officers with wholesale lender access, regional expertise, and transparent pricing. Compare brokers vs bank employees for Cheyenne, Casper, Jackson Hole, and rural market financing."
+  heroImage = "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Wyoming Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Wyoming Loan Officer Choice Matters"
+  aboutImage = "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Wyoming Loan Officer Types"
+  programsSubtitle = "Compare mortgage brokers, bank loan officers, and credit union MLOs across Wyoming markets."
+
+  program1Title = "Mortgage Brokers with Wholesale Access"
+  program1Description = "Wyoming brokers access 20+ wholesale lenders, offering 0.125%–0.375% better pricing than retail. Multi-lender comparison for conventional, FHA, VA, jumbo, and rural property loans."
+  program1Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Bank Loan Officers (Retail Pricing)"
+  program2Description = "Wyoming bank employees offer single-lender programs with established local presence. Competitive for portfolio lending (rural properties, non-standard scenarios) but limited rate comparison."
+  program2Image = "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Credit Union MLOs"
+  program3Description = "Wyoming credit union loan officers serve members with relationship-based pricing. Competitive for standard purchases but limited jumbo/luxury property expertise (Jackson Hole market)."
+  program3Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare Wyoming Loan Officers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Wyoming broker loan officers deliver wholesale pricing advantage—0.125%–0.375% below bank retail rates through multi-lender access."
+
+  educationTitle = "Wyoming Loan Officer Expertise"
+  educationSubtitle = "Understand NMLS licensing, wholesale access, and regional specialization for WY mortgage professionals."
+
+  edu1Title = "NMLS Licensing Requirements"
+  edu1Description = "Wyoming loan officers must hold active NMLS licenses, complete 20 hours annual CE, and maintain state registration. Verify credentials at NMLSConsumerAccess.org before working with any MLO."
+  edu1Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Wholesale vs Retail Pricing"
+  edu2Description = "Brokers access wholesale rates 0.125%–0.375% below retail through lender relationships. Bank loan officers offer retail pricing (same lender charges more direct than through broker channel)."
+  edu2Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Regional Market Expertise"
+  edu3Description = "Wyoming loan officers specialize by region—Cheyenne/Casper competition, Jackson Hole luxury/jumbo, rural property portfolio lending. Match loan officer expertise to your property type and location."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Compensation Transparency"
+  edu4Description = "Wyoming loan officers earn via borrower-paid fees (1%–2%) or lender-paid compensation. Ask: 'What's your compensation structure?' to understand if your rate includes origination markup."
+  edu4Image = "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Loan Officer Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Working with Wyoming Loan Officers"
+  learningSubtitle = "Find NMLS-licensed professionals with regional expertise and transparent pricing."
+  learningImage = "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Wyoming loan officers vary significantly in lender access, pricing structure, and regional expertise. Brokers with wholesale access deliver 0.125%–0.375% better rates than bank retail loan officers through multi-lender competition."
+  learningBullet1 = "Find Wyoming loan officers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">Browse Lenders</a> with verified NMLS credentials and transparent pricing."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">Middle Credit Score</a> before meeting loan officers to understand rate expectations."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">Home Loan Calculator</a> for informed loan officer discussions."
+  learningBullet4 = "Verify NMLS licenses at NMLSConsumerAccess.org—Wyoming requires active licensing and annual continuing education."
+  learningPara2 = "Interview 3+ Wyoming loan officers (mix of brokers and bank MLOs) to compare wholesale vs retail pricing and regional expertise."
+  learningPara3 = "Wyoming borrowers save by choosing brokers for standard loans (wholesale advantage) and portfolio lenders for rural/acreage properties requiring specialized underwriting."
+
+  whyChooseTitle = "Why Wyoming Loan Officer Choice Affects Your Rate"
+  whyChooseSubtitle = "Wholesale access, lender options, and property expertise create measurable cost differences."
+  whyChoosePara1 = "Wyoming loan officers operate under different business models—brokers access wholesale pricing from 20+ lenders while bank employees offer single-lender retail rates. This structural difference creates 0.125%–0.375% pricing gaps on identical scenarios."
+  whyChoosePara2 = "Education-first: understand loan officer types, compensation structures, and regional specialization to avoid overpaying on Wyoming mortgages."
+
+  whyChooseBox1Title = "Wholesale Pricing Advantage"
+  whyChooseBox1Para = "Wyoming brokers access wholesale rates through lender aggregators (Mortech, Optimal Blue). The same national lender charges less wholesale (through broker) than retail (direct to consumer)."
+  whyChooseBox1Bullet1 = "Wholesale rate: 6.500% | Retail rate: 6.750% (same lender)"
+  whyChooseBox1Bullet2 = "0.25% difference = $110/month on $450K loan"
+  whyChooseBox1Bullet3 = "Brokers shop 20+ lenders vs bank 1 option"
+
+  whyChooseBox2Title = "Regional Expertise Variations"
+  whyChooseBox2Para = "Wyoming loan officers specialize by property type and market. Cheyenne/Casper MLOs handle standard purchases, Jackson Hole specialists understand luxury/jumbo, rural-focused officers approve acreage/ranch properties."
+  whyChooseBox2Bullet1 = "Standard homes: All loan officer types competitive"
+  whyChooseBox2Bullet2 = "Jackson Hole luxury: Specialized jumbo MLOs required"
+  whyChooseBox2Bullet3 = "Rural/acreage: Portfolio lender loan officers needed"
+
+  whyChooseBox3Title = "NMLS Licensing & Accountability"
+  whyChooseBox3Para = "Wyoming requires NMLS licensing, 20 hours annual CE, and state registration. Licensed loan officers face regulatory oversight—unlicensed 'consultants' lack accountability and legal borrower protections."
+  whyChooseBox3Bullet1 = "Verify NMLS# at NMLSConsumerAccess.org"
+  whyChooseBox3Bullet2 = "Active license = regulatory compliance and consumer protections"
+  whyChooseBox3Bullet3 = "Ask: 'What's your NMLS number?' before sharing financial info"
+
+  whyChooseCTA = "Find Licensed WY Loan Officers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Wyoming Borrowers Who Chose Experienced Loan Officers"
+  testimonialsSubtitle = "Real savings from wholesale access and regional expertise."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Cheyenne broker showed us wholesale rates from 5 lenders. Beat our bank quote by 0.25% and saved $110/month. Same national lender, better pricing through broker channel."
+  testimonial1Name = "Rachel & Tom Nguyen"
+  testimonial1Subtitle = "Cheyenne Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Our Casper loan officer specialized in VA loans for F.E. Warren AFB buyers. Got us 6.25% when national VA lenders quoted 6.50%. Local military expertise paid off."
+  testimonial2Name = "Marcus Johnson"
+  testimonial2Subtitle = "Cheyenne VA Loan"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Our 35-acre ranch property was declined by 3 bank loan officers. Wyoming broker connected us with portfolio lender who approved at competitive rates with rural property expertise."
+  testimonial3Name = "Jennifer & David Martinez"
+  testimonial3Subtitle = "Laramie County Ranch"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Jackson Hole jumbo at $1.6M required specialized loan officer. Luxury lender MLO delivered 6.50% vs 7.00% from our local bank. Expertise saved $6,600/year."
+  testimonial4Name = "Susan & Richard Park"
+  testimonial4Subtitle = "Jackson Hole Luxury"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Asked our loan officer for compensation breakdown. He showed lender-paid pricing with no borrower fee—transparency built trust and saved us $4,500 in origination costs."
+  testimonial5Name = "Amanda Chen"
+  testimonial5Subtitle = "Casper Refinance"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Verified our broker's NMLS license before applying. Found 15 years experience, clean record, strong reviews. Due diligence gave us confidence to move forward."
+  testimonial6Name = "Robert Williams"
+  testimonial6Subtitle = "Cheyenne Purchase"
+
+  calculatorsTitle = "Wyoming Loan Officer Comparison Tools"
+  calculatorsSubtitle = "Verify credentials, compare pricing structures, and model wholesale vs retail scenarios."
+
+  creditScoreTitle = "Credit Optimization with Wyoming Loan Officers"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Experienced Wyoming loan officers guide credit improvement before application to optimize rate tiers. A 40–60 point score increase can save 0.25%–0.75% in rate—meaningful on Jackson Hole luxury loans and standard Cheyenne mortgages."
+  creditScoreHeading1 = "Pre-Application Credit Guidance"
+  creditScoreText1 = "Quality loan officers review credit 3–6 months before purchase, identify improvement opportunities (pay down cards, dispute errors), and time application for maximum rate advantage."
+  creditScoreHeading2 = "Credit Tier Impact on Pricing"
+  creditScoreText2 = "$500K loan: 760 tier $3,450/month vs. 700 tier $3,650/month — about $200/month difference. Wyoming loan officers explain tier thresholds and improvement strategies."
+  creditScoreHeading3 = "When to Wait vs Apply"
+  creditScoreText3 = "If 10–20 points below tier threshold (e.g., 718 score, 720 threshold), wait 2–3 months for score improvement. Loan officers model rate savings to justify timeline delay."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Wyoming Loan Officer Education"
+  employersSubtitle = "Help employees understand loan officer types, wholesale pricing, and NMLS licensing for informed borrowing decisions."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Wyoming employers can offer mortgage education covering loan officer selection, wholesale vs retail pricing, and NMLS verification to help employees secure competitive financing."
+  employersBullet1Title = "Loan officer type education"
+  employersBullet1Text = "Teach employees to compare brokers (wholesale access) vs bank MLOs (retail pricing) for rate differences."
+  employersBullet2Title = "NMLS verification importance"
+  employersBullet2Text = "Explain how to verify licensing at NMLSConsumerAccess.org before sharing financial information."
+  employersBullet3Title = "Regional expertise matching"
+  employersBullet3Text = "Help employees identify loan officers with property-specific expertise (rural, jumbo, VA, etc.)."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Wyoming Loan Officer Insights"
+  blogSubtitle = "Licensing, wholesale access, regional expertise, and compensation structures for WY mortgage professionals."
+
+  faqTitle = "Wyoming Loan Officer Questions"
+  faqSubtitle = "Common questions about NMLS licensing, broker vs bank MLOs, and regional expertise."
+
+  faq1Question = "What's the difference between a Wyoming broker and bank loan officer?"
+  faq1Answer = "Brokers access 20+ wholesale lenders (0.125%–0.375% below retail pricing). Bank loan officers offer single-lender retail rates. Same national lender charges less wholesale (through broker) than retail (direct)."
+
+  faq2Question = "How do I verify a Wyoming loan officer's license?"
+  faq2Answer = "Visit NMLSConsumerAccess.org, enter the loan officer's name or NMLS number, verify active Wyoming license and check disciplinary history. All WY loan officers must maintain NMLS licensing."
+
+  faq3Question = "Do Wyoming loan officers charge fees?"
+  faq3Answer = "Loan officers earn via borrower-paid fees (1%–2% origination) or lender-paid compensation. Ask: 'What's your compensation structure?' Transparent MLOs explain both options and show rate difference."
+
+  faq4Question = "Which loan officer type is best for rural Wyoming properties?"
+  faq4Answer = "Large acreage and ranch properties require portfolio lender access. Brokers with portfolio lender relationships or bank loan officers at Wyoming community banks specializing in rural lending offer best approval odds."
+
+  faq5Question = "Why do Wyoming broker rates beat bank rates?"
+  faq5Answer = "Wholesale pricing structure—lenders offer 0.125%–0.375% discounts to brokers for volume. The same lender (e.g., Rocket, UWM) charges less through broker wholesale channel than direct retail."
+
+  faq6Question = "Should I interview multiple Wyoming loan officers?"
+  faq6Answer = "Yes. Compare 3+ loan officers (mix of brokers and bank MLOs) for rate, fees, and expertise. Wholesale pricing variance and compensation structures create measurable cost differences—worth the comparison effort."
+
+  ctaTitle = "Ready to Find a Wyoming Loan Officer?"
+  ctaDescription = "Connect with NMLS-licensed Wyoming mortgage professionals offering wholesale pricing, regional expertise, and transparent compensation."
+  ctaCTA = "Find WY Loan Officers"
+  ctaCTALink = "https://www.browselenders.com/search/"

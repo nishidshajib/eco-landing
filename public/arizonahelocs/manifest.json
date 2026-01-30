@@ -1,0 +1,18 @@
+{
+  "name": "Arizona HELOC",
+  "short_name": "AZ HELOCs",
+  "description": "Arizona HELOC rates and lenders. Compare home equity lines of credit across Phoenix, Scottsdale, Chandler, and Mesa. Access home equity quickly and affordably.",
+  "start_url": "http://localhost:1408/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "New Jersey Mortgage Brokers",
+  "short_name": "NJ Brokers",
+  "description": "New Jersey mortgage brokers access wholesale and portfolio lenders for Bergen, Essex, Morris, and Hudson Counties. Compare broker vs bank pricing for jumbo, condo, and complex-income loans.",
+  "start_url": "http://localhost:1402/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

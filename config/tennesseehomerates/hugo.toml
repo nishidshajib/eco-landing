@@ -1,0 +1,232 @@
+baseURL = "https://tennesseehomerates.com"
+languageCode = "en-us"
+title = "Tennessee Home Rates"
+theme = "heloc-blog"
+contentDir = "content/tennesseehomerates"
+publishDir = "public/tennesseehomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Compare Tennessee mortgage rates and home loan programs. Get competitive rates across Nashville, Memphis, Knoxville, and Chattanooga markets."
+  author = "Browse Lenders®"
+  shortName = "TN Home Rates"
+  tagline = "Tennessee Mortgage Rate Comparison"
+  homepage = "https://tennesseehomerates.com"
+
+  siteName = "Tennessee Home Rates & Mortgage Comparison"
+  siteDescription = "Compare current Tennessee mortgage rates, analyze market trends, and find the best home loan programs across Nashville, Memphis, Knoxville, and Chattanooga."
+  keywords = ["Tennessee mortgage rates", "home rates Tennessee", "Nashville mortgage rates", "Memphis home loans", "Tennessee home financing", "best mortgage rates TN"]
+  serviceType = "Tennessee Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Tennessee Mortgage Rates — Compare & Save Today"
+  heroSubtitle = "Get competitive home loan rates across Nashville, Memphis, Knoxville, and Chattanooga. Compare conventional, FHA, VA, and jumbo programs from Tennessee lenders."
+  heroImage = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare TN Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Tennessee Mortgage Rates Matter"
+  aboutImage = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Tennessee Mortgage Programs & Rates"
+  programsSubtitle = "Compare loan programs available across Tennessee markets."
+
+  program1Title = "Conventional Mortgages (620+ Credit)"
+  program1Description = "Competitive rates for Tennessee borrowers with good credit. 3-5% down payment options; no mortgage insurance at 20% down. Best rates currently 6.25-6.75% for qualified borrowers in Nashville and Memphis markets."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "FHA Loans (3.5% Down, 580+ Credit)"
+  program2Description = "FHA financing allows 3.5% down with flexible credit requirements. Tennessee FHA rates currently 6.50-7.00%. Popular with first-time buyers across Knoxville, Chattanooga, and smaller Tennessee markets."
+  program2Image = "https://images.unsplash.com/photo-1622219999459-ab5b14e5f45a?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "VA Loans (0% Down for Veterans)"
+  program3Description = "Zero down payment mortgages for Tennessee veterans and active military. Competitive VA rates 6.00-6.50% with no mortgage insurance required. Strong presence near Fort Campbell, Memphis Naval Support Activity."
+  program3Image = "https://images.unsplash.com/photo-1648853667249-2a65e5cb149b?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare TN Mortgage Rates"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Tennessee borrowers save by comparing conventional, FHA, VA, and jumbo programs. Rate differences of 0.25-0.50% translate to $50-100/month savings on typical Tennessee home."
+
+  educationTitle = "Tennessee Mortgage Rate Education"
+  educationSubtitle = "Understand rates, market trends, and how to qualify for best pricing."
+
+  edu1Title = "How Tennessee Mortgage Rates Work"
+  edu1Description = "Rates determined by credit score, down payment, loan type, and lender pricing. Tennessee rates competitive with national averages; Nashville market slightly tighter than rural areas."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Tennessee vs National Rate Comparison"
+  edu2Description = "Tennessee mortgage rates typically track national averages within 0.10-0.25%. Memphis and Nashville competitive with major metros; rural Tennessee may see 0.10% premium due to lower loan volumes."
+  edu2Image = "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Rate Locks & Timing in Tennessee"
+  edu3Description = "Lock rates for 30-60 days at no cost; extended locks (90+ days) cost 0.25-0.50%. Tennessee closing timelines typically 25-35 days; coordinate lock with expected closing date."
+  edu3Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Credit Score Impact on TN Rates"
+  edu4Description = "740+ credit gets best rates; each 20-point drop costs ~0.25% in rate. 680 vs 740 credit = 0.50% difference = $85/month on $350K Tennessee home loan."
+  edu4Image = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Getting the Best Tennessee Mortgage Rates"
+  learningSubtitle = "Compare lenders and optimize your rate qualifications."
+  learningImage = "https://images.unsplash.com/photo-1699665235382-a6666f77a60e?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Tennessee mortgage rates vary by lender, credit score, loan program, and down payment. Comparing 3-5 lenders reveals rate differences of 0.25-0.75%—saving $50-150/month on typical Tennessee home purchase."
+  learningBullet1 = "Check your credit score: <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> shows how score affects rates"
+  learningBullet2 = "Compare Tennessee lenders: <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate quotes"
+  learningBullet3 = "Calculate monthly payments: <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> shows payment impact"
+  learningBullet4 = "Improve credit before applying: 30-60 day score improvement saves 0.25-0.50% in rates"
+  learningPara2 = "Tennessee lenders offer competitive rates across conventional, FHA, VA, and jumbo programs. National lenders, regional banks, and local credit unions all compete for Tennessee borrowers."
+  learningPara3 = "Rate shopping with multiple Tennessee lenders (within 14-day period) counts as single credit inquiry. Get 3-5 quotes to ensure competitive pricing and best loan terms."
+
+  whyChooseTitle = "Why Tennessee Mortgage Rates Are Competitive"
+  whyChooseSubtitle = "Tennessee markets offer strong lending competition and affordable housing."
+  whyChoosePara1 = "Tennessee benefits from competitive mortgage markets in Nashville, Memphis, Knoxville, and Chattanooga. Multiple national lenders, regional banks, and credit unions compete for Tennessee borrowers—resulting in competitive rates."
+  whyChoosePara2 = "No state income tax and lower cost of living make Tennessee attractive for homeownership. Lower home prices vs coastal markets mean smaller loan amounts and lower monthly payments."
+
+  whyChooseBox1Title = "Competitive Rate Environment"
+  whyChooseBox1Para = "Tennessee mortgage rates competitive with national averages. Nashville and Memphis metro areas attract national lenders; Knoxville and Chattanooga markets offer strong regional competition."
+  whyChooseBox1Bullet1 = "Conventional: 6.25-6.75% typical (740+ credit)"
+  whyChooseBox1Bullet2 = "FHA: 6.50-7.00% typical (620+ credit)"
+  whyChooseBox1Bullet3 = "VA: 6.00-6.50% typical (veterans)"
+
+  whyChooseBox2Title = "Affordable Home Prices"
+  whyChooseBox2Para = "Tennessee median home prices significantly below coastal markets. Nashville average $425K; Memphis $250K; Knoxville $325K; Chattanooga $310K. Lower prices mean smaller loans and lower monthly payments."
+  whyChooseBox2Bullet1 = "Nashville: $425K median (lower than Austin, Denver)"
+  whyChooseBox2Bullet2 = "Memphis: $250K median (most affordable major TN market)"
+  whyChooseBox2Bullet3 = "Knoxville/Chattanooga: $300-325K median"
+
+  whyChooseBox3Title = "No State Income Tax Benefit"
+  whyChooseBox3Para = "Tennessee has no state income tax on wages—increasing take-home pay and debt-to-income qualification power. More income available for housing payment vs high-tax states."
+  whyChooseBox3Bullet1 = "No state income tax on wages (Hall Tax only on investment income)"
+  whyChooseBox3Bullet2 = "DTI qualification easier vs high-tax states"
+  whyChooseBox3Bullet3 = "More take-home income for housing payment"
+
+  whyChooseCTA = "Compare TN Rates Now"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Tennessee Homebuyers & Their Mortgage Experiences"
+  testimonialsSubtitle = "Real stories from Tennessee borrowers comparing rates and programs."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Nashville buyer: Compared 4 lenders; found 0.50% rate difference. Lower rate saved $130/month on $400K home. Rate shopping took 3 days; worth the effort!"
+  testimonial1Name = "Michael & Sarah Johnson"
+  testimonial1Subtitle = "Nashville Conventional Loan"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Memphis first-time buyer: FHA loan at 6.75% with 3.5% down. Credit score 640; improved to 680 before applying and saved 0.50% vs initial quote."
+  testimonial2Name = "Jennifer Martinez"
+  testimonial2Subtitle = "Memphis FHA Purchase"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Knoxville veteran: VA loan at 6.25% with zero down. No mortgage insurance saved $200/month vs FHA option. VA loan best choice for military buyers."
+  testimonial3Name = "Robert Thompson"
+  testimonial3Subtitle = "Knoxville VA Loan"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Chattanooga refinance: Dropped rate from 7.25% to 6.50% by refinancing. $280/month savings on $275K balance. Breakeven in 9 months; worth it!"
+  testimonial4Name = "Amanda & David Lee"
+  testimonial4Subtitle = "Chattanooga Refinance"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500595046891-e51df1bdc82f?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Franklin buyer: Shopped local credit union vs national lender. Credit union beat national rate by 0.375%. Saved $95/month on $310K purchase."
+  testimonial5Name = "James Wilson"
+  testimonial5Subtitle = "Franklin Conventional"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Murfreesboro first-timer: Used Tennessee Housing Development Agency (THDA) assistance. 5% down payment help + competitive rate made homeownership possible."
+  testimonial6Name = "Carlos & Maria Rodriguez"
+  testimonial6Subtitle = "Murfreesboro THDA Loan"
+
+  creditScoreTitle = "Tennessee Mortgage Rates by Credit Score"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score significantly impacts Tennessee mortgage rates. Understanding rate tiers helps you estimate monthly payment and total borrowing cost."
+
+  creditScoreHeading1 = "Excellent Credit (740+)"
+  creditScoreText1 = "Best Tennessee rates available. Conventional: 6.25-6.50%; FHA: 6.50-6.75%; VA: 6.00-6.25%. Fastest approval; lowest down payment requirements."
+
+  creditScoreHeading2 = "Good Credit (680-739)"
+  creditScoreText2 = "Competitive Tennessee rates. Conventional: 6.50-6.75%; FHA: 6.75-7.00%; VA: 6.25-6.50%. Strong approval odds; typical rate tier for most borrowers."
+
+  creditScoreHeading3 = "Fair Credit (620-679)"
+  creditScoreText3 = "Moderate Tennessee rates. Conventional: 6.75-7.25%; FHA: 7.00-7.50%. Higher down payment may improve rate. Consider credit improvement before applying."
+
+  creditScoreCTA = "Check Your Credit Score"
+  creditScoreCTALink = "https://www.middlecreditscore.com"
+
+  employersTitle = "Tennessee Mortgage Resources"
+  employersSubtitle = "Tools and assistance programs for Tennessee homebuyers"
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Tennessee homebuyers benefit from competitive lending markets, state assistance programs, and comprehensive mortgage education resources."
+
+  employersBullet1Title = "THDA Programs"
+  employersBullet1Text = "Tennessee Housing Development Agency offers down payment assistance, competitive rates, and first-time buyer programs across all 95 Tennessee counties."
+
+  employersBullet2Title = "Rate Comparison Tools"
+  employersBullet2Text = "Compare Tennessee mortgage rates from multiple lenders instantly. See how credit score, down payment, and loan type affect your rate."
+
+  employersBullet3Title = "Tennessee Lender Network"
+  employersBullet3Text = "Access national lenders, regional banks, and Tennessee credit unions. Compare rates from all lender types to find best pricing."
+
+  employersCTA = "Explore TN Resources"
+  employersCTALink = "https://www.browselenders.com"
+
+  blogTitle = "Tennessee Mortgage Rate Blog"
+  blogSubtitle = "Tennessee rate trends, market analysis, and mortgage comparison guides."
+
+  faqTitle = "Tennessee Mortgage Rate FAQ"
+  faqSubtitle = "Common questions about Tennessee home loan rates and programs."
+
+  faq1Question = "What are current Tennessee mortgage rates?"
+  faq1Answer = "Tennessee rates currently range: Conventional 6.25-6.75% (740+ credit), FHA 6.50-7.00% (620+ credit), VA 6.00-6.50% (veterans). Rates vary by lender, credit score, down payment, and loan type. Compare multiple lenders for best pricing."
+
+  faq2Question = "How do Tennessee rates compare to national averages?"
+  faq2Answer = "Tennessee mortgage rates typically track national averages within 0.10-0.25%. Nashville and Memphis markets highly competitive; rural Tennessee may see slight premium (0.10%) due to lower loan volumes. Overall, Tennessee rates competitive nationwide."
+
+  faq3Question = "What credit score do I need for best Tennessee mortgage rates?"
+  faq3Answer = "740+ credit score gets best Tennessee rates. Each 20-point drop costs ~0.25% in rate. Example: 740 credit = 6.50% rate; 680 credit = 7.00% rate (0.50% difference = $85/month on $350K loan)."
+
+  faq4Question = "Should I use a local Tennessee lender or national lender?"
+  faq4Answer = "Compare both. Tennessee credit unions sometimes offer 0.25% better rates than national lenders; national lenders may have faster processing. Get 3-5 quotes mixing local and national to ensure competitive pricing."
+
+  faq5Question = "How long does it take to get a Tennessee mortgage?"
+  faq5Answer = "Typical Tennessee mortgage timeline: Pre-approval 1-3 days, full underwriting 7-14 days, closing 25-35 days total. Rush closings possible in 15-20 days if documentation organized and lender has capacity."
+
+  faq6Question = "What is THDA and how does it affect my rate?"
+  faq6Answer = "Tennessee Housing Development Agency (THDA) offers down payment assistance and competitive mortgage rates for qualified buyers. THDA rates often 0.25-0.50% better than conventional; income and purchase price limits apply. Check THDA.org for eligibility."
+
+  ctaTitle = "Ready to Compare Tennessee Mortgage Rates?"
+  ctaDescription = "Get personalized rate quotes from Tennessee lenders. Compare conventional, FHA, VA, and jumbo programs. Pre-approval takes minutes."
+  ctaCTA = "Get Tennessee Rate Quotes"
+  ctaCTALink = "https://www.browselenders.com/search/"

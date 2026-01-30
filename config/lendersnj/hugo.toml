@@ -1,0 +1,228 @@
+baseURL = "https://lendersnj.com"
+languageCode = "en-us"
+title = "NJ Mortgage Lenders"
+theme = "heloc-blog"
+contentDir = "content/lendersnj"
+publishDir = "public/lendersnj"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Compare New Jersey mortgage lenders including credit unions, regional banks, and national direct lenders. Find best rates, portfolio lending, and service across Bergen, Essex, Morris, and Hudson."
+  author = "Browse Lenders®"
+  shortName = "NJ Lenders"
+  tagline = "Credit Unions, Banks & Direct Lenders in New Jersey"
+  homepage = "https://lendersnj.com"
+
+  siteName = "NJ Mortgage Lenders"
+  siteDescription = "Compare NJ mortgage lender types: credit unions for member pricing, regional banks for portfolio flexibility, national lenders for speed. Find best lender fit across Bergen, Essex, Morris, and Hudson."
+  keywords = ["NJ mortgage lenders", "New Jersey credit unions", "regional banks NJ", "portfolio lenders", "Bergen County lenders", "Essex County mortgage lenders"]
+  serviceType = "New Jersey Mortgage Lender Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Jersey Mortgage Lenders — Compare Credit Unions, Banks & Direct Lenders"
+  heroSubtitle = "Compare NJ lender types for best rates and service. Credit unions for member pricing, regional banks for portfolio loans, national lenders for digital efficiency."
+  heroImage = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find New Jersey Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Types of New Jersey Mortgage Lenders"
+  aboutImage = "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "NJ Lender Program Types"
+  programsSubtitle = "Compare conventional, FHA, VA, jumbo, and portfolio programs across credit unions, banks, and direct lenders."
+
+  program1Title = "Credit Union Conventional & FHA"
+  program1Description = "New Jersey credit unions offer member pricing typically 0.125%–0.25% below retail banks on conventional and FHA loans. Non-profit structure means tighter margins and lower overhead."
+  program1Image = "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Regional Bank Portfolio Loans"
+  program2Description = "Regional banks provide portfolio jumbo and self-employed programs. In-house underwriting allows flexibility beyond Fannie/Freddie guidelines—important in NJ’s high property-tax environment."
+  program2Image = "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "National Lender Efficiency"
+  program3Description = "National lenders offer streamlined digital applications and faster closings (20–25 days). Technology-driven operations create competitive pricing and predictable timelines."
+  program3Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View New Jersey Lenders"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "NJ lender type matters: credit unions for rate, regional banks for portfolio flexibility, national lenders for speed."
+
+  educationTitle = "Understanding NJ Lender Types"
+  educationSubtitle = "Credit unions, regional banks, and national lenders serve different borrower needs."
+
+  edu1Title = "Credit Union Advantages"
+  edu1Description = "NJ credit unions often offer member-focused pricing 0.125%–0.25% below retail banks. Non-profit structure eliminates shareholder profit requirements."
+  edu1Image = "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Regional Bank Portfolio Lending"
+  edu2Description = "Regional banks maintain portfolio divisions for self-employed, investors, and unique properties. Manual underwriting allows flexibility beyond automated systems."
+  edu2Image = "https://images.unsplash.com/photo-1709080381729-965c62ab0471?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "National Lender Technology"
+  edu3Description = "National lenders use automated underwriting and digital processes to reduce overhead. Savings pass through as competitive rates and fast closings."
+  edu3Image = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Portfolio vs Agency Lending"
+  edu4Description = "Agency lenders sell to Fannie/Freddie with strict guidelines. Portfolio lenders keep loans in-house with manual underwriting flexibility—important for NJ property-tax DTI challenges."
+  edu4Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Lender Types"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "NJ Lender Comparison Strategy"
+  learningSubtitle = "How to choose between credit unions, regional banks, and national lenders."
+  learningImage = "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Jersey borrowers should compare all three lender types: credit unions for best conventional rates, regional banks for portfolio flexibility, national lenders for digital efficiency."
+  learningBullet1 = "Compare lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> across credit unions, banks, and national platforms."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to see which lender type offers best pricing."
+  learningBullet3 = "Model payments and tax impact at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to compare lender scenarios."
+  learningBullet4 = "Get quotes from one credit union, one regional bank, and one national lender to compare APR and service."
+  learningPara2 = "Lender type transparency beats brand loyalty. Compare APR and approval flexibility across NJ lender categories."
+  learningPara3 = "Credit unions typically win on rate, regional banks win on portfolio flexibility, national lenders win on speed."
+
+  whyChooseTitle = "Why Compare NJ Lender Types"
+  whyChooseSubtitle = "Credit unions, regional banks, and national lenders offer different pricing and service models."
+  whyChoosePara1 = "New Jersey mortgage lenders fall into three categories with distinct advantages. Credit unions offer member-focused pricing, regional banks provide portfolio underwriting, national lenders deliver digital efficiency."
+  whyChoosePara2 = "Education-first: understand lender type differences to match your scenario—W-2 conventional vs self-employed portfolio vs fast digital closing."
+
+  whyChooseBox1Title = "Credit Union Pricing"
+  whyChooseBox1Para = "NJ credit unions offer member rates 0.125%–0.25% below retail banks. Non-profit structure reduces overhead and tightens margins."
+  whyChooseBox1Bullet1 = "Conventional loans: 0.125%–0.25% below banks"
+  whyChooseBox1Bullet2 = "FHA/VA: Competitive pricing with local service"
+  whyChooseBox1Bullet3 = "Membership easy: $5–$25 deposit opens access"
+
+  whyChooseBox2Title = "Portfolio Lending Access"
+  whyChooseBox2Para = "Regional banks keep loans in-house with manual underwriting for self-employed, investors, and unique NJ properties."
+  whyChooseBox2Bullet1 = "Self-employed bank statement programs"
+  whyChooseBox2Bullet2 = "Investor loans 5–10 properties"
+  whyChooseBox2Bullet3 = "Manual underwriting for credit challenges"
+
+  whyChooseBox3Title = "Digital Efficiency"
+  whyChooseBox3Para = "National lenders use technology to reduce overhead and closing time. Automated underwriting delivers 20–25 day closings vs 30–40 for traditional banks."
+  whyChooseBox3Bullet1 = "Fully digital application and document upload"
+  whyChooseBox3Bullet2 = "Automated underwriting in 24–48 hours"
+  whyChooseBox3Bullet3 = "E-closing options for remote convenience"
+
+  whyChooseCTA = "Compare New Jersey Lenders"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "NJ Borrowers By Lender Type"
+  testimonialsSubtitle = "Real experiences with credit unions, regional banks, and national lenders."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Our credit union beat two bank quotes by 0.25%. The member pricing saved $140/month on our $600K loan."
+  testimonial1Name = "Samantha & Jordan P."
+  testimonial1Subtitle = "Bergen County - Credit Union"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "National lender closed our FHA loan in 23 days. Digital process was smooth and we uploaded docs from our phone."
+  testimonial2Name = "Brian T."
+  testimonial2Subtitle = "Hudson County - National Lender"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1544005313-94ddf028f6d3?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "We’re self-employed and a regional bank used portfolio underwriting with bank statements. Every other lender auto-declined."
+  testimonial3Name = "Andrea & Mike R."
+  testimonial3Subtitle = "Morris County - Portfolio"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Credit union gave us 6.125% when a big bank quoted 6.375% for the same conventional loan."
+  testimonial4Name = "Jonathan M."
+  testimonial4Subtitle = "Essex County - Credit Union"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Online lender matched local pricing but closed 10 days faster. Digital process saved us time and stress."
+  testimonial5Name = "Rebecca & Tom K."
+  testimonial5Subtitle = "Hudson County - National Lender"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Portfolio jumbo loan at 6.50% for our investment property. National lenders wouldn’t approve our fifth financed property."
+  testimonial6Name = "Mark & Jennifer S."
+  testimonial6Subtitle = "Morris County - Portfolio Jumbo"
+
+  calculatorsTitle = "NJ Lender Planning Tools"
+  calculatorsSubtitle = "Model payments, compare lender types, and plan applications."
+
+  creditScoreTitle = "Credit Score Impact by Lender Type"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers affect lender type pricing differently. Credit unions offer best rates for 740+ credit, regional banks provide portfolio options for 620–680, national lenders are competitive across all tiers."
+  creditScoreHeading1 = "Lender Type by Credit Tier"
+  creditScoreText1 = "760+: Credit unions best pricing. 680–739: National and credit unions competitive. 620–680: Regional bank portfolio underwriting best approval odds."
+  creditScoreHeading2 = "Credit Union Advantage"
+  creditScoreText2 = "NJ credit unions often offer 0.125%–0.25% better rates than banks for 740+ credit on conventional loans."
+  creditScoreHeading3 = "Portfolio Lender Access"
+  creditScoreText3 = "Regional banks provide manual underwriting for 620–680 credit when automated systems decline. NJ portfolio flexibility improves approval odds."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – NJ Lender Education"
+  employersSubtitle = "Help employees understand lender type differences and match borrower scenarios to best lender fit."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "New Jersey employers can offer mortgage lender education covering credit union vs bank vs national lender trade-offs for employee homebuying decisions."
+  employersBullet1Title = "Lender type comparison"
+  employersBullet1Text = "Teach employees when to use credit unions (best rate), regional banks (portfolio), or national lenders (speed)."
+  employersBullet2Title = "Credit union membership"
+  employersBullet2Text = "Help employees join local credit unions for member pricing access."
+  employersBullet3Title = "Portfolio lending awareness"
+  employersBullet3Text = "Explain portfolio options at regional banks for self-employed or investor employees."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "NJ Mortgage Lender Insights"
+  blogSubtitle = "Credit union comparisons, national vs local lenders, and portfolio lending options."
+
+  faqTitle = "NJ Mortgage Lender Questions"
+  faqSubtitle = "Common questions about credit unions, banks, and national lenders."
+
+  faq1Question = "What's the difference between NJ credit unions and banks?"
+  faq1Answer = "Credit unions are non-profit member cooperatives with lower overhead and better rates (0.125%–0.25% below banks). Banks are for-profit with broader services but higher rates."
+
+  faq2Question = "Do NJ credit unions have better rates?"
+  faq2Answer = "Often yes, especially for conventional loans with 740+ credit. Credit unions frequently beat banks and national lenders by 0.10%–0.20%."
+
+  faq3Question = "What is portfolio lending?"
+  faq3Answer = "Portfolio lenders keep loans in-house vs selling to Fannie/Freddie. This allows manual underwriting for self-employed, investors, or unique scenarios."
+
+  faq4Question = "Are online lenders safe?"
+  faq4Answer = "Yes. National lenders are federally regulated and NMLS licensed. They fund billions annually with technology-driven processes."
+
+  faq5Question = "Can I use an out-of-state lender?"
+  faq5Answer = "Yes. National lenders operate in NJ with NMLS licensing requirements. Many NJ borrowers use them for better rates or faster closings."
+
+  faq6Question = "Which NJ lenders are best for first-time buyers?"
+  faq6Answer = "Credit unions offer first-time programs, national lenders provide efficient FHA 3.5% down, and regional banks have portfolio flexibility. Compare all three."
+
+  ctaTitle = "Ready to Compare NJ Mortgage Lenders?"
+  ctaDescription = "Find credit unions, regional banks, and national lenders with transparent pricing across New Jersey markets."
+  ctaCTA = "Find New Jersey Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

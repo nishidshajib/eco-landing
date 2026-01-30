@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "New Hampshire mortgage brokers access 20+ wholesale lenders for conventional, FHA, VA, jumbo, and portfolio loans. Compare broker vs bank pricing and wholesale rate advantages."
+homepage = "https://mortgagebrokersnh.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://mortgagebrokersnh.com"

@@ -1,0 +1,228 @@
+baseURL = "https://lenderswy.com"
+languageCode = "en-us"
+title = "Lenders Wyoming"
+theme = "heloc-blog"
+contentDir = "content/lenderswy"
+publishDir = "public/lenderswy"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Wyoming mortgage lenders in Cheyenne, Casper, Jackson Hole, and rural markets. Compare banks, credit unions, and national lenders for rates and APR transparency."
+  author = "Browse Lenders®"
+  shortName = "Lenders Wyoming"
+  tagline = "Compare Wyoming Mortgage Lenders"
+  homepage = "https://lenderswy.com"
+
+  siteName = "Lenders Wyoming"
+  siteDescription = "Find Wyoming mortgage lenders and compare local banks, credit unions, and national lenders for competitive pricing, portfolio lending, and regional expertise."
+  keywords = ["Wyoming mortgage lenders", "Wyoming lenders", "Cheyenne mortgage lenders", "Casper lenders", "Jackson Hole lenders", "Wyoming home loans"]
+  serviceType = "Wyoming Mortgage Lender Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Wyoming Mortgage Lenders — Compare Banks, Credit Unions, and National Lenders"
+  heroSubtitle = "Shop Wyoming lenders for Cheyenne, Casper, Jackson Hole, and rural properties. Compare rates, APR, and lender specialties for the best financing fit."
+  heroImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare Wyoming Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Wyoming Lender Choice Matters"
+  aboutImage = "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Wyoming Lender Types"
+  programsSubtitle = "Compare lender models to match your property type and financing needs."
+
+  program1Title = "Local Banks & Portfolio Lenders"
+  program1Description = "Wyoming banks provide portfolio lending for rural acreage, ranch properties, and non-standard scenarios. Strong local expertise with relationship banking advantages."
+  program1Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Credit Unions"
+  program2Description = "Member-owned credit unions offer relationship-based pricing and lower fees. Competitive for standard purchases in Cheyenne/Casper markets."
+  program2Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "National & Wholesale Lenders"
+  program3Description = "National lenders offer fast digital approvals and competitive pricing. Brokers access wholesale pricing for lower rates and broader lender choice."
+  program3Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Wyoming Lender Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Wyoming lender pricing varies—compare local portfolio banks, credit unions, and national lenders to find the best fit."
+
+  educationTitle = "Wyoming Lender Insights"
+  educationSubtitle = "Understand lender differences, pricing models, and regional expertise."
+
+  edu1Title = "Local Bank Portfolio Lending"
+  edu1Description = "Wyoming banks keep loans in-house for rural acreage, ranches, and non-standard properties. Manual underwriting can approve scenarios national lenders decline."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Credit Union Member Pricing"
+  edu2Description = "Credit unions return profits to members through lower rates and fees. Member pricing can match wholesale rates for standard Cheyenne and Casper purchases."
+  edu2Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "National Lender Speed"
+  edu3Description = "National lenders provide digital approvals and competitive pricing, but may lack rural property expertise. Brokers can access wholesale pricing from these lenders."
+  edu3Image = "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "APR Transparency"
+  edu4Description = "Lender fees vary widely. Compare APR across lenders to see true borrowing cost—especially on jumbo and rural properties."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Lender Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Wyoming Lender Comparison Guide"
+  learningSubtitle = "Rate shopping strategies and lender matching for Wyoming homebuyers."
+  learningImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Wyoming lenders specialize by property type and region. Cheyenne and Casper have stronger competition, while rural counties rely on portfolio lending and broker access to expand options."
+  learningBullet1 = "Compare Wyoming lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rates and APR transparency."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate pricing impact."
+  learningBullet3 = "Model payments at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for lender comparisons."
+  learningBullet4 = "Ask lenders about rural property expertise if buying acreage or ranch properties."
+  learningPara2 = "Compare 3+ lenders (local bank, credit union, national/broker) to identify the best APR and approval fit."
+  learningPara3 = "Wyoming borrowers save by shopping lenders that match property type—portfolio lenders for rural acreage, specialized jumbo lenders for Jackson Hole, and wholesale lenders for standard purchases."
+
+  whyChooseTitle = "Why Compare Wyoming Lenders"
+  whyChooseSubtitle = "Different lender models create pricing and approval differences."
+  whyChoosePara1 = "Wyoming's lender landscape includes local banks, credit unions, and national lenders. Each model offers different pricing, fees, and underwriting flexibility, creating meaningful differences in borrower costs."
+  whyChoosePara2 = "Education-first: understand lender types, pricing structures, and regional expertise to make the best financing choice."
+
+  whyChooseBox1Title = "Pricing Differences"
+  whyChooseBox1Para = "Rates vary across lender types. Credit unions and wholesale lenders can beat bank retail pricing, while portfolio lenders charge premiums for rural property flexibility."
+  whyChooseBox1Bullet1 = "Wholesale pricing saves 0.125%–0.375%"
+  whyChooseBox1Bullet2 = "Portfolio lenders may add 0.25%–0.50% for rural properties"
+  whyChooseBox1Bullet3 = "APR comparison reveals true cost"
+
+  whyChooseBox2Title = "Approval Flexibility"
+  whyChooseBox2Para = "Portfolio lenders approve non-standard properties, while national lenders follow strict guidelines. Broker access improves approval odds by matching borrowers to flexible lenders."
+  whyChooseBox2Bullet1 = "Rural/acreage: Portfolio lenders best"
+  whyChooseBox2Bullet2 = "Standard homes: Wholesale/national lenders competitive"
+  whyChooseBox2Bullet3 = "Jumbo: Specialized luxury lenders win"
+
+  whyChooseBox3Title = "Regional Expertise"
+  whyChooseBox3Para = "Cheyenne and Casper lenders focus on standard purchases; Jackson Hole lenders specialize in luxury; rural county lenders understand acreage properties. Match expertise to property type."
+  whyChooseBox3Bullet1 = "Cheyenne/Casper: Strong competition"
+  whyChooseBox3Bullet2 = "Jackson Hole: Luxury lender specialization"
+  whyChooseBox3Bullet3 = "Rural counties: Portfolio lending focus"
+
+  whyChooseCTA = "Compare Wyoming Lenders"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Wyoming Borrowers Who Compared Lenders"
+  testimonialsSubtitle = "Real savings from lender matching and APR shopping."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Compared local bank vs broker wholesale. Broker beat the bank by 0.25% and saved $90/month on our Cheyenne home."
+  testimonial1Name = "Megan & Tyler Lewis"
+  testimonial1Subtitle = "Cheyenne Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Credit union member pricing was strong, but APR showed a wholesale lender had $3,500 less in fees. APR comparison made the decision."
+  testimonial2Name = "Derek Johnson"
+  testimonial2Subtitle = "Casper Refinance"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Our ranch property needed a portfolio lender. Local bank approved where national lenders declined—worth the slight rate premium."
+  testimonial3Name = "Allison & Mark Grant"
+  testimonial3Subtitle = "Sheridan Ranch"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Jackson Hole jumbo pricing varied by 0.5%. Comparing three luxury lenders saved $7,000/year on our $1.7M loan."
+  testimonial4Name = "Noah & Emily Chen"
+  testimonial4Subtitle = "Jackson Hole Jumbo"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Wholesale lender approved our FHA loan quickly and beat two banks on fees. Shopping lenders saved us over $4,000."
+  testimonial5Name = "Rachel Martinez"
+  testimonial5Subtitle = "Casper FHA"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "We compared APRs and chose a lender with slightly higher rate but $6,000 less in fees. True cost was lower."
+  testimonial6Name = "Chris Thompson"
+  testimonial6Subtitle = "Laramie Purchase"
+
+  calculatorsTitle = "Wyoming Lender Planning Tools"
+  calculatorsSubtitle = "Compare rates, APR, and lender types for smarter financing."
+
+  creditScoreTitle = "Credit Score Impact on Wyoming Lender Pricing"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers heavily influence lender pricing. A 40–60 point improvement can save 0.25%–0.75% on rates, especially across national and wholesale lenders."
+  creditScoreHeading1 = "Wyoming Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 680 often requires FHA or portfolio lending."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$500K loan: 760 tier $3,450/month vs. 700 tier $3,650/month — about $200/month difference."
+  creditScoreHeading3 = "Pre-Application Improvements"
+  creditScoreText3 = "Pay down credit card balances under 10% utilization, correct errors, and avoid new credit inquiries 60–90 days before applying."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Wyoming Mortgage Lender Education"
+  employersSubtitle = "Help employees compare lender types and understand regional pricing differences."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Wyoming employers can offer mortgage education that covers lender comparison, APR transparency, and property-type lender matching for relocating employees."
+  employersBullet1Title = "Lender type education"
+  employersBullet1Text = "Explain differences between local banks, credit unions, and national lenders for pricing and underwriting flexibility."
+  employersBullet2Title = "APR comparison"
+  employersBullet2Text = "Teach employees how to compare APR to reveal fees and true borrowing cost."
+  employersBullet3Title = "Property-type matching"
+  employersBullet3Text = "Help employees match lender expertise to property type (rural, jumbo, standard)."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Wyoming Lender Insights"
+  blogSubtitle = "Lender comparison, pricing strategies, and regional expertise for Wyoming borrowers."
+
+  faqTitle = "Wyoming Lender Questions"
+  faqSubtitle = "Common questions about lender types, pricing, and approvals."
+
+  faq1Question = "Which Wyoming lender is best for rural properties?"
+  faq1Answer = "Portfolio lenders at local banks are best for rural acreage and ranch properties. Brokers with portfolio access can also match or beat local bank pricing."
+
+  faq2Question = "Do credit unions offer the best rates?"
+  faq2Answer = "Credit unions offer strong member pricing and low fees, but wholesale lenders can match or beat rates depending on credit tier and loan type. Compare APR for true cost."
+
+  faq3Question = "Are national lenders good for Wyoming mortgages?"
+  faq3Answer = "National lenders are competitive for standard homes but may lack rural property expertise. Brokers can access wholesale pricing from national lenders for better rates."
+
+  faq4Question = "Why compare APR instead of just rate?"
+  faq4Answer = "APR includes lender fees and points. Two identical rates can have different APRs, revealing the true cost of borrowing."
+
+  faq5Question = "How many lenders should I compare?"
+  faq5Answer = "Compare at least three lenders: one local bank/portfolio lender, one credit union (if member), and one national or wholesale lender."
+
+  faq6Question = "Are jumbo loans harder to get in Wyoming?"
+  faq6Answer = "Yes. Jumbo loans require higher credit scores, larger reserves, and specialized underwriting—especially in Jackson Hole. Specialized jumbo lenders are best."
+
+  ctaTitle = "Ready to Compare Wyoming Lenders?"
+  ctaDescription = "Find competitive Wyoming mortgage lenders with transparent pricing and regional expertise."
+  ctaCTA = "Find Wyoming Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

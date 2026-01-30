@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Arizona loan officers across Phoenix, Scottsdale, Chandler, and Mesa. Compare market-specific expertise for jumbo loans, new construction, and complex income financing."
+homepage = "https://loanofficersarizona.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://loanofficersarizona.com"

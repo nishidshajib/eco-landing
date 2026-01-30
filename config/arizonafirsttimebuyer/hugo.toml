@@ -1,0 +1,232 @@
+baseURL = "https://arizonafirsttimebuyer.com"
+languageCode = "en-us"
+title = "Arizona First-Time Buyer"
+theme = "heloc-blog"
+contentDir = "content/arizonafirsttimebuyer"
+publishDir = "public/arizonafirsttimebuyer"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Arizona first-time homebuyer programs, down payment assistance, and FHA financing. Compare first-time buyer loans across Phoenix, Scottsdale, Chandler, and Mesa."
+  author = "Browse Lenders®"
+  shortName = "AZ First-Time Buyer"
+  tagline = "First-Time Homebuyer Resources for Arizona"
+  homepage = "https://arizonafirsttimebuyer.com"
+
+  siteName = "Arizona First-Time Homebuyer Guide"
+  siteDescription = "Navigate Arizona first-time buyer programs, down payment assistance, FHA loans, and credit requirements. Get started on the path to Arizona homeownership."
+  keywords = ["Arizona first-time buyer", "first-time homebuyer Arizona", "FHA loans Arizona", "down payment assistance Arizona", "first-time buyer programs", "Arizona mortgage for first-time buyers"]
+  serviceType = "Arizona First-Time Homebuyer Financing"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Arizona First-Time Homebuyer Guide — Get Started Today"
+  heroSubtitle = "Explore FHA loans, down payment assistance, and first-time buyer programs across Phoenix, Scottsdale, Chandler, and Mesa. Your path to homeownership starts here."
+  heroImage = "https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find First-Time Programs"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why First-Time Buyer Programs Matter in Arizona"
+  aboutImage = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Arizona First-Time Buyer Loan Programs"
+  programsSubtitle = "Compare FHA, conventional, and first-time buyer-specific financing options."
+
+  program1Title = "FHA Loans (3.5% Down)"
+  program1Description = "Flexible FHA financing allowing 3.5% down payments and lower credit score requirements (580+). Ideal for Arizona first-time buyers with limited savings. Available across Phoenix, Scottsdale, Chandler, and Mesa."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Conventional (3%-5% Down)"
+  program2Description = "Low-down conventional loans requiring 3-5% down payment for first-time buyers. Better rates than FHA but higher credit requirements (620+). Strong competitor pricing in Phoenix market."
+  program2Image = "https://images.unsplash.com/photo-1725258080098-727051947997?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Down Payment Assistance Programs"
+  program3Description = "Arizona and local down payment assistance grants and forgivable loans. Some programs cover down payment and closing costs completely. Income limits apply; first-time buyer status required."
+  program3Image = "https://images.unsplash.com/photo-1730094915697-bd504b857145?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Explore First-Time Programs"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Arizona first-time buyers qualify for FHA, conventional with low down, and down payment assistance. Compare all options before committing."
+
+  educationTitle = "First-Time Buyer Education"
+  educationSubtitle = "Understand mortgage basics, credit requirements, and home buying process."
+
+  edu1Title = "Credit Score & Pre-Approval"
+  edu1Description = "First-time buyers need credit scores for pre-approval (580+ FHA, 620+ conventional). Understand how credit impacts rates and down payment options available."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Down Payment & Closing Cost Planning"
+  edu2Description = "FHA allows 3.5% down; conventional requires 3-5%. Closing costs typically 2-5% of purchase price. Down payment assistance can cover some or all costs."
+  edu2Image = "https://images.unsplash.com/photo-1707483618687-488503f1523c?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "First-Time Buyer Grants & Assistance"
+  edu3Description = "Arizona and local programs offer grants and forgivable loans for down payments and closing costs. Income limits and first-time buyer status required."
+  edu3Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Debt-to-Income Ratio (DTI)"
+  edu4Description = "Lenders look at DTI ratio (monthly debt divided by income). FHA allows up to 43% DTI; conventional similar. Lower is better; paying down debt before applying improves approval odds."
+  edu4Image = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Buyer Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "First-Time Buyer Preparation"
+  learningSubtitle = "Get ready to purchase your first Arizona home."
+  learningImage = "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Arizona first-time buyers should start by checking credit score, saving for down payment, and exploring available assistance programs. Pre-approval shows sellers you're serious and clarifies buying power."
+  learningBullet1 = "Check your credit score at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to understand your financing options."
+  learningBullet2 = "Compare FHA vs conventional programs at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for your situation."
+  learningBullet3 = "Research down payment assistance programs through Arizona Housing Finance Authority or local nonprofits."
+  learningBullet4 = "Get pre-approved by 2-3 lenders to compare rates and lock your buying power."
+  learningPara2 = "Apply for pre-approval before house hunting. Pre-approval letters show sellers you're a serious buyer and establish your budget."
+  learningPara3 = "Arizona first-time buyers save by comparing FHA, conventional, and down payment assistance options. Some programs eliminate down payment requirements entirely."
+
+  whyChooseTitle = "Why First-Time Buyer Programs Matter"
+  whyChooseSubtitle = "Lower down payments and assistance make homeownership achievable."
+  whyChoosePara1 = "Arizona offers multiple paths to first-time homeownership. FHA loans require only 3.5% down, conventional loans start at 3%, and down payment assistance programs can cover costs completely."
+  whyChoosePara2 = "Education-first: understand your options before applying. The right program saves tens of thousands vs traditional financing."
+
+  whyChooseBox1Title = "Lower Down Payment Options"
+  whyChooseBox1Para = "FHA loans allow 3.5% down vs traditional 20%. On a $300K Arizona home, that's $10,500 down vs $60,000. Conventional first-time programs start at 3%."
+  whyChooseBox1Bullet1 = "FHA: 3.5% down ($300K = $10,500)"
+  whyChooseBox1Bullet2 = "Conventional: 3-5% down ($300K = $9,000-15,000)"
+  whyChooseBox1Bullet3 = "Assistance: Down payment covered by grants"
+
+  whyChooseBox2Title = "Credit Flexibility"
+  whyChooseBox2Para = "First-time buyer programs approve borrowers with lower credit scores. FHA accepts 580+; conventional requires 620+. Compare program requirements to your credit profile."
+  whyChooseBox2Bullet1 = "FHA: 580+ credit scores"
+  whyChooseBox2Bullet2 = "Conventional: 620+ credit scores"
+  whyChooseBox2Bullet3 = "Improve score before applying for better rates"
+
+  whyChooseBox3Title = "Financial Assistance"
+  whyChooseBox3Para = "Down payment assistance programs provide grants and forgivable loans for Arizona first-time buyers. Some cover entire down payment and closing costs ($5,000-$15,000+)."
+  whyChooseBox3Bullet1 = "Grants (non-repayable): Up to $15,000"
+  whyChooseBox3Bullet2 = "Forgivable loans (no payment): 5-10 year forgiveness"
+  whyChooseBox3Bullet3 = "Employer programs: Some companies offer down payment help"
+
+  whyChooseCTA = "Find First-Time Programs"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Arizona First-Time Buyers Who Got Started"
+  testimonialsSubtitle = "Real stories from first-time homebuyers in Arizona markets."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Phoenix first-time buyer: FHA loan with 3.5% down got us into our first home in under 30 days. We saved $21,000 vs waiting to save 20%."
+  testimonial1Name = "Jessica & David Kim"
+  testimonial1Subtitle = "Phoenix First Home"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Down payment assistance program covered our entire $8,000 down payment. We bought in Chandler without saving years for a 20% down."
+  testimonial2Name = "Maria & Carlos Rodriguez"
+  testimonial2Subtitle = "Chandler with Down Payment Help"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Conventional first-time buyer program beat FHA rates by 0.25% with only 3% down. We saved $140/month vs FHA option."
+  testimonial3Name = "Jennifer & Robert Anderson"
+  testimonial3Subtitle = "Mesa Conventional First-Timer"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Credit score started at 610. We improved to 650 before applying and qualified for better FHA rate. Improvement saved $60/month."
+  testimonial4Name = "Amanda Thompson"
+  testimonial4Subtitle = "Phoenix Credit Optimization"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500595046891-e51df1bdc82f?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "First-time buyer at 29 years old. Didn't think I could afford Phoenix home. FHA 3.5% down made it possible—now building equity!"
+  testimonial5Name = "James Mitchell"
+  testimonial5Subtitle = "Phoenix Dream Achieved"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Arizona Housing Finance Authority assistance covered down payment completely. We became homeowners without depleting savings."
+  testimonial6Name = "Nicole & Michael Santos"
+  testimonial6Subtitle = "Scottsdale First-Time"
+
+  creditScoreTitle = "First-Time Buyer Credit Tiers"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score determines which first-time buyer programs you qualify for and what rates you'll get. Even modest score improvements unlock better options."
+
+  creditScoreHeading1 = "Excellent Credit (740+)"
+  creditScoreText1 = "Best rates available. Qualify for conventional first-time programs with 3% down and lowest rates."
+
+  creditScoreHeading2 = "Good Credit (660-739)"
+  creditScoreText2 = "Strong first-time buyer options. Both FHA and conventional available; conventional typically better rates."
+
+  creditScoreHeading3 = "Fair Credit (580-659)"
+  creditScoreText3 = "FHA first-time buyer program ideal. Conventional may decline. Focus on credit improvement strategy."
+
+  creditScoreCTA = "Check Your Credit"
+  creditScoreCTALink = "https://www.middlecreditscore.com"
+
+  employersTitle = "First-Time Buyer Resources"
+  employersSubtitle = "Tools and programs for Arizona homebuyers"
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Navigate Arizona first-time homebuying with education, assistance programs, and trusted resources. Start your journey today."
+
+  employersBullet1Title = "Down Payment Assistance"
+  employersBullet1Text = "Arizona Housing Finance Authority and local programs offer grants and forgivable loans for first-time buyers."
+
+  employersBullet2Title = "Credit Improvement"
+  employersBullet2Text = "Small credit score improvements unlock better programs. Check your score and plan optimization strategy."
+
+  employersBullet3Title = "Pre-Approval & Shopping"
+  employersBullet3Text = "Get pre-approved by multiple lenders to compare FHA and conventional first-time buyer programs."
+
+  employersCTA = "Explore Resources"
+  employersCTALink = "https://www.browselenders.com"
+
+  blogTitle = "First-Time Buyer Blog"
+  blogSubtitle = "First-time homebuying guides, program comparisons, and Arizona market insights."
+
+  faqTitle = "First-Time Buyer FAQ"
+  faqSubtitle = "Common questions about buying your first home in Arizona."
+
+  faq1Question = "What's the minimum down payment for first-time buyers in Arizona?"
+  faq1Answer = "FHA allows 3.5% down ($10,500 on $300K home). Conventional first-time programs start at 3%. Down payment assistance programs can cover the entire down payment (sometimes closing costs too)."
+
+  faq2Question = "What credit score do I need to be a first-time buyer?"
+  faq2Answer = "FHA requires 580+ credit score (though 620+ gets better rates). Conventional requires 620+. Some programs accept scores as low as 580 if other factors strong."
+
+  faq3Question = "How long does the pre-approval process take?"
+  faq3Answer = "Typical pre-approval: 1-3 days. Get pre-approved by multiple lenders before house hunting to compare FHA vs conventional and lock your buying power."
+
+  faq4Question = "Can I get assistance with down payment in Arizona?"
+  faq4Answer = "Yes. Arizona Housing Finance Authority offers down payment assistance. Many nonprofits and local government programs provide grants or forgivable loans. Check income limits and first-time buyer status requirements."
+
+  faq5Question = "Should I get FHA or conventional as a first-time buyer?"
+  faq5Answer = "FHA: Better for lower credit (580+), minimal savings, willing to pay mortgage insurance. Conventional: Better for higher credit (620+), some savings, lower rates. Compare with 2-3 lenders to decide."
+
+  faq6Question = "What if my credit score is below 580?"
+  faq6Answer = "Consider credit improvement for 30-90 days before applying. Small improvements (10-20 points) unlock better programs. Some lenders may approve below 580 with compensating factors (large down payment, strong income)."
+
+  ctaTitle = "Ready to Get Started?"
+  ctaDescription = "Explore Arizona first-time buyer programs and find your path to homeownership. Get pre-approved today."
+  ctaCTA = "Get Pre-Approved Now"
+  ctaCTALink = "https://www.browselenders.com/search/"

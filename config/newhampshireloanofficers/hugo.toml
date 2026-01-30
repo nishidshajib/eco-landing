@@ -1,0 +1,228 @@
+baseURL = "https://newhampshireloanofficers.com"
+languageCode = "en-us"
+title = "New Hampshire Loan Officers"
+theme = "heloc-blog"
+contentDir = "content/newhampshireloanofficers"
+publishDir = "public/newhampshireloanofficers"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "New Hampshire loan officers specializing in first-time buyers, refinance, FHA, VA, and jumbo loans. Connect with local mortgage experts in NH."
+  author = "Browse Lenders®"
+  shortName = "NH Loan Officers"
+  tagline = "Local Mortgage Expertise for New Hampshire Homebuyers"
+  homepage = "https://newhampshireloanofficers.com"
+
+  siteName = "New Hampshire Loan Officers"
+  siteDescription = "Find experienced loan officers in New Hampshire for purchase, refinance, and specialty mortgage programs. Local market knowledge in Portsmouth, Manchester, Nashua, and beyond."
+  keywords = ["New Hampshire loan officers", "NH mortgage brokers", "New Hampshire mortgage experts", "first-time buyer NH", "NH refinance specialists", "Portsmouth loan officers"]
+  serviceType = "New Hampshire Mortgage Loan Officer Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Hampshire Loan Officers — Local Expertise for Your Mortgage"
+  heroSubtitle = "Connect with experienced New Hampshire loan officers who understand local markets, first-time buyer programs, and specialty financing for Lake Region and coastal properties."
+  heroImage = "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find NH Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why New Hampshire Loan Officers Matter"
+  aboutImage = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "New Hampshire Mortgage Programs"
+  programsSubtitle = "FHA, VA, conventional, and jumbo financing with local expertise."
+
+  program1Title = "First-Time Buyer Programs in NH"
+  program1Description = "New Hampshire offers NHHFA programs with down payment assistance and competitive rates. Local loan officers navigate these programs and help first-time buyers qualify."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Refinance Specialists"
+  program2Description = "Rate-and-term refinance, cash-out refinance, and FHA streamline options. NH loan officers help you decide when refinancing makes sense based on local market conditions."
+  program2Image = "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo & Portfolio Lending"
+  program3Description = "For Lake Region luxury homes and properties above conforming limits, experienced NH loan officers connect you with jumbo and portfolio lenders who understand local markets."
+  program3Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare NH Programs"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "New Hampshire loan officers offer access to multiple lenders and programs—compare your options before committing."
+
+  educationTitle = "New Hampshire Mortgage Education"
+  educationSubtitle = "Understand programs, rates, and local market dynamics."
+
+  edu1Title = "NH First-Time Buyer Grants"
+  edu1Description = "NHHFA offers down payment assistance and affordable rate options. Learn eligibility, income limits, and how to apply through qualified NH loan officers."
+  edu1Image = "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Coastal vs. Inland Property Pricing"
+  edu2Description = "Portsmouth and coastal markets price differently than Manchester and inland regions. Local loan officers understand appraisal trends and lender appetite by area."
+  edu2Image = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Seasonal & Vacation Home Financing"
+  edu3Description = "Lake Winnipesaukee and vacation properties face unique lending rules. NH loan officers connect you with lenders who specialize in seasonal home financing."
+  edu3Image = "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Credit Improvement Before Applying"
+  edu4Description = "New Hampshire loan officers help you improve credit scores, reduce debt-to-income, and time applications to maximize approval odds and lower rates."
+  edu4Image = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Mortgage Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Working with New Hampshire Loan Officers"
+  learningSubtitle = "Local expertise, lender access, and personalized guidance."
+  learningImage = "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Hampshire loan officers provide access to multiple lenders and programs that direct bank channels don't offer. They understand local appraisal trends, seasonal property rules, and first-time buyer assistance programs."
+  learningBullet1 = "Find experienced NH loan officers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with local market expertise."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> before meeting with loan officers."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to understand affordability."
+  learningBullet4 = "Ask loan officers about NHHFA programs, down payment assistance, and local lender preferences for your property type."
+  learningPara2 = "Local loan officers beat national call centers on New Hampshire properties—especially seasonal homes and first-time buyer scenarios."
+  learningPara3 = "Choose a loan officer with experience in your specific NH region and property type."
+
+  whyChooseTitle = "Why Work with New Hampshire Loan Officers"
+  whyChooseSubtitle = "Local knowledge, lender access, and personalized service."
+  whyChoosePara1 = "New Hampshire loan officers understand local appraisal markets, seasonal property guidelines, and state-specific programs like NHHFA. They shop multiple lenders instead of offering one product."
+  whyChoosePara2 = "Education-first approach: loan officers explain options, compare programs, and help you choose the best fit for your situation."
+
+  whyChooseBox1Title = "Multiple Lender Access"
+  whyChooseBox1Para = "Loan officers work with 10–50 lenders, offering better rate comparison than single-bank retail channels. They find the best fit for your credit and property type."
+  whyChooseBox1Bullet1 = "Access to FHA, VA, conventional, and jumbo lenders"
+  whyChooseBox1Bullet2 = "Portfolio lenders for seasonal and investment properties"
+  whyChooseBox1Bullet3 = "Rate shopping across multiple wholesale channels"
+
+  whyChooseBox2Title = "Local Market Knowledge"
+  whyChooseBox2Para = "NH loan officers understand Portsmouth vs. Manchester pricing, Lake Region appraisal trends, and which lenders approve seasonal properties easily."
+  whyChooseBox2Bullet1 = "Know which appraisers work fastest in your area"
+  whyChooseBox2Bullet2 = "Understand local lender preferences by property type"
+  whyChooseBox2Bullet3 = "Navigate seasonal and investment property guidelines"
+
+  whyChooseBox3Title = "NHHFA Program Expertise"
+  whyChooseBox3Para = "New Hampshire Housing Finance Authority programs offer down payment assistance and competitive rates. Qualified loan officers guide you through eligibility and application."
+  whyChooseBox3Bullet1 = "Income limits and property price caps by county"
+  whyChooseBox3Bullet2 = "Down payment assistance options"
+  whyChooseBox3Bullet3 = "First-time buyer vs. repeat buyer guidelines"
+
+  whyChooseCTA = "Find NH Loan Officers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "New Hampshire Borrowers Who Worked with Local Loan Officers"
+  testimonialsSubtitle = "Real experiences with NH mortgage experts."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Our loan officer knew which lenders approve Lake Winnipesaukee seasonal homes quickly. We closed in 32 days instead of the 45-day average."
+  testimonial1Name = "Emily Richards"
+  testimonial1Subtitle = "Lake Winnipesaukee Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "We qualified for NHHFA down payment assistance and got 3% off our mortgage rate. Our loan officer explained every step clearly."
+  testimonial2Name = "Michael Santos"
+  testimonial2Subtitle = "First-Time Buyer, Manchester"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Three lenders quoted us different rates. Our loan officer helped us compare APR and fees to find the real best deal."
+  testimonial3Name = "Jessica Park"
+  testimonial3Subtitle = "Portsmouth Refinance"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "We had credit issues from medical bills. Our loan officer helped us improve our score by 42 points before applying and saved us thousands in interest."
+  testimonial4Name = "Daniel Foster"
+  testimonial4Subtitle = "Nashua Purchase"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Our seasonal home was declined by two banks. Our NH loan officer found a portfolio lender who approved it with better terms."
+  testimonial5Name = "Sarah Mitchell"
+  testimonial5Subtitle = "Lakes Region Second Home"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "We were self-employed and worried about qualifying. Our loan officer structured our application perfectly and we got approved at great rates."
+  testimonial6Name = "Robert Chen"
+  testimonial6Subtitle = "Concord Self-Employed Purchase"
+
+  calculatorsTitle = "New Hampshire Mortgage Planning Tools"
+  calculatorsSubtitle = "Estimate payments, compare programs, and plan applications."
+
+  creditScoreTitle = "Credit Score Impact on NH Mortgage Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers significantly impact New Hampshire mortgage pricing. A 60-point improvement can save 0.50%–0.75% on interest rates."
+  creditScoreHeading1 = "Typical NH Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 680 requires FHA or manual underwriting."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$400K loan: 760 tier $2,760/month vs. 700 tier $2,930/month — about $170/month difference."
+  creditScoreHeading3 = "Pre-Application Improvements"
+  creditScoreText3 = "Pay down cards, dispute errors, and wait 6 months before applying for best pricing. NH loan officers guide this process."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – New Hampshire Mortgage Education"
+  employersSubtitle = "Help employees navigate NH homeownership and mortgage options."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "New Hampshire employers can offer mortgage education covering NHHFA programs, local market dynamics, and loan officer selection for employees relocating or buying locally."
+  employersBullet1Title = "NHHFA program awareness"
+  employersBullet1Text = "Teach employees about down payment assistance and first-time buyer benefits."
+  employersBullet2Title = "Local market education"
+  employersBullet2Text = "Explain coastal vs. inland pricing and seasonal property considerations."
+  employersBullet3Title = "Loan officer selection"
+  employersBullet3Text = "Help employees choose experienced NH loan officers vs. national call centers."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "New Hampshire Mortgage Insights"
+  blogSubtitle = "Local market trends, NHHFA programs, and loan officer selection."
+
+  faqTitle = "New Hampshire Loan Officer Questions"
+  faqSubtitle = "Common questions about working with NH mortgage professionals."
+
+  faq1Question = "What's the difference between a loan officer and a bank?"
+  faq1Answer = "Loan officers access 10–50 lenders, offering better rate comparison. Banks offer one product line with limited flexibility."
+
+  faq2Question = "Do NH loan officers charge fees?"
+  faq2Answer = "Most earn commission from lenders, not borrowers. Always request a Loan Estimate showing all fees before committing."
+
+  faq3Question = "Can loan officers help with NHHFA programs?"
+  faq3Answer = "Yes, qualified NH loan officers are approved NHHFA originators who handle down payment assistance applications."
+
+  faq4Question = "Are loan officers better for seasonal homes?"
+  faq4Answer = "Yes, they access portfolio lenders and specialty programs that banks often don't offer for Lake Region properties."
+
+  faq5Question = "How do I choose a good NH loan officer?"
+  faq5Answer = "Look for local experience, lender access, reviews, and expertise in your property type and program needs."
+
+  faq6Question = "Can loan officers beat bank rates?"
+  faq6Answer = "Often yes, because they shop wholesale lenders. Compare Loan Estimates from both to see the difference."
+
+  ctaTitle = "Ready to Connect with New Hampshire Loan Officers?"
+  ctaDescription = "Find experienced mortgage professionals across New Hampshire with local market expertise."
+  ctaCTA = "Find NH Loan Officers"
+  ctaCTALink = "https://www.browselenders.com/search/"

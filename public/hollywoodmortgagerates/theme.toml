@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Hollywood mortgage rate tracker for condo, single-family, and jumbo loans. Compare FHA, conventional, and high-balance pricing across Hollywood, West Hollywood, and greater LA."
+homepage = "https://hollywoodmortgagerates.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://hollywoodmortgagerates.com"

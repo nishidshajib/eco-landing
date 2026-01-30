@@ -1,0 +1,232 @@
+baseURL = "https://arizonahomerates.com"
+languageCode = "en-us"
+title = "Arizona Home Rates"
+theme = "heloc-blog"
+contentDir = "content/arizonahomerates"
+publishDir = "public/arizonahomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Arizona mortgage rates for Phoenix, Scottsdale, Chandler, and Mesa markets. Compare FHA, VA, conventional, and jumbo pricing across Arizona lenders."
+  author = "Browse Lenders®"
+  shortName = "AZ Home Rates"
+  tagline = "Daily Mortgage Rates for Arizona Homebuyers"
+  homepage = "https://arizonahomerates.com"
+
+  siteName = "Arizona Home Rates"
+  siteDescription = "Track Arizona mortgage rates by metro area and property type. Compare APR across Phoenix, Scottsdale, Chandler, and Mesa for transparent rate intelligence."
+  keywords = ["Arizona mortgage rates", "AZ home rates", "Phoenix mortgage rates", "Scottsdale rates", "Chandler mortgage rates", "Mesa rates", "Arizona mortgage APR"]
+  serviceType = "Arizona Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Arizona Home Rates — Compare Lenders Across the Phoenix Metro"
+  heroSubtitle = "Track mortgage rates for Phoenix, Scottsdale, Chandler, and Mesa. Compare FHA, conventional, VA, and jumbo pricing with market-specific insights."
+  heroImage = "https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare AZ Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Arizona Rates Vary by Market"
+  aboutImage = "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Arizona Mortgage Rate Programs"
+  programsSubtitle = "Compare pricing for FHA, conventional, VA, and jumbo programs across Arizona markets."
+
+  program1Title = "Conventional & FHA Rates"
+  program1Description = "Standard conforming rates for Arizona homes under $806,550 across Phoenix, Scottsdale, Chandler, and Mesa markets. FHA offers 3.5% down options for first-time buyers."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA Loan Rates in Arizona"
+  program2Description = "Zero-down VA financing for eligible veterans and active-duty borrowers. Competitive VA pricing across Arizona lenders and military-friendly programs throughout Phoenix metro."
+  program2Image = "https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Rates for Luxury Properties"
+  program3Description = "Jumbo financing above conforming limits for Scottsdale estates, Paradise Valley homes, and high-value properties. Specialized lenders offer best pricing and flexibility."
+  program3Image = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Arizona Rate Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Arizona rates vary by market and property type—Scottsdale pricing differs from Phoenix, Chandler, and Mesa markets."
+
+  educationTitle = "Arizona Rate Intelligence"
+  educationSubtitle = "Understand market pricing, credit tiers, and Arizona-specific rate factors."
+
+  edu1Title = "Metro Area Rate Differences"
+  edu1Description = "Phoenix has abundant lender competition and strong pricing. Scottsdale premium properties, Chandler growing market, and Mesa value markets show varied lender appetite and rates."
+  edu1Image = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Jumbo Market Dynamics"
+  edu2Description = "Scottsdale and Paradise Valley often require jumbo financing for luxury properties. Specialized lenders offer better pricing and higher loan limits for premium Arizona homes."
+  edu2Image = "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Credit Tier Impact"
+  edu3Description = "Arizona lenders price heavily by credit tier. A 40–60 point score improvement can save 0.25%–0.75% on rates and APR."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "APR vs Rate in Arizona"
+  edu4Description = "Arizona lender fees vary significantly by market and loan type. Compare APR to see true borrowing costs—especially for jumbo loans and unique properties."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Arizona Rate Tracker"
+  learningSubtitle = "Market pricing insights and rate monitoring for Arizona homebuyers."
+  learningImage = "https://images.unsplash.com/photo-1709080381729-965c62ab0471?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Arizona mortgage rates vary by market, property type, and lender specialization. Phoenix markets feature competitive pricing with diverse lender options, while Scottsdale emphasizes luxury loan programs, Chandler shows new construction pricing, and Mesa offers value-market rates."
+  learningBullet1 = "Compare Arizona lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate and APR transparency across metro areas."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate Arizona rate impact."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for jumbo vs conventional comparisons."
+  learningBullet4 = "Track Arizona rates by market segment to time your lock and maximize purchase power."
+  learningPara2 = "Compare APR across 3–5 Arizona lenders before locking to identify true borrowing cost."
+  learningPara3 = "Arizona buyers save by comparing national banks, local lenders with market expertise, and specialized jumbo lenders for luxury and estate markets."
+
+  whyChooseTitle = "Why Compare Arizona Mortgage Rates"
+  whyChooseSubtitle = "Market differences and lender specialization create pricing gaps."
+  whyChoosePara1 = "Arizona has diverse markets—from Phoenix's competitive environment to Scottsdale's luxury focus, Chandler's new construction demand, and Mesa's value market. Lender competition and property values create measurable rate differences by market."
+  whyChoosePara2 = "Education-first: understand market rate patterns, credit tiers, jumbo pricing, and location-specific factors to avoid overpaying on Arizona mortgages."
+
+  whyChooseBox1Title = "Market Lender Competition"
+  whyChooseBox1Para = "Phoenix has strong lender competition and abundant rate options. Scottsdale attracts jumbo specialists, Chandler features new construction lenders, and Mesa shows value-market pricing."
+  whyChooseBox1Bullet1 = "Phoenix: Abundant lender options"
+  whyChooseBox1Bullet2 = "Scottsdale: Luxury-focused pricing"
+  whyChooseBox1Bullet3 = "Chandler/Mesa: Market specialization"
+
+  whyChooseBox2Title = "Property Value Differences"
+  whyChooseBox2Para = "Arizona property values vary widely by market. Jumbo lending is common in Scottsdale and Paradise Valley while standard conforming loans dominate other areas."
+  whyChooseBox2Bullet1 = "Conforming: Standard Phoenix/Chandler markets"
+  whyChooseBox2Bullet2 = "Jumbo: Scottsdale estates"
+  whyChooseBox2Bullet3 = "Portfolio: Unique properties"
+
+  whyChooseBox3Title = "APR Transparency"
+  whyChooseBox3Para = "Lender fees vary across Arizona markets. Compare APR to see true cost—especially on jumbo and complex properties."
+  whyChooseBox3Bullet1 = "APR includes origination and points"
+  whyChooseBox3Bullet2 = "0.125% APR gap = $3,000+ over 5 years on $700K"
+  whyChooseBox3Bullet3 = "Request Loan Estimates from 3+ lenders"
+
+  whyChooseCTA = "Compare Arizona Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Arizona Borrowers Who Compared Rates"
+  testimonialsSubtitle = "Real savings from market comparisons and lender competition."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Compared three Phoenix lenders. Broker beat our bank by 0.25% and saved $180/month on our $650K purchase."
+  testimonial1Name = "Michael & Jennifer Torres"
+  testimonial1Subtitle = "Phoenix Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Scottsdale jumbo financing required specialized lender. Comparing rates saved us $11,600 in annual interest costs."
+  testimonial2Name = "Sarah & David Martinez"
+  testimonial2Subtitle = "Scottsdale Jumbo"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "New construction in Chandler: Builder preferred lender had 0.375% higher rate. Shopping saved $15,000 over life of loan."
+  testimonial3Name = "Jennifer & Robert Anderson"
+  testimonial3Subtitle = "Chandler New Construction"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Mesa refinance: Credit score improvement of 25 points generated 0.25% lower rate automatically. Comparison secured even better terms."
+  testimonial4Name = "Carlos Rodriguez"
+  testimonial4Subtitle = "Mesa Refinance"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500595046891-e51df1bdc82f?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Paradise Valley estate purchase: Finding portfolio lender with jumbo expertise cut 6 weeks off closing timeline with better rates."
+  testimonial5Name = "Victoria & James Stewart"
+  testimonial5Subtitle = "Paradise Valley Estate"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "VA loan in Phoenix: Military-friendly lender found zero-down program with 0.50% better pricing than conventional lenders."
+  testimonial6Name = "Major Thomas Kelly (Ret.)"
+  testimonial6Subtitle = "Phoenix VA Loan"
+
+  creditScoreTitle = "Arizona Rates by Credit Score"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score heavily influences Arizona mortgage rates. A strong score (740+) secures competitive rates, while lower scores (680-699) require portfolio lenders and pay rate premiums. Shopping across multiple lenders minimizes credit-related rate impacts."
+
+  creditScoreHeading1 = "Excellent Credit (760+)"
+  creditScoreText1 = "Best rates available from all Arizona lenders. Lowest APR, most program choices, and competitive jumbo pricing."
+
+  creditScoreHeading2 = "Good Credit (700-739)"
+  creditScoreText2 = "Competitive rates with most lenders. Minor rate premiums possible. Full program access with strong pricing for Phoenix-area purchases."
+
+  creditScoreHeading3 = "Fair Credit (680-699)"
+  creditScoreText3 = "Portfolio lenders preferred. Moderate rate premiums (0.50-1.00%). Jumbo and complex properties may have limited options."
+
+  creditScoreCTA = "Check Your Credit Impact"
+  creditScoreCTALink = "https://www.middlecreditscore.com"
+
+  employersTitle = "Arizona Home Rate Resources"
+  employersSubtitle = "Mortgage rate tools and market education"
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Navigate Arizona's mortgage market with confidence. Compare rates, understand your credit impact, and make informed decisions about Phoenix-area properties."
+
+  employersBullet1Title = "Rate Comparison Tools"
+  employersBullet1Text = "Compare Arizona lender rates and APR for Phoenix, Scottsdale, Chandler, Mesa, and Paradise Valley markets."
+
+  employersBullet2Title = "Market Education"
+  employersBullet2Text = "Understand Arizona-specific rate factors, jumbo pricing, and how markets differ between metro areas."
+
+  employersBullet3Title = "Credit Optimization"
+  employersBullet3Text = "Check credit impact on Arizona rates. Small score improvements generate measurable rate savings."
+
+  employersCTA = "Explore Arizona Resources"
+  employersCTALink = "https://www.browselenders.com"
+
+  blogTitle = "Arizona Mortgage Rate Blog"
+  blogSubtitle = "Rate trends, market insights, and homebuyer guides for Arizona property buyers."
+
+  faqTitle = "Arizona Home Rate FAQ"
+  faqSubtitle = "Common questions about Arizona mortgage rates, markets, and shopping strategies."
+
+  faq1Question = "What's the average Arizona mortgage rate right now?"
+  faq1Answer = "Arizona rates vary by market and credit tier. Phoenix offers competitive rates due to lender competition. Scottsdale, Chandler, and Mesa each have distinct market rates. Compare current rates at BrowseLenders.com for your specific property type and location."
+
+  faq2Question = "How much can I save by comparing Arizona rates?"
+  faq2Answer = "Comparing 3+ Arizona lenders typically saves 0.125–0.375% in rate and APR. On a $700K loan, 0.25% savings equals $1,750/year or $87,500 over 30 years."
+
+  faq3Question = "Which Arizona market has the best rates?"
+  faq3Answer = "Phoenix generally has the most competitive rates due to abundant lender options. Scottsdale attracts jumbo specialists with competitive luxury rates. Chandler features new construction pricing, and Mesa offers value-market rates."
+
+  faq4Question = "Do I need a jumbo lender for Scottsdale properties?"
+  faq4Answer = "Scottsdale properties above $806,550 require jumbo financing. Specialized jumbo lenders offer better pricing and jumbo-specific programs for Scottsdale and Paradise Valley estates."
+
+  faq5Question = "How does credit score affect Arizona rates?"
+  faq5Answer = "Arizona rates vary 0.50–2.00% based on credit tier. 760+ credit scores secure best rates. Scores 700-739 get competitive rates. Scores below 700 limit options and increase rates with portfolio lenders."
+
+  faq6Question = "Should I lock or float my Arizona rate?"
+  faq6Answer = "Rate lock decisions depend on market trends and timeline. Lock if rates are favorable or you close within 30 days. Float only if rates are falling and you have 45+ day timeline. Ask your Arizona lender about lock/float tradeoffs."
+
+  ctaTitle = "Ready to Compare Arizona Mortgage Rates?"
+  ctaDescription = "Find competitive rates for Phoenix, Scottsdale, Chandler, and Mesa. Start your Arizona rate comparison today."
+  ctaButton = "Compare Rates Now"
+  ctaButtonLink = "https://www.browselenders.com/search/"

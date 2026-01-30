@@ -1,0 +1,228 @@
+baseURL = "https://wyominghomerates.com"
+languageCode = "en-us"
+title = "Wyoming Home Rates"
+theme = "heloc-blog"
+contentDir = "content/wyominghomerates"
+publishDir = "public/wyominghomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Wyoming mortgage rates for Cheyenne, Casper, Jackson Hole, and statewide markets. Compare FHA, VA, conventional, and jumbo rates across WY lenders."
+  author = "Browse Lenders®"
+  shortName = "WY Home Rates"
+  tagline = "Daily Mortgage Rates for Wyoming Homebuyers"
+  homepage = "https://wyominghomerates.com"
+
+  siteName = "Wyoming Home Rates"
+  siteDescription = "Track Wyoming mortgage rates by region and property type. Compare APR across Cheyenne, Casper, Jackson Hole luxury, and rural markets for transparent rate intelligence."
+  keywords = ["Wyoming mortgage rates", "WY home rates", "Cheyenne mortgage rates", "Casper home rates", "Jackson Hole rates", "Wyoming mortgage APR"]
+  serviceType = "Wyoming Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Wyoming Home Rates — Compare Lenders Across WY Markets"
+  heroSubtitle = "Track mortgage rates for Cheyenne, Casper, Jackson Hole luxury properties, and rural Wyoming. Compare FHA, conventional, VA, and jumbo pricing with regional insights."
+  heroImage = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare Wyoming Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Wyoming Rates Vary by Region and Property Type"
+  aboutImage = "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Wyoming Mortgage Rate Tiers"
+  programsSubtitle = "Compare pricing for FHA, conventional, VA, and jumbo programs across Wyoming markets."
+
+  program1Title = "Conventional & FHA Rates"
+  program1Description = "Standard conforming rates for Wyoming homes under $766,550. FHA offers 3.5% down options competitive for first-time buyers in Cheyenne and Casper markets."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA Loan Rates in Wyoming"
+  program2Description = "Zero-down VA financing for active military and veterans. Wyoming has strong military presence (F.E. Warren AFB) with competitive VA pricing statewide."
+  program2Image = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Rates for Jackson Hole & Luxury Properties"
+  program3Description = "Jumbo financing above $766,550 for Jackson Hole estates, Teton County luxury homes, and high-value properties. Portfolio lenders compete with national jumbo programs."
+  program3Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Wyoming Rate Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Wyoming rates vary by lender competition and property type—Jackson Hole luxury pricing differs from Cheyenne conventional markets."
+
+  educationTitle = "Wyoming Rate Intelligence"
+  educationSubtitle = "Understand regional pricing, rural property rates, and luxury market dynamics."
+
+  edu1Title = "Regional Rate Differences"
+  edu1Description = "Cheyenne and Casper have more lender competition than rural counties. Jackson Hole luxury market follows unique pricing patterns due to property values and seasonal buyer activity."
+  edu1Image = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Rural Property Rate Considerations"
+  edu2Description = "Wyoming rural properties (large acreage, working ranches) may require portfolio lending. USDA loans available in eligible counties with competitive zero-down financing."
+  edu2Image = "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Jackson Hole Luxury Pricing"
+  edu3Description = "Teton County jumbo loans carry unique pricing due to high property values and luxury market dynamics. Seasonal buyer demand and resort property concentration affect rate availability."
+  edu3Image = "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "APR vs Rate in Wyoming"
+  edu4Description = "Wyoming lenders charge varying origination fees. Compare APR to see true borrowing costs—especially important when shopping across regional and national lenders."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Wyoming Rate Tracker"
+  learningSubtitle = "Regional pricing insights and lock timing for WY homebuyers."
+  learningImage = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Wyoming mortgage rates vary significantly by region and property type. Cheyenne and Casper offer more lender competition, while rural counties and Jackson Hole luxury markets require specialized lender access."
+  learningBullet1 = "Compare WY lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate and APR transparency across regions."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate Wyoming rate impact."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for jumbo vs conventional comparisons."
+  learningBullet4 = "Ask lenders about rural property expertise—not all lenders approve large acreage or working ranch properties."
+  learningPara2 = "Transparent rate comparison beats advertised teaser rates. Compare APR across 3–5 Wyoming lenders before locking."
+  learningPara3 = "Wyoming buyers save by comparing local banks, brokers with national access, and specialized jumbo lenders for Jackson Hole markets."
+
+  whyChooseTitle = "Why Compare Wyoming Mortgage Rates"
+  whyChooseSubtitle = "Regional differences, property type variations, and lender specialization create pricing gaps."
+  whyChoosePara1 = "Wyoming is a rural state with concentrated population centers (Cheyenne, Casper) and luxury resort markets (Jackson Hole). Lender competition and property type expertise vary significantly."
+  whyChoosePara2 = "Education-first: understand regional rate patterns, rural property lending, and luxury market pricing to avoid overpaying on Wyoming mortgages."
+
+  whyChooseBox1Title = "Regional Lender Competition"
+  whyChooseBox1Para = "Cheyenne and Casper have 5–10 active local lenders plus national access. Rural counties have 1–3 local banks, making broker wholesale access valuable for competitive pricing."
+  whyChooseBox1Bullet1 = "Cheyenne/Casper: Strong local and national competition"
+  whyChooseBox1Bullet2 = "Rural counties: Limited local options, use brokers"
+  whyChooseBox1Bullet3 = "Jackson Hole: Specialized luxury/jumbo lenders required"
+
+  whyChooseBox2Title = "Property Type Rate Variations"
+  whyChooseBox2Para = "Standard homes, large acreage, working ranches, and luxury estates require different lender expertise. Not all Wyoming lenders approve rural properties or jumbo Jackson Hole loans."
+  whyChooseBox2Bullet1 = "Standard homes: All lender types competitive"
+  whyChooseBox2Bullet2 = "Rural/acreage: Portfolio lenders or USDA specialists"
+  whyChooseBox2Bullet3 = "Luxury/jumbo: Specialized high-value lenders"
+
+  whyChooseBox3Title = "APR Transparency"
+  whyChooseBox3Para = "Wyoming lenders charge $1,000–$3,000+ in fees. Jumbo lenders may charge more due to loan size. Compare APR, not just rate, to see true costs across lender types."
+  whyChooseBox3Bullet1 = "APR includes origination, points, and lender fees"
+  whyChooseBox3Bullet2 = "0.125% APR difference = $2,500+ over 5 years on $500K loan"
+  whyChooseBox3Bullet3 = "Request Loan Estimates from 3+ lenders for accurate APR comparison"
+
+  whyChooseCTA = "Compare WY Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Wyoming Borrowers Who Compared Rates"
+  testimonialsSubtitle = "Real savings from regional comparisons and specialized lender access."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Compared three Cheyenne lenders. Local bank quoted 6.875%, broker delivered 6.500% through wholesale channel. Saved $165/month on our $425K mortgage."
+  testimonial1Name = "Tom & Sarah Mitchell"
+  testimonial1Subtitle = "Cheyenne Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "VA loan through F.E. Warren AFB-focused lender beat national VA rates by 0.25%. Local military lending expertise made the difference."
+  testimonial2Name = "James Rodriguez"
+  testimonial2Subtitle = "Cheyenne VA Loan"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Our 40-acre ranch property required portfolio lender. National lenders declined but Wyoming bank approved at 6.75% with rural property expertise."
+  testimonial3Name = "Linda & Robert Chen"
+  testimonial3Subtitle = "Sheridan Ranch"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Jackson Hole jumbo at $1.8M. Luxury lender quoted 6.50% vs 7.00% from standard jumbo programs. Specialized lender saved $7,500/year."
+  testimonial4Name = "Michael & Jennifer Park"
+  testimonial4Subtitle = "Jackson Hole Luxury"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "USDA zero-down for our Laramie County home. Better rate than FHA with no monthly PMI. Rural program saved us $140/month vs 3.5% down FHA."
+  testimonial5Name = "Karen Williams"
+  testimonial5Subtitle = "Laramie County USDA"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Improved credit from 680 to 725 before applying in Casper market. Rate dropped from 7.125% to 6.625%—$220/month savings on $440K loan."
+  testimonial6Name = "David Foster"
+  testimonial6Subtitle = "Casper Purchase"
+
+  calculatorsTitle = "Wyoming Rate Planning Tools"
+  calculatorsSubtitle = "Model payments, compare regional pricing, and plan lock timing."
+
+  creditScoreTitle = "Credit Score Impact on Wyoming Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers significantly impact Wyoming mortgage pricing. A 40–60 point improvement can save 0.25%–0.75% in rate—meaningful on Jackson Hole luxury loans and standard Cheyenne mortgages alike."
+  creditScoreHeading1 = "WY Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 680 requires FHA or manual underwriting (portfolio lenders)."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$500K loan: 760 tier $3,450/month vs. 700 tier $3,650/month — about $200/month difference. On $1.5M Jackson Hole jumbo, tier differences are $600+/month."
+  creditScoreHeading3 = "Pre-Application Credit Improvements"
+  creditScoreText3 = "Pay down cards to <10% utilization, dispute errors, wait 6 months before applying. Wyoming loan officers guide credit optimization for maximum rate advantage."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Wyoming Mortgage Rate Education"
+  employersSubtitle = "Help employees understand WY market dynamics and regional rate comparison strategies."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Wyoming employers can offer mortgage education covering regional rate differences, rural property lending, and APR comparison strategies for employees buying homes in-state."
+  employersBullet1Title = "Regional rate education"
+  employersBullet1Text = "Teach employees to compare Cheyenne/Casper competition vs rural county limited options—brokers help."
+  employersBullet2Title = "Property type awareness"
+  employersBullet2Text = "Explain rural/acreage lending differences from standard home financing."
+  employersBullet3Title = "Credit tier optimization"
+  employersBullet3Text = "Help employees improve credit scores before applying to reduce Wyoming mortgage rates."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Wyoming Rate Insights"
+  blogSubtitle = "Regional trends, property type pricing, and lender specialization for WY markets."
+
+  faqTitle = "Wyoming Mortgage Rate Questions"
+  faqSubtitle = "Common questions about WY rates, regional pricing, and property types."
+
+  faq1Question = "Why do Wyoming rates vary by region?"
+  faq1Answer = "Lender competition differs—Cheyenne/Casper have 5–10 lenders, rural counties have 1–3. Brokers access wholesale pricing statewide, equalizing rates across regions."
+
+  faq2Question = "Are Jackson Hole rates higher?"
+  faq2Answer = "Jumbo loans (most Jackson Hole properties exceed $766,550) have slightly higher rates than conforming loans. Specialized luxury lenders offer best Jackson pricing."
+
+  faq3Question = "Do rural properties get worse rates?"
+  faq3Answer = "Large acreage and working ranches may require portfolio lenders with slightly higher rates (0.25%–0.50% premium) but USDA loans offer competitive zero-down for eligible rural areas."
+
+  faq4Question = "Should I lock now or wait?"
+  faq4Answer = "Lock when you're comfortable with the rate and have a closing timeline. Wyoming's smaller market means less daily rate volatility than major metros."
+
+  faq5Question = "Why does APR matter more than rate?"
+  faq5Answer = "APR includes lender fees and points. Two identical rates can have different APRs based on origination costs—especially important comparing local vs national lenders."
+
+  faq6Question = "Can credit improvement lower my WY rate?"
+  faq6Answer = "Yes. A 40–60 point score improvement can save 0.25%–0.75%, which is significant on Wyoming home values (especially Jackson Hole luxury properties)."
+
+  ctaTitle = "Ready to Compare Wyoming Mortgage Rates?"
+  ctaDescription = "Find competitive lenders across Wyoming with regional expertise and transparent APR pricing."
+  ctaCTA = "Find Wyoming Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

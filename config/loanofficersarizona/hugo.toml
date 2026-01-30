@@ -1,0 +1,232 @@
+baseURL = "https://loanofficersarizona.com"
+languageCode = "en-us"
+title = "Arizona Loan Officers"
+theme = "heloc-blog"
+contentDir = "content/loanofficersarizona"
+publishDir = "public/loanofficersarizona"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Arizona loan officers across Phoenix, Scottsdale, Chandler, and Mesa. Compare market-specific expertise for jumbo loans, new construction, and complex income financing."
+  author = "Browse Lenders®"
+  shortName = "AZ Loan Officers"
+  tagline = "Find Licensed Arizona Mortgage Professionals"
+  homepage = "https://loanofficersarizona.com"
+
+  siteName = "Arizona Loan Officers"
+  siteDescription = "Connect with Arizona NMLS-licensed loan officers offering market expertise, jumbo knowledge, and portfolio lending access across Phoenix, Scottsdale, Chandler, and Mesa."
+  keywords = ["Arizona loan officers", "Phoenix mortgage broker", "Scottsdale loan officer", "Chandler mortgage professional", "Mesa MLO", "NMLS licensed Arizona", "Arizona jumbo lender"]
+  serviceType = "Arizona Mortgage Loan Officer Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Arizona Loan Officers — Market-Specialized Mortgage Professionals"
+  heroSubtitle = "Find Arizona loan officers with market-specific expertise, jumbo and new construction knowledge, and portfolio lending relationships. Compare options across Phoenix, Scottsdale, Chandler, and Mesa."
+  heroImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Arizona Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Arizona Loan Officer Expertise Matters"
+  aboutImage = "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Arizona Loan Officer Types"
+  programsSubtitle = "Compare mortgage brokers, bank loan officers, and market-specialized MLOs."
+
+  program1Title = "Market-Specialized Mortgage Brokers"
+  program1Description = "Arizona brokers access wholesale and portfolio lenders for Scottsdale jumbo, Phoenix conforming, Chandler new construction, and Mesa value markets. Ideal for complex income and portfolio properties."
+  program1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Local Bank Loan Officers"
+  program2Description = "Arizona bank loan officers offer relationship-based lending with market underwriting knowledge. Strong for primary residences, conforming loans, and Phoenix-area purchases."
+  program2Image = "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo & Portfolio Specialists"
+  program3Description = "Loan officers specializing in jumbo financing, new construction, and complex income. Critical for Scottsdale estates, Paradise Valley luxury, and Chandler builder programs."
+  program3Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare Arizona Loan Officers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Arizona loan officers with market-specific expertise and portfolio access deliver competitive pricing for jumbo loans, new construction, and complex income scenarios."
+
+  educationTitle = "Arizona Loan Officer Expertise"
+  educationSubtitle = "Understand market dynamics, loan limits, and specialty program knowledge."
+
+  edu1Title = "Market Specialization"
+  edu1Description = "Phoenix has abundant lender options, Scottsdale requires luxury expertise, Chandler focuses on new construction, and Mesa needs value-market specialization."
+  edu1Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Conforming vs Jumbo Knowledge"
+  edu2Description = "Arizona conforming limit is $806,550. Loan officers must navigate conforming, jumbo, and portfolio pricing to optimize total cost for all property types."
+  edu2Image = "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Portfolio Lending & Flexibility"
+  edu3Description = "Arizona portfolio lenders enable flexible DTI (45-50% vs 43% agency), asset-based qualifying, and custom property underwriting for high-net-worth borrowers."
+  edu3Image = "https://images.unsplash.com/photo-1729838904523-b31bdb286cdc?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "New Construction & Builder Programs"
+  edu4Description = "Chandler and Scottsdale new construction requires builder-program expertise and specialty underwriting. Experienced loan officers navigate builder incentives and construction-to-permanent financing."
+  edu4Image = "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Arizona Loan Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Working with Arizona Loan Officers"
+  learningSubtitle = "Find NMLS-licensed professionals with market expertise and transparent pricing."
+  learningImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Arizona loan officers vary in market specialization, lender access, and property-type expertise. Brokers with wholesale and portfolio relationships often deliver the best pricing for jumbo loans, new construction, and complex income scenarios."
+  learningBullet1 = "Find Arizona loan officers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with verified NMLS credentials."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> before speaking with lenders."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a>."
+  learningBullet4 = "Verify NMLS licensing at NMLSConsumerAccess.org before sharing financial information."
+  learningPara2 = "Interview 3+ Arizona loan officers with market-specific expertise to compare pricing, underwriting flexibility, and timeline expectations."
+  learningPara3 = "Arizona borrowers save by choosing loan officers who understand market dynamics, new construction programs, and portfolio lending differences by metro area."
+
+  whyChooseTitle = "Why Arizona Loan Officer Choice Affects Your Rate"
+  whyChooseSubtitle = "Market expertise, lender access, and underwriting knowledge create cost differences."
+  whyChoosePara1 = "Arizona loan officers differ in market knowledge, lender relationships, and jumbo/new construction expertise. The right specialist prevents pricing surprises and closing delays."
+  whyChoosePara2 = "Education-first: understand market pricing, portfolio lending options, conforming vs jumbo limits, and new construction nuances to avoid overpaying."
+
+  whyChooseBox1Title = "Market Expertise"
+  whyChooseBox1Para = "Phoenix has the most lender competition. Scottsdale requires luxury expertise, Chandler demands new construction knowledge, and Mesa needs value-market specialization."
+  whyChooseBox1Bullet1 = "Phoenix: Most lenders, best pricing"
+  whyChooseBox1Bullet2 = "Scottsdale: Luxury and jumbo focus"
+  whyChooseBox1Bullet3 = "Chandler/Mesa: Specialization matters"
+
+  whyChooseBox2Title = "Portfolio & Flexible Underwriting"
+  whyChooseBox2Para = "Arizona portfolio lenders enable flexible DTI (45-50% vs 43% agency), asset-based qualifying, and creative underwriting for high-net-worth borrowers."
+  whyChooseBox2Bullet1 = "Agency DTI cap: 43%"
+  whyChooseBox2Bullet2 = "Portfolio DTI: 45%-50%"
+  whyChooseBox2Bullet3 = "Asset-based options available"
+
+  whyChooseBox3Title = "Jumbo & New Construction Expertise"
+  whyChooseBox3Para = "Jumbo and new construction loans require specialized underwriting. Experienced loan officers reduce appraisal delays and builder-program complications."
+  whyChooseBox3Bullet1 = "Conforming limit: $806,550"
+  whyChooseBox3Bullet2 = "Jumbo: Portfolio and specialty lenders"
+  whyChooseBox3Bullet3 = "New construction: Builder programs"
+
+  whyChooseCTA = "Find Arizona Loan Officers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Arizona Borrowers Who Chose Market-Specialized Loan Officers"
+  testimonialsSubtitle = "Real savings from Arizona expertise and lender access."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Phoenix broker compared five lenders and beat our bank by 0.25%. We saved $175/month on a $700K purchase."
+  testimonial1Name = "Michael & Angela Torres"
+  testimonial1Subtitle = "Phoenix Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Scottsdale loan officer navigated jumbo underwriting for our $2.2M estate and saved us $11,200 in fees."
+  testimonial2Name = "Rachel & Steven Martinez"
+  testimonial2Subtitle = "Scottsdale Jumbo"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Chandler new construction specialist understood builder programs. They negotiated builder incentives we didn't know were possible."
+  testimonial3Name = "Jennifer & Robert Anderson"
+  testimonial3Subtitle = "Chandler New Construction"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Mesa loan officer with portfolio lender relationships approved our application at 47% DTI when banks declined at 43% cap."
+  testimonial4Name = "Carlos Rodriguez"
+  testimonial4Subtitle = "Mesa Purchase"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500595046891-e51df1bdc82f?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Portfolio lender through our loan officer made Paradise Valley estate approval smooth with flexible reserve requirements."
+  testimonial5Name = "Victoria & James Stewart"
+  testimonial5Subtitle = "Paradise Valley Estate"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "NMLS-verified loan officer with jumbo expertise guided us through complex underwriting for Scottsdale custom home."
+  testimonial6Name = "David & Lisa Thompson"
+  testimonial6Subtitle = "Scottsdale Custom Home"
+
+  creditScoreTitle = "Arizona Rates by Credit Score"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score heavily influences Arizona mortgage rates. Working with experienced loan officers helps borrowers understand credit tiers, rate impacts, and optimization strategies."
+
+  creditScoreHeading1 = "Excellent Credit (760+)"
+  creditScoreText1 = "Best rates available from all Arizona lenders. Loan officers can focus on price shopping rather than qualification."
+
+  creditScoreHeading2 = "Good Credit (700-739)"
+  creditScoreText2 = "Competitive rates with most lenders. Loan officers can navigate multiple program options to optimize APR."
+
+  creditScoreHeading3 = "Fair Credit (680-699)"
+  creditScoreText3 = "Portfolio lenders preferred. Experienced loan officers access programs agency lenders decline."
+
+  creditScoreCTA = "Find Your Loan Officer"
+  creditScoreCTALink = "https://www.browselenders.com"
+
+  employersTitle = "Arizona Loan Officer Resources"
+  employersSubtitle = "Mortgage tools and market education"
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Work with Arizona loan officers who prioritize education, transparency, and market expertise. Access tools to understand rates, qualification, and financing options."
+
+  employersBullet1Title = "NMLS Verification"
+  employersBullet1Text = "All Arizona loan officers listed have verified NMLS credentials and licensing transparency."
+
+  employersBullet2Title = "Market Specialization"
+  employersBullet2Text = "Find loan officers with expertise in your specific market: Phoenix, Scottsdale, Chandler, or Mesa."
+
+  employersBullet3Title = "Lender Relationships"
+  employersBullet3Text = "Loan officers with wholesale and portfolio relationships often access better rates than direct lender applications."
+
+  employersCTA = "Explore Arizona Resources"
+  employersCTALink = "https://www.browselenders.com"
+
+  blogTitle = "Arizona Loan Officer Blog"
+  blogSubtitle = "Loan officer selection, market expertise, and financing strategy guides for Arizona buyers."
+
+  faqTitle = "Arizona Loan Officer FAQ"
+  faqSubtitle = "Common questions about finding, evaluating, and working with Arizona mortgage professionals."
+
+  faq1Question = "What's the difference between a loan officer and a mortgage broker?"
+  faq1Answer = "Loan officers work for a single lender and can only offer that lender's programs. Brokers access multiple lenders and wholesale programs, often offering better pricing. Both must be NMLS-licensed. Arizona borrowers often get better rates from brokers with portfolio and wholesale relationships."
+
+  faq2Question = "How do I verify an Arizona loan officer's NMLS license?"
+  faq2Answer = "Visit NMLSConsumerAccess.org and search for the individual's name and NMLS number. Look for active license, state authorization (Arizona), and any regulatory actions or complaints."
+
+  faq3Question = "Should I use a loan officer from Phoenix, Scottsdale, or my local market?"
+  faq3Answer = "Market specialization matters. Phoenix loan officers have abundant lender competition. Scottsdale specialists understand luxury and jumbo programming. Chandler experts navigate new construction. Choose specialists in your specific market."
+
+  faq4Question = "Do Arizona loan officers charge fees?"
+  faq4Answer = "Loan officers don't charge direct fees; they earn commission from lenders. However, origination fees, processing fees, and points come from loan proceeds or out-of-pocket. Brokers often offer lower fees than direct bank loan officers."
+
+  faq5Question = "How much can an Arizona loan officer help with rates?"
+  faq5Answer = "Experienced loan officers with multiple lender relationships can save 0.125–0.50% in rate and APR compared to direct bank applications. Savings increase for complex scenarios (jumbo, new construction, complex income)."
+
+  faq6Question = "What questions should I ask an Arizona loan officer?"
+  faq6Answer = "Ask: (1) What lenders do you access? (2) How many jumbo/portfolio lenders? (3) What's your closing timeline? (4) Will you compare rates across lenders? (5) What's your experience in my market? Experienced officers answer specifically."
+
+  ctaTitle = "Ready to Connect with an Arizona Loan Officer?"
+  ctaDescription = "Find NMLS-licensed professionals across Phoenix, Scottsdale, Chandler, and Mesa. Start your search for market-specialized expertise today."
+   ctaCTA = "Find Loan Officers Now"
+   ctaCTALink = "https://www.browselenders.com/search/"

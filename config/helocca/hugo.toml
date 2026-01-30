@@ -1,0 +1,228 @@
+baseURL = "https://helocca.com"
+languageCode = "en-us"
+title = "HELOC CA"
+theme = "heloc-blog"
+contentDir = "content/helocca"
+publishDir = "public/helocca"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "California HELOC guide for homeowners comparing equity lines across Bay Area, LA, and San Diego. Understand CLTV limits, draw periods, and rate structures."
+  author = "Browse Lenders®"
+  shortName = "HELOC CA"
+  tagline = "California HELOC Rates, Limits, and Strategy"
+  homepage = "https://helocca.com"
+
+  siteName = "HELOC CA"
+  siteDescription = "Compare California HELOC options by region, property type, and credit tier. Learn CLTV rules, draw/repay phases, and how to avoid rate traps."
+  keywords = ["California HELOC", "HELOC CA", "home equity line California", "HELOC rates CA", "CLTV limits", "HELOC draw period"]
+  serviceType = "California HELOC Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "California HELOCs — Compare Equity Lines by Region and Lender"
+  heroSubtitle = "Track HELOC pricing for Bay Area, LA, Orange County, and San Diego. Understand CLTV limits, draw terms, and how rates reset." 
+  heroImage = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare California HELOCs"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why California HELOC Pricing Varies"
+  aboutImage = "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "California HELOC Programs"
+  programsSubtitle = "Explore equity lines by property type, loan size, and credit tier."
+
+  program1Title = "Primary Residence HELOCs"
+  program1Description = "Most California lenders cap combined loan-to-value (CLTV) between 80%–90% on primary residences. Strong credit and low DTI unlock higher limits and lower margins."
+  program1Image = "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Investment Property HELOCs"
+  program2Description = "Investor HELOCs usually cap at 70%–75% CLTV with higher margins. Expect stricter reserves and documentation, especially in coastal counties."
+  program2Image = "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "High-Balance Equity Lines"
+  program3Description = "Large-balance HELOCs for Bay Area and LA homeowners often require lower CLTV and higher credit tiers. Compare lenders that specialize in jumbo equity lines."
+  program3Image = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View California HELOC Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "California equity lines vary by lender margin, CLTV cap, and draw period terms—compare before you sign."
+
+  educationTitle = "California HELOC Education"
+  educationSubtitle = "Understand margins, draw periods, and rate resets before you borrow."
+
+  edu1Title = "How HELOC Margins Are Set"
+  edu1Description = "Lenders price HELOCs as Prime + margin. Credit tier, CLTV, and property type can add 0.25%–1.00% to the margin."
+  edu1Image = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Draw Period vs. Repayment Period"
+  edu2Description = "Most California HELOCs offer 5–10 year draws with 10–20 year repayment. Know how the payment changes when draw ends."
+  edu2Image = "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "CLTV Limits by Region"
+  edu3Description = "Higher-priced counties often have lower CLTV caps. Bay Area and LA may see 80% caps while inland counties reach 90%."
+  edu3Image = "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Rate Reset Risk"
+  edu4Description = "HELOCs are variable. Understand how Prime moves and how payment shocks can hit when rates rise quickly."
+  edu4Image = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore HELOC Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "California HELOC Strategy"
+  learningSubtitle = "Build a plan before you tap equity."
+  learningImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "California equity lines depend on CLTV, credit tier, and property type. Comparing margins and draw terms saves thousands over the life of the line."
+  learningBullet1 = "Compare lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for California HELOC specialists."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate HELOC pricing."
+  learningBullet3 = "Model payments at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> before you draw."
+  learningBullet4 = "Ask about caps, floors, and lifetime rate ceilings before signing a HELOC agreement."
+  learningPara2 = "A HELOC can be the cheapest capital in California—if you choose the right margin and terms."
+  learningPara3 = "Avoid rate surprises by confirming how your payment changes after the draw period ends."
+
+  whyChooseTitle = "Why Compare California HELOCs"
+  whyChooseSubtitle = "Margins, CLTV caps, and property rules can vary widely by lender."
+  whyChoosePara1 = "California lenders price HELOCs differently based on region, property type, and credit tier. Comparing offers uncovers lower margins and better draw terms."
+  whyChoosePara2 = "Education-first: understand CLTV caps, draw/repay phases, and variable-rate risk before you open a line."
+
+  whyChooseBox1Title = "CLTV Cap Differences"
+  whyChooseBox1Para = "One lender may cap at 80% CLTV while another allows 90%. The difference can be $50,000+ in available equity on California home values."
+  whyChooseBox1Bullet1 = "Compare CLTV by county and property type"
+  whyChooseBox1Bullet2 = "Ask if higher CLTV requires rate premiums"
+  whyChooseBox1Bullet3 = "Avoid lenders that auto-cap without review"
+
+  whyChooseBox2Title = "Margin and Index Transparency"
+  whyChooseBox2Para = "A 0.50% margin gap can cost thousands in interest. Always confirm Prime + margin, not just the starting rate."
+  whyChooseBox2Bullet1 = "Request margin in writing"
+  whyChooseBox2Bullet2 = "Compare lifetime rate caps"
+  whyChooseBox2Bullet3 = "Ask about annual rate adjustment limits"
+
+  whyChooseBox3Title = "Payment Shock Planning"
+  whyChooseBox3Para = "Payments can jump when draw periods end or when Prime rises quickly. Prepare with a repayment plan."
+  whyChooseBox3Bullet1 = "Know your repayment term before opening the line"
+  whyChooseBox3Bullet2 = "Model worst-case rate scenarios"
+  whyChooseBox3Bullet3 = "Avoid over-borrowing on variable lines"
+
+  whyChooseCTA = "Compare California HELOCs"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "California Homeowners Using HELOCs Smartly"
+  testimonialsSubtitle = "Examples of equity planning and lender comparisons."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "We compared three lenders and found a 0.35% margin difference. That saved us over $4,000 in interest on a $120K line."
+  testimonial1Name = "Isabel Ruiz"
+  testimonial1Subtitle = "San Diego HELOC"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Our Bay Area lender capped CLTV at 80%, but a credit union offered 90% with a slightly higher margin—worth it for renovation funding."
+  testimonial2Name = "Andre Patel"
+  testimonial2Subtitle = "Oakland Renovation"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "We chose a shorter draw period to avoid interest-only payments dragging on. The payment increase was manageable because we planned ahead."
+  testimonial3Name = "Leah Kim"
+  testimonial3Subtitle = "Orange County HELOC"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "A broker explained how Prime changes impact the rate. We locked a lower margin and kept the line for emergencies only."
+  testimonial4Name = "Marcus Lee"
+  testimonial4Subtitle = "Los Angeles HELOC"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Our lender required higher reserves for a rental property line. Comparing offers helped us find one that accepted 75% CLTV."
+  testimonial5Name = "Priya Shah"
+  testimonial5Subtitle = "Sacramento Rental"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "We modeled worst-case rates and kept our draw smaller. That kept payments stable even as Prime moved."
+  testimonial6Name = "Evan Torres"
+  testimonial6Subtitle = "San Jose HELOC"
+
+  calculatorsTitle = "California HELOC Planning Tools"
+  calculatorsSubtitle = "Estimate draw payments, rate resets, and equity limits."
+
+  creditScoreTitle = "Credit Score Impact on California HELOCs"
+  creditScoreImage = "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Higher credit tiers unlock lower margins and higher CLTV caps. A 40-point improvement can reduce APR by 0.25%+ on large California lines."
+  creditScoreHeading1 = "Typical HELOC Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; below 700 adds larger margin premiums."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$100K line: 760 tier $670/month vs. 700 tier $730/month — about $60/month difference."
+  creditScoreHeading3 = "Fast Improvements"
+  creditScoreText3 = "Pay down revolving balances and avoid new inquiries before applying for your HELOC."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – California HELOC Education"
+  employersSubtitle = "Help employees use equity responsibly."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Employers can offer HELOC education focused on variable-rate risk, repayment planning, and equity preservation for California homeowners."
+  employersBullet1Title = "Rate reset education"
+  employersBullet1Text = "Teach how Prime-based rates change and how to plan for payment increases."
+  employersBullet2Title = "CLTV limit awareness"
+  employersBullet2Text = "Explain how CLTV limits change by property type and region."
+  employersBullet3Title = "Responsible equity use"
+  employersBullet3Text = "Encourage equity planning for renovations, consolidation, or emergency reserves."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "California HELOC Insights"
+  blogSubtitle = "CLTV limits, margins, and repayment strategy for CA homeowners."
+
+  faqTitle = "California HELOC Questions"
+  faqSubtitle = "Common questions about equity lines in California."
+
+  faq1Question = "What CLTV do California HELOC lenders allow?"
+  faq1Answer = "Many lenders cap primary residences at 80%–90% CLTV, while investment properties often cap at 70%–75%."
+
+  faq2Question = "Are California HELOC rates fixed or variable?"
+  faq2Answer = "Most are variable, priced as Prime + margin. Some lenders allow a fixed-rate draw conversion."
+
+  faq3Question = "How long is the HELOC draw period?"
+  faq3Answer = "Typical draw periods are 5–10 years with 10–20 year repayment terms."
+
+  faq4Question = "Do HELOCs require appraisals in CA?"
+  faq4Answer = "Many lenders use AVMs for smaller lines, but high-balance lines often require full appraisals."
+
+  faq5Question = "Can I get a HELOC on a rental in California?"
+  faq5Answer = "Yes, but expect lower CLTV caps and higher margins due to risk premiums."
+
+  faq6Question = "How can I lower my HELOC rate?"
+  faq6Answer = "Improve credit tier, reduce CLTV, and compare lenders—margin differences are often larger than expected."
+
+  ctaTitle = "Ready to Compare California HELOCs?"
+  ctaDescription = "Find HELOC lenders across California with transparent margins and clear CLTV limits."
+  ctaCTA = "Find California HELOC Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Arizona HELOC rates and lenders. Compare home equity lines of credit across Phoenix, Scottsdale, Chandler, and Mesa. Access home equity quickly and affordably."
+homepage = "https://arizonahelocs.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://arizonahelocs.com"

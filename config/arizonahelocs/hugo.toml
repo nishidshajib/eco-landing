@@ -1,0 +1,232 @@
+baseURL = "https://arizonahelocs.com"
+languageCode = "en-us"
+title = "Arizona HELOC"
+theme = "heloc-blog"
+contentDir = "content/arizonahelocs"
+publishDir = "public/arizonahelocs"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Arizona HELOC rates and lenders. Compare home equity lines of credit across Phoenix, Scottsdale, Chandler, and Mesa. Access home equity quickly and affordably."
+  author = "Browse Lenders®"
+  shortName = "AZ HELOCs"
+  tagline = "Arizona Home Equity Line of Credit Resources"
+  homepage = "https://arizonahelocs.com"
+
+  siteName = "Arizona Home Equity Lines of Credit"
+  siteDescription = "Compare Arizona HELOC rates, lenders, and programs. Get home equity access for renovations, debt consolidation, and cash needs. Phoenix to Tucson coverage."
+  keywords = ["Arizona HELOC", "home equity line of credit Arizona", "HELOC rates Arizona", "home equity loan Arizona", "Arizona HELOC lenders", "best HELOC rates"]
+  serviceType = "Arizona HELOC Financing"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Arizona HELOC Rates — Access Your Home Equity Today"
+  heroSubtitle = "Compare flexible home equity lines of credit across Phoenix, Scottsdale, Chandler, Mesa, and beyond. Low rates, fast funding, easy approval process."
+  heroImage = "https://images.unsplash.com/photo-1589399516942-c3fb650ae8b9?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find HELOC Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Arizona Homeowners Use HELOCs"
+  aboutImage = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Arizona HELOC Products"
+  programsSubtitle = "Compare flexible HELOC options for Arizona homeowners."
+
+  program1Title = "Standard HELOC (Draw + Repay)"
+  program1Description = "Flexible home equity line of credit with draw period (5-10 years) and repayment period (15-20 years). Pay only interest during draw; principal + interest during repayment. Available up to 85% LTV in Arizona."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Fixed-Rate HELOC Alternative"
+  program2Description = "Lock rate on home equity loan as alternative to traditional HELOC. Predictable monthly payment; full amortization over loan term. Best for Arizona homeowners avoiding rate fluctuations."
+  program2Image = "https://images.unsplash.com/photo-1549574396-2becb499c91b?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Cash-Out Refinance (Equity Access)"
+  program3Description = "Refinance primary mortgage and access equity simultaneously. Consolidate to single payment; competitive rates; faster funding. Alternative for Arizona homeowners with significant equity."
+  program3Image = "https://images.unsplash.com/photo-1736319666684-a0f1f6b679cc?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare HELOC Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Arizona homeowners access home equity through HELOCs, fixed-rate home equity loans, or cash-out refinancing. Compare all options for your financial goals."
+
+  educationTitle = "HELOC Education & Guides"
+  educationSubtitle = "Understand HELOCs, rates, and how to use home equity wisely."
+
+  edu1Title = "HELOC Basics: How They Work"
+  edu1Description = "Understand HELOC structure: draw period vs repayment period, variable vs fixed rates, interest-only payments, and how to calculate available equity."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "HELOC vs Home Equity Loan"
+  edu2Description = "Compare flexible HELOCs (draw as needed) to fixed home equity loans (lump sum). Understand rate structures, payment schedules, and best use cases."
+  edu2Image = "https://images.unsplash.com/photo-1676500684456-99f21e42a6fe?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Arizona HELOC Rates & Qualification"
+  edu3Description = "Current Arizona HELOC rates range 7.5-10% based on credit, equity, and lender. Requirements: 15%+ equity, 620+ credit, strong income and employment."
+  edu3Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Using HELOC Funds Wisely"
+  edu4Description = "Home improvements, debt consolidation, emergency funds, education, and business capital. HELOC interest is tax-deductible if funds improve property (consult tax advisor)."
+  edu4Image = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore HELOC Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Getting a HELOC in Arizona"
+  learningSubtitle = "Understand requirements and approval process."
+  learningImage = "https://images.unsplash.com/photo-1680645944941-da9198d7f6aa?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Arizona homeowners can access home equity through HELOCs for home improvements, debt consolidation, or emergency funds. Most lenders require 15-20% equity, 620+ credit score, and stable income."
+  learningBullet1 = "Check your available equity: <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">Use equity calculator</a> at HomeLoanCalculator.com"
+  learningBullet2 = "Get pre-approved to see rates: <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">Compare HELOC lenders</a> at BrowseLenders.com"
+  learningBullet3 = "Review credit score: Check at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> for pre-approval odds"
+  learningBullet4 = "Determine funds needed: Calculate total amount to borrow and repayment timeline"
+  learningPara2 = "Pre-approval process typically takes 3-5 days. Funding can occur within 7-10 days after closing. Compare multiple lenders to get best Arizona HELOC rates."
+  learningPara3 = "Arizona homeowners save by accessing home equity strategically. Compare HELOCs, home equity loans, and cash-out refinancing to find best option for your financial situation."
+
+  whyChooseTitle = "Why Arizona Homeowners Choose HELOCs"
+  whyChooseSubtitle = "Flexible access to home equity at competitive rates."
+  whyChoosePara1 = "Home equity lines of credit offer flexible, affordable access to your home's equity without selling. Use funds for renovations, debt consolidation, education, or emergencies at rates typically 1-2% lower than personal loans."
+  whyChoosePara2 = "Arizona HELOCs provide competitive rates, fast funding, and flexibility to access funds as needed—only paying interest on amounts drawn."
+
+  whyChooseBox1Title = "Flexible Access to Funds"
+  whyChooseBox1Para = "HELOC works like credit card backed by home equity. Draw what you need, when you need it. Only pay interest on amounts borrowed, not full credit line."
+  whyChooseBox1Bullet1 = "Draw period: 5-10 years (access funds anytime)"
+  whyChooseBox1Bullet2 = "Repayment period: 15-20 years (pay back over time)"
+  whyChooseBox1Bullet3 = "Interest-only payments during draw (lowest cost option)"
+
+  whyChooseBox2Title = "Competitive Arizona HELOC Rates"
+  whyChooseBox2Para = "HELOC rates in Arizona currently range 7.5-10% depending on credit, equity, lender. Rates typically 2-4% lower than personal loans and credit cards (20%+ APR)."
+  whyChooseBox2Bullet1 = "HELOC rates: 7.5-10% typical"
+  whyChooseBox2Bullet2 = "Personal loan rates: 10-20% typical"
+  whyChooseBox2Bullet3 = "Credit card rates: 18-25% typical"
+
+  whyChooseBox3Title = "Fast Funding & Easy Process"
+  whyChooseBox3Para = "Pre-approval in 3-5 days. Funding within 7-10 days of closing. Simple application process; most documentation handled online. Arizona lenders experienced with HELOC approvals."
+  whyChooseBox3Bullet1 = "Pre-approval: 3-5 business days"
+  whyChooseBox3Bullet2 = "Closing to funding: 7-10 business days"
+  whyChooseBox3Bullet3 = "Online application available"
+
+  whyChooseCTA = "Get HELOC Pre-Approved"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Arizona Homeowners Using HELOCs"
+  testimonialsSubtitle = "Real stories from Arizona HELOC borrowers."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Phoenix homeowner: Used $50K HELOC for kitchen renovation. 8% rate beat contractor financing at 12%. Renovation complete; equity maintained through refinishing."
+  testimonial1Name = "David & Maria Santos"
+  testimonial1Subtitle = "Phoenix Kitchen Renovation"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Chandler resident: Consolidated $30K credit card debt (18% APR) into HELOC at 8%. Monthly payment cut in half; saved $8,000 in interest over 5 years."
+  testimonial2Name = "Jennifer Martinez"
+  testimonial2Subtitle = "Chandler Debt Consolidation"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Scottsdale business owner: Drew $75K from HELOC at 7.9% to fund business expansion. Business revenue grew 40% in first year; HELOC paid off in 3 years."
+  testimonial3Name = "Michael Chen"
+  testimonial3Subtitle = "Scottsdale Business Capital"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Mesa homeowner: Kept HELOC open for emergency funds. Used $12K when job loss occurred; covered expenses while job hunting. Peace of mind worth it."
+  testimonial4Name = "Robert Thompson"
+  testimonial4Subtitle = "Mesa Emergency Fund"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500595046891-e51df1bdc82f?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Tempe homeowner: Used $35K HELOC to fund daughter's college education at lower rate than Parent PLUS loans. HELOC rate: 8%; Parent PLUS: 7.6% (similar with more flexibility)."
+  testimonial5Name = "Susan Williams"
+  testimonial5Subtitle = "Tempe Education Funding"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Tucson resident: Used HELOC for roof replacement emergency. Quick approval and funding saved expensive credit card financing. HELOC rate 8% vs credit card 22%."
+  testimonial6Name = "Carlos Ruiz"
+  testimonial6Subtitle = "Tucson Emergency Roof"
+
+  creditScoreTitle = "HELOC Approval by Credit Score"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score, home equity, and income determine HELOC approval and rates in Arizona. Understanding your credit tier helps estimate rate and approval likelihood."
+
+  creditScoreHeading1 = "Excellent Credit (740+)"
+  creditScoreText1 = "Best rates available. 7.5-8.5% rates typical. Quick approval; maximum equity access (85% LTV). Most favorable terms."
+
+  creditScoreHeading2 = "Good Credit (680-739)"
+  creditScoreText2 = "Strong approval odds. 8.0-8.75% rates typical. Standard equity access (80-85% LTV). Most borrowers in this tier."
+
+  creditScoreHeading3 = "Fair Credit (620-679)"
+  creditScoreText3 = "Approval likely with conditions. 8.5-9.5% rates typical. Limited to 70-80% LTV. May require higher equity requirement (20%+)."
+
+  creditScoreCTA = "Check Your Credit"
+  creditScoreCTALink = "https://www.middlecreditscore.com"
+
+  employersTitle = "Arizona HELOC Resources"
+  employersSubtitle = "Tools and programs for accessing home equity"
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Access Arizona home equity strategically with HELOC education, rate comparisons, and trusted lender networks. Compare your options today."
+
+  employersBullet1Title = "Rate Comparison Tools"
+  employersBullet1Text = "Compare Arizona HELOC rates from multiple lenders instantly. See pre-qualified rates based on credit and equity situation."
+
+  employersBullet2Title = "Equity Calculator"
+  employersBullet2Text = "Calculate available home equity based on current home value and mortgage balance. Determine borrowing capacity for HELOC."
+
+  employersBullet3Title = "HELOC vs Refinance"
+  employersBullet3Text = "Understand when HELOC makes sense vs cash-out refi. Compare costs, rates, and flexibility of each option."
+
+  employersCTA = "Compare HELOC Options"
+  employersCTALink = "https://www.browselenders.com"
+
+  blogTitle = "Arizona HELOC Blog"
+  blogSubtitle = "HELOC guides, rate comparisons, and Arizona market insights."
+
+  faqTitle = "Arizona HELOC FAQ"
+  faqSubtitle = "Common questions about HELOCs and home equity access."
+
+  faq1Question = "What is a HELOC and how does it work?"
+  faq1Answer = "HELOC (Home Equity Line of Credit) is a flexible loan backed by your home equity. Draw funds as needed during draw period (5-10 years), pay interest-only on amounts drawn. Repayment period (15-20 years) follows where you pay principal + interest. Works like credit card backed by home."
+
+  faq2Question = "How much can I borrow with an Arizona HELOC?"
+  faq2Answer = "Most lenders allow 80-85% Loan-to-Value (LTV). Example: $400K home with $300K mortgage = $100K equity; HELOC available up to $80K (80% LTV). Actual amount depends on lender, credit score, income, and equity available."
+
+  faq3Question = "What are current Arizona HELOC rates?"
+  faq3Answer = "Arizona HELOC rates currently range 7.5-10% (as of early 2026) depending on credit score, equity %, lender. Excellent credit (740+): 7.5-8.5%. Good credit (680-739): 8.0-8.75%. Fair credit (620-679): 8.5-9.5%. Compare multiple lenders for best rates."
+
+  faq4Question = "How long does Arizona HELOC approval take?"
+  faq4Answer = "Pre-approval typically 3-5 business days. Full approval 5-7 days. Funding typically 7-10 days after closing. Some lenders offer faster processing if documents organized."
+
+  faq5Question = "What credit score do I need for a HELOC in Arizona?"
+  faq5Answer = "Minimum credit score usually 620. Best rates at 740+. Fair credit (620-679) approved with higher rates and possibly lower equity access (70-80% LTV vs 85%)."
+
+  faq6Question = "Can I use HELOC funds for anything?"
+  faq6Answer = "Yes, HELOC funds can be used for home improvements, debt consolidation, education, business capital, medical expenses, or any purpose. Note: HELOC interest is tax-deductible if funds improve your home (consult tax professional)."
+
+  ctaTitle = "Ready to Access Your Home Equity?"
+  ctaDescription = "Get a HELOC quote and access competitive Arizona rates. Pre-approval takes minutes; funding in days."
+  ctaCTA = "Get HELOC Quote"
+  ctaCTALink = "https://www.browselenders.com/search/"

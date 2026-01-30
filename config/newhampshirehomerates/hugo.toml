@@ -1,0 +1,228 @@
+baseURL = "https://newhampshirehomerates.com"
+languageCode = "en-us"
+title = "New Hampshire Home Rates"
+theme = "heloc-blog"
+contentDir = "content/newhampshirehomerates"
+publishDir = "public/newhampshirehomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "New Hampshire mortgage rates for Portsmouth, Manchester, Nashua, and Lakes Region. Compare FHA, VA, conventional, and jumbo rates across NH lenders."
+  author = "Browse Lenders®"
+  shortName = "NH Home Rates"
+  tagline = "Daily Mortgage Rates for New Hampshire Homebuyers"
+  homepage = "https://newhampshirehomerates.com"
+
+  siteName = "New Hampshire Home Rates"
+  siteDescription = "Track New Hampshire mortgage rates by region and lender type. Compare APR, understand seasonal market trends, and lock smarter with local rate intelligence."
+  keywords = ["New Hampshire mortgage rates", "NH home rates", "Portsmouth mortgage rates", "Manchester home rates", "Lakes Region rates", "NH mortgage APR"]
+  serviceType = "New Hampshire Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Hampshire Home Rates — Compare Lenders Across NH Markets"
+  heroSubtitle = "Track mortgage rates for Portsmouth, Manchester, Lakes Region, and across New Hampshire. Compare FHA, conventional, VA, and jumbo pricing with APR transparency."
+  heroImage = "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare NH Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why New Hampshire Rates Vary by Region and Season"
+  aboutImage = "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "New Hampshire Mortgage Rate Tiers"
+  programsSubtitle = "Compare pricing for FHA, conventional, VA, and jumbo programs across NH."
+
+  program1Title = "Conventional & FHA Rates"
+  program1Description = "Standard conforming rates for NH homes under $766,550. FHA offers 3.5% down options with competitive APR for first-time buyers using NHHFA programs."
+  program1Image = "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA Loan Rates in New Hampshire"
+  program2Description = "Zero-down VA financing with competitive rates for active military and veterans. NH loan officers navigate VA appraisal requirements for Lakes Region and coastal properties."
+  program2Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Rates for NH Luxury Homes"
+  program3Description = "Jumbo financing above $766,550 for Lakes Region estates and Portsmouth coastal properties. Portfolio lenders often beat national jumbo programs by 0.25%–0.50%."
+  program3Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View NH Rate Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "New Hampshire rates change with lender competition and seasonal market dynamics—compare APR before you lock."
+
+  educationTitle = "New Hampshire Rate Intelligence"
+  educationSubtitle = "Understand APR, seasonal trends, and lock timing for NH markets."
+
+  edu1Title = "Seasonal Market Impact on Rates"
+  edu1Description = "New Hampshire's spring/summer buying season creates lender competition. Rates often tighten in May–August and loosen in winter months."
+  edu1Image = "https://images.unsplash.com/photo-1768839721776-038d3070721e?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "APR vs. Rate in NH"
+  edu2Description = "New Hampshire lenders charge varying origination fees. Compare APR to see true borrowing costs including points and lender fees."
+  edu2Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Regional Rate Differences"
+  edu3Description = "Portsmouth and coastal markets often see more lender competition than northern NH. Brokers offer consistent pricing statewide through wholesale channels."
+  edu3Image = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Credit Tier Pricing"
+  edu4Description = "Moving from 680 to 740 credit can save 0.50%–0.75% on New Hampshire mortgages. Improving credit before applying reduces lifetime costs significantly."
+  edu4Image = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "New Hampshire Rate Tracker"
+  learningSubtitle = "Local pricing insights and lock timing for NH homebuyers."
+  learningImage = "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Hampshire mortgage rates move with national trends but are influenced by local lender competition and seasonal market dynamics. Tracking weekly rate changes helps buyers time locks strategically."
+  learningBullet1 = "Compare NH lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate and APR transparency."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate rate impact."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to see how 0.25% affects monthly costs."
+  learningBullet4 = "Ask lenders about seasonal rate patterns—NH spring markets often see tighter pricing."
+  learningPara2 = "Transparent rate comparison beats teaser ads. Compare APR across 3–5 NH lenders before locking."
+  learningPara3 = "New Hampshire buyers save by comparing brokers, banks, and credit unions—competition drives better pricing."
+
+  whyChooseTitle = "Why Compare New Hampshire Mortgage Rates"
+  whyChooseSubtitle = "Regional competition, seasonal patterns, and lender type create pricing gaps."
+  whyChoosePara1 = "New Hampshire is a small state with diverse lender competition. Portsmouth and Manchester have more lender options than northern counties, but brokers offer statewide access to wholesale pricing."
+  whyChoosePara2 = "Education-first: understand seasonal trends, APR vs. rate, and credit tier impacts to avoid overpaying on NH mortgages."
+
+  whyChooseBox1Title = "Seasonal Market Dynamics"
+  whyChooseBox1Para = "New Hampshire's spring/summer buying season creates lender competition. Rates often improve May–August as volume increases and lenders compete for market share."
+  whyChooseBox1Bullet1 = "Spring/summer: More lender competition, tighter pricing"
+  whyChooseBox1Bullet2 = "Fall/winter: Slower market, rates may widen slightly"
+  whyChooseBox1Bullet3 = "Track weekly trends to time locks during competitive periods"
+
+  whyChooseBox2Title = "Regional Lender Coverage"
+  whyChooseBox2Para = "Portsmouth and Manchester have more local bank and credit union options. Northern NH has fewer lenders, but brokers access wholesale channels statewide."
+  whyChooseBox2Bullet1 = "Portsmouth/Manchester: 15–25 local lenders"
+  whyChooseBox2Bullet2 = "Northern NH: 5–10 local options"
+  whyChooseBox2Bullet3 = "Brokers access 20–50 wholesale lenders regardless of location"
+
+  whyChooseBox3Title = "APR Transparency"
+  whyChooseBox3Para = "New Hampshire lenders charge $1,000–$3,000 in origination fees. Compare APR, not just rate, to see true borrowing costs."
+  whyChooseBox3Bullet1 = "APR includes origination, points, and lender fees"
+  whyChooseBox3Bullet2 = "0.125% APR difference = $3,000+ over 5 years on $400K loan"
+  whyChooseBox3Bullet3 = "Request Loan Estimates from 3+ lenders to compare APR accurately"
+
+  whyChooseCTA = "Compare NH Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "New Hampshire Borrowers Who Saved by Comparing Rates"
+  testimonialsSubtitle = "Real savings from APR comparisons and competitive quotes."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Compared three Portsmouth lenders. Credit union quoted 6.75%, broker delivered 6.375%. Saved $143/month on our $375K mortgage."
+  testimonial1Name = "Laura Bennett"
+  testimonial1Subtitle = "Portsmouth Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Locked in May during peak competition. Rate was 0.25% better than the winter quote we got in February."
+  testimonial2Name = "James Murphy"
+  testimonial2Subtitle = "Manchester Refinance"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Bank quoted 7.00% with $2,800 fees. Broker delivered 6.875% with $1,400 fees. Lower APR saved thousands."
+  testimonial3Name = "Rachel Kim"
+  testimonial3Subtitle = "Nashua Purchase"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Our Lakes Region seasonal home was quoted at 7.50% by national lenders. Local broker found 6.95% through portfolio lender."
+  testimonial4Name = "David Chen"
+  testimonial4Subtitle = "Lakes Region Second Home"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Improved credit from 695 to 735 before applying. Rate dropped from 7.25% to 6.75%—$180/month savings."
+  testimonial5Name = "Michelle Foster"
+  testimonial5Subtitle = "Concord Purchase"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Compared APR, not just rate. Lender with higher rate had lower fees and won on true cost over 5 years."
+  testimonial6Name = "Robert Martinez"
+  testimonial6Subtitle = "Dover Refinance"
+
+  calculatorsTitle = "New Hampshire Rate Planning Tools"
+  calculatorsSubtitle = "Model payments, compare APR, and plan lock timing."
+
+  creditScoreTitle = "Credit Score Impact on New Hampshire Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers significantly impact New Hampshire mortgage pricing. A 40–60 point improvement can save 0.25%–0.75% in rate and APR."
+  creditScoreHeading1 = "NH Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 680 requires FHA or manual underwriting."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$400K loan: 760 tier $2,760/month vs. 700 tier $2,930/month — about $170/month difference."
+  creditScoreHeading3 = "Pre-Application Credit Improvements"
+  creditScoreText3 = "Pay down cards to <10% utilization, dispute errors, wait 6 months before applying. NH loan officers guide credit optimization."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – New Hampshire Mortgage Rate Education"
+  employersSubtitle = "Help employees understand NH market dynamics and rate comparison strategies."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "New Hampshire employers can offer mortgage education covering rate comparison, APR transparency, and seasonal market timing for employees buying homes locally."
+  employersBullet1Title = "Rate comparison education"
+  employersBullet1Text = "Teach employees to compare APR across lenders, not just advertised rates."
+  employersBullet2Title = "Seasonal market awareness"
+  employersBullet2Text = "Explain how NH spring/summer competition can improve pricing."
+  employersBullet3Title = "Credit tier optimization"
+  employersBullet3Text = "Help employees improve credit scores before applying to reduce rates."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "New Hampshire Rate Insights"
+  blogSubtitle = "Seasonal trends, APR comparison, and lock timing for NH markets."
+
+  faqTitle = "New Hampshire Mortgage Rate Questions"
+  faqSubtitle = "Common questions about NH rates and APR."
+
+  faq1Question = "Why do NH rates vary by season?"
+  faq1Answer = "Spring/summer buying season creates lender competition, often tightening pricing. Winter markets slow, and rates may widen slightly."
+
+  faq2Question = "Are Portsmouth rates better than northern NH?"
+  faq2Answer = "More lender competition in Portsmouth/Manchester can create better pricing, but brokers access wholesale rates statewide."
+
+  faq3Question = "Should I lock now or wait?"
+  faq3Answer = "Lock when you're comfortable with the rate and have a closing timeline. Floating risks rate increases for marginal potential savings."
+
+  faq4Question = "Why does APR matter more than rate?"
+  faq4Answer = "APR includes lender fees and points. Two identical rates can have different APRs based on origination costs."
+
+  faq5Question = "How many lenders should I compare?"
+  faq5Answer = "At least three. Compare brokers, banks, and credit unions to see APR and fee differences."
+
+  faq6Question = "Can credit improvement lower my NH rate?"
+  faq6Answer = "Yes. A 40–60 point score improvement can save 0.25%–0.75%, which is significant on NH home values."
+
+  ctaTitle = "Ready to Compare New Hampshire Mortgage Rates?"
+  ctaDescription = "Find competitive lenders across New Hampshire with transparent APR pricing and local market expertise."
+  ctaCTA = "Find NH Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

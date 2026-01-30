@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on NH Mortgage Brokers</title>
+    <link>http://localhost:1390/categories/</link>
+    <description>Recent content in Categories on NH Mortgage Brokers</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1390/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Broker Comparison</title>
+      <link>http://localhost:1390/categories/broker-comparison/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1390/categories/broker-comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wholesale Pricing</title>
+      <link>http://localhost:1390/categories/wholesale-pricing/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1390/categories/wholesale-pricing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Choosing a Broker</title>
+      <link>http://localhost:1390/categories/choosing-a-broker/</link>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1390/categories/choosing-a-broker/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

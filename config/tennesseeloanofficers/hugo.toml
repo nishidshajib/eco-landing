@@ -1,0 +1,232 @@
+baseURL = "https://tennesseeloanofficers.com"
+languageCode = "en-us"
+title = "Tennessee Loan Officers"
+theme = "heloc-blog"
+contentDir = "content/tennesseeloanofficers"
+publishDir = "public/tennesseeloanofficers"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Find Tennessee mortgage loan officers across Nashville, Memphis, Knoxville, and Chattanooga. Connect with licensed MLOs offering competitive rates and expert guidance."
+  author = "Browse Lenders®"
+  shortName = "TN Loan Officers"
+  tagline = "Tennessee Mortgage Loan Officer Directory"
+  homepage = "https://tennesseeloanofficers.com"
+
+  siteName = "Tennessee Loan Officers & Mortgage Professionals"
+  siteDescription = "Connect with experienced Tennessee loan officers and mortgage professionals. Find licensed MLOs specializing in conventional, FHA, VA, USDA, and jumbo loans across all Tennessee markets."
+  keywords = ["Tennessee loan officers", "Nashville mortgage loan officer", "Memphis MLO", "Knoxville loan officer", "Tennessee mortgage professional", "licensed loan officer TN"]
+  serviceType = "Tennessee Mortgage Loan Officer Services"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Tennessee Loan Officers — Expert Mortgage Guidance Across TN"
+  heroSubtitle = "Connect with licensed Tennessee mortgage loan officers in Nashville, Memphis, Knoxville, and Chattanooga. Get competitive rates and personalized service from experienced MLOs."
+  heroImage = "https://images.unsplash.com/photo-1758518730380-04c8e0d57b68?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find TN Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Work with Tennessee Loan Officers"
+  aboutImage = "https://images.unsplash.com/photo-1713947503717-b5b1deec8a0d?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Tennessee Loan Officer Specializations"
+  programsSubtitle = "Find Tennessee MLOs specializing in your loan type."
+
+  program1Title = "Conventional Loan Specialists"
+  program1Description = "Tennessee loan officers specializing in conventional mortgages with 3-20% down. Expertise in credit optimization, rate negotiation, and underwriting guidelines. Strong across Nashville, Memphis, and Knoxville markets."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "FHA & First-Time Buyer Experts"
+  program2Description = "MLOs experienced with FHA loans, THDA programs, and first-time buyer assistance. Help navigate down payment assistance, credit challenges, and Tennessee-specific programs. Available statewide."
+  program2Image = "https://images.unsplash.com/photo-1713947505013-16bcf315e29f?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "VA & Military Loan Officers"
+  program3Description = "Tennessee loan officers specializing in VA loans for veterans and active military. Zero down expertise, VA appraisal navigation, and military relocation experience. Strong near Fort Campbell, Memphis NAS."
+  program3Image = "https://images.unsplash.com/photo-1482649571333-dcd81558ecfe?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Find TN Loan Officer"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Tennessee loan officers offer expertise across conventional, FHA, VA, USDA, and jumbo programs. Connect with MLOs experienced in your specific loan type and Tennessee market."
+
+  educationTitle = "Working with Tennessee Loan Officers"
+  educationSubtitle = "What to expect from experienced Tennessee mortgage professionals."
+
+  edu1Title = "Licensed & Regulated MLOs"
+  edu1Description = "Tennessee loan officers licensed by NMLS (Nationwide Multistate Licensing System). Regulated by Tennessee Department of Financial Institutions. Continuing education required; consumer protection enforced."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Local Market Expertise"
+  edu2Description = "Tennessee MLOs understand local markets: Nashville growth trends, Memphis affordability, Knoxville stability, Chattanooga opportunities. Knowledge of county programs, appraisals, and closing timelines."
+  edu2Image = "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Rate & Program Access"
+  edu3Description = "Experienced Tennessee loan officers access wholesale rates, specialty programs (THDA, USDA, construction), and portfolio products. Compare multiple loan options to find best fit."
+  edu3Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Pre-Approval Through Closing"
+  edu4Description = "Tennessee loan officers guide entire process: credit optimization, pre-approval, rate locks, underwriting, closing coordination. Single point of contact from application to keys."
+  edu4Image = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Connect with TN MLO"
+  educationCTALink = "https://www.browselenders.com/search/"
+
+  learningTitle = "How Tennessee Loan Officers Help Borrowers"
+  learningSubtitle = "Expert guidance through Tennessee mortgage process."
+  learningImage = "https://images.unsplash.com/photo-1675716921224-e087a0cca69a?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Tennessee loan officers provide personalized mortgage guidance from pre-approval through closing. Experienced MLOs understand Tennessee markets, navigate underwriting challenges, and secure competitive rates for borrowers."
+  learningBullet1 = "Pre-approval expertise: Tennessee loan officers pre-approve borrowers quickly (1-3 days) with accurate buying power assessment"
+  learningBullet2 = "Credit optimization: MLOs advise on credit improvement strategies before application to secure better rates"
+  learningBullet3 = "Rate negotiation: Experienced officers access wholesale pricing and negotiate lender fees to save borrowers money"
+  learningBullet4 = "Problem-solving: Tennessee MLOs navigate credit challenges, income documentation issues, and appraisal concerns"
+  learningPara2 = "Working with licensed Tennessee loan officers ensures regulatory compliance, consumer protection, and professional accountability. NMLS licensing requires background checks, education, and ongoing testing."
+  learningPara3 = "Tennessee borrowers benefit from loan officers' market knowledge, lender relationships, and program expertise. MLOs save time by comparing multiple loan options and streamlining the application process."
+
+  whyChooseTitle = "Benefits of Tennessee Loan Officers"
+  whyChooseSubtitle = "Why experienced MLOs deliver better outcomes."
+  whyChoosePara1 = "Tennessee loan officers bring market expertise, lender access, and personalized service that online-only lenders can't match. Local MLOs understand Tennessee property markets, navigate regional underwriting nuances, and build long-term client relationships."
+  whyChoosePara2 = "Licensed Tennessee loan officers operate under strict regulatory oversight, ensuring consumer protection and professional standards. NMLS licensing, continuing education, and ethical requirements provide borrower confidence."
+
+  whyChooseBox1Title = "Local Market Knowledge"
+  whyChooseBox1Para = "Tennessee loan officers understand local property values, neighborhood trends, and county-specific programs. Nashville market expertise differs from Memphis or Knoxville—local MLOs know the nuances."
+  whyChooseBox1Bullet1 = "Property value expertise: Accurate pre-approvals based on local comps"
+  whyChooseBox1Bullet2 = "County programs: Knowledge of local assistance and tax incentives"
+  whyChooseBox1Bullet3 = "Closing timelines: Realistic expectations for Tennessee title and recording"
+
+  whyChooseBox2Title = "Lender & Program Access"
+  whyChooseBox2Para = "Experienced Tennessee MLOs access wholesale rates from multiple lenders, specialty programs (THDA, USDA, construction loans), and portfolio products. More options mean better fit for your situation."
+  whyChooseBox2Bullet1 = "Wholesale rates: Often 0.125-0.375% better than retail"
+  whyChooseBox2Bullet2 = "Specialty programs: THDA, USDA, renovation, construction loans"
+  whyChooseBox2Bullet3 = "Portfolio lending: Flexibility for complex scenarios"
+
+  whyChooseBox3Title = "Personalized Service & Advocacy"
+  whyChooseBox3Para = "Tennessee loan officers advocate for borrowers through underwriting challenges, communicate with agents/sellers, and troubleshoot issues. Personal relationships deliver better outcomes than automated systems."
+  whyChooseBox3Bullet1 = "Underwriting advocacy: Negotiate conditions and exceptions"
+  whyChooseBox3Bullet2 = "Communication hub: Coordinate between agents, attorneys, appraisers"
+  whyChooseBox3Bullet3 = "Problem-solving: Creative solutions for documentation or credit challenges"
+
+  whyChooseCTA = "Find Tennessee MLO"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Tennessee Borrowers & Their Loan Officers"
+  testimonialsSubtitle = "Real experiences working with Tennessee MLOs."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Nashville buyer: My loan officer secured 0.375% better rate than online lender quote. She navigated complex self-employment income verification; closed in 28 days. Saved $95/month!"
+  testimonial1Name = "David & Sarah Martinez"
+  testimonial1Subtitle = "Nashville Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Memphis first-timer: Loan officer guided me through THDA program I didn't know existed. Got 5% down payment assistance + great rate. Couldn't have done it without his expertise."
+  testimonial2Name = "Jennifer Thompson"
+  testimonial2Subtitle = "Memphis THDA Loan"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Knoxville veteran: My MLO specialized in VA loans; knew VA appraisal process inside-out. Smooth transaction; zero down; no issues. Best experience I could ask for."
+  testimonial3Name = "Robert Johnson"
+  testimonial3Subtitle = "Knoxville VA Loan"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Chattanooga buyer: Credit score was 655; loan officer showed me exactly how to improve to 695 before applying. Saved 0.50% on rate. That advice was priceless!"
+  testimonial4Name = "Amanda Williams"
+  testimonial4Subtitle = "Chattanooga Conventional"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500595046891-e51df1bdc82f?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Franklin buyer: Self-employed with complex taxes. My loan officer structured income documentation perfectly; underwriter approved first pass. His expertise made the difference."
+  testimonial5Name = "Michael Chen"
+  testimonial5Subtitle = "Franklin Self-Employed"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Murfreesboro refinance: Loan officer found construction-to-perm loan for addition project. Never knew this product existed. Saved me 2% vs personal loan option!"
+  testimonial6Name = "Carlos & Maria Rodriguez"
+  testimonial6Subtitle = "Murfreesboro Construction Loan"
+
+  creditScoreTitle = "Tennessee Loan Officers & Credit Optimization"
+  creditScoreImage = "https://images.unsplash.com/photo-1632813987940-a0381e420288?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Experienced Tennessee loan officers provide credit optimization guidance before formal application. Small improvements (20-40 points) unlock better rates and save thousands over loan life."
+
+  creditScoreHeading1 = "Credit Review & Strategy"
+  creditScoreText1 = "Tennessee MLOs review credit reports for errors, high utilization, and improvement opportunities. Pre-application strategy session identifies quick wins (pay down cards, dispute errors) for rate improvement."
+
+  creditScoreHeading2 = "Rate Tier Optimization"
+  creditScoreText2 = "Loan officers understand rate tiers (740+, 680-739, 620-679) and guide borrowers to next tier. Example: Improving 675→685 credit may unlock 0.25% better rate (saves $50/month on $300K)."
+
+  creditScoreHeading3 = "Timeline Coordination"
+  creditScoreText3 = "Tennessee MLOs balance credit improvement timeline vs market conditions. If rates rising, may recommend applying now; if rates stable/falling, may suggest 30-60 day credit improvement."
+
+  creditScoreCTA = "Get Credit Guidance"
+  creditScoreCTALink = "https://www.browselenders.com/search/"
+
+  employersTitle = "Tennessee Loan Officer Resources"
+  employersSubtitle = "Tools and networks for Tennessee mortgage professionals"
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Tennessee loan officers access professional networks, continuing education, and industry tools to serve borrowers effectively. NMLS licensing ensures competency and consumer protection."
+
+  employersBullet1Title = "NMLS Licensing & Education"
+  employersBullet1Text = "All Tennessee loan officers licensed through NMLS. Background checks, pre-licensing education (20 hours), testing (national + state), and annual continuing education (8 hours) required."
+
+  employersBullet2Title = "Tennessee Lender Networks"
+  employersBullet2Text = "Tennessee MLOs access wholesale lending networks, correspondent relationships, and portfolio lenders. More lender access = more program options for borrowers."
+
+  employersBullet3Title = "Professional Associations"
+  employersBullet3Text = "Tennessee Mortgage Bankers Association, National Association of Mortgage Brokers, and local chapters provide networking, advocacy, and education for Tennessee loan officers."
+
+  employersCTA = "Connect with TN MLO"
+  employersCTALink = "https://www.browselenders.com"
+
+  blogTitle = "Tennessee Loan Officer Insights"
+  blogSubtitle = "Mortgage guidance, market trends, and loan officer expertise for Tennessee borrowers."
+
+  faqTitle = "Tennessee Loan Officer FAQ"
+  faqSubtitle = "Common questions about working with Tennessee mortgage loan officers."
+
+  faq1Question = "How do I find a good loan officer in Tennessee?"
+  faq1Answer = "Search NMLS Registry for licensed Tennessee MLOs, check online reviews, ask for referrals from real estate agents or recent homebuyers. Interview 2-3 loan officers; ask about experience, lender access, specializations, and fees. Licensed MLOs have NMLS number; verify at NMLSConsumerAccess.org."
+
+  faq2Question = "What does a Tennessee loan officer do?"
+  faq2Answer = "Tennessee loan officers guide borrowers through mortgage process: pre-approval, credit optimization, rate quotes, loan selection, application, underwriting advocacy, and closing coordination. MLOs have fiduciary duty to recommend suitable loan products and disclose all costs."
+
+  faq3Question = "Do Tennessee loan officers charge fees?"
+  faq3Answer = "Compensation varies by lender type. Mortgage brokers typically charge 0.50-1.50% origination fee (paid by borrower or lender). Bank/credit union loan officers often compensated by employer (no direct borrower fee). Compare total loan costs (rate + fees) across multiple officers."
+
+  faq4Question = "How are Tennessee loan officers licensed?"
+  faq4Answer = "Tennessee MLOs licensed through NMLS (Nationwide Multistate Licensing System). Requirements: background check, credit check, 20-hour pre-licensing education, national + Tennessee state exam, surety bond. Annual 8-hour continuing education required. License renewal yearly."
+
+  faq5Question = "Can Tennessee loan officers help with credit challenges?"
+  faq5Answer = "Yes. Experienced MLOs review credit reports, identify improvement strategies (pay down utilization, dispute errors, authorized user), and advise on timing. Many loan officers recommend 30-90 day credit improvement before application to secure better rates."
+
+  faq6Question = "What's the difference between loan officer and mortgage broker?"
+  faq6Answer = "Loan officer works for single lender (bank, credit union, mortgage company); offers that lender's products only. Mortgage broker accesses multiple wholesale lenders (10-50+); compares programs across lenders. Both require NMLS licensing in Tennessee."
+
+  ctaTitle = "Ready to Connect with Tennessee Loan Officer?"
+  ctaDescription = "Find licensed Tennessee mortgage loan officers across Nashville, Memphis, Knoxville, and Chattanooga. Get competitive rates and expert guidance from experienced MLOs."
+  ctaCTA = "Find TN Loan Officer"
+  ctaCTALink = "https://www.browselenders.com/search/"

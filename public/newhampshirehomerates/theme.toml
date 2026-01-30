@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "New Hampshire mortgage rates for Portsmouth, Manchester, Nashua, and Lakes Region. Compare FHA, VA, conventional, and jumbo rates across NH lenders."
+homepage = "https://newhampshirehomerates.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://newhampshirehomerates.com"

@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "New Jersey mortgage rates for Bergen, Essex, Morris, and Hudson Counties. Compare FHA, VA, conventional, and jumbo pricing across NJ lenders."
+homepage = "https://newjerseyhomerates.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://newjerseyhomerates.com"

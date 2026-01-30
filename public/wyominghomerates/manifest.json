@@ -1,0 +1,18 @@
+{
+  "name": "Wyoming Home Rates",
+  "short_name": "WY Home Rates",
+  "description": "Wyoming mortgage rates for Cheyenne, Casper, Jackson Hole, and statewide markets. Compare FHA, VA, conventional, and jumbo rates across WY lenders.",
+  "start_url": "http://localhost:1382/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

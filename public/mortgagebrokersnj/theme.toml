@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "New Jersey mortgage brokers access wholesale and portfolio lenders for Bergen, Essex, Morris, and Hudson Counties. Compare broker vs bank pricing for jumbo, condo, and complex-income loans."
+homepage = "https://mortgagebrokersnj.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://mortgagebrokersnj.com"

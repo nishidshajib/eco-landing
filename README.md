@@ -104,19 +104,91 @@ hugo server --environment conformingmortgagerates --port 1363
 hugo server --environment nonconformingmortgagerates --port 1364
 hugo server --environment usamortgagespecialist --port 1365
 hugo server --environment usmortgagespecialist --port 1366
+
+## Florida
 hugo server --environment floridajumbolenders --port 1367
 hugo server --environment loanofficersflorida --port 1368
 hugo server --environment refifl --port 1369
 hugo server --environment floridahomerates --port 1370
 hugo server --environment helocfl --port 1371
+
+## Texas
 hugo server --environment mortgagebrokerstx --port 1372
 hugo server --environment texasloanofficers --port 1373
 hugo server --environment brokerstx --port 1374
 hugo server --environment texashomerates --port 1375
 hugo server --environment texasjumbolenders --port 1376
+
+## California
 hugo server --environment californiajumbolenders --port 1377
 hugo server --environment californialoanofficers --port 1378
 hugo server --environment californiahomerates --port 1379
+hugo server --environment hollywoodmortgagerates --port 1380
+hugo server --environment helocca --port 1381
+
+## NEW JERSEY
+hugo server --environment newjerseyjumbolenders --port 1399
+hugo server --environment newjerseyhomerates --port 1400
+hugo server --environment newjerseyloanofficers --port 1401
+hugo server --environment mortgagebrokersnj --port 1402
+hugo server --environment lendersnj --port 1403
+
+## ARIZONA
+hugo server --environment arizonajumbolenders --port 1404
+hugo server --environment arizonahomerates --port 1405
+hugo server --environment loanofficersarizona --port 1406
+hugo server --environment arizonafirsttimebuyer --port 1407
+hugo server --environment arizonahelocs --port 1408
+
+## TENNESSEE
+hugo server --environment tennesseehomerates --port 1409
+hugo server --environment tennesseeloanofficers --port 1410
+hugo server --environment mortgagebrokerstn --port 1411
+hugo server --environment tennesseejumbolenders --port 1412
+hugo server --environment lenderstn --port 1413
+
+## NORTH CAROLINA
+hugo server --environment  northcarolinahomerates --port 1414
+hugo server --environment northcarolinaloanofficers --port 1415
+hugo server --environment northcarolinamortgagebrokers --port 1416
+hugo server --environment northcarolinajumbolenders --port 1417
+hugo server --environment lendersnc --port 1418
+
+## COLORADO
+hugo server --environment coloradoloanofficers --port 1419
+hugo server --environment coloradojumbolenders --port 1420
+hugo server --environment mortgageratecolorado --port 1421
+hugo server --environment mortgagelendingcolorado --port 1422
+hugo server --environment mortgagemarketcolorado --port 1423
+
+
+## Hawaii
+hugo server --environment hawaiihomerates --port 1395
+hugo server --environment hawaiiloanofficers --port 1396
+hugo server --environment hawaiijumbolenders --port 1397
+hugo server --environment brokershi --port 1398
+
+## Connecticut
+hugo server --environment connecticuthomerates --port 1392
+hugo server --environment connecticutloanofficers --port 1393
+hugo server --environment connecticutjumbolenders --port 1394
+
+## Wayoming
+hugo server --environment wyominghomerates --port 1382
+hugo server --environment wyomingloanofficers --port 1383
+hugo server --environment wyomingjumbolenders --port 1384
+hugo server --environment lenderswy --port 1385
+hugo server --environment mortgagebrokerswy --port 1386
+
+## New Hampshire
+hugo server --environment newhampshirejumbolenders --port 1387
+hugo server --environment newhampshireloanofficers --port 1388
+hugo server --environment newhampshirehomerates --port 1389
+hugo server --environment mortgagebrokersnh --port 1390
+hugo server --environment lendersnh --port 1391
+
+
+
 
 Access sites at http://localhost:PORT
 

@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Hawaii loan officers across Oahu, Maui, Kauai, and Big Island. Compare island-specific expertise for second homes, jumbo loans, and high-cost conforming financing."
+homepage = "https://hawaiiloanofficers.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://hawaiiloanofficers.com"

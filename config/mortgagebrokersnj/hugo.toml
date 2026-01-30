@@ -1,0 +1,224 @@
+baseURL = "https://mortgagebrokersnj.com"
+languageCode = "en-us"
+title = "New Jersey Mortgage Brokers"
+theme = "heloc-blog"
+contentDir = "content/mortgagebrokersnj"
+publishDir = "public/mortgagebrokersnj"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "New Jersey mortgage brokers access wholesale and portfolio lenders for Bergen, Essex, Morris, and Hudson Counties. Compare broker vs bank pricing for jumbo, condo, and complex-income loans."
+  author = "Browse Lenders®"
+  shortName = "NJ Brokers"
+  tagline = "Wholesale Access for New Jersey Homebuyers"
+  homepage = "https://mortgagebrokersnj.com"
+
+  siteName = "New Jersey Mortgage Brokers"
+  siteDescription = "Compare New Jersey mortgage brokers for wholesale pricing, multi-lender access, and county-specific expertise. Understand jumbo options, condo financing, and portfolio lending across Bergen, Essex, Morris, and Hudson."
+  keywords = ["New Jersey mortgage brokers", "Bergen County brokers", "Essex County mortgage broker", "Morris County brokers", "Hudson County mortgage brokers", "wholesale rates NJ"]
+  serviceType = "New Jersey Mortgage Broker Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Jersey Mortgage Brokers — County & Wholesale Access"
+  heroSubtitle = "Compare broker pricing for jumbo loans, condos, and complex income. Access wholesale and portfolio lenders across Bergen, Essex, Morris, and Hudson Counties."
+  heroImage = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find NJ Brokers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why New Jersey Borrowers Use Mortgage Brokers"
+  aboutImage = "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "New Jersey Broker Loan Programs"
+  programsSubtitle = "Access conventional, jumbo, condo, and portfolio financing through wholesale broker channels."
+
+  program1Title = "Jumbo & Portfolio Financing"
+  program1Description = "NJ brokers access wholesale and portfolio lenders for Bergen estates, Essex luxury, and Morris County properties. Essential for complex income and high property-tax DTI scenarios."
+  program1Image = "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Conforming & FHA/VA Options"
+  program2Description = "Conforming limit is $806,550 in NJ. Brokers compare multiple lenders for best FHA, VA, and conventional pricing across county markets."
+  program2Image = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Condo & HOA Financing"
+  program3Description = "Hudson and Bergen condos require HOA review and specialized underwriting. Brokers match condos with warrantable-friendly lenders to avoid delays."
+  program3Image = "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Broker Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "NJ brokers provide wholesale access and county-specific expertise unavailable at single retail banks."
+
+  educationTitle = "Understanding New Jersey Mortgage Brokers"
+  educationSubtitle = "County expertise, property-tax DTI, and wholesale lender access."
+
+  edu1Title = "Wholesale vs Retail Lenders"
+  edu1Description = "Brokers access 20+ wholesale lenders, while banks offer only their own products. Multi-lender access improves pricing and approval odds across NJ counties."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Property Tax & DTI Strategy"
+  edu2Description = "NJ property taxes average 2.49%, compressing DTI. Brokers compare portfolio lenders that allow 45%–50% DTI when agency caps at 43%."
+  edu2Image = "https://images.unsplash.com/photo-1730875492072-f385713efae9?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Jumbo Threshold Knowledge"
+  edu3Description = "New Jersey conforming limit is $806,550. Brokers structure loans to avoid unnecessary jumbo pricing or match borrowers to best jumbo lenders."
+  edu3Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Condo & HOA Expertise"
+  edu4Description = "Hudson and Bergen condos require HOA review, budget analysis, and project eligibility checks. Broker experience reduces condo denial risk."
+  edu4Image = "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore NJ Broker Benefits"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "New Jersey Broker Wholesale Advantage"
+  learningSubtitle = "Why wholesale access and county expertise beat single-bank financing."
+  learningImage = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Jersey mortgage brokers combine wholesale lender access with county expertise—critical for jumbo loans, condo financing, and high property-tax DTI scenarios. Single banks offer one price; brokers compare multiple lenders for best APR and approval odds."
+  learningBullet1 = "Compare NJ brokers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for county-specific expertise."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> for jumbo pricing impact."
+  learningBullet3 = "Model tax and payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a>."
+  learningBullet4 = "Ask brokers for Loan Estimates from multiple lenders to compare wholesale vs bank pricing."
+  learningPara2 = "NJ broker multi-lender access beats single bank limitations—especially for jumbo, condo, and complex income scenarios."
+  learningPara3 = "Wholesale pricing plus county expertise creates optimal outcomes for New Jersey borrowers."
+
+  whyChooseTitle = "Why Choose New Jersey Mortgage Brokers"
+  whyChooseSubtitle = "County expertise, wholesale access, and property-tax DTI strategy."
+  whyChoosePara1 = "NJ mortgage brokers provide multi-lender access for Bergen, Essex, Morris, and Hudson borrowers. Broker expertise improves pricing, approvals, and timelines for jumbo, condo, and complex income financing."
+  whyChoosePara2 = "Education-first: understand broker wholesale pricing, property-tax DTI impact, and condo underwriting to avoid overpaying."
+
+  whyChooseBox1Title = "County Market Expertise"
+  whyChooseBox1Para = "Bergen has the most lender competition. Essex and Morris require luxury and estate expertise, while Hudson needs condo/HOA underwriting."
+  whyChooseBox1Bullet1 = "Bergen: Most lenders, best pricing"
+  whyChooseBox1Bullet2 = "Essex: Luxury and complex income focus"
+  whyChooseBox1Bullet3 = "Hudson: Condo and HOA expertise"
+
+  whyChooseBox2Title = "Property Tax & DTI Optimization"
+  whyChooseBox2Para = "NJ property taxes reduce debt capacity. Brokers compare portfolio lenders allowing 45%–50% DTI vs 43% agency cap."
+  whyChooseBox2Bullet1 = "Agency DTI cap: 43%"
+  whyChooseBox2Bullet2 = "Portfolio DTI: 45%–50%"
+  whyChooseBox2Bullet3 = "Tax impact: $1M home = ~$2,083/month taxes"
+
+  whyChooseBox3Title = "Wholesale Jumbo & Condo Access"
+  whyChooseBox3Para = "Brokers access wholesale jumbo lenders and condo-friendly programs, often 0.25%–0.50% below retail bank pricing."
+  whyChooseBox3Bullet1 = "Conforming limit: $806,550"
+  whyChooseBox3Bullet2 = "Jumbo: Wholesale lender competition"
+  whyChooseBox3Bullet3 = "Condos: HOA review experience"
+
+  whyChooseCTA = "Find NJ Brokers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "New Jersey Borrowers Who Chose Brokers"
+  testimonialsSubtitle = "Real savings from county expertise and wholesale pricing."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Bergen County broker shopped 5 lenders and beat our bank by 0.375%. Saved $210/month on a $800K loan."
+  testimonial1Name = "Michael & Sofia R."
+  testimonial1Subtitle = "Bergen County Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Essex County jumbo: broker compared portfolio lenders and saved $12,600 in fees by focusing on APR."
+  testimonial2Name = "Danielle & Marcus L."
+  testimonial2Subtitle = "Essex County Jumbo"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Morris County estate: broker secured portfolio approval after two banks declined due to acreage."
+  testimonial3Name = "Robert & Elaine K."
+  testimonial3Subtitle = "Morris County Estate"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500595046891-bff3ac4d32c7?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Hudson condo: broker handled HOA review and found lender that approved our building in 10 days."
+  testimonial4Name = "Laura & James P."
+  testimonial4Subtitle = "Hudson County Condo"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500916434205-1896ab18905c?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Property taxes crushed our DTI. Broker matched us with portfolio lender at 48% DTI with a 0.25% premium."
+  testimonial5Name = "Kevin & Maria S."
+  testimonial5Subtitle = "DTI Challenge Solution"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507519899921-48534acc8fc6?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Self-employed in Bergen. Broker structured K-1 income and secured approval in 32 days."
+  testimonial6Name = "Thomas & Lisa N."
+  testimonial6Subtitle = "Self-Employed Approval"
+
+  creditScoreTitle = "Your Credit Score Impact on NJ Broker Pricing"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Your credit tier determines which NJ brokers and lenders can offer best pricing. A 40–60 point improvement can reduce rates by 0.25%–0.75%."
+  creditScoreHeading1 = "740+ Credit Score"
+  creditScoreText1 = "Elite tier: Access best wholesale pricing and widest lender options."
+  creditScoreHeading2 = "700–739 Credit Score"
+  creditScoreText2 = "Strong tier: Competitive pricing, but jumbo options may be limited to portfolio lenders."
+  creditScoreHeading3 = "Below 700 Credit Score"
+  creditScoreText3 = "Standard tier: FHA-focused programs and portfolio lenders at higher pricing."
+  creditScoreCTA = "Check Your Credit"
+  creditScoreCTALink = "https://www.middlecreditscore.com"
+
+  employersTitle = "New Jersey Mortgage Programs for Employers"
+  employersSubtitle = "Corporate and employee financing options across NJ counties."
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Large employers in Bergen, Essex, Morris, and Hudson often negotiate preferred lender pricing and employee mortgage benefits."
+  employersBullet1Title = "Employer Rate Discounts"
+  employersBullet1Text = "0.25%–0.5% rate discounts negotiated by corporate partnerships with NJ lenders."
+  employersBullet2Title = "Program Access"
+  employersBullet2Text = "Employees get fast-track processing, reduced fees, and alternative programs not available to the public."
+  employersBullet3Title = "Relocation Assistance"
+  employersBullet3Text = "Corporate transfers to New Jersey may qualify for expanded LTV options."
+  employersCTA = "Explore Employer Programs"
+  employersCTALink = "https://www.browselenders.com/search/"
+
+  blogTitle = "New Jersey Mortgage Broker Blog"
+  blogSubtitle = "County-specific guidance on broker selection and wholesale pricing."
+
+  faqTitle = "New Jersey Mortgage Brokers FAQ"
+  faqSubtitle = "Answers to common questions about NJ mortgage brokers."
+
+  faq1Question = "What does a New Jersey mortgage broker do?"
+  faq1Answer = "A broker compares multiple wholesale lenders to find the best rate and program for your situation. Unlike banks, brokers can shop 10–20 lenders for better pricing."
+
+  faq2Question = "Do brokers cost more than banks?"
+  faq2Answer = "Not necessarily. Broker pricing is often lower because wholesale rates are more competitive. Fees should be compared using APR across multiple Loan Estimates."
+
+  faq3Question = "Can brokers help with NJ jumbo loans?"
+  faq3Answer = "Yes. Brokers specialize in jumbo loans above $806,550 and can compare portfolio lenders with more flexible underwriting."
+
+  faq4Question = "How do brokers handle NJ property taxes?"
+  faq4Answer = "Brokers calculate DTI using NJ's high property taxes (2.49% average) and match borrowers with lenders allowing 45%–50% DTI when needed."
+
+  faq5Question = "Can brokers finance NJ condos?"
+  faq5Answer = "Yes. Brokers often have condo-friendly lenders and experience with HOA review for Hudson and Bergen properties."
+
+  faq6Question = "How many brokers should I compare?"
+  faq6Answer = "Interview at least 2–3 brokers and compare Loan Estimates to evaluate pricing, fees, and lender access."
+
+  ctaTitle = "Ready to Compare New Jersey Mortgage Brokers?"
+  ctaDescription = "Find NJ brokers with county expertise and wholesale lender access."
+  ctaCTA = "Start Broker Comparison"
+  ctaCTALink = "https://www.browselenders.com/search/"

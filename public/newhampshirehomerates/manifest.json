@@ -1,0 +1,18 @@
+{
+  "name": "New Hampshire Home Rates",
+  "short_name": "NH Home Rates",
+  "description": "New Hampshire mortgage rates for Portsmouth, Manchester, Nashua, and Lakes Region. Compare FHA, VA, conventional, and jumbo rates across NH lenders.",
+  "start_url": "http://localhost:1389/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

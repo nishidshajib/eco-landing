@@ -1,0 +1,18 @@
+{
+  "name": "Lenders Wyoming",
+  "short_name": "Lenders Wyoming",
+  "description": "Wyoming mortgage lenders in Cheyenne, Casper, Jackson Hole, and rural markets. Compare banks, credit unions, and national lenders for rates and APR transparency.",
+  "start_url": "http://localhost:1385/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

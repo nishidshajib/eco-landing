@@ -1,0 +1,18 @@
+{
+  "name": "NJ Mortgage Lenders",
+  "short_name": "NJ Lenders",
+  "description": "Compare New Jersey mortgage lenders including credit unions, regional banks, and national direct lenders. Find best rates, portfolio lending, and service across Bergen, Essex, Morris, and Hudson.",
+  "start_url": "http://localhost:1403/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

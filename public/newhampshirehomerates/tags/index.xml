@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on New Hampshire Home Rates</title>
+    <link>http://localhost:1389/tags/</link>
+    <description>Recent content in Tags on New Hampshire Home Rates</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1389/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lock Timing</title>
+      <link>http://localhost:1389/tags/lock-timing/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/lock-timing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New Hampshire Market</title>
+      <link>http://localhost:1389/tags/new-hampshire-market/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/new-hampshire-market/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seasonal Rates</title>
+      <link>http://localhost:1389/tags/seasonal-rates/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/seasonal-rates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>APR</title>
+      <link>http://localhost:1389/tags/apr/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/apr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Closing Costs</title>
+      <link>http://localhost:1389/tags/closing-costs/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/closing-costs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rate Comparison</title>
+      <link>http://localhost:1389/tags/rate-comparison/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/rate-comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lakes Region</title>
+      <link>http://localhost:1389/tags/lakes-region/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/lakes-region/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manchester Rates</title>
+      <link>http://localhost:1389/tags/manchester-rates/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/manchester-rates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portsmouth Rates</title>
+      <link>http://localhost:1389/tags/portsmouth-rates/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/portsmouth-rates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statewide Pricing</title>
+      <link>http://localhost:1389/tags/statewide-pricing/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/tags/statewide-pricing/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

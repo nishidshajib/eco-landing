@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Hawaii jumbo lenders for Oahu, Maui, Kauai luxury properties. Access high-cost conforming and jumbo financing up to $5M+ for oceanfront estates and second homes."
+homepage = "https://hawaiijumbolenders.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://hawaiijumbolenders.com"

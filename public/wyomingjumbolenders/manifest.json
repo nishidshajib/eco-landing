@@ -1,0 +1,18 @@
+{
+  "name": "Wyoming Jumbo Lenders",
+  "short_name": "WY Jumbo Lenders",
+  "description": "Wyoming jumbo lenders for Jackson Hole, Teton County, and statewide luxury markets. Compare jumbo rates, portfolio lenders, and high-balance options.",
+  "start_url": "http://localhost:1384/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Hollywood Mortgage Rates",
+  "short_name": "Hollywood Mortgage Rates",
+  "description": "Hollywood mortgage rate tracker for condo, single-family, and jumbo loans. Compare FHA, conventional, and high-balance pricing across Hollywood, West Hollywood, and greater LA.",
+  "start_url": "http://localhost:1380/",
+  "display": "standalone",
+  "theme_color": "#002D62",
+  "background_color": "#F7F9FC",
+  "icons": [{
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

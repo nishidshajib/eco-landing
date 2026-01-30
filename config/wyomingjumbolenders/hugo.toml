@@ -1,0 +1,228 @@
+baseURL = "https://wyomingjumbolenders.com"
+languageCode = "en-us"
+title = "Wyoming Jumbo Lenders"
+theme = "heloc-blog"
+contentDir = "content/wyomingjumbolenders"
+publishDir = "public/wyomingjumbolenders"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Wyoming jumbo lenders for Jackson Hole, Teton County, and statewide luxury markets. Compare jumbo rates, portfolio lenders, and high-balance options."
+  author = "Browse Lenders®"
+  shortName = "WY Jumbo Lenders"
+  tagline = "Luxury & High-Balance Mortgage Specialists"
+  homepage = "https://wyomingjumbolenders.com"
+
+  siteName = "Wyoming Jumbo Lenders"
+  siteDescription = "Connect with Wyoming jumbo lenders for high-value properties. Compare jumbo rates, portfolio lending, and luxury underwriting for Jackson Hole and statewide markets."
+  keywords = ["Wyoming jumbo lenders", "Jackson Hole jumbo loans", "Teton County mortgage", "Wyoming luxury home loans", "high balance mortgages WY"]
+  serviceType = "Wyoming Jumbo Mortgage Lender Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Wyoming Jumbo Lenders — Jackson Hole & Luxury Market Experts"
+  heroSubtitle = "Compare jumbo lenders for $1M+ Wyoming homes. Specialized underwriting, asset-based approvals, and competitive rates for Jackson Hole, Teton County, and luxury properties statewide."
+  heroImage = "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare Jumbo Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Jumbo Lender Choice Matters in Wyoming"
+  aboutImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Wyoming Jumbo Loan Options"
+  programsSubtitle = "Compare standard jumbo, high-balance, and portfolio lender programs for Wyoming luxury properties."
+
+  program1Title = "Standard Jumbo Loans"
+  program1Description = "Loans above $766,550 with full documentation and strong credit requirements. Best for borrowers with 740+ scores and 20%+ down payments."
+  program1Image = "https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "High-Balance Conforming"
+  program2Description = "Select Wyoming counties qualify for high-balance limits slightly above conforming. Ideal for near-jumbo borrowers seeking lower rates than true jumbo pricing."
+  program2Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Portfolio & Asset-Based Jumbo"
+  program3Description = "Portfolio lenders approve complex income scenarios, large asset reserves, and high-net-worth borrowers. Common for Jackson Hole estates and investment properties."
+  program3Image = "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Jumbo Programs"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Jumbo pricing varies widely—specialized Wyoming lenders can beat generic national programs by 0.25%–0.50%."
+
+  educationTitle = "Wyoming Jumbo Lending Insights"
+  educationSubtitle = "Understand loan limits, underwriting, and luxury market pricing for WY jumbo loans."
+
+  edu1Title = "Wyoming Jumbo Limits"
+  edu1Description = "Conforming limit is $766,550. Most Jackson Hole properties exceed this, requiring jumbo financing. High-balance limits may apply in select counties."
+  edu1Image = "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Jumbo Underwriting Standards"
+  edu2Description = "Jumbo lenders require strong reserves, lower DTI, and higher credit scores. Asset-based underwriting can replace income documentation for high-net-worth borrowers."
+  edu2Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Jackson Hole Luxury Market"
+  edu3Description = "Teton County jumbo loans require appraisers with resort-market expertise. Specialized lenders price luxury homes more competitively than standard jumbo programs."
+  edu3Image = "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Rate vs APR in Jumbo Loans"
+  edu4Description = "Jumbo lenders charge higher fees. Compare APR to see true costs—0.25% APR difference can mean $20,000+ over five years on a $1.5M loan."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Jumbo Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Wyoming Jumbo Lender Guide"
+  learningSubtitle = "Luxury market strategies, lender comparison, and rate optimization for WY jumbo borrowers."
+  learningImage = "https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Wyoming jumbo borrowers benefit from specialized lender access. Jackson Hole luxury financing requires jumbo lenders familiar with resort market underwriting and high-value property appraisals."
+  learningBullet1 = "Compare Wyoming jumbo lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate and APR transparency."
+  learningBullet2 = "Check jumbo credit tiers at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate pricing impact."
+  learningBullet3 = "Model jumbo payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for rate and fee comparisons."
+  learningBullet4 = "Ask about asset-based underwriting if income documentation is complex (self-employed, equity comp)."
+  learningPara2 = "Compare 3+ jumbo lenders (portfolio, national jumbo, and specialized luxury lenders) before locking."
+  learningPara3 = "Jumbo pricing variance is wider than conforming—shopping lenders can save 0.25%–0.50% and $10,000–$25,000+ in fees."
+
+  whyChooseTitle = "Why Compare Wyoming Jumbo Lenders"
+  whyChooseSubtitle = "Specialized underwriting and lender pricing gaps are larger in jumbo loans."
+  whyChoosePara1 = "Wyoming jumbo loans often exceed $1M, especially in Jackson Hole. Lender pricing, underwriting flexibility, and fee structures vary widely—making lender comparison essential."
+  whyChoosePara2 = "Education-first: understand jumbo guidelines, asset-based underwriting, and luxury market appraisals to avoid overpaying on high-balance mortgages."
+
+  whyChooseBox1Title = "Pricing Variance"
+  whyChooseBox1Para = "Jumbo lenders price risk differently. Two lenders can quote rates 0.25%–0.50% apart on the same scenario, driven by reserve requirements and portfolio appetite."
+  whyChooseBox1Bullet1 = "0.25% rate gap = $250/month on $1.2M loan"
+  whyChooseBox1Bullet2 = "Fees vary $5,000–$20,000 across jumbo lenders"
+  whyChooseBox1Bullet3 = "APR reveals true cost in jumbo pricing"
+
+  whyChooseBox2Title = "Underwriting Flexibility"
+  whyChooseBox2Para = "Portfolio lenders and luxury specialists approve complex income, large asset reserves, and high-net-worth borrowers that standard jumbo programs decline."
+  whyChooseBox2Bullet1 = "Asset-based underwriting for high-net-worth clients"
+  whyChooseBox2Bullet2 = "Flexible DTI and reserve requirements"
+  whyChooseBox2Bullet3 = "Customized structures for luxury and resort properties"
+
+  whyChooseBox3Title = "Luxury Market Expertise"
+  whyChooseBox3Para = "Jackson Hole properties require appraisers and underwriters familiar with resort-market comps. Specialized jumbo lenders offer better pricing and approvals than generic national programs."
+  whyChooseBox3Bullet1 = "Teton County appraisal expertise"
+  whyChooseBox3Bullet2 = "Vacation and second-home underwriting"
+  whyChooseBox3Bullet3 = "Jumbo lenders with luxury market focus"
+
+  whyChooseCTA = "Compare WY Jumbo Lenders"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Wyoming Jumbo Borrowers Who Compared Lenders"
+  testimonialsSubtitle = "Real savings from specialized jumbo lender access."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Jackson Hole purchase at $1.4M. Specialized jumbo lender quoted 6.50% vs 7.00% from our bank—saved $5,500/year."
+  testimonial1Name = "Mark & Elena Hayes"
+  testimonial1Subtitle = "Jackson Hole Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Asset-based jumbo loan approved in 18 days. No tax returns required—rate was still 0.25% lower than standard jumbo programs."
+  testimonial2Name = "Daniel Park"
+  testimonial2Subtitle = "Jackson Hole Refinance"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Our $1.1M Cheyenne custom home was too large for conforming. Comparing three jumbo lenders saved $9,000 in fees."
+  testimonial3Name = "Laura & Ben Carter"
+  testimonial3Subtitle = "Cheyenne Jumbo"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Luxury lender used resort-market appraiser and approved our Teton County property at 6.625% vs 7.125% from a national bank."
+  testimonial4Name = "Sophia & James Lin"
+  testimonial4Subtitle = "Teton County Luxury"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "We compared APRs and found a lender with $12,000 less in fees even though the rate was the same. APR shopping saved us real money."
+  testimonial5Name = "Megan Roberts"
+  testimonial5Subtitle = "Casper Jumbo Refi"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Jumbo lender offered 75% LTV with strong reserves. Portfolio program gave us flexibility national banks wouldn't match."
+  testimonial6Name = "Chris Thornton"
+  testimonial6Subtitle = "Jackson Hole Jumbo"
+
+  calculatorsTitle = "Jumbo Mortgage Planning Tools"
+  calculatorsSubtitle = "Compare jumbo rates, analyze APR, and model luxury loan scenarios."
+
+  creditScoreTitle = "Credit Standards for Wyoming Jumbo Loans"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Jumbo lenders price heavily by credit tier. A 20–40 point score improvement can reduce rates by 0.125%–0.375%, saving $200+/month on $1M+ loans."
+  creditScoreHeading1 = "Jumbo Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 700 requires portfolio or asset-based underwriting."
+  creditScoreHeading2 = "Payment Impact Example"
+  creditScoreText2 = "$1.2M loan: 760 tier $7,740/month vs. 700 tier $8,250/month — about $510/month difference."
+  creditScoreHeading3 = "Pre-Application Strategies"
+  creditScoreText3 = "Pay down revolving balances, avoid new credit, and correct reporting errors 60–90 days before applying."
+  creditScoreCTA = "Check Your Jumbo Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Jumbo Mortgage Education"
+  employersSubtitle = "Help executives and relocating employees understand jumbo loan options and lender comparison."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Wyoming employers can offer jumbo mortgage education for executives and high-income employees relocating to Jackson Hole and other luxury markets."
+  employersBullet1Title = "Luxury market orientation"
+  employersBullet1Text = "Teach employees about jumbo limits, reserve requirements, and pricing variance across lenders."
+  employersBullet2Title = "Asset-based underwriting"
+  employersBullet2Text = "Explain asset depletion loans and reserve-based underwriting for executives with complex income."
+  employersBullet3Title = "APR comparison"
+  employersBullet3Text = "Help employees compare jumbo APRs to uncover fee differences that can exceed $10,000."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Wyoming Jumbo Insights"
+  blogSubtitle = "Luxury market strategies, lender selection, and jumbo underwriting guidance."
+
+  faqTitle = "Wyoming Jumbo Loan Questions"
+  faqSubtitle = "Common questions about jumbo limits, underwriting, and lender selection."
+
+  faq1Question = "What is Wyoming's jumbo loan limit?"
+  faq1Answer = "The conforming limit is $766,550. Loans above this are jumbo. Some counties may have high-balance limits slightly higher, but most Jackson Hole properties require true jumbo financing."
+
+  faq2Question = "Do jumbo lenders require larger down payments?"
+  faq2Answer = "Most jumbo lenders require 20%–30% down, but some portfolio programs allow 10%–15% with strong credit and reserves."
+
+  faq3Question = "How much reserve money do jumbo lenders need?"
+  faq3Answer = "Typical reserve requirements are 6–12 months of payments. Portfolio and luxury lenders may require 12–24 months for high-value properties."
+
+  faq4Question = "Are jumbo rates higher than conforming?"
+  faq4Answer = "Jumbo rates are often 0.125%–0.375% higher, but specialized lenders can match or beat conforming rates depending on credit and reserves."
+
+  faq5Question = "Can self-employed borrowers qualify for jumbo?"
+  faq5Answer = "Yes. Asset-based or bank-statement jumbo programs allow qualification without standard W-2 income. Rates may be higher but approval is possible."
+
+  faq6Question = "Why compare APR for jumbo loans?"
+  faq6Answer = "Jumbo fees are higher. A 0.25% APR difference can cost $20,000+ over five years on a $1.5M loan—APR reveals true borrowing cost."
+
+  ctaTitle = "Ready to Compare Wyoming Jumbo Lenders?"
+  ctaDescription = "Find specialized jumbo lenders with luxury market expertise and transparent pricing."
+  ctaCTA = "Find WY Jumbo Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

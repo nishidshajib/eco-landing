@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Compare Tennessee mortgage rates and home loan programs. Get competitive rates across Nashville, Memphis, Knoxville, and Chattanooga markets."
+homepage = "https://tennesseehomerates.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://tennesseehomerates.com"

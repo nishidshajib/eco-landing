@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Find Tennessee mortgage loan officers across Nashville, Memphis, Knoxville, and Chattanooga. Connect with licensed MLOs offering competitive rates and expert guidance."
+homepage = "https://tennesseeloanofficers.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://tennesseeloanofficers.com"

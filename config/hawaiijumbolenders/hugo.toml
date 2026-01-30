@@ -1,0 +1,228 @@
+baseURL = "https://hawaiijumbolenders.com"
+languageCode = "en-us"
+title = "Hawaii Jumbo Lenders"
+theme = "heloc-blog"
+contentDir = "content/hawaiijumbolenders"
+publishDir = "public/hawaiijumbolenders"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Hawaii jumbo lenders for Oahu, Maui, Kauai luxury properties. Access high-cost conforming and jumbo financing up to $5M+ for oceanfront estates and second homes."
+  author = "Browse Lenders®"
+  shortName = "HI Jumbo Lenders"
+  tagline = "Island Luxury Mortgage Financing for Premium Hawaii Properties"
+  homepage = "https://hawaiijumbolenders.com"
+
+  siteName = "Hawaii Jumbo Lenders"
+  siteDescription = "Finance your Hawaii luxury property with specialized jumbo lenders. Access high-cost conforming ($1.15M) and jumbo loans up to $5M+ for Oahu, Maui, Kauai, and Big Island oceanfront estates with expert portfolio underwriting."
+  keywords = ["Hawaii jumbo lenders", "Oahu jumbo mortgages", "Maui luxury financing", "Kauai jumbo loans", "oceanfront Hawaii mortgages", "second home jumbo loans Hawaii"]
+  serviceType = "Hawaii Jumbo Mortgage Lender Network"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Hawaii Jumbo Lenders — Island Luxury Mortgage Specialists"
+  heroSubtitle = "Access specialized jumbo financing for Hawaii oceanfront and luxury properties. Connect with lenders offering $1.15M-$5M+ loans for Oahu, Maui, Kauai second homes and primary residences."
+  heroImage = "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Jumbo Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Hawaii Jumbo Lending Expertise Matters"
+  aboutImage = "https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Hawaii Jumbo Mortgage Programs"
+  programsSubtitle = "Compare high-cost conforming, jumbo, and portfolio programs for Hawaii island luxury properties."
+
+  program1Title = "High-Cost Conforming ($1.15M Limit)"
+  program1Description = "Hawaii's high-cost conforming limit is $1,149,825—among the highest in the U.S. Access competitive rates for luxury properties below this threshold with standard underwriting."
+  program1Image = "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Island Jumbo Mortgages ($1.15M-$5M)"
+  program2Description = "Hawaii jumbo financing for oceanfront, resort, and luxury properties across all islands. Second-home expertise required for Maui, Kauai, and Big Island markets."
+  program2Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Portfolio Lending for Unique Properties"
+  program3Description = "Portfolio jumbo loans for oceanfront estates, acreage, resort properties, and complex second-home scenarios beyond agency guidelines. Essential for Hawaii's unique market."
+  program3Image = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Explore Jumbo Programs"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Hawaii jumbo lenders specialize in island markets—portfolio expertise essential for second homes, oceanfront properties, and unique luxury estates."
+
+  educationTitle = "Hawaii Jumbo Lending Intelligence"
+  educationSubtitle = "Understand high-cost limits, second-home pricing, and island-specific underwriting."
+
+  edu1Title = "High-Cost Conforming vs Jumbo"
+  edu1Description = "Hawaii's $1,149,825 conforming limit is critical. Properties below this threshold access agency pricing; above requires jumbo underwriting with different rate and qualification structures."
+  edu1Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Second-Home Jumbo Pricing"
+  edu2Description = "Second homes (common on Maui, Kauai, Big Island) carry 0.5%-0.75% rate premiums on jumbo loans. Lenders with second-home expertise minimize occupancy-based pricing."
+  edu2Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Oceanfront & Resort Property Expertise"
+  edu3Description = "Oceanfront estates require specialized appraisals and flood insurance verification. Portfolio lenders with Hawaii oceanfront experience prevent appraisal delays and valuation challenges."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Portfolio vs Agency Jumbo Programs"
+  edu4Description = "Agency jumbo follows strict guidelines. Portfolio lenders offer flexibility for complex income, non-traditional assets, and unique Hawaii property types (acreage, resort, oceanfront)."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Hawaii Jumbo Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Hawaii Jumbo Lender Selection"
+  learningSubtitle = "Find specialized jumbo lenders with island expertise and second-home pricing knowledge."
+  learningImage = "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Hawaii jumbo lending requires island-specific expertise—understanding high-cost conforming limits, second-home premiums, oceanfront appraisal challenges, and portfolio underwriting for unique properties."
+  learningBullet1 = "Find Hawaii jumbo lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with verified island expertise."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> for jumbo qualification insights."
+  learningBullet3 = "Model jumbo payments at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for Hawaii property scenarios."
+  learningBullet4 = "Compare high-cost conforming vs jumbo options to optimize loan structure and minimize second-home premiums."
+  learningPara2 = "Interview 3+ Hawaii jumbo lenders covering portfolio, mainland wholesale, and local bank options to compare island expertise and pricing."
+  learningPara3 = "Hawaii jumbo borrowers save by choosing lenders with second-home and oceanfront property experience rather than mainland generalists."
+
+  whyChooseTitle = "Why Hawaii Jumbo Lender Choice Impacts Your Deal"
+  whyChooseSubtitle = "Island expertise, second-home pricing, and oceanfront appraisal knowledge create significant cost differences."
+  whyChoosePara1 = "Hawaii's unique jumbo market demands specialized expertise—high-cost conforming limits, second-home premiums, oceanfront appraisals, and island-specific underwriting create complexity that generalist lenders struggle to navigate."
+  whyChoosePara2 = "Education-first: understand Hawaii's $1.15M conforming limit, second-home occupancy pricing, and portfolio vs agency options to secure optimal rates."
+
+  whyChooseBox1Title = "High-Cost Conforming Advantage"
+  whyChooseBox1Para = "Hawaii's $1,149,825 conforming limit enables agency pricing for properties that would be jumbo elsewhere. Experienced lenders structure loans to maximize this advantage."
+  whyChooseBox1Bullet1 = "Conforming limit: $1,149,825 vs $766,550 elsewhere"
+  whyChooseBox1Bullet2 = "Stay under limit with larger down payment if possible"
+  whyChooseBox1Bullet3 = "Agency rates 0.25%-0.50% lower than jumbo"
+
+  whyChooseBox2Title = "Second-Home Pricing Expertise"
+  whyChooseBox2Para = "Maui, Kauai, and Big Island second homes require lenders experienced in occupancy-based pricing and reserve requirements. Expertise minimizes premiums."
+  whyChooseBox2Bullet1 = "Second-home premium: +0.5% to +0.75% on jumbo"
+  whyChooseBox2Bullet2 = "Reserve requirements: 12-18 months PITI"
+  whyChooseBox2Bullet3 = "Portfolio lenders offer more flexibility"
+
+  whyChooseBox3Title = "Oceanfront Appraisal Specialists"
+  whyChooseBox3Para = "Oceanfront properties require specialized appraisers familiar with Hawaii luxury markets. Lenders with appraiser relationships prevent valuation delays and lowball appraisals."
+  whyChooseBox3Bullet1 = "Limited comparables for oceanfront estates"
+  whyChooseBox3Bullet2 = "Flood zone and insurance verification required"
+  whyChooseBox3Bullet3 = "Experienced appraisers prevent $50K-$200K+ undervaluation"
+
+  whyChooseCTA = "Find Hawaii Jumbo Specialists"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Hawaii Jumbo Borrowers Who Found Island-Expert Financing"
+  testimonialsSubtitle = "Real success from specialized jumbo lender partnerships and second-home expertise."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Maui oceanfront second home: Portfolio lender's Hawaii expertise and appraisal relationships prevented $150K undervaluation. Smooth $2.8M jumbo closing."
+  testimonial1Name = "Robert & Lisa Yamamoto"
+  testimonial1Subtitle = "Maui Oceanfront Estate"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Oahu luxury condo: Lender structured loan under $1.15M conforming limit with larger down payment. Saved 0.375% vs jumbo pricing—$208/month."
+  testimonial2Name = "Jennifer Park"
+  testimonial2Subtitle = "Honolulu High-Rise"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Kauai resort property: Broker found portfolio lender with second-home expertise. Avoided 0.625% premium quoted by mainland bank—$1,040/month savings."
+  testimonial3Name = "Michael Chen"
+  testimonial3Subtitle = "Kauai Second Home"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1533611432671-cb966fcb6cb3?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Big Island acreage estate: Portfolio lender's agricultural property expertise and flexible underwriting made $1.9M jumbo financing seamless. Best rate, best terms."
+  testimonial4Name = "Sarah & David Mitchell"
+  testimonial4Subtitle = "Big Island Estate"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1507528148343-53d440c60888?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Wailea luxury home: Jumbo lender familiar with Maui resort markets expedited appraisal and underwriting. Closed 10 days early at competitive rate."
+  testimonial5Name = "Thomas Rodriguez"
+  testimonial5Subtitle = "Maui Wailea Purchase"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Jumbo refinance on Oahu: Broker shopped 5 jumbo lenders and found 0.50% better rate than our original bank. $520/month savings on $2.2M balance."
+  testimonial6Name = "Amanda Tanaka"
+  testimonial6Subtitle = "Oahu Jumbo Refi"
+
+  calculatorsTitle = "Hawaii Jumbo Financing Tools"
+  calculatorsSubtitle = "Model payments, compare rates, and plan jumbo qualification strategy for island properties."
+
+  creditScoreTitle = "Credit Optimization for Hawaii Jumbo Loans"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score significantly impacts Hawaii jumbo pricing, especially for second homes. Jumbo lenders prefer 740+ scores; second-home jumbo loans often require 720+ for competitive pricing."
+  creditScoreHeading1 = "Hawaii Jumbo Credit Tiers"
+  creditScoreText1 = "760+ gets best rates; 740-759 adds ~0.125%; 720-739 adds ~0.25%; 700-719 adds ~0.50%; second homes require 720+ for optimal pricing; portfolio lenders may accept 680+ with strong assets."
+  creditScoreHeading2 = "Second-Home Impact Example"
+  creditScoreText2 = "$1.8M Maui second home: 760 tier $11,350/month vs. 700 tier $11,750/month—about $400/month payment difference from credit scoring alone."
+  creditScoreHeading3 = "Pre-Application Strategy"
+  creditScoreText3 = "Pay revolving credit under 10% utilization, dispute errors, avoid new inquiries 90 days before Hawaii jumbo application. 20-40 point improvement can save $200-$400/month."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Hawaii Jumbo Mortgage Guidance"
+  employersSubtitle = "Support executives relocating to Hawaii with jumbo lending education and specialist referrals."
+  employersImage = "https://images.unsplash.com/photo-1603202662747-00e33e7d1468?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Hawaii employers can offer jumbo mortgage education and island-specialist referrals for executives purchasing luxury or oceanfront properties across Oahu, Maui, Kauai, and Big Island."
+  employersBullet1Title = "Island jumbo expertise"
+  employersBullet1Text = "Educate executives about high-cost conforming limits, second-home pricing, and portfolio vs agency jumbo programs for Hawaii properties."
+  employersBullet2Title = "Oceanfront & resort property guidance"
+  employersBullet2Text = "Explain appraisal challenges, flood insurance requirements, and lender selection for Hawaii's unique luxury property market."
+  employersBullet3Title = "NMLS verification"
+  employersBullet3Text = "Help employees verify credentials and select NMLS-licensed specialists with Hawaii jumbo and second-home expertise."
+
+  employersCTA = "Partner for Hawaii Relocation"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Hawaii Jumbo Lending Insights"
+  blogSubtitle = "Qualification, island markets, second-home pricing, and oceanfront property expertise."
+
+  faqTitle = "Hawaii Jumbo Lending Questions"
+  faqSubtitle = "Common questions about high-cost conforming limits, second-home pricing, and island financing."
+
+  faq1Question = "What is Hawaii's conforming loan limit for jumbo loans?"
+  faq1Answer = "Hawaii's high-cost conforming limit is $1,149,825 (2025-2026). Loans above this threshold are jumbo loans requiring specialized underwriting and pricing. This is significantly higher than the $766,550 limit in most states."
+
+  faq2Question = "How much higher are rates for second-home jumbo loans in Hawaii?"
+  faq2Answer = "Second-home jumbo loans (common on Maui, Kauai, Big Island) carry 0.50%-0.75% rate premiums compared to primary residence jumbo loans. Portfolio lenders with second-home expertise can minimize these premiums."
+
+  faq3Question = "What credit score is needed for Hawaii jumbo loans?"
+  faq3Answer = "Hawaii jumbo lenders prefer 740+ credit scores for best pricing. Second-home jumbo loans often require 720+ minimum. Portfolio lenders may accept 700+ with strong compensating factors (high assets, low DTI, large down payment)."
+
+  faq4Question = "Why do oceanfront properties need specialized jumbo lenders?"
+  faq4Answer = "Oceanfront Hawaii properties require specialized appraisers familiar with luxury markets, flood zone verification, and oceanfront valuation expertise. Lenders with appraiser relationships prevent $50K-$200K+ undervaluations and closing delays."
+
+  faq5Question = "Can I structure my loan to stay under the $1.15M conforming limit?"
+  faq5Answer = "Yes—increasing down payment to keep loan amount under $1,149,825 enables agency conforming pricing (0.25%-0.50% lower than jumbo). Hawaii jumbo lenders analyze whether larger down payment saves money vs jumbo financing."
+
+  faq6Question = "How do I compare Hawaii jumbo lenders across islands?"
+  faq6Answer = "Request Loan Estimates from portfolio lenders, mainland wholesale brokers, and local Hawaii banks. Compare rates, fees, APR, second-home expertise, and island-specific appraisal knowledge for your property type."
+
+  ctaTitle = "Ready to Explore Hawaii Jumbo Financing?"
+  ctaDescription = "Connect with island-specialized jumbo lenders and portfolio experts for Hawaii luxury property financing across Oahu, Maui, Kauai, and Big Island."
+  ctaCTA = "Find Hawaii Jumbo Specialists"
+  ctaCTALink = "https://www.browselenders.com/search/"

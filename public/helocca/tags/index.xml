@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on HELOC CA</title>
+    <link>http://localhost:1381/tags/</link>
+    <description>Recent content in Tags on HELOC CA</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1381/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>California Equity</title>
+      <link>http://localhost:1381/tags/california-equity/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/california-equity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CLTV</title>
+      <link>http://localhost:1381/tags/cltv/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/cltv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HELOC CA</title>
+      <link>http://localhost:1381/tags/heloc-ca/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/heloc-ca/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home Equity Line</title>
+      <link>http://localhost:1381/tags/home-equity-line/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/home-equity-line/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Draw Period</title>
+      <link>http://localhost:1381/tags/draw-period/</link>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/draw-period/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Payment Planning</title>
+      <link>http://localhost:1381/tags/payment-planning/</link>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/payment-planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Repayment</title>
+      <link>http://localhost:1381/tags/repayment/</link>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/repayment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>California HELOC</title>
+      <link>http://localhost:1381/tags/california-heloc/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/california-heloc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Equity Lines</title>
+      <link>http://localhost:1381/tags/equity-lines/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/equity-lines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HELOC Margins</title>
+      <link>http://localhost:1381/tags/heloc-margins/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/heloc-margins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prime Rate</title>
+      <link>http://localhost:1381/tags/prime-rate/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1381/tags/prime-rate/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

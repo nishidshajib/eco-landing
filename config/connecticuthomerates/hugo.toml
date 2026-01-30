@@ -1,0 +1,228 @@
+baseURL = "https://connecticuthomerates.com"
+languageCode = "en-us"
+title = "Connecticut Home Rates"
+theme = "heloc-blog"
+contentDir = "content/connecticuthomerates"
+publishDir = "public/connecticuthomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Connecticut mortgage rates for Hartford, New Haven, Stamford, and statewide markets. Compare FHA, VA, conventional, and jumbo pricing across CT lenders."
+  author = "Browse Lenders®"
+  shortName = "CT Home Rates"
+  tagline = "Daily Mortgage Rates for Connecticut Homebuyers"
+  homepage = "https://connecticuthomerates.com"
+
+  siteName = "Connecticut Home Rates"
+  siteDescription = "Track Connecticut mortgage rates by region and property type. Compare APR across Hartford, New Haven, Stamford, and Fairfield County luxury markets for transparent rate intelligence."
+  keywords = ["Connecticut mortgage rates", "CT home rates", "Hartford mortgage rates", "New Haven rates", "Stamford mortgage rates", "Connecticut mortgage APR"]
+  serviceType = "Connecticut Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Connecticut Home Rates — Compare Lenders Across Connecticut Markets"
+  heroSubtitle = "Track mortgage rates for Hartford, New Haven, Stamford, and Fairfield County. Compare FHA, conventional, VA, and jumbo pricing with regional insights."
+  heroImage = "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare Connecticut Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Connecticut Rates Vary by Region"
+  aboutImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Connecticut Mortgage Rate Tiers"
+  programsSubtitle = "Compare pricing for FHA, conventional, VA, and jumbo programs across Connecticut markets."
+
+  program1Title = "Conventional & FHA Rates"
+  program1Description = "Standard conforming rates for Connecticut homes under $766,550. FHA offers 3.5% down options for first-time buyers in Hartford and New Haven."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA Loan Rates in Connecticut"
+  program2Description = "Zero-down VA financing for eligible veterans and active-duty borrowers. Competitive VA pricing across CT lenders."
+  program2Image = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Rates for Fairfield County"
+  program3Description = "Jumbo financing above $766,550 for Stamford, Greenwich, and Fairfield County luxury properties. Specialized jumbo lenders offer best pricing."
+  program3Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Connecticut Rate Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Connecticut rates vary by lender competition and property values—Fairfield County pricing differs from Hartford and New Haven markets."
+
+  educationTitle = "Connecticut Rate Intelligence"
+  educationSubtitle = "Understand regional pricing, credit tiers, and luxury market dynamics."
+
+  edu1Title = "Regional Rate Differences"
+  edu1Description = "Hartford and New Haven markets show stronger lender competition than some coastal luxury areas. Fairfield County jumbo pricing follows different lender patterns."
+  edu1Image = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Jumbo Market Dynamics"
+  edu2Description = "Stamford, Greenwich, and Westport often require jumbo loans. Specialized lenders offer better pricing and higher loan limits than standard programs."
+  edu2Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Credit Tier Impact"
+  edu3Description = "Connecticut lenders price heavily by credit tier. A 40–60 point score improvement can save 0.25%–0.75% on rates and APR."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "APR vs Rate in CT"
+  edu4Description = "Connecticut lender fees vary. Compare APR to see true borrowing costs—especially for jumbo loans and refinance scenarios."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Connecticut Rate Tracker"
+  learningSubtitle = "Regional pricing insights and lock timing for CT homebuyers."
+  learningImage = "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Connecticut mortgage rates vary by region and property type. Fairfield County luxury pricing differs from Hartford and New Haven conventional markets."
+  learningBullet1 = "Compare CT lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate and APR transparency across regions."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate Connecticut rate impact."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for jumbo vs conventional comparisons."
+  learningBullet4 = "Ask lenders about jumbo expertise if buying in Fairfield County or coastal luxury markets."
+  learningPara2 = "Compare APR across 3–5 Connecticut lenders before locking to identify true borrowing cost."
+  learningPara3 = "Connecticut buyers save by comparing local banks, brokers with national access, and specialized jumbo lenders for Fairfield County markets."
+
+  whyChooseTitle = "Why Compare Connecticut Mortgage Rates"
+  whyChooseSubtitle = "Regional differences and lender specialization create pricing gaps."
+  whyChoosePara1 = "Connecticut has diverse markets—from Hartford and New Haven to Fairfield County luxury. Lender competition and property values create measurable rate differences."
+  whyChoosePara2 = "Education-first: understand regional rate patterns, credit tiers, and jumbo pricing to avoid overpaying on Connecticut mortgages."
+
+  whyChooseBox1Title = "Regional Lender Competition"
+  whyChooseBox1Para = "Hartford and New Haven have strong lender competition. Fairfield County relies more on jumbo specialists and private banks."
+  whyChooseBox1Bullet1 = "Hartford/New Haven: Strong competition"
+  whyChooseBox1Bullet2 = "Fairfield County: Jumbo-focused lenders"
+  whyChooseBox1Bullet3 = "Coastal towns: Luxury pricing patterns"
+
+  whyChooseBox2Title = "Property Value Differences"
+  whyChooseBox2Para = "Connecticut property values vary widely. Jumbo lending is common in Fairfield County while standard conforming loans dominate in central CT."
+  whyChooseBox2Bullet1 = "Conforming: Hartford/New Haven"
+  whyChooseBox2Bullet2 = "Jumbo: Fairfield County"
+  whyChooseBox2Bullet3 = "Portfolio: Unique properties"
+
+  whyChooseBox3Title = "APR Transparency"
+  whyChooseBox3Para = "Lender fees vary across CT markets. Compare APR to see true cost—especially on jumbo loans with larger fee structures."
+  whyChooseBox3Bullet1 = "APR includes origination and points"
+  whyChooseBox3Bullet2 = "0.125% APR gap = $3,000+ over 5 years on $600K"
+  whyChooseBox3Bullet3 = "Request Loan Estimates from 3+ lenders"
+
+  whyChooseCTA = "Compare Connecticut Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Connecticut Borrowers Who Compared Rates"
+  testimonialsSubtitle = "Real savings from regional comparisons and lender competition."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Compared three Hartford lenders. Broker beat our bank by 0.25% and saved $110/month on our $450K loan."
+  testimonial1Name = "Lauren & Mike Ellis"
+  testimonial1Subtitle = "Hartford Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "New Haven FHA loan with 3.5% down. APR comparison saved us $3,800 in fees versus our first quote."
+  testimonial2Name = "Andre Lewis"
+  testimonial2Subtitle = "New Haven FHA"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Stamford jumbo lender quoted 6.50% vs 7.00% from a national bank. Saved $7,200/year on our $1.6M loan."
+  testimonial3Name = "Priya & Daniel Shah"
+  testimonial3Subtitle = "Stamford Jumbo"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Greenwich lender specialized in luxury pricing and cut fees by $12,000. APR comparison made the difference."
+  testimonial4Name = "Emily Carter"
+  testimonial4Subtitle = "Greenwich Luxury"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Credit tier improvement from 700 to 740 cut our rate by 0.25%. Saved $85/month on our $380K loan."
+  testimonial5Name = "Carlos Rivera"
+  testimonial5Subtitle = "New Haven Purchase"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "We compared APRs across four lenders. Chose the lowest APR and saved $5,200 in fees."
+  testimonial6Name = "Megan Turner"
+  testimonial6Subtitle = "Bridgeport Refinance"
+
+  calculatorsTitle = "Connecticut Rate Planning Tools"
+  calculatorsSubtitle = "Model payments, compare APR, and plan lock timing."
+
+  creditScoreTitle = "Credit Score Impact on CT Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers significantly impact Connecticut mortgage pricing. A 40–60 point improvement can save 0.25%–0.75% in rate."
+  creditScoreHeading1 = "CT Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 680 often requires FHA."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$500K loan: 760 tier $3,450/month vs. 700 tier $3,650/month — about $200/month difference."
+  creditScoreHeading3 = "Pre-Application Improvements"
+  creditScoreText3 = "Pay down cards under 10% utilization, dispute errors, and avoid new inquiries 60–90 days before applying."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Connecticut Mortgage Rate Education"
+  employersSubtitle = "Help employees understand CT markets, jumbo pricing, and APR comparison."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Connecticut employers can offer mortgage education covering regional pricing, jumbo thresholds, and APR transparency for relocating employees."
+  employersBullet1Title = "Regional pricing education"
+  employersBullet1Text = "Teach employees about Hartford/New Haven vs Fairfield County rate differences."
+  employersBullet2Title = "Jumbo loan guidance"
+  employersBullet2Text = "Explain jumbo thresholds and luxury lender pricing in Fairfield County."
+  employersBullet3Title = "APR comparison"
+  employersBullet3Text = "Show how APR reveals true cost differences across lenders."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Connecticut Rate Insights"
+  blogSubtitle = "Regional trends, lender comparison, and CT rate guidance."
+
+  faqTitle = "Connecticut Mortgage Rate Questions"
+  faqSubtitle = "Common questions about CT rates, regional pricing, and jumbo loans."
+
+  faq1Question = "Why do Connecticut rates vary by region?"
+  faq1Answer = "Lender competition differs—Hartford and New Haven have more lenders than some coastal luxury towns. Fairfield County jumbo pricing follows different lender patterns."
+
+  faq2Question = "Are Fairfield County rates higher?"
+  faq2Answer = "Jumbo loans are common in Fairfield County and may have slightly higher rates. Specialized jumbo lenders can offer competitive pricing."
+
+  faq3Question = "Do CT lenders charge higher fees?"
+  faq3Answer = "Fees vary widely by lender. Compare APR to see true borrowing cost, especially for jumbo loans."
+
+  faq4Question = "Should I lock now or wait?"
+  faq4Answer = "Lock when you're comfortable with the rate and have a closing timeline. Connecticut follows national rate trends with local competition adjustments."
+
+  faq5Question = "Why does APR matter more than rate?"
+  faq5Answer = "APR includes lender fees and points. Two identical rates can have different APRs based on origination costs."
+
+  faq6Question = "Can credit improvement lower my CT rate?"
+  faq6Answer = "Yes. A 40–60 point score improvement can save 0.25%–0.75% on rates and APR."
+
+  ctaTitle = "Ready to Compare Connecticut Mortgage Rates?"
+  ctaDescription = "Find competitive lenders across Connecticut with transparent pricing and regional expertise."
+  ctaCTA = "Find Connecticut Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

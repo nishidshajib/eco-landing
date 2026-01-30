@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "New Jersey loan officers across Bergen, Essex, Morris, and Hudson Counties. Compare county-specific expertise for jumbo loans, condos, and complex income financing."
+homepage = "https://newjerseyloanofficers.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://newjerseyloanofficers.com"

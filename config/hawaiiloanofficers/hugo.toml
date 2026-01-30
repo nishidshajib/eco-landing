@@ -1,0 +1,232 @@
+baseURL = "https://hawaiiloanofficers.com"
+languageCode = "en-us"
+title = "Hawaii Loan Officers"
+theme = "heloc-blog"
+contentDir = "content/hawaiiloanofficers"
+publishDir = "public/hawaiiloanofficers"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Hawaii loan officers across Oahu, Maui, Kauai, and Big Island. Compare island-specific expertise for second homes, jumbo loans, and high-cost conforming financing."
+  author = "Browse Lenders®"
+  shortName = "HI Loan Officers"
+  tagline = "Find Licensed Hawaii Mortgage Professionals"
+  homepage = "https://hawaiiloanofficers.com"
+
+  siteName = "Hawaii Loan Officers"
+  siteDescription = "Connect with Hawaii NMLS-licensed loan officers offering island-specific expertise, high-cost conforming knowledge, and jumbo loan specialization across Oahu, Maui, Kauai, and Big Island."
+  keywords = ["Hawaii loan officers", "Oahu mortgage brokers", "Maui loan officers", "Kauai MLOs", "Big Island mortgage professionals", "NMLS licensed Hawaii"]
+  serviceType = "Hawaii Mortgage Loan Officer Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Hawaii Loan Officers — Island-Specialized Mortgage Professionals"
+  heroSubtitle = "Find Hawaii loan officers with island-market expertise, high-cost conforming knowledge, and second-home financing specialization. Compare options across Oahu, Maui, Kauai, and Big Island."
+  heroImage = "https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find HI Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Hawaii Loan Officer Expertise Matters"
+  aboutImage = "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Hawaii Loan Officer Types"
+  programsSubtitle = "Compare mortgage brokers, bank loan officers, and island-specialized MLOs."
+
+  program1Title = "Island-Specialized Mortgage Brokers"
+  program1Description = "Hawaii brokers access mainland wholesale lenders and local portfolio programs. Essential for second homes, jumbo loans, and unique properties across Maui, Kauai, and Big Island."
+  program1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Local Bank Loan Officers"
+  program2Description = "Hawaii bank employees offer relationship-based lending with local underwriting knowledge. Strong for primary residences and high-cost conforming loans on Oahu."
+  program2Image = "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo & Portfolio Specialists"
+  program3Description = "Loan officers specializing in jumbo financing and unique property types (oceanfront, acreage, resort). Critical for luxury markets across all islands."
+  program3Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare HI Loan Officers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Hawaii broker loan officers deliver island-market expertise and access to specialized lenders for second homes, jumbo loans, and unique properties."
+
+  educationTitle = "Hawaii Loan Officer Expertise"
+  educationSubtitle = "Understand island markets, high-cost conforming limits, and second-home pricing for Hawaii financing."
+
+  edu1Title = "Island Market Specialization"
+  edu1Description = "Oahu offers the most lender competition and standard pricing. Maui, Kauai, and Big Island require loan officers with portfolio lender relationships and second-home expertise."
+  edu1Image = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "High-Cost Conforming Knowledge"
+  edu2Description = "Hawaii's 2025-2026 conforming limit is $1,149,825. Loan officers must understand high-cost conforming vs jumbo pricing to optimize loan structure."
+  edu2Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Second-Home Pricing Expertise"
+  edu3Description = "Second homes and investment properties (common across all islands) carry 0.375%–0.750% rate premiums. Loan officers must navigate occupancy-based pricing."
+  edu3Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Unique Property Underwriting"
+  edu4Description = "Oceanfront, acreage, and resort properties require specialized appraisals and portfolio underwriting. Experienced loan officers prevent appraisal and closing delays."
+  edu4Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Hawaii Loan Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Working with Hawaii Loan Officers"
+  learningSubtitle = "Find NMLS-licensed professionals with island-market expertise and transparent pricing."
+  learningImage = "https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Hawaii loan officers vary in island specialization, lender access, and property type expertise. Broker loan officers with mainland wholesale relationships and local portfolio connections deliver competitive pricing for second homes and jumbo loans."
+  learningBullet1 = "Find Hawaii loan officers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with verified NMLS credentials."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> before island shopping."
+  learningBullet3 = "Model second-home payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a>."
+  learningBullet4 = "Verify NMLS licensing at NMLSConsumerAccess.org before sharing financial information."
+  learningPara2 = "Interview 3+ Hawaii loan officers with island-specific expertise to compare pricing and property type knowledge."
+  learningPara3 = "Hawaii borrowers save by choosing loan officers with second-home and jumbo loan experience rather than generalists."
+
+  whyChooseTitle = "Why Hawaii Loan Officer Choice Affects Your Rate"
+  whyChooseSubtitle = "Island expertise, lender relationships, and property specialization create cost differences."
+  whyChoosePara1 = "Hawaii loan officers differ in island market knowledge, lender access, and property type expertise. Second-home and jumbo loan specialists prevent pricing surprises and appraisal delays."
+  whyChoosePara2 = "Education-first: understand island pricing dynamics, high-cost conforming limits, and occupancy-based rate adjustments to avoid overpaying."
+
+  whyChooseBox1Title = "Island Market Expertise"
+  whyChooseBox1Para = "Oahu has the most lender competition and standard pricing. Maui, Kauai, and Big Island require loan officers with portfolio lender relationships."
+  whyChooseBox1Bullet1 = "Oahu: Most lenders, best pricing for primary residences"
+  whyChooseBox1Bullet2 = "Maui/Kauai: Portfolio lenders for second homes"
+  whyChooseBox1Bullet3 = "Big Island: Agricultural and unique property expertise"
+
+  whyChooseBox2Title = "Second-Home Pricing Knowledge"
+  whyChooseBox2Para = "Second homes and investment properties carry 0.375%–0.750% rate premiums. Experienced loan officers structure loans to minimize occupancy-based pricing."
+  whyChooseBox2Bullet1 = "Primary residence: Standard pricing"
+  whyChooseBox2Bullet2 = "Second home: +0.375%–0.750% rate premium"
+  whyChooseBox2Bullet3 = "Investment property: Highest pricing tier"
+
+  whyChooseBox3Title = "Jumbo & Portfolio Lender Access"
+  whyChooseBox3Para = "High property values make jumbo loans common. Loan officers with portfolio lender relationships access competitive pricing for luxury and unique properties."
+  whyChooseBox3Bullet1 = "Conforming limit: $1,149,825 (2025-2026)"
+  whyChooseBox3Bullet2 = "Jumbo: Portfolio and wholesale lenders"
+  whyChooseBox3Bullet3 = "Unique properties: Specialized underwriting required"
+
+  whyChooseCTA = "Find Island-Specialized Loan Officers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Hawaii Borrowers Who Chose Island-Specialized Loan Officers"
+  testimonialsSubtitle = "Real savings from second-home expertise and jumbo loan knowledge."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Maui broker found a portfolio lender for our oceanfront second home. Avoided 0.5% premium quoted by mainland bank."
+  testimonial1Name = "Jennifer & Mark Tanaka"
+  testimonial1Subtitle = "Maui Oceanfront Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Oahu loan officer explained high-cost conforming limits and saved us from unnecessary jumbo pricing. $127/month difference."
+  testimonial2Name = "David Chen"
+  testimonial2Subtitle = "Oahu Primary Residence"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Kauai broker navigated appraisal challenges on our acreage property. Local expertise prevented 3-week delay."
+  testimonial3Name = "Sarah Mitchell"
+  testimonial3Subtitle = "Kauai Acreage Purchase"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Big Island loan officer compared six lenders for our vacation rental. Found 0.25% lower rate with better terms."
+  testimonial4Name = "Robert & Lisa Wong"
+  testimonial4Subtitle = "Big Island Investment Property"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Honolulu broker matched us with a jumbo lender specializing in high-rise condos. Smooth process, competitive rate."
+  testimonial5Name = "Amanda Park"
+  testimonial5Subtitle = "Honolulu Luxury Condo"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Maui loan officer explained second-home pricing upfront. No surprises, competitive APR, and island expertise we needed."
+  testimonial6Name = "Michael Rodriguez"
+  testimonial6Subtitle = "Maui Second Home"
+
+  creditScoreTitle = "Hawaii Loan Qualification by Island"
+  creditScoreImage = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Hawaii loan qualification follows standard credit tiers, but island location, occupancy type, and property characteristics affect lender appetite and pricing. Check your credit tier before interviewing loan officers:"
+
+  creditScoreHeading1 = "Oahu Markets (Primary Residence)"
+  creditScoreText1 = "Strong lender competition makes Oahu the most accessible island for standard financing. Credit scores 620+ qualify for FHA; 680+ for conventional with competitive pricing. Jumbo loans require 700+ for best rates."
+
+  creditScoreHeading2 = "Neighbor Islands (Second Homes)"
+  creditScoreText2 = "Maui, Kauai, and Big Island second homes typically require 680+ for competitive pricing. Jumbo second homes require 720+ and larger down payments (20%–30%). Portfolio lenders may accept 660+ with premiums."
+
+  creditScoreHeading3 = "Unique Properties (All Islands)"
+  creditScoreText3 = "Oceanfront, acreage, and resort properties require 700+ credit scores and experienced loan officers with appraisal and underwriting expertise. Portfolio lenders often required for non-conforming property types."
+
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "Hawaii Employer & Income Verification"
+  employersSubtitle = "Understand income documentation for island-based employment and remote workers."
+  employersImage = "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Hawaii loan officers must verify income from local employers, military pay, and increasingly, remote mainland workers. Income documentation requirements vary by employment type:"
+
+  employersBullet1Title = "Hawaii-Based Employers"
+  employersBullet1Text = "Standard W-2 documentation with 2-year employment history. Tourism, hospitality, and military are common sectors. Self-employed borrowers need 2 years tax returns."
+
+  employersBullet2Title = "Remote Mainland Workers"
+  employersBullet2Text = "Increasing number of remote workers relocating to Hawaii. Lenders require verification of remote work authorization and income stability. Same documentation requirements as local employment."
+
+  employersBullet3Title = "Military & Federal Employees"
+  employersBullet3Text = "Hawaii has significant military presence (Pearl Harbor, Schofield Barracks). VA loans common. LES statements and deployment documentation required for qualification."
+  
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Hawaii Loan Officer Insights"
+  blogSubtitle = "Island-specific mortgage guidance and market updates."
+
+  faqTitle = "Hawaii Loan Officer FAQs"
+  faqSubtitle = "Common questions about island financing, second-home pricing, and NMLS licensing."
+
+  faq1Question = "Do Hawaii loan officers charge higher fees than mainland lenders?"
+  faq1Answer = "Hawaii loan officer fees are comparable to mainland rates, but some lenders add island-specific charges for appraisals and unique property types. Compare Loan Estimates from 3+ loan officers to evaluate total costs. Broker loan officers often deliver lower APR through wholesale lender access."
+
+  faq2Question = "Which island has the best mortgage rates in Hawaii?"
+  faq2Answer = "Oahu typically offers the most competitive rates due to lender competition and higher transaction volume. Maui, Kauai, and Big Island rates may be 0.125%–0.25% higher for second homes and unique properties. Work with island-specialized loan officers for best pricing."
+
+  faq3Question = "How do second-home rates differ from primary residence in Hawaii?"
+  faq3Answer = "Second homes in Hawaii carry 0.375%–0.750% rate premiums depending on property type, island, and lender. Jumbo second homes require larger down payments (20%–30%) and higher credit scores (720+). Loan officers experienced in second-home pricing help minimize premiums."
+
+  faq4Question = "What credit score do I need for a Hawaii jumbo loan?"
+  faq4Answer = "Jumbo loans in Hawaii typically require 700+ credit scores for competitive pricing, with 720+ preferred for second homes and luxury properties. Portfolio lenders may accept 680+ with higher rates and down payments. Check your middle credit score at MiddleCreditScore.com before applying."
+
+  faq5Question = "Can I use a mainland loan officer for Hawaii properties?"
+  faq5Answer = "Mainland loan officers can originate Hawaii loans if NMLS-licensed in Hawaii, but island-specialized loan officers provide better property expertise, appraisal knowledge, and lender relationships. Local expertise prevents closing delays and pricing surprises."
+
+  faq6Question = "How do I verify a Hawaii loan officer's NMLS license?"
+  faq6Answer = "Visit NMLSConsumerAccess.org and search by loan officer name or NMLS number. Verify active Hawaii license, employment history, and any regulatory actions. All Hawaii loan officers must maintain NMLS licensing and state registration."
+
+  ctaTitle = "Find Your Hawaii Loan Officer"
+  ctaDescription = "Compare NMLS-licensed Hawaii loan officers with island expertise, second-home specialization, and competitive pricing. Browse island-specialized mortgage professionals today."
+  ctaCTA = "Browse Hawaii Loan Officers"
+  ctaCTALink = "https://www.browselenders.com/search/"

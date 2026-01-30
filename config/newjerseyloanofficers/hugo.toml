@@ -1,0 +1,224 @@
+baseURL = "https://newjerseyloanofficers.com"
+languageCode = "en-us"
+title = "New Jersey Loan Officers"
+theme = "heloc-blog"
+contentDir = "content/newjerseyloanofficers"
+publishDir = "public/newjerseyloanofficers"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "New Jersey loan officers across Bergen, Essex, Morris, and Hudson Counties. Compare county-specific expertise for jumbo loans, condos, and complex income financing."
+  author = "Browse Lenders®"
+  shortName = "NJ Loan Officers"
+  tagline = "Find Licensed New Jersey Mortgage Professionals"
+  homepage = "https://newjerseyloanofficers.com"
+
+  siteName = "New Jersey Loan Officers"
+  siteDescription = "Connect with New Jersey NMLS-licensed loan officers offering county expertise, jumbo knowledge, and property-tax-aware underwriting across Bergen, Essex, Morris, and Hudson."
+  keywords = ["New Jersey loan officers", "Bergen County mortgage broker", "Essex County loan officer", "Morris County mortgage professional", "Hudson County MLO", "NMLS licensed NJ"]
+  serviceType = "New Jersey Mortgage Loan Officer Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Jersey Loan Officers — County-Specialized Mortgage Professionals"
+  heroSubtitle = "Find NJ loan officers with county-market expertise, jumbo and condo financing knowledge, and property-tax-aware underwriting. Compare options across Bergen, Essex, Morris, and Hudson."
+  heroImage = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find NJ Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why New Jersey Loan Officer Expertise Matters"
+  aboutImage = "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "New Jersey Loan Officer Types"
+  programsSubtitle = "Compare mortgage brokers, bank loan officers, and county-specialized MLOs."
+
+  program1Title = "County-Specialized Mortgage Brokers"
+  program1Description = "NJ brokers access wholesale and portfolio lenders for Bergen and Essex jumbo, Morris estates, and Hudson condos. Ideal for complex income and unique properties."
+  program1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Local Bank Loan Officers"
+  program2Description = "New Jersey bank loan officers offer relationship-based lending with county underwriting knowledge. Strong for primary residences and conforming loans under $806,550."
+  program2Image = "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo & Portfolio Specialists"
+  program3Description = "Loan officers specializing in jumbo financing, condos, and complex income. Critical for Bergen estates, Essex luxury, and Morris County properties."
+  program3Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare NJ Loan Officers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "NJ loan officers with county-market expertise and portfolio access deliver competitive pricing for jumbo loans, condos, and complex income scenarios."
+
+  educationTitle = "New Jersey Loan Officer Expertise"
+  educationSubtitle = "Understand county markets, conforming limits, and property-tax-driven DTI dynamics."
+
+  edu1Title = "County Market Specialization"
+  edu1Description = "Bergen has the most lender competition, Essex requires luxury expertise, Morris focuses on estate properties, and Hudson needs condo/HOA experience."
+  edu1Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Conforming vs Jumbo Knowledge"
+  edu2Description = "New Jersey conforming limit is $806,550. Loan officers must navigate conforming, jumbo, and portfolio pricing to optimize total cost."
+  edu2Image = "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Property Tax & DTI Expertise"
+  edu3Description = "NJ property taxes average 2.49%, compressing DTI. Loan officers with portfolio lender access can approve 45%–50% DTI when agency cap is 43%."
+  edu3Image = "https://images.unsplash.com/photo-1729838904523-b31bdb286cdc?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Condo & HOA Underwriting"
+  edu4Description = "Hudson and Bergen condos require HOA review, budget analysis, and special underwriting. Experienced loan officers prevent condo denial surprises."
+  edu4Image = "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore NJ Loan Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Working with New Jersey Loan Officers"
+  learningSubtitle = "Find NMLS-licensed professionals with county expertise and transparent pricing."
+  learningImage = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Jersey loan officers vary in county specialization, lender access, and property type expertise. Brokers with wholesale and portfolio relationships often deliver the best pricing for jumbo loans, condos, and complex income scenarios."
+  learningBullet1 = "Find NJ loan officers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with verified NMLS credentials."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> before speaking with lenders."
+  learningBullet3 = "Model payment and tax impact at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a>."
+  learningBullet4 = "Verify NMLS licensing at NMLSConsumerAccess.org before sharing financial information."
+  learningPara2 = "Interview 3+ NJ loan officers with county-specific expertise to compare pricing, underwriting flexibility, and timeline expectations."
+  learningPara3 = "NJ borrowers save by choosing loan officers who understand property taxes, condo underwriting, and jumbo pricing differences by county."
+
+  whyChooseTitle = "Why New Jersey Loan Officer Choice Affects Your Rate"
+  whyChooseSubtitle = "County expertise, lender access, and underwriting knowledge create cost differences."
+  whyChoosePara1 = "NJ loan officers differ in county market knowledge, lender relationships, and condo/jumbo expertise. The right specialist prevents pricing surprises and closing delays."
+  whyChoosePara2 = "Education-first: understand county pricing, property-tax-driven DTI impact, and conforming vs jumbo limits to avoid overpaying."
+
+  whyChooseBox1Title = "County Market Expertise"
+  whyChooseBox1Para = "Bergen has the most lender competition. Essex and Morris require luxury and estate expertise, while Hudson requires condo underwriting skill."
+  whyChooseBox1Bullet1 = "Bergen: Most lenders, best pricing"
+  whyChooseBox1Bullet2 = "Essex: Luxury and complex income focus"
+  whyChooseBox1Bullet3 = "Hudson: Condo and HOA expertise"
+
+  whyChooseBox2Title = "Property Tax & DTI Knowledge"
+  whyChooseBox2Para = "NJ property taxes reduce debt capacity. Loan officers with portfolio relationships can qualify at 45%–50% DTI vs 43% agency cap."
+  whyChooseBox2Bullet1 = "Agency DTI cap: 43%"
+  whyChooseBox2Bullet2 = "Portfolio DTI: 45%–50%"
+  whyChooseBox2Bullet3 = "Tax impact: $1M home = ~$2,083/month taxes"
+
+  whyChooseBox3Title = "Jumbo & Condo Expertise"
+  whyChooseBox3Para = "Jumbo and condo loans require specialized underwriting. Experienced loan officers reduce appraisal and HOA approval delays."
+  whyChooseBox3Bullet1 = "Conforming limit: $806,550"
+  whyChooseBox3Bullet2 = "Jumbo: Portfolio and wholesale lenders"
+  whyChooseBox3Bullet3 = "Condos: HOA review and approval"
+
+  whyChooseCTA = "Find NJ Loan Officers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "New Jersey Borrowers Who Chose County-Specialized Loan Officers"
+  testimonialsSubtitle = "Real savings from NJ expertise and lender access."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Bergen County broker compared four lenders and beat our bank by 0.25%. We saved $180/month on a $750K loan."
+  testimonial1Name = "Michael & Angela Russo"
+  testimonial1Subtitle = "Bergen County Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Essex County loan officer navigated jumbo underwriting and saved us $9,800 in fees by comparing APR."
+  testimonial2Name = "Rachel & Steven Klein"
+  testimonial2Subtitle = "Essex County Jumbo"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1507579671922-48524531f8c7?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Morris County estate purchase required portfolio lender. Our loan officer secured approval after two denials from big banks."
+  testimonial3Name = "Edward & Patricia Marino"
+  testimonial3Subtitle = "Morris County Estate"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500595046891-bff3ac4d32c7?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Hudson County condo HOA approval was tricky. Our loan officer handled the paperwork and avoided a 3-week delay."
+  testimonial4Name = "Laura & James Patel"
+  testimonial4Subtitle = "Hudson County Condo"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500916434205-1896ab18905c?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "NJ property taxes crushed our DTI. Portfolio lender approved us at 48% DTI with a 0.25% rate premium."
+  testimonial5Name = "Kevin & Maria Santos"
+  testimonial5Subtitle = "DTI Challenge Solution"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507519899921-48534acc8fc6?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Self-employed in Bergen County. Loan officer structured our income docs and secured a lender comfortable with K-1s."
+  testimonial6Name = "Thomas & Lisa Nguyen"
+  testimonial6Subtitle = "Self-Employed Approval"
+
+  creditScoreTitle = "Your Credit Score Impact on New Jersey Loan Officer Options"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Your credit tier determines which NJ loan officers and lenders can offer competitive pricing. A 40–60 point improvement can reduce rates by 0.25%–0.75%."
+  creditScoreHeading1 = "740+ Credit Score"
+  creditScoreText1 = "Elite tier: Access best pricing and widest lender options, including jumbo and portfolio programs."
+  creditScoreHeading2 = "700–739 Credit Score"
+  creditScoreText2 = "Strong tier: Competitive conventional rates, but jumbo options may be limited to portfolio lenders."
+  creditScoreHeading3 = "Below 700 Credit Score"
+  creditScoreText3 = "Standard tier: FHA-focused programs and portfolio lenders that accept lower scores at higher pricing."
+  creditScoreCTA = "Check Your Credit"
+  creditScoreCTALink = "https://www.middlecreditscore.com"
+
+  employersTitle = "New Jersey Mortgage Programs for Employers"
+  employersSubtitle = "Corporate and employee financing options across NJ counties."
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Large employers in Bergen, Essex, Morris, and Hudson often negotiate preferred lender pricing and employee mortgage benefits. Ask HR about available programs."
+  employersBullet1Title = "Employer Rate Discounts"
+  employersBullet1Text = "0.25%–0.5% rate discounts negotiated by corporate partnerships with NJ lenders."
+  employersBullet2Title = "Program Access"
+  employersBullet2Text = "Employees get fast-track processing, reduced fees, and alternative programs not available to the public."
+  employersBullet3Title = "Relocation Assistance"
+  employersBullet3Text = "Corporate transfers to New Jersey may qualify for expanded LTV options and relocation-based underwriting."
+  employersCTA = "Explore Employer Programs"
+  employersCTALink = "https://www.browselenders.com/search/"
+
+  blogTitle = "New Jersey Loan Officer Blog"
+  blogSubtitle = "County-specific guidance on choosing mortgage professionals and comparing lender expertise."
+
+  faqTitle = "New Jersey Loan Officers FAQ"
+  faqSubtitle = "Answers to common questions about NJ loan officers and county specialization."
+
+  faq1Question = "How do I verify a New Jersey loan officer is licensed?"
+  faq1Answer = "Verify license at NMLSConsumerAccess.org. Search the loan officer by name or NMLS ID to confirm active NJ licensing and any disciplinary actions."
+
+  faq2Question = "Do I need a county-specialized loan officer?"
+  faq2Answer = "Yes. Bergen County pricing differs from Essex, Morris, and Hudson. County-specialized loan officers understand local lender appetite, property types, and underwriting requirements."
+
+  faq3Question = "What credit score do NJ loan officers prefer?"
+  faq3Answer = "740+ receives best pricing and widest options. 700–739 still strong with portfolio options. Below 700 often requires FHA or specialty portfolio programs."
+
+  faq4Question = "Why does New Jersey property tax affect my approval?"
+  faq4Answer = "NJ property taxes average 2.49%, adding $2,000+ monthly to payments on a $1M home. This compresses DTI and may require portfolio lenders with 45%–50% DTI caps."
+
+  faq5Question = "Can a loan officer help with condo approvals?"
+  faq5Answer = "Yes. Hudson and Bergen condos require HOA review and budget analysis. Loan officers experienced in condo lending prevent surprises and delays."
+
+  faq6Question = "How many loan officers should I interview?"
+  faq6Answer = "Interview at least 3 loan officers. Compare Loan Estimates, ask about county experience, and confirm lender access for your loan type."
+
+  ctaTitle = "Ready to Find a New Jersey Loan Officer?"
+  ctaDescription = "Compare NMLS-licensed NJ loan officers with county expertise in Bergen, Essex, Morris, and Hudson."
+  ctaCTA = "Start Your Search"
+  ctaCTALink = "https://www.browselenders.com/search/"

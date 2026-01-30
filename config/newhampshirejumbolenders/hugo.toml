@@ -1,0 +1,228 @@
+baseURL = "https://newhampshirejumbolenders.com"
+languageCode = "en-us"
+title = "New Hampshire Jumbo Lenders"
+theme = "heloc-blog"
+contentDir = "content/newhampshirejumbolenders"
+publishDir = "public/newhampshirejumbolenders"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "New Hampshire jumbo lenders and portfolio lenders for high-value homes in Portsmouth, Manchester, Nashua, and Lake Region. Compare jumbo rates and terms."
+  author = "Browse Lenders®"
+  shortName = "NH Jumbo Lenders"
+  tagline = "Jumbo & Portfolio Lenders for New Hampshire Luxury Homes"
+  homepage = "https://newhampshirejumbolenders.com"
+
+  siteName = "New Hampshire Jumbo Lenders"
+  siteDescription = "Connect with jumbo lenders and portfolio specialists in New Hampshire for homes above conforming limits. Real estate investment, primary residences, and second homes."
+  keywords = ["New Hampshire jumbo lenders", "NH jumbo loans", "New Hampshire jumbo rates", "Portsmouth luxury lenders", "Lake Region jumbo", "NH portfolio lenders"]
+  serviceType = "New Hampshire Jumbo Mortgage Lending"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Hampshire Jumbo Lenders — Connect with Specialists for Luxury Home Financing"
+  heroSubtitle = "Find portfolio lenders and jumbo specialists for New Hampshire homes above conforming limits. Compare rates and terms for Portsmouth, Lake Region, and across NH."
+  heroImage = "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find NH Jumbo Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why New Hampshire Jumbo Lending Differs from National Standards"
+  aboutImage = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "New Hampshire Jumbo Programs"
+  programsSubtitle = "Portfolio loans, investment properties, and primary residence jumbo options."
+
+  program1Title = "Primary Residence Jumbo Loans"
+  program1Description = "Jumbo financing for primary homes above New Hampshire conforming limits ($766,550). Portfolio lenders accept seasoning periods and non-traditional employment."
+  program1Image = "https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Investment Property Jumbo Loans"
+  program2Description = "Portfolio lenders in NH specialize in investment properties with flexible guidelines. Higher rates but more flexible on occupancy and reserves."
+  program2Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "New Hampshire Portfolio Lending"
+  program3Description = "Local and regional portfolio lenders keep loans in-house, offering flexibility on New Hampshire seasonal homes and special situations."
+  program3Image = "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare NH Jumbo Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "New Hampshire jumbo lenders vary widely on credit requirements, reserves, and documentation—compare multiple sources before applying."
+
+  educationTitle = "New Hampshire Jumbo Lending Education"
+  educationSubtitle = "Understand jumbo requirements, portfolio guidelines, and regional considerations."
+
+  edu1Title = "Jumbo vs. Conforming in NH"
+  edu1Description = "New Hampshire's conforming limit is $766,550. Above that, jumbo pricing and stricter guidelines apply. Understand the transition and rate impact."
+  edu1Image = "https://images.unsplash.com/photo-1647579350413-a6ada4e480ed?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Portfolio Lender Flexibility"
+  edu2Description = "Portfolio lenders hold loans in-house and offer custom terms for New Hampshire properties. Less emphasis on automated underwriting, more on local knowledge."
+  edu2Image = "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Seasonal Home & Lake Property Lending"
+  edu3Description = "New Hampshire's lake and seasonal homes face unique guidelines. Portfolio lenders often provide better terms for vacation and investment properties."
+  edu3Image = "https://images.unsplash.com/photo-1563569612948-9bd14a098036?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Self-Employment & Non-Traditional Income"
+  edu4Description = "Portfolio lenders in New Hampshire are more flexible with business owners and self-employed borrowers than conforming lenders."
+  edu4Image = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Jumbo Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "New Hampshire Jumbo Market Intelligence"
+  learningSubtitle = "Regional insights and lender comparisons for luxury NH properties."
+  learningImage = "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Hampshire jumbo lending blends national lender options with regional portfolio lenders who understand Lake Region and coastal properties. Portfolio lenders often outprice national jumbo programs on investment properties and seasonal homes."
+  learningBullet1 = "Compare national jumbo lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> and request New Hampshire quotes."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate jumbo pricing impact."
+  learningBullet3 = "Model jumbo scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to see rate differences."
+  learningBullet4 = "Ask lenders about New Hampshire-specific guidelines for seasonal and investment properties."
+  learningPara2 = "Portfolio lenders often beat national jumbo rates on New Hampshire properties—especially rentals and vacation homes."
+  learningPara3 = "Compare 3–5 New Hampshire lenders before locking your jumbo rate."
+
+  whyChooseTitle = "Why Compare New Hampshire Jumbo Lenders"
+  whyChooseSubtitle = "National vs. portfolio lenders, seasonal property considerations, and regional flexibility."
+  whyChoosePara1 = "New Hampshire jumbo lending has unique dynamics: portfolio lenders compete with national programs, seasonal homes face special guidelines, and investment property rules differ regionally."
+  whyChoosePara2 = "Education-first: understand jumbo pricing, portfolio benefits, and regional property considerations before you commit."
+
+  whyChooseBox1Title = "Portfolio Lender Advantages"
+  whyChooseBox1Para = "Portfolio lenders hold loans in-house and offer custom terms national lenders won't. Especially valuable for New Hampshire seasonal homes and investment properties."
+  whyChooseBox1Bullet1 = "Flexible occupancy rules for Lake Region homes"
+  whyChooseBox1Bullet2 = "Custom terms for investment and rental properties"
+  whyChooseBox1Bullet3 = "Better rates on non-traditional income and business owners"
+
+  whyChooseBox2Title = "National Jumbo Program Coverage"
+  whyChooseBox2Para = "Major national jumbo lenders (UWM, LoanDepot, Better) offer competitive rates on New Hampshire primary residences. Compare their terms vs. portfolio specialists."
+  whyChooseBox2Bullet1 = "Access to multiple jumbo products"
+  whyChooseBox2Bullet2 = "Consistent underwriting and clear timelines"
+  whyChooseBox2Bullet3 = "Rate locks and float-down options"
+
+  whyChooseBox3Title = "New Hampshire-Specific Considerations"
+  whyChooseBox3Para = "Seasonal homes, rental investment properties, and lake locations face unique lender guidelines. Local portfolio lenders understand these nuances better."
+  whyChooseBox3Bullet1 = "Seasonal property experience"
+  whyChooseBox3Bullet2 = "Investment property flexibility"
+  whyChooseBox3Bullet3 = "Knowledge of NH real estate trends"
+
+  whyChooseCTA = "Compare NH Jumbo Lenders"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "New Hampshire Borrowers Who Found Better Jumbo Terms"
+  testimonialsSubtitle = "Portfolio lenders and portfolio specialists helping NH buyers."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Our Lake Winnipesaukee cottage was rejected by national jumbo lenders. A New Hampshire portfolio lender approved it as a second home with great terms."
+  testimonial1Name = "Catherine Walsh"
+  testimonial1Subtitle = "Lake Winnipesaukee Seasonal Home"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "As a self-employed business owner, traditional lenders wanted 2 years of tax returns. Portfolio lender worked with my business structure and closed faster."
+  testimonial2Name = "Justin Martinez"
+  testimonial2Subtitle = "Portsmouth Primary Residence"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "National jumbo lender quoted 7.5%. A New Hampshire portfolio lender understood the rental market and beat them by 0.375%."
+  testimonial3Name = "Rachel Chen"
+  testimonial3Subtitle = "Manchester Rental Investment"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Portfolio lender allowed 25% down on our jumbo mortgage instead of requiring 30%. Saved us $100K in cash."
+  testimonial4Name = "Daniel Thompson"
+  testimonial4Subtitle = "Lakes Region Home"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "We owned two NH rental properties. Portfolio lender combined them into one relationship and gave us better pricing on both."
+  testimonial5Name = "Michelle Smith"
+  testimonial5Subtitle = "Multi-Property Investor"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "National lender's jumbo rate was competitive, but portfolio lender offered a 7-year fixed rate conversion option for peace of mind."
+  testimonial6Name = "Kevin O'Brien"
+  testimonial6Subtitle = "Nashua Primary Residence"
+
+  calculatorsTitle = "New Hampshire Jumbo Planning Tools"
+  calculatorsSubtitle = "Model jumbo payments, compare loan programs, and estimate rates."
+
+  creditScoreTitle = "Credit Score Impact on New Hampshire Jumbo Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Jumbo pricing is sensitive to credit tiers. Moving from 700 to 760 can save 0.50%–0.75% on New Hampshire jumbo loans."
+  creditScoreHeading1 = "Typical NH Jumbo Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.25%; 720–739 adds ~0.50%; below 700 adds larger premiums or denials."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$1M jumbo: 760 tier $6,850/month vs. 700 tier $7,380/month — about $530/month difference."
+  creditScoreHeading3 = "Pre-Application Tips"
+  creditScoreText3 = "Pay down cards, correct report errors, and avoid new inquiries 6 months before applying for jumbo."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – New Hampshire Jumbo Mortgage Education"
+  employersSubtitle = "Help executives and professionals navigate luxury home financing."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Employers can offer jumbo mortgage education focused on New Hampshire market dynamics, portfolio lender options, and investment property strategies."
+  employersBullet1Title = "Portfolio vs. national lender comparison"
+  employersBullet1Text = "Help executives understand when portfolio lenders beat national programs."
+  employersBullet2Title = "Seasonal home guidelines"
+  employersBullet2Text = "Explain Lake Region and coastal property lending requirements."
+  employersBullet3Title = "Multi-property investment strategy"
+  employersBullet3Text = "Teach how portfolio lenders can combine multiple properties for better terms."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "New Hampshire Jumbo Insights"
+  blogSubtitle = "Portfolio lending, seasonal homes, and jumbo market trends in NH."
+
+  faqTitle = "New Hampshire Jumbo Lender Questions"
+  faqSubtitle = "Common questions about jumbo financing in New Hampshire."
+
+  faq1Question = "What's the conforming limit in New Hampshire?"
+  faq1Answer = "$766,550 for most NH counties (2025). Loans above this are jumbo and require different guidelines."
+
+  faq2Question = "Can portfolio lenders beat national jumbo rates in NH?"
+  faq2Answer = "Often yes, especially on investment properties and seasonal homes. Compare multiple sources before choosing."
+
+  faq3Question = "Are seasonal and investment homes harder to finance in NH?"
+  faq3Answer = "Yes, but portfolio lenders are more flexible. National lenders may require higher credit scores and more reserves."
+
+  faq4Question = "How much down do jumbo lenders require in New Hampshire?"
+  faq4Answer = "Typically 20–25% for primary residences, higher for investments. Portfolio lenders sometimes allow 15–20%."
+
+  faq5Question = "Do New Hampshire jumbo lenders accept non-traditional income?"
+  faq5Answer = "Portfolio lenders are more flexible with self-employed and business owners. National lenders have stricter rules."
+
+  faq6Question = "Can I get a fixed jumbo mortgage in NH or just ARM?"
+  faq6Answer = "Most New Hampshire jumbo lenders offer 30-year fixed options. Compare portfolio and national programs for best rates."
+
+  ctaTitle = "Ready to Compare New Hampshire Jumbo Lenders?"
+  ctaDescription = "Connect with national jumbo programs and regional portfolio specialists for New Hampshire homes."
+  ctaCTA = "Find NH Jumbo Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

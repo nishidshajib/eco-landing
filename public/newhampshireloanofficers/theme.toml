@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "New Hampshire loan officers specializing in first-time buyers, refinance, FHA, VA, and jumbo loans. Connect with local mortgage experts in NH."
+homepage = "https://newhampshireloanofficers.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://newhampshireloanofficers.com"

@@ -1,0 +1,224 @@
+baseURL = "https://newjerseyhomerates.com"
+languageCode = "en-us"
+title = "New Jersey Home Rates"
+theme = "heloc-blog"
+contentDir = "content/newjerseyhomerates"
+publishDir = "public/newjerseyhomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "New Jersey mortgage rates for Bergen, Essex, Morris, and Hudson Counties. Compare FHA, VA, conventional, and jumbo pricing across NJ lenders."
+  author = "Browse Lenders®"
+  shortName = "NJ Home Rates"
+  tagline = "Daily Mortgage Rates for New Jersey Homebuyers"
+  homepage = "https://newjerseyhomerates.com"
+
+  siteName = "New Jersey Home Rates"
+  siteDescription = "Track New Jersey mortgage rates by county and property type. Compare APR across Bergen, Essex, Morris, and Hudson for transparent rate intelligence."
+  keywords = ["New Jersey mortgage rates", "NJ home rates", "Bergen County rates", "Essex County mortgage rates", "Morris County rates", "Hudson County rates", "NJ mortgage APR"]
+  serviceType = "New Jersey Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Jersey Home Rates — Compare Lenders Across North Jersey"
+  heroSubtitle = "Track mortgage rates for Bergen, Essex, Morris, and Hudson Counties. Compare FHA, conventional, VA, and jumbo pricing with county-specific insights."
+  heroImage = "https://images.unsplash.com/photo-1552505557-c085030eea99?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare NJ Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why New Jersey Rates Vary by County"
+  aboutImage = "https://images.unsplash.com/photo-1616587894998-eb4d3007bbb9?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "New Jersey Mortgage Rate Programs"
+  programsSubtitle = "Compare pricing for FHA, conventional, VA, and jumbo programs across NJ markets."
+
+  program1Title = "Conventional & FHA Rates"
+  program1Description = "Standard conforming rates for NJ homes under $806,550 across Bergen, Essex, Morris, and Hudson Counties. FHA offers 3.5% down options for first-time buyers."
+  program1Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA Loan Rates in New Jersey"
+  program2Description = "Zero-down VA financing for eligible veterans and active-duty borrowers. Competitive VA pricing across New Jersey lenders and military-friendly programs."
+  program2Image = "https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Rates for Luxury Properties"
+  program3Description = "Jumbo financing above conforming limits for Bergen County estates, Essex luxury homes, and Morris County prestige properties. Specialized lenders offer best pricing."
+  program3Image = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View NJ Rate Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "New Jersey rates vary by county and property type—Bergen County pricing differs from Essex, Morris, and Hudson markets."
+
+  educationTitle = "New Jersey Rate Intelligence"
+  educationSubtitle = "Understand county pricing, credit tiers, and property tax impact on rates."
+
+  edu1Title = "County Rate Differences"
+  edu1Description = "Bergen County has strong lender competition due to affluent markets. Essex, Morris, and Hudson show varied pricing based on property values and lender appetite."
+  edu1Image = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Jumbo Market Dynamics"
+  edu2Description = "Bergen and Essex Counties often require jumbo financing for estates and luxury properties. Specialized lenders offer better pricing and higher loan limits."
+  edu2Image = "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Credit Tier Impact"
+  edu3Description = "New Jersey lenders price heavily by credit tier. A 40–60 point score improvement can save 0.25%–0.75% on rates and APR."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "APR vs Rate in New Jersey"
+  edu4Description = "New Jersey lender fees vary significantly. Compare APR to see true borrowing costs—especially for jumbo loans and complex income scenarios."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "New Jersey Rate Tracker"
+  learningSubtitle = "County pricing insights and lock timing for NJ homebuyers."
+  learningImage = "https://images.unsplash.com/photo-1758526213729-50208a451702?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Jersey mortgage rates vary by county, property type, and lender specialization. Bergen County pricing is typically most competitive, while Essex and Morris often price higher for luxury and estate properties due to unique market dynamics."
+  learningBullet1 = "Compare NJ lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate and APR transparency across counties."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate New Jersey rate impact."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for jumbo vs conventional comparisons."
+  learningBullet4 = "Factor property taxes into payment comparisons—NJ rates are among the nation's highest and significantly impact total PITI."
+  learningPara2 = "Compare APR across 3–5 New Jersey lenders before locking to identify true borrowing cost."
+  learningPara3 = "NJ buyers save by comparing local banks, brokers with national access, and specialized jumbo lenders for estate and luxury markets."
+
+  whyChooseTitle = "Why Compare New Jersey Mortgage Rates"
+  whyChooseSubtitle = "County differences and lender specialization create pricing gaps."
+  whyChoosePara1 = "New Jersey has diverse markets—from Bergen County affluence to Essex luxury, Morris estates, and Hudson diversity. Lender competition and property values create measurable rate differences by county."
+  whyChoosePara2 = "Education-first: understand county rate patterns, credit tiers, property tax impact, and jumbo pricing to avoid overpaying on NJ mortgages."
+
+  whyChooseBox1Title = "County Lender Competition"
+  whyChooseBox1Para = "Bergen County has strong lender competition. Essex and Morris rely more on jumbo specialists and regional banks."
+  whyChooseBox1Bullet1 = "Bergen: Abundant lender options"
+  whyChooseBox1Bullet2 = "Essex: Luxury-focused pricing"
+  whyChooseBox1Bullet3 = "Morris: Estate specialization"
+
+  whyChooseBox2Title = "Property Value Differences"
+  whyChooseBox2Para = "New Jersey property values vary widely. Jumbo lending is common in Bergen, Essex, and Morris while standard conforming loans dominate other areas."
+  whyChooseBox2Bullet1 = "Conforming: Standard NJ markets"
+  whyChooseBox2Bullet2 = "Jumbo: Bergen County estates"
+  whyChooseBox2Bullet3 = "Portfolio: Complex properties"
+
+  whyChooseBox3Title = "APR Transparency"
+  whyChooseBox3Para = "Lender fees vary across New Jersey markets. Compare APR to see true cost—especially on jumbo and complex income loans."
+  whyChooseBox3Bullet1 = "APR includes origination and points"
+  whyChooseBox3Bullet2 = "0.125% APR gap = $3,000+ over 5 years on $700K"
+  whyChooseBox3Bullet3 = "Request Loan Estimates from 3+ lenders"
+
+  whyChooseCTA = "Compare NJ Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "New Jersey Borrowers Who Compared Rates"
+  testimonialsSubtitle = "Real savings from county comparisons and lender competition."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Compared three Bergen County lenders. Broker beat our bank by 0.25% and saved $185/month on our $750K purchase."
+  testimonial1Name = "Michael & Jennifer Rossi"
+  testimonial1Subtitle = "Bergen County Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Essex County jumbo financing was confusing. Comparing APR across portfolio lenders saved us $12,400 in fees."
+  testimonial2Name = "Sarah & David Cohen"
+  testimonial2Subtitle = "Essex County Jumbo"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1507579671922-48524531f8c7?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Morris County estate purchase required specialized underwriting. Rate comparison saved $230/month."
+  testimonial3Name = "Robert & Patricia Moretti"
+  testimonial3Subtitle = "Morris County Estate"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500595046891-bff3ac4d32c7?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Hudson County refinance with complex income was tough. Portfolio lender offered 0.5% better than big banks."
+  testimonial4Name = "Amanda & James Peterson"
+  testimonial4Subtitle = "Hudson County Refi"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1500916434205-1896ab18905c?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Didn't realize NJ property taxes would crush my DTI. Rate shopping found portfolio lender that qualified me at 48% DTI."
+  testimonial5Name = "Kevin & Nicole Santos"
+  testimonial5Subtitle = "DTI Challenge Solution"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507519899921-48534acc8fc6?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Self-employed in Bergen County. Took 6 calls, but found lender comfortable with my business structure. 0.375% better rate."
+  testimonial6Name = "Thomas & Lisa Anderson"
+  testimonial6Subtitle = "Self-Employed Success"
+
+  creditScoreTitle = "Your Credit Score Impact on New Jersey Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Your credit tier determines your New Jersey mortgage rate. Even a 40–60 point improvement can lower your rate by 0.25%–0.75%, saving thousands over the life of the loan."
+  creditScoreHeading1 = "740+ Credit Score"
+  creditScoreText1 = "Elite tier: Access best rates, programs, and lender options across New Jersey. Most competitive jumbo pricing available."
+  creditScoreHeading2 = "700-739 Credit Score"
+  creditScoreText2 = "Strong tier: Competitive conventional and FHA rates. Jumbo lenders available but at higher pricing. Consider improving score."
+  creditScoreHeading3 = "Below 700 Credit Score"
+  creditScoreText3 = "Standard tier: FHA-focused programs, portfolio lenders accepting lower scores. Rate premium of 0.75%–1.5% typical. Improvement recommended."
+  creditScoreCTA = "Check Your Credit"
+  creditScoreCTALink = "https://www.middlecreditscore.com"
+
+  employersTitle = "New Jersey Mortgage Rate Programs for Employers"
+  employersSubtitle = "Corporate and employee home financing programs across NJ counties."
+  employersImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Large employers in Bergen, Essex, Morris, and Hudson Counties often negotiate discounted rates and program access for employees. Ask your HR department about available mortgage benefits."
+  employersBullet1Title = "Employer Rate Discounts"
+  employersBullet1Text = "0.25%–0.5% rate discounts negotiated by corporate partnerships with NJ lenders."
+  employersBullet2Title = "Program Access"
+  employersBullet2Text = "Employees get fast-track processing, reduced fees, and alternative programs unavailable to public."
+  employersBullet3Title = "Relocation Assistance"
+  employersBullet3Text = "Corporate transfers to New Jersey qualify for employer-sponsored financing and expanded LTV options."
+  employersCTA = "Explore Employer Programs"
+  employersCTALink = "https://www.browselenders.com/search/"
+
+  blogTitle = "New Jersey Mortgage Rate Blog"
+  blogSubtitle = "County-specific rate trends, lender comparisons, and homebuyer strategies."
+
+  faqTitle = "New Jersey Mortgage Rates FAQ"
+  faqSubtitle = "Answers to common rate questions for Bergen, Essex, Morris, and Hudson borrowers."
+
+  faq1Question = "What is the current average mortgage rate in New Jersey?"
+  faq1Answer = "New Jersey rates fluctuate daily based on national market conditions. Bergen County typically offers the most competitive rates due to higher lender competition, while Essex and Morris County rates may run 0.125%–0.25% higher. Check BrowseLenders.com for current county-specific rates."
+
+  faq2Question = "Why do New Jersey county rates differ?"
+  faq2Answer = "County differences reflect lender competition, property value ranges, and market specialization. Bergen County's affluent market attracts numerous lenders, while Essex and Morris rely more on specialized jumbo and portfolio lenders."
+
+  faq3Question = "How does New Jersey property tax impact my mortgage rate?"
+  faq3Answer = "NJ property taxes (averaging 2.49% annually) significantly impact DTI calculations. A $1M home adds $25K/year in taxes ($2,083/month). This compresses available debt capacity—portfolio lenders at 45–50% DTI often necessary vs. agency 43% max."
+
+  faq4Question = "Can I get jumbo financing in New Jersey?"
+  faq4Answer = "Yes. Conforming limit in NJ is $806,550. Jumbo financing available up to $5M+ from portfolio lenders and specialized jumbo programs, with rates typically 0.25%–0.5% above agency conforming."
+
+  faq5Question = "What credit score do I need for New Jersey mortgage rates?"
+  faq5Answer = "Conventional rates available at 640+. FHA loans at 580+. Best rates at 740+. Portfolio lenders flexible at 700+. Score improvements of 40–60 points typically save 0.25%–0.75% on rates."
+
+  faq6Question = "How do I compare New Jersey mortgage rates?"
+  faq6Answer = "Get Loan Estimates from 3–5 lenders across different channels (banks, brokers, online). Compare APR, not just rate, to see true cost. Factor county differences, program type, and lender specialization when comparing."
+
+  ctaTitle = "Ready to Compare New Jersey Mortgage Rates?"
+  ctaDescription = "Get pre-qualified with multiple NJ lenders and compare rates across Bergen, Essex, Morris, and Hudson Counties."
+  ctaCTA = "Start Rate Comparison"
+  ctaCTALink = "https://www.browselenders.com/search/"

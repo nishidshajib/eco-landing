@@ -1,0 +1,228 @@
+baseURL = "https://mortgagebrokerswy.com"
+languageCode = "en-us"
+title = "Mortgage Brokers WY"
+theme = "heloc-blog"
+contentDir = "content/mortgagebrokerswy"
+publishDir = "public/mortgagebrokerswy"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Wyoming mortgage brokers in Cheyenne, Casper, Jackson Hole, and statewide. Access 20+ lenders for wholesale pricing and rural property expertise."
+  author = "Browse Lenders®"
+  shortName = "Mortgage Brokers WY"
+  tagline = "Wholesale Pricing & Multi-Lender Access"
+  homepage = "https://mortgagebrokerswy.com"
+
+  siteName = "Mortgage Brokers WY"
+  siteDescription = "Find Wyoming mortgage brokers with wholesale lender access, competitive rates, and specialized expertise for Cheyenne, Casper, Jackson Hole, and rural Wyoming markets."
+  keywords = ["Wyoming mortgage brokers", "WY brokers", "Cheyenne mortgage broker", "Casper broker", "Jackson Hole mortgage broker", "wholesale mortgage rates"]
+  serviceType = "Wyoming Mortgage Broker Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Wyoming Mortgage Brokers — Wholesale Pricing Across WY"
+  heroSubtitle = "Compare Wyoming brokers with access to 20+ lenders. Get wholesale pricing, rural property expertise, and jumbo options for Jackson Hole and statewide markets."
+  heroImage = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Wyoming Brokers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Wyoming Borrowers Use Mortgage Brokers"
+  aboutImage = "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Wyoming Broker Advantages"
+  programsSubtitle = "Wholesale access, multiple lender options, and specialty programs for WY properties."
+
+  program1Title = "Wholesale Pricing"
+  program1Description = "Brokers access wholesale pricing 0.125%–0.375% below retail. Same lender, lower rate through broker channel."
+  program1Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Multi-Lender Access"
+  program2Description = "One application, 20+ lender quotes. Brokers compare national lenders, local portfolio programs, and jumbo specialists for Jackson Hole."
+  program2Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Rural & Jumbo Expertise"
+  program3Description = "Wyoming brokers access portfolio lenders for acreage and ranch properties and specialized jumbo lenders for luxury markets."
+  program3Image = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare Wyoming Brokers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Broker access saves money—wholesale pricing and lender choice improve rates and approval odds."
+
+  educationTitle = "Wyoming Broker Insights"
+  educationSubtitle = "Wholesale pricing, broker compensation, and lender access explained."
+
+  edu1Title = "Wholesale vs Retail Pricing"
+  edu1Description = "Same lender, lower wholesale rates through brokers. Wholesale pricing typically saves 0.125%–0.375% vs retail direct rates."
+  edu1Image = "https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Broker Compensation"
+  edu2Description = "Brokers earn via borrower-paid fees or lender-paid compensation. Transparent brokers show both options and breakeven analysis."
+  edu2Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Lender Access"
+  edu3Description = "Brokers access 20+ lenders through wholesale platforms (Optimal Blue, Mortech). Multiple options improve pricing and approvals."
+  edu3Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "WY Market Expertise"
+  edu4Description = "Brokers match lenders to property type—portfolio lenders for rural acreage, jumbo lenders for Jackson Hole, and wholesale lenders for standard homes."
+  edu4Image = "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Broker Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Wyoming Broker Comparison Guide"
+  learningSubtitle = "How to compare brokers, verify licensing, and secure wholesale pricing."
+  learningImage = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Wyoming brokers deliver wholesale pricing and multi-lender access, helping borrowers secure lower rates and better approval options than single-lender retail channels."
+  learningBullet1 = "Find Wyoming brokers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for wholesale pricing and verified NMLS licensing."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to understand rate impacts before broker consultations."
+  learningBullet3 = "Model payments at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to compare wholesale vs retail scenarios."
+  learningBullet4 = "Verify broker NMLS licensing at NMLSConsumerAccess.org before sharing personal financial details."
+  learningPara2 = "Compare 3+ brokers to evaluate lender access (15+ lenders preferred), compensation transparency, and regional expertise."
+  learningPara3 = "Wyoming borrowers save by choosing brokers for standard purchases and using brokers with portfolio access for rural properties."
+
+  whyChooseTitle = "Why Use Wyoming Mortgage Brokers"
+  whyChooseSubtitle = "Wholesale access, flexible underwriting, and lender competition lower costs."
+  whyChoosePara1 = "Mortgage brokers provide access to wholesale lender pricing and multiple lender options, often beating single-lender retail rates by 0.125%–0.375%."
+  whyChoosePara2 = "Education-first: understand broker compensation, wholesale pricing, and lender access to make the best financing choice."
+
+  whyChooseBox1Title = "Wholesale Pricing Savings"
+  whyChooseBox1Para = "Wholesale pricing can save $100+ per month on a $450K loan. Brokers access rate sheets from multiple lenders to find the lowest APR."
+  whyChooseBox1Bullet1 = "0.25% rate savings = $76/month on $450K"
+  whyChooseBox1Bullet2 = "$4,500+ fee savings vs retail lenders"
+  whyChooseBox1Bullet3 = "Same lender, lower wholesale pricing"
+
+  whyChooseBox2Title = "Approval Flexibility"
+  whyChooseBox2Para = "Brokers match borrowers to lender guidelines. If one lender declines, brokers can submit to another without restarting the process."
+  whyChooseBox2Bullet1 = "20+ lender options improve approval odds"
+  whyChooseBox2Bullet2 = "Portfolio lenders for rural acreage"
+  whyChooseBox2Bullet3 = "Jumbo specialists for Jackson Hole"
+
+  whyChooseBox3Title = "Transparency & Competition"
+  whyChooseBox3Para = "Brokers compete for your business and disclose compensation. Transparent brokers show borrower-paid and lender-paid options with breakeven analysis."
+  whyChooseBox3Bullet1 = "Borrower-paid vs lender-paid comparison"
+  whyChooseBox3Bullet2 = "APR-based decision making"
+  whyChooseBox3Bullet3 = "Multiple lender quotes"
+
+  whyChooseCTA = "Find Wyoming Brokers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Wyoming Borrowers Who Used Brokers"
+  testimonialsSubtitle = "Real savings from wholesale access and lender comparison."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Broker compared five lenders and beat our bank by 0.25%. Saved $90/month on our Cheyenne home."
+  testimonial1Name = "Amy & Jake Wilson"
+  testimonial1Subtitle = "Cheyenne Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "We needed a rural property loan. Broker found a portfolio lender after two banks declined. Got approved with great terms."
+  testimonial2Name = "Daniel Brooks"
+  testimonial2Subtitle = "Sheridan Ranch"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Jackson Hole jumbo pricing varied by 0.5%. Broker connected us with a luxury lender who saved us $6,000/year."
+  testimonial3Name = "Melissa Grant"
+  testimonial3Subtitle = "Jackson Hole Jumbo"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Broker showed borrower-paid vs lender-paid options. We chose borrower-paid and saved $8,500 over five years."
+  testimonial4Name = "Kyle Anderson"
+  testimonial4Subtitle = "Casper Refinance"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Wholesale lender approved our FHA loan quickly and beat two banks on fees. Broker shopping saved us $4,000."
+  testimonial5Name = "Rachel Martinez"
+  testimonial5Subtitle = "Laramie FHA"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "We verified NMLS licensing and compared three brokers. Chose the one with 25+ lender access and lowest APR."
+  testimonial6Name = "Chris Thompson"
+  testimonial6Subtitle = "Cheyenne Purchase"
+
+  calculatorsTitle = "Broker Comparison Tools"
+  calculatorsSubtitle = "Compare wholesale pricing, APR, and broker compensation options."
+
+  creditScoreTitle = "Credit Score Impact on Broker Pricing"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers influence wholesale pricing. A 40–60 point improvement can save 0.25%–0.75% on rates through broker wholesale channels."
+  creditScoreHeading1 = "WY Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 680 often requires FHA or manual underwriting."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$500K loan: 760 tier $3,450/month vs. 700 tier $3,650/month — about $200/month difference."
+  creditScoreHeading3 = "Pre-Application Improvements"
+  creditScoreText3 = "Pay down credit card balances under 10% utilization, correct errors, and avoid new credit inquiries 60–90 days before applying."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Wyoming Broker Education"
+  employersSubtitle = "Help employees understand broker benefits, wholesale pricing, and NMLS licensing."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Wyoming employers can offer mortgage education that explains broker advantages, wholesale pricing, and lender comparison for relocating employees."
+  employersBullet1Title = "Broker education"
+  employersBullet1Text = "Teach employees about wholesale vs retail pricing and broker compensation transparency."
+  employersBullet2Title = "APR comparison"
+  employersBullet2Text = "Help employees compare APR and fees across lender options."
+  employersBullet3Title = "NMLS verification"
+  employersBullet3Text = "Explain how to verify broker licensing at NMLSConsumerAccess.org."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Wyoming Broker Insights"
+  blogSubtitle = "Wholesale pricing, lender access, and broker selection in WY."
+
+  faqTitle = "Wyoming Broker Questions"
+  faqSubtitle = "Common questions about brokers, wholesale pricing, and lender access."
+
+  faq1Question = "How do Wyoming mortgage brokers get lower rates?"
+  faq1Answer = "Brokers access wholesale pricing from lenders, which is 0.125%–0.375% below retail pricing. The same lender offers lower rates through broker channels due to lower marketing costs."
+
+  faq2Question = "Are brokers more expensive than banks?"
+  faq2Answer = "Not usually. Brokers can be paid by the lender (lender-paid compensation) or borrower-paid. Wholesale rates often offset broker fees, lowering APR vs banks."
+
+  faq3Question = "Do brokers work with rural property lenders?"
+  faq3Answer = "Yes. Wyoming brokers often have portfolio lender access for acreage and ranch properties, which many national lenders decline."
+
+  faq4Question = "How many lenders should a broker have?"
+  faq4Answer = "15+ lenders is ideal. More lender access improves pricing and approval odds. Ask brokers to show rate sheets or lender lists."
+
+  faq5Question = "Should I compare multiple brokers?"
+  faq5Answer = "Yes. Compare 3+ brokers for lender access, compensation transparency, and APR differences."
+
+  faq6Question = "How do I verify a broker's license?"
+  faq6Answer = "Check NMLSConsumerAccess.org for active Wyoming licensing and disciplinary history before sharing personal financial information."
+
+  ctaTitle = "Ready to Compare Wyoming Mortgage Brokers?"
+  ctaDescription = "Find licensed Wyoming brokers with wholesale pricing, lender access, and regional expertise."
+  ctaCTA = "Find Wyoming Brokers"
+  ctaCTALink = "https://www.browselenders.com/search/"

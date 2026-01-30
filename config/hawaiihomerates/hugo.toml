@@ -1,0 +1,228 @@
+baseURL = "https://hawaiihomerates.com"
+languageCode = "en-us"
+title = "Hawaii Home Rates"
+theme = "heloc-blog"
+contentDir = "content/hawaiihomerates"
+publishDir = "public/hawaiihomerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Hawaii mortgage rates for Oahu, Maui, Kauai, and the Big Island. Compare FHA, VA, conventional, and jumbo pricing across Hawaii lenders."
+  author = "Browse Lenders®"
+  shortName = "HI Home Rates"
+  tagline = "Daily Mortgage Rates for Hawaii Homebuyers"
+  homepage = "https://hawaiihomerates.com"
+
+  siteName = "Hawaii Home Rates"
+  siteDescription = "Track Hawaii mortgage rates by island and property type. Compare APR across Oahu, Maui, Kauai, and Big Island markets for transparent rate intelligence."
+  keywords = ["Hawaii mortgage rates", "HI home rates", "Oahu mortgage rates", "Maui rates", "Kauai mortgage rates", "Hawaii mortgage APR"]
+  serviceType = "Hawaii Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Hawaii Home Rates — Compare Lenders Across the Islands"
+  heroSubtitle = "Track mortgage rates for Oahu, Maui, Kauai, and Hawaii Island. Compare FHA, conventional, VA, and jumbo pricing with island-specific insights."
+  heroImage = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare Hawaii Rates"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Hawaii Rates Vary by Island"
+  aboutImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Hawaii Mortgage Rate Tiers"
+  programsSubtitle = "Compare pricing for FHA, conventional, VA, and jumbo programs across Hawaii markets."
+
+  program1Title = "Conventional & FHA Rates"
+  program1Description = "Standard conforming rates for Hawaii homes under $1,149,825 in high-cost areas. FHA offers 3.5% down options for first-time buyers across the islands."
+  program1Image = "https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA Loan Rates in Hawaii"
+  program2Description = "Zero-down VA financing for eligible veterans and active-duty borrowers. Competitive VA pricing across Hawaii lenders and military-friendly programs."
+  program2Image = "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Rates for Luxury Properties"
+  program3Description = "Jumbo financing above high-cost conforming limits for Honolulu, Wailea, and Kapalua luxury properties. Specialized lenders offer best pricing."
+  program3Image = "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Hawaii Rate Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Hawaii rates vary by island and property type—Oahu pricing differs from Maui, Kauai, and Big Island markets."
+
+  educationTitle = "Hawaii Rate Intelligence"
+  educationSubtitle = "Understand island pricing, credit tiers, and luxury market dynamics."
+
+  edu1Title = "Island Rate Differences"
+  edu1Description = "Oahu lenders are most competitive due to volume. Maui and Kauai markets may show higher pricing for second homes and limited inventory."
+  edu1Image = "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Jumbo Market Dynamics"
+  edu2Description = "Honolulu, Kapalua, and Wailea often require jumbo financing. Specialized lenders offer better pricing and higher loan limits than standard programs."
+  edu2Image = "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Credit Tier Impact"
+  edu3Description = "Hawaii lenders price heavily by credit tier. A 40–60 point score improvement can save 0.25%–0.75% on rates and APR."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "APR vs Rate in Hawaii"
+  edu4Description = "Hawaii lender fees vary. Compare APR to see true borrowing costs—especially for jumbo loans and second-home purchases."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Hawaii Rate Tracker"
+  learningSubtitle = "Island pricing insights and lock timing for Hawaii homebuyers."
+  learningImage = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Hawaii mortgage rates vary by island, property type, and occupancy (primary vs second home). Oahu pricing is typically most competitive, while Maui and Kauai often price higher for luxury and vacation properties."
+  learningBullet1 = "Compare Hawaii lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for rate and APR transparency across islands."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to estimate Hawaii rate impact."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for jumbo vs conventional comparisons."
+  learningBullet4 = "Ask lenders about second-home and investment pricing on Maui, Kauai, and Big Island markets."
+  learningPara2 = "Compare APR across 3–5 Hawaii lenders before locking to identify true borrowing cost."
+  learningPara3 = "Hawaii buyers save by comparing local banks, brokers with national access, and specialized jumbo lenders for luxury and vacation markets."
+
+  whyChooseTitle = "Why Compare Hawaii Mortgage Rates"
+  whyChooseSubtitle = "Island differences and lender specialization create pricing gaps."
+  whyChoosePara1 = "Hawaii has diverse markets—from Oahu condos to Maui luxury and Big Island acreage. Lender competition and property values create measurable rate differences by island."
+  whyChoosePara2 = "Education-first: understand island rate patterns, credit tiers, and jumbo pricing to avoid overpaying on Hawaii mortgages."
+
+  whyChooseBox1Title = "Island Lender Competition"
+  whyChooseBox1Para = "Oahu has the most lender competition. Maui and Kauai rely more on jumbo specialists and local banks."
+  whyChooseBox1Bullet1 = "Oahu: Strong lender competition"
+  whyChooseBox1Bullet2 = "Maui: Luxury-focused pricing"
+  whyChooseBox1Bullet3 = "Kauai: Limited lender options"
+
+  whyChooseBox2Title = "Property Value Differences"
+  whyChooseBox2Para = "Hawaii property values vary widely. Jumbo lending is common in Honolulu, Wailea, and Kapalua while standard conforming loans dominate other areas."
+  whyChooseBox2Bullet1 = "Conforming: Big Island and outer areas"
+  whyChooseBox2Bullet2 = "Jumbo: Honolulu and Maui resorts"
+  whyChooseBox2Bullet3 = "Portfolio: Unique properties"
+
+  whyChooseBox3Title = "APR Transparency"
+  whyChooseBox3Para = "Lender fees vary across Hawaii markets. Compare APR to see true cost—especially on jumbo and second-home loans."
+  whyChooseBox3Bullet1 = "APR includes origination and points"
+  whyChooseBox3Bullet2 = "0.125% APR gap = $3,000+ over 5 years on $700K"
+  whyChooseBox3Bullet3 = "Request Loan Estimates from 3+ lenders"
+
+  whyChooseCTA = "Compare Hawaii Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Hawaii Borrowers Who Compared Rates"
+  testimonialsSubtitle = "Real savings from island comparisons and lender competition."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Compared three Oahu lenders. Broker beat our bank by 0.25% and saved $140/month on our $600K loan."
+  testimonial1Name = "Leilani & Kai Nakamura"
+  testimonial1Subtitle = "Oahu Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Maui second home pricing was higher than expected. Comparing APR saved us $6,200 in fees."
+  testimonial2Name = "Mark & Olivia Chen"
+  testimonial2Subtitle = "Maui Second Home"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Honolulu jumbo lender quoted 6.25% vs 6.75% from a mainland bank. Saved $9,800/year on our $1.4M loan."
+  testimonial3Name = "Noah Kealoha"
+  testimonial3Subtitle = "Honolulu Jumbo"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Kauai condo refinance with APR comparison saved $4,300 in closing costs."
+  testimonial4Name = "Malia Rivera"
+  testimonial4Subtitle = "Kauai Refinance"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Credit tier improvement from 700 to 740 cut our rate by 0.25%. Saved $110/month on our $500K loan."
+  testimonial5Name = "Ethan Morales"
+  testimonial5Subtitle = "Big Island Purchase"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "We compared APRs across four lenders. Chose the lowest APR and saved $5,800 in fees."
+  testimonial6Name = "Sophia Park"
+  testimonial6Subtitle = "Maui Refinance"
+
+  calculatorsTitle = "Hawaii Rate Planning Tools"
+  calculatorsSubtitle = "Model payments, compare APR, and plan lock timing."
+
+  creditScoreTitle = "Credit Score Impact on Hawaii Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers significantly impact Hawaii mortgage pricing. A 40–60 point improvement can save 0.25%–0.75% in rate."
+  creditScoreHeading1 = "Hawaii Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; below 680 often requires FHA."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$600K loan: 760 tier $4,140/month vs. 700 tier $4,380/month — about $240/month difference."
+  creditScoreHeading3 = "Pre-Application Improvements"
+  creditScoreText3 = "Pay down cards under 10% utilization, dispute errors, and avoid new inquiries 60–90 days before applying."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Hawaii Mortgage Rate Education"
+  employersSubtitle = "Help employees understand island markets, jumbo pricing, and APR comparison."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Hawaii employers can offer mortgage education covering island pricing, jumbo thresholds, and APR transparency for relocating employees."
+  employersBullet1Title = "Island pricing education"
+  employersBullet1Text = "Teach employees about Oahu vs Maui/Kauai rate differences."
+  employersBullet2Title = "Jumbo loan guidance"
+  employersBullet2Text = "Explain jumbo thresholds and luxury lender pricing in Honolulu and resort markets."
+  employersBullet3Title = "APR comparison"
+  employersBullet3Text = "Show how APR reveals true cost differences across lenders."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Hawaii Rate Insights"
+  blogSubtitle = "Island trends, lender comparison, and Hawaii rate guidance."
+
+  faqTitle = "Hawaii Mortgage Rate Questions"
+  faqSubtitle = "Common questions about Hawaii rates, island pricing, and jumbo loans."
+
+  faq1Question = "Why do Hawaii rates vary by island?"
+  faq1Answer = "Lender competition differs—Oahu has more lenders than neighbor islands. Maui and Kauai pricing is often higher due to second-home and resort demand."
+
+  faq2Question = "Are Hawaii jumbo rates higher?"
+  faq2Answer = "Jumbo loans are common in Honolulu and resort markets and may have slightly higher rates. Specialized jumbo lenders can offer competitive pricing."
+
+  faq3Question = "Do Hawaii lenders charge higher fees?"
+  faq3Answer = "Fees vary by lender and island. Compare APR to see true borrowing cost, especially for jumbo and second-home loans."
+
+  faq4Question = "Should I lock now or wait?"
+  faq4Answer = "Lock when you're comfortable with the rate and have a closing timeline. Hawaii follows national rate trends with local competition adjustments."
+
+  faq5Question = "Why does APR matter more than rate?"
+  faq5Answer = "APR includes lender fees and points. Two identical rates can have different APRs based on origination costs."
+
+  faq6Question = "Can credit improvement lower my Hawaii rate?"
+  faq6Answer = "Yes. A 40–60 point score improvement can save 0.25%–0.75% on rates and APR."
+
+  ctaTitle = "Ready to Compare Hawaii Mortgage Rates?"
+  ctaDescription = "Find competitive lenders across Hawaii with transparent pricing and island expertise."
+  ctaCTA = "Find Hawaii Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

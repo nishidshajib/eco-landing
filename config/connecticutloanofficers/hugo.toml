@@ -1,0 +1,228 @@
+baseURL = "https://connecticutloanofficers.com"
+languageCode = "en-us"
+title = "Connecticut Loan Officers"
+theme = "heloc-blog"
+contentDir = "content/connecticutloanofficers"
+publishDir = "public/connecticutloanofficers"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Connecticut loan officers in Hartford, New Haven, Stamford, and Fairfield County. Compare brokers vs bank MLOs for wholesale pricing and regional expertise."
+  author = "Browse Lenders®"
+  shortName = "CT Loan Officers"
+  tagline = "Find Licensed Connecticut Mortgage Professionals"
+  homepage = "https://connecticutloanofficers.com"
+
+  siteName = "Connecticut Loan Officers"
+  siteDescription = "Connect with Connecticut NMLS-licensed loan officers offering wholesale pricing, multi-lender access, and regional expertise across Hartford, New Haven, Stamford, and Fairfield County."
+  keywords = ["Connecticut loan officers", "CT mortgage brokers", "Hartford loan officers", "New Haven MLOs", "Stamford mortgage professionals", "NMLS licensed"]
+  serviceType = "Connecticut Mortgage Loan Officer Directory"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Connecticut Loan Officers — NMLS-Licensed Mortgage Professionals"
+  heroSubtitle = "Find Connecticut loan officers with wholesale lender access, regional expertise, and transparent pricing. Compare brokers vs bank employees for Hartford, New Haven, Stamford, and Fairfield County financing."
+  heroImage = "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find CT Loan Officers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Connecticut Loan Officer Choice Matters"
+  aboutImage = "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Connecticut Loan Officer Types"
+  programsSubtitle = "Compare mortgage brokers, bank loan officers, and credit union MLOs across CT markets."
+
+  program1Title = "Mortgage Brokers with Wholesale Access"
+  program1Description = "Connecticut brokers access 20+ wholesale lenders, offering 0.125%–0.375% better pricing than retail. Multi-lender comparison for conventional, FHA, VA, and jumbo loans."
+  program1Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Bank Loan Officers (Retail Pricing)"
+  program2Description = "Connecticut bank employees offer single-lender programs with local underwriting. Strong for portfolio lending and jumbo relationships but limited rate comparison."
+  program2Image = "https://images.unsplash.com/photo-1554224311-beee2c87f58d?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Credit Union MLOs"
+  program3Description = "Member-owned credit unions provide relationship-based pricing and lower fees. Competitive for standard purchases in Hartford and New Haven markets."
+  program3Image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Compare CT Loan Officers"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Connecticut broker loan officers deliver wholesale pricing advantage—0.125%–0.375% below bank retail rates through multi-lender access."
+
+  educationTitle = "Connecticut Loan Officer Expertise"
+  educationSubtitle = "Understand NMLS licensing, wholesale access, and regional specialization for CT mortgage professionals."
+
+  edu1Title = "NMLS Licensing Requirements"
+  edu1Description = "Connecticut loan officers must hold active NMLS licenses, complete annual CE, and maintain state registration. Verify credentials at NMLSConsumerAccess.org."
+  edu1Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Wholesale vs Retail Pricing"
+  edu2Description = "Brokers access wholesale rates 0.125%–0.375% below retail through lender relationships. Bank loan officers offer retail pricing only."
+  edu2Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Regional Market Expertise"
+  edu3Description = "Connecticut loan officers specialize by region—Hartford/New Haven conventional, Fairfield County jumbo, and coastal luxury properties. Match expertise to your market."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Compensation Transparency"
+  edu4Description = "Loan officers earn via borrower-paid fees or lender-paid compensation. Ask for both options to compare APR and breakeven timelines."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Loan Officer Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Working with Connecticut Loan Officers"
+  learningSubtitle = "Find NMLS-licensed professionals with regional expertise and transparent pricing."
+  learningImage = "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Connecticut loan officers vary in lender access, pricing structure, and regional expertise. Brokers with wholesale access deliver 0.125%–0.375% better rates than bank retail loan officers through multi-lender competition."
+  learningBullet1 = "Find Connecticut loan officers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with verified NMLS credentials."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> before meeting loan officers."
+  learningBullet3 = "Model payment scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for informed discussions."
+  learningBullet4 = "Verify NMLS licensing at NMLSConsumerAccess.org before sharing financial information."
+  learningPara2 = "Interview 3+ Connecticut loan officers (mix of brokers and bank MLOs) to compare pricing and expertise."
+  learningPara3 = "Connecticut borrowers save by choosing brokers for standard loans and specialized jumbo lenders for Fairfield County markets."
+
+  whyChooseTitle = "Why Connecticut Loan Officer Choice Affects Your Rate"
+  whyChooseSubtitle = "Wholesale access, lender options, and property expertise create cost differences."
+  whyChoosePara1 = "Connecticut loan officers operate under different models—brokers access wholesale pricing while bank employees offer single-lender retail rates. This structural difference creates 0.125%–0.375% pricing gaps."
+  whyChoosePara2 = "Education-first: understand loan officer types, compensation structures, and regional specialization to avoid overpaying."
+
+  whyChooseBox1Title = "Wholesale Pricing Advantage"
+  whyChooseBox1Para = "Brokers access wholesale rates through lender aggregators. The same lender charges less wholesale than retail direct to consumers."
+  whyChooseBox1Bullet1 = "Wholesale rate: 6.500% | Retail rate: 6.750%"
+  whyChooseBox1Bullet2 = "0.25% difference = $110/month on $450K loan"
+  whyChooseBox1Bullet3 = "Brokers shop 20+ lenders vs bank 1 option"
+
+  whyChooseBox2Title = "Regional Expertise"
+  whyChooseBox2Para = "Hartford/New Haven loan officers handle standard purchases, while Fairfield County specialists focus on jumbo and luxury lending."
+  whyChooseBox2Bullet1 = "Standard homes: Broker or bank competitive"
+  whyChooseBox2Bullet2 = "Fairfield County jumbo: Specialized MLOs"
+  whyChooseBox2Bullet3 = "Coastal luxury: Appraisal expertise required"
+
+  whyChooseBox3Title = "NMLS Licensing & Accountability"
+  whyChooseBox3Para = "Connecticut requires NMLS licensing and regulatory oversight. Licensed loan officers provide consumer protections and compliance accountability."
+  whyChooseBox3Bullet1 = "Verify NMLS# at NMLSConsumerAccess.org"
+  whyChooseBox3Bullet2 = "Active license = compliance and protections"
+  whyChooseBox3Bullet3 = "Ask for NMLS number before applying"
+
+  whyChooseCTA = "Find Licensed CT Loan Officers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Connecticut Borrowers Who Chose Experienced Loan Officers"
+  testimonialsSubtitle = "Real savings from wholesale access and regional expertise."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Hartford broker compared five lenders and beat our bank by 0.25%. Saved $110/month on our $450K loan."
+  testimonial1Name = "Andrea & Kevin Blake"
+  testimonial1Subtitle = "Hartford Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "New Haven FHA loan with low down payment. Broker found a lender with $3,200 less in fees and lower APR."
+  testimonial2Name = "Marcus Reed"
+  testimonial2Subtitle = "New Haven FHA"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Stamford jumbo lender beat a national bank by 0.5%. Specialized loan officer saved $7,800/year."
+  testimonial3Name = "Priya Desai"
+  testimonial3Subtitle = "Stamford Jumbo"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Fairfield County loan officer showed borrower-paid vs lender-paid pricing. We chose borrower-paid and saved $9,000 over five years."
+  testimonial4Name = "Natalie King"
+  testimonial4Subtitle = "Fairfield Jumbo"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521566652839-697aa473761a?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Credit tier improvement saved us 0.25%. Loan officer guided our score improvement and saved $85/month."
+  testimonial5Name = "Luis Martinez"
+  testimonial5Subtitle = "Bridgeport Purchase"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "We verified NMLS licensing and compared three loan officers. Chose the one with the lowest APR and fastest closing."
+  testimonial6Name = "Catherine Owens"
+  testimonial6Subtitle = "New Haven Refinance"
+
+  calculatorsTitle = "Connecticut Loan Officer Tools"
+  calculatorsSubtitle = "Compare pricing, APR, and loan officer types."
+
+  creditScoreTitle = "Credit Optimization with CT Loan Officers"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Loan officers guide credit improvement before application to optimize rate tiers. A 40–60 point increase can save 0.25%–0.75% on rates."
+  creditScoreHeading1 = "Pre-Application Credit Guidance"
+  creditScoreText1 = "Review credit 3–6 months before purchase, pay down cards, dispute errors, and time application for best pricing."
+  creditScoreHeading2 = "Credit Tier Impact"
+  creditScoreText2 = "$500K loan: 760 tier $3,450/month vs. 700 tier $3,650/month — about $200/month difference."
+  creditScoreHeading3 = "When to Wait vs Apply"
+  creditScoreText3 = "If close to a tier cutoff (e.g., 718 vs 720), waiting 1–2 months can save significant interest."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Connecticut Loan Officer Education"
+  employersSubtitle = "Help employees understand loan officer types, wholesale pricing, and NMLS licensing."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Connecticut employers can offer mortgage education covering loan officer selection, wholesale pricing, and NMLS verification for relocating employees."
+  employersBullet1Title = "Loan officer type education"
+  employersBullet1Text = "Teach employees to compare brokers (wholesale access) vs bank MLOs (retail pricing)."
+  employersBullet2Title = "APR comparison"
+  employersBullet2Text = "Show how APR reveals true cost differences across lender options."
+  employersBullet3Title = "NMLS verification"
+  employersBullet3Text = "Explain how to verify licensing at NMLSConsumerAccess.org."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Connecticut Loan Officer Insights"
+  blogSubtitle = "Licensing, wholesale access, and regional expertise for CT mortgage professionals."
+
+  faqTitle = "Connecticut Loan Officer Questions"
+  faqSubtitle = "Common questions about NMLS licensing, broker vs bank MLOs, and regional expertise."
+
+  faq1Question = "What's the difference between a CT broker and bank loan officer?"
+  faq1Answer = "Brokers access 20+ wholesale lenders (0.125%–0.375% below retail). Bank loan officers offer single-lender retail rates."
+
+  faq2Question = "How do I verify a CT loan officer's license?"
+  faq2Answer = "Visit NMLSConsumerAccess.org, enter the loan officer's name or NMLS number, and verify active Connecticut licensing."
+
+  faq3Question = "Do Connecticut loan officers charge fees?"
+  faq3Answer = "Loan officers earn via borrower-paid fees or lender-paid compensation. Ask for both options and compare APR."
+
+  faq4Question = "Which loan officer type is best for Fairfield County jumbo?"
+  faq4Answer = "Specialized jumbo loan officers with luxury market experience provide best pricing and appraisal expertise."
+
+  faq5Question = "Why do broker rates beat bank rates?"
+  faq5Answer = "Wholesale pricing—lenders offer discounts to brokers for volume, so the same lender charges less wholesale than retail."
+
+  faq6Question = "Should I interview multiple CT loan officers?"
+  faq6Answer = "Yes. Compare 3+ loan officers for rates, fees, and expertise. APR differences can save thousands."
+
+  ctaTitle = "Ready to Find a Connecticut Loan Officer?"
+  ctaDescription = "Connect with NMLS-licensed Connecticut mortgage professionals offering wholesale pricing and regional expertise."
+  ctaCTA = "Find CT Loan Officers"
+  ctaCTALink = "https://www.browselenders.com/search/"

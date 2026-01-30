@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Connecticut Home Rates</title>
+    <link>http://localhost:1392/tags/</link>
+    <description>Recent content in Tags on Connecticut Home Rates</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1392/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APR</title>
+      <link>http://localhost:1392/tags/apr/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/apr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Connecticut Mortgage Costs</title>
+      <link>http://localhost:1392/tags/connecticut-mortgage-costs/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/connecticut-mortgage-costs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interest Rate</title>
+      <link>http://localhost:1392/tags/interest-rate/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/interest-rate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lender Fees</title>
+      <link>http://localhost:1392/tags/lender-fees/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/lender-fees/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Connecticut Mortgage Rates</title>
+      <link>http://localhost:1392/tags/connecticut-mortgage-rates/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/connecticut-mortgage-rates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ct Housing Market</title>
+      <link>http://localhost:1392/tags/ct-housing-market/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/ct-housing-market/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rate Lock Timing</title>
+      <link>http://localhost:1392/tags/rate-lock-timing/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/rate-lock-timing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seasonal Patterns</title>
+      <link>http://localhost:1392/tags/seasonal-patterns/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/seasonal-patterns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fairfield County Jumbo</title>
+      <link>http://localhost:1392/tags/fairfield-county-jumbo/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/fairfield-county-jumbo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hartford Rates</title>
+      <link>http://localhost:1392/tags/hartford-rates/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/hartford-rates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New Haven Rates</title>
+      <link>http://localhost:1392/tags/new-haven-rates/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1392/tags/new-haven-rates/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

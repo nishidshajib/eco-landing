@@ -1,0 +1,228 @@
+baseURL = "https://brokershi.com"
+languageCode = "en-us"
+title = "Hawaii Mortgage Brokers"
+theme = "heloc-blog"
+contentDir = "content/brokershi"
+publishDir = "public/brokershi"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Hawaii mortgage brokers access mainland wholesale lenders and local portfolio programs for second homes, jumbo loans, and island-specific financing. Compare broker vs bank pricing across Oahu, Maui, Kauai, Big Island."
+  author = "Browse Lenders®"
+  shortName = "HI Brokers"
+  tagline = "Island Wholesale Access for Hawaii Homebuyers"
+  homepage = "https://brokershi.com"
+
+  siteName = "Hawaii Mortgage Brokers"
+  siteDescription = "Compare Hawaii mortgage brokers for wholesale pricing, multi-lender access, and island-specific expertise. Understand second-home pricing, jumbo loan options, and portfolio lending across all islands."
+  keywords = ["Hawaii mortgage brokers", "Oahu brokers", "Maui mortgage brokers", "wholesale rates Hawaii", "second home financing", "jumbo loans Hawaii"]
+  serviceType = "Hawaii Mortgage Broker Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Hawaii Mortgage Brokers — Island & Mainland Wholesale Access"
+  heroSubtitle = "Compare broker wholesale pricing for second homes, jumbo loans, and unique properties. Access mainland lenders and local portfolio programs across Oahu, Maui, Kauai, and Big Island."
+  heroImage = "https://images.unsplash.com/photo-1542259009477-d625272157b7?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find HI Brokers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Hawaii Borrowers Use Mortgage Brokers"
+  aboutImage = "https://images.unsplash.com/photo-1758519289366-6a0034f30844?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Hawaii Broker Loan Programs"
+  programsSubtitle = "Access conventional, jumbo, second-home, and portfolio financing through wholesale broker channels."
+
+  program1Title = "Second-Home Wholesale Financing"
+  program1Description = "Hawaii brokers access mainland wholesale lenders and local portfolio programs for Maui, Kauai, and Big Island second homes. Minimize occupancy-based rate premiums through lender competition."
+  program1Image = "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Jumbo & High-Cost Conforming"
+  program2Description = "Hawaii's $1,149,825 conforming limit requires specialized broker expertise. Access mainland jumbo lenders and portfolio programs for oceanfront, luxury, and unique properties."
+  program2Image = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Portfolio & Unique Property Financing"
+  program3Description = "Hawaii brokers access portfolio lenders for oceanfront estates, acreage properties, resort condos, and complex second-home scenarios beyond agency guidelines."
+  program3Image = "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Broker Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Hawaii brokers provide mainland wholesale access and local portfolio relationships unavailable at single retail banks."
+
+  educationTitle = "Understanding Hawaii Mortgage Brokers"
+  educationSubtitle = "Island expertise, second-home pricing, and wholesale lender access."
+
+  edu1Title = "Mainland vs Local Lender Access"
+  edu1Description = "Hawaii brokers access mainland wholesale lenders (competitive pricing for conforming/FHA/VA) and local portfolio lenders (expertise for oceanfront, second homes, unique properties). Single banks offer only their programs."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Second-Home Pricing Expertise"
+  edu2Description = "Hawaii brokers understand occupancy-based pricing and shop multiple lenders to minimize second-home rate premiums (typically +0.50% to +0.75% on jumbo loans). Island expertise critical."
+  edu2Image = "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "High-Cost Conforming Knowledge"
+  edu3Description = "Hawaii's $1,149,825 conforming limit enables agency pricing for properties that would be jumbo elsewhere. Brokers structure loans to maximize this advantage through down payment optimization."
+  edu3Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Portfolio Lender Relationships"
+  edu4Description = "Hawaii brokers maintain relationships with portfolio lenders specializing in oceanfront, acreage, resort properties, and complex second-home scenarios. Critical for Maui, Kauai, Big Island markets."
+  edu4Image = "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Hawaii Broker Benefits"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Hawaii Broker Wholesale Advantage"
+  learningSubtitle = "Why wholesale access and island expertise beat single-bank financing."
+  learningImage = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Hawaii mortgage brokers combine mainland wholesale lender access (competitive rates for conforming/FHA/VA) with local portfolio relationships (expertise for second homes, jumbo, oceanfront). Single banks offer limited island expertise and no lender competition."
+  learningBullet1 = "Compare Hawaii brokers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for island-specific expertise."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> for Hawaii jumbo pricing."
+  learningBullet3 = "Model second-home scenarios at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to compare broker vs bank APR."
+  learningBullet4 = "Ask brokers for Loan Estimates from multiple lenders to see mainland vs local portfolio pricing."
+  learningPara2 = "Hawaii broker multi-lender access beats single bank limitations—critical for second homes, jumbo loans, and unique island properties."
+  learningPara3 = "Mainland wholesale rates plus local portfolio expertise create optimal Hawaii broker value proposition."
+
+  whyChooseTitle = "Why Choose Hawaii Mortgage Brokers"
+  whyChooseSubtitle = "Island expertise, wholesale access, and second-home pricing knowledge."
+  whyChoosePara1 = "Hawaii mortgage brokers offer mainland wholesale pricing through 20+ lenders plus local portfolio relationships for island-specific challenges. Broker island expertise and multi-lender access improve approval odds and minimize second-home premiums."
+  whyChoosePara2 = "Education-first: understand broker second-home expertise, high-cost conforming limits, and portfolio lender access for best Hawaii financing outcomes."
+
+  whyChooseBox1Title = "Island Market Expertise"
+  whyChooseBox1Para = "Hawaii brokers understand island-specific challenges: second-home occupancy pricing, oceanfront appraisals, high-cost conforming limits, and portfolio lender requirements for unique properties."
+  whyChooseBox1Bullet1 = "Oahu: Mainland wholesale + local portfolio access"
+  whyChooseBox1Bullet2 = "Maui/Kauai: Second-home pricing expertise essential"
+  whyChooseBox1Bullet3 = "Big Island: Unique property portfolio relationships"
+
+  whyChooseBox2Title = "Second-Home Pricing Optimization"
+  whyChooseBox2Para = "Hawaii brokers shop multiple lenders to minimize second-home rate premiums (+0.50% to +0.75% typical). Single banks offer one price; brokers compare 5-10 lenders for best occupancy-based pricing."
+  whyChooseBox2Bullet1 = "Compare second-home lenders for best pricing"
+  whyChooseBox2Bullet2 = "Portfolio lenders offer more flexibility"
+  whyChooseBox2Bullet3 = "Minimize occupancy-based rate premiums"
+
+  whyChooseBox3Title = "Jumbo & Portfolio Access"
+  whyChooseBox3Para = "Hawaii brokers access mainland jumbo lenders and local portfolio programs for oceanfront, luxury, and unique properties. Wholesale jumbo rates often 0.25%-0.50% below retail banks."
+  whyChooseBox3Bullet1 = "High-cost conforming: Optimize $1.15M limit"
+  whyChooseBox3Bullet2 = "Jumbo wholesale: Mainland lender competition"
+  whyChooseBox3Bullet3 = "Portfolio: Oceanfront and unique property expertise"
+
+  whyChooseCTA = "Find Hawaii Brokers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Hawaii Borrowers Who Chose Brokers"
+  testimonialsSubtitle = "Real savings from island expertise and wholesale pricing."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Maui second-home broker shopped 6 lenders and saved us 0.625% vs our mainland bank quote. Island expertise made all the difference."
+  testimonial1Name = "Robert & Lisa M."
+  testimonial1Subtitle = "Maui Second Home"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Oahu condo: Broker structured loan under $1.15M conforming limit with larger down payment. Saved 0.375% vs jumbo pricing—$340/month."
+  testimonial2Name = "Jennifer Park"
+  testimonial2Subtitle = "Honolulu Purchase"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Kauai oceanfront: Broker found portfolio lender with Hawaii appraisal expertise. Prevented $120K undervaluation and got competitive rate."
+  testimonial3Name = "David Chen"
+  testimonial3Subtitle = "Kauai Oceanfront"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Big Island acreage: Retail banks said no due to agricultural zoning. Broker's portfolio lender approved at 6.875% with 20% down."
+  testimonial4Name = "Sarah & Michael W."
+  testimonial4Subtitle = "Big Island Estate"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Maui resort condo: Broker explained occupancy classification and saved us from investment property pricing. Got second-home rate instead."
+  testimonial5Name = "Thomas Rodriguez"
+  testimonial5Subtitle = "Wailea Condo"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Jumbo refinance Oahu: Broker shopped 4 mainland lenders and beat our bank by 0.50%. $465/month savings on $1.9M balance."
+  testimonial6Name = "Amanda Tanaka"
+  testimonial6Subtitle = "Oahu Jumbo Refi"
+
+  calculatorsTitle = "Hawaii Broker Fee & Rate Tools"
+  calculatorsSubtitle = "Model broker fees, compare second-home APR, and plan island financing."
+
+  creditScoreTitle = "Credit Score Impact on Hawaii Broker Pricing"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers affect Hawaii broker pricing, especially for second-home jumbo loans. Hawaii brokers access lenders for all credit ranges—740+ for best wholesale rates, 720+ for second-home jumbo, 680+ for portfolio options."
+  creditScoreHeading1 = "Hawaii Broker Credit Tiers"
+  creditScoreText1 = "760+ best wholesale pricing; 740-759 adds ~0.125%; 720-739 adds ~0.25%; second-home jumbo requires 720+ minimum; portfolio lenders via brokers accept 680+ with strong assets."
+  creditScoreHeading2 = "Second-Home Jumbo Impact"
+  creditScoreText2 = "740+ credit on Maui second home: wholesale 0.50% better than retail. 720 credit: wholesale 0.625% better due to broker lender competition and portfolio access."
+  creditScoreHeading3 = "Broker Portfolio Access"
+  creditScoreText3 = "Scores 680-720: Hawaii brokers access portfolio lenders for oceanfront, acreage, and unique properties that retail banks auto-decline. Broker approval odds higher."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Hawaii Broker Education"
+  employersSubtitle = "Help employees understand broker island expertise and second-home financing options."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Hawaii employers can offer mortgage broker education covering island-specific expertise, second-home pricing, high-cost conforming limits, and when brokers beat retail banks for employee property purchases."
+  employersBullet1Title = "Island broker expertise"
+  employersBullet1Text = "Teach employees about second-home occupancy pricing, high-cost conforming limits, and portfolio lender access for Hawaii properties."
+  employersBullet2Title = "Broker vs bank comparison"
+  employersBullet2Text = "Explain how Hawaii brokers access mainland wholesale lenders and local portfolio programs unavailable at single banks."
+  employersBullet3Title = "Multi-lender access"
+  employersBullet3Text = "Help employees understand broker approval advantages for jumbo, second-home, and unique property financing."
+
+  employersCTA = "Partner for Hawaii Relocation"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Hawaii Mortgage Broker Insights"
+  blogSubtitle = "Island expertise, second-home pricing, and wholesale lender access."
+
+  faqTitle = "Hawaii Mortgage Broker Questions"
+  faqSubtitle = "Common questions about island brokers, second-home financing, and wholesale pricing."
+
+  faq1Question = "Do Hawaii brokers cost more than local banks?"
+  faq1Answer = "Not typically. Brokers charge 1%-2% origination fees, but wholesale pricing and lender competition often save 0.25%-0.50% on rates. Compare APR to see total cost—brokers often win for second homes and jumbo loans."
+
+  faq2Question = "How do Hawaii brokers help with second-home financing?"
+  faq2Answer = "Hawaii brokers shop multiple lenders to minimize second-home rate premiums (+0.50% to +0.75% typical). They understand occupancy classification and can find portfolio lenders with more flexible pricing."
+
+  faq3Question = "Can brokers access better rates for Maui or Kauai properties?"
+  faq3Answer = "Yes. Hawaii brokers access mainland wholesale lenders (competitive pricing) and local portfolio lenders (island expertise). Single banks offer limited options for neighbor island second homes."
+
+  faq4Question = "What if a broker's lender doesn't approve my oceanfront property?"
+  faq4Answer = "Hawaii brokers submit to multiple lenders. If Lender A declines due to appraisal or underwriting, broker moves to Lender B or C with oceanfront expertise. This is key for unique island properties."
+
+  faq5Question = "Are Hawaii brokers licensed?"
+  faq5Answer = "Yes. Hawaii brokers must hold NMLS licenses and Hawaii state registration. Verify broker NMLS at nmlsconsumeraccess.org before sharing financial information."
+
+  faq6Question = "Do brokers understand Hawaii's high-cost conforming limit?"
+  faq6Answer = "Experienced Hawaii brokers understand the $1,149,825 conforming limit and can structure loans to stay under this threshold (larger down payment) to access agency pricing vs jumbo rates."
+
+  ctaTitle = "Ready to Compare Hawaii Mortgage Brokers?"
+  ctaDescription = "Find brokers with island expertise, wholesale lender access, and second-home financing knowledge across Oahu, Maui, Kauai, and Big Island."
+  ctaCTA = "Find Hawaii Brokers"
+  ctaCTALink = "https://www.browselenders.com/search/"

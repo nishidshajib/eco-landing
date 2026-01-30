@@ -1,0 +1,228 @@
+baseURL = "https://mortgagebrokersnh.com"
+languageCode = "en-us"
+title = "NH Mortgage Brokers"
+theme = "heloc-blog"
+contentDir = "content/mortgagebrokersnh"
+publishDir = "public/mortgagebrokersnh"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "New Hampshire mortgage brokers access 20+ wholesale lenders for conventional, FHA, VA, jumbo, and portfolio loans. Compare broker vs bank pricing and wholesale rate advantages."
+  author = "Browse Lenders®"
+  shortName = "NH Brokers"
+  tagline = "Wholesale Lender Access for New Hampshire Homebuyers"
+  homepage = "https://mortgagebrokersnh.com"
+
+  siteName = "NH Mortgage Brokers"
+  siteDescription = "Compare NH mortgage brokers for wholesale pricing, multi-lender access, and portfolio loan options. Understand broker fees, wholesale rate advantages, and lender competition."
+  keywords = ["NH mortgage brokers", "New Hampshire brokers", "wholesale mortgage rates", "broker vs bank", "portfolio loans NH"]
+  serviceType = "New Hampshire Mortgage Broker Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "New Hampshire Mortgage Brokers — Access 20+ Wholesale Lenders"
+  heroSubtitle = "Compare broker wholesale pricing vs retail banks. Get multi-lender access for conventional, FHA, VA, jumbo, and portfolio financing across NH markets."
+  heroImage = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find NH Brokers"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why New Hampshire Borrowers Use Mortgage Brokers"
+  aboutImage = "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "NH Broker Loan Programs"
+  programsSubtitle = "Access conventional, FHA, VA, jumbo, and portfolio financing through wholesale broker channels."
+
+  program1Title = "Conventional & FHA Wholesale"
+  program1Description = "Wholesale conventional rates through United Wholesale Mortgage, Caliber, PennyMac, and 15+ aggregators. FHA/VA pricing often 0.125%–0.25% better than retail banks."
+  program1Image = "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "VA & USDA Broker Access"
+  program2Description = "Veterans and rural NH buyers access specialized VA/USDA lenders through brokers. Portfolio VA options for complex scenarios and cash-out over 100% LTV."
+  program2Image = "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo & Portfolio Financing"
+  program3Description = "NH jumbo loans (>$806,500) and portfolio options for self-employed, investors, and non-QM borrowers. Brokers access 10+ jumbo lenders vs 1–2 at retail banks."
+  program3Image = "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Broker Options"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Brokers provide wholesale rate advantages and multi-lender access unavailable at single retail banks."
+
+  educationTitle = "Understanding NH Mortgage Brokers"
+  educationSubtitle = "How brokers work, fee structures, and wholesale pricing advantages."
+
+  edu1Title = "Broker vs Bank Pricing Model"
+  edu1Description = "Retail banks lend their own money and price to cover overhead plus profit margin. Mortgage brokers access wholesale lenders who price 0.125%–0.375% below retail to compete for broker volume."
+  edu1Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "How Broker Compensation Works"
+  edu2Description = "NH brokers earn origination fees (1%–2% of loan amount) or yield spread premium from wholesale lenders. All compensation is disclosed in your Loan Estimate Section A."
+  edu2Image = "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Wholesale Lender Network Access"
+  edu3Description = "Brokers submit applications to United Wholesale Mortgage, Caliber, Flagstar, PennyMac, Angel Oak, and 15+ specialized lenders. Each lender competes on rate, fees, and underwriting overlays."
+  edu3Image = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Portfolio Loan Advantages"
+  edu4Description = "NH brokers access portfolio lenders for scenarios retail banks auto-decline: self-employed with 1099 income, investors buying 5th+ property, cash-out refinances over 80% LTV, or credit scores 620–680."
+  edu4Image = "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Broker Benefits"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "NH Broker Wholesale Advantage"
+  learningSubtitle = "Why wholesale pricing beats retail bank rates across New Hampshire."
+  learningImage = "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "New Hampshire mortgage brokers access wholesale lender networks that price 0.125%–0.375% below retail banks. Even after broker fees (1%–2%), wholesale APR often beats retail bank total cost."
+  learningBullet1 = "Compare brokers at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> for transparent fee disclosure and rate comparison."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to see broker pricing options."
+  learningBullet3 = "Model broker fees at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to compare APR vs retail banks."
+  learningBullet4 = "Ask brokers for Loan Estimates from 2–3 wholesale lenders to see rate competition."
+  learningPara2 = "Wholesale broker pricing transparency beats bank retail margins. Compare APR across broker and bank quotes."
+  learningPara3 = "NH brokers provide multi-lender access—if Lender A declines, broker moves to Lender B without restarting your application."
+
+  whyChooseTitle = "Why Choose NH Mortgage Brokers"
+  whyChooseSubtitle = "Wholesale rate access, multi-lender shopping, and portfolio loan options."
+  whyChoosePara1 = "New Hampshire mortgage brokers offer wholesale pricing through 20+ lenders vs single retail bank rates and underwriting. Broker fee transparency and multi-lender access improve approval odds and reduce total costs."
+  whyChoosePara2 = "Education-first: understand broker compensation, wholesale vs retail pricing, and when brokers beat banks for best financial outcomes."
+
+  whyChooseBox1Title = "Wholesale Rate Advantage"
+  whyChooseBox1Para = "Wholesale lenders price 0.125%–0.375% below retail banks to compete for broker volume. Broker fees (1%–2%) are disclosed upfront, and total APR often beats bank retail margins."
+  whyChooseBox1Bullet1 = "Wholesale conventional: 0.125%–0.25% below retail"
+  whyChooseBox1Bullet2 = "Wholesale FHA: 0.125%–0.375% below retail"
+  whyChooseBox1Bullet3 = "Wholesale jumbo: 0.25%–0.50% below retail"
+
+  whyChooseBox2Title = "Multi-Lender Access"
+  whyChooseBox2Para = "Brokers submit applications to multiple lenders. If Lender A declines or prices high, broker moves to Lender B or C without restarting. Retail banks offer one approval decision only."
+  whyChooseBox2Bullet1 = "One broker application = 5–20 lender options"
+  whyChooseBox2Bullet2 = "If declined, broker finds alternative lender"
+  whyChooseBox2Bullet3 = "Broker matches your profile to best lender underwriting"
+
+  whyChooseBox3Title = "Portfolio Loan Options"
+  whyChooseBox3Para = "NH brokers access portfolio lenders for self-employed, investors, credit challenges, and non-QM scenarios retail banks auto-decline."
+  whyChooseBox3Bullet1 = "Self-employed bank statement programs"
+  whyChooseBox3Bullet2 = "Investor loans 5–10 properties"
+  whyChooseBox3Bullet3 = "Manual underwriting for credit 620–680"
+
+  whyChooseCTA = "Find NH Brokers"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "NH Borrowers Who Chose Brokers"
+  testimonialsSubtitle = "Real savings from wholesale pricing and multi-lender access."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Our broker got us 6.25% conventional when TD Bank quoted 6.50% for the same loan. Saved $900/year and broker fee was only $3,200."
+  testimonial1Name = "Michael T."
+  testimonial1Subtitle = "Portsmouth Purchase"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "We're self-employed and every bank said no. Our broker found a portfolio lender that used 12 months bank statements. Closed in 28 days."
+  testimonial2Name = "Jennifer & Tom K."
+  testimonial2Subtitle = "Meredith Second Home"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Broker submitted us to 4 lenders and we picked the best rate. That competition saved us 0.375% vs going direct to one bank."
+  testimonial3Name = "David R."
+  testimonial3Subtitle = "Manchester Refinance"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Investment property purchase—retail banks wanted 25% down. Broker found lender at 20% down with better rate. Saved $25k cash."
+  testimonial4Name = "Sarah M."
+  testimonial4Subtitle = "Nashua Investment"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Seasonal access property—two banks said no due to winter road closure. Broker knew which portfolio lender would approve at 6.375% jumbo."
+  testimonial5Name = "James & Lisa W."
+  testimonial5Subtitle = "Conway Seasonal Home"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "VA cash-out refi—my bank said max 90% LTV. Broker found portfolio VA lender at 100% LTV with lower rate. Consolidated $40k debt."
+  testimonial6Name = "Robert C."
+  testimonial6Subtitle = "Concord VA Refi"
+
+  calculatorsTitle = "NH Broker Fee & Rate Tools"
+  calculatorsSubtitle = "Model broker fees, compare APR, and plan wholesale pricing."
+
+  creditScoreTitle = "Credit Score Impact on Broker Pricing"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit tiers affect wholesale broker pricing just like retail banks. NH brokers access lenders for all credit ranges—740+ for best wholesale rates, 620–680 for manual underwriting and portfolio options."
+  creditScoreHeading1 = "Broker Credit Tiers"
+  creditScoreText1 = "760+ best wholesale pricing; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 680–719 adds ~0.50%; 620–680 requires portfolio lenders via brokers."
+  creditScoreHeading2 = "Wholesale vs Retail by Credit"
+  creditScoreText2 = "760 credit: wholesale 0.25% better than retail. 680 credit: wholesale 0.375% better due to fewer bank overlays through broker channels."
+  creditScoreHeading3 = "Broker Portfolio Access"
+  creditScoreText3 = "Scores 620–680: brokers access manual underwriting portfolio lenders retail banks don't offer. NH brokers improve approval odds for moderate credit."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – NH Broker Education"
+  employersSubtitle = "Help employees understand broker vs bank pricing and wholesale rate advantages."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "New Hampshire employers can offer mortgage broker education covering wholesale pricing, fee transparency, and when brokers beat retail banks for employee homebuying."
+  employersBullet1Title = "Broker vs bank comparison"
+  employersBullet1Text = "Teach employees to compare wholesale broker APR vs retail bank total costs."
+  employersBullet2Title = "Fee transparency"
+  employersBullet2Text = "Explain how broker fees (1%–2%) are disclosed and often offset by lower wholesale rates."
+  employersBullet3Title = "Multi-lender access"
+  employersBullet3Text = "Help employees understand broker approval advantages for complex scenarios."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "NH Mortgage Broker Insights"
+  blogSubtitle = "Wholesale pricing, broker vs bank, and portfolio loan access."
+
+  faqTitle = "NH Mortgage Broker Questions"
+  faqSubtitle = "Common questions about brokers, fees, and wholesale pricing."
+
+  faq1Question = "Do brokers cost more than banks?"
+  faq1Answer = "Not typically. Brokers charge 1%–2% origination fees, but wholesale pricing is 0.125%–0.375% lower than retail. Compare APR to see total cost—brokers often win."
+
+  faq2Question = "How do NH brokers get paid?"
+  faq2Answer = "Brokers earn origination fees from you (disclosed in Loan Estimate) or yield spread premium from wholesale lenders. All compensation is disclosed upfront."
+
+  faq3Question = "Can brokers access better rates?"
+  faq3Answer = "Yes. Wholesale lenders price 0.125%–0.375% below retail to compete for broker volume. Brokers shop 5–10 lenders to find best pricing."
+
+  faq4Question = "What if a broker's lender declines?"
+  faq4Answer = "Brokers submit to multiple lenders. If Lender A declines, broker moves to Lender B or C without restarting. This is the key advantage over single retail banks."
+
+  faq5Question = "Are NH brokers licensed?"
+  faq5Answer = "Yes. NH brokers must hold NMLS licenses and comply with state regulations. Verify broker NMLS at nmlsconsumeraccess.org."
+
+  faq6Question = "Do credit unions beat brokers?"
+  faq6Answer = "Sometimes for conventional loans with strong credit (740+). But for FHA, VA, jumbo, or non-QM, brokers usually access better wholesale pricing and more lender options."
+
+  ctaTitle = "Ready to Compare NH Mortgage Brokers?"
+  ctaDescription = "Find brokers with wholesale lender access and transparent fee disclosure across New Hampshire markets."
+  ctaCTA = "Find NH Brokers"
+  ctaCTALink = "https://www.browselenders.com/search/"

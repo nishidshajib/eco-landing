@@ -1,0 +1,228 @@
+baseURL = "https://connecticutjumbolenders.com"
+languageCode = "en-us"
+title = "Connecticut Jumbo Lenders"
+theme = "heloc-blog"
+contentDir = "content/connecticutjumbolenders"
+publishDir = "public/connecticutjumbolenders"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Connecticut jumbo lenders for Fairfield County luxury homes, Greenwich mansions, and high-balance mortgages. Access jumbo loans up to $5M+ in Connecticut."
+  author = "Browse Lenders®"
+  shortName = "CT Jumbo Lenders"
+  tagline = "Luxury Mortgage Financing for Premium Connecticut Properties"
+  homepage = "https://connecticutjumbolenders.com"
+
+  siteName = "Connecticut Jumbo Lenders"
+  siteDescription = "Finance your Connecticut luxury home with specialized jumbo lenders. Access loan amounts $750K-$5M+ for Fairfield County, Greenwich, Westport, and Darien properties with expert portfolio underwriting."
+  keywords = ["Connecticut jumbo lenders", "CT jumbo mortgages", "Greenwich jumbo loans", "Fairfield County luxury financing", "high balance Connecticut mortgages", "jumbo loan specialists"]
+  serviceType = "Connecticut Jumbo Mortgage Lender Network"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Connecticut Jumbo Lenders — Luxury Mortgage Specialists"
+  heroSubtitle = "Access specialized jumbo financing for Fairfield County luxury properties. Connect with lenders offering $750K-$5M+ jumbo loans for Greenwich, Westport, Darien, and premium Connecticut markets."
+  heroImage = "https://images.unsplash.com/photo-1758518729908-d4220a678d81?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Find Jumbo Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Connecticut Jumbo Lending Expertise Matters"
+  aboutImage = "https://images.unsplash.com/photo-1714974528693-f77f6fcc56af?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Connecticut Jumbo Mortgage Programs"
+  programsSubtitle = "Compare portfolio lenders, bank jumbo programs, and specialized underwriting for Fairfield County luxury properties."
+
+  program1Title = "Standard Jumbo Mortgages ($750K-$2M)"
+  program1Description = "Competitive rates for jumbo loans in the Fairfield County market. Access portfolio lenders, bank jumbo programs, and specialized jumbo brokers with wholesale pricing."
+  program1Image = "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "Super Jumbo Mortgages ($2M-$5M)"
+  program2Description = "Ultra-high balance financing for premium estates and waterfront properties. Asset-based underwriting and flexible qualification criteria for exceptional borrowers."
+  program2Image = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Portfolio Lending for Specialty Properties"
+  program3Description = "Bank portfolio loans for unique Connecticut properties including luxury homes, waterfront estates, and complex underwriting situations beyond agency guidelines."
+  program3Image = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "Explore Jumbo Programs"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Connecticut jumbo lenders specialize in Fairfield County luxury markets—portfolio lenders offer maximum flexibility for complex wealth structures and unique properties."
+
+  educationTitle = "Connecticut Jumbo Lending Intelligence"
+  educationSubtitle = "Understand loan limits, qualification requirements, and portfolio vs agency options."
+
+  edu1Title = "Jumbo Loan Limits & Categories"
+  edu1Description = "Connecticut jumbo mortgages start at $766,550. Standard jumbo ($766K-$2M), super jumbo ($2M-$5M), and ultra-jumbo ($5M+) each have distinct underwriting and rate environments."
+  edu1Image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Portfolio vs Agency Jumbo Loans"
+  edu2Description = "Agency jumbo programs follow Fannie Mae/Freddie Mac guidelines. Portfolio lenders keep loans in-house, offering flexibility for self-employed, complex income, and unique properties."
+  edu2Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Fairfield County Luxury Markets"
+  edu3Description = "Greenwich, Westport, Darien, New Canaan, and Stamford each have distinct jumbo financing characteristics. Match lender expertise to your specific market and property type."
+  edu3Image = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Asset-Based Underwriting"
+  edu4Description = "Portfolio lenders emphasize borrower assets and wealth over traditional income documentation. Ideal for complex income, business owners, and high-net-worth borrowers."
+  edu4Image = "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Jumbo Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Connecticut Jumbo Lender Selection"
+  learningSubtitle = "Find specialized jumbo lenders with Fairfield County expertise and competitive rates."
+  learningImage = "https://images.unsplash.com/photo-1631203928521-bde1e727e8b7?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Connecticut jumbo lending requires specialized expertise. Jumbo lenders with Fairfield County experience understand local market dynamics, appraisal challenges for luxury properties, and portfolio underwriting alternatives."
+  learningBullet1 = "Find Connecticut jumbo lenders at <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">BrowseLenders.com</a> with verified NMLS credentials."
+  learningBullet2 = "Check your credit tier at <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">MiddleCreditScore.com</a> to understand rate tiers for jumbo qualification."
+  learningBullet3 = "Model jumbo payments at <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> for $750K to $5M+ loan scenarios."
+  learningBullet4 = "Compare agency vs portfolio jumbo options to find best rates and flexibility for your financial profile."
+  learningPara2 = "Interview 3+ Connecticut jumbo lenders covering portfolio, bank, and broker options to compare rates, terms, and underwriting expertise."
+  learningPara3 = "Connecticut jumbo borrowers save by choosing portfolio lenders for complex situations and brokers with wholesale access for standard jumbo scenarios."
+
+  whyChooseTitle = "Why Connecticut Jumbo Lender Choice Impacts Your Deal"
+  whyChooseSubtitle = "Portfolio flexibility, rate competitiveness, and appraisal expertise create significant cost differences."
+  whyChoosePara1 = "Connecticut's Fairfield County luxury market demands specialized jumbo expertise. Portfolio lenders offer flexibility that agency programs cannot match, while competition between jumbo specialists creates rate and term advantages for informed borrowers."
+  whyChoosePara2 = "Education-first: understand jumbo loan limits, portfolio vs agency programs, and regional market differences to secure optimal rates and terms."
+
+  whyChooseBox1Title = "Portfolio Lender Flexibility"
+  whyChooseBox1Para = "Portfolio lenders keep loans on balance sheet, enabling creative underwriting for complex income, non-traditional assets, and unique properties."
+  whyChooseBox1Bullet1 = "Flexible DTI: 45-50% possible vs agency 43%"
+  whyChooseBox1Bullet2 = "Asset-based qualifying for high-net-worth borrowers"
+  whyChooseBox1Bullet3 = "Specialty properties: waterfront, historic, luxury estates"
+
+  whyChooseBox2Title = "Fairfield County Appraisal Expertise"
+  whyChooseBox2Para = "Ultra-luxury properties ($3M+) present appraisal challenges. Experienced jumbo lenders have relationships with specialized appraisers familiar with Connecticut luxury markets."
+  whyChooseBox2Bullet1 = "Limited comparables for $3M+ properties"
+  whyChooseBox2Bullet2 = "Waterfront valuation specialists available"
+  whyChooseBox2Bullet3 = "Experienced in luxury property features"
+
+  whyChooseBox3Title = "Competitive Rate Advantages"
+  whyChooseBox3Para = "Multiple Connecticut jumbo lenders create rate competition. Wholesale brokers accessing portfolio lenders often beat direct bank applications by 0.25%-0.50%."
+  whyChooseBox3Bullet1 = "Portfolio lenders: 0-0.25% rate advantage possible"
+  whyChooseBox3Bullet2 = "Wholesale broker access to 10+ jumbo programs"
+  whyChooseBox3Bullet3 = "0.25% difference = $3,750/year on $1.5M loan"
+
+  whyChooseCTA = "Find Connecticut Jumbo Specialists"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Connecticut Jumbo Borrowers Who Found Optimal Financing"
+  testimonialsSubtitle = "Real success from specialized jumbo lender partnerships and competitive rate shopping."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "Greenwich estate purchase: Portfolio lender's flexible underwriting and appraisal expertise made the $3.2M jumbo financing smooth and competitive."
+  testimonial1Name = "Michael & Jennifer Richardson"
+  testimonial1Subtitle = "Greenwich Estate"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Waterfront Darien home: Specialized jumbo lender understood waterfront valuation and flood insurance requirements perfectly. Saved $8,000 on rates."
+  testimonial2Name = "Thomas Hartford"
+  testimonial2Subtitle = "Darien Waterfront"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "Westport luxury home: Broker shopping multiple jumbo lenders found a $15,000 fee advantage and 0.375% better rate than national bank quote."
+  testimonial3Name = "Priya Desai"
+  testimonial3Subtitle = "Westport Purchase"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1533611432671-cb966fcb6cb3?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "New Canaan executive estate: Asset-based qualifying for complex business income was seamless with portfolio lender expertise. Closed on time at competitive rate."
+  testimonial4Name = "Sarah Chen"
+  testimonial4Subtitle = "New Canaan Estate"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1507528148343-53d440c60888?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Stamford luxury condo: Jumbo lender familiar with urban luxury market and HOA review process expedited underwriting and saved $5,200 in fees."
+  testimonial5Name = "David Sutherland"
+  testimonial5Subtitle = "Stamford Luxury"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "Jumbo refinance: Wholesale broker refinanced 0.50% lower than our original jumbo lender. Saved $300/month on $2.1M balance."
+  testimonial6Name = "Patricia Norton"
+  testimonial6Subtitle = "Jumbo Refi"
+
+  calculatorsTitle = "Connecticut Jumbo Financing Tools"
+  calculatorsSubtitle = "Model payments, compare rates, and plan jumbo qualification strategy."
+
+  creditScoreTitle = "Credit Optimization for Connecticut Jumbo Loans"
+  creditScoreImage = "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Credit score significantly impacts jumbo loan pricing. For jumbo mortgages, lenders prefer 740+ scores. A 40–60 point improvement can save 0.25%–0.50% on rates."
+  creditScoreHeading1 = "Jumbo Credit Score Tiers"
+  creditScoreText1 = "760+ gets best jumbo rates; 740–759 adds ~0.125%; 720–739 adds ~0.25%; 700–719 adds ~0.50%; portfolio lenders may accept 680+ with compensating factors."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$1.5M jumbo loan: 760 tier $8,950/month vs. 700 tier $9,220/month — about $270/month difference in payment impact."
+  creditScoreHeading3 = "Pre-Application Improvements"
+  creditScoreText3 = "Pay down revolving credit to under 10% utilization, dispute errors, avoid new inquiries 60–90 days before jumbo application."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Connecticut Jumbo Mortgage Guidance"
+  employersSubtitle = "Support high-net-worth employees with jumbo lending education and specialist referrals."
+  employersImage = "https://images.unsplash.com/photo-1603202662747-00e33e7d1468?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Connecticut employers can offer jumbo mortgage education and specialist referrals for executives relocating to or purchasing luxury properties in Fairfield County."
+  employersBullet1Title = "Jumbo lending expertise"
+  employersBullet1Text = "Teach executives about portfolio vs agency programs and specialized underwriting for complex wealth."
+  employersBullet2Title = "Fairfield County market guidance"
+  employersBullet2Text = "Explain Greenwich, Westport, Darien, and New Canaan market differences and appropriate jumbo lender selection."
+  employersBullet3Title = "NMLS verification"
+  employersBullet3Text = "Help employees verify credentials and select NMLS-licensed specialists with jumbo expertise."
+
+  employersCTA = "Partner for Employer Relocation"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Connecticut Jumbo Lending Insights"
+  blogSubtitle = "Qualification, portfolio vs agency, and Fairfield County specialty market guidance."
+
+  faqTitle = "Connecticut Jumbo Lending Questions"
+  faqSubtitle = "Common questions about jumbo loan limits, qualification, and financing options."
+
+  faq1Question = "What loan amounts qualify as jumbo in Connecticut?"
+  faq1Answer = "Connecticut jumbo mortgages start at $766,550 (above conforming limits). Standard jumbo: $766K-$2M; super jumbo: $2M-$5M; ultra-jumbo: $5M+ (portfolio lenders only)."
+
+  faq2Question = "How do portfolio lenders differ from agency jumbo programs?"
+  faq2Answer = "Agency programs follow strict Fannie Mae/Freddie Mac guidelines. Portfolio lenders keep loans in-house, offering flexibility for complex income, non-traditional assets, and unique properties."
+
+  faq3Question = "What credit score is needed for Connecticut jumbo loans?"
+  faq3Answer = "Most jumbo lenders prefer 740+ scores; portfolio lenders may accept 700-740 with compensating factors or 680+ with strong assets and low DTI."
+
+  faq4Question = "Why do waterfront properties need specialized jumbo lenders?"
+  faq4Answer = "Waterfront properties require specialized appraisers, flood insurance verification, and property valuation expertise. Portfolio lenders with waterfront experience handle these nuances better."
+
+  faq5Question = "Can I get jumbo financing for investment properties?"
+  faq5Answer = "Yes, portfolio lenders often finance jumbo investment properties requiring 25-30% down payment and proof of investment experience. Agency programs have strict investment property limits."
+
+  faq6Question = "How do I compare Connecticut jumbo lenders?"
+  faq6Answer = "Request Loan Estimates from portfolio lenders, banks, and wholesale brokers. Compare total rates, closing costs, APR, and underwriting expertise for your specific situation."
+
+  ctaTitle = "Ready to Explore Connecticut Jumbo Financing?"
+  ctaDescription = "Connect with specialized jumbo lenders and portfolio experts for Fairfield County luxury property financing."
+  ctaCTA = "Find Jumbo Specialists"
+  ctaCTALink = "https://www.browselenders.com/search/"

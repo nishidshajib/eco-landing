@@ -1,0 +1,231 @@
+baseURL = "https://hollywoodmortgagerates.com"
+languageCode = "en-us"
+title = "Hollywood Mortgage Rates"
+theme = "heloc-blog"
+disableKinds = []
+relativeURLs = false
+canonifyURLs = false
+contentDir = "content/hollywoodmortgagerates"
+publishDir = "public/hollywoodmortgagerates"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "assets/notwatching/hugo_stats\\.json"
+    target = "css"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/notwatching/hugo_stats.json"
+
+[pagination]
+pagerSize = 12
+path = "page"
+
+[params]
+  description = "Hollywood mortgage rate tracker for condo, single-family, and jumbo loans. Compare FHA, conventional, and high-balance pricing across Hollywood, West Hollywood, and greater LA."
+  author = "Browse Lenders®"
+  shortName = "Hollywood Mortgage Rates"
+  tagline = "Daily Rates for Hollywood, West Hollywood & LA Buyers"
+  homepage = "https://hollywoodmortgagerates.com"
+
+  siteName = "Hollywood Mortgage Rates"
+  siteDescription = "Compare mortgage rates and APRs for Hollywood condos, LA single-family homes, and high-balance loans. Transparent lender pricing, neighborhood insights, and lock timing guidance."
+  keywords = ["Hollywood mortgage rates", "West Hollywood home rates", "LA mortgage APR", "Hollywood condo loans", "high-balance conforming", "Los Angeles jumbo rates"]
+  serviceType = "Hollywood Mortgage Rate Comparison"
+
+  twitterHandle = "@BrowseLenders"
+  supportEmail = "support@browselenders.com"
+  ehoLogo = "https://browselenders.com/wp-content/uploads/2024/01/Real-Estate-Logos.png"
+
+  heroTitle = "Hollywood Mortgage Rates — Compare LA Pricing by Neighborhood"
+  heroSubtitle = "Track mortgage rates for Hollywood, West Hollywood, Studio City, and Los Feliz. Compare FHA, conventional, high-balance, and jumbo pricing with APR transparency."
+  heroImage = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"
+  heroCTA1Text = "Compare Hollywood Lenders"
+  heroCTA1Link = "https://www.browselenders.com/search/"
+  heroCTA2Text = "Get Support"
+  heroCTA2Link = "mailto:support@browselenders.com"
+
+  aboutTitle = "Why Hollywood Rates Shift by Property Type"
+  aboutImage = "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80"
+
+  primaryDomain = "BrowseLenders.com"
+  primaryDomainURL = "https://www.browselenders.com"
+  secondaryDomain = "MiddleCreditScore.com"
+  secondaryDomainURL = "https://www.middlecreditscore.com"
+  tertiaryDomain = "HomeLoanCalculator.com"
+  tertiaryDomainURL = "https://www.homeloancalculator.com"
+
+  programsTitle = "Hollywood Mortgage Rate Tiers"
+  programsSubtitle = "Compare pricing for condos, single-family homes, and luxury properties across Hollywood and West Hollywood."
+
+  program1Title = "Conforming Loans (LA Standard Limits)"
+  program1Description = "Best for Hollywood homes under the standard conforming cap. Pricing is most sensitive to credit tier and down payment. Comparing 3–5 lenders often saves 0.25%+ in rate and APR."
+  program1Image = "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1600&q=80"
+
+  program2Title = "High-Balance Conforming (LA County)"
+  program2Description = "Hollywood and West Hollywood often qualify for high-balance conforming instead of jumbo. The spread is typically narrower than jumbo, so the loan size threshold matters. Verify the county limit before locking."
+  program2Image = "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80"
+
+  program3Title = "Jumbo Loans for Hollywood Hills"
+  program3Description = "Luxury properties above high-balance limits use jumbo pricing. Hollywood Hills and Sunset Strip deals need stronger reserves and lower DTI to access best jumbo tiers."
+  program3Image = "https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=1600&q=80"
+
+  programsCTA = "View Hollywood Rates"
+  programsCTALink = "https://www.browselenders.com/search/"
+  programsClosingText = "Hollywood pricing changes quickly with lender competition—APR comparison reveals the real cost behind the rate."
+
+  educationTitle = "Hollywood Rate Intelligence"
+  educationSubtitle = "Understand APR, condo approvals, and lock timing in the LA market."
+
+  edu1Title = "APR vs. Rate for Hollywood Loans"
+  edu1Description = "Hollywood lenders vary widely on fees. Two identical rates can hide a 0.25% APR gap. Compare Loan Estimates to see origination and points before you lock."
+  edu1Image = "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80"
+
+  edu2Title = "Condo & HOA Approval Impact"
+  edu2Description = "Hollywood condos with high HOA dues, investor ratios, or pending litigation can push pricing up. Ask lenders about condo overlays before applying."
+  edu2Image = "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+
+  edu3Title = "Lock Timing During Escrow"
+  edu3Description = "LA closings often run 30–45 days. A 45-day lock reduces extension risk while protecting you from mid-escrow rate spikes."
+  edu3Image = "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80"
+
+  edu4Title = "Credit Tier Pricing in LA"
+  edu4Description = "Moving from 700 to 760 can shrink APR by 0.25%–0.50% on Hollywood loan sizes. Improving utilization before application is a fast win."
+  edu4Image = "https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1600&q=80"
+
+  educationCTA = "Explore Rate Guides"
+  educationCTALink = "https://www.browselenders.com/education"
+
+  learningTitle = "Hollywood Rate Tracker"
+  learningSubtitle = "Local pricing insights for LA neighborhoods and property types."
+  learningImage = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2000&q=80"
+  learningPara1 = "Hollywood mortgage rates move with lender competition, condo eligibility, and jumbo market appetite. Tracking rates weekly helps buyers time locks and compare APRs objectively."
+  learningBullet1 = "Use the <a href=\"https://www.browselenders.com\" class=\"text-accent hover:underline\" target=\"_blank\">Hollywood lender directory</a> to compare brokers, banks, and credit unions."
+  learningBullet2 = "Check your <a href=\"https://www.middlecreditscore.com\" class=\"text-accent hover:underline\" target=\"_blank\">credit tier</a> before you apply to estimate pricing impact."
+  learningBullet3 = "Model payment scenarios with <a href=\"https://www.homeloancalculator.com\" class=\"text-accent hover:underline\" target=\"_blank\">HomeLoanCalculator.com</a> to see the true cost of a 0.25% rate shift."
+  learningBullet4 = "Ask lenders whether your HOA meets conventional condo guidelines to avoid last-minute re-pricing."
+  learningPara2 = "Transparent rates beat teaser ads. Compare APR, not just rate, and use competitive quotes to negotiate."
+  learningPara3 = "Hollywood buyers save thousands by comparing 3–5 lenders and locking with a verified condo approval strategy."
+
+  whyChooseTitle = "Why Compare Hollywood Mortgage Rates"
+  whyChooseSubtitle = "Neighborhood price points, condo rules, and jumbo overlays create wide pricing gaps."
+  whyChoosePara1 = "Hollywood is a condo-heavy market, and condo eligibility can shift rates more than in single-family neighborhoods. Lender overlays on HOA reserves and investor ratios often change pricing." 
+  whyChoosePara2 = "Education-first: understand loan size tiers, HOA impacts, and APR pricing so you can lock the right loan for your Hollywood property."
+
+  whyChooseBox1Title = "High-Balance vs. Jumbo Clarity"
+  whyChooseBox1Para = "Many Hollywood purchases qualify for high-balance conforming rather than jumbo. The difference can save 0.25%–0.50% if the lender correctly prices the tier."
+  whyChooseBox1Bullet1 = "Verify LA County high-balance limits before accepting jumbo pricing"
+  whyChooseBox1Bullet2 = "Compare brokers who access multiple high-balance lenders"
+  whyChooseBox1Bullet3 = "Ask for the APR difference between high-balance and jumbo quotes"
+
+  whyChooseBox2Title = "Condo Approval Strategy"
+  whyChooseBox2Para = "Hollywood condos with high HOA dues or low owner-occupancy can trigger stricter pricing. A condo-aware lender avoids last-minute surprises."
+  whyChooseBox2Bullet1 = "Confirm HOA reserves and insurance coverage early"
+  whyChooseBox2Bullet2 = "Ask whether the building is on Fannie/Freddie approved lists"
+  whyChooseBox2Bullet3 = "Avoid rate hikes caused by condo litigation or budget shortfalls"
+
+  whyChooseBox3Title = "Lock Timing in LA Escrow"
+  whyChooseBox3Para = "Hollywood escrows can stretch past 30 days due to condo reviews and appraisal backlogs. A 45-day lock typically fits LA timelines."
+  whyChooseBox3Bullet1 = "45-day locks reduce extension fees during HOA review"
+  whyChooseBox3Bullet2 = "Float-down options protect you if rates fall"
+  whyChooseBox3Bullet3 = "Track weekly rate shifts to lock with confidence"
+
+  whyChooseCTA = "Compare Hollywood Rates"
+  whyChooseCTALink = "https://www.browselenders.com/search/"
+
+  testimonialsTitle = "Hollywood Borrowers Who Saved by Comparing Rates"
+  testimonialsSubtitle = "Real-world savings from APR comparisons and condo-aware lenders."
+
+  testimonial1Image = "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
+  testimonial1Text = "My West Hollywood condo got re-priced twice because the HOA had low reserves. A condo-focused lender locked 6.62% APR and closed in 38 days."
+  testimonial1Name = "Ava Martinez"
+  testimonial1Subtitle = "West Hollywood Condo"
+
+  testimonial2Image = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+  testimonial2Text = "Bank quote was 6.95% with $5,900 in fees. A broker delivered 6.78% APR with $2,100 in fees. Saved $3,800 upfront."
+  testimonial2Name = "Jalen Wright"
+  testimonial2Subtitle = "Hollywood Hills Purchase"
+
+  testimonial3Image = "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80"
+  testimonial3Text = "We almost accepted a jumbo quote, but our loan fit high-balance conforming. That switch dropped the rate by 0.375%."
+  testimonial3Name = "Sophia Park"
+  testimonial3Subtitle = "Los Feliz Home"
+
+  testimonial4Image = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  testimonial4Text = "Rate shopping across three lenders cut our APR by 0.28% on a $1.2M Studio City loan. Worth every call."
+  testimonial4Name = "Ethan Brooks"
+  testimonial4Subtitle = "Studio City Jumbo"
+
+  testimonial5Image = "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+  testimonial5Text = "Our Hollywood condo had a 35% investor ratio. The right lender still approved with a minor pricing hit instead of a denial."
+  testimonial5Name = "Mia Reynolds"
+  testimonial5Subtitle = "Hollywood Condo"
+
+  testimonial6Image = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  testimonial6Text = "APR comparison made the choice clear. We picked the lender with higher rate but lower fees and saved in the first year."
+  testimonial6Name = "Noah Carter"
+  testimonial6Subtitle = "Silver Lake Refinance"
+
+  calculatorsTitle = "Hollywood Rate Planning Tools"
+  calculatorsSubtitle = "Estimate payments, compare APR, and plan lock timing."
+
+  creditScoreTitle = "Credit Score Impact on Hollywood Rates"
+  creditScoreImage = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
+  creditScorePara1 = "Hollywood loan sizes magnify credit-based pricing. A 40-point score improvement can shift APR by 0.25%+ on high-balance or jumbo loans."
+  creditScoreHeading1 = "Typical LA Credit Tiers"
+  creditScoreText1 = "760+ best pricing; 740–759 adds ~0.125%; 720–739 adds 0.25%–0.375%; 700–719 adds ~0.50%."
+  creditScoreHeading2 = "Monthly Impact Example"
+  creditScoreText2 = "$1.1M loan: 760 tier $7,120/month vs. 700 tier $7,620/month — about $500/month difference."
+  creditScoreHeading3 = "Fast Improvements Before Applying"
+  creditScoreText3 = "Pay down cards to <10% utilization, correct report errors, and avoid new credit inquiries before lock."
+  creditScoreCTA = "Check Your Credit Tier"
+  creditScoreCTALink = "https://www.middlecreditscore.com/"
+
+  employersTitle = "For Employers – Hollywood Mortgage Education"
+  employersSubtitle = "A benefits-ready guide for studios, agencies, and production teams."
+  employersImage = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80"
+  employersPara = "Hollywood employers can support financial wellness with mortgage education that explains APR, condo eligibility, and high-balance pricing for LA buyers."
+  employersBullet1Title = "Condo approval awareness"
+  employersBullet1Text = "Help employees understand HOA and condo eligibility steps to avoid last-minute denials."
+  employersBullet2Title = "High-balance conforming guidance"
+  employersBullet2Text = "Teach when a loan qualifies for high-balance conforming instead of jumbo and how it affects APR."
+  employersBullet3Title = "Rate lock timing"
+  employersBullet3Text = "Provide education on lock windows so employees avoid extension fees during long escrows."
+
+  employersCTA = "Partner for Employer Program"
+  employersCTALink = "mailto:support@browselenders.com"
+
+  blogTitle = "Hollywood Rate Insights"
+  blogSubtitle = "Condos, high-balance pricing, and smart lock timing for LA buyers."
+
+  faqTitle = "Hollywood Mortgage Rate Questions"
+  faqSubtitle = "Common questions about LA pricing, condo approvals, and APR comparison."
+
+  faq1Question = "How do condo rules affect Hollywood mortgage rates?"
+  faq1Answer = "HOA reserves, owner-occupancy, and litigation status can increase pricing or trigger lender overlays. Condo-aware lenders prevent last-minute rate hikes."
+
+  faq2Question = "When should I lock my rate in LA?"
+  faq2Answer = "Hollywood escrows often run 35–45 days due to condo review and appraisals. A 45-day lock is usually the safest starting point."
+
+  faq3Question = "Is high-balance conforming cheaper than jumbo?"
+  faq3Answer = "Yes. High-balance conforming typically runs 0.25%–0.50% below jumbo. Always verify the LA County limit before accepting jumbo pricing."
+
+  faq4Question = "Why does APR matter more than rate?"
+  faq4Answer = "APR reflects fees and points. Two identical rates can hide a large APR gap, which changes your true borrowing cost."
+
+  faq5Question = "How many lenders should I compare?"
+  faq5Answer = "At least three. Hollywood pricing varies by lender type (broker, bank, credit union), and APR comparisons often save thousands."
+
+  faq6Question = "Do credit tiers matter on Hollywood loans?"
+  faq6Answer = "Yes. A 40–60 point improvement can reduce APR by 0.25%–0.50%, especially on high-balance and jumbo loans."
+
+  ctaTitle = "Ready to Compare Hollywood Mortgage Rates?"
+  ctaDescription = "Find competitive lenders for Hollywood, West Hollywood, and LA neighborhoods with transparent APR pricing."
+  ctaCTA = "Find Hollywood Lenders"
+  ctaCTALink = "https://www.browselenders.com/search/"

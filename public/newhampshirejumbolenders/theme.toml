@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "New Hampshire jumbo lenders and portfolio lenders for high-value homes in Portsmouth, Manchester, Nashua, and Lake Region. Compare jumbo rates and terms."
+homepage = "https://newhampshirejumbolenders.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://newhampshirejumbolenders.com"

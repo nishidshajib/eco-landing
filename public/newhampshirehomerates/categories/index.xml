@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on New Hampshire Home Rates</title>
+    <link>http://localhost:1389/categories/</link>
+    <description>Recent content in Categories on New Hampshire Home Rates</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1389/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rate Trends</title>
+      <link>http://localhost:1389/categories/rate-trends/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/categories/rate-trends/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rate Comparison</title>
+      <link>http://localhost:1389/categories/rate-comparison/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/categories/rate-comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regional Rates</title>
+      <link>http://localhost:1389/categories/regional-rates/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1389/categories/regional-rates/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
