@@ -9,6 +9,11 @@ on:
         description: 'Deploy specific domain only (e.g., badcreditloanspecialist) or leave empty for all'
         required: false
         type: string
+      force_all:
+        description: 'Force deploy all domains (overrides changed-domain detection)'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   deploy:
@@ -45,24 +50,38 @@ jobs:
         printf "machine %s\nlogin %s\npassword %s\n" "$FTP_HOST" "$FTP_USER" "$FTP_PASS" > ~/.netrc
         chmod 600 ~/.netrc
         
-        # Check if specific domain requested (manual trigger with input)
+        # Inputs for manual trigger
         SPECIFIC_DOMAIN="${{ github.event.inputs.domain }}"
-        
-        if [ -n "$SPECIFIC_DOMAIN" ]; then
-          echo "Deploying single domain: $SPECIFIC_DOMAIN"
-          DEPLOY_LIST="$SPECIFIC_DOMAIN"
+        FORCE_ALL="${{ github.event.inputs.force_all }}"
+
+        if [ "$FORCE_ALL" = "true" ]; then
+          echo "Force deploy all domains requested"
+          DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+        elif [ -n "$SPECIFIC_DOMAIN" ]; then
+          if [ "$SPECIFIC_DOMAIN" = "all" ]; then
+            echo "'all' specified - deploying all domains"
+            DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
+          else
+            echo "Deploying single domain: $SPECIFIC_DOMAIN"
+            DEPLOY_LIST="$SPECIFIC_DOMAIN"
+          fi
         else
           # Smart deployment: only deploy domains with changed files
           echo "Detecting changed domains from git diff..."
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
-          
+
+          if [ -n "${{ github.event.before }}" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            CHANGED_FILES=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" 2>/dev/null || echo "")
+          else
+            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+          fi
+
           if [ -z "$CHANGED_FILES" ]; then
             echo "No changes detected - deploying all domains for first-time setup"
             DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
           else
             # Extract unique domain names from changed files
             DEPLOY_LIST=$(echo "$CHANGED_FILES" | grep -E '^(content|config|public)/' | cut -d'/' -f2 | sort -u | grep -v '^_default$' | tr '\n' ' ')
-            
+
             if [ -z "$DEPLOY_LIST" ]; then
               echo "No domain-specific changes - deploying all domains"
               DEPLOY_LIST=$(ls -d public/*/ 2>/dev/null | xargs -n1 basename)
