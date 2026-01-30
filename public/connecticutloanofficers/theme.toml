@@ -1,0 +1,12 @@
+name = "HELOC Loan Officers Blog Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Connecticut loan officers in Hartford, New Haven, Stamford, and Fairfield County. Compare brokers vs bank MLOs for wholesale pricing and regional expertise."
+homepage = "https://connecticutloanofficers.com"
+tags = ["blog", "responsive", "heloc", "home equity", "equity extraction"]
+features = ["blog", "responsive"]
+min_version = "0.100.0"
+
+[author]
+  name = "Browse Lenders®"
+  homepage = "https://connecticutloanofficers.com"
